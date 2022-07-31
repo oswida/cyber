@@ -24,6 +24,7 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 ### Imię i pochodzenie
 
 Najpierw wybierz **imię** dla swojej postaci a następnie wybierz jej **pochodzenie**, które informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera.
+Pochodzenie określi również poziom kredytu bohatera.
 
 ### Zdolności
 
@@ -58,19 +59,8 @@ Większość przedmiotów zajmuje jedno miejsce a małe przedmioty mogą być pa
 
 Postać nie może nosić więcej przedmiotów niż pozwala na to łączna ilość miejsc ekwipunku.
 
-Do przedmiotów zalicza się również cybermodyfikacje - podczas tworzenia postaci, każdy gracz może wybrać do 2 cybermodyfikacji za darmo. Ilość miejsc zajmowanych przez cybermodyfikację jest podana w jej opisie.
-
-### Zakupy i poziom kredytu
-
-Zakup nowego ekwipunku lub usług jest możliwy dzięki zdolności kredytowej. Każda postać posiada określony **poziom kredytu**, który odzwierciedla rodzaj i jakość przedmiotów, które można nabyć. Jeśli postać może sobie pozwolić na dany zakup, po prostu wpisuje zakupiony przedmiot do ekwipunku lub składuje go w miejscu, w którym może go przechować.
-
-Początkowy poziom kredytowy postaci jest zależny od jej [pochodzenia](#imię-i-pochodzenie).
-
-Wartości poziomu kredytowego opisywane są od 6 do 1, przy czym **sześć to najniższa** a **jeden to najwyższa** wartość.
-
-Produkty i usługi mają z kolei **wymagany poziom kredytu** (WPK), który wyznacza granicę zdolności nabywczych postaci. <u>Postać nie może nabyć legalnie przedmiotu, którego wymagany poziom jest wyższy niż jej poziom kredytu</u>.
-
-Zakup **nielegalnego** produktu lub usługi wymaga dodatkowo rzutu k6. Wynik mniejszy lub równy wymaganemu poziomowi kredytu oznacza, że udało się znaleźć i zakupić dany produkt lub usługę.
+Wyposażenie startowe postaci jest zależne od jej pochodzenia.
+Do przedmiotów zalicza się również cybermodyfikacje - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**. Ilość miejsc zajmowanych przez cybermodyfikację jest podana w jej opisie.
 
 ## Technologia
 
@@ -80,14 +70,42 @@ Technologia to temat wiodący w tej grze. Jest dostępna, wszechobecna, potężn
 
 Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekraczającej poziomu zdolności **Interfejs podzielonej przez 3** (zaokrąglenie w górę).
 
-Przykład: ...
+> Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
 
 Każda zainstalowana cybermodyfikacja zajmuje odpowiednią ilość miejsca w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
 
 ### Infosfera
 
+Infosfera to globalna sieć komputerowa, która łączy niemal wszystkie urządzenia i systemy służące człowiekowi. Poszczególne skupiska danych określane są węzłami i reprezentowane jako odpowiedniki "miejsc" w świecie fizycznym. 
+
+Każda postać ma możliwość interakcji z siecią za pomocą awatara reprezentującego danego bohatera. Podłączenie do sieci nie wymaga dodatkowego wyposażenia i odbywa się w sposób bezprzewodowy.
+
+Istnieje możliwość zablokowania dostępu do Infosfery aczkolwiek wszelkie urządzenia, które to realizują są oficjalnie **nielegalne**.
+
+Wszystkie ryzykowne sytuacje w Infosferze są rozwiązywane za pomocą testu zdolności Interfejs. Podobnie jest z  obrażeniami, które przewyższają poziom OCHR postaci - powodują one zmniejszanie zdolności Interfejs zamiast zdolności Ciało.
+
+Każda postać może wykonywać pewien zestaw standardowych czynności w Infosferze:
+
+- wyszukiwanie informacji
+- kontakt z osobami o znanym adresie lub miejscami publicznymi
+- pozyskiwanie informacji publicznej
+- dostęp do produktów i usług oferowanych w Infosferze
+
+Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżonej informacji wymagają odpowiednich cybermodyfikacji.
+
 ## Zasady
 
+### Zakupy i poziom kredytu
+
+Zakup nowego ekwipunku lub usług jest możliwy dzięki zdolności kredytowej. Każda postać posiada określony **poziom kredytu**, który odzwierciedla rodzaj i jakość przedmiotów, które można nabyć. Jeśli postać może sobie pozwolić na dany zakup, po prostu wpisuje zakupiony przedmiot do ekwipunku lub składuje go w miejscu, w którym może go przechować.
+
+Początkowy poziom kredytowy postaci jest zależny od jej [pochodzenia](#imię-i-pochodzenie).
+
+Wartości poziomu kredytowego opisywane są od 6 do 1, przy czym **sześć to najniższa** a **jeden to najwyższa** wartość.
+
+Produkty i usługi mają z kolei **wymagany poziom kredytu** (WPK), który wyznacza granicę zdolności nabywczych postaci. <u>Postać nie może nabyć przedmiotu, którego wymagany poziom jest wyższy niż jej poziom kredytu</u>.
+
+Zakup **nielegalnego** produktu lub usługi wymaga dodatkowo rzutu k6. Wynik mniejszy lub równy wymaganemu poziomowi kredytu oznacza, że udało się znaleźć i zakupić dany produkt lub usługę.
 ## Przeciwnicy
 
 ## Rozwój postaci
