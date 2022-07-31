@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Oxanium&subset=latin,latin-ext");
+
+body {
+  font-family: "Oxanium";
+}
+
+th,
+td {
+  min-width: initial;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+code {
+  font-family: "Oxanium";
+  color: #0fff50;
+  font-size: 16px;
+}
+
+blockquote {
+  border-left: 2px solid #44434d !important;
+  padding-left: 0.5em !important;
+}
