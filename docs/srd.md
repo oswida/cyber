@@ -4,7 +4,7 @@ title: SRD
 parent: Dokumenty
 nav_order: 1
 ---
-# Dokument referencyjny (SRD)
+# Dokument referencyjny (w przygotowaniu)
 
 **Cyber** jest publikowany na licencji [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
@@ -15,29 +15,34 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 
 ## Wstęp
 
-## Wskazówki dla prowadzącego
+**Cyber** został zaprojektowany w oparciu o następujące zasady:
 
-## Wskazówki dla graczy
+- **Neutralność**: Rolą prowadzącego, działającego jako neutralny arbiter, jest jasne przedstawianie zasad gry, sytuacji, bohaterów niezależnych i narracji.
+- **Brak klas postaci**: rola i umiejętności postaci nie są ograniczone przez jedną klasę. Zamiast tego, ekwipunek, który nosi i doświadczenia z gry definiują jej specjalizację.
+- **Śmierć**: postacie mogą być potężne, ale można je również skrzywdzić na wiele sposobów. Śmierć zawsze czyha tuż za rogiem, ale nigdy nie jest przypadkowa ani nie nadchodzi bez ostrzeżenia.
+- **Najpierw fikcja**: rzut kośćmi nie zawsze odzwierciedla trudność wyzwania czy wynik starcia. Sukces i porażka są ustalane przez prowadzącego w dialogu z graczami, w oparciu o elementy świata gry.
+- **Rozwój**: postacie zmieniają się poprzez rozwój w świecie gry, zdobywają nowe umiejętności i zdolności, próbując przetrwać niebezpieczne wydarzenia oraz pokonywać przeszkody.
+- **Gracz podejmuje decyzje**: gracze powinni zawsze rozumieć powody, które skłoniły ich do podjęcia decyzji, a informacje o potencjalnym ryzyku powinny być przekazywane często i w sposób nieskrępowany.
+- **Wspólne cele**: gracze angażują się we wspólną wizję świata, współdzielą cele postaci i wyzwania grupowe. Dlatego też, uczestnicy gry zazwyczaj działają razem w celu osiągnięcia wspólnego celu, jako drużyna.
 
 ## Tworzenie postaci
 
 ### Imię i pochodzenie
 
-Najpierw wybierz **imię** dla swojej postaci oraz jej **pochodzenie**, które informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera.
-Pochodzenie określi również **poziom kredytu** postaci.
+Wybierz imię dla swojej postaci oraz jej [pochodzenie](./background.md), które informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera. Pochodzenie określi również początkową **wiarygodność** postaci.
 
-### Zdolności
+### Poziomy zdolności
 
 Postacie graczy posiadają trzy współczynniki opisujące zdolności:
 
-- **Ciało (CIA)** - ogół cech fizycznych: budowa, wytrzymałość, zwinność, zręczność,
-- **Umysł (UMY)** - ogół cech mentalnych: inteligencja, wiedza, siła woli
-- **Interfejs (INT)** - cechy związane z wykorzystaniem technologii: umiejętności operowania w Infosferze, odporność na cyberatak, poziom integracji z cybermodyfikacjami.
+- **Ciało (CIA)** - ogół cech fizycznych: budowa, wytrzymałość, zwinność, zręczność, refleks
+- **Psychika (PSY)** - ogół cech mentalnych i socjalnych: inteligencja, wiedza, siła woli, empatia, kontakty
+- **Interfejs (INT)** - cechy związane z wykorzystaniem technologii: umiejętności operowania w Infosferze, odporność na cyberatak, poziom integracji z [cybermodyfikacjami](./cybermod.md).
 
 Podczas tworzenia postaci, gracz powinien rzucić **3k6** kolejno dla każdej zdolności. Po wykonaniu wszystkich rzutów można wymienić wartości pomiędzy dwoma wybranymi zdolnościami.
 
 > **Przykład:**
-> Miko rzuca na **CIA** swojej postaci i uzyskuje wyniki **2**, **4**, **6**, dające w sumie **12**. Następne dwa rzuty dają **9** dla **UMY** oraz **13** dla **INT**. Miko decyduje się na wymianę **12** z **9**, a zatem jej postać ma **9 CIA**, **12 UMY** i **13** **INT**.
+> Miko rzuca na **CIA** swojej postaci i uzyskuje wyniki **2**, **4**, **6**, dające w sumie **12**. Następne dwa rzuty dają **9** dla **PSY** oraz **13** dla **INT**. Miko decyduje się na wymianę **12** z **9**, a zatem jej postać ma **9 CIA**, **12 PSY** i **13** **INT**.
 
 ### Ochrona przed trafieniem
 
@@ -59,37 +64,6 @@ Wyposażenie startowe postaci jest zależne od jej pochodzenia.
 
 Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**. Ilość miejsc zajmowanych przez cybermodyfikację jest podana w jej opisie.
 
-## Technologia
-
-Technologia to temat wiodący w tej grze. Jest dostępna, wszechobecna, potężna i niebezpieczna.
-
-### Cybermodyfikacje
-
-Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekraczającej poziomu zdolności **Interfejs podzielonej przez 3** (zaokrąglenie w górę).
-
-> Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
-
-Każda zainstalowana cybermodyfikacja zajmuje odpowiednią ilość miejsca w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
-
-### Infosfera
-
-Infosfera to globalna sieć komputerowa, która łączy niemal wszystkie urządzenia i systemy służące człowiekowi. Poszczególne skupiska danych określane są węzłami i reprezentowane jako odpowiedniki "miejsc" w świecie fizycznym.
-
-Każda postać ma możliwość interakcji z siecią za pomocą awatara reprezentującego danego bohatera. Podłączenie do sieci nie wymaga dodatkowego wyposażenia i odbywa się w sposób bezprzewodowy.
-
-Istnieje możliwość zablokowania dostępu do Infosfery aczkolwiek wszelkie urządzenia, które to realizują są oficjalnie **nielegalne**.
-
-Wszystkie ryzykowne sytuacje w Infosferze są rozwiązywane za pomocą testu zdolności Interfejs. Podobnie jest z  obrażeniami, które przewyższają poziom OCHR postaci - powodują one zmniejszanie zdolności Interfejs zamiast zdolności Ciało.
-
-Każda postać może wykonywać pewien zestaw standardowych czynności w Infosferze:
-
-- wyszukiwanie informacji
-- kontakt z osobami o znanym adresie lub miejscami publicznymi
-- pozyskiwanie informacji publicznej
-- dostęp do produktów i usług oferowanych w Infosferze
-
-Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżonej informacji wymagają odpowiednich cybermodyfikacji.
-
 ## Zasady
 
 ### Zdolności
@@ -97,90 +71,94 @@ Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżone
 Każda z trzech zdolności jest używana w innych sytuacjach (patrz rzuty obronne, poniżej).
 
 - **Ciało (CIA)** - w sytuacjach ryzykownych wymagających siły fizycznej, zręczności, zwinności czy wytrzymałości.
-- **Umysł (UMY)** - w przypadku kłopotów, których można uniknąć dzięki inteligencji, wiedzy lub sile woli.
+- **Psychika (PSY)** - w przypadku kłopotów, których można uniknąć dzięki inteligencji, wiedzy, sile woli lub interakcjom społecznym.
 - **Interfejs (INT)** - w unikaniu zagrożeń związanych z Infosferą, cybermodyfikacjami lub sterowaniem urządzeniami.
 
-### Osłabienie (Zmęczenie?)
+### Dyskomfort i zmęczenie
 
-Postać narażona na silną presję, niekorzystne warunki zewnętrzne lub brak możliwości zaspokajania podstawowych potrzeb fizycznych otrzymuje punkty Osłabienia. Każdy punkt Osłabienia blokuje jedno miejsce w ekwipunku postaci i stan ten trwa do czasu, aż postać będzie w stanie się zregenerować (np. odpoczywając całą noc w bezpiecznym miejscu).
-Po wypoczynku, postać usuwa *wszystkie* punkty Osłabienia i odzyskuje *wszystkie* zajęte miejsca.
+Postać pozbawiona możliwości zaspokojenia kluczowej potrzeby (takiej jak jedzenie lub odpoczynek), odczuwa **dyskomfort** i **nie może odzyskać punktów OCHR ani punktów zdolności**.
+Każda osoba odczuwająca dyskomfort przez więcej niż jeden dzień, dodaje do swojego ekwipunku **Zmęczenie**, jedno na każdy dzień.
+Każde Zmęczenie blokuje jedno miejsce ekwipunku i trwa do czasu, aż postać będzie w stanie się zregenerować (np. odpoczywając całą noc w bezpiecznym miejscu). Po wypoczynku, postać odzyskuje *wszystkie* zajęte miejsca.
 
-Zajmowanie miejsc w ekwipunku przez utrzymujący się stan Osłabienia prowadzi w końcu do sytuacji, gdzie wszystkie miejsca zostają zajęte a OCHR bohatera spada do zera.
+Uwaga: zajmowanie miejsc w ekwipunku przez utrzymujący się stan Zmęczenia prowadzi w końcu do sytuacji, gdzie wszystkie miejsca zostają zajęte a OCHR bohatera spada do zera.
 
-Miejsca zablokowane przez Osłabienie nie mogą być wykorzystane do noszenia ekwipunku.
-Jeśli przedmiotem zajmującym zablokowane miejsce jest cybermodyfikacja - przestaje ona działać do momentu pozbycia się Osłabienia.
+Miejsca zablokowane przez Zmęczenie nie mogą być wykorzystane do noszenia ekwipunku, jeśli gracz musi zaznaczyć Zmęczenie na miejscu już zajętym przez jakiś przedmiot, rzecz tę należy odłożyć lub wyrzucić.
+Jeśli przedmiotem zajmującym zablokowane miejsce jest cybermodyfikacja - przestaje ona działać do momentu pozbycia się Zmęczenia.
 
-Postacie mogą również otrzymać punkty Osłabienia poprzez wydarzenia w fikcji lub jako efekt niektórych akcji.
+Postacie mogą również otrzymać punkty Zmęczenia poprzez wydarzenia w fikcji lub jako efekt niektórych akcji.
 
 ### Rzuty obronne
 
 Rzut obronny to test, który pozwala uniknąć negatywnych skutków ryzykownych wyborów i okoliczności. Gracze **rzucają k20** i porównują wynik z poziomem wybranej zdolności. Jeśli wynik rzutu jest **równy lub niższy** od poziomu zdolności, test został **zdany**. W przeciwnym razie, test się nie udaje. **1 to zawsze sukces**, a **20 to zawsze porażka**.
 
-W *Cyber* wykonuje się w zasadzie tylko ten jeden rodzaj testu - sprawdzamy, czy postaci udało się uniknąć zagrożenia. Przy czym, jeśli sytuacja zagrożenia posiada dwie aktywne strony, **rzut wykonuje ta**, dla której zagrożenie określamy jako **większe**.
+W *Cyber* wykonuje się w zasadzie tylko ten jeden rodzaj testu - sprawdzamy, czy postaci udało się uniknąć zagrożenia lub ryzyka. Przy czym, jeśli sytuacja zagrożenia posiada dwie aktywne strony, **rzut wykonuje ta**, dla której zagrożenie określamy jako **większe**.
 
 Można to ująć tak:
 
-- jeśli postać jest atakowana - wykonuje rzut obronny w celu uniknięcia negatywnych skutków ataku
 - jeśli postać wykonuje ryzykowną czynność, która nie angażuje innych postaci (wspina się, wyłamuje drzwi, hakuje węzeł Infosfery) - zdany test likwiduje ryzyko niepowodzenia
 - jeśli postać wykonuje czynność, której aktywnie przeciwdziała inna postać (poza walką) - rzut obronny eliminuje ryzyko, że przeciwnik przeszkodzi w realizacji celu.
 
 > Przykłady:
 >
-> - John został zaatakowany (nie jest ważne czy to walka dystansowa czy wręcz). Zanim przeciwnik zada mu obrażenia, John może wykonać test OCHR, udany test oznacza, że bohaterowi udało się całkowicie uniknąć obrażeń.
 > - Ada próbuje otworzyć zamek elektroniczny bez znajomości kodu więc wykonuje test INT. Zdany test oznacza, że udało jej się oszukać system i drzwi się otwierają.
-> - Kumiko ściga się z pojazdem ochrony, który próbuje zajechać jej drogę. Naruszyła strefę bezpieczeństwa więc jest w tarapatach i musi wykonać test INT. Zdany test oznacza, że da radę uciec ochronie.
+> - Kumiko ściga się z pojazdem ochrony, który próbuje zajechać jej drogę. Manewry pojazdu zależne są od jej refleksu i zręczności więc musi wykonać test CIA. Zdany test oznacza, że da radę uciec ochronie.
+> - Robert próbuje odnaleźć zaginionego członka rodziny, w tym celu zwraca się o pomoc do znajomego gangu ulicznego. Zdany test PSY oznacza, że uzyskał jakieś informacje na temat poszukiwanego.
 
 #### Testy ułatwione i utrudnione
 
-Czasami prowadzący chciałby zaznaczyć, że unikanie ryzyka lub negatywnych skutków jest dla danej postaci łatwiejsze lub trudniejsze ze względu na okoliczności zewnętrzne, niezależne od zdolności bohatera.
+Czasami prowadzący chciałby zaznaczyć, że unikanie ryzyka lub negatywnych skutków działań (poza walką) jest dla danej postaci łatwiejsze lub trudniejsze ze względu na <u>okoliczności zewnętrzne</u>, niezależne od zdolności bohatera.
 
 Prowadzący może w takiej sytuacji określić test jako **Łatwy** lub **Trudny**.
 
 - przy teście **łatwym** gracz rzuca kością k20 oraz dodatkową kością k4, następnie **odejmuje** od wyniku k20 wynik k4 (`k20-k4`)
 - przy teście **trudnym** gracz rzuca kością k20 oraz dodatkową kością k4, następnie **dodaje** do wyniku k20 wynik k4 (`k20+k4`)
 
-> Przykład: ...
-
-### Reakcje BN
-
-Kiedy postacie napotkają Bohatera Niezależnego, którego reakcja na to spotkanie nie jest oczywista, prowadzący może rzucić **2k6** i sprawdzić w poniższej tabeli:
-
-|       |          |           |          |         |
-| :---: | :------: | :-------: | :------: | :-----: |
-|   2   |   3-5    |    6-8    |   9-11   |   12    |
-| Wrogi | Ostrożny | Ciekawski | Uprzejmy | Pomocny |
+> TODO: Przykład: ...
 
 ### Walka
 
+#### Rundy
+
+Gra zazwyczaj toczy się bez ścisłego rozliczania czasu. W walce lub okolicznościach, w których czas jest pomocny, użyj rund, aby śledzić, kiedy coś się wydarzy. **Runda** zajmuje około dziesięciu sekund czasu gry i składa się z tur.
+
+#### Akcje
+
+W swojej turze postać może poruszyć się na odległość do 12 metrów i wykonać jedną akcję. Może to być atak, drugi ruch lub inne rozsądne działanie.
+
+W każdej rundzie, gracze deklarują co robią, zanim rzucone zostaną jakiekolwiek kości. Jeśli jakaś postać próbuje czegoś ryzykownego, prowadezący żąda od odpowiednich graczy lub BN wykonania rzutu obronnego. Wszystkie akcje, ataki i ruchy odbywają się jednocześnie.
+
 #### Kolejność działań
 
-Proweadzący powinien sygnalizować najbardziej prawdopodobne działania oponentów w trakcie starcia.
-Na początku walki, każdy gracz musi zdać rzut obronny CIA, aby móc zacząć działać przed przeciwnikami.
+Prowadzący powinien sygnalizować najbardziej prawdopodobne działania oponentów w trakcie starcia.
+Jeśli gracz chce zacząć działać przed przeciwnikami, to na początku walki powinien zdać test odpowiedniej cechy: CIA dla walki w świecie fizycznym lub PSY w przypadku starcia w Infosferze.
 
 > **Przykład:** *Bea przypadkowo natknęła się na teren, na którym grasuje gang przemytników. Aby móc działać przed nimi, musi wykonać test CIA. Nie udaje jej się, więc przemytnicy atakują pierwsi.*
 
 #### Atak i obrażenia
 
-Atak rozstrzygany jest zgodnie z następującą procedurą:
+Atakujący rzuca **kością obrażeń** dla swojej broni i odejmuje **pancerz** celu, a następnie zadaje pozostałą sumę do **OCHR** przeciwnika. Ataki **bez broni** zawsze zadają **1k4 obrażeń**.
+Jeśli liczba obrażeń przekracza aktualną OCHR przeciwnika, pozostałe punkty zmniejszają odpowiednią zdolność postaci (CIA dla walki w świecie fizycznym, INT dla starcia w Infosferze).
 
-- Atakowany wykonuje test obronny odpowiedniej zdolności (CIA przy ataku fizycznym, UMY - przy mentalnym, INT - atak w Infosferze). **Zdany test** oznacza, że **atak się nie powiódł** a potencjalna ofiara wychodzi bez szwanku.
-- Jeżeli atak się udał, atakujący rzuca **kością obrażeń** dla swojej broni i odejmuje **pancerz** celu, a następnie  pozostałą sumę odejmuje od **OCHR** przeciwnika. Ataki **bez broni** zawsze zadają **1k4** obrażeń.
-- Jeżeli liczba zadanych obrażeń przekracza poziom OCHR ofiary, różnica jest odejmowana od odpowiedniej zdolności (tej samej, którą testowano aby uniknąć skutków ataku)
-- Jeżeli OCHR ofiary ataku na początku tury wynosi zero a test obronny się nie udał, to oprócz obrażeń stosowane są wszystkie efekty **obrażeń krytycznych** opisanych dla broni lub przeciwnika.
 - Zredukowanie którejś ze zdolności postaci do zera oznacza:
   - CIA - śmierć fizyczną postaci
-  - UMY - katatonię i kompletny brak kontaktu z bohaterem (czym to się różni od śmierci?)
+  - PSY - poważne problemy psychiczne (fobie, lęki) wymagające specjalistycznej opieki lub społeczne (trwałe wykluczenie z pewnych środowisk)
   - INT - blokadę dostępu do Infosfery na 24 godziny
 
 #### Wielu atakujących
 
 Jeśli kilka postaci atakuje tego samego przeciwnika, rzuć wszystkimi kośćmi obrażeń i zachowaj jeden najwyższy wynik.
 
-#### Standardowe modyfikatory ataku
+#### Modyfikatory ataku
 
-Jeśli walczysz **ze słabszej pozycji** (np. przez osłonę lub ze związanymi rękoma), atakowany wykonuje **łatwy** test obronny.
+Jeśli walczysz ze **słabszej pozycji** (np. przez osłonę lub ze związanymi rękoma), atak jest **osłabiony** i atakujący musi rzucić **1k4 obrażeń**, bez względu na kość obrażeń ataku.
 
-Jeśli walczysz **w przewadze** (np. przeciwko bezbronnemu wrogowi lub poprzez odważny manewr), atakowany wykonuje **trudny** test obronny.
+Jeśli walczysz **w przewadze** (np. przeciwko bezbronnemu wrogowi lub poprzez odważny manewr), atak jest **wzmocniony**, pozwalając atakującemu na zadanie **1k12 obrażeń** zamiast normalnej liczby.
+
+Jeżeli modyfikacja 1k4/1k12 jest niewystarczająca do waszego stylu gry, można zdefiniować **poziom osłabienia/wzmocnienia** ataku liczony jako **ilość rodzajów kości** o jakie zmniejszamy/zwiększamy atak. Poziom osłabienia/wzmocnienia jest ustalany przez prowadzącego w zależności od okoliczności.
+Dostępne kości ataku to: k4,k6,k8,k10,k12. W takim przypadku poziom osłabienia/wzmocnienia jest wartością pomiędzy `-4` a `4`.
+
+> Przykład:
+> John rzuca się za skrzynie, żeby osłonić się przed ostrzałem strażników. Skrzynie są metalowe więc prowadzący uznaje, że stanowią na tyle dobrą osłonę, że osłabiają ataki o 2. W tym przypadku strażnik, który miał kość ataku k12, rzuca kością k8. Drugi strażnik strzelał z pistoletu k6, osłabienie o 2 co prawda wykracza poza skalę ale nie może dawać kości mniejszej niż minimalna, więc strzał rozliczany jest kością k4.
 
 #### Broń podwójna
 
@@ -192,22 +170,34 @@ Ataki z cechą **Podmuch** wpływają na wszystkie cele w oznaczonym obszarze i 
 
 #### Obrażenia krytyczne
 
-Niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zda testu obronnego a jego OCHR wynosi zero na początku tury walki.
-W takim przypadku aktywowane są *wszystkie* efekty obrażeń krytycznych jakie wynikają z sytuacji walczących.
+Obrażenia, które redukują OCHR celu poniżej zera, zmniejszają SIŁ celu o ich pozostałą ilość. Ofiara musi wykonać rzut obronny SIŁ (już po redukcji), aby uniknąć **obrażeń krytycznych**. Dodatkowo, niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zaliczy testu na obrażenia krytyczne.
+
+Każda postać, która otrzyma obrażenia krytyczne, nie może zrobić nic poza słabym czołganiem się i kurczowym chwytaniem się resztek życia. Jeśli otrzyma pomoc i będzie mogła odpocząć, jej stan ulegnie stabilizacji. Jeśli postać nie będzie leczona, umrze w ciągu godziny.
 
 #### Blizny
 
-Gdy obrażenia zadane postaci redukują jej OCHR dokładnie do 0, bohater może doznać nieodwracalnych zmian. Aby dowiedzieć się więcej obejrzyj **Tabelę blizn**.
+Gdy obrażenia zadane postaci w świecie fizycznym redukują jej OCHR **dokładnie do 0**, bohater może doznać nieodwracalnych zmian. Aby dowiedzieć się więcej obejrzyj [Tabelę blizn](#tabela-blizn).
 
-#### Pancerz
+> #### Pancerz
 
-Zanim określisz obrażenia na OCHR, od wyniku rzutów na obrażenia odejmij wartość **Pancerza** celu.
+Zanim określisz obrażenia na OCHR, od wyniku rzutów na obrażenia odejmij wartość **Pancerza** celu. Tarcze, zbroje, cybermodyfikacje mogą zapewniać dodatkową obronę (np. +1 do pancerza), ale tylko wtedy, gdy przedmiot jest trzymany lub noszony.  
 
 Nikt nie może mieć więcej niż 3 punkty Pancerza.
 
 #### Odwrót
 
 Ucieczka w trudnej sytuacji zawsze wymaga udanego rzutu obronnego odpowiedniej zdolności (tej samej, którą testuje się obronę przed atakiem), jak również bezpiecznego miejsca, do którego można uciec.
+
+### Oddziały
+
+Duże grupy podobnych wojowników walczących razem są traktowane jako pojedyncze **oddziały**. Kiedy oddział otrzymuje krytyczne obrażenia, zostaje rozproszony lub znacznie osłabiony. Kiedy osiągnie 0 SIŁ, zostaje zniszczony.
+
+Ataki jednostek na oddziały są **osłabione** (z wyjątkiem obrażeń od podmuchu).
+Ataki oddziałów na jednostki są wzmocnione i zadają obrażenia takie jak od podmuchu.
+
+### Morale
+
+Podczas starcia, gdy pierwszy z wrogów polegnie i ponownie, gdy grupa wrogów straci połowę swojej liczby - nieprzyjaciele muszą zdać test WOL, aby pozostać na polu bitwy. Niektóre grupy mogą używać WOL swojego lidera zamiast własnego. Samotni wrogowie muszą wykonać rzut obronny WOL gdy ich OCHR spadnie do zera. Morale nie stosuje się do postaci graczy.
 
 #### Leczenie
 
@@ -219,7 +209,7 @@ Niektóre cybermodyfikacje mogą przyspieszać leczenie.
 
 #### Tabela Blizn
 
-Kiedy atak zredukuje **OCHR postaci dokładnie do 0**, postać zostaje nieodwracalnie i niepowtarzalnie zmieniona. Sprawdź wynik w tabeli poniżej w oparciu o **całkowite zadane obrażenia**:
+Kiedy atak fizyczny zredukuje **OCHR postaci dokładnie do 0**, postać zostaje nieodwracalnie i niepowtarzalnie zmieniona. Sprawdź wynik w tabeli poniżej w oparciu o **całkowite zadane obrażenia**:
 
 |     |                                                                                                                                                                                                                                                                                                                          |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -236,6 +226,42 @@ Kiedy atak zredukuje **OCHR postaci dokładnie do 0**, postać zostaje nieodwrac
 | 11  | Śmiertelna rana: Odczuwasz dyskomfort i zostajesz wyłączony z gry. Umierasz w ciągu godziny, chyba że zostaniesz uleczony. Po wyzdrowieniu, rzuć 2k6. Wynik staje się twoją nową maksymalną OCHR.                                                                                                                        |
 | 12  | Skazany na zagładę: Śmierć wydawała się bliska, ale jakoś udało ci się przeżyć. Jeśli twój następny rzut obronny przeciwko obrażeniom krytycznym jest nieudany, umierasz okropną śmiercią. Jeśli zdasz test, rzuć 3k6. Jeśli suma jest większa niż twoje maksymalne OCHR, weź nowy wynik jako aktualną, maksymalną OCHR. |
 
+### Wiarygodność
+
+Zakup nowego ekwipunku lub usług jest możliwy dzięki zdolności kredytowej. Każda postać posiada określoną **wiarygodność**, która odzwierciedla rodzaj i jakość przedmiotów, które można nabyć. Jeśli postać może sobie pozwolić na dany zakup, po prostu wpisuje zakupiony przedmiot do ekwipunku lub składuje go w miejscu, w którym może go przechować.
+
+Początkowy poziom wiarygodności postaci jest zależny od jej [pochodzenia](#imię-i-pochodzenie).
+
+Wartości wiarygodności opisywane są od liczbami od 1 do 12.
+
+Produkty i usługi mają z kolei **wymaganą wiarygodność**, który wyznacza granicę zdolności nabywczych postaci. <u>Postać nie może nabyć przedmiotu, którego wymagana wiarygodność jest wyższa niż jej własna</u>.
+
+Zakup **nielegalnego** produktu lub usługi wymaga dodatkowo **rzutu k12**. Wynik **większy** niż **wymagany poziom wiarygodności** oznacza, że udało się znaleźć i zakupić dany produkt lub usługę.
+
+W *Cyber* nie ma określonej waluty ani cenników. Towary nabywa się na zasadzie kredytu zatem zdobywanie bogactwa (lub wpływów jakie można uzyskać dzięki pieniądzom) może się odbywać jedynie na zasadzie zwiększania **wiarygodności**. Tym samym, poziom wiarygodności staje się jednocześnie **poziomem postaci**.
+
+### Działania w Infosferze
+
+**Konflikty w Infosferze** są rozstrzygane dokładnie tak samo jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs.
+Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest redukowana przez ataki jest Interfejs zamiast Ciała.
+
+**Blokada**: zredukowanie INT postaci do zera oznacza, że nie może ona korzystać z Infosfery przez następne 24 godziny.
+
+**Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INT. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest użycie odpowiednich cybermodyfikacji i wykonanie ataków. Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **poziom INT**.
+
+**Niszczenie danych**: Po zredukowaniu OCHR węzła do zera, gracz może nadal wykonywać atak ale tym razem będzie zmniejszał INT węzła. Zredukowanie **INT węzła do zera** oznacza bezpowrotne **zniszczenie danych lub programu** (o ile ich właściciel nie miał kopii zapasowej). Zmniejszanie INT węzła do wartości innych niż zero nie daje żadnych efektów w grze.
+
+**Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy zdać test INT. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
+
+### Reakcje BN
+
+Kiedy postacie napotkają Bohatera Niezależnego, którego reakcja na to spotkanie nie jest oczywista, prowadzący może rzucić **2k6** i sprawdzić w poniższej tabeli:
+
+|       |          |           |          |         |
+| :---: | :------: | :-------: | :------: | :-----: |
+|   2   |   3-5    |    6-8    |   9-11   |   12    |
+| Wrogi | Ostrożny | Ciekawski | Uprzejmy | Pomocny |
+
 ### Kość Przeznaczenia
 
 Od czasu do czasu będziesz chciała wprowadzić jakiś element losowości (np. pogoda, unikalna wiedza postaci, itp).
@@ -246,37 +272,37 @@ W takich sytuacjach **rzuć 1k6**.
 
 Przed rzutem warto klarownie opisać graczom zarówno korzystne jak i niekorzystne jego skutki.
 
-### Poziom kredytu/postaci
-
-Zakup nowego ekwipunku lub usług jest możliwy dzięki zdolności kredytowej. Każda postać posiada określony **poziom kredytu**, który odzwierciedla rodzaj i jakość przedmiotów, które można nabyć. Jeśli postać może sobie pozwolić na dany zakup, po prostu wpisuje zakupiony przedmiot do ekwipunku lub składuje go w miejscu, w którym może go przechować.
-
-Początkowy poziom kredytu postaci jest zależny od jej [pochodzenia](#imię-i-pochodzenie).
-
-Wartości poziomu kredytowego opisywane są od 6 do 1, przy czym **sześć to najniższa** a **jeden to najwyższa** wartość.
-
-Produkty i usługi mają z kolei **wymagany poziom kredytu**, który wyznacza granicę zdolności nabywczych postaci. <u>Postać nie może nabyć przedmiotu, którego wymagany poziom jest wyższy niż jej poziom kredytu</u>.
-
-Zakup **nielegalnego** produktu lub usługi wymaga dodatkowo rzutu k6. Wynik mniejszy lub równy wymaganemu poziomowi kredytu oznacza, że udało się znaleźć i zakupić dany produkt lub usługę.
-
-W *Cyber* nie ma określonej waluty ani cenników. Towary nabywa się na zasadzie kredytu zatem zdobywanie bogactwa (lub wpływów jakie można uzyskać dzięki pieniądzom) może się odbywać jedynie na zasadzie zwiększania **poziomu kredytu**. Tym samym, poziom kredytu staje się jednocześnie **poziomem postaci**.
-
-## Infosfera
-
-**Konflikty w Infosferze** są rozstrzygane dokładnie tak samo jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs.
-Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest redukowana przez ataki jest Interfejs zamiast Ciała.
-
-**Blokada**: zredukowanie INT postaci do zera oznacza, że nie może ona korzystać z Infosfery przez następne 24 godziny.
-
-**Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INT. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest użycie odpowiednich cybermodyfikacji i wykonanie ataków (prowadzący wykonuje testy obronne Interfejsu dla węzła). Jeżeli bohaterowi uda się zredukować Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **poziom INT**.
-
-**Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy zdać test INT. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
-
-## Cybermodyfikacje
-
-Cybermodyfikacje są traktowane jako wyposażenie postaci, mogą być montowane i usuwane wedle życzenia, ale musi się to odbywać w specjalistycznych placówkach.
-
-Postać zaczyna grę z dwoma darmowymi modyfikacjami dostępnymi w ramach jej poziomu kredytu.
-
 ## Rozwój postaci
+
+## Technologia
+
+Technologia to temat wiodący w tej grze. Jest dostępna, wszechobecna, potężna i niebezpieczna.
+
+### Cybermodyfikacje
+
+Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekraczającej poziomu zdolności **Interfejs podzielonej przez 3** (zaokrąglenie w górę).
+
+> Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
+
+Każda zainstalowana cybermodyfikacja zajmuje odpowiednią ilość miejsca w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
+
+### Infosfera
+
+Infosfera to globalna sieć komputerowa, która łączy niemal wszystkie urządzenia i systemy służące człowiekowi. Poszczególne skupiska danych określane są węzłami i reprezentowane jak odpowiedniki "miejsc" w świecie fizycznym.
+
+Każda postać ma możliwość interakcji z siecią za pomocą awatara reprezentującego danego bohatera. Podłączenie do sieci nie wymaga dodatkowego wyposażenia i odbywa się w sposób bezprzewodowy.
+
+Istnieje możliwość zablokowania dostępu do Infosfery aczkolwiek wszelkie urządzenia, które to realizują są oficjalnie **nielegalne**.
+
+Wszystkie ryzykowne sytuacje w Infosferze są rozwiązywane za pomocą testu zdolności **Interfejs**. Podobnie jest z  obrażeniami, które przewyższają poziom OCHR postaci - powodują one zmniejszanie zdolności Interfejs zamiast zdolności Ciało.
+
+Każda postać może wykonywać pewien zestaw standardowych czynności w Infosferze:
+
+- wyszukiwanie informacji
+- kontakt z osobami o znanym adresie lub miejscami publicznymi
+- pozyskiwanie informacji publicznej
+- dostęp do produktów i usług oferowanych w Infosferze
+
+Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżonej informacji wymagają odpowiednich cybermodyfikacji.
 
 ## Podsumowanie
