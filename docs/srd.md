@@ -27,9 +27,9 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 
 ## Tworzenie postaci
 
-### Imię i pochodzenie
+### Imię i przeszłość
 
-Wybierz imię dla swojej postaci oraz jej [pochodzenie](./background.md), które informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera. Pochodzenie określi również początkową **wiarygodność** postaci.
+Wybierz imię dla swojej postaci oraz jej [przeszłość](./background.md), które informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera. Przeszłość określi również początkową **wiarygodność** postaci.
 
 ### Poziomy zdolności
 
@@ -62,7 +62,7 @@ Postać nie może nosić więcej przedmiotów niż pozwala na to łączna iloś�
 
 Wyposażenie startowe postaci jest zależne od jej pochodzenia.
 
-Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**. Ilość miejsc zajmowanych przez cybermodyfikację jest podana w jej opisie.
+[Cybermodyfikacje](./cybermod.md) są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**. Ilość miejsc zajmowanych przez cybermodyfikację jest podana w jej opisie.
 
 ## Zasady
 
@@ -230,7 +230,7 @@ Kiedy atak fizyczny zredukuje **OCHR postaci dokładnie do 0**, postać zostaje 
 
 Zakup nowego ekwipunku lub usług jest możliwy dzięki zdolności kredytowej. Każda postać posiada określoną **wiarygodność**, która odzwierciedla rodzaj i jakość przedmiotów, które można nabyć. Jeśli postać może sobie pozwolić na dany zakup, po prostu wpisuje zakupiony przedmiot do ekwipunku lub składuje go w miejscu, w którym może go przechować.
 
-Początkowy poziom wiarygodności postaci jest zależny od jej [pochodzenia](#imię-i-pochodzenie).
+Początkowy poziom wiarygodności postaci jest zależny od jej [przeszłości](./background.md).
 
 Wartości wiarygodności opisywane są od liczbami od 1 do 12.
 
