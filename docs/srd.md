@@ -124,11 +124,11 @@ Można to ująć tak:
 - jeśli postać wykonuje ryzykowną czynność, która nie angażuje innych postaci (wspina się, wyłamuje drzwi, hakuje węzeł Infosfery) - zdany test likwiduje ryzyko niepowodzenia
 - jeśli postać wykonuje czynność, której aktywnie przeciwdziała inna postać (poza walką) - rzut obronny eliminuje ryzyko, że przeciwnik przeszkodzi w realizacji celu.
 
-Przykłady:
-
-- John został zaatakowany (nie jest ważne czy to walka dystansowa czy wręcz). Zanim przeciwnik zada mu obrażenia, John może wykonać test OCHR, udany test oznacza, że bohaterowi udało się całkowicie uniknąć obrażeń.
-- Ada próbuje otworzyć zamek elektroniczny bez znajomości kodu więc wykonuje test INT. Zdany test oznacza, że udało jej się oszukać system i drzwi się otwierają.
-- Kumiko ściga się z pojazdem ochrony, który próbuje zajechać jej drogę. Naruszyła strefę bezpieczeństwa więc jest w tarapatach i musi wykonać test INT. Zdany test oznacza, że da radę uciec ochronie.
+> Przykłady:
+>
+> - John został zaatakowany (nie jest ważne czy to walka dystansowa czy wręcz). Zanim przeciwnik zada mu obrażenia, John może wykonać test OCHR, udany test oznacza, że bohaterowi udało się całkowicie uniknąć obrażeń.
+> - Ada próbuje otworzyć zamek elektroniczny bez znajomości kodu więc wykonuje test INT. Zdany test oznacza, że udało jej się oszukać system i drzwi się otwierają.
+> - Kumiko ściga się z pojazdem ochrony, który próbuje zajechać jej drogę. Naruszyła strefę bezpieczeństwa więc jest w tarapatach i musi wykonać test INT. Zdany test oznacza, że da radę uciec ochronie.
 
 #### Testy ułatwione i utrudnione
 
@@ -136,8 +136,8 @@ Czasami prowadzący chciałby zaznaczyć, że unikanie ryzyka lub negatywnych sk
 
 Prowadzący może w takiej sytuacji określić test jako **Łatwy** lub **Trudny**.
 
-- przy teście **łatwym** gracz rzuca kością k20 oraz dodatkową kością k4, następnie **odejmuje** od wyniku k20 wynik k4
-- przy teście **trudnym** gracz rzuca kością k20 oraz dodatkową kością k4, następnie **dodaje** do wyniku k20 wynik k4
+- przy teście **łatwym** gracz rzuca kością k20 oraz dodatkową kością k4, następnie **odejmuje** od wyniku k20 wynik k4 (`k20-k4`)
+- przy teście **trudnym** gracz rzuca kością k20 oraz dodatkową kością k4, następnie **dodaje** do wyniku k20 wynik k4 (`k20+k4`)
 
 > Przykład: ...
 
@@ -150,16 +150,14 @@ Kiedy postacie napotkają Bohatera Niezależnego, którego reakcja na to spotkan
 |   2   |   3-5    |    6-8    |   9-11   |   12    |
 | Wrogi | Ostrożny | Ciekawski | Uprzejmy | Pomocny |
 
-
-
 ### Walka
 
 #### Kolejność działań
 
-Proweadzący powinien sygnalizować najbardziej prawdopodobne działania oponentów w trakcie starcia. 
+Proweadzący powinien sygnalizować najbardziej prawdopodobne działania oponentów w trakcie starcia.
 Na początku walki, każdy gracz musi zdać rzut obronny CIA, aby móc zacząć działać przed przeciwnikami.
 
-**Przykład:** *Bea przypadkowo natknęła się na teren, na którym grasuje gang przemytników. Aby móc działać przed nimi, musi wykonać test CIA. Nie udaje jej się, więc przemytnicy atakują pierwsi.*
+> **Przykład:** *Bea przypadkowo natknęła się na teren, na którym grasuje gang przemytników. Aby móc działać przed nimi, musi wykonać test CIA. Nie udaje jej się, więc przemytnicy atakują pierwsi.*
 
 #### Atak i obrażenia
 
@@ -188,16 +186,16 @@ Jeśli walczysz **w przewadze** (np. przeciwko bezbronnemu wrogowi lub poprzez o
 
 Jeśli atakujesz dwoma rodzajami broni jednocześnie, rzuć obiema kostkami obrażeń i zatrzymaj pojedynczy, najwyższy wynik.
 
-### Podmuch
+#### Podmuch
 
 Ataki z cechą **Podmuch** wpływają na wszystkie cele w oznaczonym obszarze i są rzucane oddzielnie dla każdej dotkniętej postaci. Podmuch odnosi się do całej grupy efektów obszarowych, od klasycznej eksplozji, przez potężne ciosy rozszczepiające, aż po uderzenie meteorytu. Jeśli nie jesteś pewien ile celów może zostać dotkniętych, rzuć odpowiednią kością obrażeń, aby uzyskać wynik.
 
-### Obrażenia krytyczne
+#### Obrażenia krytyczne
 
 Niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zda testu obronnego a jego OCHR wynosi zero na początku tury walki.
 W takim przypadku aktywowane są *wszystkie* efekty obrażeń krytycznych jakie wynikają z sytuacji walczących.
 
-### Blizny
+#### Blizny
 
 Gdy obrażenia zadane postaci redukują jej OCHR dokładnie do 0, bohater może doznać nieodwracalnych zmian. Aby dowiedzieć się więcej obejrzyj **Tabelę blizn**.
 
@@ -205,7 +203,7 @@ Gdy obrażenia zadane postaci redukują jej OCHR dokładnie do 0, bohater może 
 
 Zanim określisz obrażenia na OCHR, od wyniku rzutów na obrażenia odejmij wartość **Pancerza** celu.
 
-Nikt nie może mieć więcej niż 3 punkty Pancerza. 
+Nikt nie może mieć więcej niż 3 punkty Pancerza.
 
 #### Odwrót
 
@@ -223,7 +221,6 @@ Niektóre cybermodyfikacje mogą przyspieszać leczenie.
 
 Kiedy atak zredukuje **OCHR postaci dokładnie do 0**, postać zostaje nieodwracalnie i niepowtarzalnie zmieniona. Sprawdź wynik w tabeli poniżej w oparciu o **całkowite zadane obrażenia**:
 
-
 |     |                                                                                                                                                                                                                                                                                                                          |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 1   | Trwała blizna: Rzuć 1k6 &#124; 1: Kark, 2: Ręce, 3: Oko, 4: Klatka piersiowa, 5: Nogi, 6: Ucho. Rzuć 1k6. Jeśli suma jest wyższa niż twoja maksymalna OCHR,  wynik staje się twoją nową maksymalną OCHR.                                                                                                                 |
@@ -238,7 +235,6 @@ Kiedy atak zredukuje **OCHR postaci dokładnie do 0**, postać zostaje nieodwrac
 | 10  | Utrata kończyny: Kończyna została oderwana, jest kaleka lub bezużyteczna. Strażnik określi, która to kończyna. Następnie wykonaj rzut obronny WOL. Jeśli test się uda, zwiększ swoją maksymalną wartość WOL o 1k6.                                                                                                       |
 | 11  | Śmiertelna rana: Odczuwasz dyskomfort i zostajesz wyłączony z gry. Umierasz w ciągu godziny, chyba że zostaniesz uleczony. Po wyzdrowieniu, rzuć 2k6. Wynik staje się twoją nową maksymalną OCHR.                                                                                                                        |
 | 12  | Skazany na zagładę: Śmierć wydawała się bliska, ale jakoś udało ci się przeżyć. Jeśli twój następny rzut obronny przeciwko obrażeniom krytycznym jest nieudany, umierasz okropną śmiercią. Jeśli zdasz test, rzuć 3k6. Jeśli suma jest większa niż twoje maksymalne OCHR, weź nowy wynik jako aktualną, maksymalną OCHR. |
-
 
 ### Kość Przeznaczenia
 
@@ -264,10 +260,9 @@ Zakup **nielegalnego** produktu lub usługi wymaga dodatkowo rzutu k6. Wynik mni
 
 W *Cyber* nie ma określonej waluty ani cenników. Towary nabywa się na zasadzie kredytu zatem zdobywanie bogactwa (lub wpływów jakie można uzyskać dzięki pieniądzom) może się odbywać jedynie na zasadzie zwiększania **poziomu kredytu**. Tym samym, poziom kredytu staje się jednocześnie **poziomem postaci**.
 
-
 ## Infosfera
 
-**Konflikty w Infosferze** są rozstrzygane dokładnie tak samo jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs. 
+**Konflikty w Infosferze** są rozstrzygane dokładnie tak samo jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs.
 Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest redukowana przez ataki jest Interfejs zamiast Ciała.
 
 **Blokada**: zredukowanie INT postaci do zera oznacza, że nie może ona korzystać z Infosfery przez następne 24 godziny.
