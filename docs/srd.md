@@ -4,7 +4,7 @@ title: SRD
 parent: Dokumenty
 nav_order: 1
 ---
-# Dokument referencyjny (w przygotowaniu)
+# Dokument referencyjny
 
 **Cyber** jest publikowany na licencji [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
@@ -13,7 +13,7 @@ Autor gry: [Oskar Świda](https://twitter.com/OskarSwida).
 Cyber to gra fabularna o eksploracji mrocznego świata niedalekiej przyszłości, zdominowanego przez megakorporacje i technologię. Gracze wcielają się w mieszkańców gigantycznego metropolis - zatłoczonego, hałaśliwego miasta pełnego chciwości, obłudy i podejrzanych interesów.
 Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na granicy prawa jako wolni strzelcy do wynajęcia albo prowadzić ustabilizowane (aczkolwiek nie pozbawione wyzwań) życie członka jednej z tysięcy frakcji - od religijnych sekt po miejskie służby ratunkowe.
 
-- [Dokument referencyjny (w przygotowaniu)](#dokument-referencyjny-w-przygotowaniu)
+- [Dokument referencyjny](#dokument-referencyjny)
   - [Wstęp](#wstęp)
   - [Tworzenie postaci](#tworzenie-postaci)
     - [Imię, przeszłość, poziom kredytu](#imię-przeszłość-poziom-kredytu)
@@ -126,9 +126,9 @@ Można to ująć tak:
 
 > Przykłady:
 >
-> - Ada próbuje otworzyć zamek elektroniczny bez znajomości kodu więc wykonuje test INT. Zdany test oznacza, że udało jej się oszukać system i drzwi się otwierają.
-> - Kumiko ściga się z pojazdem ochrony, który próbuje zajechać jej drogę. Manewry pojazdu zależne są od jej refleksu i zręczności więc musi wykonać test CIA. Zdany test oznacza, że da radę uciec ochronie.
-> - Robert próbuje odnaleźć zaginionego członka rodziny, w tym celu zwraca się o pomoc do znajomego gangu ulicznego. Zdany test PSY oznacza, że uzyskał jakieś informacje na temat poszukiwanego.
+> Ada próbuje otworzyć zamek elektroniczny bez znajomości kodu więc wykonuje test INT. Zdany test oznacza, że udało jej się oszukać system i drzwi się otwierają.
+> Kumiko ściga się z pojazdem ochrony, który próbuje zajechać jej drogę. Manewry pojazdu zależne są od jej refleksu i zręczności więc musi wykonać test CIA. Zdany test oznacza, że da radę uciec ochronie.
+> Robert próbuje odnaleźć zaginionego członka rodziny, w tym celu zwraca się o pomoc do znajomego gangu ulicznego. Zdany test PSY oznacza, że uzyskał jakieś informacje na temat poszukiwanego.
 
 ### Testy ułatwione i utrudnione
 
@@ -138,8 +138,6 @@ Prowadzący może w takiej sytuacji określić test jako **Łatwy** lub **Trudny
 
 - przy teście **łatwym** gracz rzuca **dwiema** kośćmi k20 a następnie wybiera **niższy** wynik.
 - przy teście **trudnym** gracz rzuca **dwiema** kośćmi k20 a następnie wybiera **wyższy** wynik.
-
-> TODO: Przykład: ...
 
 ### Walka
 
@@ -196,7 +194,7 @@ Ataki z cechą **Podmuch** wpływają na wszystkie cele w oznaczonym obszarze i 
 
 #### Obrażenia krytyczne
 
-Obrażenia, które redukują OCHR celu poniżej zera, zmniejszają SIŁ celu o ich pozostałą ilość. Ofiara musi wykonać rzut obronny SIŁ (już po redukcji), aby uniknąć **obrażeń krytycznych**. Dodatkowo, niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zaliczy testu na obrażenia krytyczne.
+Obrażenia fizyczne, które redukują OCHR celu poniżej zera, zmniejszają CIA celu o ich pozostałą ilość. Ofiara musi wykonać rzut obronny CIA (już po redukcji), aby uniknąć **obrażeń krytycznych**. Dodatkowo, niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zaliczy testu na obrażenia krytyczne.
 
 Każda postać, która otrzyma obrażenia krytyczne, nie może zrobić nic poza słabym czołganiem się i kurczowym chwytaniem się resztek życia. Jeśli otrzyma pomoc i będzie mogła odpocząć, jej stan ulegnie stabilizacji. Jeśli postać nie będzie leczona, umrze w ciągu godziny.
 
@@ -216,14 +214,14 @@ Ucieczka w trudnej sytuacji zawsze wymaga udanego rzutu obronnego odpowiedniej z
 
 #### Oddziały
 
-Duże grupy podobnych wojowników walczących razem są traktowane jako pojedyncze **oddziały**. Kiedy oddział otrzymuje krytyczne obrażenia, zostaje rozproszony lub znacznie osłabiony. Kiedy osiągnie 0 SIŁ, zostaje zniszczony.
+Duże grupy podobnych wojowników walczących razem są traktowane jako pojedyncze **oddziały**. Kiedy oddział otrzymuje krytyczne obrażenia, zostaje rozproszony lub znacznie osłabiony. Kiedy osiągnie 0 CIA, zostaje zniszczony.
 
 Ataki jednostek na oddziały są [osłabione](#modyfikatory-ataku) (z wyjątkiem obrażeń od [podmuchu](#podmuch)).
 Ataki oddziałów na jednostki są [wzmocnione](#modyfikatory-ataku) i zadają obrażenia takie jak od [podmuchu](#podmuch).
 
 #### Morale
 
-Podczas starcia, gdy pierwszy z wrogów polegnie i ponownie, gdy grupa wrogów straci połowę swojej liczby - nieprzyjaciele muszą zdać test PSY, aby pozostać na polu bitwy. Niektóre grupy mogą używać WOL swojego lidera zamiast własnego. Samotni wrogowie muszą wykonać rzut obronny PSY gdy ich OCHR spadnie do zera. Morale nie stosuje się do postaci graczy.
+Podczas starcia, gdy pierwszy z wrogów polegnie i ponownie, gdy grupa wrogów straci połowę swojej liczby - nieprzyjaciele muszą zdać test PSY, aby pozostać na polu bitwy. Niektóre grupy mogą używać PSY swojego lidera zamiast własnego. Samotni wrogowie muszą wykonać rzut obronny PSY gdy ich OCHR spadnie do zera. Morale nie stosuje się do postaci graczy.
 
 #### Leczenie
 
@@ -244,11 +242,11 @@ Kiedy atak fizyczny zredukuje **OCHR postaci dokładnie do 0**, postać zostaje 
 | 3   | Powalony: Zostajesz wysłany w powietrze i lądujesz płasko na twarzy. Odczuwasz dyskomfort, dopóki nie odpoczniesz przez kilka godzin. Następnie, rzuć 1k6. Dodaj tę liczbę do swojej maksymalnej OCHR.                                                                                                                   |
 | 4   | Złamana kość: Rzuć 1k6 &#124; 1-2: Noga, 3-4: Ramię, 5: Żebro, 6: Czaszka. Po zrośnięciu, rzuć 2k6. Jeśli suma jest wyższa niż twoja maksymalna OCHR,  wynik staje się twoją nową maksymalną OCHR.                                                                                                                       |
 | 5   | Choroba: Cierpisz na obrzydliwą, nieprzyjemną infekcję. Kiedy wydobrzejesz, rzuć 2k6. Jeśli suma jest wyższa niż twoja maksymalna OCHR,  wynik staje się twoją nową maksymalną OCHR.                                                                                                                                     |
-| 6   | Poważna rana głowy: Rzuć 1k6 &#124; 1-2: SIŁ, 3-4: ZRE, 5-6: WOL. Rzuć 3k6. Jeśli wynik jest wyższy niż aktualny poziom zdolności, staje się on nową wartością wskazanej cechy.                                                                                                                                          |
-| 7   | Wstrząs: Ledwo możesz się poruszać, dopóki nie otrzymasz poważnej pomocy i nie odpoczniesz. Po wyzdrowieniu, rzuć 3k6. Jeśli suma jest wyższa niż twoja maksymalna wartość ZRE, nowy wynik staje się nową maksymalną wartością.                                                                                          |
-| 8   | Ogłuszenie: Nic nie słyszysz dopóki nie uzyskasz jakiejś wyjątkowej pomocy. Niezależnie od tego, wykonaj rzut obronny WOL. Jeśli test się uda, zwiększ swoją maksymalną WOL o 1k4.                                                                                                                                       |
-| 9   | Uraz psychiczny: Jakaś ukryta część twojej psychiki została wytrącona z równowagi. Rzuć 3k6. Jeśli suma jest wyższa niż twoja maksymalna wartość WOL, nowy wynik staje się nową maksymalną wartością.                                                                                                                    |
-| 10  | Utrata kończyny: Kończyna została oderwana, jest kaleka lub bezużyteczna. Strażnik określi, która to kończyna. Następnie wykonaj rzut obronny WOL. Jeśli test się uda, zwiększ swoją maksymalną wartość WOL o 1k6.                                                                                                       |
+| 6   | Poważna rana głowy: Rzuć 1k6 &#124; 1-2: CIA, 3-4: PSY, 5-6: INT. Rzuć 3k6. Jeśli wynik jest wyższy niż aktualny poziom zdolności, staje się on nową wartością wskazanej cechy.                                                                                                                                          |
+| 7   | Wstrząs: Ledwo możesz się poruszać, dopóki nie otrzymasz poważnej pomocy i nie odpoczniesz. Po wyzdrowieniu, rzuć 3k6. Jeśli suma jest wyższa niż twoja maksymalna wartość CIA, nowy wynik staje się nową maksymalną wartością.                                                                                          |
+| 8   | Ogłuszenie: Nic nie słyszysz dopóki nie uzyskasz jakiejś wyjątkowej pomocy. Niezależnie od tego, wykonaj rzut obronny PSY. Jeśli test się uda, zwiększ swoją maksymalną PSY o 1k4.                                                                                                                                       |
+| 9   | Uraz psychiczny: Jakaś ukryta część twojej psychiki została wytrącona z równowagi. Rzuć 3k6. Jeśli suma jest wyższa niż twoja maksymalna wartość PSY, nowy wynik staje się nową maksymalną wartością.                                                                                                                    |
+| 10  | Utrata kończyny: Kończyna została oderwana, jest kaleka lub bezużyteczna. Strażnik określi, która to kończyna. Następnie wykonaj rzut obronny PSY. Jeśli test się uda, zwiększ swoją maksymalną wartość PSY o 1k6.                                                                                                       |
 | 11  | Śmiertelna rana: Odczuwasz dyskomfort i zostajesz wyłączony z gry. Umierasz w ciągu godziny, chyba że zostaniesz uleczony. Po wyzdrowieniu, rzuć 2k6. Wynik staje się twoją nową maksymalną OCHR.                                                                                                                        |
 | 12  | Skazany na zagładę: Śmierć wydawała się bliska, ale jakoś udało ci się przeżyć. Jeśli twój następny rzut obronny przeciwko obrażeniom krytycznym jest nieudany, umierasz okropną śmiercią. Jeśli zdasz test, rzuć 3k6. Jeśli suma jest większa niż twoje maksymalne OCHR, weź nowy wynik jako aktualną, maksymalną OCHR. |
 
@@ -359,4 +357,3 @@ Każda postać może wykonywać pewien zestaw standardowych czynności w Infosfe
 Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżonej informacji wymagają odpowiednich cybermodyfikacji.
 
 Więcej informacji o Infosferze w grze znajdziesz [tutaj](./infosphere.md).
-

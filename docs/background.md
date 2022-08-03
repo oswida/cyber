@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Pochodzenie
+title: Przeszłość
 parent: Dokumenty
 nav_order: 5
 ---
@@ -12,119 +12,77 @@ Nie jest to odpowiednik klasy, nie definiuje ścieżki rozwoju bohatera a opisuj
 
 ## Pracownik biurowy (*zaibatsu*)
 
-- Testy ułatwione: wyszukiwanie informacji w Infosferze
-- Wiarygodność: 2
+Jeden z milionów ludzi przetwarzających wirtualne dokumenty w biurach korporacji.
+
+Zrezygnowałam, bo:
+
+1. Mam dość tej monotonnej, bezproduktywnej roboty
+2. Nie przeszłam okresowej ewaluacji (z winy współpracownika)
+3. Bezpośredni przełożony składał mi niedwuznaczne propozycje
+4. Korporacje to zło wcielone i nie zamierzam pracować dla Szatana
+5. W przetwarzanych dokumentach odkryłam szokujące fakty na temat korporacji
+6. Łowca głów z konkurencji okazał się oszustem i nie mogę już wrócić do poprzedniej pracy
 
 ## Pracownik fabryczny (*zaibatsu*)
 
-- Testy ułatwione:
-- Wiarygodność: 2
+Trybik w maszynie wytwarzającej materialne dobra tego świata.
 
-## Mechanik
+Zrezygnowałem, bo:
 
-- Testy ułatwione: wiedza i drobne naprawy w wybranej dziedzinie mechaniki
-- Wiarygodność: 3
-
-## Lekarz
-
-- Testy ułatwione: wiedza medyczna i farmaceutyczna
-- Wiarygodność: 3
-
-## Ratownik medyczny
-
-- Testy ułatwione: pierwsza pomoc
-- Wiarygodność: 2
-
-## Pilot
-
-- Testy ułatwione: pilotowanie wybranego rodzaju pojazdu
-- Wiarygodność: 2
-
-## Kierowca
-
-- Testy ułatwione: prowadzenie wybranego rodzaju pojazdu
-- Wiarygodność: 2
-
-## Ochroniarz klubowy
-
-- Testy ułatwione: obezwładnianie przeciwnika
-- Wiarygodność: 2
+1. Jeden z moich kolegów przeze mnie uległ wypadkowi
+2. Mój szef okazał się zwykłą świnią
+3. Ktoś zakablował, że wyniosłem coś z fabryki na swojej zmianie
+4. Niechcący uszkodziłem maszynę na taśmie i musiałem odejść
+5. Okazało się, że to co wytwarzamy służy potem do zabijania ludzi.
+6. Korporacje to zło wcielone i nie zamierzam pracować dla Szatana
 
 ## Strażnik (*zaibatsu*)
 
-- Testy ułatwione: pierwsza pomoc
-- Wiarygodność: 2
+Trochę nadzorca, trochę cieć, trochę klawisz. W tej robocie trudno znaleźć coś szlachetnego.
+
+Zrezygnowałem, bo:
+
+1. Odmówiłem wykonania rozkazu, który uznałem za niesłuszny.
+2. Mam większe aspiracje, chciałbym mieć robotę, w której ludzie mnie szanują.
+3. Nie przeszedłem okresowych testów sprawnościowych, miałem po prostu słabszy dzień.
+4. Widziałem jak mój bezpośredni przełożony zakatował jednego z pracowników firmy.
+5. Nie chciałem brać udziału w przemycie organizowanym przez kolegów z pracy.
+6. Niechcący zastrzeliłem niewinnego człowieka.
+
+## Mechanik
+
+## Lekarz
+
+## Ratownik medyczny
+
+## Pilot
+
+## Kierowca
+
+## Ochroniarz klubowy
 
 ## Reporter
 
 ## Elektronik
 
-- Testy ułatwione: drobne naprawy sprzętu elektronicznego z wybranej grupy
-- Wiarygodność: 3
-
 ## Cybertechnik
-
-- Testy ułatwione: montowanie, diagnoza i regulowanie cybermodyfikacji
-- Wiarygodność: 3
 
 ## Programista
 
-- Testy ułatwione: ochrona węzłów Infosfery
-- Wiarygodność: 3
-
 ## Haker
-
-- Testy ułatwione: hakowanie węzłów Infosfery
-- Wiarygodność: 3
 
 ## Robotyk
 
-- Testy ułatwione: drobne naprawy i sterowanie wybranym rodzajem robotów
-- Wiarygodność: 3
-
 ## Gangster
-
-
-- Testy ułatwione: zastraszanie i kontakty z półświatkiem
-- Wiarygodność: 2
 
 ## Influencer
 
-- Testy ułatwione: kontakty z mediami i grupami społecznymi
-- Wiarygodność: 2
-
-
 ## Urzędnik Administracji
-
-- Testy ułatwione: przeszukiwanie informacji publicznej i kontakty z Administracją
-- Wiarygodność: 2
-
 
 ## Policjant
 
-- Testy ułatwione: kontakty z policją i półświatkiem
-- Wiarygodność: 2
-
-
 ## Detektyw
-
-- Testy ułatwione: 
-- Wiarygodność: 2
-
 
 ## Pracownik lokalu usługowego
 
-- Testy ułatwione: 
-- Wiarygodność: 2
-
-
-## Nauczyciel
-
-- Testy ułatwione: 
-- Wiarygodność: 1
-
 ## Pracownik komunalny
-
-- Testy ułatwione: 
-- Wiarygodność: 1
-
