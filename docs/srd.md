@@ -37,8 +37,6 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
   - [Technologia](#technologia)
     - [Cybermodyfikacje](#cybermodyfikacje)
     - [Infosfera](#infosfera)
-  - [Podsumowanie](#podsumowanie)
-
 
 ## Wstęp
 
@@ -57,7 +55,7 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 ### Imię, przeszłość, poziom kredytu
 
 Wybierz imię dla swojej postaci oraz jej [przeszłość](./background.md), która informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera.
-Rzucając **1k4** wylosuj **poziom kredytu** postaci.
+Rzucając **1k3** wylosuj **poziom kredytu** postaci.
 
 ### Poziomy zdolności
 
@@ -258,7 +256,7 @@ Kiedy atak fizyczny zredukuje **OCHR postaci dokładnie do 0**, postać zostaje 
 
 Zakup nowego ekwipunku lub usług jest możliwy dzięki zdolności kredytowej. Każda postać posiada określony **poziom kredytu**, która odzwierciedla rodzaj i jakość przedmiotów, które można nabyć. Jeśli postać może sobie pozwolić na dany zakup, po prostu wpisuje zakupiony przedmiot do ekwipunku lub składuje go w miejscu, w którym może go przechować.
 
-Początkowy poziom kredytu postaci określa się rzutem **1k4**. Kredyt opisywany jest liczbami od 1 do 12, gdzie jeden to najniższy poziom.
+Początkowy poziom kredytu postaci określa się rzutem **1k3**. Kredyt opisywany jest liczbami od 1 do 12, gdzie jeden to najniższy poziom.
 
 Produkty i usługi mają z kolei **wymagany poziom kredytu**, który wyznacza granicę zdolności nabywczych postaci. <u>Postać nie może nabyć przedmiotu, którego wymagany poziom kredytu jest wyższy niż jej własny</u>.
 
@@ -362,4 +360,3 @@ Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżone
 
 Więcej informacji o Infosferze w grze znajdziesz [tutaj](./infosphere.md).
 
-## Podsumowanie
