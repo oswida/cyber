@@ -13,6 +13,33 @@ Autor gry: [Oskar Świda](https://twitter.com/OskarSwida).
 Cyber to gra fabularna o eksploracji mrocznego świata niedalekiej przyszłości, zdominowanego przez megakorporacje i technologię. Gracze wcielają się w mieszkańców gigantycznego metropolis - zatłoczonego, hałaśliwego miasta pełnego chciwości, obłudy i podejrzanych interesów.
 Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na granicy prawa jako wolni strzelcy do wynajęcia albo prowadzić ustabilizowane (aczkolwiek nie pozbawione wyzwań) życie członka jednej z tysięcy frakcji - od religijnych sekt po miejskie służby ratunkowe.
 
+- [Dokument referencyjny (w przygotowaniu)](#dokument-referencyjny-w-przygotowaniu)
+  - [Wstęp](#wstęp)
+  - [Tworzenie postaci](#tworzenie-postaci)
+    - [Imię, przeszłość, poziom kredytu](#imię-przeszłość-poziom-kredytu)
+    - [Poziomy zdolności](#poziomy-zdolności)
+    - [Ochrona przed trafieniem](#ochrona-przed-trafieniem)
+    - [Wyposażenie](#wyposażenie)
+  - [Zasady](#zasady)
+    - [Zdolności](#zdolności)
+    - [Dyskomfort i zmęczenie](#dyskomfort-i-zmęczenie)
+    - [Rzuty obronne](#rzuty-obronne)
+    - [Testy ułatwione i utrudnione](#testy-ułatwione-i-utrudnione)
+    - [Walka](#walka)
+    - [Ekonomia](#ekonomia)
+    - [Działania w Infosferze](#działania-w-infosferze)
+    - [Reakcje BN](#reakcje-bn)
+    - [Kość Przeznaczenia](#kość-przeznaczenia)
+  - [Rozwój postaci](#rozwój-postaci)
+    - [Fikcja](#fikcja)
+    - [Koncepcja blizn](#koncepcja-blizn)
+    - [Ulepszenia technologiczne i poziom kredytu](#ulepszenia-technologiczne-i-poziom-kredytu)
+  - [Technologia](#technologia)
+    - [Cybermodyfikacje](#cybermodyfikacje)
+    - [Infosfera](#infosfera)
+  - [Podsumowanie](#podsumowanie)
+
+
 ## Wstęp
 
 **Cyber** został zaprojektowany w oparciu o następujące zasady:
@@ -29,7 +56,7 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 
 ### Imię, przeszłość, poziom kredytu
 
-Wybierz imię dla swojej postaci oraz jej [przeszłość](./background.md), która informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera. 
+Wybierz imię dla swojej postaci oraz jej [przeszłość](./background.md), która informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera.
 Rzucając **1k4** wylosuj **poziom kredytu** postaci.
 
 ### Poziomy zdolności
@@ -38,7 +65,7 @@ Postacie graczy posiadają trzy współczynniki opisujące zdolności:
 
 - **Ciało (CIA)** - ogół cech fizycznych: budowa, wytrzymałość, zwinność, zręczność, refleks
 - **Psychika (PSY)** - ogół cech mentalnych i socjalnych: inteligencja, wiedza, siła woli, empatia, kontakty
-- **Interfejs (INT)** - cechy związane z wykorzystaniem technologii: umiejętności operowania w Infosferze, odporność na cyberatak, poziom integracji z [cybermodyfikacjami](./cybermod.md).
+- **Interfejs (INT)** - cechy związane z wykorzystaniem technologii: umiejętności operowania w Infosferze, odporność na cyberatak, poziom integracji z cybermodyfikacjami.
 
 Podczas tworzenia postaci, gracz powinien rzucić **3k6** kolejno dla każdej zdolności. Po wykonaniu wszystkich rzutów można wymienić wartości pomiędzy dwoma wybranymi zdolnościami.
 
@@ -63,13 +90,13 @@ Postać nie może nosić więcej przedmiotów niż pozwala na to łączna iloś�
 
 Wyposażenie startowe postaci jest zależne od jej pochodzenia.
 
-[Cybermodyfikacje](./cybermod.md) są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**. Ilość miejsc zajmowanych przez cybermodyfikację jest podana w jej opisie.
+Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**. Ilość miejsc zajmowanych przez cybermodyfikację jest podana w jej opisie.
 
 ## Zasady
 
 ### Zdolności
 
-Każda z trzech zdolności jest używana w innych sytuacjach (patrz rzuty obronne, poniżej).
+Każda z trzech zdolności jest używana w innych sytuacjach (patrz [rzuty obronne](#rzuty-obronne)).
 
 - **Ciało (CIA)** - w sytuacjach ryzykownych wymagających siły fizycznej, zręczności, zwinności czy wytrzymałości.
 - **Psychika (PSY)** - w przypadku kłopotów, których można uniknąć dzięki inteligencji, wiedzy, sile woli lub interakcjom społecznym.
@@ -124,9 +151,9 @@ Gra zazwyczaj toczy się bez ścisłego rozliczania czasu. W walce lub okoliczno
 
 #### Akcje
 
-W swojej turze postać może poruszyć się na odległość do 12 metrów i wykonać jedną akcję. Może to być atak, drugi ruch lub inne rozsądne działanie.
+W swojej turze postać może **poruszyć się** na odległość do 12 metrów i **wykonać jedną akcję**. Może to być atak, drugi ruch lub inne rozsądne działanie.
 
-W każdej rundzie, gracze deklarują co robią, zanim rzucone zostaną jakiekolwiek kości. Jeśli jakaś postać próbuje czegoś ryzykownego, prowadezący żąda od odpowiednich graczy lub BN wykonania rzutu obronnego. Wszystkie akcje, ataki i ruchy odbywają się jednocześnie.
+W każdej rundzie, gracze deklarują co robią, zanim rzucone zostaną jakiekolwiek kości. Jeśli jakaś postać próbuje czegoś ryzykownego, prowadzący żąda od odpowiednich graczy lub BN wykonania rzutu obronnego. Wszystkie akcje, ataki i ruchy odbywają się jednocześnie.
 
 #### Kolejność działań
 
@@ -138,7 +165,7 @@ Jeśli gracz chce zacząć działać przed przeciwnikami, to na początku walki 
 #### Atak i obrażenia
 
 Atakujący rzuca **kością obrażeń** dla swojej broni i odejmuje **pancerz** celu, a następnie zadaje pozostałą sumę do **OCHR** przeciwnika. Ataki **bez broni** zawsze zadają **1k4 obrażeń**.
-Jeśli liczba obrażeń przekracza aktualną OCHR przeciwnika, pozostałe punkty zmniejszają odpowiednią zdolność postaci (CIA dla walki w świecie fizycznym, INT dla starcia w Infosferze).
+Jeśli liczba obrażeń przekracza aktualną OCHR przeciwnika, pozostałe punkty **zmniejszają odpowiednią zdolność** postaci (CIA dla walki w świecie fizycznym, INT dla starcia w Infosferze).
 
 - Zredukowanie którejś ze zdolności postaci do zera oznacza:
   - CIA - śmierć fizyczną postaci
@@ -163,7 +190,7 @@ Dostępne kości ataku to: `k4, k6, k8, k10, k12`. W takim przypadku poziom osł
 
 #### Broń podwójna
 
-Jeśli atakujesz dwoma rodzajami broni jednocześnie, rzuć obiema kostkami obrażeń i zatrzymaj pojedynczy, najwyższy wynik.
+Jeśli atakujesz dwoma rodzajami broni jednocześnie, rzuć obiema kostkami obrażeń i zatrzymaj pojedynczy, **najwyższy** wynik.
 
 #### Podmuch
 
@@ -183,7 +210,7 @@ Gdy obrażenia zadane postaci w świecie fizycznym redukują jej OCHR **dokładn
 
 Zanim określisz obrażenia na OCHR, od wyniku rzutów na obrażenia odejmij wartość **Pancerza** celu. Tarcze, zbroje, cybermodyfikacje mogą zapewniać dodatkową obronę (np. +1 do pancerza), ale tylko wtedy, gdy przedmiot jest trzymany lub noszony.  
 
-Nikt nie może mieć więcej niż 3 punkty Pancerza.
+Nikt nie może mieć więcej niż **3 punkty** Pancerza.
 
 #### Odwrót
 
@@ -193,12 +220,12 @@ Ucieczka w trudnej sytuacji zawsze wymaga udanego rzutu obronnego odpowiedniej z
 
 Duże grupy podobnych wojowników walczących razem są traktowane jako pojedyncze **oddziały**. Kiedy oddział otrzymuje krytyczne obrażenia, zostaje rozproszony lub znacznie osłabiony. Kiedy osiągnie 0 SIŁ, zostaje zniszczony.
 
-Ataki jednostek na oddziały są **osłabione** (z wyjątkiem obrażeń od podmuchu).
-Ataki oddziałów na jednostki są wzmocnione i zadają obrażenia takie jak od podmuchu.
+Ataki jednostek na oddziały są [osłabione](#modyfikatory-ataku) (z wyjątkiem obrażeń od [podmuchu](#podmuch)).
+Ataki oddziałów na jednostki są [wzmocnione](#modyfikatory-ataku) i zadają obrażenia takie jak od [podmuchu](#podmuch).
 
 #### Morale
 
-Podczas starcia, gdy pierwszy z wrogów polegnie i ponownie, gdy grupa wrogów straci połowę swojej liczby - nieprzyjaciele muszą zdać test WOL, aby pozostać na polu bitwy. Niektóre grupy mogą używać WOL swojego lidera zamiast własnego. Samotni wrogowie muszą wykonać rzut obronny WOL gdy ich OCHR spadnie do zera. Morale nie stosuje się do postaci graczy.
+Podczas starcia, gdy pierwszy z wrogów polegnie i ponownie, gdy grupa wrogów straci połowę swojej liczby - nieprzyjaciele muszą zdać test PSY, aby pozostać na polu bitwy. Niektóre grupy mogą używać WOL swojego lidera zamiast własnego. Samotni wrogowie muszą wykonać rzut obronny PSY gdy ich OCHR spadnie do zera. Morale nie stosuje się do postaci graczy.
 
 #### Leczenie
 
@@ -279,7 +306,7 @@ Przed rzutem warto klarownie opisać graczom zarówno korzystne jak i niekorzyst
 
 ## Rozwój postaci
 
-W *Cyber* nie używamy pojęcia poziomu postaci ani idei punktów doświadczenia. Nie oznacza to jednak, że bohaterowie nie będą podlegali zmianom w trakcie kolejnych rozgrywek. 
+W *Cyber* nie używamy pojęcia poziomu postaci ani idei punktów doświadczenia. Nie oznacza to jednak, że bohaterowie nie będą podlegali zmianom w trakcie kolejnych rozgrywek.
 
 ### Fikcja
 
@@ -287,7 +314,7 @@ Zasadniczą koncepcją rozwoju w *Cyber* jest zmiana postaci w świecie gry. Zmi
 
 ### Koncepcja blizn
 
-[Blizny](#blizny), to klasyczny koncept rozwoju bazujący na podwyższaniu współczynników postaci, chociaż jego aktywacja jest uzależniona od wydarzeń w świecie gry (a dokładniej od przebiegu walki). Jego ideę można zawrzeć w następującym stwierdzeniu:
+[Blizny](#tabela-blizn), to klasyczny koncept rozwoju bazujący na podwyższaniu współczynników postaci, chociaż jego aktywacja jest uzależniona od wydarzeń w świecie gry (a dokładniej od przebiegu walki). Jego ideę można zawrzeć w następującym stwierdzeniu:
 
 *W trakcie walki zdarza się, że postać odnosi rany, które w sposób trwały wpływają na jej ciało lub umysł. Źródłem zmiany staje się wydarzenie (w tym przypadku walka), w którym postać brała udział*.
 
@@ -312,6 +339,8 @@ Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekrac
 
 Każda zainstalowana cybermodyfikacja zajmuje odpowiednią ilość miejsca w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
 
+Dokładniejsze opisy proponowanych cybermodyfikacji znajdziesz [tutaj](./cybermod.md).
+
 ### Infosfera
 
 Infosfera to globalna sieć komputerowa, która łączy niemal wszystkie urządzenia i systemy służące człowiekowi. Poszczególne skupiska danych określane są węzłami i reprezentowane jak odpowiedniki "miejsc" w świecie fizycznym.
@@ -330,5 +359,7 @@ Każda postać może wykonywać pewien zestaw standardowych czynności w Infosfe
 - dostęp do produktów i usług oferowanych w Infosferze
 
 Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżonej informacji wymagają odpowiednich cybermodyfikacji.
+
+Więcej informacji o Infosferze w grze znajdziesz [tutaj](./infosphere.md).
 
 ## Podsumowanie

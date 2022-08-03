@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ekwipunek
+title: Produkty i usługi
 parent: Dokumenty
 nav_order: 4
 ---
