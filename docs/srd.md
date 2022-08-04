@@ -16,7 +16,7 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 - [Dokument referencyjny](#dokument-referencyjny)
   - [Wstęp](#wstęp)
   - [Tworzenie postaci](#tworzenie-postaci)
-    - [Imię, przeszłość, poziom kredytu](#imię-przeszłość-poziom-kredytu)
+    - [Imię, przeszłość, majątek](#imię-przeszłość-majątek)
     - [Poziomy zdolności](#poziomy-zdolności)
     - [Ochrona przed trafieniem](#ochrona-przed-trafieniem)
     - [Wyposażenie](#wyposażenie)
@@ -33,7 +33,7 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
   - [Rozwój postaci](#rozwój-postaci)
     - [Fikcja](#fikcja)
     - [Koncepcja blizn](#koncepcja-blizn)
-    - [Ulepszenia technologiczne i poziom kredytu](#ulepszenia-technologiczne-i-poziom-kredytu)
+    - [Ulepszenia technologiczne](#ulepszenia-technologiczne)
   - [Technologia](#technologia)
     - [Cybermodyfikacje](#cybermodyfikacje)
     - [Infosfera](#infosfera)
@@ -52,10 +52,10 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 
 ## Tworzenie postaci
 
-### Imię, przeszłość, poziom kredytu
+### Imię, przeszłość, majątek
 
 Wybierz imię dla swojej postaci oraz jej [przeszłość](./background.md), która informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera.
-Rzucając **1k3** wylosuj **poziom kredytu** postaci.
+Rzuć **1k6** i pomnóż przez **1000** - to początkowa ilość kredytów, które posiada Twoja postać.
 
 ### Poziomy zdolności
 
@@ -166,7 +166,7 @@ Jeśli liczba obrażeń przekracza aktualną OCHR przeciwnika, pozostałe punkty
 - Zredukowanie którejś ze zdolności postaci do zera oznacza:
   - CIA - śmierć fizyczną postaci
   - PSY - poważne problemy psychiczne (fobie, lęki) wymagające specjalistycznej opieki lub społeczne (trwałe wykluczenie z pewnych środowisk)
-  - INT - blokadę dostępu do Infosfery na 24 godziny
+  - INT - blokadę dostępu do Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności ale nie mniej niż 24 godziny
 
 #### Wielu atakujących
 
@@ -252,7 +252,11 @@ Kiedy atak fizyczny zredukuje **OCHR postaci dokładnie do 0**, postać zostaje 
 
 ### Ekonomia
 
-Zakup nowego ekwipunku lub usług jest możliwy dzięki zdolności kredytowej. Każda postać posiada określony **poziom kredytu**, która odzwierciedla rodzaj i jakość przedmiotów, które można nabyć. Jeśli postać może sobie pozwolić na dany zakup, po prostu wpisuje zakupiony przedmiot do ekwipunku lub składuje go w miejscu, w którym może go przechować.
+Globalną walutą w grze jest kredyt oznaczany symbolem **ℂ**.
+
+Postacie zaczynają grę z pulą **1k6 * 1000** kredytów.
+
+<!-- Zakup nowego ekwipunku lub usług jest możliwy dzięki zdolności kredytowej. Każda postać posiada określony **poziom kredytu**, która odzwierciedla rodzaj i jakość przedmiotów, które można nabyć. Jeśli postać może sobie pozwolić na dany zakup, po prostu wpisuje zakupiony przedmiot do ekwipunku lub składuje go w miejscu, w którym może go przechować.
 
 Początkowy poziom kredytu postaci określa się rzutem **1k3**. Kredyt opisywany jest liczbami od 1 do 12, gdzie jeden to najniższy poziom.
 
@@ -266,14 +270,14 @@ W tym celu, zapłata za wykonaną pracę lub pozyskane i sprzedane przez graczy 
 Przy sprzedaży pozyskanych dóbr, maksymalna ilość punktów kredytowych jaką można za nie uzyskać wynosi ich wymagany poziom kredytu minus jeden.
 Przy zapłacie za wykonaną pracę - ilość punktów kredytowych zależy od trudności zadania i jest określana przez prowadzącego (najczęściej od 1 do 3 punktów).
 
-Szczegółowy wykaz produktów i usług oraz wymaganych poziomów kredytu znajdziesz [tutaj](./equipment.md).
+Szczegółowy wykaz produktów i usług oraz wymaganych poziomów kredytu znajdziesz [tutaj](./equipment.md). -->
 
 ### Działania w Infosferze
 
 **Konflikty w Infosferze** są rozstrzygane dokładnie tak samo jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs.
 Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest redukowana przez ataki jest Interfejs zamiast Ciała.
 
-**Blokada**: zredukowanie INT postaci do zera oznacza, że nie może ona korzystać z Infosfery przez następne 24 godziny.
+**Blokada**: zredukowanie INT postaci do zera oznacza, że nie może ona korzystać z Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności ale nie mniej niż 24 godziny.
 
 **Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INT. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest użycie odpowiednich cybermodyfikacji i wykonanie ataków. Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **poziom INT**.
 
@@ -314,14 +318,12 @@ Zasadniczą koncepcją rozwoju w *Cyber* jest zmiana postaci w świecie gry. Zmi
 
 *W trakcie walki zdarza się, że postać odnosi rany, które w sposób trwały wpływają na jej ciało lub umysł. Źródłem zmiany staje się wydarzenie (w tym przypadku walka), w którym postać brała udział*.
 
-### Ulepszenia technologiczne i poziom kredytu
+### Ulepszenia technologiczne
 
-Jedną z charakterystycznych cech nurtu cyberpunk jest wykorzystanie technologii do zwiększania ludzkich możliwości. Dla graczy, którzy dobrze czują się z mechanizmami podnoszenia współczynników postaci jest to więc opcja niemal idealna.
+Jedną z charakterystycznych cech nurtu cyberpunk jest wykorzystanie technologii do zwiększania ludzkich możliwości. Dla graczy, którzy dobrze czują się z mechanizmami podnoszenia współczynników postaci jest to kolejna opcja do wykorzystania.
 
 Cybermodyfikacje ograniczone są jedynie wyobraźnią grających i mogą zmieniać dosłownie każdy element mechaniczny gry: zdolności postaci, rodzaje rzutów obronnych, kości ataku, poziom OCHR czy pojemność ekwipunku.
 W ten sposób można dowolnie zmienić bohatera, staje się to jedynie kwestią pieniędzy i dostępności danych technologii.
-
-W takim modelu - zwiększanie poziomu kredytu postaci staje się głównym mechanizmem jej rozwoju.
 
 ## Technologia
 
@@ -335,7 +337,7 @@ Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekrac
 
 Każda zainstalowana cybermodyfikacja zajmuje odpowiednią ilość miejsca w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
 
-Dokładniejsze opisy proponowanych cybermodyfikacji znajdziesz [tutaj](./cybermod.md).
+<!-- Dokładniejsze opisy proponowanych cybermodyfikacji znajdziesz [tutaj](./cybermod.md). -->
 
 ### Infosfera
 
@@ -356,4 +358,4 @@ Każda postać może wykonywać pewien zestaw standardowych czynności w Infosfe
 
 Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżonej informacji wymagają odpowiednich cybermodyfikacji.
 
-Więcej informacji o Infosferze w grze znajdziesz [tutaj](./infosphere.md).
+<!-- Więcej informacji o Infosferze w grze znajdziesz [tutaj](./infosphere.md). -->

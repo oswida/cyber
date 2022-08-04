@@ -1,9 +1,9 @@
----
+<!-- ---
 layout: default
 title: Przeszłość
 parent: Dokumenty
 nav_order: 5
----
+--- -->
 
 # Przeszłość
 
