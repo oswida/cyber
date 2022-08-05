@@ -86,3 +86,189 @@ Zrezygnowałem, bo:
 ## Pracownik lokalu usługowego
 
 ## Pracownik komunalny
+
+
+1. Algae Cuisine Chef ​ - ​3 cubes of dehydrated
+food grade algae
+2. Algae Tank Sluice Operator​ - ​Waist-high
+wellies
+3. Android Repair Man​ - ​Electronic Repair Kit
+4. Android-Pop Star Manager​ - ​Earplugs
+5. Apocalyptic Street Preacher​ - ​Hollowed out
+bible
+6. Art Dealer​ - ​AI made collage box
+7. Asteroid Miner​ - ​Frequency resonator
+8. Astrodock Laborer​ - ​Magnetic boots
+9. Bartender​ - ​Expensive bottle of top-shelf
+hooch
+10. Biochemist​ - ​Vial of hormones
+11. Black Market SQUID Disc Dealer​ - 3​
+recorded SQUID disc
+12. Bootleg Animal Dealer​ - ​A small, living
+(artificial) animal.
+13. Buddhist Monk​ - ​Begging bowl
+14. Bureaucrat​ - ​Bulletproof clipboard
+15. Calorie Man​ - ​Hand crank generator
+16. Cashier at Opium Den Fast Food
+Restaurant​ - ​3 doses of opium
+17. Chatbot Backend​ - ​List of chatbot system
+passwords
+18. Cheetah Blood Drainer​ - ​Collar with tap
+19. CIA Informant​ - ​Bag of drugs
+20. Cirque de Solie Performer​ - ​50ft of silk
+21. Clone Decanter​ - ​Squeegee, rubber gloves
+22. Corporate Drone​ - ​ID card, stapler
+23. Corporate Geomancer​ - ​Geomancy tool
+24. Cosmonaut​ - ​Tattoos of Lenin and Putin over
+heart, old space suit
+25. Counterfeiter​ - ​Fake traveling papers or
+license
+26. Courier​ - ​Mysterious package
+27. Cyber Zen Guru​ - ​Recurrent wired vizzy
+28. Data Courier​ - ​Cranium drive augment
+29.
+30.
+31.
+32.
+33.
+34.
+35.
+36.
+37.
+38.
+39.
+40.
+41.
+42.
+43.
+44.
+45.
+46.
+47.
+48.
+49.
+50.
+51.
+52.
+53.
+54.
+55.
+56.
+Data Security​ - ​2 cassettes
+Deforester​ - ​Chainsaw
+DIY Pharmacist​ - ​Vial of strange drugs
+Drug Mule​ - ​Bag of drugs
+Environment Ministry Inspector​ - ​Breathing
+mask
+Experimental Moonshiner​ - J​ ar of high proof
+alcohol
+Feng Shui Consultant​ - F
+eng Shui compass
+Forklift Mech Construction Worker​ - ​Hard
+hat
+Furry Cult​ - ​Animal canine teeth implants
+(1d6 bite attack)
+Gene-Ripper​ - ​2 doses of CustomGenes​TM
+Genetically-modified Cat Exterminator​ -
+Hiku brand cat trap (slightly stained)
+Genetically-modified Elephant Handler​ -
+Pain inducer remote and collar
+Gunsmith​ - ​Weapon repair kit
+Handsome Weeping Boy (Ikemeso Danshi)​ -
+Fine silk suit
+Hemp Farmer​ - B
+ag of marijuana
+Hinterland Surrogate​ - B
+ag of drugs
+Hologram Artist​ - S​ tereoconversion goggles
+Horse Historian​ - ​Bag of horse bones
+HyperPolo Player​ - ​Polo motorcycle
+Implant Repo​ - D
+issection kit
+J-Pop Star Bodyguard​ - ​Earplugs
+Jailbreaker​ - ​Electronic repair kit
+Jeffery’s Tube Engineer​ - M
+echanics tool kit
+KGB Operative​ - ​1 dose of poison with
+umbrella for delivery, tattoo of Lennon and
+Putin
+Locksmith​ - ​Lockpicks
+Lunar Miner​ - ​Lunar pickaxe
+Machinist​ - ​Tool kit
+Mafia Family Member​ - ​Passcard to
+penthouse13
+57.
+58.
+59.
+60.
+61.
+62.
+63.
+64.
+65.
+66.
+67.
+68.
+69.
+70.
+71.
+72.
+73.
+74.
+75.
+76.
+77.
+78.
+79.
+80.
+81.
+82.
+83.
+84.
+85.
+86.
+87.
+Mall Santa​ - ​Wine stained fake beard
+Merchant Marine​ - ​Shipping charts
+Meth Cook​ - ​Bag of drugs
+Muay Thai Competitor​ - ​Glass laced
+knuckle-wraps
+Nail Salon Slave​ - ​Pain inducer collar and
+remote
+Nuclear Physicist​ - ​Slightly glowing rod
+Oil Rig Worker​ - ​Hard hat
+Organ Harvester​ - ​Dissection kit
+Organ Incubator​ - ​One extra organ of your
+choice
+Orphan Catcher​ - ​Handcuffs
+Panzerboy​ - ​Ignition key to a burnt out tank
+somewhere
+Paramedic​ - ​First aid kit
+Parkour Competitor​ - ​Climbing gloves
+Patent Classifier​ - ​Minus 1 will to live, 3
+stolen patent data discs
+Pimp​ - ​Little black book
+Pizza Delivery​ - ​Shitty car
+Pornographer​ - ​Holodisk of Android
+pornography
+Professional Apologizer​ - ​Auto-Tear duct
+augment
+Prostitute​ - ​Disease resistant patches
+Ramen Cook​ - ​3 packs of expensive ramen
+Rastafarian​ - ​Bag of weed
+Renraku Prostitute​ - ​Still installed “cutout
+switch”
+Rent-a-Cop​ - ​Security uniform
+Rickshaw Driver​ - ​Rickshaw
+Ringleader of traveling Android Circus​ -
+Top hat with PA system
+Rock Star​ - ​Electronic instrument
+Salary Man​ - ​Corporate handbook (full of
+oaths, company songs, and standard practices)
+Security Consultant​ - ​Remote motion sensor
+SimLife Star​ - ​Sense-record unit
+SimLife Star Impersonator​ - ​Fake
+sense-record unit
+Smack Supplier for Dolphins​ - H
+eroin kit
+(drug, lighter, spoon, needle)

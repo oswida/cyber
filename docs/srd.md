@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SRD
+title: Dokument referencyjny
 parent: Dokumenty
 nav_order: 1
 ---
@@ -27,16 +27,14 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
     - [Testy ułatwione i utrudnione](#testy-ułatwione-i-utrudnione)
     - [Walka](#walka)
     - [Ekonomia](#ekonomia)
-    - [Działania w Infosferze](#działania-w-infosferze)
+    - [Infosfera](#infosfera)
+    - [Cybermodyfikacje](#cybermodyfikacje)
     - [Reakcje BN](#reakcje-bn)
     - [Kość Przeznaczenia](#kość-przeznaczenia)
   - [Rozwój postaci](#rozwój-postaci)
     - [Fikcja](#fikcja)
     - [Koncepcja blizn](#koncepcja-blizn)
     - [Ulepszenia technologiczne](#ulepszenia-technologiczne)
-  - [Technologia](#technologia)
-    - [Cybermodyfikacje](#cybermodyfikacje)
-    - [Infosfera](#infosfera)
 
 ## Wstęp
 
@@ -55,7 +53,7 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 ### Imię, przeszłość, majątek
 
 Wybierz imię dla swojej postaci oraz jej [przeszłość](./background.md), która informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera.
-Rzuć **1k6** i pomnóż przez **1000** - to początkowa ilość kredytów, które posiada Twoja postać.
+Rzuć **1k3** i pomnóż przez **1000** - to początkowa ilość kredytów, które posiada Twoja postać.
 
 ### Poziomy zdolności
 
@@ -76,19 +74,20 @@ Rzuć **1k6** aby określić początkową wartość atrybutu **Ochrona przed tra
 
 ### Wyposażenie
 
-Postacie mają w sumie **10 miejsc** na ekwipunek. Miejsca te opisują dowolne sposoby przenoszenia/mocowania posiadanych przedmiotów. Mogą to być ręce, kieszenie, pas i inne elementy przymocowane na zewnątrz do ciała lub komponenty wmontowane na stałe w ciało bohatera. Jeśli jest to istotne, można poszczególnym miejscom dać oznaczenia wskazujące na ich specyfikę.
+Postacie mają w sumie **10 miejsc** na ekwipunek, przy czym każde z opisuje konkretną lokalizację lub funkcjonalność:
 
-Niektóre elementy wyposażenia (torby, plecaki, cybermodyfikacje, drony, roboty) mogą zwiększać tę przestrzeń dodając kolejne miejsca.
+- 2 miejsca  - **ręce** postaci, czyli to co bohater aktualnie trzyma - broń, narzędzia itp.
+- 2 miejsca - **ciało** postaci - dowolne miejsce typu plecy, pas, klatka piersiowa. Mogą służyć do zamocowania innego kontenera np. plecaka czy torby.
+- 6 miejsc - **cybermodyfikacje** lub **przedmioty** - te miejsca mogą być wykorzystane na zamontowanie cybermodyfikacji lub noszenie dodatkowych rzeczy. W ten sposób maksymalna ilość cybermodyfikacji dla postaci wynosi 6.
 
 Większość przedmiotów zajmuje jedno miejsce a małe przedmioty mogą być pakowane razem. Miejsca na ekwipunek są koncepcją abstrakcyjną i mogą być zmieniane przez prowadzącego wedle uznania.
 
-**Nieporęczne** przedmioty zajmują dwa miejsca i są zazwyczaj dwuręczne lub niewygodne do noszenia. Każda postać, która ma **pełny ekwipunek** (tzn. wypełnia wszystkie 10 miejsc) zostaje **zredukowana do 0 OCHR**.
+**Nieporęczne** przedmioty zajmują dwa miejsca i są zazwyczaj dwuręczne lub niewygodne do noszenia.
 
 Postać nie może nosić więcej przedmiotów niż pozwala na to łączna ilość miejsc ekwipunku.
 
-Wyposażenie startowe postaci jest zależne od jej pochodzenia.
-
-Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**. Ilość miejsc zajmowanych przez cybermodyfikację jest podana w jej opisie.
+Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 30 000 ℂ** .
+Każda cybermodyfikacja zajmuje jedno miejsce w ekwipunku.
 
 ## Zasady
 
@@ -127,7 +126,9 @@ Można to ująć tak:
 > Przykłady:
 >
 > Ada próbuje otworzyć zamek elektroniczny bez znajomości kodu więc wykonuje test INT. Zdany test oznacza, że udało jej się oszukać system i drzwi się otwierają.
+
 > Kumiko ściga się z pojazdem ochrony, który próbuje zajechać jej drogę. Manewry pojazdu zależne są od jej refleksu i zręczności więc musi wykonać test CIA. Zdany test oznacza, że da radę uciec ochronie.
+
 > Robert próbuje odnaleźć zaginionego członka rodziny, w tym celu zwraca się o pomoc do znajomego gangu ulicznego. Zdany test PSY oznacza, że uzyskał jakieś informacje na temat poszukiwanego.
 
 ### Testy ułatwione i utrudnione
@@ -254,25 +255,40 @@ Kiedy atak fizyczny zredukuje **OCHR postaci dokładnie do 0**, postać zostaje 
 
 Globalną walutą w grze jest kredyt oznaczany symbolem **ℂ**.
 
-Postacie zaczynają grę z pulą **1k6 * 1000** kredytów.
+Postacie zaczynają grę z pulą **1k3 * 1000** kredytów.
 
-<!-- Zakup nowego ekwipunku lub usług jest możliwy dzięki zdolności kredytowej. Każda postać posiada określony **poziom kredytu**, która odzwierciedla rodzaj i jakość przedmiotów, które można nabyć. Jeśli postać może sobie pozwolić na dany zakup, po prostu wpisuje zakupiony przedmiot do ekwipunku lub składuje go w miejscu, w którym może go przechować.
+Wszystkie podstawowe produkty i usługi takie jak żywność, sprzęt AGD, proste narzędzia itp. oferowane są w postaci miesięcznego abonamentu o różnym poziomie. Różnice leżą przede wszystkim w jakości tych artykułów a nie ich rodzaju.
+W sklepach produkty oznaczane są kolorową nalepką symbolizującą poziom abonamentu tak, żeby klient wiedział, które z nich może włożyć do koszyka.
+Wyjątkiem od tego systemu abonamentowego są artykuły, usługi i sprzęt specjalistyczny:
 
-Początkowy poziom kredytu postaci określa się rzutem **1k3**. Kredyt opisywany jest liczbami od 1 do 12, gdzie jeden to najniższy poziom.
+- broń i pancerz
+- pojazdy i drony
+- specjalistyczny sprzęt laboratoryjny, wojskowy, budowlany
+- usługi inżynierskie, badawcze, ochroniarskie
 
-Produkty i usługi mają z kolei **wymagany poziom kredytu**, który wyznacza granicę zdolności nabywczych postaci. <u>Postać nie może nabyć przedmiotu, którego wymagany poziom kredytu jest wyższy niż jej własny</u>.
+Część z wyjątków powyżej ma swoje oddzielne cenniki a pozostałe zależą od konkretnej potrzeby i oferty - będą zatem przedmiotem negocjacji pomiędzy postaciami graczy a bohaterami niezależnymi.
+Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów i może mieć dowolną cenę.
 
-Zakup **nielegalnego** produktu lub usługi wymaga dodatkowo **rzutu k12**. Wynik **większy lub równy** niż **wymagany poziom kredytu** oznacza, że udało się znaleźć dany produkt lub usługę.
+Szczegółowy wykaz produktów i usług oraz wymaganych poziomów kredytu znajdziesz [tutaj](./equipment.md).
 
-W *Cyber* nie ma określonej waluty ani cenników. Zdobywanie bogactwa (lub wpływów jakie można uzyskać dzięki pieniądzom) może się odbywać jedynie na zasadzie zwiększania poziomu kredytu.
-W tym celu, zapłata za wykonaną pracę lub pozyskane i sprzedane przez graczy dobra jest liczona w **punktach kredytowych**. Zdobycie **12 punktów** kredytowych pozwala postaci **zwiększyć o 1** swój poziom kredytu.
+### Infosfera
 
-Przy sprzedaży pozyskanych dóbr, maksymalna ilość punktów kredytowych jaką można za nie uzyskać wynosi ich wymagany poziom kredytu minus jeden.
-Przy zapłacie za wykonaną pracę - ilość punktów kredytowych zależy od trudności zadania i jest określana przez prowadzącego (najczęściej od 1 do 3 punktów).
+Infosfera to globalna sieć komputerowa, która łączy niemal wszystkie urządzenia i systemy służące człowiekowi. Poszczególne skupiska danych określane są węzłami i reprezentowane jak odpowiedniki "miejsc" w świecie fizycznym.
 
-Szczegółowy wykaz produktów i usług oraz wymaganych poziomów kredytu znajdziesz [tutaj](./equipment.md). -->
+Każda postać ma możliwość interakcji z siecią za pomocą awatara reprezentującego danego bohatera. Podłączenie do sieci nie wymaga dodatkowego wyposażenia i odbywa się w sposób bezprzewodowy.
 
-### Działania w Infosferze
+Istnieje możliwość zablokowania dostępu do Infosfery aczkolwiek wszelkie urządzenia, które to realizują są oficjalnie **nielegalne**.
+
+Wszystkie ryzykowne sytuacje w Infosferze są rozwiązywane za pomocą testu zdolności **Interfejs**. Podobnie jest z  obrażeniami, które przewyższają poziom OCHR postaci - powodują one zmniejszanie zdolności Interfejs zamiast zdolności Ciało.
+
+Każda postać może wykonywać pewien zestaw standardowych czynności w Infosferze:
+
+- wyszukiwanie informacji
+- kontakt z osobami o znanym adresie lub miejscami publicznymi
+- pozyskiwanie informacji publicznej
+- dostęp do produktów i usług oferowanych w Infosferze
+
+Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżonej informacji wymagają odpowiednich cybermodyfikacji.
 
 **Konflikty w Infosferze** są rozstrzygane dokładnie tak samo jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs.
 Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest redukowana przez ataki jest Interfejs zamiast Ciała.
@@ -284,6 +300,18 @@ Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest
 **Niszczenie danych**: Po zredukowaniu OCHR węzła do zera, gracz może nadal wykonywać atak ale tym razem będzie zmniejszał INT węzła. Zredukowanie **INT węzła do zera** oznacza bezpowrotne **zniszczenie danych lub programu** (o ile ich właściciel nie miał kopii zapasowej). Zmniejszanie INT węzła do wartości innych niż zero nie daje żadnych efektów w grze.
 
 **Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy zdać test INT. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
+
+**Logiczne Oprogramowanie Defensywne (LÓD)**: węzły Infosfery mogą posiadać automatyczne systemy ochronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie interakcji wykonują atak na postać, redukując jej INT.
+**Biały LOD**, po zredukowaniu INT postaci do zera zaprzestaje ataku a postać zostaje zablokowana w sieci.
+**Czarny LOD** (oficjalnie nielegalny), kontynuuje atak, utrzymując połączenie sieciowe i uszkadzając PSY bohatera.
+
+### Cybermodyfikacje
+
+Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekraczającej poziomu zdolności **Interfejs podzielonej przez 3** (zaokrąglenie w górę).
+
+> Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
+
+Każda zainstalowana cybermodyfikacja zajmuje odpowiednią ilość miejsca w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
 
 ### Reakcje BN
 
@@ -324,38 +352,3 @@ Jedną z charakterystycznych cech nurtu cyberpunk jest wykorzystanie technologii
 
 Cybermodyfikacje ograniczone są jedynie wyobraźnią grających i mogą zmieniać dosłownie każdy element mechaniczny gry: zdolności postaci, rodzaje rzutów obronnych, kości ataku, poziom OCHR czy pojemność ekwipunku.
 W ten sposób można dowolnie zmienić bohatera, staje się to jedynie kwestią pieniędzy i dostępności danych technologii.
-
-## Technologia
-
-Technologia to temat wiodący w tej grze. Jest dostępna, wszechobecna, potężna i niebezpieczna.
-
-### Cybermodyfikacje
-
-Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekraczającej poziomu zdolności **Interfejs podzielonej przez 3** (zaokrąglenie w górę).
-
-> Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
-
-Każda zainstalowana cybermodyfikacja zajmuje odpowiednią ilość miejsca w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
-
-<!-- Dokładniejsze opisy proponowanych cybermodyfikacji znajdziesz [tutaj](./cybermod.md). -->
-
-### Infosfera
-
-Infosfera to globalna sieć komputerowa, która łączy niemal wszystkie urządzenia i systemy służące człowiekowi. Poszczególne skupiska danych określane są węzłami i reprezentowane jak odpowiedniki "miejsc" w świecie fizycznym.
-
-Każda postać ma możliwość interakcji z siecią za pomocą awatara reprezentującego danego bohatera. Podłączenie do sieci nie wymaga dodatkowego wyposażenia i odbywa się w sposób bezprzewodowy.
-
-Istnieje możliwość zablokowania dostępu do Infosfery aczkolwiek wszelkie urządzenia, które to realizują są oficjalnie **nielegalne**.
-
-Wszystkie ryzykowne sytuacje w Infosferze są rozwiązywane za pomocą testu zdolności **Interfejs**. Podobnie jest z  obrażeniami, które przewyższają poziom OCHR postaci - powodują one zmniejszanie zdolności Interfejs zamiast zdolności Ciało.
-
-Każda postać może wykonywać pewien zestaw standardowych czynności w Infosferze:
-
-- wyszukiwanie informacji
-- kontakt z osobami o znanym adresie lub miejscami publicznymi
-- pozyskiwanie informacji publicznej
-- dostęp do produktów i usług oferowanych w Infosferze
-
-Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżonej informacji wymagają odpowiednich cybermodyfikacji.
-
-<!-- Więcej informacji o Infosferze w grze znajdziesz [tutaj](./infosphere.md). -->

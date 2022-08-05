@@ -1,128 +1,82 @@
-<!-- ---
+---
 layout: default
 title: Produkty i usługi
 parent: Dokumenty
 nav_order: 4
---- -->
+---
 
 # Produkty i usługi
 
-Produkty i usługi mają **wymagany poziom kredytu**, który wyznacza granicę zdolności nabywczych postaci.
+Zakup produktów i usług odbywa się przy użyciu globalnej waluty określanej mianem kredytu ( **ℂ** ).
 
-<u>Postać nie może nabyć przedmiotu, którego wymagany poziom kredytu jest wyższy niż jej własny</u>.
+W *Cyber* gracze nie będą jednak czytali opasłych cenników ani analizowali setek tabelek. W globalnym świecie dostarczanie produktów codziennego użytku również zostało opanowane przez korporacje.
 
-Zakup **nielegalnego** produktu lub usługi wymaga dodatkowo **rzutu k12**. Wynik **większy lub równy** niż **wymagany poziom kredytu** oznacza, że udało się znaleźć dany produkt lub usługę. Produkty nielegalne zostały oznaczone poniżej symbolem `(N)`.
+Wszystkie **podstawowe produkty i usługi** takie jak żywność, sprzęt AGD, proste narzędzia itp. oferowane są w postaci miesięcznego **abonamentu** o różnym poziomie. Różnice leżą przede wszystkim w jakości tych artykułów a nie ich rodzaju.
+W sklepach produkty oznaczane są kolorową nalepką symbolizującą poziom abonamentu tak, żeby klient wiedział, które z nich może włożyć do koszyka.
 
-## Poziom 1
+Każdy z abonamentów oferuje przedmioty, które mają pewne prawdopodobieństwo uszkodzenia (żywność może być nieświeża). Przed lub po każdym użyciu przedmiotu (wybór należy do grających), należy rzucić 1k6, wyniki 1,2,3 (w zależności od abonamentu) mogą oznaczać, że przedmiot uległ uszkodzeniu lub usługa została zrealizowana nierzetelnie. Postać może oczywiście ponownie uzyskać przedmiot lub usługę ale zajmie to czas.
 
-- żywność do własnej obróbki
-- komunikacja publiczna
-- dostęp do Infosfery
-- publiczna rozrywka popularna
-- miejsce do spania
-- proste ubranie
-- narkotyki podłej jakości (N)
+Wyjątkiem od tego systemu abonamentowego są artykuły, usługi i sprzęt specjalistyczny:
 
-## Poziom 2
+- broń i pancerz
+- pojazdy i drony
+- specjalistyczny sprzęt laboratoryjny, wojskowy, budowlany
+- usługi inżynierskie, badawcze, ochroniarskie
 
-- jedzenie w barze
-- rozrywka spersonalizowana (gry komputerowe, platformy streamingowe)
-- podstawowa opieka medyczna (przychodnia)
-- niewielkie mieszkanie
-- wynajęcie osobowego pojazdu naziemnego
-- broń do walki wręcz: pałki, noże, maczety, łuki
-- ubrania średniej jakości
-- pojazdy typu rower, hulajnoga elektryczna itp.
-- narkotyki średniej jakości (N)
+Część z wyjątków powyżej ma swoje oddzielne cenniki a pozostałe zależą od konkretnej potrzeby i oferty - będą zatem przedmiotem negocjacji pomiędzy postaciami graczy a bohaterami niezależnymi.
+Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów i może mieć dowolną cenę.
 
-### Poziom 3
+## Cenniki
 
-- podstawowa opieka medyczna (szpital)
-- mieszkanie średniej wielkości
-- osobowe pojazdy lądowe
-- broń palna krótka: pistolety, rewolwery, tasery (N)
-- usługi użytkowe: fryzjer, kosmetyczka, hydraulik, elektryk
-- ubrania dobrej jakości
-- narkotyki dobrej jakości (N)
+| Abonament podstawowy | Cena / miesiąc | Prawdop. uszkodzenia |
+| :------------------: | :------------: | :------------------: |
+|       Brązowy        |      500       |        1-3/6         |
+|       Srebrny        |      1000      |        1-2/6         |
+|        Złoty         |      2000      |         1/6          |
+|      Platynowy       |      5000      |          -           |
 
-### Poziom 4
+| Kontener | Cena  | Sloty ekwipunku |
+| -------- | :---: | :-------------: |
+| Torba    |  200  |       +2        |
+| Walizka  |  300  |       +3        |
+| Plecak   |  400  |       +4        |
+| Wózek    |  600  |       +6        |
 
-- jedzenie w restauracji
-- rozrywka na żywo
-- rozszerzona opieka medyczna (ratownictwo, szpital)
-- apartament
-- transportowe pojazdy lądowe
-- wojskowe pojazdy lądowe (N)
-- wynajęcie osobowego pojazdu powietrznego
-- broń palna długa: strzelby, sztucery, karabiny (N)
-- eleganckie ubrania
-- usługi specjalistyczne: detektyw, fotograf, kierowca, analityk danych
-- przedmioty drobne z przemytu: elektronika, AGD, media (N)
+| Broń                               | Cena  |  Obrażenia  | Uwagi       |
+| ---------------------------------- | :---: | :---------: | ----------- |
+| Biała (lekka)                      |  100  |     k6      |             |
+| Biała (średnia)                    |  400  |     k8      |             |
+| Biała (ciężka)                     |  650  |     k10     | nieporęczna |
+| Dystansowa (bliski zasięg)         |  150  |     k6      |             |
+| Dystansowa (średni zasięg)         |  600  |     k8      |             |
+| Dystansowa (średni zasięg, cięzka) |  600  |     k10     | nieporęczna |
+| Dystansowa (daleki zasięg, ciężka) | 1500  |     k12     | nieporęczna |
+| Granaty                            |  150  | k6, podmuch |             |
+| Mikroładunki                       |  100  |     k4      |             |
 
-### Poziom 5
+| Pancerz | Cena  | Wartość | Uwagi       |
+| ------- | :---: | :-----: | ----------- |
+| Lekki   |  200  |    1    |             |
+| Średni  |  500  |    2    |             |
+| Ciężki  | 1100  |    3    | nieporęczny |
+| Tarcza  | 1200  |   +1    |             |
 
-- drony, części i wyposażenie
-- zawodowy sprzęt specjalistyczny: obiektywy, kamery, narzędzia, warsztat
-- usługi luksusowe: prawnik, ochroniarz, modystka, influencer
-- prywatna opieka medyczna
-- broń palna automatyczna (N)
-- fałszowane dokumenty i tożsamości (N)
-- osobowe pojazdy powietrzne i wodne
-- broń chemiczna (N)
-- najemnicy z  półświatka: mięśniak, złodziej, dealer
-- prywatna baza danych w Infosferze na współdzielonym węźle (OCHR 1, INT 2)
+| Drony, pojazdy, roboty                        |           Cena            | Sloty bagażowe |
+| --------------------------------------------- | :-----------------------: | :------------: |
+| Mały  dron/robot                              |           1000            |       +1       |
+| Średni  dron/robot                            |           5000            |       +2       |
+| Duży    dron /robot                           |           10000           |       +3       |
+| Transportowy dron/robot                       |           20000           |       +5       |
+| Mały  pojazd                                  |           5000            |       +1       |
+| Średni    pojazd                              |           7000            |       +2       |
+| Duży       pojazd                             |           10000           |       +3       |
+| Pojazd transportowy                           |           20000           |       +5       |
+| Wyposażenie dodatkowe (kamery, czujniki itp.) |           1000            |       -        |
+| Uzbrojenie                                    | rodzaj kości ataku * 1000 |       -        |
 
-### Poziom 6
-
-- małe roboty wielofunkcyjne i specjalizowane, części, wyposażenie
-- usługi medialne: akcje reklamowe, dezinformacja, poprawa wizerunku
-- podsłuchy fizyczne i śledzenie w sieci (N)
-- transportowe pojazdy powietrzne i wodne
-- wojskowe pojazdy powietrzne i wodne (N)
-- broń biologiczna (N)
-- broń przeciwpancerna (N)
-- spersonalizowana opieka medyczna i ratownictwo
-- najemnicy z  półświatka: gang uliczny, szajka porywaczy
-- prywatny węzeł w Infosferze (OCHR 3, INT 3)
-
-### Poziom 7
-
-- urządzenia zagłuszające sygnały radiowe (N)
-- duże roboty wielofunkcyjne i specjalizowane, części, wyposażenie
-- lądowe pojazdy pancerne (N)
-- broń rakietowa (N)
-- popularne zakłady usługowe: bar, fryzjer, klub, siłownia, sklep
-- specjaliści z półświatka: zabójca, haker, kucharz
-- wynajęcie naukowca
-- bezpieczny węzeł w Infosferze (OCHR 6, INT 3)
-
-### Poziom 8
-
-- powietrzne pojazdy pancerne (N)
-- łódź podwodna (N)
-- narzędzia do naprawy i instalacji cybermodyfikacji
-- chroniony węzeł w Infosferze (OCHR 6, INT 6, 1 chroniący haker OCHR 3 INT 10)
-
-### Poziom 9
-
-- niewielki salon cybermodyfikacji
-- prywatny kanał na satelicie
-- forteca danych w Infosferze (OCHR 10, INT 10, 1k4 chroniących hakerów OCHR 3 INT 10)
-
-### Poziom 10
-
-- szpital
-- mała fabryka
-- rakiety kontynentalne z głowicami jądrowymi (N)
-- okręty wojenne (N)
-
-### Poziom 11
-
-- satelita telekomunikacyjny
-- satelita bojowy (N)
-
-### Poziom 12
-
-- średniej wielkości *zaibatsu*
-- prywatna armia
-- laboratoria broni biologicznej i chemicznej (N)
+| Węzeł Infosfery      |       Cena/miesiąc        |
+| -------------------- | :-----------------------: |
+| +1 OCHR              |           2000            |
+| +1 INT               |           5000            |
+| Biały LOD            | rodzaj kości ataku * 1000 |
+| Czarny LOD (nieleg.) | rodzaj kości ataku * 5000 |

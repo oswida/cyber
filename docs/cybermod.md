@@ -7,6 +7,10 @@ nav_order: 2
 
 # Cybermodyfikacje
 
+Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 30 000 ℂ** .
+Każda cybermodyfikacja zajmuje jedno miejsce w ekwipunku.
+
+
 ## Podstawowe
 
 Wszystkie bazowe cybermody mają wymagany poziom kredytu równy 3.
