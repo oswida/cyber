@@ -83,3 +83,10 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | +1 INT               |           5000            |
 | Biały LOD            | rodzaj kości ataku * 1000 |
 | Czarny LOD (nieleg.) | rodzaj kości ataku * 5000 |
+
+
+| Usługi medyczno/naprawcze         | Cena  |    Czas    |
+| --------------------------------- | :---: | :--------: |
+| Pomoc medyczna za 1 pkt CIA       | 2000  | 1  tydzień |
+| Pomoc psychologiczna za 1 pkt PSY | 1500  | 1 tydzień  |
+| Naprawa interfejsu za 1 pkt INT   | 2000  |  1 dzień   |

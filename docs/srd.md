@@ -104,8 +104,6 @@ Postać pozbawiona możliwości zaspokojenia kluczowej potrzeby (takiej jak jedz
 Każda osoba odczuwająca dyskomfort przez więcej niż jeden dzień, dodaje do swojego ekwipunku **Zmęczenie**, jedno na każdy dzień.
 Każde Zmęczenie blokuje jedno miejsce ekwipunku i trwa do czasu, aż postać będzie w stanie się zregenerować (np. odpoczywając całą noc w bezpiecznym miejscu). Po wypoczynku, postać odzyskuje *wszystkie* zajęte miejsca.
 
-Uwaga: zajmowanie miejsc w ekwipunku przez utrzymujący się stan Zmęczenia prowadzi w końcu do sytuacji, gdzie wszystkie miejsca zostają zajęte a OCHR bohatera spada do zera.
-
 Miejsca zablokowane przez Zmęczenie nie mogą być wykorzystane do noszenia ekwipunku, jeśli gracz musi zaznaczyć Zmęczenie na miejscu już zajętym przez jakiś przedmiot, rzecz tę należy odłożyć lub wyrzucić.
 Jeśli przedmiotem zajmującym zablokowane miejsce jest cybermodyfikacja - przestaje ona działać do momentu pozbycia się Zmęczenia.
 
@@ -160,7 +158,10 @@ Jeśli gracz chce zacząć działać przed przeciwnikami, to na początku walki 
 
 #### Atak i obrażenia
 
-Atakujący rzuca **kością obrażeń** dla swojej broni i odejmuje **pancerz** celu, a następnie zadaje pozostałą sumę do **OCHR** przeciwnika. Ataki **bez broni** zawsze zadają **1k4 obrażeń**.
+Atakujący rzuca **kością obrażeń** dla swojej broni i dla obrażeń fizycznych (zadawanych w CIA) odejmuje **pancerz** celu, a następnie odejmuje pozostałą liczbę obrażeń od **OCHR** przeciwnika.
+
+Ataki **bez broni** zawsze zadają **1k4 obrażeń**.
+
 Jeśli liczba obrażeń przekracza aktualną OCHR przeciwnika, pozostałe punkty **zmniejszają odpowiednią zdolność** postaci (CIA dla walki w świecie fizycznym, INT dla starcia w Infosferze lub broni EMP).
 
 - Zredukowanie którejś ze zdolności postaci do zera oznacza:
@@ -204,13 +205,13 @@ Każda postać, która otrzyma obrażenia krytyczne w INT, zostaje unieruchomion
 
 #### Pancerz
 
-Zanim określisz obrażenia na OCHR, od wyniku rzutów na obrażenia odejmij wartość **Pancerza** celu. Tarcze, zbroje, cybermodyfikacje mogą zapewniać dodatkową obronę (np. +1 do pancerza), ale tylko wtedy, gdy przedmiot jest trzymany lub noszony.  
+Jeśli walczysz w świecie fizycznym, zanim określisz obrażenia na OCHR, od wyniku rzutów na obrażenia odejmij wartość **Pancerza** celu. Tarcze, zbroje, cybermodyfikacje mogą zapewniać dodatkową obronę (np. +1 do pancerza), ale tylko wtedy, gdy przedmiot jest trzymany lub noszony.  
 
 Nikt nie może mieć więcej niż **3 punkty** Pancerza.
 
 #### Odwrót
 
-Ucieczka w trudnej sytuacji zawsze wymaga udanego rzutu obronnego odpowiedniej zdolności (tej samej, którą testuje się obronę przed atakiem), jak również bezpiecznego miejsca, do którego można uciec.
+Ucieczka w trudnej sytuacji zawsze wymaga udanego rzutu obronnego odpowiedniej zdolności (CIA dla walki fizycznej, INT w Infosferze), jak również bezpiecznego miejsca, do którego można uciec.
 
 #### Oddziały
 
@@ -221,19 +222,19 @@ Ataki oddziałów na jednostki są [wzmocnione](#modyfikatory-ataku) i zadają o
 
 #### Morale
 
-Podczas starcia, gdy pierwszy z wrogów polegnie i ponownie, gdy grupa wrogów straci połowę swojej liczby - nieprzyjaciele muszą zdać test PSY, aby pozostać na polu bitwy. Niektóre grupy mogą używać PSY swojego lidera zamiast własnego. Samotni wrogowie muszą wykonać rzut obronny PSY gdy ich OCHR spadnie do zera. Morale nie stosuje się do postaci graczy.
+Podczas starcia, gdy pierwszy z wrogów polegnie i ponownie, gdy grupa wrogów straci połowę swojej liczby - nieprzyjaciele muszą zdać test **PSY**, aby pozostać na polu bitwy. Niektóre grupy mogą używać **PSY swojego lidera** zamiast własnego. Samotni wrogowie muszą wykonać rzut obronny PSY gdy ich OCHR spadnie do zera. Morale nie stosuje się do postaci graczy.
 
 #### Leczenie
 
 Odpoczynek przez kilka chwil przywraca utracone punkty OCHR, ale może narazić postać na niebezpieczeństwo.
 
-Utracone punkty zdolności można zazwyczaj przywrócić poprzez tygodniowy odpoczynek wspomagany przez systemy medyczne lub odpowiedniego specjalistę.
+Utracone punkty CIA lub PSY można zazwyczaj przywrócić poprzez tygodniowy odpoczynek wspomagany przez systemy medyczne lub odpowiedniego specjalistę.
 
-Niektóre cybermodyfikacje mogą przyspieszać leczenie.
+Utracone punkty INT wymagają wizyty u specjalisty od naprawy interfejsów lub samodzielnej naprawy.
 
 ### Ekonomia
 
-Globalną walutą w grze jest kredyt oznaczany symbolem **ℂ**.
+Globalną walutą w grze jest **kredyt** oznaczany symbolem **ℂ**.
 
 Postacie zaczynają grę z pulą **1k3 * 1000** kredytów.
 
@@ -244,7 +245,7 @@ Wyjątkiem od tego systemu abonamentowego są artykuły, usługi i sprzęt specj
 - broń i pancerz
 - pojazdy i drony
 - specjalistyczny sprzęt laboratoryjny, wojskowy, budowlany
-- usługi inżynierskie, badawcze, ochroniarskie
+- usługi inżynierskie, badawcze, ochroniarskie, medyczne, naprawcze
 
 Część z wyjątków powyżej ma swoje oddzielne cenniki a pozostałe zależą od konkretnej potrzeby i oferty - będą zatem przedmiotem negocjacji pomiędzy postaciami graczy a bohaterami niezależnymi.
 Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów i może mieć dowolną cenę.
@@ -281,7 +282,7 @@ Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest
 
 **Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy zdać test INT. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
 
-**Logiczne Oprogramowanie Defensywne (LÓD)**: węzły Infosfery mogą posiadać automatyczne systemy ochronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie interakcji wykonują atak na postać, redukując jej INT. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
+**Logiczne Oprogramowanie Defensywne (LÓD)**: węzły Infosfery mogą posiadać automatyczne systemy obronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie hakowania wykonują atak na postać, redukując jej INT. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
 
 **Czarny LOD** (oficjalnie nielegalny), posiada dodatkową cechę:
 
