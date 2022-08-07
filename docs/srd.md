@@ -33,7 +33,6 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
     - [Kość Przeznaczenia](#kość-przeznaczenia)
   - [Rozwój postaci](#rozwój-postaci)
     - [Fikcja](#fikcja)
-    - [Koncepcja blizn](#koncepcja-blizn)
     - [Ulepszenia technologiczne](#ulepszenia-technologiczne)
 
 ## Wstęp
@@ -162,12 +161,12 @@ Jeśli gracz chce zacząć działać przed przeciwnikami, to na początku walki 
 #### Atak i obrażenia
 
 Atakujący rzuca **kością obrażeń** dla swojej broni i odejmuje **pancerz** celu, a następnie zadaje pozostałą sumę do **OCHR** przeciwnika. Ataki **bez broni** zawsze zadają **1k4 obrażeń**.
-Jeśli liczba obrażeń przekracza aktualną OCHR przeciwnika, pozostałe punkty **zmniejszają odpowiednią zdolność** postaci (CIA dla walki w świecie fizycznym, INT dla starcia w Infosferze).
+Jeśli liczba obrażeń przekracza aktualną OCHR przeciwnika, pozostałe punkty **zmniejszają odpowiednią zdolność** postaci (CIA dla walki w świecie fizycznym, INT dla starcia w Infosferze lub broni EMP).
 
 - Zredukowanie którejś ze zdolności postaci do zera oznacza:
   - CIA - śmierć fizyczną postaci
-  - PSY - poważne problemy psychiczne (fobie, lęki) wymagające specjalistycznej opieki lub społeczne (trwałe wykluczenie z pewnych środowisk)
-  - INT - blokadę dostępu do Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności ale nie mniej niż 24 godziny
+  - PSY - katatonię a po potencjalnym wyleczeniu, poważne problemy psychiczne (fobie, lęki) wymagające specjalistycznej opieki lub społeczne (trwałe wykluczenie z pewnych środowisk)
+  - INT - blokadę dostępu do Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności ale nie mniej niż 24 godziny i awarię wszystkich cybermodyfikacji
 
 #### Wielu atakujących
 
@@ -195,13 +194,13 @@ Ataki z cechą **Podmuch** wpływają na wszystkie cele w oznaczonym obszarze i 
 
 #### Obrażenia krytyczne
 
-Obrażenia fizyczne, które redukują OCHR celu poniżej zera, zmniejszają CIA celu o ich pozostałą ilość. Ofiara musi wykonać rzut obronny CIA (już po redukcji), aby uniknąć **obrażeń krytycznych**. Dodatkowo, niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zaliczy testu na obrażenia krytyczne.
+Obrażenia, które redukują OCHR celu poniżej zera, zmniejszają CIA/INT celu o ich pozostałą ilość. Ofiara musi wykonać rzut obronny CIA/INT (już po redukcji), aby uniknąć **obrażeń krytycznych**. Dodatkowo, niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zaliczy testu na obrażenia krytyczne.
 
-Każda postać, która otrzyma obrażenia krytyczne, nie może zrobić nic poza słabym czołganiem się i kurczowym chwytaniem się resztek życia. Jeśli otrzyma pomoc i będzie mogła odpocząć, jej stan ulegnie stabilizacji. Jeśli postać nie będzie leczona, umrze w ciągu godziny.
+Każda postać, która otrzyma obrażenia krytyczne w CIA, nie może zrobić nic poza słabym czołganiem się i kurczowym chwytaniem się resztek życia. Jeśli otrzyma pomoc i będzie mogła odpocząć, jej stan ulegnie stabilizacji. Jeśli postać nie będzie leczona, umrze w ciągu godziny.
 
-#### Blizny
+Każda postać, która otrzyma obrażenia krytyczne w INT, zostaje unieruchomiona w Infosferze (nie może się przemieszczać pomiędzy węzłami) lub wszystkie jej cybermodyfikacje przestają działać jeśli operuje w świecie fizycznym.
 
-Gdy obrażenia zadane postaci w świecie fizycznym redukują jej OCHR **dokładnie do 0**, bohater może doznać nieodwracalnych zmian. Aby dowiedzieć się więcej obejrzyj [Tabelę blizn](#tabela-blizn).
+**Czarny LOD** oraz **broń EMP** posiadają dodatkowy efekt obrażeń krytycznych: *"zadaj tyle punktów obrażeń w PSY celu ile zostało zadanych w INT w tej turze"*.
 
 #### Pancerz
 
@@ -231,25 +230,6 @@ Odpoczynek przez kilka chwil przywraca utracone punkty OCHR, ale może narazić 
 Utracone punkty zdolności można zazwyczaj przywrócić poprzez tygodniowy odpoczynek wspomagany przez systemy medyczne lub odpowiedniego specjalistę.
 
 Niektóre cybermodyfikacje mogą przyspieszać leczenie.
-
-#### Tabela Blizn
-
-Kiedy atak fizyczny zredukuje **OCHR postaci dokładnie do 0**, postać zostaje nieodwracalnie i niepowtarzalnie zmieniona. Sprawdź wynik w tabeli poniżej w oparciu o **całkowite zadane obrażenia**:
-
-|     |                                                                                                                                                                                                                                                                                                                          |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | Trwała blizna: Rzuć 1k6 &#124; 1: Kark, 2: Ręce, 3: Oko, 4: Klatka piersiowa, 5: Nogi, 6: Ucho. Rzuć 1k6. Jeśli suma jest wyższa niż twoja maksymalna OCHR,  wynik staje się twoją nową maksymalną OCHR.                                                                                                                 |
-| 2   | Gruchoczący cios: Jesteś zdezorientowany i roztrzęsiony. Opisz, jak się koncentrujesz. Rzuć 1k6. Jeśli suma jest wyższa niż twoja maksymalna OCHR,  wynik staje się twoją nową maksymalną OCHR.                                                                                                                          |
-| 3   | Powalony: Zostajesz wysłany w powietrze i lądujesz płasko na twarzy. Odczuwasz dyskomfort, dopóki nie odpoczniesz przez kilka godzin. Następnie, rzuć 1k6. Dodaj tę liczbę do swojej maksymalnej OCHR.                                                                                                                   |
-| 4   | Złamana kość: Rzuć 1k6 &#124; 1-2: Noga, 3-4: Ramię, 5: Żebro, 6: Czaszka. Po zrośnięciu, rzuć 2k6. Jeśli suma jest wyższa niż twoja maksymalna OCHR,  wynik staje się twoją nową maksymalną OCHR.                                                                                                                       |
-| 5   | Choroba: Cierpisz na obrzydliwą, nieprzyjemną infekcję. Kiedy wydobrzejesz, rzuć 2k6. Jeśli suma jest wyższa niż twoja maksymalna OCHR,  wynik staje się twoją nową maksymalną OCHR.                                                                                                                                     |
-| 6   | Poważna rana głowy: Rzuć 1k6 &#124; 1-2: CIA, 3-4: PSY, 5-6: INT. Rzuć 3k6. Jeśli wynik jest wyższy niż aktualny poziom zdolności, staje się on nową wartością wskazanej cechy.                                                                                                                                          |
-| 7   | Wstrząs: Ledwo możesz się poruszać, dopóki nie otrzymasz poważnej pomocy i nie odpoczniesz. Po wyzdrowieniu, rzuć 3k6. Jeśli suma jest wyższa niż twoja maksymalna wartość CIA, nowy wynik staje się nową maksymalną wartością.                                                                                          |
-| 8   | Ogłuszenie: Nic nie słyszysz dopóki nie uzyskasz jakiejś wyjątkowej pomocy. Niezależnie od tego, wykonaj rzut obronny PSY. Jeśli test się uda, zwiększ swoją maksymalną PSY o 1k4.                                                                                                                                       |
-| 9   | Uraz psychiczny: Jakaś ukryta część twojej psychiki została wytrącona z równowagi. Rzuć 3k6. Jeśli suma jest wyższa niż twoja maksymalna wartość PSY, nowy wynik staje się nową maksymalną wartością.                                                                                                                    |
-| 10  | Utrata kończyny: Kończyna została oderwana, jest kaleka lub bezużyteczna. Strażnik określi, która to kończyna. Następnie wykonaj rzut obronny PSY. Jeśli test się uda, zwiększ swoją maksymalną wartość PSY o 1k6.                                                                                                       |
-| 11  | Śmiertelna rana: Odczuwasz dyskomfort i zostajesz wyłączony z gry. Umierasz w ciągu godziny, chyba że zostaniesz uleczony. Po wyzdrowieniu, rzuć 2k6. Wynik staje się twoją nową maksymalną OCHR.                                                                                                                        |
-| 12  | Skazany na zagładę: Śmierć wydawała się bliska, ale jakoś udało ci się przeżyć. Jeśli twój następny rzut obronny przeciwko obrażeniom krytycznym jest nieudany, umierasz okropną śmiercią. Jeśli zdasz test, rzuć 3k6. Jeśli suma jest większa niż twoje maksymalne OCHR, weź nowy wynik jako aktualną, maksymalną OCHR. |
 
 ### Ekonomia
 
@@ -301,9 +281,11 @@ Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest
 
 **Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy zdać test INT. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
 
-**Logiczne Oprogramowanie Defensywne (LÓD)**: węzły Infosfery mogą posiadać automatyczne systemy ochronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie interakcji wykonują atak na postać, redukując jej INT.
-**Biały LOD**, po zredukowaniu INT postaci do zera zaprzestaje ataku a postać zostaje zablokowana w sieci.
-**Czarny LOD** (oficjalnie nielegalny), kontynuuje atak, utrzymując połączenie sieciowe i uszkadzając PSY bohatera.
+**Logiczne Oprogramowanie Defensywne (LÓD)**: węzły Infosfery mogą posiadać automatyczne systemy ochronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie interakcji wykonują atak na postać, redukując jej INT. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
+
+**Czarny LOD** (oficjalnie nielegalny), posiada dodatkową cechę:
+
+- *Obrażenia krytyczne*: zadaj w PSY celu, tyle samo punktów obrażeń ile zadałeś w INT w tej turze.
 
 ### Cybermodyfikacje
 
@@ -311,7 +293,9 @@ Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekrac
 
 > Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
 
-Każda zainstalowana cybermodyfikacja zajmuje odpowiednią ilość miejsca w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
+Każda zainstalowana cybermodyfikacja zajmuje jedno miejsce w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
+
+Postać, której **INT wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać.
 
 ### Reakcje BN
 
@@ -339,12 +323,6 @@ W *Cyber* nie używamy pojęcia poziomu postaci ani idei punktów doświadczenia
 ### Fikcja
 
 Zasadniczą koncepcją rozwoju w *Cyber* jest zmiana postaci w świecie gry. Zmiana ta niekoniecznie musi oznaczać, że postać staje się silniejsza, mądrzejsza czy bardziej wytrzymała (niestety!), dlatego nie skupiamy się na mechanizmach podnoszenia współczynników postaci. Zamiast tego, zmiany zachodzące w naszym bohaterze czy bohaterce będą efektem wydarzeń w świecie fikcji, decyzji podejmowanych przez postać i przygód w których weźmie udział.
-
-### Koncepcja blizn
-
-[Blizny](#tabela-blizn), to klasyczny koncept rozwoju bazujący na podwyższaniu współczynników postaci, chociaż jego aktywacja jest uzależniona od wydarzeń w świecie gry (a dokładniej od przebiegu walki). Jego ideę można zawrzeć w następującym stwierdzeniu:
-
-*W trakcie walki zdarza się, że postać odnosi rany, które w sposób trwały wpływają na jej ciało lub umysł. Źródłem zmiany staje się wydarzenie (w tym przypadku walka), w którym postać brała udział*.
 
 ### Ulepszenia technologiczne
 

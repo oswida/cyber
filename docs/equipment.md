@@ -53,6 +53,9 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Dystansowa (daleki zasięg, ciężka) | 1500  |     k12     | nieporęczna |
 | Granaty                            |  150  | k6, podmuch |             |
 | Mikroładunki                       |  100  |     k4      |             |
+| EMP*                               | 2000  | k6, podmuch | nieporęczna |
+
+\* *Obrażenia krytyczne*: zadaj w PSY celu, tyle samo punktów obrażeń ile zadałeś w INT w tej turze.
 
 | Pancerz | Cena  | Wartość | Uwagi       |
 | ------- | :---: | :-----: | ----------- |
