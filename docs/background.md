@@ -1,16 +1,18 @@
-<!-- ---
+---
 layout: default
 title: Przeszłość
 parent: Dokumenty
 nav_order: 5
---- -->
+---
 
 # Przeszłość
 
 Przeszłość podsumowuje dotychczasowe doświadczenie życiowe postaci i daje jej pewien startowy status.
-Nie jest to odpowiednik klasy, nie definiuje ścieżki rozwoju bohatera a opisuje jedynie jego **dawne doświadczenia** i wynikającą z tego wiedzę lub status.
+Nie jest to odpowiednik klasy, nie definiuje ścieżki rozwoju bohatera a opisuje jedynie jego **dawne doświadczenia** i wynikającą z tego wiedzę lub status. Dodatkowo gracz może (ale nie musi) wybrać lub wylosować powód dla którego zrezygnował z poprzedniego stylu życia.
 
-## Pracownik biurowy (*zaibatsu*)
+Przeszłości zaproponowane poniżej przedstawiają "zwykłych" ludzi a nie wyszkolonych specjalistów, ale niech was to nie zwiedzie. Ci ludzie nie są zwyczajni - opuścili znane im środowiska i odważyli się zrobić krok w nieznane aby odmienić swoje życie. Są zdeterminowani i niebezpieczni. Wierzą, że gdzieś tam, w przyszłości czeka ich lepszy los i zamierzają się o tym przekonać. Być może bez względu na cenę jaką trzeba będzie zapłacić...
+
+## Pracownica biurowa zaibatsu
 
 Jeden z milionów ludzi przetwarzających wirtualne dokumenty w biurach korporacji.
 
@@ -23,7 +25,7 @@ Zrezygnowałam, bo:
 5. W przetwarzanych dokumentach odkryłam szokujące fakty na temat korporacji
 6. Łowca głów z konkurencji okazał się oszustem i nie mogę już wrócić do poprzedniej pracy
 
-## Pracownik fabryczny (*zaibatsu*)
+## Pracownik fabryczny zaibatsu
 
 Trybik w maszynie wytwarzającej materialne dobra tego świata.
 
@@ -36,7 +38,7 @@ Zrezygnowałem, bo:
 5. Okazało się, że to co wytwarzamy służy potem do zabijania ludzi.
 6. Korporacje to zło wcielone i nie zamierzam pracować dla Szatana
 
-## Strażnik (*zaibatsu*)
+## Strażnik zaibatsu
 
 Trochę nadzorca, trochę cieć, trochę klawisz. W tej robocie trudno znaleźć coś szlachetnego.
 
@@ -51,9 +53,29 @@ Zrezygnowałem, bo:
 
 ## Mechanik
 
-## Lekarz
+Prawdziwa złota rączka. Robot ci się zepsuł? A może pralka? Pan usiądzie, pan poczeka, się załatwi.
 
-## Ratownik medyczny
+Zrezygnowałem, bo:
+
+1. Pieprzony gang niszczył mi regularnie warsztat, bo nie chciałem płacić haraczu.
+2. Zepsułem ten motor całkiem przypadkowo. A potem okazało się, że należał do Yakuza...
+3. Z tej roboty nie da się wyżyć, brak klientów, drogie części ... jak żyć?
+4. Nie wiedziałem, że te graty, które znajomy zostawił w moim garażu to sprzęt wojskowy
+5. Mój świat zawalił się po śmierci bliskich, do dzisiaj nie wiem kto jest za to odpowiedzialny
+6. Nigdy nie byłem zbyt dobry w swoim fachu, może czas się przekwalifikować?
+
+## Lekarz (szpital Administracji)
+
+Jedni nazywają go "konowałem", inni "panem doktorem". Sam nie wie, czy pomaganie ludziom jest dla niego jeszcze powołaniem czy stało się już brzemieniem.
+
+Zrezygnowałem, bo:
+
+1. Mam dość niedofinansowanych szpitali, braku sprzętu i leków - jak mam pomagać ludziom w takich warunkach?
+2. Obawiam się, że tamta operacja nie udała się z mojej winy
+3. Nie będę pomagał ludziom, którzy nie potrafią okazać wdzięczności
+4. Ta robota nie jest dla mnie, nie znoszę widoku krwi i śmierci
+5. Ci, którzy naprawdę potrzebują mojej pomocy, nie trafiają do szpitali
+6. Odkryłem niewygodne fakty w dokumentacji medycznej szpitala
 
 ## Pilot
 
@@ -63,19 +85,13 @@ Zrezygnowałem, bo:
 
 ## Reporter
 
-## Elektronik
-
 ## Cybertechnik
 
 ## Programista
 
-## Haker
+## Żołnierz gangu
 
-## Robotyk
-
-## Gangster
-
-## Influencer
+## Influencerka
 
 ## Urzędnik Administracji
 
@@ -83,192 +99,28 @@ Zrezygnowałem, bo:
 
 ## Detektyw
 
-## Pracownik lokalu usługowego
+## Pracownica lokalu usługowego
+
+Codziennie dbam o klientów, codziennie się do nich uśmiecham. I kogo to tak naprawdę obchodzi?
+
+Zrezygnowałam, bo:
+
+1. Czuję, że zasługuję na coś lepszego.
+2. Lokal został wykupiony przez podejrzanych typów. Z daleka śmierdzieli mi gangsterką.
+3. Klientowi coś zginęło w lokalu (akurat!) no i oskarżyli mnie.
+4. Muszę jakoś utrzymać rodzinę a podobno tutaj można zarobić więcej.
+5. Szef powiedział, że te nowe androidy są tańsze i pracują lepiej ode mnie.
+6. Chcę otworzyć swój własny lokal a do tego potrzebuję funduszy.
 
 ## Pracownik komunalny
 
+Piękny poranek! Ciężka harówka, płaca minimalna, ludzka pogarda - co gorszego może mnie jeszcze dzisiaj spotkać?
 
-1. Algae Cuisine Chef ​ - ​3 cubes of dehydrated
-food grade algae
-2. Algae Tank Sluice Operator​ - ​Waist-high
-wellies
-3. Android Repair Man​ - ​Electronic Repair Kit
-4. Android-Pop Star Manager​ - ​Earplugs
-5. Apocalyptic Street Preacher​ - ​Hollowed out
-bible
-6. Art Dealer​ - ​AI made collage box
-7. Asteroid Miner​ - ​Frequency resonator
-8. Astrodock Laborer​ - ​Magnetic boots
-9. Bartender​ - ​Expensive bottle of top-shelf
-hooch
-10. Biochemist​ - ​Vial of hormones
-11. Black Market SQUID Disc Dealer​ - 3​
-recorded SQUID disc
-12. Bootleg Animal Dealer​ - ​A small, living
-(artificial) animal.
-13. Buddhist Monk​ - ​Begging bowl
-14. Bureaucrat​ - ​Bulletproof clipboard
-15. Calorie Man​ - ​Hand crank generator
-16. Cashier at Opium Den Fast Food
-Restaurant​ - ​3 doses of opium
-17. Chatbot Backend​ - ​List of chatbot system
-passwords
-18. Cheetah Blood Drainer​ - ​Collar with tap
-19. CIA Informant​ - ​Bag of drugs
-20. Cirque de Solie Performer​ - ​50ft of silk
-21. Clone Decanter​ - ​Squeegee, rubber gloves
-22. Corporate Drone​ - ​ID card, stapler
-23. Corporate Geomancer​ - ​Geomancy tool
-24. Cosmonaut​ - ​Tattoos of Lenin and Putin over
-heart, old space suit
-25. Counterfeiter​ - ​Fake traveling papers or
-license
-26. Courier​ - ​Mysterious package
-27. Cyber Zen Guru​ - ​Recurrent wired vizzy
-28. Data Courier​ - ​Cranium drive augment
-29.
-30.
-31.
-32.
-33.
-34.
-35.
-36.
-37.
-38.
-39.
-40.
-41.
-42.
-43.
-44.
-45.
-46.
-47.
-48.
-49.
-50.
-51.
-52.
-53.
-54.
-55.
-56.
-Data Security​ - ​2 cassettes
-Deforester​ - ​Chainsaw
-DIY Pharmacist​ - ​Vial of strange drugs
-Drug Mule​ - ​Bag of drugs
-Environment Ministry Inspector​ - ​Breathing
-mask
-Experimental Moonshiner​ - J​ ar of high proof
-alcohol
-Feng Shui Consultant​ - F
-eng Shui compass
-Forklift Mech Construction Worker​ - ​Hard
-hat
-Furry Cult​ - ​Animal canine teeth implants
-(1d6 bite attack)
-Gene-Ripper​ - ​2 doses of CustomGenes​TM
-Genetically-modified Cat Exterminator​ -
-Hiku brand cat trap (slightly stained)
-Genetically-modified Elephant Handler​ -
-Pain inducer remote and collar
-Gunsmith​ - ​Weapon repair kit
-Handsome Weeping Boy (Ikemeso Danshi)​ -
-Fine silk suit
-Hemp Farmer​ - B
-ag of marijuana
-Hinterland Surrogate​ - B
-ag of drugs
-Hologram Artist​ - S​ tereoconversion goggles
-Horse Historian​ - ​Bag of horse bones
-HyperPolo Player​ - ​Polo motorcycle
-Implant Repo​ - D
-issection kit
-J-Pop Star Bodyguard​ - ​Earplugs
-Jailbreaker​ - ​Electronic repair kit
-Jeffery’s Tube Engineer​ - M
-echanics tool kit
-KGB Operative​ - ​1 dose of poison with
-umbrella for delivery, tattoo of Lennon and
-Putin
-Locksmith​ - ​Lockpicks
-Lunar Miner​ - ​Lunar pickaxe
-Machinist​ - ​Tool kit
-Mafia Family Member​ - ​Passcard to
-penthouse13
-57.
-58.
-59.
-60.
-61.
-62.
-63.
-64.
-65.
-66.
-67.
-68.
-69.
-70.
-71.
-72.
-73.
-74.
-75.
-76.
-77.
-78.
-79.
-80.
-81.
-82.
-83.
-84.
-85.
-86.
-87.
-Mall Santa​ - ​Wine stained fake beard
-Merchant Marine​ - ​Shipping charts
-Meth Cook​ - ​Bag of drugs
-Muay Thai Competitor​ - ​Glass laced
-knuckle-wraps
-Nail Salon Slave​ - ​Pain inducer collar and
-remote
-Nuclear Physicist​ - ​Slightly glowing rod
-Oil Rig Worker​ - ​Hard hat
-Organ Harvester​ - ​Dissection kit
-Organ Incubator​ - ​One extra organ of your
-choice
-Orphan Catcher​ - ​Handcuffs
-Panzerboy​ - ​Ignition key to a burnt out tank
-somewhere
-Paramedic​ - ​First aid kit
-Parkour Competitor​ - ​Climbing gloves
-Patent Classifier​ - ​Minus 1 will to live, 3
-stolen patent data discs
-Pimp​ - ​Little black book
-Pizza Delivery​ - ​Shitty car
-Pornographer​ - ​Holodisk of Android
-pornography
-Professional Apologizer​ - ​Auto-Tear duct
-augment
-Prostitute​ - ​Disease resistant patches
-Ramen Cook​ - ​3 packs of expensive ramen
-Rastafarian​ - ​Bag of weed
-Renraku Prostitute​ - ​Still installed “cutout
-switch”
-Rent-a-Cop​ - ​Security uniform
-Rickshaw Driver​ - ​Rickshaw
-Ringleader of traveling Android Circus​ -
-Top hat with PA system
-Rock Star​ - ​Electronic instrument
-Salary Man​ - ​Corporate handbook (full of
-oaths, company songs, and standard practices)
-Security Consultant​ - ​Remote motion sensor
-SimLife Star​ - ​Sense-record unit
-SimLife Star Impersonator​ - ​Fake
-sense-record unit
-Smack Supplier for Dolphins​ - H
-eroin kit
-(drug, lighter, spoon, needle)
+Odszedłem, bo:
+
+1. Każdy by odszedł, ty też.
+2. Słyszałem, że w podziemiach kolejki magnetycznej giną pracownicy komunalni a ja miałem tam wyznaczony dyżur nocny.
+3. Taki jeden gościu z telewizji mówił, że ma dla mnie lepszą robotę. Nie wiem co się stało, bo przestał dzwonić.
+4. Znalazłem się w nieodpowiednim miejscu o nieodpowiedniej porze. Nie pytaj, bo i tak nie powiem.
+5. Bo sro! Muszę znaleźć tego skurwysyna, który przejechał mi psa!
+6. Nasz rejon przejęło zaibatsu. Administracja obiecała, że może w przyszłym roku będą nowe miejsca pracy.

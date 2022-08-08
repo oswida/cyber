@@ -26,7 +26,11 @@ Ta gra nie mogła powstać w próżni. Poniżej znajdziecie listę osób oraz ma
 - Niezliczona ilość filmów, komiksów i gier. Między innymi: Ghost in the Shell oraz Blame!.
 - Wreszcie klasyczne gry RPG, na których wyrastałem czyli [Seria Cyberpunk 2020](https://rtalsoriangames.com/cyberpunk/) oraz [Shadowrun](https://www.catalystgamelabs.com/brands/shadowrun) (to akurat jeszcze w wersji wydawanej przez FASA)
 
+<!-- Nie zabrakło też kilku "współgraczy", którzy cierpliwie przeglądali te materiały i wspomogli mnie swoimi uwagami:
 
+
+
+Dziękuję Wam wszystkim :) -->
 
 ---
 

@@ -85,7 +85,8 @@ Większość przedmiotów zajmuje jedno miejsce a małe przedmioty mogą być pa
 
 Postać nie może nosić więcej przedmiotów niż pozwala na to łączna ilość miejsc ekwipunku.
 
-Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 30 000 ℂ** .
+Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 30 000 ℂ**. Darmowe cybermodyfikacje reprezentują inwestycję, którą poczyniła postać w celu zmiany dotychczasowego stylu życia. Pieniądze na cybermodyfikacje mogą być oszczędnościami składanymi specjalnie na ten cel lub kredytem od nowego pracodawcy.
+
 Każda cybermodyfikacja zajmuje jedno miejsce w ekwipunku.
 
 ## Zasady
