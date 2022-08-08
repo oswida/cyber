@@ -76,7 +76,7 @@ Rzuć **1k6** aby określić początkową wartość atrybutu **Ochrona przed tra
 Postacie mają w sumie **10 miejsc** na ekwipunek, przy czym każde z opisuje konkretną lokalizację lub funkcjonalność:
 
 - 2 miejsca  - **ręce** postaci, czyli to co bohater aktualnie trzyma - broń, narzędzia itp.
-- 2 miejsca - **ciało** postaci - dowolne miejsce typu plecy, pas, klatka piersiowa. Mogą służyć do zamocowania innego kontenera np. plecaka czy torby.
+- 2 miejsca - **ciało** postaci - dowolne miejsce typu plecy, pas, klatka piersiowa. Mogą służyć do zamocowania innego pojemnika np. plecaka czy torby.
 - 6 miejsc - **cybermodyfikacje** lub **przedmioty** - te miejsca mogą być wykorzystane na zamontowanie cybermodyfikacji lub noszenie dodatkowych rzeczy. W ten sposób maksymalna ilość cybermodyfikacji dla postaci wynosi 6.
 
 Większość przedmiotów zajmuje jedno miejsce a małe przedmioty mogą być pakowane razem. Miejsca na ekwipunek są koncepcją abstrakcyjną i mogą być zmieniane przez prowadzącego wedle uznania.
@@ -311,7 +311,7 @@ Kiedy postacie napotkają Bohatera Niezależnego, którego reakcja na to spotkan
 
 ### Kość Przeznaczenia
 
-Od czasu do czasu będziesz chciała wprowadzić jakiś element losowości (np. pogoda, unikalna wiedza postaci, itp).
+Od czasu do czasu będziesz chciał wprowadzić jakiś element losowości (np. pogoda, unikalna wiedza postaci, itp).
 W takich sytuacjach **rzuć 1k6**.
 
 - Wynik **4 lub więcej** oznacza decyzję **korzystną** dla graczy.

@@ -26,6 +26,8 @@ Ta gra nie mogła powstać w próżni. Poniżej znajdziecie listę osób oraz ma
 - Niezliczona ilość filmów, komiksów i gier. Między innymi: Ghost in the Shell oraz Blame!.
 - Wreszcie klasyczne gry RPG, na których wyrastałem czyli [Seria Cyberpunk 2020](https://rtalsoriangames.com/cyberpunk/) oraz [Shadowrun](https://www.catalystgamelabs.com/brands/shadowrun) (to akurat jeszcze w wersji wydawanej przez FASA)
 
+
+
 ---
 
 Cyberpunk Cairn hack (in Polish for now).

@@ -35,7 +35,7 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 |        Złoty         |      2000      |         1/6          |
 |      Platynowy       |      5000      |          -           |
 
-| Kontener | Cena  | Sloty ekwipunku |
+| Pojemnik | Cena  | Sloty ekwipunku |
 | -------- | :---: | :-------------: |
 | Torba    |  200  |       +2        |
 | Walizka  |  300  |       +3        |
@@ -49,7 +49,7 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Biała (ciężka)                     |  650  |             k10              | nieporęczna |
 | Dystansowa (bliski zasięg)         |  150  |              k6              |             |
 | Dystansowa (średni zasięg)         |  600  |              k8              |             |
-| Dystansowa (średni zasięg, cięzka) |  600  |             k10              | nieporęczna |
+| Dystansowa (średni zasięg, ciężka) |  600  |             k10              | nieporęczna |
 | Dystansowa (daleki zasięg, ciężka) | 1500  |             k12              | nieporęczna |
 | Granaty                            |  150  |         k6, podmuch          |             |
 | Mikroładunki                       |  100  |              k4              |             |

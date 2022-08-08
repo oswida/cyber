@@ -27,23 +27,26 @@ Każde ulepszenie składa się z **jednego elementu podstawowego** określające
 | Noga           | 1500  |
 | Tułów          | 5000  |
 
-Po wybraniu elementu podstawowego można do niego dodać dowolną ilość elementów modyfikujących współczynniki, z zachowaniem obowiązujących wartości maksymalnych. 
+Po wybraniu elementu podstawowego można do niego dodać dowolną ilość elementów modyfikujących współczynniki, z zachowaniem obowiązujących wartości maksymalnych.
 
 Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym. Jest to szczególnie istotne przy zdolnościach, które opisują całe grupy aktywności postaci. Można sobie wyobrazić cybermodyfikację, która ogólnie wzmacnia ciało bohatera (+X CIA) ale będą też sytuacje, gdzie zależy nam jedynie na szybkości lub wytrzymałości a te opisywane są przez tę samą zdolność.
 
+**Modyfikacje kosmetyczne**: cybermodyfikacje, których zadaniem jest jedynie wywołanie efektu estetycznego (ciało porośnięte futrem, kocie oczy, włosy zmieniające kolor itp.) kosztują tyle ile **element bazowy** związany z częścią ciała w której są montowane.
 
-| Modyfikacja                                                    | Cena                        | Maksimum  na cybermod |
-| -------------------------------------------------------------- | --------------------------- | :-------------------: |
-| +1 OCHR                                                        | 5 000                       |          +3           |
-| +1 punkt zdolności (CIA,PSY,INT)                               | 10 000                      | +3 (wyklucza poniżej) |
-| +1 punkt zdolności (CIA,PSY,INT) dla wybranej grupy aktywności | 5 000                       | +3 (wyklucza powyżej) |
-| +1 Pancerza                                                    | 10 000                      |   +3 (całość <= 3)    |
-| +1 miejsce w ekwipunku                                         | 1 000                       |          +3           |
-| wmontowane uzbrojenie                                          | rodzaj kości obrażeń * 1000 |          k12          |
-| neuroprocesor do hakowania i zapory\*                          | rodzaj kości obrażeń * 1000 |          k12          |
-| ułatwienie testu dla jednej wybranej zdolności                 | 5 000                       |    3 (CIA,PSY,INT)    |
-| obrażenia krytyczne, które nie ranią celu                      | 1 500                       | 1 (wyklucza poniżej)  |
-| obrażenia krytyczne, które zadają dodatkowe obrażenia          | rodzaj kości obrażeń * 500  | 1  (wyklucza powyżej) |
+
+| Modyfikacja                                                                                                               | Cena                        | Maksimum  na cybermod |
+| ------------------------------------------------------------------------------------------------------------------------- | --------------------------- | :-------------------: |
+| +1 OCHR                                                                                                                   | 5 000                       |          +3           |
+| +1 punkt zdolności (CIA,PSY,INT)                                                                                          | 10 000                      | +3 (wyklucza poniżej) |
+| +1 punkt zdolności (CIA,PSY,INT) dla wybranej grupy aktywności                                                            | 5 000                       | +3 (wyklucza powyżej) |
+| +1 Pancerza                                                                                                               | 10 000                      |   +3 (całość <= 3)    |
+| +1 miejsce w ekwipunku                                                                                                    | 1 000                       |          +3           |
+| wmontowane uzbrojenie                                                                                                     | rodzaj kości obrażeń * 1000 |          k12          |
+| neuroprocesor do hakowania i zapory\*                                                                                     | rodzaj kości obrażeń * 1000 |          k12          |
+| ułatwienie testu dla jednej wybranej zdolności                                                                            | 5 000                       |    3 (CIA,PSY,INT)    |
+| obrażenia krytyczne, które nie ranią celu                                                                                 | 1 500                       | 1 (wyklucza poniżej)  |
+| obrażenia krytyczne, które zadają dodatkowe obrażenia                                                                     | rodzaj kości obrażeń * 500  | 1  (wyklucza powyżej) |
+| dodatkowa funkcjonalność nie zwiększająca współczynników np. narzędzia w dłoni, oko z podczerwienią, filtry antytoksynowe | 1 000                       |           2           |
 
 \* Uwaga: neuroprocesor pozwala wykonywać akcje hakowania i zapory w Infosferze ale jednocześnie umożliwia programom zadawanie obrażeń w PSY właściciela.
 
