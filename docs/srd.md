@@ -69,7 +69,7 @@ Podczas tworzenia postaci, gracz powinien rzucić **3k6** kolejno dla każdej zd
 
 ### Ochrona przed trafieniem
 
-Rzuć **1k6** aby określić początkową wartość atrybutu **Ochrona przed trafieniem** (OCHR), który odzwierciedla umiejętność unikania obrażeń w walce. OCHR nie opisuje zdrowia ani wytrzymałości postaci; postacie nie tracą też tego współczynnika na zbyt długi czas (patrz **Leczenie**). Jeśli atak zredukuje OCHR postaci <u>dokładnie do zera</u>, gracz musi wylosować efekt z tabeli **Blizny**.
+Rzuć **1k6** aby określić początkową wartość atrybutu **Ochrona przed trafieniem** (OCHR), który odzwierciedla umiejętność unikania obrażeń w walce. OCHR nie opisuje zdrowia ani wytrzymałości postaci; postacie nie tracą też tego współczynnika na zbyt długi czas (patrz **Leczenie**).
 
 ### Wyposażenie
 
@@ -201,7 +201,7 @@ Każda postać, która otrzyma obrażenia krytyczne w CIA, nie może zrobić nic
 
 Każda postać, która otrzyma obrażenia krytyczne w INT, zostaje unieruchomiona w Infosferze (nie może się przemieszczać pomiędzy węzłami) lub wszystkie jej cybermodyfikacje przestają działać jeśli operuje w świecie fizycznym.
 
-**Czarny LOD** oraz **broń EMP** posiadają dodatkowy efekt obrażeń krytycznych: *"zadaj tyle punktów obrażeń w PSY celu ile zostało zadanych w INT w tej turze"*.
+**Czarny LOD** oraz **broń EMP** posiadają dodatkowy efekt obrażeń krytycznych: *"jeśli cel posiada neuroprocesor, zadaj tyle punktów obrażeń w PSY celu ile zostało zadanych w INT w tej turze"*.
 
 #### Pancerz
 
@@ -250,7 +250,7 @@ Wyjątkiem od tego systemu abonamentowego są artykuły, usługi i sprzęt specj
 Część z wyjątków powyżej ma swoje oddzielne cenniki a pozostałe zależą od konkretnej potrzeby i oferty - będą zatem przedmiotem negocjacji pomiędzy postaciami graczy a bohaterami niezależnymi.
 Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów i może mieć dowolną cenę.
 
-Szczegółowy wykaz produktów i usług oraz wymaganych poziomów kredytu znajdziesz [tutaj](./equipment.md).
+Szczegółowy wykaz produktów i usług oraz wymaganych poziomów kredytu znajdziesz w [dodatku](./equipment.md).
 
 ### Infosfera
 
@@ -271,16 +271,16 @@ Każda postać może wykonywać pewien zestaw standardowych czynności w Infosfe
 
 Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżonej informacji wymagają odpowiednich cybermodyfikacji.
 
-**Konflikty w Infosferze** są rozstrzygane dokładnie tak samo jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs.
+**Działania w Infosferze** są rozstrzygane podobnie jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs.
 Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest redukowana przez ataki jest Interfejs zamiast Ciała.
 
 **Blokada**: zredukowanie INT postaci do zera oznacza, że nie może ona korzystać z Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności ale nie mniej niż 24 godziny.
 
-**Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INT. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest użycie odpowiednich cybermodyfikacji i wykonanie ataków. Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **poziom INT**.
+**Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INT. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest wykonanie ataków za pomocą odpowiednich cybermodyfikacji. Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **poziom INT**.
 
 **Niszczenie danych**: Po zredukowaniu OCHR węzła do zera, gracz może nadal wykonywać atak ale tym razem będzie zmniejszał INT węzła. Zredukowanie **INT węzła do zera** oznacza bezpowrotne **zniszczenie danych lub programu** (o ile ich właściciel nie miał kopii zapasowej). Zmniejszanie INT węzła do wartości innych niż zero nie daje żadnych efektów w grze.
 
-**Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy zdać test INT. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
+**Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy posiadać odpowiednią cybermodyfikację i zdać test INT. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
 
 **Logiczne Oprogramowanie Defensywne (LÓD)**: węzły Infosfery mogą posiadać automatyczne systemy obronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie hakowania wykonują atak na postać, redukując jej INT. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
 
@@ -297,6 +297,8 @@ Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekrac
 Każda zainstalowana cybermodyfikacja zajmuje jedno miejsce w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
 
 Postać, której **INT wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać.
+
+Więcej informacji na temat tworzenia cybermodyfikacji oraz ich cen można znaleźć w [dodatku](./cybermod.md).
 
 ### Reakcje BN
 

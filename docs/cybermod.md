@@ -1,50 +1,68 @@
-<!-- ---
+---
 layout: default
 title: Cybermodyfikacje
 parent: Dokumenty
 nav_order: 2
---- -->
+---
 
 # Cybermodyfikacje
 
 Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 30 000 ℂ** .
+
 Każda cybermodyfikacja zajmuje jedno miejsce w ekwipunku.
 
+Cybermodyfikacje to pole do popisu dla wyobraźni graczy. Poniżej znajdziecie co prawda przykłady konkretnych ulepszeń ale Cyber przede wszystkim proponuje system konstrukcji wszczepów i określania ich wartości rynkowej tak, żeby każdy z Was mógł stworzyć dosłownie to co zechce.
 
-## Podstawowe
+## Kreowanie cybermodyfikacji
 
-Wszystkie bazowe cybermody mają wymagany poziom kredytu równy 3.
+Na początku spróbuj opisać słownie co dana modyfikacja ma zmieniać (ewentualnie jak ma działać), to da Ci pojęcie o modyfikowanych współczynnikach. Opis fabularny danej cybermodyfikacji też może dać sporo satysfakcji.
 
-|  Nr   | Nazwa                 | Slot  | Testy łatwe                                 | Uwagi                                                                 |
-| :---: | --------------------- | :---: | ------------------------------------------- | --------------------------------------------------------------------- |
-|   1   | Infoprocesor          |   1   | wyszukiwanie informacji w sieci             | wymagany do  rozszerzeń Infosfery                                     |
-|   2   | Konwerter sensoryczny |   1   | spostrzegawczość na bazie dowolnych zmysłów | wymagany do  niektórych rozszerzeń sterujących, medialnych i bojowych |
-|   3   | Magistrala rdzeniowa  |   1   | wyzwania wymagające zwinności               | wymagana do  rozszerzeń protetycznych                                 |
-|   4   | Kryptoprocesor        |   1   | obliczenia dowolnego typu                   | wymagany do większości rozszerzeń bojowych                            |
-|   5   | Moduł pamięciowy      |   1   | zapamiętywanie, przypominanie, uczenie się  | wymagany do niektórych rozszerzeń medialnych                          |
-|   6   | Neuroprzełącznik      |   1   |                                             |                                                                       |
+Każde ulepszenie składa się z **jednego elementu podstawowego** określającego miejsce montowania cybermodyfikacji w ciele postaci (głowa, ręce, nogi, tułów) oraz **dowolnej ilości elementów modyfikujących współczynniki** postaci (w końcu to ulepszenia). Każdy element, który zmienia współczynnik ma swoją uogólnioną cenę. Suma wszystkich elementów jakie składają się na opracowaną modyfikację określa finalną cenę cybermodyfikacji.
 
-## Infosfera
 
-1. Moduł zapory: rozszerzenie
+| Element bazowy | Cena  |
+| -------------- | :---: |
+| Głowa          | 2000  |
+| Ręka           | 1000  |
+| Noga           | 1500  |
+| Tułów          | 5000  |
 
-## Bojowe (N)
+Po wybraniu elementu podstawowego można do niego dodać dowolną ilość elementów modyfikujących współczynniki, z zachowaniem obowiązujących wartości maksymalnych. 
 
-## Sterujące
+Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym. Jest to szczególnie istotne przy zdolnościach, które opisują całe grupy aktywności postaci. Można sobie wyobrazić cybermodyfikację, która ogólnie wzmacnia ciało bohatera (+X CIA) ale będą też sytuacje, gdzie zależy nam jedynie na szybkości lub wytrzymałości a te opisywane są przez tę samą zdolność.
 
-## Medialne
 
-## Użytkowe
+| Modyfikacja                                                    | Cena                        | Maksimum  na cybermod |
+| -------------------------------------------------------------- | --------------------------- | :-------------------: |
+| +1 OCHR                                                        | 5 000                       |          +3           |
+| +1 punkt zdolności (CIA,PSY,INT)                               | 10 000                      | +3 (wyklucza poniżej) |
+| +1 punkt zdolności (CIA,PSY,INT) dla wybranej grupy aktywności | 5 000                       | +3 (wyklucza powyżej) |
+| +1 Pancerza                                                    | 10 000                      |   +3 (całość <= 3)    |
+| +1 miejsce w ekwipunku                                         | 1 000                       |          +3           |
+| wmontowane uzbrojenie                                          | rodzaj kości obrażeń * 1000 |          k12          |
+| neuroprocesor do hakowania i zapory\*                          | rodzaj kości obrażeń * 1000 |          k12          |
+| ułatwienie testu dla jednej wybranej zdolności                 | 5 000                       |    3 (CIA,PSY,INT)    |
+| obrażenia krytyczne, które nie ranią celu                      | 1 500                       | 1 (wyklucza poniżej)  |
+| obrażenia krytyczne, które zadają dodatkowe obrażenia          | rodzaj kości obrażeń * 500  | 1  (wyklucza powyżej) |
 
-## Kosmetyczne
+\* Uwaga: neuroprocesor pozwala wykonywać akcje hakowania i zapory w Infosferze ale jednocześnie umożliwia programom zadawanie obrażeń w PSY właściciela.
 
-## Protetyczne
 
-|  Nr   | Nazwa                 |    Wymagane     | Slot  | Testy łatwe                          | Modyfikatory    | Uwagi                                               |
-| :---: | --------------------- | :-------------: | :---: | ------------------------------------ | --------------- | --------------------------------------------------- |
-|   1   | Cyberdłoń, Cyberręka  |  Podstawowe.3   |   1   | siła, wytrzymałość                   | +1 OCHR         |                                                     |
-|   2   | Cybernoga             |  Podstawowe.3   |   1   | siła, wytrzymałość, bieg, skok       | +1 OCHR         |                                                     |
-|   3   | Wzmocnienie szkieletu |  Podstawowe.3   |   2   | siła, wytrzymałość                   | +2 OCHR, +1 CIA |                                                     |
-|   4   | Wzmocnienie czaszki   |        -        |   1   | wytrzymałość                         | +1 OCHR         |                                                     |
-|   5   | Komora ładunkowa      | Protetyczne.1/2 |   -   | -                                    | +1 slot ekwip.  | montowana w cyberręce lub cybernodze                |
-|   6   | Gniazda narzędziowe   |  Protetyczne.1  |   -   | precyzyjne manipulowanie narzędziami | -               | montowana w cyberręce, do wyboru 3 zestawy narzędzi |
+### Przykłady
+
+1. Najprostszy interfejs pozwalający na hakowanie w sieci
+
+- **Opis**: Wewnętrzczaszkowy wszczep neuroprocesora, z wbudowaną szerokopasmową anteną do transmisji bezprzewodowych oraz gniazdem optycznym do połączenia przewodowego.
+- **Części**: cybermod bazowy (głowa), neuroprocesor k4
+- **Cena**: 2000 + 4000 = `6 000` ℂ
+
+
+
+
+
+
+
+
+
+
+

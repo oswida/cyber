@@ -42,20 +42,20 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Plecak   |  400  |       +4        |
 | Wózek    |  600  |       +6        |
 
-| Broń                               | Cena  |  Obrażenia  | Uwagi       |
-| ---------------------------------- | :---: | :---------: | ----------- |
-| Biała (lekka)                      |  100  |     k6      |             |
-| Biała (średnia)                    |  400  |     k8      |             |
-| Biała (ciężka)                     |  650  |     k10     | nieporęczna |
-| Dystansowa (bliski zasięg)         |  150  |     k6      |             |
-| Dystansowa (średni zasięg)         |  600  |     k8      |             |
-| Dystansowa (średni zasięg, cięzka) |  600  |     k10     | nieporęczna |
-| Dystansowa (daleki zasięg, ciężka) | 1500  |     k12     | nieporęczna |
-| Granaty                            |  150  | k6, podmuch |             |
-| Mikroładunki                       |  100  |     k4      |             |
-| EMP*                               | 2000  | k6, podmuch | nieporęczna |
+| Broń                               | Cena  |          Obrażenia           | Uwagi       |
+| ---------------------------------- | :---: | :--------------------------: | ----------- |
+| Biała (lekka)                      |  100  |              k6              |             |
+| Biała (średnia)                    |  400  |              k8              |             |
+| Biała (ciężka)                     |  650  |             k10              | nieporęczna |
+| Dystansowa (bliski zasięg)         |  150  |              k6              |             |
+| Dystansowa (średni zasięg)         |  600  |              k8              |             |
+| Dystansowa (średni zasięg, cięzka) |  600  |             k10              | nieporęczna |
+| Dystansowa (daleki zasięg, ciężka) | 1500  |             k12              | nieporęczna |
+| Granaty                            |  150  |         k6, podmuch          |             |
+| Mikroładunki                       |  100  |              k4              |             |
+| Działko EMP\*                      | 2000  | k8, podmuch, obrażenia w INT | nieporęczna |
 
-\* *Obrażenia krytyczne*: zadaj w PSY celu, tyle samo punktów obrażeń ile zadałeś w INT w tej turze.
+\* *Obrażenia krytyczne*: jeśli cel posiada neuroprocesor, zadaj PSY celu, tyle samo punktów obrażeń ile zadałeś INT w tej turze.
 
 | Pancerz | Cena  | Wartość | Uwagi       |
 | ------- | :---: | :-----: | ----------- |
@@ -85,8 +85,8 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Czarny LOD (nieleg.) | rodzaj kości ataku * 5000 |
 
 
-| Usługi medyczno/naprawcze         | Cena  |    Czas    |
-| --------------------------------- | :---: | :--------: |
-| Pomoc medyczna za 1 pkt CIA       | 2000  | 1  tydzień |
-| Pomoc psychologiczna za 1 pkt PSY | 1500  | 1 tydzień  |
-| Naprawa interfejsu za 1 pkt INT   | 2000  |  1 dzień   |
+| Usługi medyczno/naprawcze |        Cena        |    Czas    |
+| ------------------------- | :----------------: | :--------: |
+| Pomoc medyczna            | 2000 za 1 pkt CIA  | 1  tydzień |
+| Pomoc psychologiczna      | 1500  za 1 pkt PSY | 1 tydzień  |
+| Naprawa interfejsu        | 2000 za 1 pkt INT  |  1 dzień   |
