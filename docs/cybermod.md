@@ -9,9 +9,9 @@ nav_order: 2
 
 Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 30 000 ℂ** .
 
-Cybermodyfikacje to pole do popisu dla wyobraźni graczy. Poniżej znajdziecie co prawda przykłady konkretnych ulepszeń ale Cyber przede wszystkim proponuje system konstrukcji wszczepów i określania ich wartości rynkowej tak, żeby każdy z Was mógł stworzyć dosłownie to co zechce.
+Cybermodyfikacje to pole do popisu dla wyobraźni graczy. Poniżej znajdziecie co prawda przykłady konkretnych ulepszeń ale *Cyber* przede wszystkim proponuje system konstrukcji wszczepów i określania ich wartości rynkowej tak, żeby każdy z Was mógł stworzyć dosłownie to co zechce.
 
-## Kreowanie cybermodyfikacji
+## Tworzenie cybermodyfikacji
 
 Na początku spróbuj opisać słownie co dana modyfikacja ma zmieniać (ewentualnie jak ma działać), to da Ci pojęcie o modyfikowanych współczynnikach. Opis fabularny danej cybermodyfikacji też może dać sporo satysfakcji.
 
@@ -47,7 +47,6 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 | dodatkowa funkcjonalność nie zwiększająca współczynników np. narzędzia w dłoni, oko z podczerwienią, filtry antytoksynowe | 1 000                       |           2           |
 
 \* Uwaga: neuroprocesor pozwala wykonywać akcje hakowania i zapory w Infosferze ale jednocześnie umożliwia programom zadawanie obrażeń w PSY właściciela.
-
 
 ### Przykłady
 

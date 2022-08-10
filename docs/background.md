@@ -14,7 +14,7 @@ Przeszłości zaproponowane poniżej przedstawiają "zwykłych" ludzi a nie wysz
 
 ## Pracownica biurowa zaibatsu
 
-Jeden z milionów ludzi przetwarzających wirtualne dokumenty w biurach korporacji.
+*Ten formularz powinien pójść gdzie indziej. Nie, nie rozumiem, że to błąd systemu! Informatyków mamy od tego, żeby system działał bez zarzutu. A może następnym razem, to ja popełnię błąd przy naliczaniu pańskiego urlopu?*
 
 Zrezygnowałam, bo:
 
@@ -27,7 +27,7 @@ Zrezygnowałam, bo:
 
 ## Pracownik fabryczny zaibatsu
 
-Trybik w maszynie wytwarzającej materialne dobra tego świata.
+*Gdzie leziesz?! Życie ci już niemiłe?! Za 15 sekund przez tę rampę przepuszczą taki prąd, że d**a ci się zacznie świecić jak żarówka!*
 
 Zrezygnowałem, bo:
 
@@ -40,7 +40,7 @@ Zrezygnowałem, bo:
 
 ## Strażnik zaibatsu
 
-Trochę nadzorca, trochę cieć, trochę klawisz. W tej robocie trudno znaleźć coś szlachetnego.
+*W sumie to nie wiem, czy jestem nadzorcą, cieciem czy klawiszem. W tej robocie trudno znaleźć coś szlachetnego.*
 
 Zrezygnowałem, bo:
 
@@ -53,7 +53,7 @@ Zrezygnowałem, bo:
 
 ## Mechanik
 
-Prawdziwa złota rączka. Robot ci się zepsuł? A może pralka? Pan usiądzie, pan poczeka, się załatwi.
+*Robot ci się zepsuł? A może pralka? Pan usiądzie, pan poczeka, się załatwi.*
 
 Zrezygnowałem, bo:
 
@@ -66,7 +66,7 @@ Zrezygnowałem, bo:
 
 ## Lekarz (szpital Administracji)
 
-Jedni nazywają go "konowałem", inni "panem doktorem". Sam nie wie, czy pomaganie ludziom jest dla niego jeszcze powołaniem czy stało się już brzemieniem.
+*Jedni nazywają mnie "konowałem", inni "panem doktorem". Sam nie wiem, czy pomaganie ludziom to jeszcze powołanie czy już brzemię.*
 
 Zrezygnowałem, bo:
 
@@ -79,29 +79,80 @@ Zrezygnowałem, bo:
 
 ## Pilot
 
+*Kiedy jestem w powietrzu, to czuję się lżejszy - wszystkie troski zostawiam tam na ziemi. Można powiedzieć, że tutaj w górze jest tak jakby czysto ... I nie mówię o składzie powietrza, którym oddychasz ...*
+
+Zrezygnowałem, bo:
+
 ## Kierowca
+
+*Mówisz o LRV 500? Ten z napędem na trzy osie? Pewnie, że jeździłem! I to z pełnym obciążeniem, więc mi nie zaimponujesz leszczu ...*
+
+Zrezygnowałem, bo:
 
 ## Ochroniarz klubowy
 
+*Tak, ja rozumiem, że tam w środku są pańscy przyjaciele ale bez zaproszenia nie wpuszczamy. Jasne, że zna pan szefa Yakuza - to może pan zadzwoni i przekaże mi telefon, dobrze?*
+
+Zrezygnowałem, bo:
+
 ## Reporter
+
+*Wie pan, ja to oczywiście mogę nagrać. I ja nawet mogę to opublikować, ale to nic nie da. Za półtorej minuty tego materiału i tak nie będzie w Infosferze a za panem i za mną wyślą psy gończe. Naprawdę pan tego chce?*
+
+Zrezygnowałem, bo:
 
 ## Cybertechnik
 
+*Jak się będziesz cały czas tak wiercił, to ci to przykręcę do d**y zamiast do ręki! Pasuje?*
+
+Zrezygnowałem, bo:
+
 ## Programista
+
+*Czekaj mówię, czekaj chwilę! Jak teraz uruchomisz ten program, to za moment nie będzie co zbierać z dysku. Infosfera to nie miejsce dla ignorantów ... no przynajmniej w większości przypadków...*
+
+Zrezygnowałem, bo:
 
 ## Żołnierz gangu
 
+*Na ulicy sprawy stawia się jasno. Jesteś po naszej stronie, to dbamy o ciebie. Jesteś po przeciwnej - to walczymy z tobą. Nikt tutaj nie mówi o braku szacunku. Nigdy.*
+
+Zrezygnowałem, bo:
+
 ## Influencerka
+
+*Witajcie cukiereczki! Niedługo dobijemy do trzech milionów subskrypcji i robimy imprezkę! W tym samym klubie co zawsze i pamiętajcie, żeby zostawić awatara przynajmniej na godzinkę!*
+
+Zrezygnowałam, bo:
 
 ## Urzędnik Administracji
 
+*Tak, tak. Zaibatsu obiecują, że zajmą się wszystkim ... i wszystkimi. Pod warunkiem, że masz czym zapłacić albo możesz dla nich pracować. Tak jakby cała reszta społeczeństwa w ogóle nie istniała...*
+
+Zrezygnowałem, bo:
+
 ## Policjant
+
+*No i co z tego, że mamy mniej funduszy niż sklep spożywczy i mniej uprawnień niż cieć na parkingu? Przestępców nadal trzeba ścigać a prawa przestrzegać. Czyjego prawa? Tego, które chroni ludzi a nie ich zniewala.*
+
+Zrezygnowałem, bo:
 
 ## Detektyw
 
+*Zabójstwa, porwania, wymuszenia. W tym mieście nie brakuje ludzi, którzy krzywdzą innych ludzi a ja próbuję w tym wszystkim znaleźć coś co można nazwać sprawiedliwością.*
+
+Zrezygnowałem, bo:
+
+1. Tak naprawdę nic się nie zmienia a moja praca nikomu i niczemu nie służy
+2. Okazało się, że dziewczyna, której pomogłem uciec była własnością Yakuza
+3. Lepiej będzie jak niektóre sprawy pozostaną niewyjaśnione
+4. Muszę się na chwilę przyczaić, ale na pewno nie zostawię tej sprawy
+5. Czas najwyższy zacząć troszczyć się o siebie samego
+6. Zostałem wrobiony w sprawę kryminalną i odebrano mi licencję
+
 ## Pracownica lokalu usługowego
 
-Codziennie dbam o klientów, codziennie się do nich uśmiecham. I kogo to tak naprawdę obchodzi?
+*Codziennie dbam o klientów, codziennie się do nich uśmiecham. I kogo to tak naprawdę obchodzi?*
 
 Zrezygnowałam, bo:
 
@@ -114,7 +165,7 @@ Zrezygnowałam, bo:
 
 ## Pracownik komunalny
 
-Piękny poranek! Ciężka harówka, płaca minimalna, ludzka pogarda - co gorszego może mnie jeszcze dzisiaj spotkać?
+*Piękny poranek! Ciężka harówka, płaca minimalna, ludzka pogarda - co gorszego może mnie dzisiaj spotkać?*
 
 Odszedłem, bo:
 

@@ -12,6 +12,7 @@ Cyber to gra fabularna o eksploracji mrocznego świata niedalekiej przyszłości
 ## Dokumenty w formacie PDF
 
 - [Dokument referencyjny](pdf/srd.pdf)
+- [Przeszłość](pdf/background.pdf)
 - [Ekwipunek](pdf/equipment.pdf)
 - [Cybermodyfikacje](pdf/cybermod.pdf)
 
