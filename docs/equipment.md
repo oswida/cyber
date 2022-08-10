@@ -35,12 +35,12 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 |        Złoty         |      2000      |         1/6          |
 |      Platynowy       |      5000      |          -           |
 
-| Pojemnik | Cena  | Sloty ekwipunku |
-| -------- | :---: | :-------------: |
-| Torba    |  200  |       +2        |
-| Walizka  |  300  |       +3        |
-| Plecak   |  400  |       +4        |
-| Wózek    |  600  |       +6        |
+| Pojemnik     | Cena  | Sloty ekwipunku |
+| ------------ | :---: | :-------------: |
+| Torba        |  200  |       +2        |
+| Walizka      |  300  |       +3        |
+| Plecak       |  400  |       +4        |
+| Wózek ręczny |  600  |       +6        |
 
 | Broń                               | Cena  |          Obrażenia           | Uwagi       |
 | ---------------------------------- | :---: | :--------------------------: | ----------- |
@@ -66,14 +66,14 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 
 | Drony, pojazdy, roboty                        |           Cena            | Sloty bagażowe |
 | --------------------------------------------- | :-----------------------: | :------------: |
-| Mały  dron/robot                              |           1000            |       +1       |
-| Średni  dron/robot                            |           5000            |       +2       |
-| Duży    dron /robot                           |           10000           |       +3       |
-| Transportowy dron/robot                       |           20000           |       +5       |
-| Mały  pojazd                                  |           5000            |       +1       |
-| Średni    pojazd                              |           7000            |       +2       |
-| Duży       pojazd                             |           10000           |       +3       |
-| Pojazd transportowy                           |           20000           |       +5       |
+| Mały  dron/robot                              |           1000            |       +2       |
+| Średni  dron/robot                            |           5000            |       +4       |
+| Duży    dron /robot                           |           10000           |       +6       |
+| Transportowy dron/robot                       |           20000           |      +12       |
+| Mały  pojazd                                  |           5000            |       +6       |
+| Średni    pojazd                              |           7000            |       +8       |
+| Duży       pojazd                             |           10000           |      +10       |
+| Pojazd transportowy                           |           20000           |      +12       |
 | Wyposażenie dodatkowe (kamery, czujniki itp.) |           1000            |       -        |
 | Uzbrojenie                                    | rodzaj kości ataku * 1000 |       -        |
 

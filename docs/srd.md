@@ -73,21 +73,21 @@ Rzuć **1k6** aby określić początkową wartość atrybutu **Ochrona przed tra
 
 ### Wyposażenie
 
-Postacie mają w sumie **10 miejsc** na ekwipunek, przy czym każde z opisuje konkretną lokalizację lub funkcjonalność:
+Postacie mają w sumie **4 miejsca** na ekwipunek, przy czym każde z nich opisuje konkretną lokalizację:
 
 - 2 miejsca  - **ręce** postaci, czyli to co bohater aktualnie trzyma - broń, narzędzia itp.
 - 2 miejsca - **ciało** postaci - dowolne miejsce typu plecy, pas, klatka piersiowa. Mogą służyć do zamocowania innego pojemnika np. plecaka czy torby.
-- 6 miejsc - **cybermodyfikacje** lub **przedmioty** - te miejsca mogą być wykorzystane na zamontowanie cybermodyfikacji lub noszenie dodatkowych rzeczy. W ten sposób maksymalna ilość cybermodyfikacji dla postaci wynosi 6.
 
 Większość przedmiotów zajmuje jedno miejsce a małe przedmioty mogą być pakowane razem. Miejsca na ekwipunek są koncepcją abstrakcyjną i mogą być zmieniane przez prowadzącego wedle uznania.
 
 **Nieporęczne** przedmioty zajmują dwa miejsca i są zazwyczaj dwuręczne lub niewygodne do noszenia.
 
+Torby, plecaki, wózki mogą zwiększać ilość miejsc na ekwipunek, to samo dotyczy również cybermodyfikacji. Przy czym przedmioty reprezentujące pojemniki mocowane do ciała postaci lub wymagające użycia ręki (noszone, ciągnięte) **zajmują miejsce** w ekwipunku.
+
+> Przykład:
+> John bierze na akcję plecak, który zwiększa ilość miejsc ekwipunku o 4. Plecak trzeba jednak założyć na plecy, więc zajmie on jedno miejsce. Finalnie zatem John powiększył ilość miejsc o 3. Jeśli zdecydowałby się na wózek, który musi ciągnąć jedną ręką, to nadal przedmiot ten zajmuje jedno miejsce. W przypadku pojazdu transportowego, wózka automatycznego itp., pojemniki nie zajmują miejsca.
+
 Postać nie może nosić więcej przedmiotów niż pozwala na to łączna ilość miejsc ekwipunku.
-
-Cybermodyfikacje są traktowane jak przedmioty - podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 30 000 ℂ**. Darmowe cybermodyfikacje reprezentują inwestycję, którą poczyniła postać w celu zmiany dotychczasowego stylu życia. Pieniądze na cybermodyfikacje mogą być oszczędnościami składanymi specjalnie na ten cel lub kredytem od nowego pracodawcy.
-
-Każda cybermodyfikacja zajmuje jedno miejsce w ekwipunku.
 
 ## Zasady
 
@@ -294,8 +294,6 @@ Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest
 Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekraczającej poziomu zdolności **Interfejs podzielonej przez 3** (zaokrąglenie w górę).
 
 > Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
-
-Każda zainstalowana cybermodyfikacja zajmuje jedno miejsce w ekwipunku. Po jej usunięciu, miejsce jest zwalniane.
 
 Postać, której **INT wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać.
 
