@@ -101,14 +101,15 @@ Każda z trzech zdolności jest używana w innych sytuacjach (patrz [rzuty obron
 
 ### Dyskomfort i zmęczenie
 
-Postać pozbawiona możliwości zaspokojenia kluczowej potrzeby (takiej jak jedzenie lub odpoczynek), odczuwa **dyskomfort** i **nie może odzyskać punktów OCHR ani punktów zdolności**.
+Postać pozbawiona możliwości zaspokojenia kluczowej potrzeby (takiej jak jedzenie lub odpoczynek) albo poddana długotrwałej presji psychicznej, odczuwa **dyskomfort** i **nie może odzyskać punktów OCHR ani punktów zdolności**.
+
 Każda osoba odczuwająca dyskomfort przez więcej niż jeden dzień, dodaje do swojego ekwipunku **Zmęczenie**, jedno na każdy dzień.
 Każde Zmęczenie blokuje jedno miejsce ekwipunku i trwa do czasu, aż postać będzie w stanie się zregenerować (np. odpoczywając całą noc w bezpiecznym miejscu). Po wypoczynku, postać odzyskuje *wszystkie* zajęte miejsca.
 
 Miejsca zablokowane przez Zmęczenie nie mogą być wykorzystane do noszenia ekwipunku, jeśli gracz musi zaznaczyć Zmęczenie na miejscu już zajętym przez jakiś przedmiot, rzecz tę należy odłożyć lub wyrzucić.
 Jeśli przedmiotem zajmującym zablokowane miejsce jest cybermodyfikacja - przestaje ona działać do momentu pozbycia się Zmęczenia.
 
-Postacie mogą również otrzymać punkty Zmęczenia poprzez wydarzenia w fikcji lub jako efekt niektórych akcji.
+Postacie mogą również odczuwać dyskomfort lub otrzymać punkty Zmęczenia poprzez wydarzenia w fikcji lub jako efekt niektórych akcji.
 
 ### Rzuty obronne
 

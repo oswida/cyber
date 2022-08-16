@@ -79,9 +79,16 @@ Zrezygnowałem, bo:
 
 ## Pilot
 
-*Kiedy jestem w powietrzu, to czuję się lżejszy - wszystkie troski zostawiam tam na ziemi. Można powiedzieć, że tutaj w górze jest tak jakby czysto ... I nie mówię o składzie powietrza, którym oddychasz ...*
+*Kiedy jestem w powietrzu, to czuję się jakiś lżejszy - wszystkie troski zostawiam tam na ziemi. Można powiedzieć, że tutaj w górze jest tak jakby czyściej ... I nie mówię o składzie powietrza, którym oddychasz ...*
 
 Zrezygnowałem, bo:
+
+1. Robota 24/7 za takie stawki to kpina.
+2. Boss dowiedział się o tym ostatnim transporcie dragów, który odstawiliśmy z kumplem.
+3. Okazało się, że rodzinka, którą zgodziłem się podrzucić uciekła z arkologii korporacyjnej.
+4. Podsłuchałem rozmowę VIPów - nie będę brał udziału w takich zboczonych zabawach.
+5. Pomyślałem, że zawsze jest czas, żeby zacząć zmieniać świat na lepsze.
+6. Ciężko jest rywalizować z tymi młokosami nafaszerowanymi wszczepami.
 
 ## Kierowca
 
