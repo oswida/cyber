@@ -40,7 +40,7 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 **Cyber** został zaprojektowany w oparciu o następujące zasady:
 
 - **Neutralność**: Rolą prowadzącego, działającego jako neutralny arbiter, jest jasne przedstawianie zasad gry, sytuacji, bohaterów niezależnych i narracji.
-- **Brak klas postaci**: rola i umiejętności postaci nie są ograniczone przez jedną klasę. Zamiast tego, ekwipunek, który nosi i doświadczenia z gry definiują jej specjalizację.
+- **Brak klas postaci**: rola i umiejętności postaci nie są ograniczone przez jedną klasę. Zamiast tego, ekwipunek, cybermodyfikacje i doświadczenia z gry definiują jej specjalizację.
 - **Śmierć**: postacie mogą być potężne, ale można je również skrzywdzić na wiele sposobów. Śmierć zawsze czyha tuż za rogiem, ale nigdy nie jest przypadkowa ani nie nadchodzi bez ostrzeżenia.
 - **Najpierw fikcja**: rzut kośćmi nie zawsze odzwierciedla trudność wyzwania czy wynik starcia. Sukces i porażka są ustalane przez prowadzącego w dialogu z graczami, w oparciu o elementy świata gry.
 - **Rozwój**: postacie zmieniają się poprzez rozwój w świecie gry, zdobywają nowe umiejętności i zdolności, próbując przetrwać niebezpieczne wydarzenia oraz pokonywać przeszkody.
@@ -80,7 +80,7 @@ Postacie mają w sumie **4 miejsca** na ekwipunek, przy czym każde z nich opisu
 
 Większość przedmiotów zajmuje jedno miejsce a małe przedmioty mogą być pakowane razem. Miejsca na ekwipunek są koncepcją abstrakcyjną i mogą być zmieniane przez prowadzącego wedle uznania.
 
-**Nieporęczne** przedmioty zajmują dwa miejsca i są zazwyczaj dwuręczne lub niewygodne do noszenia.
+Przedmioty **nieporęczne** zajmują dwa miejsca i są zazwyczaj dwuręczne lub niewygodne do noszenia.
 
 Torby, plecaki, wózki mogą zwiększać ilość miejsc na ekwipunek, to samo dotyczy również cybermodyfikacji. Przy czym przedmioty reprezentujące pojemniki mocowane do ciała postaci lub wymagające użycia ręki (noszone, ciągnięte) **zajmują miejsce** w ekwipunku.
 
@@ -88,6 +88,8 @@ Torby, plecaki, wózki mogą zwiększać ilość miejsc na ekwipunek, to samo do
 > John bierze na akcję plecak, który zwiększa ilość miejsc ekwipunku o 4. Plecak trzeba jednak założyć na plecy, więc zajmie on jedno miejsce. Finalnie zatem John powiększył ilość miejsc o 3. Jeśli zdecydowałby się na wózek, który musi ciągnąć jedną ręką, to nadal przedmiot ten zajmuje jedno miejsce. W przypadku pojazdu transportowego, wózka automatycznego itp., pojemniki nie zajmują miejsca.
 
 Postać nie może nosić więcej przedmiotów niż pozwala na to łączna ilość miejsc ekwipunku.
+
+Podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**, ale koszt tych ulepszeń nie może przekroczyć `30 000 ℂ`.
 
 ## Zasady
 
