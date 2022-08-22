@@ -306,9 +306,8 @@ Więcej informacji na temat tworzenia cybermodyfikacji oraz ich cen można znale
 
 Kiedy postacie napotkają Bohatera Niezależnego, którego reakcja na to spotkanie nie jest oczywista, prowadzący może rzucić **2k6** i sprawdzić w poniższej tabeli:
 
-|       |          |           |          |         |
-| :---: | :------: | :-------: | :------: | :-----: |
 |   2   |   3-5    |    6-8    |   9-11   |   12    |
+| :---: | :------: | :-------: | :------: | :-----: |
 | Wrogi | Ostrożny | Ciekawski | Uprzejmy | Pomocny |
 
 ### Kość Przeznaczenia
