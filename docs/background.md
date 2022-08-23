@@ -96,17 +96,38 @@ Zrezygnowałem, bo:
 
 Zrezygnowałem, bo:
 
+1. Teściowa z żoną wierciły mi dziurę w brzuchu, że za mało zarabiam.
+2. Wożenie radioaktywnych odpadów nie jest dobre dla zdrowia.
+3. Jakaś córa czy flama mafijnego bossa wlazła mi prosto pod koła.
+4. Miałem wypadek. Ciężko mi teraz pamiętać różne rzeczy, ale lekarze mówią, że będzie lepiej.
+5. Nie zrezygnowałem - firma zbankrutowałą a nas wysłali na bezrobocie.
+6. Nie jestem coraz młodszy a do tego zawodu potrzebny jest refleks.
+
 ## Ochroniarz klubowy
 
 *Tak, ja rozumiem, że tam w środku są pańscy przyjaciele ale bez zaproszenia nie wpuszczamy. Jasne, że zna pan szefa Yakuza - to może pan zadzwoni i przekaże mi telefon, dobrze?*
 
 Zrezygnowałem, bo:
 
+1. Chciałbym zdobyć wykształcenie a na to potrzeba pieniędzy.
+2. Złamali mi kręgosłup w bójce ppod klubem. Lekarz mnie poskładał ale drugi raz ryzykował nie będę.
+3. Wywalili mnie za nadużywanie koksu w pracy.
+4. Poznałem taką jedną ... fajna babka ... ale nie chciała zadawać się z bramkarzem.
+5. Szef kazał mi skatować jakiegoś spokojnego knypka - niby, że naraził się VIPom. W d..e mam, nie biję bezbronnych.
+6. Jakiś palant wjechał w drzwi na dronie wypakowanym materiałami wybuchowymi. Od tego czasu słabo słyszę.
+
 ## Reporter
 
 *Wie pan, ja to oczywiście mogę nagrać. I ja nawet mogę to opublikować, ale to nic nie da. Za półtorej minuty tego materiału i tak nie będzie w Infosferze a za panem i za mną wyślą psy gończe. Naprawdę pan tego chce?*
 
 Zrezygnowałem, bo:
+
+1. Redaktor naczelny odmówiła druku mojego artykułu o korupcji w Administracji
+2. Niepotrzebnie opisałem co się działo na tej balandze w klubie - a ostrzegali, żebym tego nie robił.
+3. Mam wrażenie, że nie robiłem nic ważnego.
+4. Zaibatsu wykupiło nasze wydawnictwo - nie mam zdrowia do korpo, więc sobie poszedłem.
+5. W starych archiwach odkryłem coś takiego, że wolałem zmienić zawód.
+6. Nie zrezygnowałem, po prostu tutaj znajdę temat mojego życia.  
 
 ## Cybertechnik
 
@@ -143,6 +164,13 @@ Zrezygnowałem, bo:
 *No i co z tego, że mamy mniej funduszy niż sklep spożywczy i mniej uprawnień niż cieć na parkingu? Przestępców nadal trzeba ścigać a prawa przestrzegać. Czyjego prawa? Tego, które chroni ludzi a nie ich zniewala.*
 
 Zrezygnowałem, bo:
+
+1. Ta praca jest ohydna, wszyscy nas nienawidzą, nie wiem dlaczego chciałem zostać policjantem.
+2. Wiele można wybaczyć swojemu partnerowi w pracy, ale nie wszystko...
+3. Moja rodzina nigdy nie była bezpieczna.
+4. Szef nakrył mnie jak odbierałem "prezenty" od sklepikarzy
+5. Po fałszywym donosie, w moim domu znaleziono nielegalny sprzęt zagłuszający - ktoś musiał mi to podrzucić...
+6. Po kilku latach zdałem sobie sprawę, że tak naprawdę nie jestem w stanie strzelić do człowieka.
 
 ## Detektyw
 
