@@ -17,7 +17,6 @@ Na początku spróbuj opisać słownie co dana modyfikacja ma zmieniać (ewentua
 
 Każde ulepszenie składa się z **jednego elementu podstawowego** określającego miejsce montowania cybermodyfikacji w ciele postaci (głowa, ręce, nogi, tułów) oraz **dowolnej ilości elementów modyfikujących współczynniki** postaci (w końcu to ulepszenia). Każdy element, który zmienia współczynnik ma swoją uogólnioną cenę. Suma wszystkich elementów jakie składają się na opracowaną modyfikację określa finalną cenę cybermodyfikacji.
 
-
 | Element bazowy | Cena  |
 | -------------- | :---: |
 | Głowa          | 2000  |
@@ -31,7 +30,6 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 
 **Modyfikacje kosmetyczne**: cybermodyfikacje, których zadaniem jest jedynie wywołanie efektu estetycznego (ciało porośnięte futrem, kocie oczy, włosy zmieniające kolor itp.) kosztują tyle ile **element bazowy** związany z częścią ciała w której są montowane.
 
-
 | Modyfikacja                                                                                                               | Cena                        | Maksimum  na cybermod |
 | ------------------------------------------------------------------------------------------------------------------------- | --------------------------- | :-------------------: |
 | +1 OCHR                                                                                                                   | 5 000                       |          +3           |
@@ -41,7 +39,7 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 | +1 miejsce w ekwipunku                                                                                                    | 1 000                       |          +3           |
 | wmontowane uzbrojenie                                                                                                     | rodzaj kości obrażeń * 1000 |          k12          |
 | neuroprocesor do hakowania i zapory\*                                                                                     | rodzaj kości obrażeń * 1000 |          k12          |
-| ułatwienie testu dla jednej wybranej zdolności                                                                            | 5 000                       |    3 (CIA,PSY,INT)    |
+| ułatwienie/utrudnienie testu dla jednej wybranej zdolności                                                                | 5 000                       |    3 (CIA,PSY,INT)    |
 | obrażenia krytyczne, które nie ranią celu                                                                                 | 1 500                       | 1 (wyklucza poniżej)  |
 | obrażenia krytyczne, które zadają dodatkowe obrażenia                                                                     | rodzaj kości obrażeń * 500  | 1  (wyklucza powyżej) |
 | dodatkowa funkcjonalność nie zwiększająca współczynników np. narzędzia w dłoni, oko z podczerwienią, filtry antytoksynowe | 1 000                       |           2           |
@@ -50,19 +48,20 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 
 ### Przykłady
 
-1. Najprostszy interfejs pozwalający na hakowanie w sieci
+#### Najprostszy interfejs pozwalający na hakowanie w sieci
 
 - **Opis**: Wewnętrzczaszkowy wszczep neuroprocesora, z wbudowaną szerokopasmową anteną do transmisji bezprzewodowych oraz gniazdem optycznym do połączenia przewodowego.
 - **Części**: cybermod bazowy (głowa), neuroprocesor k4
 - **Cena**: 2000 + 4000 = `6 000` ℂ
 
+#### Cybernetyczna ręka z wysuwanymi szponami
 
+- **Opis**: Kończyna z ciemnego metalu, pokryta syntetyczną skórą. Na przedramieniu, po wewnętrznej stronie mała skrytka otwierana za pomocą odpowiedniego nacisku. W dłoni umieszczone cztery długie, stalowe, wysuwane szpony.
+- **Części**: cybermod bazowy (ręka), +1 miejsce w ekwipunku, szpony k6
+- **Cena**: 1000 + 1000 + 6000 = `8 000` ℂ
 
+#### Dermozbroja
 
-
-
-
-
-
-
-
+- **Opis**: Cienka siatka z plastostali, umieszczona pod skórą, pokrywająca ramiona, klatkę piersiową i plecy. Mały generator wbudowany w biodro pozwala dodatkowo porazić ładunkiem elektrycznym wszystkich, którzy dotykają postaci z dermozbroją.
+- **Części**: cybermod bazowy (tułów), +1 pancerza, wyładowanie elektryczne k4, obrażenia krytyczne: paraliż na k4 rund
+- **Cena**: 5000 + 10000 + 4000 + 1500 = `20 500` ℂ
