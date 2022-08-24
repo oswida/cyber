@@ -135,11 +135,25 @@ Zrezygnowałem, bo:
 
 Zrezygnowałem, bo:
 
+1. We śnie objawił mi się Bóg i powiedział, że łączenie maszyn i ludzi jest złe.
+2. Ręka, którą zamontowałem jakiemuś gangusowi okazała się wadliwa i teraz ściga mnie banda maniaków.
+3. Zadłużyłem się u mafii, żeby otworzyć warsztat. Niestety interes nie poszedł zbyt dobrze...
+4. Moi poprzedni pracodawcy z zaibatsu w końcu mnie znaleźli...
+5. Od pewnego czasu każdy sprzęt, który montuję lub naprawiam szybko się psuje - to chyba jakaś klątwa...
+6. Mam pomysły na przełomowe cybermodyfikacje, potrzebuję pieniędzy i sprzętu, żeby zrealizować swoje plany.
+
 ## Programista
 
 *Czekaj mówię, czekaj chwilę! Jak teraz uruchomisz ten program, to za moment nie będzie co zbierać z dysku. Infosfera to nie miejsce dla ignorantów ... no przynajmniej w większości przypadków...*
 
 Zrezygnowałem, bo:
+
+1. Czuję, że się wypaliłem. Kodowanie już mnie nie kręci.
+2. Ostatnie starcie z czarnym lodem wysmażyło mi pół mózgu. Potrzebuję zmiany środowiska.
+3. Ekipa, z którą pracowałem okazała się bandą gnojów. Ukradli moje pomysły i zarobili na nich mnóstwo kasy.
+4. Na zlecenie zaibatsu zniszczyłem węzeł jakiejś influencerki - uświadomiłem sobie wtedy, że staję się bezdusznym potworem.
+5. Odeszła ode mnie bliska osoba - powiedziała, że nie będzie rywalizowała z moim życiem w Infosferze.
+6. W Infosferze natknąłem się na dziwny rodzaj sztucznej inteligencji - prawdę mówiąc do dzisiaj jestem przerażony. 
 
 ## Żołnierz gangu
 
@@ -147,11 +161,25 @@ Zrezygnowałem, bo:
 
 Zrezygnowałem, bo:
 
+1. Przez całe życie słuchałem rozkazów, teraz chcę robić coś dla siebie.
+2. Wrobiono mnie w zdradę i teraz nie mogę wrócić do gangu.
+3. Zdałem sobie sprawę, że krzywdzę ludzi. Nie chcę tego więcej robić.
+4. Nasz gang został zlikwidowany. Jestem chyba jedynym, który przeżył.
+5. Mam do spłacenia dług, ktoś musi zginąć.
+6. Mam dość życia w biedzie, tym razem zamierzam zdobyć fortunę.
+
 ## Influencerka
 
 *Witajcie cukiereczki! Niedługo dobijemy do trzech milionów subskrypcji i robimy imprezkę! W tym samym klubie co zawsze i pamiętajcie, żeby zostawić awatara przynajmniej na godzinkę!*
 
 Zrezygnowałam, bo:
+
+1. Infosfera nie jest realnym światem a ja chcę przeżywać prawdziwe emocje.
+2. Zamierzam zdobyć trochę doświadczenia życiowego, to podniesie oglądalność.
+3. Zaibatsu chciało kupić mój kanał, nie zgodziłam się - więc mnie zniszczyli.
+4. Cały obszar Infosfery został zaatakowany przez nieznanego wirusa, niestety były tam też moje dane...
+5. Mam dość ludzi podglądających moje życie, potrzebuję prywatności.
+6. Jakaś banda debili włamała się do mojego mieszkanie i zniszczyła cały sprzęt, muszę zaczynać od zera.
 
 ## Urzędnik Administracji
 
@@ -159,13 +187,20 @@ Zrezygnowałam, bo:
 
 Zrezygnowałem, bo:
 
+1. Uznałem, że wypełniłem już swój obywatelski obowiązek, teraz kolej na innych.
+2. Oskarżono mnie (niesłusznie) o łapówki i przekręty.
+3. W tej pracy nie ma żadnych perspektyw awansu a ja mam ambicje.
+4. Miałem mnóstwo pomysłów na usprawnienie naszej pracy ale nikt mnie nie doceniał.
+5. Nie wydałem pozwolenia na wyburzenie dzielnicy biedaków, a komuś ważnemu na tym zależało...
+6. Jakiś wariat podłożył bombę pod nasze biuro, w eksplozji zginęła bliska mi osoba...
+
 ## Policjant
 
 *No i co z tego, że mamy mniej funduszy niż sklep spożywczy i mniej uprawnień niż cieć na parkingu? Przestępców nadal trzeba ścigać a prawa przestrzegać. Czyjego prawa? Tego, które chroni ludzi a nie ich zniewala.*
 
 Zrezygnowałem, bo:
 
-1. Ta praca jest ohydna, wszyscy nas nienawidzą, nie wiem dlaczego chciałem zostać policjantem.
+1. Ta robota jest ohydna, wszyscy nas nienawidzą, nie wiem dlaczego chciałem zostać policjantem.
 2. Wiele można wybaczyć swojemu partnerowi w pracy, ale nie wszystko...
 3. Moja rodzina nigdy nie była bezpieczna.
 4. Szef nakrył mnie jak odbierałem "prezenty" od sklepikarzy
