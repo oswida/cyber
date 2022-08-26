@@ -34,6 +34,9 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
   - [Rozwój postaci](#rozwój-postaci)
     - [Fikcja](#fikcja)
     - [Ulepszenia technologiczne](#ulepszenia-technologiczne)
+  - [Bohaterowie niezależni](#bohaterowie-niezależni)
+    - [Najemnicy](#najemnicy)
+    - [Tworzenie bohaterów niezależnych](#tworzenie-bohaterów-niezależnych)
 
 ## Wstęp
 
@@ -334,3 +337,36 @@ Jedną z charakterystycznych cech nurtu cyberpunk jest wykorzystanie technologii
 
 Cybermodyfikacje ograniczone są jedynie wyobraźnią grających i mogą zmieniać dosłownie każdy element mechaniczny gry: zdolności postaci, rodzaje rzutów obronnych, kości ataku, poziom OCHR czy pojemność ekwipunku.
 W ten sposób można dowolnie zmienić bohatera, staje się to jedynie kwestią pieniędzy i dostępności danych technologii.
+
+## Bohaterowie niezależni
+
+### Najemnicy
+
+Postacie mogą wynająć **najemników** do pomocy w swoich wyprawach. Aby stworzyć najemnika, należy **rzucić 3k6** dla każdej z jego zdolności, następnie przydzielić mu **1k6 OCHR** oraz prostą **broń (k6)**. Kolejnym krokiem może być losowanie jego przeszłości w celu stworzenia dokładniejszego opisu pomocnika.
+Najemnicy nie posiadają własnych cybermodyfikacji ale gracz może ich wyposażyć na swój koszt, jeśli zechce.
+
+Średni **miesięczny koszt** utrzymania najemnika, to **100 * poziom jego najlepszej zdolności**.
+
+### Tworzenie bohaterów niezależnych
+
+Użyj poniższego szablonu, aby zdefiniować Bohatera Niezależnego:
+
+**Imię/nazwa**  
+X OCHR, X Pancerz, X CIA, X PSY, X INT, Broń (kX, przedmioty specjalne, cechy)
+
+- Opis wyglądu, zachowania, celów i pragnień
+- Cecha, taktyka lub osobliwość, która czyni tę postać wyjątkową
+- Szczególne wyposażenie
+
+#### Zasady ogólne
+
+- Interpretacja poziomów zdolności (dostosuj w razie potrzeby):
+  - 3 - ubogi/niedostateczny
+  - 6 - słaby,
+  - 10 - średni,
+  - 14 - godny uwagi,
+  - 18 - legendarny.
+- Daj przeciętnym postaciom 3 OCHR, wytrzymałym 6 OCHR, a poważne zagrożenia dostaną 10+ OCHR.
+- Użyj cech charakteru i stylu, aby pomóc im się wyróżnić.
+- Dodaj cybermodyfikacje lub kontakty, aby podkreślić siłę lub wpływy BN.
+- Pamiętaj, że OCHR jest  **Ochroną przed trafieniem** , a nie punktami życia. To miara odporności, szczęścia i sprytu – nie zdrowia.
