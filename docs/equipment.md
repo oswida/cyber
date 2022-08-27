@@ -49,7 +49,7 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Biała (ciężka)                     |  650  |             k10              | nieporęczna |
 | Dystansowa (bliski zasięg)         |  150  |              k6              |             |
 | Dystansowa (średni zasięg)         |  600  |              k8              |             |
-| Dystansowa (średni zasięg, ciężka) |  600  |             k10              | nieporęczna |
+| Dystansowa (średni zasięg, ciężka) |  800  |             k10              | nieporęczna |
 | Dystansowa (daleki zasięg, ciężka) | 1500  |             k12              | nieporęczna |
 | Granaty                            |  150  |         k6, podmuch          |             |
 | Mikroładunki                       |  100  |              k4              |             |
@@ -85,8 +85,8 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Czarny LOD (nieleg.) | rodzaj kości ataku * 5000 |
 
 
-| Usługi medyczno/naprawcze |        Cena        |    Czas    |
-| ------------------------- | :----------------: | :--------: |
-| Pomoc medyczna            | 2000 za 1 pkt CIA  | 1  tydzień |
-| Pomoc psychologiczna      | 1500  za 1 pkt PSY | 1 tydzień  |
-| Naprawa interfejsu        | 2000 za 1 pkt INT  |  1 dzień   |
+| Usługi medyczno/naprawcze |        Cena        |             Czas             |
+| ------------------------- | :----------------: | :--------------------------: |
+| Pomoc medyczna            | 2000 za 1 pkt CIA  | 1 dzień za 1 pkt, maks 7 dni |
+| Pomoc psychologiczna      | 1500  za 1 pkt PSY | 1 dzień za 1 pkt, maks 7 dni |
+| Naprawa interfejsu        | 2000 za 1 pkt INT  |      2 godziny za 1 pkt      |
