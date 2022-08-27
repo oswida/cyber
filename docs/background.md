@@ -165,7 +165,7 @@ Zrezygnowałem, bo:
 2. Wrobiono mnie w zdradę i teraz nie mogę wrócić do gangu.
 3. Zdałem sobie sprawę, że krzywdzę ludzi. Nie chcę tego więcej robić.
 4. Nasz gang został zlikwidowany. Jestem chyba jedynym, który przeżył.
-5. Mam do spłacenia dług, ktoś musi zginąć.
+5. Z powodów osobistych - ktoś musi zginąć.
 6. Mam dość życia w biedzie, tym razem zamierzam zdobyć fortunę.
 
 ## Influencerka
@@ -190,9 +190,9 @@ Zrezygnowałem, bo:
 1. Uznałem, że wypełniłem już swój obywatelski obowiązek, teraz kolej na innych.
 2. Oskarżono mnie (niesłusznie) o łapówki i przekręty.
 3. W tej pracy nie ma żadnych perspektyw awansu a ja mam ambicje.
-4. Miałem mnóstwo pomysłów na usprawnienie naszej pracy ale nikt mnie nie doceniał.
-5. Nie wydałem pozwolenia na wyburzenie dzielnicy biedaków, a komuś ważnemu na tym zależało...
-6. Jakiś wariat podłożył bombę pod nasze biuro, w eksplozji zginęła bliska mi osoba...
+4. Nikt nie doceniał moich pomysłów.
+5. Komuś ważnemu zależało na wyburzeniu dzielnicy biedoty, a ja nie wydałem pozwolenia...
+6. Moje stanowisko zajęła eksperymentalna sztuczna inteligencja.
 
 ## Policjant
 
