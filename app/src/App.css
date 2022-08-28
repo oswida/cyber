@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+body {
+  font-family: Oxanium,Arial, Helvetica, sans-serif;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
