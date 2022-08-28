@@ -3287,9 +3287,7 @@
                 <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="zamierzają się o tym przekonać. Być"/>
                 <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
-                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="może bez względu na cenę jaką trzeba będzie zapłacić..."/>
-                <para ALIGN="3" LINESP="16"/>
-                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Dodatkowo, aby mechaniczmie odzwierciedlić dotychczasowe doświad-czenie postaci, każda przeszłość określa bonus do jednej z trzech zdolności.... "/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="może bez względu na cenę jaką trzeba będzie zapłacić... "/>
                 <para ALIGN="3" LINESP="16"/>
                 <para ALIGN="3" LINESP="16"/>
                 <para ALIGN="3" LINESP="16"/>
@@ -3340,7 +3338,7 @@
                 <para ALIGN="3" LINESP="15" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="Pracownik fabryczny zaibatsu"/>
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
-                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="14" CH="(+1 CIA lub +1 INT)"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="14" CH="(+1 CIA)"/>
                 <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH=" "/>
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue" CH="Gdzie leziesz?! Życie ci już niemiłe?! Za"/>
@@ -3542,7 +3540,7 @@
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="1" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="184.536062992126" YPOS="12085.9653543307" OwnPage="13" ItemID="456899002" PTYPE="2" WIDTH="170.07874015748" HEIGHT="170.07874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.664370078740158" LOCALSCY="0.664370078740158" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../images/worker03.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L170.079 0 L170.079 170.079 L0 170.079 L0 0 Z" copath="M0 0 L170.079 0 L170.079 170.079 L0 170.079 L0 0 Z" gXpos="184.536062992126" gYpos="12085.9653543307" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="176.536062992126" YPOS="12031.9653543307" OwnPage="13" ItemID="456899002" PTYPE="2" WIDTH="198.425196850394" HEIGHT="198.425196850394" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.775098425196852" LOCALSCY="0.775098425196852" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../images/worker03.jpeg" IRENDER="0" EMBEDDED="0" path="M0 0 L198.425 0 L198.425 198.425 L0 198.425 L0 0 Z" copath="M0 0 L198.425 0 L198.425 198.425 L0 198.425 L0 0 Z" gXpos="176.536062992126" gYpos="12031.9653543307" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
         <PAGEOBJECT XPOS="142.56" YPOS="13279.6601574803" OwnPage="15" ItemID="456885514" PTYPE="12" WIDTH="250.762999999996" HEIGHT="39.3600000000006" FRTYPE="0" CLIPEDIT="0" ANNAME="Kopia Grupa69" LOCK="1" groupWidth="250.762999999996" groupHeight="39.3600000000006" groupClips="1" path="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" copath="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" gXpos="142.56" gYpos="13279.6601574803" gWidth="0" gHeight="0" LAYER="0">
             <PAGEOBJECT XPOS="142.56" YPOS="13301.0362204724" OwnPage="15" ItemID="458000506" PTYPE="4" WIDTH="30.2399439770707" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L30.2399 0 L30.2399 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L30.2399 0 L30.2399 14.4907 L0 14.4907 L0 0 Z" gXpos="0" gYpos="21.3760629921253" gWidth="250.762999999996" gHeight="39.3600000000006" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
                 <StoryText>
@@ -3821,7 +3819,9 @@
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue" CH="Tak, tak. Zaibatsu obiecują, że zajmą się wszystkim … i wszystkimi. Pod warunkiem, że"/>
                 <nbspace FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue"/>
-                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue" CH="masz czym zapłacić albo możesz dla nich pracować. "/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue" CH="masz czym zapłacić albo możesz dla nich pracować. Tak jakby cała reszta społeczeństwa w"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue" CH="ogóle nie istniała…"/>
                 <para ALIGN="3" LINESP="14" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Zrezygnowałem, bo:"/>
@@ -3861,9 +3861,6 @@
                 <DefaultStyle/>
                 <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="Policjant"/>
                 <para ALIGN="3" LINESP="16"/>
-                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="14" CH="(+1 PSY lub +1 CIA)"/>
-                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH=" "/>
-                <para ALIGN="3" LINESP="16"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue" CH="No i co z tego, że mamy mniej funduszy niż sklep spożywczy i mniej uprawnień niż cieć na"/>
                 <nbspace FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue" CH="parkingu? Przestępców nadal trzeba ścigać a"/>
@@ -3887,9 +3884,6 @@
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="1" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <para ALIGN="3" LINESP="16"/>
                 <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="Detektyw"/>
-                <para ALIGN="3" LINESP="16"/>
-                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="14" CH="(+1 PSY)"/>
-                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH=" "/>
                 <para ALIGN="3" LINESP="16"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue" CH="Zabójstwa, porwania, wymuszenia. W tym mieście nie brakuje ludzi, którzy krzywdzą innych ludzi a ja próbuję w tym wszystkim znaleźć coś co można nazwać sprawiedliwością."/>
                 <para ALIGN="3" LINESP="14"/>
@@ -3931,10 +3925,7 @@
                 <DefaultStyle/>
                 <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="Pracownica lokalu "/>
                 <para ALIGN="3" LINESP="16"/>
-                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="usługowego"/>
-                <para ALIGN="3" LINESP="16"/>
-                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="14" CH="(+1 PSY lub +1 INT)"/>
-                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="  "/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="usługowego "/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="     "/>
                 <para ALIGN="3" LINESP="16"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue" CH="Codziennie dbam o klientów, codziennie się do"/>
@@ -3965,9 +3956,6 @@
                 <para ALIGN="3" LINESP="15" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="Pracownik komunalny"/>
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
-                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="14" CH="(+1 CIA)"/>
-                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH=" "/>
-                <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="11" FCOLOR="Cyber Blue" CH="Piękny poranek! Ciężka harówka, płaca minimalna, ludzka pogarda - co gorszego może mnie dzisiaj spotkać?"/>
                 <para ALIGN="3" LINESP="14" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
@@ -3975,7 +3963,7 @@
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Każdy by zrezygnował - ty też."/>
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="1" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
-                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Słyszałem, że w podziemiach kolejki magnetycznej giną ludzie a ja miałem tam wyznaczony dyżur nocny."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Słyszałem, że w podziemiach kolejki magnetycznej giną pracownicy komu-nalni a ja miałem tam wyznaczony dyżur nocny."/>
                 <para ALIGN="3" LINESP="16" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" Bullet="0" Numeration="1" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
                 <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Taki jeden gościu z telewizji mówił, że"/>
                 <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
@@ -4420,7 +4408,7 @@
             </TableData>
         </PAGEOBJECT>
         <PAGEOBJECT XPOS="200.07968503937" YPOS="16556.9877165354" OwnPage="18" ItemID="466736890" PTYPE="2" WIDTH="127.55905511811" HEIGHT="127.55905511811" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.498277559055117" LOCALSCY="0.498277559055117" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../images/hardware01.jpeg" IRENDER="0" EMBEDDED="0" LOCK="1" path="M0 0 L127.559 0 L127.559 127.559 L0 127.559 L0 0 Z" copath="M0 0 L127.559 0 L127.559 127.559 L0 127.559 L0 0 Z" gXpos="200.07968503937" gYpos="16556.9877165354" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
-        <PAGEOBJECT XPOS="408.24" YPOS="16521.2277165355" OwnPage="18" ItemID="466897050" PTYPE="16" WIDTH="240.48" HEIGHT="110.879999999999" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PLINEART="1" LOCK="1" Rows="5" Columns="3" RowPositions="0 21.976 43.952 65.928 87.904" RowHeights="21.976 21.976 21.976 21.976 21.976" ColumnPositions="0 124.06 183.82" ColumnWidths="124.06 59.76 55.66" CellAreas="" TableStyle="" path="M0 0 L240.48 0 L240.48 110.88 L0 110.88 L0 0 Z" copath="M0 0 L240.48 0 L240.48 110.88 L0 110.88 L0 0 Z" gXpos="408.24" gYpos="16521.2277165355" gWidth="0" gHeight="0" LAYER="0">
+        <PAGEOBJECT XPOS="408.24" YPOS="16521.2277165355" OwnPage="18" ItemID="466897050" PTYPE="16" WIDTH="240.48" HEIGHT="110.879999999999" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PLINEART="1" LOCK="1" Rows="5" Columns="3" RowPositions="0 21.976 43.952 65.928 87.904" RowHeights="21.976 21.976 21.976 21.976 21.976" ColumnPositions="0 79.8267 159.653" ColumnWidths="79.8267 79.8267 79.8267" CellAreas="" TableStyle="" path="M0 0 L240.48 0 L240.48 110.88 L0 110.88 L0 0 Z" copath="M0 0 L240.48 0 L240.48 110.88 L0 110.88 L0 0 Z" gXpos="408.24" gYpos="16521.2277165355" gWidth="0" gHeight="0" LAYER="0">
             <TableData Style="" FillColor="None" FillShade="100">
                 <TableBorderLeft>
                     <TableBorderLine Width="1" PenStyle="1" Color="Cyber Blue" Shade="100"/>
@@ -4563,7 +4551,7 @@
                     </TableBorderBottom>
                     <StoryText>
                         <DefaultStyle/>
-                        <ITEXT FONT="Oxanium Regular" CH="Walizka/duża torba"/>
+                        <ITEXT FONT="Oxanium Regular" CH="Walizka"/>
                         <trail ALIGN="1"/>
                     </StoryText>
                 </Cell>

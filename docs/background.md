@@ -12,7 +12,9 @@ Nie jest to odpowiednik klasy, nie definiuje ścieżki rozwoju bohatera a opisuj
 
 Przeszłości zaproponowane poniżej przedstawiają "zwykłych" ludzi a nie wyszkolonych specjalistów, ale niech was to nie zwiedzie. Ci ludzie nie są zwyczajni - opuścili znane im środowiska i odważyli się zrobić krok w nieznane aby odmienić swoje życie. Są zdeterminowani i niebezpieczni. Wierzą, że gdzieś tam, w przyszłości czeka ich lepszy los i zamierzają się o tym przekonać. Być może bez względu na cenę jaką trzeba będzie zapłacić...
 
-## Pracownica biurowa zaibatsu
+Dodatkowo, aby mechaniczmie odzwierciedlić dotychczasowe doświadczenie postaci, każda przeszłość określa bonus do jednej z trzech zdolności.
+
+## Pracownica biurowa zaibatsu (+1 PSY)
 
 *Ten formularz powinien pójść gdzie indziej. Nie, nie rozumiem, że to błąd systemu! Informatyków mamy od tego, żeby system działał bez zarzutu. A może następnym razem, to ja popełnię błąd przy naliczaniu pańskiego urlopu?*
 
@@ -25,7 +27,7 @@ Zrezygnowałam, bo:
 5. W przetwarzanych dokumentach odkryłam szokujące fakty na temat korporacji
 6. Łowca głów z konkurencji okazał się oszustem i nie mogę już wrócić do poprzedniej pracy
 
-## Pracownik fabryczny zaibatsu
+## Pracownik fabryczny zaibatsu (+1 CIA lub +1 INT)
 
 *Gdzie leziesz?! Życie ci już niemiłe?! Za 15 sekund przez tę rampę przepuszczą taki prąd, że d**a ci się zacznie świecić jak żarówka!*
 
@@ -38,7 +40,7 @@ Zrezygnowałem, bo:
 5. Okazało się, że to co wytwarzamy służy potem do zabijania ludzi.
 6. Korporacje to zło wcielone i nie zamierzam pracować dla Szatana
 
-## Strażnik zaibatsu
+## Strażnik zaibatsu (+1 CIA)
 
 *W sumie to nie wiem, czy jestem nadzorcą, cieciem czy klawiszem. W tej robocie trudno znaleźć coś szlachetnego.*
 
@@ -51,7 +53,7 @@ Zrezygnowałem, bo:
 5. Nie chciałem brać udziału w przemycie organizowanym przez kolegów z pracy.
 6. Niechcący zastrzeliłem niewinnego człowieka.
 
-## Mechanik
+## Mechanik (+1 CIA)
 
 *Robot ci się zepsuł? A może pralka? Pan usiądzie, pan poczeka, się załatwi.*
 
@@ -64,7 +66,7 @@ Zrezygnowałem, bo:
 5. Mój świat zawalił się po śmierci bliskich, do dzisiaj nie wiem kto jest za to odpowiedzialny
 6. Nigdy nie byłem zbyt dobry w swoim fachu, może czas się przekwalifikować?
 
-## Lekarz (szpital Administracji)
+## Lekarz (szpital Administracji) (+1 PSY)
 
 *Jedni nazywają mnie "konowałem", inni "panem doktorem". Sam nie wiem, czy pomaganie ludziom to jeszcze powołanie czy już brzemię.*
 
@@ -77,7 +79,7 @@ Zrezygnowałem, bo:
 5. Ci, którzy naprawdę potrzebują mojej pomocy, nie trafiają do szpitali
 6. Odkryłem niewygodne fakty w dokumentacji medycznej szpitala
 
-## Pilot
+## Pilot (+1 CIA)
 
 *Kiedy jestem w powietrzu, to czuję się jakiś lżejszy - wszystkie troski zostawiam tam na ziemi. Można powiedzieć, że tutaj w górze jest tak jakby czyściej ... I nie mówię o składzie powietrza, którym oddychasz ...*
 
@@ -90,7 +92,7 @@ Zrezygnowałem, bo:
 5. Pomyślałem, że zawsze jest czas, żeby zacząć zmieniać świat na lepsze.
 6. Ciężko jest rywalizować z tymi młokosami nafaszerowanymi wszczepami.
 
-## Kierowca
+## Kierowca (+1 CIA)
 
 *Mówisz o LRV 500? Ten z napędem na trzy osie? Pewnie, że jeździłem! I to z pełnym obciążeniem, więc mi nie zaimponujesz leszczu ...*
 
@@ -103,7 +105,7 @@ Zrezygnowałem, bo:
 5. Nie zrezygnowałem - firma zbankrutowałą a nas wysłali na bezrobocie.
 6. Nie jestem coraz młodszy a do tego zawodu potrzebny jest refleks.
 
-## Ochroniarz klubowy
+## Ochroniarz klubowy (+1 CIA lub +1 PSY)
 
 *Tak, ja rozumiem, że tam w środku są pańscy przyjaciele ale bez zaproszenia nie wpuszczamy. Jasne, że zna pan szefa Yakuza - to może pan zadzwoni i przekaże mi telefon, dobrze?*
 
@@ -116,7 +118,7 @@ Zrezygnowałem, bo:
 5. Szef kazał mi skatować jakiegoś spokojnego knypka - niby, że naraził się VIPom. W d..e mam, nie biję bezbronnych.
 6. Jakiś palant wjechał w drzwi na dronie wypakowanym materiałami wybuchowymi. Od tego czasu słabo słyszę.
 
-## Reporter
+## Reporter (+1 PSY)
 
 *Wie pan, ja to oczywiście mogę nagrać. I ja nawet mogę to opublikować, ale to nic nie da. Za półtorej minuty tego materiału i tak nie będzie w Infosferze a za panem i za mną wyślą psy gończe. Naprawdę pan tego chce?*
 
@@ -129,7 +131,7 @@ Zrezygnowałem, bo:
 5. W starych archiwach odkryłem coś takiego, że wolałem zmienić zawód.
 6. Nie zrezygnowałem, po prostu tutaj znajdę temat mojego życia.  
 
-## Cybertechnik
+## Cybertechnik (+1 INT)
 
 *Jak się będziesz cały czas tak wiercił, to ci to przykręcę do d**y zamiast do ręki! Pasuje?*
 
@@ -142,7 +144,7 @@ Zrezygnowałem, bo:
 5. Od pewnego czasu każdy sprzęt, który montuję lub naprawiam szybko się psuje - to chyba jakaś klątwa...
 6. Mam pomysły na przełomowe cybermodyfikacje, potrzebuję pieniędzy i sprzętu, żeby zrealizować swoje plany.
 
-## Programista
+## Programista (+1 INT)
 
 *Czekaj mówię, czekaj chwilę! Jak teraz uruchomisz ten program, to za moment nie będzie co zbierać z dysku. Infosfera to nie miejsce dla ignorantów ... no przynajmniej w większości przypadków...*
 
@@ -155,7 +157,7 @@ Zrezygnowałem, bo:
 5. Odeszła ode mnie bliska osoba - powiedziała, że nie będzie rywalizowała z moim życiem w Infosferze.
 6. W Infosferze natknąłem się na dziwny rodzaj sztucznej inteligencji - prawdę mówiąc do dzisiaj jestem przerażony. 
 
-## Żołnierz gangu
+## Żołnierz gangu (+1 CIA lub +1 PSY)
 
 *Na ulicy sprawy stawia się jasno. Jesteś po naszej stronie, to dbamy o ciebie. Jesteś po przeciwnej - to walczymy z tobą. Nikt tutaj nie mówi o braku szacunku. Nigdy.*
 
@@ -168,7 +170,7 @@ Zrezygnowałem, bo:
 5. Z powodów osobistych - ktoś musi zginąć.
 6. Mam dość życia w biedzie, tym razem zamierzam zdobyć fortunę.
 
-## Influencerka
+## Influencerka (+1 PSY)
 
 *Witajcie cukiereczki! Niedługo dobijemy do trzech milionów subskrypcji i robimy imprezkę! W tym samym klubie co zawsze i pamiętajcie, żeby zostawić awatara przynajmniej na godzinkę!*
 
@@ -181,7 +183,7 @@ Zrezygnowałam, bo:
 5. Mam dość ludzi podglądających moje życie, potrzebuję prywatności.
 6. Jakaś banda debili włamała się do mojego mieszkanie i zniszczyła cały sprzęt, muszę zaczynać od zera.
 
-## Urzędnik Administracji
+## Urzędnik Administracji (+1 PSY)
 
 *Tak, tak. Zaibatsu obiecują, że zajmą się wszystkim ... i wszystkimi. Pod warunkiem, że masz czym zapłacić albo możesz dla nich pracować. Tak jakby cała reszta społeczeństwa w ogóle nie istniała...*
 
@@ -194,7 +196,7 @@ Zrezygnowałem, bo:
 5. Komuś ważnemu zależało na wyburzeniu dzielnicy biedoty, a ja nie wydałem pozwolenia...
 6. Moje stanowisko zajęła eksperymentalna sztuczna inteligencja.
 
-## Policjant
+## Policjant (+1 CIA lub +1 PSY)
 
 *No i co z tego, że mamy mniej funduszy niż sklep spożywczy i mniej uprawnień niż cieć na parkingu? Przestępców nadal trzeba ścigać a prawa przestrzegać. Czyjego prawa? Tego, które chroni ludzi a nie ich zniewala.*
 
@@ -207,7 +209,7 @@ Zrezygnowałem, bo:
 5. Po fałszywym donosie, w moim domu znaleziono nielegalny sprzęt zagłuszający - ktoś musiał mi to podrzucić...
 6. Po kilku latach zdałem sobie sprawę, że tak naprawdę nie jestem w stanie strzelić do człowieka.
 
-## Detektyw
+## Detektyw (+1 PSY)
 
 *Zabójstwa, porwania, wymuszenia. W tym mieście nie brakuje ludzi, którzy krzywdzą innych ludzi a ja próbuję w tym wszystkim znaleźć coś co można nazwać sprawiedliwością.*
 
@@ -220,7 +222,7 @@ Zrezygnowałem, bo:
 5. Czas najwyższy zacząć troszczyć się o siebie samego
 6. Zostałem wrobiony w sprawę kryminalną i odebrano mi licencję
 
-## Pracownica lokalu usługowego
+## Pracownica lokalu usługowego (+1 PSY lub +1 INT)
 
 *Codziennie dbam o klientów, codziennie się do nich uśmiecham. I kogo to tak naprawdę obchodzi?*
 
@@ -233,7 +235,7 @@ Zrezygnowałam, bo:
 5. Szef powiedział, że te nowe androidy są tańsze i pracują lepiej ode mnie.
 6. Chcę otworzyć swój własny lokal a do tego potrzebuję funduszy.
 
-## Pracownik komunalny
+## Pracownik komunalny (+1 CIA)
 
 *Piękny poranek! Ciężka harówka, płaca minimalna, ludzka pogarda - co gorszego może mnie dzisiaj spotkać?*
 

@@ -7,7 +7,7 @@ nav_order: 2
 
 # Cybermodyfikacje
 
-Podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 30 000 ℂ** .
+Podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 20 000 ℂ** .
 
 Cybermodyfikacje to pole do popisu dla wyobraźni graczy. Poniżej znajdziecie co prawda przykłady konkretnych ulepszeń ale *Cyber* przede wszystkim proponuje system konstrukcji wszczepów i określania ich wartości rynkowej tak, żeby każdy z Was mógł stworzyć dosłownie to co zechce.
 
@@ -35,10 +35,10 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 | +1 OCHR                                                                                                                   | 5 000                       |          +3           |
 | +1 punkt zdolności (CIA,PSY,INT)                                                                                          | 10 000                      | +3 (wyklucza poniżej) |
 | +1 punkt zdolności (CIA,PSY,INT) dla wybranej grupy aktywności                                                            | 5 000                       | +3 (wyklucza powyżej) |
-| +1 Pancerza                                                                                                               | 10 000                      |   +3 (całość <= 3)    |
+| +1 Pancerza                                                                                                               | 5 000                       |   +3 (całość <= 3)    |
 | +1 miejsce w ekwipunku                                                                                                    | 1 000                       |          +3           |
-| wmontowane uzbrojenie                                                                                                     | rodzaj kości obrażeń * 1000 |          k12          |
-| neuroprocesor do hakowania i zapory\*                                                                                     | rodzaj kości obrażeń * 1000 |          k12          |
+| wmontowane uzbrojenie                                                                                                     | rodzaj kości obrażeń * 1500 |          k12          |
+| neuroprocesor do hakowania i zapory\*                                                                                     | rodzaj kości obrażeń * 1500 |          k12          |
 | ułatwienie/utrudnienie testu dla jednej wybranej zdolności                                                                | 5 000                       |    3 (CIA,PSY,INT)    |
 | obrażenia krytyczne, które nie ranią celu                                                                                 | 1 500                       | 1 (wyklucza poniżej)  |
 | obrażenia krytyczne, które zadają dodatkowe obrażenia                                                                     | rodzaj kości obrażeń * 500  | 1  (wyklucza powyżej) |

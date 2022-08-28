@@ -55,7 +55,7 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 ### Imię, przeszłość, majątek
 
 Wybierz imię dla swojej postaci oraz jej [przeszłość](./background.md), która informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera.
-Rzuć **1k3** i pomnóż przez **1000** - to początkowa ilość kredytów, które posiada Twoja postać.
+Rzuć **1k4** i pomnóż przez **1000** - to początkowa ilość kredytów, które posiada Twoja postać.
 
 ### Poziomy zdolności
 
@@ -92,7 +92,7 @@ Torby, plecaki, wózki mogą zwiększać ilość miejsc na ekwipunek, to samo do
 
 Postać nie może nosić więcej przedmiotów niż pozwala na to łączna ilość miejsc ekwipunku.
 
-Podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**, ale koszt tych ulepszeń nie może przekroczyć `30 000 ℂ`.
+Podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**, ale koszt tych ulepszeń nie może przekroczyć `20 000 ℂ`.
 
 ## Zasady
 
@@ -112,7 +112,6 @@ Każda osoba odczuwająca dyskomfort przez więcej niż jeden dzień, dodaje do 
 Każde Zmęczenie blokuje jedno miejsce ekwipunku i trwa do czasu, aż postać będzie w stanie się zregenerować (np. odpoczywając całą noc w bezpiecznym miejscu). Po wypoczynku, postać odzyskuje *wszystkie* zajęte miejsca.
 
 Miejsca zablokowane przez Zmęczenie nie mogą być wykorzystane do noszenia ekwipunku, jeśli gracz musi zaznaczyć Zmęczenie na miejscu już zajętym przez jakiś przedmiot, rzecz tę należy odłożyć lub wyrzucić.
-Jeśli przedmiotem zajmującym zablokowane miejsce jest cybermodyfikacja - przestaje ona działać do momentu pozbycia się Zmęczenia.
 
 Postacie mogą również odczuwać dyskomfort lub otrzymać punkty Zmęczenia poprzez wydarzenia w fikcji lub jako efekt niektórych akcji.
 
@@ -243,7 +242,7 @@ Utracone punkty INT wymagają wizyty u specjalisty od naprawy interfejsów lub s
 
 Globalną walutą w grze jest **kredyt** oznaczany symbolem **ℂ**.
 
-Postacie zaczynają grę z pulą **1k3 * 1000** kredytów.
+Postacie zaczynają grę z pulą **1k4 * 1000** kredytów.
 
 Wszystkie podstawowe produkty i usługi takie jak żywność, sprzęt AGD, proste narzędzia itp. oferowane są w postaci miesięcznego abonamentu o różnym poziomie. Różnice leżą przede wszystkim w jakości tych artykułów a nie ich rodzaju.
 W sklepach produkty oznaczane są kolorową nalepką symbolizującą poziom abonamentu tak, żeby klient wiedział, które z nich może włożyć do koszyka.
@@ -301,7 +300,7 @@ Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekrac
 
 > Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
 
-Postać, której **INT wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać.
+Postać, której **INT wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać dopóki bohater nie odzyska przynajmniej jednego punktu Interfejsu.
 
 Więcej informacji na temat tworzenia cybermodyfikacji oraz ich cen można znaleźć w [dodatku](./cybermod.md).
 

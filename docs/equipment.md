@@ -35,33 +35,34 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 |        Złoty         |      2000      |         1/6          |
 |      Platynowy       |      5000      |          -           |
 
-| Pojemnik     | Cena  | Sloty ekwipunku |
-| ------------ | :---: | :-------------: |
-| Torba        |  200  |       +2        |
-| Walizka      |  300  |       +3        |
-| Plecak       |  400  |       +4        |
-| Wózek ręczny |  600  |       +6        |
+| Pojemnik           | Cena  | Sloty ekwipunku |
+| ------------------ | :---: | :-------------: |
+| Torba              |  200  |       +2        |
+| Walizka/duża torba |  300  |       +3        |
+| Plecak             |  400  |       +4        |
+| Wózek ręczny       |  600  |       +6        |
 
-| Broń                               | Cena  |          Obrażenia           | Uwagi       |
-| ---------------------------------- | :---: | :--------------------------: | ----------- |
-| Biała (lekka)                      |  100  |              k6              |             |
-| Biała (średnia)                    |  400  |              k8              |             |
-| Biała (ciężka)                     |  650  |             k10              | nieporęczna |
-| Dystansowa (bliski zasięg)         |  150  |              k6              |             |
-| Dystansowa (średni zasięg)         |  600  |              k8              |             |
-| Dystansowa (średni zasięg, ciężka) |  800  |             k10              | nieporęczna |
-| Dystansowa (daleki zasięg, ciężka) | 1500  |             k12              | nieporęczna |
-| Granaty                            |  150  |         k6, podmuch          |             |
-| Mikroładunki                       |  100  |              k4              |             |
-| Działko EMP\*                      | 2000  | k8, podmuch, obrażenia w INT | nieporęczna |
+| Broń                       |        Cena        |          Obrażenia           | Uwagi       |
+| -------------------------- | :----------------: | :--------------------------: | ----------- |
+| Biała (lekka)              |        100         |              k6              |             |
+| Biała (średnia)            |        400         |              k8              |             |
+| Biała (ciężka)             |        650         |             k10              | nieporęczna |
+| Dystansowa (bliski zasięg) |        150         |              k6              |             |
+| Dystansowa (średni zasięg) |        600         |              k8              |             |
+| Dystansowa (daleki zasięg) |        1000        |             k10              | nieporęczna |
+| Dystansowa (daleki zasięg) |        1500        |         k12, podmuch         | nieporęczna |
+| Granaty                    |        200         |         k6, podmuch          |             |
+| Mikroładunki               |        150         |              k4              |             |
+| Ładunki wybuchowe          | kość obrażeń * 150 |       k6-k12, podmuch        |             |
+| Działko EMP\*              |        2000        | k8, podmuch, obrażenia w INT | nieporęczna |
 
 \* *Obrażenia krytyczne*: jeśli cel posiada neuroprocesor, zadaj PSY celu, tyle samo punktów obrażeń ile zadałeś INT w tej turze.
 
 | Pancerz | Cena  | Wartość | Uwagi       |
 | ------- | :---: | :-----: | ----------- |
-| Lekki   |  200  |    1    |             |
-| Średni  |  500  |    2    |             |
-| Ciężki  | 1100  |    3    | nieporęczny |
+| Lekki   | 1000  |    1    |             |
+| Średni  | 2500  |    2    |             |
+| Ciężki  | 5500  |    3    | nieporęczny |
 | Tarcza  | 1200  |   +1    |             |
 
 | Drony, pojazdy, roboty                        |           Cena            | Sloty bagażowe |
@@ -75,13 +76,14 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Duży       pojazd                             |           10000           |      +10       |
 | Pojazd transportowy                           |           20000           |      +12       |
 | Wyposażenie dodatkowe (kamery, czujniki itp.) |           1000            |       -        |
-| Uzbrojenie                                    | rodzaj kości ataku * 1000 |       -        |
+| Uzbrojenie                                    | rodzaj kości ataku * 1500 |       -        |
+| Pancerz                                       |   5000 za pkt (maks 3)    |       -        |
 
 | Węzeł Infosfery      |       Cena/miesiąc        |
 | -------------------- | :-----------------------: |
 | +1 OCHR              |           2000            |
 | +1 INT               |           5000            |
-| Biały LOD            | rodzaj kości ataku * 1000 |
+| Biały LOD            | rodzaj kości ataku * 1500 |
 | Czarny LOD (nieleg.) | rodzaj kości ataku * 5000 |
 
 
