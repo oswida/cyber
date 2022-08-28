@@ -8,7 +8,7 @@
    version="1.1"
    id="svg4807"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   sodipodi:docname="Cahrsheet.svg"
+   sodipodi:docname="Charsheet.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -25,15 +25,16 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.33197215"
-     inkscape:cx="433.77133"
-     inkscape:cy="716.92761"
+     inkscape:zoom="1.8779181"
+     inkscape:cx="258.26473"
+     inkscape:cy="961.1708"
      inkscape:window-width="1366"
      inkscape:window-height="699"
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     showguides="false" />
   <defs
      id="defs4804">
     <rect
@@ -285,9 +286,9 @@
          transform="translate(2.5401486,-49.246732)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18045"><tspan
+           id="tspan2776"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18043">Imię</tspan></tspan></text>
+             id="tspan2774">Imię</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text400454-1"
@@ -295,9 +296,9 @@
          transform="translate(-0.71168435,35.19208)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18049"><tspan
+           id="tspan2780"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18047">Przeszłość</tspan></tspan></text>
+             id="tspan2778">Przeszłość</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text400454-1-2"
@@ -305,9 +306,9 @@
          transform="translate(0.21764195,120.01293)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18053"><tspan
+           id="tspan2784"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18051">Abonament podstawowy/kredyty</tspan></tspan></text>
+             id="tspan2782">Abonament podstawowy/kredyty</tspan></tspan></text>
       <rect
          style="fill:none;stroke:#808080;stroke-width:1.1344;stroke-linejoin:round"
          id="rect400561"
@@ -368,11 +369,11 @@
          transform="translate(-28.363429,214.56814)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18059"><tspan
+           id="tspan2790"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18055">Ciało </tspan><tspan
+             id="tspan2786">Ciało </tspan><tspan
              style="font-size:17.3333px"
-             id="tspan18057">(akt/baz/maks)</tspan></tspan></text>
+             id="tspan2788">(akt/baz/maks)</tspan></tspan></text>
       <g
          id="g481586"
          transform="translate(12,2)">
@@ -466,11 +467,11 @@
          transform="translate(181.63481,215.50451)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18065"><tspan
+           id="tspan2796"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18061">Psychika </tspan><tspan
+             id="tspan2792">Psychika </tspan><tspan
              style="font-size:17.3333px"
-             id="tspan18063">(akt/baz/maks)</tspan></tspan></text>
+             id="tspan2794">(akt/baz/maks)</tspan></tspan></text>
       <g
          id="g504425"
          transform="translate(6)">
@@ -564,11 +565,11 @@
          transform="translate(441.43338,215.5458)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18071"><tspan
+           id="tspan2802"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18067">Interfejs </tspan><tspan
+             id="tspan2798">Interfejs </tspan><tspan
              style="font-size:17.3333px"
-             id="tspan18069">(akt/baz/maks)</tspan></tspan></text>
+             id="tspan2800">(akt/baz/maks)</tspan></tspan></text>
       <g
          id="g519011"
          transform="translate(36)">
@@ -662,11 +663,11 @@
          transform="translate(-30.287722,292.61499)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18077"><tspan
+           id="tspan2808"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18073">Ochrona </tspan><tspan
+             id="tspan2804">Ochrona </tspan><tspan
              style="font-size:17.3333px"
-             id="tspan18075">(akt/baz/maks)</tspan></tspan></text>
+             id="tspan2806">(akt/baz/maks)</tspan></tspan></text>
       <g
          id="g541916">
         <g
@@ -759,11 +760,11 @@
          transform="translate(221.27437,293.70908)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18083"><tspan
+           id="tspan2814"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18079">Pancerz </tspan><tspan
+             id="tspan2810">Pancerz </tspan><tspan
              style="font-size:17.3333px"
-             id="tspan18081">(akt/baz)</tspan></tspan></text>
+             id="tspan2812">(akt/baz)</tspan></tspan></text>
       <g
          id="g556546"
          transform="translate(12)">
@@ -850,9 +851,9 @@
          transform="translate(474.60069,302.44583)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18087"><tspan
+           id="tspan2818"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18085">Dyskomfort</tspan></tspan></text>
+             id="tspan2816">Dyskomfort</tspan></tspan></text>
       <g
          id="g579519">
         <rect
@@ -927,11 +928,11 @@
          transform="translate(-45.657565,393.72123)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18093"><tspan
+           id="tspan2824"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18089">Cybermodyfikacje </tspan><tspan
+             id="tspan2820">Cybermodyfikacje </tspan><tspan
              style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=400';font-variation-settings:'wght' 400"
-             id="tspan18091">(maksymalnie INT/3, zaokrąglone w górę)</tspan></tspan></text>
+             id="tspan2822">(maksymalnie INT/3, zaokrąglone w górę)</tspan></tspan></text>
       <g
          id="barcode11"
          style="fill:#000000"
@@ -996,13 +997,13 @@
          transform="translate(-44.034898,703.06906)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan18101"><tspan
+           id="tspan2832"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18095">Ekwipunek </tspan><tspan
+             id="tspan2826">Ekwipunek </tspan><tspan
              style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=400';font-variation-settings:'wght' 400"
-             id="tspan18097">(2 x ręce, 2 x ciało plus pojemniki)</tspan><tspan
+             id="tspan2828">(2 x ręce, 2 x ciało plus pojemniki)</tspan><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan18099"> </tspan></tspan></text>
+             id="tspan2830"> </tspan></tspan></text>
       <g
          id="barcode12"
          style="fill:#000000"
@@ -1055,6 +1056,182 @@
            style="font-size:9px;text-align:center;text-anchor:middle"
            xml:space="preserve"
            id="barcode12_text">1 1</text>
+      </g>
+    </g>
+    <g
+       id="g1322-7-1"
+       transform="translate(-117.96346,-14.434628)">
+      <rect
+         style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.333286;stroke-linejoin:round"
+         id="rect524-5-2"
+         width="39.666714"
+         height="27.166714"
+         x="135.59271"
+         y="247.17601" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52778px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:Oxanium;fill:#b3b3b3;stroke-width:0.264583"
+         x="136.16661"
+         y="250.37268"
+         id="text750-35-9"><tspan
+           sodipodi:role="line"
+           id="tspan748-62-3"
+           style="font-size:3.52778px;fill:#b3b3b3;stroke-width:0.264583"
+           x="136.16661"
+           y="250.37268">ręka</tspan></text>
+      <g
+         id="g1048-9-1"
+         transform="translate(9.9545412,2.6458334)">
+        <text
+           xml:space="preserve"
+           style="font-size:3.52778px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:Oxanium;fill:#b3b3b3;stroke-width:0.264583"
+           x="161.86719"
+           y="270.59387"
+           id="text750-3-1-9"><tspan
+             sodipodi:role="line"
+             id="tspan748-6-2-4"
+             style="font-size:3.52778px;fill:#b3b3b3;stroke-width:0.264583"
+             x="161.86719"
+             y="270.59387">Z</tspan></text>
+        <rect
+           style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.157921;stroke-linejoin:round"
+           id="rect887-7-7"
+           width="4.8420787"
+           height="4.8420787"
+           x="160.4393"
+           y="266.97565" />
+      </g>
+    </g>
+    <g
+       id="g1322-7-1-7"
+       transform="translate(-117.96346,13.11779)">
+      <rect
+         style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.333286;stroke-linejoin:round"
+         id="rect524-5-2-6"
+         width="39.666714"
+         height="27.166714"
+         x="135.59271"
+         y="247.17601" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52778px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:Oxanium;fill:#b3b3b3;stroke-width:0.264583"
+         x="136.16661"
+         y="250.37268"
+         id="text750-35-9-5"><tspan
+           sodipodi:role="line"
+           id="tspan748-62-3-6"
+           style="font-size:3.52778px;fill:#b3b3b3;stroke-width:0.264583"
+           x="136.16661"
+           y="250.37268">ręka</tspan></text>
+      <g
+         id="g1048-9-1-9"
+         transform="translate(9.9545412,2.6458334)">
+        <text
+           xml:space="preserve"
+           style="font-size:3.52778px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:Oxanium;fill:#b3b3b3;stroke-width:0.264583"
+           x="161.86719"
+           y="270.59387"
+           id="text750-3-1-9-3"><tspan
+             sodipodi:role="line"
+             id="tspan748-6-2-4-7"
+             style="font-size:3.52778px;fill:#b3b3b3;stroke-width:0.264583"
+             x="161.86719"
+             y="270.59387">Z</tspan></text>
+        <rect
+           style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.157921;stroke-linejoin:round"
+           id="rect887-7-7-4"
+           width="4.8420787"
+           height="4.8420787"
+           x="160.4393"
+           y="266.97565" />
+      </g>
+    </g>
+    <g
+       id="g1322-7-1-5"
+       transform="translate(-78.076016,-14.450289)">
+      <rect
+         style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.333286;stroke-linejoin:round"
+         id="rect524-5-2-2"
+         width="39.666714"
+         height="27.166714"
+         x="135.59271"
+         y="247.17601" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52778px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:Oxanium;fill:#b3b3b3;stroke-width:0.264583"
+         x="136.16661"
+         y="250.37268"
+         id="text750-35-9-54"><tspan
+           sodipodi:role="line"
+           id="tspan748-62-3-7"
+           style="font-size:3.52778px;fill:#b3b3b3;stroke-width:0.264583"
+           x="136.16661"
+           y="250.37268">ciało</tspan></text>
+      <g
+         id="g1048-9-1-4"
+         transform="translate(9.9545412,2.6458334)">
+        <text
+           xml:space="preserve"
+           style="font-size:3.52778px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:Oxanium;fill:#b3b3b3;stroke-width:0.264583"
+           x="161.86719"
+           y="270.59387"
+           id="text750-3-1-9-4"><tspan
+             sodipodi:role="line"
+             id="tspan748-6-2-4-3"
+             style="font-size:3.52778px;fill:#b3b3b3;stroke-width:0.264583"
+             x="161.86719"
+             y="270.59387">Z</tspan></text>
+        <rect
+           style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.157921;stroke-linejoin:round"
+           id="rect887-7-7-0"
+           width="4.8420787"
+           height="4.8420787"
+           x="160.4393"
+           y="266.97565" />
+      </g>
+    </g>
+    <g
+       id="g1322-7-1-7-7"
+       transform="translate(-78.076016,13.102117)">
+      <rect
+         style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.333286;stroke-linejoin:round"
+         id="rect524-5-2-6-8"
+         width="39.666714"
+         height="27.166714"
+         x="135.59271"
+         y="247.17601" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52778px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:Oxanium;fill:#b3b3b3;stroke-width:0.264583"
+         x="136.16661"
+         y="250.37268"
+         id="text750-35-9-5-6"><tspan
+           sodipodi:role="line"
+           id="tspan748-62-3-6-8"
+           style="font-size:3.52778px;fill:#b3b3b3;stroke-width:0.264583"
+           x="136.16661"
+           y="250.37268">ciało</tspan></text>
+      <g
+         id="g1048-9-1-9-8"
+         transform="translate(9.9545412,2.6458334)">
+        <text
+           xml:space="preserve"
+           style="font-size:3.52778px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:Oxanium;fill:#b3b3b3;stroke-width:0.264583"
+           x="161.86719"
+           y="270.59387"
+           id="text750-3-1-9-3-4"><tspan
+             sodipodi:role="line"
+             id="tspan748-6-2-4-7-3"
+             style="font-size:3.52778px;fill:#b3b3b3;stroke-width:0.264583"
+             x="161.86719"
+             y="270.59387">Z</tspan></text>
+        <rect
+           style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.157921;stroke-linejoin:round"
+           id="rect887-7-7-4-1"
+           width="4.8420787"
+           height="4.8420787"
+           x="160.4393"
+           y="266.97565" />
       </g>
     </g>
   </g>
