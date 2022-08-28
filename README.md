@@ -29,3 +29,5 @@ Ta gra nie mogła powstać w próżni. Poniżej znajdziecie listę osób oraz ma
 Cyberpunk Cairn hack (in Polish for now).
 
 Released under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+[app](https://oswida.github.io/cyber/app/dist)
