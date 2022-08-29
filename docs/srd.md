@@ -8,10 +8,12 @@ nav_order: 1
 
 **Cyber** jest publikowany na licencji [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
-Autor gry: [Oskar Świda](https://twitter.com/OskarSwida).
-
 Cyber to gra fabularna o eksploracji mrocznego świata niedalekiej przyszłości, zdominowanego przez megakorporacje i technologię. Gracze wcielają się w mieszkańców gigantycznego metropolis - zatłoczonego, hałaśliwego miasta pełnego chciwości, obłudy i podejrzanych interesów.
 Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na granicy prawa jako wolni strzelcy do wynajęcia albo prowadzić ustabilizowane (aczkolwiek nie pozbawione wyzwań) życie członka jednej z tysięcy frakcji - od religijnych sekt po miejskie służby ratunkowe.
+
+Gra bazuje na [Cairn](https://cairnrpg.com/) stworzonej przez [Yochai Gal](https://newschoolrevolution.com/).
+Autorem gry jest: [Oskar Świda](https://twitter.com/OskarSwida).
+Dokumenty w formacie PDF dostępne są na [itch.io](https://oskarswida.itch.io/cyber).
 
 - [Dokument referencyjny](#dokument-referencyjny)
   - [Wstęp](#wstęp)
@@ -55,7 +57,7 @@ Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na gra
 ### Imię, przeszłość, majątek
 
 Wybierz imię dla swojej postaci oraz jej [przeszłość](./background.md), która informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera.
-Rzuć **1k4** i pomnóż przez **1000** - to początkowa ilość kredytów, które posiada Twoja postać.
+Rzuć **1k4** i pomnóż przez **1000** - to początkowa ilość kredytów, które posiada Twoja postać. Mogą one zostać użyte do zakupu ekwipunku startowego (patrz Wyposażenie i Ekonomia).
 
 ### Poziomy zdolności
 
@@ -92,7 +94,7 @@ Torby, plecaki, wózki mogą zwiększać ilość miejsc na ekwipunek, to samo do
 
 Postać nie może nosić więcej przedmiotów niż pozwala na to łączna ilość miejsc ekwipunku.
 
-Podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**, ale koszt tych ulepszeń nie może przekroczyć `20 000 ℂ`.
+Oprócz ekwipunku startowego (kupowanego za początkowe kredyty), podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**, ale koszt tych ulepszeń nie może przekroczyć `20 000 ℂ`.
 
 ## Zasady
 
