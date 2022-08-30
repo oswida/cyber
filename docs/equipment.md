@@ -75,7 +75,7 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Średni    pojazd                              |           7000            |       +8       |
 | Duży       pojazd                             |           10000           |      +10       |
 | Pojazd transportowy                           |           20000           |      +12       |
-| Wyposażenie dodatkowe (kamery, czujniki itp.) |           1000            |       -        |
+| Wyposażenie dodatkowe (kamery, czujniki itp.) |        1000 każde         |       -        |
 | Uzbrojenie                                    | rodzaj kości ataku * 1500 |       -        |
 | Pancerz                                       |   5000 za pkt (maks 3)    |       -        |
 

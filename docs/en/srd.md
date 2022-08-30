@@ -264,7 +264,7 @@ Exceptions to this subscription system are specialised services and equipment:
 Some of the exceptions above have their own separate price lists and others depend on the specific need and offer - they will therefore be negotiated between player characters and NPCs.
 Any equipment officially considered illegal requires appropriate contacts and can be at any price.
 
-For a detailed list of products and services and the required credit levels, see [Appendix](./equipment.md).
+For a detailed list of products and services and the required credit levels, see [Appendix](./economy.md).
 
 ### Infosphere
 
@@ -323,7 +323,7 @@ When the PCs encounter an NPC whose reaction to the party is not obvious, the re
 ### Die of Fate
 
 Occasionally you will want an element of randomness (e.g. the weather, unique character knowledge, etc.).
-In these situations, roll **1d6**. 
+In these situations, roll **1d6**.
 
 - A roll of **4 or more** generally **favors** the players.
 - A roll of **3 or under** tends to mean **bad luck** for the PCs or their allies.
