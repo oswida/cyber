@@ -1,57 +1,60 @@
 ---
 layout: default
-title: Przeszłość
-parent: Dokumenty
-nav_order: 5
+title: Background
+parent: English version
+grand_parent: Dokumenty
+nav_order: 4
 ---
 
-# Przeszłość
+# Background
 
-Przeszłość podsumowuje dotychczasowe doświadczenie życiowe postaci i daje jej pewien startowy status.
-Nie jest to odpowiednik klasy, nie definiuje ścieżki rozwoju bohatera a opisuje jedynie jego **dawne doświadczenia** i wynikającą z tego wiedzę lub status. Dodatkowo gracz może (ale nie musi) wybrać lub wylosować powód dla którego zrezygnował z poprzedniego stylu życia.
+Background summarises a character's past life experience and gives them a certain starting status.
+It is not equivalent to a class, it does not define the character's path of development and only describes the character's **past experiences** and resulting knowledge or status. Additionally, the player may (but does not have to) choose or draw a reason for giving up their previous lifestyle.
 
-Przeszłości zaproponowane poniżej przedstawiają "zwykłych" ludzi a nie wyszkolonych specjalistów, ale niech was to nie zwiedzie. Ci ludzie nie są zwyczajni - opuścili znane im środowiska i odważyli się zrobić krok w nieznane aby odmienić swoje życie. Są zdeterminowani i niebezpieczni. Wierzą, że gdzieś tam, w przyszłości czeka ich lepszy los i zamierzają się o tym przekonać. Być może bez względu na cenę jaką trzeba będzie zapłacić...
+Backgrounds proposed below represent 'ordinary' people rather than trained professionals, but don't let that fool you. These people are not ordinary - they have left familiar environments and dared to take a step into the unknown. Dared to change their lives. They are determined and dangerous. They believe that somewhere out there, in the future, a better fate awaits them and they intend to find out. No matter what price they have to pay....
 
-Dodatkowo, aby mechanicznie odzwierciedlić dotychczasowe doświadczenie postaci, każda przeszłość określa bonus do jednej z trzech zdolności.
+In addition, to mechanically reflect a character's past experience, each past determines a bonus to one of three abilities.
 
-## Pracownica biurowa zaibatsu (+1 PSY)
+## Zaibatsu office worker (+1 PSY)
 
-*Ten formularz powinien pójść gdzie indziej. Nie, nie rozumiem, że to błąd systemu! Informatyków mamy od tego, żeby system działał bez zarzutu. A może następnym razem, to ja popełnię błąd przy naliczaniu pańskiego urlopu?*
+*This form should go elsewhere. No, I do not understand that it is a system error! We have IT people to keep the system running smoothly. How about next time, I'm the one who makes a mistake when calculating your leave?*
 
-Zrezygnowałam, bo:
+I resigned because:
 
-1. Mam dość tej monotonnej, bezproduktywnej roboty
-2. Nie przeszłam okresowej ewaluacji (z winy współpracownika)
-3. Bezpośredni przełożony składał mi niedwuznaczne propozycje
-4. Korporacje to zło wcielone i nie zamierzam pracować dla Szatana
-5. W przetwarzanych dokumentach odkryłam szokujące fakty na temat korporacji
-6. Łowca głów z konkurencji okazał się oszustem i nie mogę już wrócić do poprzedniej pracy
+1. I am fed up with this monotonous, unproductive job
+2. I did not pass the periodic evaluation (it is co-worker fault)
+3. My immediate supervisor made unambiguous proposals to me.
+4. Corporations are evil incarnate and I am not going to work for Satan
+5. In the documents I processed, I discovered shocking facts about the corporation
+6. A headhunter from a competitor turned out to be a fraud and I can no longer return to my previous job
 
-## Pracownik fabryczny zaibatsu (+1 CIA lub +1 INT)
+## Zaibatsu factory employee (+1 BOD or +1 INT)
 
-*Gdzie leziesz?! Życie ci już niemiłe?! Za 15 sekund przez tę rampę przepuszczą taki prąd, że d**a ci się zacznie świecić jak żarówka!*
+*Where are you going!? You don't like your life anymore!? In 15 seconds they're going to put so much current through this ramp that your head will start glowing like a light bulb!*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Jeden z moich kolegów przeze mnie uległ wypadkowi
-2. Mój szef okazał się zwykłą świnią
-3. Ktoś zakablował, że wyniosłem coś z fabryki na swojej zmianie
-4. Niechcący uszkodziłem maszynę na taśmie i musiałem odejść
-5. Okazało się, że to co wytwarzamy służy potem do zabijania ludzi.
-6. Korporacje to zło wcielone i nie zamierzam pracować dla Szatana
+1. One of my colleagues had an accident because of me
+2. My boss turned out to be an asshole
+3. Someone snooped that I took something out of the factory during my shift
+4. I unwittingly damaged a machine on the belt and had to leave
+5. It turned out that items we produce are used to kill people.
+6. Corporations are evil incarnate and I am not going to work for Satan
 
-## Strażnik zaibatsu (+1 CIA)
+## Zaibatsu guard (+1 BOD)
 
-*W sumie to nie wiem, czy jestem nadzorcą, cieciem czy klawiszem. W tej robocie trudno znaleźć coś szlachetnego.*
+*All in all, I don't know whether I'm a supervisor, a janitor or a clerk. It's hard to find anything noble in this job.*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Odmówiłem wykonania rozkazu, który uznałem za niesłuszny.
-2. Mam większe aspiracje, chciałbym mieć robotę, w której ludzie mnie szanują.
-3. Nie przeszedłem okresowych testów sprawnościowych, miałem po prostu słabszy dzień.
-4. Widziałem jak mój bezpośredni przełożony zakatował jednego z pracowników firmy.
-5. Nie chciałem brać udziału w przemycie organizowanym przez kolegów z pracy.
-6. Niechcący zastrzeliłem niewinnego człowieka.
+1. I refused to follow an order that I felt was wrong.
+2. I have higher aspirations, I would like a job where people respect me.
+3. I did not pass the periodic fitness tests, I just had a weaker day.
+4. I saw my immediate supervisor slaughtered one of the company's employees.
+5. I did not want to take part in the smuggling organised by my colleagues.
+6. I unintentionally shot an innocent man.
+
+# WORK IN PROGRESS
 
 ## Mechanik (+1 CIA)
 
