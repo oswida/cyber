@@ -28,18 +28,26 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.46947952"
-     inkscape:cx="356.77808"
-     inkscape:cy="913.77788"
+     inkscape:zoom="1.3278886"
+     inkscape:cx="324.95196"
+     inkscape:cy="407.41369"
      inkscape:window-width="1366"
      inkscape:window-height="699"
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1742"
+     inkscape:current-layer="g3507"
      showguides="false" />
   <defs
      id="defs4804">
+    <linearGradient
+       id="linearGradient4016"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4014" />
+    </linearGradient>
     <rect
        x="9725.7656"
        y="146.29839"
@@ -433,9 +441,9 @@
          transform="translate(30.540151,-15.246732)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan2476"><tspan
+           id="tspan4300"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan2474">Imię</tspan></tspan></text>
+             id="tspan4298">Imię</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text400454-1"
@@ -443,9 +451,9 @@
          transform="translate(29.288319,39.19208)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan2480"><tspan
+           id="tspan4304"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan2478">Przeszłość</tspan></tspan></text>
+             id="tspan4302">Przeszłość</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text400454-1-2"
@@ -453,9 +461,9 @@
          transform="translate(0.21764195,84.01293)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan2484"><tspan
+           id="tspan4308"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan2482">Abonament podstawowy/kredyty</tspan></tspan></text>
+             id="tspan4306">Abonament podstawowy/kredyty</tspan></tspan></text>
       <rect
          style="fill:none;stroke:#808080;stroke-width:1.1344;stroke-linejoin:round"
          id="rect400561"
@@ -502,11 +510,11 @@
          transform="translate(-45.657565,393.72123)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan2490"><tspan
+           id="tspan4314"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan2486">Cybermodyfikacje </tspan><tspan
+             id="tspan4310">Cybermodyfikacje </tspan><tspan
              style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=400';font-variation-settings:'wght' 400"
-             id="tspan2488">(maksymalnie INT/3, zaokrąglone w górę)</tspan></tspan></text>
+             id="tspan4312">(maksymalnie INT/3, zaokrąglone w górę)</tspan></tspan></text>
     </g>
     <g
        id="g617186"
@@ -518,13 +526,13 @@
          transform="translate(-44.034898,703.06906)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan2498"><tspan
+           id="tspan4322"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan2492">Ekwipunek </tspan><tspan
+             id="tspan4316">Ekwipunek </tspan><tspan
              style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=400';font-variation-settings:'wght' 400"
-             id="tspan2494">(2 x ręce, 2 x ciało plus pojemniki)</tspan><tspan
+             id="tspan4318">(2 x ręce, 2 x ciało plus pojemniki)</tspan><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan2496"> </tspan></tspan></text>
+             id="tspan4320"> </tspan></tspan></text>
     </g>
     <path
        sodipodi:type="star"
@@ -601,7 +609,7 @@
              transform="matrix(0.17558958,0,0,0.17558958,45.684019,189.33746)" />
           <path
              sodipodi:type="star"
-             style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
+             style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.37599993,0.84399998;stroke-dashoffset:0"
              id="path390-3-5"
              inkscape:flatsided="true"
              sodipodi:sides="6"
@@ -625,7 +633,7 @@
            y="0"><tspan
              x="9729.6708"
              y="165.8188"
-             id="tspan2500">OCHR</tspan></text>
+             id="tspan4324">OCHR</tspan></text>
         <text
            xml:space="preserve"
            id="text400454-1-2-3-7-5-0"
@@ -633,7 +641,7 @@
            transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,163.17067)"><tspan
              x="9725.7656"
              y="154.83883"
-             id="tspan2502">aktualna</tspan></text>
+             id="tspan4326">AKTUAL.</tspan></text>
         <text
            xml:space="preserve"
            id="text400454-1-2-3-7-5-0-2"
@@ -641,7 +649,7 @@
            transform="matrix(0.26458333,0,0,0.26458333,-2502.5464,154.80451)"><tspan
              x="9725.7656"
              y="156.05886"
-             id="tspan2504">maks</tspan></text>
+             id="tspan4328">MAKS.</tspan></text>
         <text
            xml:space="preserve"
            id="text400454-1-2-3-7-5-0-8"
@@ -649,7 +657,7 @@
            transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.80451)"><tspan
              x="9725.7656"
              y="156.05886"
-             id="tspan2506">bazowa</tspan></text>
+             id="tspan4330">BAZOW.</tspan></text>
       </g>
       <g
          id="g2570"
@@ -710,7 +718,7 @@
                transform="matrix(0.17558958,0,0,0.17558958,45.574593,169.73242)" />
             <path
                sodipodi:type="star"
-               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
+               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.37599993,0.84399998;stroke-dashoffset:0"
                id="path390-3-5-1"
                inkscape:flatsided="true"
                sodipodi:sides="6"
@@ -734,9 +742,9 @@
              y="0"><tspan
                x="9741.5107"
                y="165.8188"
-               id="tspan2510"><tspan
+               id="tspan4334"><tspan
                  style="font-size:21.3333px"
-                 id="tspan2508">CIA</tspan></tspan></text>
+                 id="tspan4332">CIA</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3"
@@ -744,7 +752,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan2512">aktualne</tspan></text>
+               id="tspan4336">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2"
@@ -752,7 +760,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2502.5464,154.80451)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan2514">maks</tspan></text>
+               id="tspan4338">MAKS.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-8-0"
@@ -760,7 +768,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.80451)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan2516">bazowa</tspan></text>
+               id="tspan4340">BAZOW.</tspan></text>
         </g>
         <g
            id="g1910-8-3"
@@ -818,7 +826,7 @@
                transform="matrix(0.17558958,0,0,0.17558958,45.574593,169.73242)" />
             <path
                sodipodi:type="star"
-               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
+               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.37599993,0.84399998;stroke-dashoffset:0"
                id="path390-3-5-1-1"
                inkscape:flatsided="true"
                sodipodi:sides="6"
@@ -842,9 +850,9 @@
              y="0"><tspan
                x="9738.7481"
                y="165.8188"
-               id="tspan2520"><tspan
+               id="tspan4344"><tspan
                  style="font-size:21.3333px"
-                 id="tspan2518">PSY</tspan></tspan></text>
+                 id="tspan4342">PSY</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3-7"
@@ -852,7 +860,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan2522">aktualna</tspan></text>
+               id="tspan4346">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2-0"
@@ -860,7 +868,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2502.5464,154.80451)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan2524">maks</tspan></text>
+               id="tspan4348">MAKS</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-8-0-9"
@@ -868,7 +876,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.80451)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan2526">bazowa</tspan></text>
+               id="tspan4350">BAZOW.</tspan></text>
         </g>
         <g
            id="g1910-8-3-2"
@@ -926,7 +934,7 @@
                transform="matrix(0.17558958,0,0,0.17558958,45.574593,169.73242)" />
             <path
                sodipodi:type="star"
-               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
+               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.37599993,0.84399998;stroke-dashoffset:0"
                id="path390-3-5-1-1-9"
                inkscape:flatsided="true"
                sodipodi:sides="6"
@@ -950,9 +958,9 @@
              y="0"><tspan
                x="9740.8281"
                y="165.8188"
-               id="tspan2530"><tspan
+               id="tspan4354"><tspan
                  style="font-size:21.3333px"
-                 id="tspan2528">INT</tspan></tspan></text>
+                 id="tspan4352">INT</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3-7-0"
@@ -960,7 +968,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan2532">aktualny</tspan></text>
+               id="tspan4356">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2-0-2"
@@ -968,7 +976,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2502.5464,154.80451)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan2534">maks</tspan></text>
+               id="tspan4358">MAKS.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-8-0-9-3"
@@ -976,7 +984,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.80451)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan2536">bazowa</tspan></text>
+               id="tspan4360">BAZOW.</tspan></text>
         </g>
       </g>
       <g
@@ -987,10 +995,11 @@
            transform="translate(-145.8101,10.534097)">
           <g
              id="g1315-8"
-             transform="matrix(1.820881,0,0,1.664881,-45.025066,-122.08561)">
+             transform="matrix(1.820881,0,0,1.664881,-45.025066,-122.08561)"
+             style="fill:none;fill-opacity:1;opacity:0.9243322;stroke-width:0.31071691;stroke-dasharray:0.3107169,0.3107169;stroke:#808080;stroke-opacity:1;stroke-dashoffset:0">
             <path
                sodipodi:type="star"
-               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
+               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:2.2033541;stroke-linejoin:round;stroke-dasharray:2.20335403,2.20335403;fill-opacity:1;stroke-opacity:1;stroke-dashoffset:0"
                id="path390-3-6-7"
                inkscape:flatsided="true"
                sodipodi:sides="6"
@@ -1009,12 +1018,12 @@
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-3"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-6-9);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-2577.1319,143.75789)"><tspan
+             transform="matrix(0.26458333,0,0,0.26458333,-2577.1319,142.69955)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan2540"><tspan
+               id="tspan4364"><tspan
                  style="font-weight:600;-inkscape-font-specification:'Oxanium, Semi-Bold'"
-                 id="tspan2538">DYSKOMFORT</tspan></tspan></text>
+                 id="tspan4362">DYSKOMFORT</tspan></tspan></text>
         </g>
         <g
            id="g3205"
@@ -1053,7 +1062,7 @@
              transform="matrix(0.31972774,0,0,0.29233574,38.151673,193.26703)" />
           <path
              sodipodi:type="star"
-             style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
+             style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.37599993,0.84399998;stroke-dashoffset:0"
              id="path390-3-5-6"
              inkscape:flatsided="true"
              sodipodi:sides="6"
@@ -1076,9 +1085,9 @@
              y="0"><tspan
                x="9728.5468"
                y="165.8188"
-               id="tspan2544"><tspan
+               id="tspan4368"><tspan
                  style="font-size:13.3333px"
-                 id="tspan2542">PANCERZ</tspan></tspan></text>
+                 id="tspan4366">PANCERZ</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-29"
@@ -1086,7 +1095,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.494,163.09862)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan2546">aktualny</tspan></text>
+               id="tspan4370">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-8-1"
@@ -1094,7 +1103,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.62681)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan2548">bazowy</tspan></text>
+               id="tspan4372">BAZOW.</tspan></text>
         </g>
       </g>
     </g>

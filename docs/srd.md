@@ -89,12 +89,12 @@ Większość przedmiotów zajmuje jedno miejsce a małe przedmioty mogą być pa
 
 Przedmioty **nieporęczne** zajmują dwa miejsca i są zazwyczaj dwuręczne lub niewygodne do noszenia.
 
-Torby, plecaki, wózki mogą zwiększać ilość miejsc na ekwipunek, to samo dotyczy również cybermodyfikacji. Przy czym przedmioty reprezentujące pojemniki mocowane do ciała postaci lub wymagające użycia ręki (noszone, ciągnięte) **zajmują miejsce** w ekwipunku.
+Torby, plecaki, wózki i cybermody mogą zwiększać ilość miejsc. **Pojemniki** mocowane do ciała postaci lub wymagające użycia ręki zajmują **jedno miejsce**.
 
 > Przykład:
 > John bierze na akcję plecak, który zwiększa ilość miejsc ekwipunku o 4. Plecak trzeba jednak założyć na plecy, więc zajmie on jedno miejsce. Finalnie zatem John powiększył ilość miejsc o 3. Jeśli zdecydowałby się na wózek, który musi ciągnąć jedną ręką, to nadal przedmiot ten zajmuje jedno miejsce. W przypadku pojazdu transportowego, wózka automatycznego itp., pojemniki nie zajmują miejsca.
 
-Postać nie może nosić więcej przedmiotów niż pozwala na to łączna ilość miejsc ekwipunku.
+Postać nie może nosić więcej przedmiotów niż pozwala na to łączna ilość miejsc ekwipunku. Każda postać, która ma **pełny ekwipunek** (przedmioty i zmęczenie razem) zostaje zredukowana do **0 OCHR**.
 
 Oprócz ekwipunku startowego (kupowanego za początkowe kredyty), podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**, ale koszt tych ulepszeń nie może przekroczyć `20 000 ℂ`.
 
@@ -112,16 +112,20 @@ Każda z trzech zdolności jest używana w innych sytuacjach (patrz [rzuty obron
 
 Postać pozbawiona możliwości zaspokojenia kluczowej potrzeby (takiej jak jedzenie lub odpoczynek) albo poddana długotrwałej presji psychicznej, odczuwa **dyskomfort** i **nie może odzyskać punktów OCHR ani punktów zdolności**.
 
-Każda osoba odczuwająca dyskomfort przez więcej niż jeden dzień, dodaje do swojego ekwipunku **Zmęczenie**, jedno na każdy dzień.
+Każda osoba odczuwająca dyskomfort przez więcej niż jeden dzień, zaznacza w polach ekwipunku **Zmęczenie**, jedno na każdy dzień, zaczynając od wolnych miejsc a następnie zaznaczając miejsca zajęte przez przedmioty.
+
 Każde Zmęczenie blokuje jedno miejsce ekwipunku i trwa do czasu, aż postać będzie w stanie się zregenerować (np. odpoczywając całą noc w bezpiecznym miejscu). Po wypoczynku, postać odzyskuje *wszystkie* zajęte miejsca.
 
-Miejsca zablokowane przez Zmęczenie nie mogą być wykorzystane do noszenia ekwipunku, jeśli gracz musi zaznaczyć Zmęczenie na miejscu już zajętym przez jakiś przedmiot, rzecz tę należy odłożyć lub wyrzucić.
+**Stymulanty**: istnieje możliwość pozbycia się zmęczenia poprzez zażycie stymulantów. W tym celu gracz zużywa jedną dawkę stymulantu i rzuca kością **k4**. Wynik oznacza odzyskaną ilość miejsc w ekwipunku (poprzez usunięcie Zmęczenia).  
 
-Postacie mogą również odczuwać dyskomfort lub otrzymać punkty Zmęczenia poprzez wydarzenia w fikcji lub jako efekt niektórych akcji.
+Miejsca zablokowane przez Zmęczenie nie mogą być wykorzystane do noszenia ekwipunku. Jeśli gracz musi zaznaczyć Zmęczenie na miejscu już zajętym przez jakiś przedmiot, rzecz tę należy odłożyć lub wyrzucić.
+Każda postać, która ma **pełny ekwipunek** (przedmioty i zmęczenie razem) zostaje zredukowana do **0 OCHR**.
+
+Postacie mogą również odczuwać dyskomfort lub otrzymać punkty Zmęczenia poprzez wydarzenia w fikcji lub jako efekt niektórych akcji (np. aktywacja niektórych cybermodyfikacji).
 
 ### Rzuty obronne
 
-Rzut obronny to test, który pozwala uniknąć negatywnych skutków ryzykownych wyborów i okoliczności. Gracze **rzucają k20** i porównują wynik z poziomem wybranej zdolności. Jeśli wynik rzutu jest **równy lub niższy** od poziomu zdolności, test został **zdany**. W przeciwnym razie, test się nie udaje. **1 to zawsze sukces**, a **20 to zawsze porażka**.
+Rzut obronny to test, który pozwala uniknąć negatywnych skutków ryzykownych wyborów i okoliczności. Gracze **rzucają k20**, odejmują modyfikatory z cybermodów (jeśli mogą i chcą) a następnie porównują wynik z poziomem wybranej zdolności. Jeśli wynik rzutu jest **równy lub niższy** od poziomu zdolności, test został **zdany**. W przeciwnym razie, test się nie udaje. **1 to zawsze sukces**, a **20 to zawsze porażka**.
 
 W *Cyber* wykonuje się w zasadzie tylko ten jeden rodzaj testu - sprawdzamy, czy postaci udało się uniknąć zagrożenia lub ryzyka. Przy czym, jeśli sytuacja zagrożenia posiada dwie aktywne strony, **rzut wykonuje ta**, dla której zagrożenie określamy jako **większe**.
 
@@ -205,7 +209,7 @@ Ataki z cechą **Podmuch** wpływają na wszystkie cele w oznaczonym obszarze i 
 
 #### Obrażenia krytyczne
 
-Obrażenia, które redukują OCHR celu poniżej zera, zmniejszają CIA/INT celu o ich pozostałą ilość. Ofiara musi wykonać rzut obronny CIA/INT (już po redukcji), aby uniknąć **obrażeń krytycznych**. Dodatkowo, niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zaliczy testu na obrażenia krytyczne.
+Obrażenia, które redukują OCHR celu poniżej zera, zmniejszają CIA/INT celu o ich pozostałą ilość. Ofiara musi wykonać rzut obronny CIA/INT (aktualna wartość, łącznie z cybermodyfikacjami ale już po redukcji), aby uniknąć **obrażeń krytycznych**. Dodatkowo, niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zaliczy testu na obrażenia krytyczne.
 
 Każda postać, która otrzyma obrażenia krytyczne w CIA, nie może zrobić nic poza słabym czołganiem się i kurczowym chwytaniem się resztek życia. Jeśli otrzyma pomoc i będzie mogła odpocząć, jej stan ulegnie stabilizacji. Jeśli postać nie będzie leczona, umrze w ciągu godziny.
 
@@ -305,6 +309,9 @@ Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekrac
 > Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
 
 Postać, której **INT wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać dopóki bohater nie odzyska przynajmniej jednego punktu Interfejsu.
+
+**Aktywacja**: wszystkie cybermodyfikacje zawierające elementy modyfikujące mechanikę gry (modyfikatory do rzutów obronnych, obrażenia krytyczne) wymagają **aktywacji** za **każdym razem** gdy postać zechce ich użyć. Aktywacja pojedynczej cybermodyfikacji wymaga zaznaczenia jednego punktu Zmęczenia, bez względu na ilość komponentów modyfikujących mechanikę w tym cybermodzie.
+Elementy cybermodyfikacji, nie oznaczone jako wymagające aktywacji, dają efekt trwały i ich używanie jest darmowe.
 
 Więcej informacji na temat tworzenia cybermodyfikacji oraz ich cen można znaleźć w [dodatku](./cybermod.md).
 

@@ -51,7 +51,7 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Dystansowa (średni zasięg) |        600         |              k8              |             |
 | Dystansowa (daleki zasięg) |        1000        |             k10              | nieporęczna |
 | Dystansowa (daleki zasięg) |        1500        |         k12, podmuch         | nieporęczna |
-| Granaty                    |        200         |         k6, podmuch          |             |
+| Granaty (5szt)             |        200         |         k6, podmuch          |             |
 | Mikroładunki               |        150         |              k4              |             |
 | Ładunki wybuchowe          | kość obrażeń * 150 |       k6-k12, podmuch        |             |
 | Działko EMP\*              |        2000        | k8, podmuch, obrażenia w INT | nieporęczna |
@@ -67,14 +67,14 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 
 | Drony, pojazdy, roboty                        |           Cena            | Sloty bagażowe |
 | --------------------------------------------- | :-----------------------: | :------------: |
-| Mały  dron/robot                              |           1000            |       +2       |
-| Średni  dron/robot                            |           5000            |       +4       |
-| Duży    dron /robot                           |           10000           |       +6       |
-| Transportowy dron/robot                       |           20000           |      +12       |
-| Mały  pojazd                                  |           5000            |       +6       |
-| Średni    pojazd                              |           7000            |       +8       |
-| Duży       pojazd                             |           10000           |      +10       |
-| Pojazd transportowy                           |           20000           |      +12       |
+| Mały  dron/robot                              |           10000           |       +2       |
+| Średni  dron/robot                            |           50000           |       +4       |
+| Duży    dron /robot                           |          100000           |       +6       |
+| Transportowy dron/robot                       |          200000           |      +12       |
+| Mały  pojazd                                  |           50000           |       +6       |
+| Średni    pojazd                              |           70000           |       +8       |
+| Duży       pojazd                             |          100000           |      +10       |
+| Pojazd transportowy                           |          200000           |      +12       |
 | Wyposażenie dodatkowe (kamery, czujniki itp.) |        1000 każde         |       -        |
 | Uzbrojenie                                    | rodzaj kości ataku * 1500 |       -        |
 | Pancerz                                       |   5000 za pkt (maks 3)    |       -        |
@@ -87,8 +87,9 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Czarny LOD (nieleg.) | rodzaj kości ataku * 5000 |
 
 
-| Usługi medyczno/naprawcze |        Cena        |             Czas             |
-| ------------------------- | :----------------: | :--------------------------: |
-| Pomoc medyczna            | 2000 za 1 pkt CIA  | 1 dzień za 1 pkt, maks 7 dni |
-| Pomoc psychologiczna      | 1500  za 1 pkt PSY | 1 dzień za 1 pkt, maks 7 dni |
-| Naprawa interfejsu        | 2000 za 1 pkt INT  |      2 godziny za 1 pkt      |
+| Usługi medyczno/naprawcze     |        Cena        |             Czas             |
+| ----------------------------- | :----------------: | :--------------------------: |
+| Pomoc medyczna                | 2000 za 1 pkt CIA  | 1 dzień za 1 pkt, maks 7 dni |
+| Pomoc psychologiczna          | 1500  za 1 pkt PSY | 1 dzień za 1 pkt, maks 7 dni |
+| Naprawa interfejsu            | 2000 za 1 pkt INT  |      2 godziny za 1 pkt      |
+| Pakiet stymulantów (10 dawek) |        1000        |   działanie natychmiastowe   |
