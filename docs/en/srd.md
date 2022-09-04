@@ -1,10 +1,10 @@
----
+<!-- ---
 layout: default
 title: SRD
 parent: English version
 grand_parent: Dokumenty
 nav_order: 1
----
+--- -->
 
 # System Reference Document
 

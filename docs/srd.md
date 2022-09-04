@@ -310,8 +310,8 @@ Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekrac
 
 Postać, której **INT wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać dopóki bohater nie odzyska przynajmniej jednego punktu Interfejsu.
 
-**Aktywacja**: wszystkie cybermodyfikacje zawierające elementy modyfikujące mechanikę gry (modyfikatory do rzutów obronnych, obrażenia krytyczne) wymagają **aktywacji** za **każdym razem** gdy postać zechce ich użyć. Aktywacja pojedynczej cybermodyfikacji wymaga zaznaczenia jednego punktu Zmęczenia, bez względu na ilość komponentów modyfikujących mechanikę w tym cybermodzie.
-Elementy cybermodyfikacji, nie oznaczone jako wymagające aktywacji, dają efekt trwały i ich używanie jest darmowe.
+**Aktywacja**: każdy element cybermodyfikacji, który wpływa na mechanikę gry (modyfikatory do rzutów obronnych, obrażenia krytyczne) wymaga **aktywacji** za **każdym razem** gdy postać zechce go użyć. Aktywacja wymaga zaznaczenia jednego punktu Zmęczenia w ekwipunku.
+Elementy cybermodyfikacji, nie oznaczone jako wymagające aktywacji, dają efekt trwały a ich używanie nie podnosi zmęczenia postaci.
 
 Więcej informacji na temat tworzenia cybermodyfikacji oraz ich cen można znaleźć w [dodatku](./cybermod.md).
 

@@ -29,14 +29,14 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.3278886"
-     inkscape:cx="324.95196"
-     inkscape:cy="407.41369"
+     inkscape:cx="176.97268"
+     inkscape:cy="417.20367"
      inkscape:window-width="1366"
      inkscape:window-height="699"
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g3507"
+     inkscape:current-layer="g1910-8"
      showguides="false" />
   <defs
      id="defs4804">
@@ -63,8 +63,8 @@
     <rect
        x="9725.7656"
        y="146.29839"
-       width="557.97162"
-       height="29.424398"
+       width="297.06041"
+       height="28.538556"
        id="rect400456-6-9" />
     <rect
        x="9725.7656"
@@ -135,8 +135,8 @@
     <rect
        x="9725.7656"
        y="146.29839"
-       width="252.42131"
-       height="32.750343"
+       width="39.036017"
+       height="13.798685"
        id="rect400456-6-9-2-9-3-6-61" />
     <rect
        x="9725.7656"
@@ -255,9 +255,57 @@
     <rect
        x="9725.7656"
        y="146.29839"
+       width="39.983029"
+       height="13.605967"
+       id="rect400456-6-9-2-9-3-6-61-2" />
+    <rect
+       x="9725.7656"
+       y="146.29839"
+       width="64.855606"
+       height="28.683365"
+       id="rect400456-6-9-2-9-3-31-36" />
+    <rect
+       x="9725.7656"
+       y="146.29839"
        width="252.42131"
        height="32.750343"
-       id="rect400456-6-9-2-9-3-6-61-2" />
+       id="rect400456-6-9-2-9-3-6-9-7" />
+    <rect
+       x="9725.7656"
+       y="146.29839"
+       width="252.42131"
+       height="32.750343"
+       id="rect400456-6-9-2-9-3-6-6-4-5" />
+    <rect
+       x="9725.7656"
+       y="146.29839"
+       width="64.855606"
+       height="28.683365"
+       id="rect400456-6-9-2-9-3-31-0" />
+    <rect
+       x="9725.7656"
+       y="146.29839"
+       width="252.42131"
+       height="32.750343"
+       id="rect400456-6-9-2-9-3-6-9-9" />
+    <rect
+       x="9725.7656"
+       y="146.29839"
+       width="252.42131"
+       height="32.750343"
+       id="rect400456-6-9-2-9-3-6-6-4-3" />
+    <rect
+       x="9725.7656"
+       y="146.29839"
+       width="94.759521"
+       height="51.731155"
+       id="rect400456-2" />
+    <rect
+       x="9725.7656"
+       y="146.29839"
+       width="174.79482"
+       height="32.056501"
+       id="rect400456-2-6" />
   </defs>
   <g
      inkscape:label="Warstwa 1"
@@ -274,7 +322,7 @@
        style="fill:#cccccc;stroke:#cccccc" />
     <g
        id="g45901"
-       transform="matrix(0.26458327,0,0,0.26458333,-2563.32,-7.7877457)">
+       transform="matrix(0.26458327,0,0,0.26458333,-2563.32,-6.3680819)">
       <g
          id="barcode4"
          style="fill:#000000"
@@ -440,58 +488,72 @@
          style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect400456);display:inline;fill:#333333;fill-opacity:1;stroke:none"
          transform="translate(30.540151,-15.246732)"><tspan
            x="9725.7656"
-           y="168.25883"
-           id="tspan4300"><tspan
-             style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan4298">Imię</tspan></tspan></text>
+           y="167.5332"
+           id="tspan3410"><tspan
+             style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
+             id="tspan3408">Imię</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text400454-1"
          style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect400456-6);display:inline;fill:#333333;fill-opacity:1;stroke:none"
          transform="translate(29.288319,39.19208)"><tspan
            x="9725.7656"
-           y="168.25883"
-           id="tspan4304"><tspan
-             style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan4302">Przeszłość</tspan></tspan></text>
+           y="167.5332"
+           id="tspan3414"><tspan
+             style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
+             id="tspan3412">Przeszłość</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text400454-1-2"
          style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect400456-6-9);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-         transform="translate(0.21764195,84.01293)"><tspan
+         transform="translate(2.2176424,84.01293)"><tspan
            x="9725.7656"
-           y="168.25883"
-           id="tspan4308"><tspan
-             style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan4306">Abonament podstawowy/kredyty</tspan></tspan></text>
+           y="167.5332"
+           id="tspan3418"><tspan
+             style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
+             id="tspan3416">Abonament podstawowy</tspan></tspan></text>
       <rect
-         style="fill:none;stroke:#808080;stroke-width:1.1344;stroke-linejoin:round"
+         style="fill:none;stroke:#808080;stroke-width:1.0743;stroke-linejoin:round"
          id="rect400561"
-         width="452.40891"
-         height="36.745937"
-         x="9753.668"
-         y="127.92007" />
+         width="405.07889"
+         height="36.806038"
+         x="9753.6377"
+         y="127.89001" />
       <rect
-         style="fill:none;stroke:#808080;stroke-width:1.1344;stroke-linejoin:round"
+         style="fill:none;stroke:#808080;stroke-width:1.07607;stroke-linejoin:round"
          id="rect400561-7"
-         width="452.40891"
-         height="36.745937"
-         x="9752.8203"
-         y="180.38612" />
+         width="406.43784"
+         height="36.80426"
+         x="9752.791"
+         y="180.35695" />
       <rect
-         style="fill:none;stroke:#808080;stroke-width:1.03681;stroke-linejoin:round"
+         style="fill:none;stroke:#808080;stroke-width:0.901148;stroke-linejoin:round"
          id="rect400561-7-0"
-         width="376.91595"
-         height="36.843529"
-         x="9753.2441"
-         y="258.61954" />
-      <rect
-         style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:1.03173;stroke-linejoin:round"
-         id="rect54314"
-         width="74.558823"
-         height="36.763542"
-         x="10133.578"
-         y="258.61697" />
+         width="283.68881"
+         height="36.979191"
+         x="9753.1768"
+         y="258.55173" />
+      <g
+         id="g1372"
+         transform="translate(-50.000002)">
+        <text
+           xml:space="preserve"
+           id="text400454-0"
+           style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect400456-2);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+           transform="translate(360.44052,84.01293)"><tspan
+             x="9725.7656"
+             y="167.5332"
+             id="tspan3422"><tspan
+               style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
+               id="tspan3420">Kredyty</tspan></tspan></text>
+        <rect
+           style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:1.30629;stroke-linejoin:round"
+           id="rect54314"
+           width="120.42097"
+           height="36.488983"
+           x="10089.02"
+           y="258.75424" />
+      </g>
     </g>
     <rect
        style="fill:none;stroke:#808080;stroke-width:0.323356;stroke-linejoin:round"
@@ -510,11 +572,11 @@
          transform="translate(-45.657565,393.72123)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan4314"><tspan
+           id="tspan3428"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan4310">Cybermodyfikacje </tspan><tspan
+             id="tspan3424">Cybermodyfikacje </tspan><tspan
              style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=400';font-variation-settings:'wght' 400"
-             id="tspan4312">(maksymalnie INT/3, zaokrąglone w górę)</tspan></tspan></text>
+             id="tspan3426">(maksymalnie INT/3, zaokrąglone w górę)</tspan></tspan></text>
     </g>
     <g
        id="g617186"
@@ -526,145 +588,23 @@
          transform="translate(-44.034898,703.06906)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan4322"><tspan
+           id="tspan3436"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan4316">Ekwipunek </tspan><tspan
+             id="tspan3430">Ekwipunek </tspan><tspan
              style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=400';font-variation-settings:'wght' 400"
-             id="tspan4318">(2 x ręce, 2 x ciało plus pojemniki)</tspan><tspan
+             id="tspan3432">(2 x ręce, 2 x ciało plus pojemniki)</tspan><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan4320"> </tspan></tspan></text>
+             id="tspan3434"> </tspan></tspan></text>
     </g>
-    <path
-       sodipodi:type="star"
-       style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.444;stroke-linejoin:round;stroke-dasharray:none"
-       id="path390"
-       inkscape:flatsided="true"
-       sodipodi:sides="6"
-       sodipodi:cx="64.016106"
-       sodipodi:cy="11.698584"
-       sodipodi:r1="32.181225"
-       sodipodi:r2="27.869757"
-       sodipodi:arg1="1.0415363"
-       sodipodi:arg2="1.5651351"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-       transform="translate(105.40332,43.626682)" />
     <g
        id="g3882"
        transform="translate(5.8039812,10.180164)">
       <g
-         id="g1910"
-         transform="translate(82.413784,-93.447722)">
-        <g
-           id="g1315"
-           transform="matrix(1.820881,0,0,1.664881,-45.025066,-122.08561)">
-          <path
-             sodipodi:type="star"
-             style="font-variation-settings:'wght' 400;fill:#e6e6e6;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
-             id="path390-3"
-             inkscape:flatsided="true"
-             sodipodi:sides="6"
-             sodipodi:cx="64.016106"
-             sodipodi:cy="11.698584"
-             sodipodi:r1="32.181225"
-             sodipodi:r2="27.869757"
-             sodipodi:arg1="1.0415363"
-             sodipodi:arg2="1.5651351"
-             inkscape:rounded="0"
-             inkscape:randomized="0"
-             d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-             transform="matrix(0.17558958,0,0,0.17558958,45.628755,179.57227)" />
-          <path
-             sodipodi:type="star"
-             style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
-             id="path390-3-6"
-             inkscape:flatsided="true"
-             sodipodi:sides="6"
-             sodipodi:cx="64.016106"
-             sodipodi:cy="11.698584"
-             sodipodi:r1="32.181225"
-             sodipodi:r2="27.869757"
-             sodipodi:arg1="1.0415363"
-             sodipodi:arg2="1.5651351"
-             inkscape:rounded="0"
-             inkscape:randomized="0"
-             d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-             transform="matrix(0.17558958,0,0,0.17558958,54.155863,184.43602)" />
-          <path
-             sodipodi:type="star"
-             style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:2.15226;stroke-linejoin:round;stroke-dasharray:none"
-             id="path390-3-7"
-             inkscape:flatsided="true"
-             sodipodi:sides="6"
-             sodipodi:cx="64.016106"
-             sodipodi:cy="11.698584"
-             sodipodi:r1="32.181225"
-             sodipodi:r2="27.869757"
-             sodipodi:arg1="1.0415363"
-             sodipodi:arg2="1.5651351"
-             inkscape:rounded="0"
-             inkscape:randomized="0"
-             d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-             transform="matrix(0.17558958,0,0,0.17558958,45.684019,189.33746)" />
-          <path
-             sodipodi:type="star"
-             style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.37599993,0.84399998;stroke-dashoffset:0"
-             id="path390-3-5"
-             inkscape:flatsided="true"
-             sodipodi:sides="6"
-             sodipodi:cx="64.016106"
-             sodipodi:cy="11.698584"
-             sodipodi:r1="32.181225"
-             sodipodi:r2="27.869757"
-             sodipodi:arg1="1.0415363"
-             sodipodi:arg2="1.5651351"
-             inkscape:rounded="0"
-             inkscape:randomized="0"
-             d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-             transform="matrix(0.17558958,0,0,0.17558958,37.181631,184.5245)" />
-        </g>
-        <text
-           xml:space="preserve"
-           id="text400454-1-2-3-7-5"
-           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-           transform="matrix(0.26458333,0,0,0.26458333,-2523.1378,138.72025)"
-           x="17.026619"
-           y="0"><tspan
-             x="9729.6708"
-             y="165.8188"
-             id="tspan4324">OCHR</tspan></text>
-        <text
-           xml:space="preserve"
-           id="text400454-1-2-3-7-5-0"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.33333px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-           transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,163.17067)"><tspan
-             x="9725.7656"
-             y="154.83883"
-             id="tspan4326">AKTUAL.</tspan></text>
-        <text
-           xml:space="preserve"
-           id="text400454-1-2-3-7-5-0-2"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-6);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-           transform="matrix(0.26458333,0,0,0.26458333,-2502.5464,154.80451)"><tspan
-             x="9725.7656"
-             y="156.05886"
-             id="tspan4328">MAKS.</tspan></text>
-        <text
-           xml:space="preserve"
-           id="text400454-1-2-3-7-5-0-8"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-61);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-           transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.80451)"><tspan
-             x="9725.7656"
-             y="156.05886"
-             id="tspan4330">BAZOW.</tspan></text>
-      </g>
-      <g
-         id="g2570"
-         transform="translate(-16.882477,-14.741284)">
+         id="g831"
+         transform="translate(0,-7.9375004)">
         <g
            id="g1910-8"
-           transform="translate(-9.7310333,-58.870951)">
+           transform="translate(-27.31202,-81.99708)">
           <g
              id="g1315-4"
              transform="matrix(1.820881,0,0,1.664881,-45.025066,-122.08561)">
@@ -699,7 +639,7 @@
                inkscape:rounded="0"
                inkscape:randomized="0"
                d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-               transform="matrix(0.17558958,0,0,0.17558958,54.155863,184.43602)" />
+               transform="matrix(0.17558958,0,0,0.17558958,37.119299,174.7213)" />
             <path
                sodipodi:type="star"
                style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:2.15226;stroke-linejoin:round;stroke-dasharray:none"
@@ -716,22 +656,6 @@
                inkscape:randomized="0"
                d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
                transform="matrix(0.17558958,0,0,0.17558958,45.574593,169.73242)" />
-            <path
-               sodipodi:type="star"
-               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.37599993,0.84399998;stroke-dashoffset:0"
-               id="path390-3-5-1"
-               inkscape:flatsided="true"
-               sodipodi:sides="6"
-               sodipodi:cx="64.016106"
-               sodipodi:cy="11.698584"
-               sodipodi:r1="32.181225"
-               sodipodi:r2="27.869757"
-               sodipodi:arg1="1.0415363"
-               sodipodi:arg2="1.5651351"
-               inkscape:rounded="0"
-               inkscape:randomized="0"
-               d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-               transform="matrix(0.17558958,0,0,0.17558958,37.181631,184.5245)" />
           </g>
           <text
              xml:space="preserve"
@@ -742,9 +666,9 @@
              y="0"><tspan
                x="9741.5107"
                y="165.8188"
-               id="tspan4334"><tspan
+               id="tspan3440"><tspan
                  style="font-size:21.3333px"
-                 id="tspan4332">CIA</tspan></tspan></text>
+                 id="tspan3438">CIA</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3"
@@ -752,27 +676,19 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan4336">AKTUAL.</tspan></text>
+               id="tspan3442">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-6-4);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-2502.5464,154.80451)"><tspan
+             transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan4338">MAKS.</tspan></text>
-          <text
-             xml:space="preserve"
-             id="text400454-1-2-3-7-5-0-8-0"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-61-7);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.80451)"><tspan
-               x="9725.7656"
-               y="156.05886"
-               id="tspan4340">BAZOW.</tspan></text>
+               id="tspan3444">MAKS.</tspan></text>
         </g>
         <g
            id="g1910-8-3"
-           transform="translate(26.372898,-77.920963)">
+           transform="translate(8.21587,-81.99708)">
           <g
              id="g1315-4-5"
              transform="matrix(1.820881,0,0,1.664881,-45.025066,-122.08561)">
@@ -807,7 +723,7 @@
                inkscape:rounded="0"
                inkscape:randomized="0"
                d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-               transform="matrix(0.17558958,0,0,0.17558958,54.155863,184.43602)" />
+               transform="matrix(0.17558958,0,0,0.17558958,37.119299,174.7213)" />
             <path
                sodipodi:type="star"
                style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:2.15226;stroke-linejoin:round;stroke-dasharray:none"
@@ -824,70 +740,46 @@
                inkscape:randomized="0"
                d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
                transform="matrix(0.17558958,0,0,0.17558958,45.574593,169.73242)" />
-            <path
-               sodipodi:type="star"
-               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.37599993,0.84399998;stroke-dashoffset:0"
-               id="path390-3-5-1-1"
-               inkscape:flatsided="true"
-               sodipodi:sides="6"
-               sodipodi:cx="64.016106"
-               sodipodi:cy="11.698584"
-               sodipodi:r1="32.181225"
-               sodipodi:r2="27.869757"
-               sodipodi:arg1="1.0415363"
-               sodipodi:arg2="1.5651351"
-               inkscape:rounded="0"
-               inkscape:randomized="0"
-               d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-               transform="matrix(0.17558958,0,0,0.17558958,37.181631,184.5245)" />
           </g>
           <text
              xml:space="preserve"
-             id="text400454-1-2-3-7-5-06-2"
-             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:14.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-31-3);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+             id="text400454-1-2-3-7-5-06-1"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:14.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-31-36);display:inline;fill:#333333;fill-opacity:1;stroke:none"
              transform="matrix(0.26458333,0,0,0.26458333,-2523.1378,138.72025)"
              x="19.682695"
              y="0"><tspan
                x="9738.7481"
                y="165.8188"
-               id="tspan4344"><tspan
+               id="tspan3448"><tspan
                  style="font-size:21.3333px"
-                 id="tspan4342">PSY</tspan></tspan></text>
+                 id="tspan3446">PSY</tspan></tspan></text>
           <text
              xml:space="preserve"
-             id="text400454-1-2-3-7-5-0-3-7"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.33333px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-9-6);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+             id="text400454-1-2-3-7-5-0-3-2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.33333px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-9-7);display:inline;fill:#333333;fill-opacity:1;stroke:none"
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan4346">AKTUAL.</tspan></text>
+               id="tspan3450">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
-             id="text400454-1-2-3-7-5-0-2-2-0"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-6-4-7);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-2502.5464,154.80451)"><tspan
+             id="text400454-1-2-3-7-5-0-2-2-7"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-6-4-5);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+             transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan4348">MAKS</tspan></text>
-          <text
-             xml:space="preserve"
-             id="text400454-1-2-3-7-5-0-8-0-9"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-61-7-5);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.80451)"><tspan
-               x="9725.7656"
-               y="156.05886"
-               id="tspan4350">BAZOW.</tspan></text>
+               id="tspan3452">MAKS.</tspan></text>
         </g>
         <g
-           id="g1910-8-3-2"
-           transform="translate(62.47683,-58.870951)">
+           id="g1910-8-6"
+           transform="translate(43.74376,-81.99708)">
           <g
-             id="g1315-4-5-6"
+             id="g1315-4-0"
              transform="matrix(1.820881,0,0,1.664881,-45.025066,-122.08561)">
             <path
                sodipodi:type="star"
                style="font-variation-settings:'wght' 400;fill:#e6e6e6;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
-               id="path390-3-50-6-1"
+               id="path390-3-50-62"
                inkscape:flatsided="true"
                sodipodi:sides="6"
                sodipodi:cx="64.016106"
@@ -903,7 +795,7 @@
             <path
                sodipodi:type="star"
                style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
-               id="path390-3-6-3-2-8"
+               id="path390-3-6-3-6"
                inkscape:flatsided="true"
                sodipodi:sides="6"
                sodipodi:cx="64.016106"
@@ -915,11 +807,11 @@
                inkscape:rounded="0"
                inkscape:randomized="0"
                d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-               transform="matrix(0.17558958,0,0,0.17558958,54.155863,184.43602)" />
+               transform="matrix(0.17558958,0,0,0.17558958,37.119299,174.7213)" />
             <path
                sodipodi:type="star"
                style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:2.15226;stroke-linejoin:round;stroke-dasharray:none"
-               id="path390-3-7-6-9-7"
+               id="path390-3-7-6-1"
                inkscape:flatsided="true"
                sodipodi:sides="6"
                sodipodi:cx="64.016106"
@@ -932,10 +824,116 @@
                inkscape:randomized="0"
                d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
                transform="matrix(0.17558958,0,0,0.17558958,45.574593,169.73242)" />
+          </g>
+          <text
+             xml:space="preserve"
+             id="text400454-1-2-3-7-5-06-8"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:14.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-31-0);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+             transform="matrix(0.26458333,0,0,0.26458333,-2523.1378,138.72025)"
+             x="19.682695"
+             y="0"><tspan
+               x="9740.8281"
+               y="165.8188"
+               id="tspan3456"><tspan
+                 style="font-size:21.3333px"
+                 id="tspan3454">INT</tspan></tspan></text>
+          <text
+             xml:space="preserve"
+             id="text400454-1-2-3-7-5-0-3-7"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.33333px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-9-9);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+             transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
+               x="9725.7656"
+               y="154.83883"
+               id="tspan3458">AKTUAL.</tspan></text>
+          <text
+             xml:space="preserve"
+             id="text400454-1-2-3-7-5-0-2-2-9"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-6-4-3);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+             transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
+               x="9725.7656"
+               y="156.05886"
+               id="tspan3460">MAKS.</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g3507"
+         transform="translate(103.8764,-61.298758)">
+        <g
+           id="g1315-8"
+           transform="matrix(1.820881,0,0,1.664881,-45.025066,-122.08561)"
+           style="opacity:0.924332;fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.310717;stroke-dasharray:0.310717, 0.310717;stroke-dashoffset:0;stroke-opacity:1">
+          <path
+             sodipodi:type="star"
+             style="font-variation-settings:'wght' 400;fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.20335;stroke-linejoin:round;stroke-dasharray:2.20335, 2.20335;stroke-dashoffset:0;stroke-opacity:1"
+             id="path390-3-6-7"
+             inkscape:flatsided="true"
+             sodipodi:sides="6"
+             sodipodi:cx="64.016106"
+             sodipodi:cy="11.698584"
+             sodipodi:r1="32.181225"
+             sodipodi:r2="27.869757"
+             sodipodi:arg1="1.0415363"
+             sodipodi:arg2="1.5651351"
+             inkscape:rounded="0"
+             inkscape:randomized="0"
+             d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
+             transform="matrix(0.14101996,0,0,0.14101996,18.441854,176.19044)" />
+        </g>
+        <text
+           xml:space="preserve"
+           id="text400454-1-2-3-7-5-0-2-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-6-9);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+           transform="matrix(0.26458333,0,0,0.26458333,-2577.1319,142.69955)"><tspan
+             x="9725.7656"
+             y="156.05886"
+             id="tspan3464"><tspan
+               style="font-weight:600;-inkscape-font-specification:'Oxanium, Semi-Bold'"
+               id="tspan3462">DYSKOMFORT</tspan></tspan></text>
+      </g>
+      <g
+         id="g974">
+        <g
+           id="g1910"
+           transform="translate(-9.6209059,-76.243831)">
+          <g
+             id="g1315"
+             transform="matrix(1.820881,0,0,1.664881,-45.025066,-122.08561)">
             <path
                sodipodi:type="star"
-               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.37599993,0.84399998;stroke-dashoffset:0"
-               id="path390-3-5-1-1-9"
+               style="font-variation-settings:'wght' 400;fill:#e6e6e6;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
+               id="path390-3"
+               inkscape:flatsided="true"
+               sodipodi:sides="6"
+               sodipodi:cx="64.016106"
+               sodipodi:cy="11.698584"
+               sodipodi:r1="32.181225"
+               sodipodi:r2="27.869757"
+               sodipodi:arg1="1.0415363"
+               sodipodi:arg2="1.5651351"
+               inkscape:rounded="0"
+               inkscape:randomized="0"
+               d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
+               transform="matrix(0.17558958,0,0,0.17558958,45.628755,179.57227)" />
+            <path
+               sodipodi:type="star"
+               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:2.15226;stroke-linejoin:round;stroke-dasharray:none"
+               id="path390-3-7"
+               inkscape:flatsided="true"
+               sodipodi:sides="6"
+               sodipodi:cx="64.016106"
+               sodipodi:cy="11.698584"
+               sodipodi:r1="32.181225"
+               sodipodi:r2="27.869757"
+               sodipodi:arg1="1.0415363"
+               sodipodi:arg2="1.5651351"
+               inkscape:rounded="0"
+               inkscape:randomized="0"
+               d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
+               transform="matrix(0.17558958,0,0,0.17558958,45.684019,189.33746)" />
+            <path
+               sodipodi:type="star"
+               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.376, 0.844;stroke-dashoffset:0"
+               id="path390-3-5"
                inkscape:flatsided="true"
                sodipodi:sides="6"
                sodipodi:cx="64.016106"
@@ -951,83 +949,36 @@
           </g>
           <text
              xml:space="preserve"
-             id="text400454-1-2-3-7-5-06-2-2"
-             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:14.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-31-3-3);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+             id="text400454-1-2-3-7-5"
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3);display:inline;fill:#333333;fill-opacity:1;stroke:none"
              transform="matrix(0.26458333,0,0,0.26458333,-2523.1378,138.72025)"
-             x="19.682695"
+             x="17.026619"
              y="0"><tspan
-               x="9740.8281"
+               x="9729.6708"
                y="165.8188"
-               id="tspan4354"><tspan
-                 style="font-size:21.3333px"
-                 id="tspan4352">INT</tspan></tspan></text>
+               id="tspan3466">OCHR</tspan></text>
           <text
              xml:space="preserve"
-             id="text400454-1-2-3-7-5-0-3-7-0"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.33333px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-9-6-6);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
+             id="text400454-1-2-3-7-5-0"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.33333px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+             transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,163.17067)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan4356">AKTUAL.</tspan></text>
+               id="tspan3468">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
-             id="text400454-1-2-3-7-5-0-2-2-0-2"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-6-4-7-0);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-2502.5464,154.80451)"><tspan
-               x="9725.7656"
+             id="text400454-1-2-3-7-5-0-8"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-61);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+             transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.80451)"
+             x="14.890699"
+             y="0"><tspan
+               x="9729.4805"
                y="156.05886"
-               id="tspan4358">MAKS.</tspan></text>
-          <text
-             xml:space="preserve"
-             id="text400454-1-2-3-7-5-0-8-0-9-3"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-61-7-5-6);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.80451)"><tspan
-               x="9725.7656"
-               y="156.05886"
-               id="tspan4360">BAZOW.</tspan></text>
-        </g>
-      </g>
-      <g
-         id="g1910-2"
-         transform="translate(209.04246,-61.065969)">
-        <g
-           id="g3507"
-           transform="translate(-145.8101,10.534097)">
-          <g
-             id="g1315-8"
-             transform="matrix(1.820881,0,0,1.664881,-45.025066,-122.08561)"
-             style="fill:none;fill-opacity:1;opacity:0.9243322;stroke-width:0.31071691;stroke-dasharray:0.3107169,0.3107169;stroke:#808080;stroke-opacity:1;stroke-dashoffset:0">
-            <path
-               sodipodi:type="star"
-               style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:2.2033541;stroke-linejoin:round;stroke-dasharray:2.20335403,2.20335403;fill-opacity:1;stroke-opacity:1;stroke-dashoffset:0"
-               id="path390-3-6-7"
-               inkscape:flatsided="true"
-               sodipodi:sides="6"
-               sodipodi:cx="64.016106"
-               sodipodi:cy="11.698584"
-               sodipodi:r1="32.181225"
-               sodipodi:r2="27.869757"
-               sodipodi:arg1="1.0415363"
-               sodipodi:arg2="1.5651351"
-               inkscape:rounded="0"
-               inkscape:randomized="0"
-               d="M 80.264237,39.476803 48.083528,39.658988 31.835397,11.880769 47.767974,-16.079635 79.948683,-16.261821 96.196815,11.516399 Z"
-               transform="matrix(0.14101996,0,0,0.14101996,18.441854,176.19044)" />
-          </g>
-          <text
-             xml:space="preserve"
-             id="text400454-1-2-3-7-5-0-2-3"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-6-9);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-2577.1319,142.69955)"><tspan
-               x="9725.7656"
-               y="156.05886"
-               id="tspan4364"><tspan
-                 style="font-weight:600;-inkscape-font-specification:'Oxanium, Semi-Bold'"
-                 id="tspan4362">DYSKOMFORT</tspan></tspan></text>
+               id="tspan3470">MAKS.</tspan></text>
         </g>
         <g
            id="g3205"
-           transform="translate(-92.634893,-12.828331)">
+           transform="translate(27.162585,-76.243831)">
           <path
              sodipodi:type="star"
              style="font-variation-settings:'wght' 400;fill:#e6e6e6;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:none"
@@ -1062,7 +1013,7 @@
              transform="matrix(0.31972774,0,0,0.29233574,38.151673,193.26703)" />
           <path
              sodipodi:type="star"
-             style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.37599993,0.84399998;stroke-dashoffset:0"
+             style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:0.844;stroke-linejoin:round;stroke-dasharray:3.376, 0.844;stroke-dashoffset:0"
              id="path390-3-5-6"
              inkscape:flatsided="true"
              sodipodi:sides="6"
@@ -1085,9 +1036,9 @@
              y="0"><tspan
                x="9728.5468"
                y="165.8188"
-               id="tspan4368"><tspan
+               id="tspan3474"><tspan
                  style="font-size:13.3333px"
-                 id="tspan4366">PANCERZ</tspan></tspan></text>
+                 id="tspan3472">PANCERZ</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-29"
@@ -1095,15 +1046,17 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.494,163.09862)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan4370">AKTUAL.</tspan></text>
+               id="tspan3476">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-8-1"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-61-2);display:inline;fill:#333333;fill-opacity:1;stroke:none"
-             transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.62681)"><tspan
-               x="9725.7656"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.25;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-3-6-61-2);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+             transform="matrix(0.26458333,0,0,0.26458333,-2534.9344,154.62681)"
+             x="14.890699"
+             y="0"><tspan
+               x="9729.9541"
                y="156.05886"
-               id="tspan4372">BAZOW.</tspan></text>
+               id="tspan3478">MAKS.</tspan></text>
         </g>
       </g>
     </g>
@@ -1847,5 +1800,22 @@
         </g>
       </g>
     </g>
+    <rect
+       style="opacity:0.924332;fill:none;stroke:#808080;stroke-width:0.441;stroke-linejoin:round;stroke-dasharray:0.44100001,0.44100001;stroke-dashoffset:0"
+       id="rect1771"
+       width="68.862839"
+       height="112.75138"
+       x="128.91719"
+       y="27.1105" />
+    <text
+       xml:space="preserve"
+       id="text400454-0-1"
+       style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect400456-2-6);shape-padding:0;display:inline;fill:#333333;fill-opacity:1;stroke:none"
+       transform="matrix(0,-0.26458333,0.26458333,0,151.9342,2711.6455)"><tspan
+         x="9725.7656"
+         y="167.5332"
+         id="tspan3482"><tspan
+           style="font-size:10.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal'"
+           id="tspan3480">Miejsce na twoje notatki</tspan></tspan></text>
   </g>
 </svg>
