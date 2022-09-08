@@ -33,8 +33,8 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 | Modyfikacja                                                                                                               | Cena                        | Maksimum  na cybermod | Aktywacja |
 | ------------------------------------------------------------------------------------------------------------------------- | --------------------------- | :-------------------: | :-------: |
 | +1 OCHR przy rozstrzyganiu ataku                                                                                          | 5 000                       |          +3           |    tak    |
-| -1 do rzutu przy teście wybranej zdolności (CIA,PSY,INT)                                                                  | 10 000                      | +3 (wyklucza poniżej) |    tak    |
-| -1 do rzutu przy teście wybranej zdolności dla konkretnej grupy aktywności                                                | 5 000                       | +3 (wyklucza powyżej) |    tak    |
+| +1 do wybranej zdolności (CIA,PSY,INT) przy teście                                                                        | 10 000                      | +3 (wyklucza poniżej) |    tak    |
+| +1 do rzutu wybranej zdolności przy teście dla konkretnej grupy aktywności                                                | 5 000                       | +3 (wyklucza powyżej) |    tak    |
 | +1 do Pancerza podczas rozstrzygania obrażeń                                                                              | 5 000                       |   +3 (całość <= 3)    |     -     |
 | +1 miejsce w ekwipunku                                                                                                    | 1 000                       |          +3           |     -     |
 | wmontowane uzbrojenie                                                                                                     | rodzaj kości obrażeń * 1500 |          k12          |     -     |
