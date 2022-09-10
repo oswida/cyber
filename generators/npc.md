@@ -140,6 +140,8 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 ## Charakterystyczny element wyglądu (k100)
 
 1. Skołtuniona, wielkolorowa fryzura z wplecionymi nitkami światłowodów
+2. Wielki, podświetlany symbol religijny zawieszony na grubym łańcuchu
+3. 
 
 
 ## Dominująca cecha charakteru (k100)
@@ -185,4 +187,54 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 ## Cel lub pragnienie (k100)
 
 1. Nauczyć się nowej umiejętności związanej z zawodem
+2. Odłożyć pieniądze na operację kogoś bliskiego
+3. Uratować przyjaciela z rąk porywaczy
+4. Odnaleźć zaginione dziecko
+5. Wykonać jeszcze jedną robotę przed odejściem na emeryturę
+6. Zdobyć cokolwiek co pomoże zrujnować korporację
+7. Żyć spokojnie i w miarę dostatnio
+8. Zapewnić swoim dzieciom lepszy start
+9. Wykraść dane z laboratorium korporacji
+10. Uciec przed gangiem ulicznym
+11. Pozbyć się niewygodnych wspomnień
+12. Wymazać swoją tożsamość z systemu
+13. Dorwać tego, kto wymordował moją rodzinę
+14. Zamknąć w końcu tę sprawę nieukończoną od wielu lat
+15. Odszyfrować ważne dane osobiste
+16. Zerwać niewygodny kontrakt
+17. Znaleźć tego, kto mnie wydał i dowiedzieć się dlaczego
+18. Dowiedzieć się co planuje korporacja X
+19. Zdobyć władzę tak, żeby wszyscy się mnie bali
+20. Znaleźć porządną, legalną pracę
+21. Spłacić stary dług
+22. Pozbyć się głosów ze swojej głowy
+23. Przestać się w końcu bać
+24. Kupić bliskiej osobie nietuzinkowy prezent
+25. Zdobyć popularność w mediach
+26. Wykonać robotę, za którą mi zapłacono
+27. Znaleźć sprawę, za którą warto walczyć
+28. Zdobyć przyjaciół wśród bogaczy
+29. Udowodnić wszystkim, że jestem kimś
+30. Dostać się do popularnej grupy w Infosferze
+31. Zwyciężyć w walce ze śmiertelną chorobą
+32. Przeżyć za wszelką cenę
+33. Żyć zgodnie ze swoimi przekonaniami
+34. Głosić Słowo Boże
+35. Wyrównać porachunki z sąsiadami
+36. Zdobyć sławę dzięki szaleńczym wybrykom
+37. Przypomnieć sobie kim byłem zanim mnie porwano
+38. Wyzwolić się od technologii
+39. Zdobyć pieniądze na chirurgię plastyczną
+40. Znaleźć prawdziwą miłość
+41. Wyleczyć alergię na cybermodyfikacje
+42. Zmienić zawód
+43. Dowiedzieć się co oznaczają te dziwne symbole w moich plikach personalnych
+44. Wziąć udział w słynnym wyścigu
+45. Spotkać osobiście gwiazdę medialną
+46. Wygrać chociaż raz w ulubionej grze komputerowej online
+47. Pogodzić się z bliską osobą
+48. Rzucić to wszystko i wyjechać gdzieś
+49. Pomóc bezdomnemu na mojej ulicy
+50. Zdobyć pracę w korporacji
+
 
