@@ -27,7 +27,7 @@ Zrezygnowałam, bo:
 5. W przetwarzanych dokumentach odkryłam szokujące fakty na temat korporacji
 6. Łowca głów z konkurencji okazał się oszustem i nie mogę już wrócić do poprzedniej pracy
 
-## Pracownik fabryczny zaibatsu (+1 CIA lub +1 INT)
+## Pracownik fabryczny zaibatsu (+1 BIO lub +1 INF)
 
 *Gdzie leziesz?! Życie ci już niemiłe?! Za 15 sekund przez tę rampę przepuszczą taki prąd, że d**a ci się zacznie świecić jak żarówka!*
 
@@ -40,7 +40,7 @@ Zrezygnowałem, bo:
 5. Okazało się, że to co wytwarzamy służy potem do zabijania ludzi.
 6. Korporacje to zło wcielone i nie zamierzam pracować dla Szatana
 
-## Strażnik zaibatsu (+1 CIA)
+## Strażnik zaibatsu (+1 BIO)
 
 *W sumie to nie wiem, czy jestem nadzorcą, cieciem czy klawiszem. W tej robocie trudno znaleźć coś szlachetnego.*
 
@@ -53,7 +53,7 @@ Zrezygnowałem, bo:
 5. Nie chciałem brać udziału w przemycie organizowanym przez kolegów z pracy.
 6. Niechcący zastrzeliłem niewinnego człowieka.
 
-## Mechanik (+1 CIA)
+## Mechanik (+1 BIO)
 
 *Robot ci się zepsuł? A może pralka? Pan usiądzie, pan poczeka, się załatwi.*
 
@@ -79,7 +79,7 @@ Zrezygnowałem, bo:
 5. Ci, którzy naprawdę potrzebują mojej pomocy, nie trafiają do szpitali
 6. Odkryłem niewygodne fakty w dokumentacji medycznej szpitala
 
-## Pilot (+1 CIA)
+## Pilot (+1 BIO)
 
 *Kiedy jestem w powietrzu, to czuję się jakiś lżejszy - wszystkie troski zostawiam tam na ziemi. Można powiedzieć, że tutaj w górze jest tak jakby czyściej ... I nie mówię o składzie powietrza, którym oddychasz ...*
 
@@ -92,7 +92,7 @@ Zrezygnowałem, bo:
 5. Pomyślałem, że zawsze jest czas, żeby zacząć zmieniać świat na lepsze.
 6. Ciężko jest rywalizować z tymi młokosami nafaszerowanymi wszczepami.
 
-## Kierowca (+1 CIA)
+## Kierowca (+1 BIO)
 
 *Mówisz o LRV 500? Ten z napędem na trzy osie? Pewnie, że jeździłem! I to z pełnym obciążeniem, więc mi nie zaimponujesz leszczu ...*
 
@@ -105,7 +105,7 @@ Zrezygnowałem, bo:
 5. Nie zrezygnowałem - firma zbankrutowałą a nas wysłali na bezrobocie.
 6. Nie jestem coraz młodszy a do tego zawodu potrzebny jest refleks.
 
-## Ochroniarz klubowy (+1 CIA lub +1 PSY)
+## Ochroniarz klubowy (+1 BIO lub +1 PSY)
 
 *Tak, ja rozumiem, że tam w środku są pańscy przyjaciele ale bez zaproszenia nie wpuszczamy. Jasne, że zna pan szefa Yakuza - to może pan zadzwoni i przekaże mi telefon, dobrze?*
 
@@ -131,7 +131,7 @@ Zrezygnowałem, bo:
 5. W starych archiwach odkryłem coś takiego, że wolałem zmienić zawód.
 6. Nie zrezygnowałem, po prostu tutaj znajdę temat mojego życia.  
 
-## Cybertechnik (+1 INT)
+## Cybertechnik (+1 INF)
 
 *Jak się będziesz cały czas tak wiercił, to ci to przykręcę do d**y zamiast do ręki! Pasuje?*
 
@@ -144,7 +144,7 @@ Zrezygnowałem, bo:
 5. Od pewnego czasu każdy sprzęt, który montuję lub naprawiam szybko się psuje - to chyba jakaś klątwa...
 6. Mam pomysły na przełomowe cybermodyfikacje, potrzebuję pieniędzy i sprzętu, żeby zrealizować swoje plany.
 
-## Programista (+1 INT)
+## Programista (+1 INF)
 
 *Czekaj mówię, czekaj chwilę! Jak teraz uruchomisz ten program, to za moment nie będzie co zbierać z dysku. Infosfera to nie miejsce dla ignorantów ... no przynajmniej w większości przypadków...*
 
@@ -157,7 +157,7 @@ Zrezygnowałem, bo:
 5. Odeszła ode mnie bliska osoba - powiedziała, że nie będzie rywalizowała z moim życiem w Infosferze.
 6. W Infosferze natknąłem się na dziwny rodzaj sztucznej inteligencji - prawdę mówiąc do dzisiaj jestem przerażony. 
 
-## Żołnierz gangu (+1 CIA lub +1 PSY)
+## Żołnierz gangu (+1 BIO lub +1 PSY)
 
 *Na ulicy sprawy stawia się jasno. Jesteś po naszej stronie, to dbamy o ciebie. Jesteś po przeciwnej - to walczymy z tobą. Nikt tutaj nie mówi o braku szacunku. Nigdy.*
 
@@ -196,7 +196,7 @@ Zrezygnowałem, bo:
 5. Komuś ważnemu zależało na wyburzeniu dzielnicy biedoty, a ja nie wydałem pozwolenia...
 6. Moje stanowisko zajęła eksperymentalna sztuczna inteligencja.
 
-## Policjant (+1 CIA lub +1 PSY)
+## Policjant (+1 BIO lub +1 PSY)
 
 *No i co z tego, że mamy mniej funduszy niż sklep spożywczy i mniej uprawnień niż cieć na parkingu? Przestępców nadal trzeba ścigać a prawa przestrzegać. Czyjego prawa? Tego, które chroni ludzi a nie ich zniewala.*
 
@@ -222,7 +222,7 @@ Zrezygnowałem, bo:
 5. Czas najwyższy zacząć troszczyć się o siebie samego
 6. Zostałem wrobiony w sprawę kryminalną i odebrano mi licencję
 
-## Pracownica lokalu usługowego (+1 PSY lub +1 INT)
+## Pracownica lokalu usługowego (+1 PSY lub +1 INF)
 
 *Codziennie dbam o klientów, codziennie się do nich uśmiecham. I kogo to tak naprawdę obchodzi?*
 
@@ -235,7 +235,7 @@ Zrezygnowałam, bo:
 5. Szef powiedział, że te nowe androidy są tańsze i pracują lepiej ode mnie.
 6. Chcę otworzyć swój własny lokal a do tego potrzebuję funduszy.
 
-## Pracownik komunalny (+1 CIA)
+## Pracownik komunalny (+1 BIO)
 
 *Piękny poranek! Ciężka harówka, płaca minimalna, ludzka pogarda - co gorszego może mnie dzisiaj spotkać?*
 

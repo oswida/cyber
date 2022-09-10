@@ -59,106 +59,44 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 
 ## Nazwisko (k100)
 
-1. Adams
-1. Allen
-1. Anderson
-1. Bailey
-1. Baker
-1. Barnes
-1. Bell
-1. Bennett
-1. Brooks
-1. Brown
-1. Butler
-1. Campbell
-1. Carter
-1. Clark
-1. Coleman
-1. Collins
-1. Cook
-1. Cooper
-1. Cox
-1. Cruz
-1. Davis
-1. Diaz
-1. Edwards
-1. Evans
-1. Fisher
-1. Flores
-1. Foster
-1. Garcia
-1. Gomez
-1. Gonzalez
-1. Gray
-1. Green
-1. Hall
-1. Harris
-1. Henderson
-1. Hernandez
-1. Hill
-1. Howard
-1. Hughes
-1. Jackson
-1. James
-1. Jenkins
-1. Johnson
-1. Jones
-1. Kelly
-1. Kim
-1. King
-1. Lee
-1. Lewis
-1. Long
-1. Lopez
-1. Martin
-1. Martinez
-1. Miller
-1. Mitchell
-1. Moore
-1. Morgan
-1. Morris
-1. Murphy
-1. Myers
-1. Nelson
-1. Nguyen
-1. Parker
-1. Perez
-1. Perry
-1. Peterson
-1. Phillips
-1. Powell
-1. Price
-1. Ramirez
-1. Reed
-1. Reyes
-1. Richardson
-1. Rivera
-1. Roberts
-1. Robinson
-1. Rodriguez
-1. Rogers
-1. Ross
-1. Russell
-1. Sanchez
-1. Sanders
-1. Scott
-1. Smith
-1. Stewart
-1. Sullivan
-1. Taylor
-1. Thomas
-1. Thompson
-1. Torres
-1. Turner
-1. Walker
-1. Ward
-1. Watson
-1. White
-1. Williams
-1. Wilson
-1. Wood
-1. Wright
-1. Young
+| Imię        |              |               |
+| ----------- | ------------ | ------------- |
+| 1.Adams     | 34.Harris    | 67.Phillips   |
+| 2.Allen     | 35.Henderson | 68.Powell     |
+| 3.Anderson  | 36.Hernandez | 69.Price      |
+| 4.Bailey    | 37.Hill      | 70.Ramirez    |
+| 5.Baker     | 38.Howard    | 71.Reed       |
+| 6.Barnes    | 39.Hughes    | 72.Reyes      |
+| 7.Bell      | 40.Jackson   | 73.Richardson |
+| 8.Bennett   | 41.James     | 74.Rivera     |
+| 9.Brooks    | 42.Jenkins   | 75.Roberts    |
+| 10.Brown    | 43.Johnson   | 76.Robinson   |
+| 11.Butler   | 44.Jones     | 77.Rodriguez  |
+| 12.Campbell | 45.Kelly     | 78.Rogers     |
+| 13.Carter   | 46.Kim       | 79.Ross       |
+| 14.Clark    | 47.King      | 80.Russell    |
+| 15.Coleman  | 48.Lee       | 81.Sanchez    |
+| 16.Collins  | 49.Lewis     | 82.Sanders    |
+| 17.Cook     | 50.Long      | 83.Scott      |
+| 18.Cooper   | 51.Lopez     | 84.Smith      |
+| 19.Cox      | 52.Martin    | 85.Stewart    |
+| 20.Cruz     | 53.Martinez  | 86.Sullivan   |
+| 21.Davis    | 54.Miller    | 87.Taylor     |
+| 22.Diaz     | 55.Mitchell  | 88.Thomas     |
+| 23.Edwards  | 56.Moore     | 89.Thompson   |
+| 24.Evans    | 57.Morgan    | 90.Torres     |
+| 25.Fisher   | 58.Morris    | 91.Turner     |
+| 26.Flores   | 59.Murphy    | 92.Walker     |
+| 27.Foster   | 60.Myers     | 93.Ward       |
+| 28.Garcia   | 61.Nelson    | 94.Watson     |
+| 29.Gomez    | 62.Nguyen    | 95.White      |
+| 30.Gonzalez | 63.Parker    | 96.Williams   |
+| 31.Gray     | 64.Perez     | 97.Wilson     |
+| 32.Green    | 65.Perry     | 98.Wood       |
+| 33.Hall     | 66.Peterson  | 99.Wright     |
+|             |              | 100. Young    |
+
+
 
 ## Zawód (k100)
 

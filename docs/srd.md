@@ -65,14 +65,14 @@ Rzuć **1k4** i pomnóż przez **1000** - to początkowa ilość kredytów, któ
 
 Postacie graczy posiadają trzy współczynniki opisujące zdolności:
 
-- **Ciało (CIA)** - ogół cech fizycznych: budowa, wytrzymałość, zwinność, zręczność, refleks
+- **Biologia (BIO)** - ogół cech fizycznych: budowa, wytrzymałość, zwinność, zręczność, refleks
 - **Psychika (PSY)** - ogół cech mentalnych i socjalnych: inteligencja, wiedza, siła woli, empatia, kontakty
-- **Interfejs (INT)** - cechy związane z wykorzystaniem technologii: umiejętności operowania w Infosferze, odporność na cyberatak, poziom integracji z cybermodyfikacjami.
+- **Interfejs (INF)** - cechy związane z wykorzystaniem technologii: umiejętności operowania w Infosferze, odporność na cyberatak, poziom integracji z cybermodyfikacjami.
 
 Podczas tworzenia postaci, gracz powinien rzucić **3k6** kolejno dla każdej zdolności. Po wykonaniu wszystkich rzutów można wymienić wartości pomiędzy dwoma wybranymi zdolnościami.
 
 > **Przykład:**
-> Miko rzuca na **CIA** swojej postaci i uzyskuje wyniki **2**, **4**, **6**, dające w sumie **12**. Następne dwa rzuty dają **9** dla **PSY** oraz **13** dla **INT**. Miko decyduje się na wymianę **12** z **9**, a zatem jej postać ma **9 CIA**, **12 PSY** i **13** **INT**.
+> Miko rzuca na **BIO** swojej postaci i uzyskuje wyniki **2**, **4**, **6**, dające w sumie **12**. Następne dwa rzuty dają **9** dla **PSY** oraz **13** dla **INF**. Miko decyduje się na wymianę **12** z **9**, a zatem jej postać ma **9 BIO**, **12 PSY** i **13** **INF**.
 
 ### Ochrona przed trafieniem
 
@@ -104,9 +104,9 @@ Oprócz ekwipunku startowego (kupowanego za początkowe kredyty), podczas tworze
 
 Każda z trzech zdolności jest używana w innych sytuacjach (patrz [rzuty obronne](#rzuty-obronne)).
 
-- **Ciało (CIA)** - w sytuacjach ryzykownych wymagających siły fizycznej, zręczności, zwinności czy wytrzymałości.
+- **Biologia (BIO)** - w sytuacjach ryzykownych wymagających siły fizycznej, zręczności, zwinności czy wytrzymałości.
 - **Psychika (PSY)** - w przypadku kłopotów, których można uniknąć dzięki inteligencji, wiedzy, sile woli lub interakcjom społecznym.
-- **Interfejs (INT)** - w unikaniu zagrożeń związanych z Infosferą, cybermodyfikacjami lub sterowaniem urządzeniami.
+- **Interfejs (INF)** - w unikaniu zagrożeń związanych z Infosferą, cybermodyfikacjami lub sterowaniem urządzeniami.
 
 ### Dyskomfort i zmęczenie
 
@@ -136,9 +136,9 @@ Można to ująć tak:
 
 > Przykłady:
 >
-> Ada próbuje otworzyć zamek elektroniczny bez znajomości kodu więc wykonuje test INT. Zdany test oznacza, że udało jej się oszukać system i drzwi się otwierają.
+> Ada próbuje otworzyć zamek elektroniczny bez znajomości kodu więc wykonuje test INF. Zdany test oznacza, że udało jej się oszukać system i drzwi się otwierają.
 
-> Kumiko ściga się z pojazdem ochrony, który próbuje zajechać jej drogę. Manewry pojazdu zależne są od jej refleksu i zręczności więc musi wykonać test CIA. Zdany test oznacza, że da radę uciec ochronie.
+> Kumiko ściga się z pojazdem ochrony, który próbuje zajechać jej drogę. Manewry pojazdu zależne są od jej refleksu i zręczności więc musi wykonać test BIO. Zdany test oznacza, że da radę uciec ochronie.
 
 > Robert próbuje odnaleźć zaginionego członka rodziny, w tym celu zwraca się o pomoc do znajomego gangu ulicznego. Zdany test PSY oznacza, że uzyskał jakieś informacje na temat poszukiwanego.
 
@@ -166,22 +166,22 @@ W każdej rundzie, gracze deklarują co robią, zanim rzucone zostaną jakiekolw
 #### Kolejność działań
 
 Prowadzący powinien sygnalizować najbardziej prawdopodobne działania oponentów w trakcie starcia.
-Jeśli gracz chce zacząć działać przed przeciwnikami, to na początku walki powinien zdać test odpowiedniej cechy: CIA dla walki w świecie fizycznym lub PSY w przypadku starcia w Infosferze.
+Jeśli gracz chce zacząć działać przed przeciwnikami, to na początku walki powinien zdać test odpowiedniej cechy: BIO dla walki w świecie fizycznym lub PSY w przypadku starcia w Infosferze.
 
-> **Przykład:** *Bea przypadkowo natknęła się na teren, na którym grasuje gang przemytników. Aby móc działać przed nimi, musi wykonać test CIA. Nie udaje jej się, więc przemytnicy atakują pierwsi.*
+> **Przykład:** *Bea przypadkowo natknęła się na teren, na którym grasuje gang przemytników. Aby móc działać przed nimi, musi wykonać test BIO. Nie udaje jej się, więc przemytnicy atakują pierwsi.*
 
 #### Atak i obrażenia
 
-Atakujący rzuca **kością obrażeń** dla swojej broni i dla obrażeń fizycznych (zadawanych w CIA) odejmuje **pancerz** celu, a następnie odejmuje pozostałą liczbę obrażeń od **OCHR** przeciwnika.
+Atakujący rzuca **kością obrażeń** dla swojej broni i dla obrażeń fizycznych (zadawanych w BIO) odejmuje **pancerz** celu, a następnie odejmuje pozostałą liczbę obrażeń od **OCHR** przeciwnika.
 
 Ataki **bez broni** zawsze zadają **1k4 obrażeń**.
 
-Jeśli liczba obrażeń przekracza aktualną OCHR przeciwnika, pozostałe punkty **zmniejszają odpowiednią zdolność** postaci (CIA dla walki w świecie fizycznym, INT dla starcia w Infosferze lub broni EMP).
+Jeśli liczba obrażeń przekracza aktualną OCHR przeciwnika, pozostałe punkty **zmniejszają odpowiednią zdolność** postaci (BIO dla walki w świecie fizycznym, INF dla starcia w Infosferze lub broni EMP).
 
 - Zredukowanie którejś ze zdolności postaci do zera oznacza:
-  - CIA - śmierć fizyczną postaci
+  - BIO - śmierć fizyczną postaci
   - PSY - katatonię a po potencjalnym wyleczeniu, poważne problemy psychiczne (fobie, lęki) wymagające specjalistycznej opieki lub społeczne (trwałe wykluczenie z pewnych środowisk)
-  - INT - blokadę dostępu do Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności ale nie mniej niż 24 godziny i awarię wszystkich cybermodyfikacji
+  - INF - blokadę dostępu do Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności i awarię wszystkich cybermodyfikacji
 
 #### Wielu atakujących
 
@@ -209,13 +209,13 @@ Ataki z cechą **Podmuch** wpływają na wszystkie cele w oznaczonym obszarze i 
 
 #### Obrażenia krytyczne
 
-Obrażenia, które redukują OCHR celu poniżej zera, zmniejszają CIA/INT celu o ich pozostałą ilość. Ofiara musi wykonać rzut obronny CIA/INT (aktualna wartość, łącznie z cybermodyfikacjami ale już po redukcji), aby uniknąć **obrażeń krytycznych**. Dodatkowo, niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zaliczy testu na obrażenia krytyczne.
+Obrażenia, które redukują OCHR celu poniżej zera, zmniejszają BIO/INF celu o ich pozostałą ilość. Ofiara musi wykonać rzut obronny BIO/INF (aktualna wartość, łącznie z cybermodyfikacjami ale już po redukcji), aby uniknąć **obrażeń krytycznych**. Dodatkowo, niektórzy wrogowie posiadają specjalne umiejętności lub efekty, które są uruchamiane, gdy ich cel nie zaliczy testu na obrażenia krytyczne.
 
-Każda postać, która otrzyma obrażenia krytyczne w CIA, nie może zrobić nic poza słabym czołganiem się i kurczowym chwytaniem się resztek życia. Jeśli otrzyma pomoc i będzie mogła odpocząć, jej stan ulegnie stabilizacji. Jeśli postać nie będzie leczona, umrze w ciągu godziny.
+Każda postać, która otrzyma obrażenia krytyczne w BIO, nie może zrobić nic poza słabym czołganiem się i kurczowym chwytaniem się resztek życia. Jeśli otrzyma pomoc i będzie mogła odpocząć, jej stan ulegnie stabilizacji. Jeśli postać nie będzie leczona, umrze w ciągu godziny.
 
-Każda postać, która otrzyma obrażenia krytyczne w INT, zostaje unieruchomiona w Infosferze (nie może się przemieszczać pomiędzy węzłami) lub wszystkie jej cybermodyfikacje przestają działać jeśli operuje w świecie fizycznym.
+Każda postać, która otrzyma obrażenia krytyczne w INF, zostaje unieruchomiona w Infosferze (nie może się przemieszczać pomiędzy węzłami) lub wszystkie jej cybermodyfikacje przestają działać jeśli operuje w świecie fizycznym.
 
-**Czarny LOD** oraz **broń EMP** posiadają dodatkowy efekt obrażeń krytycznych: *"jeśli cel posiada neuroprocesor, zadaj tyle punktów obrażeń w PSY celu ile zostało zadanych w INT w tej turze"*.
+**Czarny LOD** oraz **broń EMP** posiadają dodatkowy efekt obrażeń krytycznych: *"jeśli cel posiada neuroprocesor, zadaj tyle punktów obrażeń w PSY celu ile zostało zadanych w INF w tej turze"*.
 
 #### Pancerz
 
@@ -225,11 +225,11 @@ Nikt nie może mieć więcej niż **3 punkty** Pancerza.
 
 #### Odwrót
 
-Ucieczka w trudnej sytuacji zawsze wymaga udanego rzutu obronnego odpowiedniej zdolności (CIA dla walki fizycznej, INT w Infosferze), jak również bezpiecznego miejsca, do którego można uciec.
+Ucieczka w trudnej sytuacji zawsze wymaga udanego rzutu obronnego odpowiedniej zdolności (BIO dla walki fizycznej, INF w Infosferze), jak również bezpiecznego miejsca, do którego można uciec.
 
 #### Oddziały
 
-Duże grupy podobnych wojowników walczących razem są traktowane jako pojedyncze **oddziały**. Kiedy oddział otrzymuje krytyczne obrażenia, zostaje rozproszony lub znacznie osłabiony. Kiedy osiągnie 0 CIA, zostaje zniszczony.
+Duże grupy podobnych wojowników walczących razem są traktowane jako pojedyncze **oddziały**. Kiedy oddział otrzymuje krytyczne obrażenia, zostaje rozproszony lub znacznie osłabiony. Kiedy osiągnie 0 BIO, zostaje zniszczony.
 
 Ataki jednostek na oddziały są [osłabione](#modyfikatory-ataku) (z wyjątkiem obrażeń od [podmuchu](#podmuch)).
 Ataki oddziałów na jednostki są [wzmocnione](#modyfikatory-ataku) i zadają obrażenia takie jak od [podmuchu](#podmuch).
@@ -242,9 +242,10 @@ Podczas starcia, gdy pierwszy z wrogów polegnie i ponownie, gdy grupa wrogów s
 
 Odpoczynek przez kilka chwil przywraca utracone punkty OCHR, ale może narazić postać na niebezpieczeństwo.
 
-Utracone punkty CIA lub PSY można zazwyczaj przywrócić poprzez tygodniowy odpoczynek wspomagany przez systemy medyczne lub odpowiedniego specjalistę.
+Utracone punkty BIO lub PSY można zazwyczaj przywrócić poprzez tygodniowy odpoczynek wspomagany przez systemy medyczne lub odpowiedniego specjalistę.
 
-Utracone punkty INT wymagają wizyty u specjalisty od naprawy interfejsów lub samodzielnej naprawy.
+Utracone punkty INF wymagają wizyty u specjalisty od naprawy interfejsów lub samodzielnej naprawy jeśli postać jest cybertechnikiem.
+**Kalibracja**: Jeśli INF postaci wynosi **zero**, bohater może dokonać samodzielnej kalibracji interfejsu odzyskując **jeden** punkt INF. Kalibracja wymaga bezpiecznego miejsca i zajmuje około godziny.
 
 ### Ekonomia
 
@@ -263,6 +264,8 @@ Wyjątkiem od tego systemu abonamentowego są artykuły, usługi i sprzęt specj
 
 Część z wyjątków powyżej ma swoje oddzielne cenniki a pozostałe zależą od konkretnej potrzeby i oferty - będą zatem przedmiotem negocjacji pomiędzy postaciami graczy a bohaterami niezależnymi.
 Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów i może mieć dowolną cenę.
+
+**Legalna praca zarobkowa**: Jeśli gracze chcą zapewnić sobie stałe źródło utrzymania, niezależne od nagród pozyskiwanych z rozgrywanych przygód, mogą to zrobić poprzez podjęcie "zwyczajnej" pracy. Codzienna praca wymaga jednak czasu i wysiłku. Za każde **1000 ℂ pensji miesięcznej**, gracz zaznacza **1 pkt Zmęczenia na początku** każdego dnia.
 
 Szczegółowy wykaz produktów i usług oraz wymaganych poziomów kredytu znajdziesz w [dodatku](./equipment.md).
 
@@ -283,32 +286,32 @@ Każda postać może wykonywać pewien zestaw standardowych czynności w Infosfe
 - pozyskiwanie informacji publicznej
 - dostęp do produktów i usług oferowanych w Infosferze
 
-Wszystkie inne działania takie jak: hakowanie, ochrona, dostęp do zastrzeżonej informacji wymagają odpowiednich cybermodyfikacji.
+Wszystkie inne działania takie jak: **hakowanie, ochrona, dostęp do zastrzeżonej informacji** wymagają cybermodyfikacji określanej jako **neuroprocesor**.
 
 **Działania w Infosferze** są rozstrzygane podobnie jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs.
 Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest redukowana przez ataki jest Interfejs zamiast Ciała.
 
-**Blokada**: zredukowanie INT postaci do zera oznacza, że nie może ona korzystać z Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności ale nie mniej niż 24 godziny.
+**Blokada**: zredukowanie INF postaci do zera oznacza, że nie może ona korzystać z Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności.
 
-**Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INT. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest wykonanie ataków za pomocą odpowiednich cybermodyfikacji. Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **poziom INT**.
+**Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INF. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest wykonanie ataków za pomocą odpowiednich cybermodyfikacji. Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **aktualny poziom INF**.
 
-**Niszczenie danych**: Po zredukowaniu OCHR węzła do zera, gracz może nadal wykonywać atak ale tym razem będzie zmniejszał INT węzła. Zredukowanie **INT węzła do zera** oznacza bezpowrotne **zniszczenie danych lub programu** (o ile ich właściciel nie miał kopii zapasowej). Zmniejszanie INT węzła do wartości innych niż zero nie daje żadnych efektów w grze.
+**Niszczenie danych**: Po zredukowaniu OCHR węzła do zera, gracz może nadal wykonywać atak ale tym razem będzie zmniejszał INF węzła. Zredukowanie **INF węzła do zera** oznacza bezpowrotne **zniszczenie danych lub programu** (o ile ich właściciel nie miał kopii zapasowej). Zmniejszanie INF węzła do wartości innych niż zero nie daje żadnych efektów w grze.
 
-**Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy posiadać odpowiednią cybermodyfikację i zdać test INT. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
+**Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy posiadać odpowiednią cybermodyfikację i zdać test INF. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
 
-**Logiczne Oprogramowanie Defensywne (LÓD)**: węzły Infosfery mogą posiadać automatyczne systemy obronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie hakowania wykonują atak na postać, redukując jej INT. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
+**Logiczne Oprogramowanie Defensywne (LÓD)**: węzły Infosfery mogą posiadać automatyczne systemy obronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie hakowania wykonują atak na postać, redukując jej INF. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
 
 **Czarny LOD** (oficjalnie nielegalny), posiada dodatkową cechę:
 
-- *Obrażenia krytyczne*: zadaj w PSY celu, tyle samo punktów obrażeń ile zadałeś w INT w tej turze.
+- *Obrażenia krytyczne*: zadaj w PSY celu, tyle samo punktów obrażeń ile zadałeś w INF w tej turze.
 
 ### Cybermodyfikacje
 
-Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekraczającej poziomu zdolności **Interfejs podzielonej przez 3** (zaokrąglenie w górę).
+Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekraczającej **aktualnego** poziomu zdolności **Interfejs podzielonej przez 3** (zaokrąglenie w górę).
 
 > Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
 
-Postać, której **INT wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać dopóki bohater nie odzyska przynajmniej jednego punktu Interfejsu.
+Postać, której **INF wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać dopóki bohater nie odzyska **przynajmniej jednego** punktu Interfejsu.
 
 **Aktywacja**: każdy element cybermodyfikacji, który wpływa na mechanikę gry (modyfikatory do rzutów obronnych, obrażenia krytyczne) wymaga **aktywacji** za **każdym razem** gdy postać zechce go użyć. Aktywacja wymaga zaznaczenia jednego punktu Zmęczenia w ekwipunku.
 Elementy cybermodyfikacji, nie oznaczone jako wymagające aktywacji, dają efekt trwały a ich używanie nie podnosi zmęczenia postaci.
@@ -362,7 +365,7 @@ Najemnicy nie posiadają własnych cybermodyfikacji ale gracz może ich wyposaż
 Użyj poniższego szablonu, aby zdefiniować Bohatera Niezależnego:
 
 **Imię/nazwa**  
-X OCHR, X Pancerz, X CIA, X PSY, X INT, Broń (kX, przedmioty specjalne, cechy)
+X OCHR, X Pancerz, X BIO, X PSY, X INF, Broń (kX, przedmioty specjalne, cechy)
 
 - Opis wyglądu, zachowania, celów i pragnień
 - Cecha, taktyka lub osobliwość, która czyni tę postać wyjątkową

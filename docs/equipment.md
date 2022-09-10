@@ -54,9 +54,9 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Granaty (5szt)             |        200         |         k6, podmuch          |             |
 | Mikroładunki               |        150         |              k4              |             |
 | Ładunki wybuchowe          | kość obrażeń * 150 |       k6-k12, podmuch        |             |
-| Działko EMP\*              |        2000        | k8, podmuch, obrażenia w INT | nieporęczna |
+| Działko EMP\*              |        2000        | k8, podmuch, obrażenia w INF | nieporęczna |
 
-\* *Obrażenia krytyczne*: jeśli cel posiada neuroprocesor, zadaj PSY celu, tyle samo punktów obrażeń ile zadałeś INT w tej turze.
+\* *Obrażenia krytyczne*: jeśli cel posiada neuroprocesor, zadaj PSY celu, tyle samo punktów obrażeń ile zadałeś INF w tej turze.
 
 | Pancerz | Cena  | Wartość | Uwagi       |
 | ------- | :---: | :-----: | ----------- |
@@ -82,14 +82,14 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Węzeł Infosfery      |       Cena/miesiąc        |
 | -------------------- | :-----------------------: |
 | +1 OCHR              |           2000            |
-| +1 INT               |           5000            |
+| +1 INF               |           5000            |
 | Biały LOD            | rodzaj kości ataku * 1500 |
 | Czarny LOD (nieleg.) | rodzaj kości ataku * 5000 |
 
 
 | Usługi medyczno/naprawcze     |        Cena        |             Czas             |
 | ----------------------------- | :----------------: | :--------------------------: |
-| Pomoc medyczna                | 2000 za 1 pkt CIA  | 1 dzień za 1 pkt, maks 7 dni |
-| Pomoc psychologiczna          | 1500  za 1 pkt PSY | 1 dzień za 1 pkt, maks 7 dni |
-| Naprawa interfejsu            | 2000 za 1 pkt INT  |      2 godziny za 1 pkt      |
+| Pomoc medyczna                | 1000 za 1 pkt BIO  | 1 dzień za 1 pkt, maks 7 dni |
+| Pomoc psychologiczna          | 1000  za 1 pkt PSY | 1 dzień za 1 pkt, maks 7 dni |
+| Naprawa interfejsu            |  500 za 1 pkt INF  |      2 godziny za 1 pkt      |
 | Pakiet stymulantów (10 dawek) |        1000        |   działanie natychmiastowe   |
