@@ -245,6 +245,7 @@ Odpoczynek przez kilka chwil przywraca utracone punkty OCHR, ale może narazić 
 Utracone punkty BIO lub PSY można zazwyczaj przywrócić poprzez tygodniowy odpoczynek wspomagany przez systemy medyczne lub odpowiedniego specjalistę.
 
 Utracone punkty INF wymagają wizyty u specjalisty od naprawy interfejsów lub samodzielnej naprawy jeśli postać jest cybertechnikiem.
+
 **Kalibracja**: Jeśli INF postaci wynosi **zero**, bohater może dokonać samodzielnej kalibracji interfejsu odzyskując **jeden** punkt INF. Kalibracja wymaga bezpiecznego miejsca i zajmuje około godziny.
 
 ### Ekonomia
@@ -264,8 +265,6 @@ Wyjątkiem od tego systemu abonamentowego są artykuły, usługi i sprzęt specj
 
 Część z wyjątków powyżej ma swoje oddzielne cenniki a pozostałe zależą od konkretnej potrzeby i oferty - będą zatem przedmiotem negocjacji pomiędzy postaciami graczy a bohaterami niezależnymi.
 Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów i może mieć dowolną cenę.
-
-**Legalna praca zarobkowa**: Jeśli gracze chcą zapewnić sobie stałe źródło utrzymania, niezależne od nagród pozyskiwanych z rozgrywanych przygód, mogą to zrobić poprzez podjęcie "zwyczajnej" pracy. Codzienna praca wymaga jednak czasu i wysiłku. Za każde **1000 ℂ pensji miesięcznej**, gracz zaznacza **1 pkt Zmęczenia na początku** każdego dnia.
 
 Szczegółowy wykaz produktów i usług oraz wymaganych poziomów kredytu znajdziesz w [dodatku](./equipment.md).
 
@@ -297,7 +296,7 @@ Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest
 
 **Niszczenie danych**: Po zredukowaniu OCHR węzła do zera, gracz może nadal wykonywać atak ale tym razem będzie zmniejszał INF węzła. Zredukowanie **INF węzła do zera** oznacza bezpowrotne **zniszczenie danych lub programu** (o ile ich właściciel nie miał kopii zapasowej). Zmniejszanie INF węzła do wartości innych niż zero nie daje żadnych efektów w grze.
 
-**Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy posiadać odpowiednią cybermodyfikację i zdać test INF. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
+**Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy posiadać neuroprocesor i zdać test INF. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
 
 **Logiczne Oprogramowanie Defensywne (LÓD)**: węzły Infosfery mogą posiadać automatyczne systemy obronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie hakowania wykonują atak na postać, redukując jej INF. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
 

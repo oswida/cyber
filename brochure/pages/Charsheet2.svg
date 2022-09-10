@@ -28,15 +28,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.93895903"
-     inkscape:cx="315.77523"
-     inkscape:cy="922.29796"
+     inkscape:zoom="0.46947952"
+     inkscape:cx="365.29815"
+     inkscape:cy="202.35175"
      inkscape:window-width="1366"
      inkscape:window-height="699"
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1969-52-5-9"
+     inkscape:current-layer="g3882"
      showguides="false" />
   <defs
      id="defs4804">
@@ -507,9 +507,9 @@
          transform="translate(30.540151,-15.246732)"><tspan
            x="9725.7656"
            y="167.5332"
-           id="tspan809"><tspan
+           id="tspan965"><tspan
              style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
-             id="tspan807">Imię</tspan></tspan></text>
+             id="tspan963">Imię</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text400454-1"
@@ -517,9 +517,9 @@
          transform="translate(29.288319,39.19208)"><tspan
            x="9725.7656"
            y="167.5332"
-           id="tspan813"><tspan
+           id="tspan969"><tspan
              style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
-             id="tspan811">Przeszłość</tspan></tspan></text>
+             id="tspan967">Przeszłość</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text400454-1-2"
@@ -527,9 +527,9 @@
          transform="translate(2.2176424,84.01293)"><tspan
            x="9725.7656"
            y="167.5332"
-           id="tspan817"><tspan
+           id="tspan973"><tspan
              style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
-             id="tspan815">Abonament podstawowy</tspan></tspan></text>
+             id="tspan971">Abonament podstawowy</tspan></tspan></text>
       <rect
          style="fill:none;stroke:#808080;stroke-width:1.0743;stroke-linejoin:round"
          id="rect400561"
@@ -561,9 +561,9 @@
            transform="translate(360.44052,84.01293)"><tspan
              x="9725.7656"
              y="167.5332"
-             id="tspan821"><tspan
+             id="tspan977"><tspan
                style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
-               id="tspan819">Kredyty</tspan></tspan></text>
+               id="tspan975">Kredyty</tspan></tspan></text>
         <rect
            style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:1.30629;stroke-linejoin:round"
            id="rect54314"
@@ -590,11 +590,11 @@
          transform="translate(-45.657565,393.72123)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan827"><tspan
+           id="tspan983"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan823">Cybermodyfikacje </tspan><tspan
+             id="tspan979">Cybermodyfikacje </tspan><tspan
              style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=400';font-variation-settings:'wght' 400"
-             id="tspan825">(maksymalnie INT/3, zaokrąglone w górę)</tspan></tspan></text>
+             id="tspan981">(maksymalnie INT/3, zaokrąglone w górę)</tspan></tspan></text>
     </g>
     <g
        id="g617186"
@@ -606,13 +606,13 @@
          transform="translate(-44.034898,703.06906)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan835"><tspan
+           id="tspan991"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan829">Ekwipunek </tspan><tspan
+             id="tspan985">Ekwipunek </tspan><tspan
              style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=400';font-variation-settings:'wght' 400"
-             id="tspan831">(2 x ręce, 2 x ciało plus pojemniki)</tspan><tspan
+             id="tspan987">(2 x ręce, 2 x ciało plus pojemniki)</tspan><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan833"> </tspan></tspan></text>
+             id="tspan989"> </tspan></tspan></text>
     </g>
     <g
        id="g3882"
@@ -682,11 +682,11 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2523.1378,138.72025)"
              x="19.682695"
              y="0"><tspan
-               x="9741.5107"
+               x="9740.6361"
                y="165.8188"
-               id="tspan839"><tspan
+               id="tspan995"><tspan
                  style="font-size:21.3333px"
-                 id="tspan837">CIA</tspan></tspan></text>
+                 id="tspan993">BIO</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3"
@@ -694,7 +694,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan841">AKTUAL.</tspan></text>
+               id="tspan997">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2"
@@ -702,7 +702,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan843">MAKS.</tspan></text>
+               id="tspan999">MAKS.</tspan></text>
         </g>
         <g
            id="g1910-8-3"
@@ -768,9 +768,9 @@
              y="0"><tspan
                x="9738.7481"
                y="165.8188"
-               id="tspan847"><tspan
+               id="tspan1003"><tspan
                  style="font-size:21.3333px"
-                 id="tspan845">PSY</tspan></tspan></text>
+                 id="tspan1001">PSY</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3-2"
@@ -778,7 +778,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan849">AKTUAL.</tspan></text>
+               id="tspan1005">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2-7"
@@ -786,7 +786,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan851">MAKS.</tspan></text>
+               id="tspan1007">MAKS.</tspan></text>
         </g>
         <g
            id="g1910-8-6"
@@ -850,11 +850,11 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2523.1378,138.72025)"
              x="19.682695"
              y="0"><tspan
-               x="9740.8281"
+               x="9741.1054"
                y="165.8188"
-               id="tspan855"><tspan
+               id="tspan1011"><tspan
                  style="font-size:21.3333px"
-                 id="tspan853">INT</tspan></tspan></text>
+                 id="tspan1009">INF</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3-7"
@@ -862,7 +862,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan857">AKTUAL.</tspan></text>
+               id="tspan1013">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2-9"
@@ -870,7 +870,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan859">MAKS.</tspan></text>
+               id="tspan1015">MAKS.</tspan></text>
         </g>
         <g
            id="g1910-8-3-5"
@@ -936,9 +936,9 @@
              y="0"><tspan
                x="9729.6708"
                y="165.8188"
-               id="tspan863"><tspan
+               id="tspan1019"><tspan
                  style="font-size:21.3333px"
-                 id="tspan861">OCHR</tspan></tspan></text>
+                 id="tspan1017">OCHR</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3-2-1"
@@ -946,7 +946,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan865">AKTUAL.</tspan></text>
+               id="tspan1021">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2-7-2"
@@ -954,7 +954,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan867">MAKS.</tspan></text>
+               id="tspan1023">MAKS.</tspan></text>
         </g>
       </g>
       <g
@@ -988,9 +988,9 @@
            transform="matrix(0.26458333,0,0,0.26458333,-2577.1319,142.69955)"><tspan
              x="9725.7656"
              y="156.05886"
-             id="tspan871"><tspan
+             id="tspan1027"><tspan
                style="font-weight:600;-inkscape-font-specification:'Oxanium, Semi-Bold'"
-               id="tspan869">DYSKOMFORT</tspan></tspan></text>
+               id="tspan1025">DYSKOMFORT</tspan></tspan></text>
       </g>
       <g
          id="g974">
@@ -1022,9 +1022,9 @@
              y="0"><tspan
                x="9732.0559"
                y="165.8188"
-               id="tspan875"><tspan
+               id="tspan1031"><tspan
                  style="font-size:16px"
-                 id="tspan873">PANCERZ</tspan></tspan></text>
+                 id="tspan1029">PANCERZ</tspan></tspan></text>
         </g>
       </g>
     </g>
@@ -1049,9 +1049,9 @@
        transform="matrix(0,-0.26458333,0.26458333,0,151.9342,2711.6455)"><tspan
          x="9725.7656"
          y="167.5332"
-         id="tspan879"><tspan
+         id="tspan1035"><tspan
            style="font-size:10.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal'"
-           id="tspan877">Miejsce na twoje notatki</tspan></tspan></text>
+           id="tspan1033">Miejsce na twoje notatki</tspan></tspan></text>
     <g
        id="g3388"
        transform="translate(-0.03000095)">
