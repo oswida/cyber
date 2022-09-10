@@ -98,97 +98,44 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 
 
 
-## Zawód (k100)
+## Zajęcie (k100)
 
-1. Aktywista
-1. Akwizytor
-1. Analityk danych
-1. Ankieter
-1. Asystent osobisty
-1. Barman
-1. Bimbrownik
-1. Chemik
-1. Cybertechnik
-1. Detektyw
-1. Ekoterrorysta
-1. Elektryk
-1. Fryzjerka
-1. Gejsza
-1. Grafik
-1. Gwiazda "reality show"
-1. Haker
-1. Handlarz bronią
-1. Handlarz narkotyków
-1. Hodowca zwierząt domowych
-1. Hostessa
-1. Influencer
-1. Instruktor fitness
-1. Instruktor sztuki walki
-1. Inżynier genetyk
-1. Kierowca ciężarówki transportowej
-1. Kierowca komunikacji publicznej
-1. Klubowy DJ
-1. Kontroler ruchu powietrznego
-1. Korporacyjny szpieg
-1. Kosmetyczka
-1. Kucharz
-1. Kurier
-1. Laborant
-1. Lekarz
-1. Łowca talentów
-1. Magazynier
-1. Makler giełdowy
-1. Mechanik
-1. Muzyk
-1. Najemnik
-1. Nauczyciel
-1. Naukowiec
-1. Negocjator
-1. Ochroniarz
-1. Ogrodnik
-1. Operator dronów
-1. Operator maszyn ciężkich
-1. Opiekunka do dzieci
-1. Paser
-1. Pielęgniarka
-1. Pilot
-1. Piosenkarz
-1. Pisarz
-1. Policjant
-1. Pomocnik do wynajęcia
-1. Pracownik pogotowia energetycznego
-1. Programista gier
-1. Programista zabezpieczeń w Infosferze
-1. Prostytutka
-1. Przywódca sekty
-1. Reporter kanału informacyjnego
-1. Robotnik fabryczny
-1. Rusznikarz
-1. Sanitariusz
-1. Sekretarka
-1. Specjalista ds Public Relations
-1. Sportowiec
-1. Sprzątacz
-1. Sprzedawca
-1. Stróż nocny
-1. Stylistka
-1. Szef gangu
-1. Taksówkarz
-1. Tatuażysta
-1. Technik robotyk
-1. Technik telekomunikacyjny
-1. Trener e-sportu
-1. Uliczny iluzjonista
-1. Uliczny kaznodzieja
-1. Urzędnik Administracji
-1. Zabójca
-1. Zawodnik e-sportu
-1. Zawodnik sportów walki
-1. Złodziej
-1. Złomiarz
-1. Żołnierz gangu
-
-
+| Zajęcie                              |                                       |                                    |
+| ------------------------------------ | ------------------------------------- | ---------------------------------- |
+| 1.Aktywista                          | 34.Kontroler ruchu powietrznego       | 67.Programista zabezpieczeń        |
+| 2.Akwizytor                          | 35.Korporacyjny szpieg                | 68.Programista SI                  |
+| 3.Analityk danych                    | 36.Kosmetyczka                        | 69.Prostytutka                     |
+| 4.Ankieter                           | 37.Kucharz                            | 70.Przemytnik                      |
+| 5.Asystent osobisty                  | 38.Kurier                             | 71.Przywódca sekty                 |
+| 6.Barman                             | 39.Laborant                           | 72.Reporter kanału informacyjnego  |
+| 7.Bimbrownik                         | 40.Lekarz                             | 73.Robotnik fabryczny              |
+| 8.Chemik                             | 41.Łowca talentów                     | 74.Rusznikarz                      |
+| 9.Cybertechnik                       | 42.Magazynier                         | 75.Sanitariusz                     |
+| 10.Detektyw                          | 43.Makler giełdowy                    | 76.Sekretarka                      |
+| 11.Ekoterrorysta                     | 44.Masażystka                         | 77.Specjalista ds Public Relations |
+| 12.Elektryk                          | 45.Mechanik                           | 78.Sportowiec                      |
+| 13.Fryzjerka                         | 46.Muzyk                              | 79.Sprzątacz                       |
+| 14.Gejsza                            | 47.Najemnik                           | 80.Sprzedawca sklepowy             |
+| 15.Grafik                            | 48.Nauczyciel                         | 81.Stróż nocny                     |
+| 16.Gospodarz "reality show"          | 49.Naukowiec                          | 82.Stylistka                       |
+| 17.Gwiazda "reality show"            | 50.Negocjator                         | 83.Szef gangu                      |
+| 18.Haker                             | 51.Ochroniarz                         | 84.Taksówkarz                      |
+| 19.Handlarz bronią                   | 52.Ogrodnik                           | 85.Tatuażysta                      |
+| 20.Handlarz narkotykami              | 53.Operator dronów                    | 86.Technik robotyk                 |
+| 21.Handlarz oprogramowaniem          | 54.Operator maszyn ciężkich           | 87.Technik telekomunikacyjny       |
+| 22.Hodowca zwierząt domowych         | 55.Opiekunka do dzieci                | 88.Technik budowlany               |
+| 23.Hostessa                          | 56.Paser                              | 89.Tester oprogramowania           |
+| 24.Influencer                        | 57.Pielęgniarka                       | 90.Trener e-sportu                 |
+| 25.Instruktor fitness                | 58.Pilot cywilny                      | 91.Uliczny iluzjonista             |
+| 26.Instruktor sztuki walki           | 59.Pilot wojskowy                     | 92.Uliczny kaznodzieja             |
+| 27.Inżynier genetyk                  | 60.Piosenkarz                         | 93.Urzędnik Administracji          |
+| 28.Inżynier elektronik               | 61.Pisarz                             | 94.Właściciel klubu                |
+| 29.Inżynier nanotechnologii          | 62.Policjant                          | 95.Zabójca                         |
+| 30.Kierowca ciężarówki transportowej | 63.Pomocnik do wynajęcia              | 96.Zawodnik e-sportu               |
+| 31.Kierowca komunikacji publicznej   | 64.Portier                            | 97.Zawodnik sportów walki          |
+| 32.Kierowca wyścigowy                | 65.Pracownik pogotowia energetycznego | 98.Złodziej                        |
+| 33.Klubowy DJ                        | 66.Programista gier                   | 99.Złomiarz                        |
+|                                      |                                       | 100 Żołnierz                       |
 
 ## Charakterystyczny element wyglądu (k100)
 
@@ -197,106 +144,43 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 
 ## Dominująca cecha charakteru (k100)
 
-1. Agresja
-1. Altruizm
-1. Ambicja
-1. Arogancja
-1. Bezczelność
-1. Bezinteresowność
-1. Bezmyślność
-1. Brutalność
-1. Chamstwo
-1. Chciwość
-1. Chytrość
-1. Ciekawość
-1. Cierpliwość
-1. Cynizm
-1. Despotyzm
-1. Dobroduszność
-1. Dobroć
-1. Dokładność
-1. Duma
-1. Dzikość
-1. Egoizm
-1. Empatia
-1. Fanatyzm
-1. Gadatliwość
-1. Geniusz
-1. Gościnność
-1. Gruboskórność
-1. Grzeczność
-1. Głupota
-1. Hipochondria
-1. Hipokryzja
-1. Inteligencja
-1. Impulsywność
-1. Kokieteria
-1. Lekkomyślność
-1. Lenistwo
-1. Lizus
-1. Lojalność
-1. Lubieżność
-1. Komunikatywność
-1. Kłótliwość
-1. Małomówność
-1. Naiwność
-1. Niecierpliwość
-1. Nieczułość
-1. Niefrasobliwość
-1. Niegodziwy
-1. Nieuczciwość
-1. Niewinność
-1. Nikczemność
-1. Obłuda
-1. Odpowiedzialność
-1. Odwaga
-1. Okrucieństwo
-1. Optymizm
-1. Ostrożność
-1. Oszczędność
-1. Patriotyzm
-1. Perfekcjonizm
-1. Perfidia
-1. Pesymizm
-1. Pobożność
-1. Podejrzliwość
-1. Powaga
-1. Pruderia
-1. Przezorność
-1. Próżność
-1. Pycha
-1. Rozsądek
-1. Roztropność
-1. Samochwalstwo
-1. Sceptycyzm
-1. Skromność
-1. Skąpstwo
-1. Sprawiedliwość
-1. Spryt
-1. Szczerość
-1. Szlachetność
-1. Takt
-1. Talent
-1. Tchórzostwo
-1. Troskliwość
-1. Tupet
-1. Uczciwość
-1. Uprzejmość
-1. Upór
-1. Wdzięk
-1. Wielkoduszność
-1. Wrażliwość
-1. Wspaniałomyślność
-1. Wulgarność
-1. Wyobraźnia
-1. Wyrozumiałość
-1. Zaciekłość
-1. Złośliwość
-1. Zrzędliwość
-1. Łagodność
-1. Łatwowierność
-1. Śmiałość
-1. Życzliwość
+| Cecha charakteru   |                     |                      |
+| ------------------ | ------------------- | -------------------- |
+| 1.Agresja          | 34.Kokieteria       | 67.Próżność          |
+| 2.Altruizm         | 35.Lekkomyślność    | 68.Pycha             |
+| 3.Ambicja          | 36.Lenistwo         | 69.Rozsądek          |
+| 4.Arogancja        | 37.Lizus            | 70.Roztropność       |
+| 5.Bezczelność      | 38.Lojalność        | 71.Samochwalstwo     |
+| 6.Bezinteresowność | 39.Lubieżność       | 72.Sceptycyzm        |
+| 7.Bezmyślność      | 40.Komunikatywność  | 73.Skromność         |
+| 8.Brutalność       | 41.Kłótliwość       | 74.Skąpstwo          |
+| 9.Chamstwo         | 42.Małomówność      | 75.Sprawiedliwość    |
+| 10.Chciwość        | 43.Naiwność         | 76.Spryt             |
+| 11.Chytrość        | 44.Niecierpliwość   | 77.Szczerość         |
+| 12.Ciekawość       | 45.Nieczułość       | 78.Szlachetność      |
+| 13.Cierpliwość     | 46.Niefrasobliwość  | 79.Takt              |
+| 14.Cynizm          | 47.Niegodziwy       | 80.Talent            |
+| 15.Despotyzm       | 48.Nieuczciwość     | 81.Tchórzostwo       |
+| 16.Dobroduszność   | 49.Niewinność       | 82.Troskliwość       |
+| 17.Dobroć          | 50.Nikczemność      | 83.Tupet             |
+| 18.Dokładność      | 51.Obłuda           | 84.Uczciwość         |
+| 19.Duma            | 52.Odpowiedzialność | 85.Uprzejmość        |
+| 20.Dzikość         | 53.Odwaga           | 86.Upór              |
+| 21.Egoizm          | 54.Okrucieństwo     | 87.Wdzięk            |
+| 22.Empatia         | 55.Optymizm         | 88.Wielkoduszność    |
+| 23.Fanatyzm        | 56.Ostrożność       | 89.Wrażliwość        |
+| 24.Gadatliwość     | 57.Oszczędność      | 90.Wspaniałomyślność |
+| 25.Geniusz         | 58.Patriotyzm       | 91.Wulgarność        |
+| 26.Gościnność      | 59.Perfekcjonizm    | 92.Wyobraźnia        |
+| 27.Gruboskórność   | 60.Perfidia         | 93.Wyrozumiałość     |
+| 28.Grzeczność      | 61.Pesymizm         | 94.Zaciekłość        |
+| 29.Głupota         | 62.Pobożność        | 95.Złośliwość        |
+| 30.Hipochondria    | 63.Podejrzliwość    | 96.Zrzędliwość       |
+| 31.Hipokryzja      | 64.Powaga           | 97.Łagodność         |
+| 32.Inteligencja    | 65.Pruderia         | 98.Łatwowierność     |
+| 33.Impulsywność    | 66.Przezorność      | 99.Śmiałość          |
+|                    |                     | 100. Życzliwość      |
+
 
 ## Cel lub pragnienie (k100)
 
