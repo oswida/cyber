@@ -1,15 +1,15 @@
-import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { MainView } from "./routes/MainView";
+import { Layout } from "./routes/Layout";
+import { NpcGenView } from "./routes/NpcGenView";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/cyber/app/dist">
       <Routes>
-        <Route path="/" element={<MainView />}></Route>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<NpcGenView />}></Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   );

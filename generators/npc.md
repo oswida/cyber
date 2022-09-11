@@ -14,7 +14,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 - imię
 - nazwisko
 - zawód
-- charakterystyczny element wygląd
+- przynajmniej 2  elementy wyglądu
 - przynajmniej 2 dominujące cechy charakteru
 - przynajmniej jeden cel lub pragnienie
 
@@ -141,7 +141,23 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 
 1. Skołtuniona, wielkolorowa fryzura z wplecionymi nitkami światłowodów
 2. Wielki, podświetlany symbol religijny zawieszony na grubym łańcuchu
-3. 
+3. Kamuflaż termooptyczny
+4. Wojskowy pistolet laserowy
+5. Modne ubranie i czarny skórzany trencz
+6. Implant paralizatora ręcznego
+7. Kolczastą obroża i tani cyberdek
+8. Zmodyfikowane genetycznie zwierzę domowe
+9. Srebrne dredy i opalizujące oczy
+10. Wojskowe spodnie cargo i koszulka znanego zespołu
+11. Zestaw narzędzi elektronicznych
+12. Dron bojowy uzbrojony w karabin maszynowy
+13. Dron zwiadowczy wyposażony w kamery
+14. Kombinezon motocyklisty i wzmacniana kurtka
+15. Różowe dredy i bystre zielone oczy
+16. Pancerz z nanosiatki
+17. Czarny kombinezon rowerowy i implant nawigacyjny
+18. Walizka z narzędziami i częściami zamiennymi
+19. Różowy irokez i czerwone cybernetyczne oczy
 
 
 ## Dominująca cecha charakteru (k100)

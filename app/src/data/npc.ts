@@ -1,3 +1,12 @@
+export type NpcType = {
+  name: string;
+  surname: string;
+  traits: string[];
+  occupation: string;
+  goal: string;
+  look: string;
+};
+
 const npcNameTable = [
   "Maria",
   "Nushi",
@@ -462,9 +471,26 @@ const npcGoal = [
   "Zdobyć pracę w korporacji",
 ];
 
-const npcView = [
+const npcLook = [
   "Skołtuniona, wielkolorowa fryzura z wplecionymi nitkami światłowodów",
   "Wielki, podświetlany symbol religijny zawieszony na grubym łańcuchu",
+  "Kamuflaż termooptyczny",
+  "Wojskowy pistolet laserowy",
+  "Modne ubranie i czarny skórzany trencz",
+  "Implant paralizatora ręcznego",
+  "Kolczastą obroża i tani cyberdek",
+  "Zmodyfikowane genetycznie zwierzę domowe",
+  "Srebrne dredy i opalizujące oczy",
+  "Wojskowe spodnie cargo i koszulka znanego zespołu",
+  "Zestaw narzędzi elektronicznych",
+  "Dron bojowy uzbrojony w karabin maszynowy",
+  "Dron zwiadowczy wyposażony w kamery",
+  "Kombinezon motocyklisty i wzmacniana kurtka",
+  "Różowe dredy i bystre zielone oczy",
+  "Pancerz z nanosiatki",
+  "Czarny kombinezon rowerowy i implant nawigacyjny",
+  "Walizka z narzędziami i częściami zamiennymi",
+  "Różowy irokez i czerwone cybernetyczne oczy",
 ];
 
 export {
@@ -473,5 +499,5 @@ export {
   npcOccupation,
   npcTrait,
   npcGoal,
-  npcView,
+  npcLook,
 };
