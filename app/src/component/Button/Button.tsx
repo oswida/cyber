@@ -14,6 +14,7 @@ export const Button = styled("div", {
   border: "solid 1px #0fff50",
   borderRadius: 5,
   backgroundColor: "transparent",
+  userSelect: "none",
 });
 
 export const LinkButton = styled(Link, {
@@ -25,4 +26,14 @@ export const LinkButton = styled(Link, {
   padding: 5,
   border: "solid 1px #0fff50",
   borderRadius: 5,
+});
+
+export const DelButton = styled("div", {
+  "&:hover": {
+    color: "#0fff50",
+    cursor: "pointer",
+  },
+  position: "absolute",
+  top: 5,
+  left: 10,
 });

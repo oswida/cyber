@@ -145,7 +145,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 4. Wojskowy pistolet laserowy
 5. Modne ubranie i czarny skórzany trencz
 6. Implant paralizatora ręcznego
-7. Kolczastą obroża i tani cyberdek
+7. Kolczasta obroża i tani komputer
 8. Zmodyfikowane genetycznie zwierzę domowe
 9. Srebrne dredy i opalizujące oczy
 10. Wojskowe spodnie cargo i koszulka znanego zespołu
@@ -158,6 +158,24 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 17. Czarny kombinezon rowerowy i implant nawigacyjny
 18. Walizka z narzędziami i częściami zamiennymi
 19. Różowy irokez i czerwone cybernetyczne oczy
+20. Szary garnitur i lustrzane okulary
+21. Cybernetyczne ramię
+22. Całe ciało pokryte tautażami
+23. Ciężkie cybernetyczne dłonie
+24. Aparat oddechowy i modulator głosu na dolnej części twarzy
+25. Wszystkie zęby przekształcone w kły
+26. Cybernetyczne przewody na powierzchni skóry
+27. Skórzane ubranie, metalowe klamry, ćwieki i paski
+28. Błyszcząca wodoodporna peleryna
+29. Personalne mikrodrony medyczne pełzające po skórze
+30. Cyfrowe tatuaże pobierające dane z sieci
+31. Automatyczny rozpylacz feromonów
+32. Metalowe zęby
+33. Przerośnięte, masywne mięśnie
+34. Plątanina zużytej elektroniki zwisająca z szyi
+35. Dodatkowa cybernetyczna kończyna
+36. Metalowa cybernetyczna twarz
+37. Wykrywacz trucizn wmontowany w jamę ustną
 
 
 ## Dominująca cecha charakteru (k100)
@@ -177,7 +195,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 | 11.Chytrość        | 44.Niecierpliwość   | 77.Szczerość         |
 | 12.Ciekawość       | 45.Nieczułość       | 78.Szlachetność      |
 | 13.Cierpliwość     | 46.Niefrasobliwość  | 79.Takt              |
-| 14.Cynizm          | 47.Niegodziwy       | 80.Talent            |
+| 14.Cynizm          | 47.Niegodziwość     | 80.Talent            |
 | 15.Despotyzm       | 48.Nieuczciwość     | 81.Tchórzostwo       |
 | 16.Dobroduszność   | 49.Niewinność       | 82.Troskliwość       |
 | 17.Dobroć          | 50.Nikczemność      | 83.Tupet             |
@@ -244,13 +262,20 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 40. Znaleźć prawdziwą miłość
 41. Wyleczyć alergię na cybermodyfikacje
 42. Zmienić zawód
-43. Dowiedzieć się co oznaczają te dziwne symbole w moich plikach personalnych
-44. Wziąć udział w słynnym wyścigu
-45. Spotkać osobiście gwiazdę medialną
-46. Wygrać chociaż raz w ulubionej grze komputerowej online
-47. Pogodzić się z bliską osobą
-48. Rzucić to wszystko i wyjechać gdzieś
-49. Pomóc bezdomnemu na mojej ulicy
-50. Zdobyć pracę w korporacji
+43. Dowiedzieć się co oznaczają te dziwne symbole w moich plikach
+44. Spotkać osobiście gwiazdę medialną
+45. Wygrać chociaż raz w ulubionej grze komputerowej online
+46. Pogodzić się z bliską osobą
+47. Rzucić to wszystko i wyjechać gdzieś
+48. Pomóc bezdomnym na mojej ulicy
+49. Zdobyć pracę w korporacji
+50. Wyrwać się wreszcie z domu
+51. Wyleczyć się z uzależnienia
+52. Zdobyć pierwsze miejsce w konkursie
+53. Pozbyć się dowodów zbrodni
+54. Nagrać interesującego vloga
+55. Zdobyć swój pierwszy milion subskrypcji
+56. Nauczyć się pilotażu
+57. Zbudować własnego drona
 
 

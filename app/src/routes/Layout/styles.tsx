@@ -17,7 +17,7 @@ export const Root = styled("div", {
 });
 
 export const NavBar = styled("div", {
-  height: "2rem",
+  minHeight: "2rem",
   padding: "0.5rem",
   borderBottom: "solid 1px #0fff50",
   width: "98%",
@@ -27,6 +27,9 @@ export const NavBar = styled("div", {
   gap: 10,
   position: "relative",
   top: 0,
+  flexWrap: "nowrap",
+  overflow: "auto",
+  scrollbarWidth: "none",
 });
 
 export const TextLink = styled(Link, {

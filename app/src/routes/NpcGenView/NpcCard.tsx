@@ -1,5 +1,5 @@
 import { styled } from "@stitches/react";
-import { Text, Flex, Button } from "~/component";
+import { Text, Flex, Button, DelButton } from "~/component";
 import { NpcType } from "~/data";
 import { CardBkgImage } from "./CardBkg";
 import useLocalStorageState from "use-local-storage-state";
@@ -7,7 +7,6 @@ import useLocalStorageState from "use-local-storage-state";
 const NpcCardRoot = styled("div", {
   padding: 20,
   position: "relative",
-  // paddingRight: 25,
   display: "flex",
   flexDirection: "column",
   backgroundImage: `url(data:image/svg+xml;base64,${btoa(
@@ -24,7 +23,7 @@ const NpcCardRoot = styled("div", {
 const NpcCardName = styled(Text, {
   display: "flex",
   alignItems: "flex-end",
-  justifyContent: "flex-end",
+  justifyContent: "center",
   width: "100%",
   paddingTop: 10,
   textTransform: "uppercase",
@@ -35,16 +34,6 @@ const NpcRow = styled(Flex, {
   marginRight: 10,
   alignItems: "center",
   gap: 5,
-});
-
-const DelButton = styled("div", {
-  "&:hover": {
-    color: "#0fff50",
-    cursor: "pointer",
-  },
-  position: "absolute",
-  top: 5,
-  left: 10,
 });
 
 export const NpcCard = ({ data }: { data: NpcType }) => {
