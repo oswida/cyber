@@ -176,6 +176,7 @@ export const corpNameDomain: Record<string, string> = {
   Delivery: "Usługi kurierskie",
   Agricultural: "Rolnictwo",
   Systems: "Cybertechnika",
+  Consumables: "Przemysł spożywczy",
 };
 
 export const corpDomain = [
@@ -208,6 +209,7 @@ export const corpDomain = [
   "Usługi militarne",
   "Przemysł precyzyjny",
   "Usługi kurierskie",
+  "Przemysł spożywczy",
 ];
 
 export const corpSlogan = [

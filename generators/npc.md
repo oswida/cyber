@@ -7,6 +7,7 @@ nav_order: 1
 
 # Generator: Bohater niezależny
 
+[Wersja generatora online](https://oswida.github.io/cyber/app/dist/?id=npc)
 ## Procedura
 
 Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie rzuty to **k100**):
