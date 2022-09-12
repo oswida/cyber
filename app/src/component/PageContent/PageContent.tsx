@@ -11,5 +11,6 @@ export const PageContent = styled("div", {
 
   marginTop: "2.5rem",
   height: "calc(100vh - 5rem)",
-  gap: 10,
+  gap: 15,
+  rowGap: 10,
 });

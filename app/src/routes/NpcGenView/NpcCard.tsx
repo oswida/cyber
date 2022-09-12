@@ -1,31 +1,32 @@
 import { styled } from "@stitches/react";
-import { Text, Flex, Button, DelButton } from "~/component";
-import { NpcType } from "~/data";
-import { CardBkgImage } from "./CardBkg";
 import useLocalStorageState from "use-local-storage-state";
+import { DelButton, Flex, Text } from "~/component";
+import { NpcType } from "~/data";
 
 const NpcCardRoot = styled("div", {
   padding: 20,
   position: "relative",
   display: "flex",
   flexDirection: "column",
-  backgroundImage: `url(data:image/svg+xml;base64,${btoa(
-    CardBkgImage("#f2f230", 2)
-  )})`,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "contain",
-  backgroundPosition: "center center",
-  backgroundOrigin: "border-box",
-  minHeight: 190,
-  "print-color-adjust": "economy",
+
+  maxWidth: 350,
+  borderBottom: "solid 1px #f2f230",
+  borderRight: "solid 1px #f2f230",
+  borderRadius: "20px 0px",
+  outlineOffset: 2,
+  outline: "solid 1px #0fff50",
+  marginTop: 3,
 });
 
 const NpcCardName = styled(Text, {
   display: "flex",
-  alignItems: "flex-end",
-  justifyContent: "center",
+  alignItems: "center",
+  justifyContent: "flex-end",
   width: "100%",
-  paddingTop: 10,
+  paddingBottom: 5,
+  paddingLeft: 10,
+  marginBottom: 5,
+  maxWidth: 350,
   textTransform: "uppercase",
 });
 
@@ -57,15 +58,13 @@ export const NpcCard = ({ data }: { data: NpcType }) => {
         <Text color="pink">{data.occupation}</Text>
       </NpcRow>
       <NpcRow>
-        <Text css={{ maxWidth: 250, lineHeight: "1rem" }} size="small">
-          {data.look}
-        </Text>
+        <Text css={{ maxWidth: 350, lineHeight: "1rem" }}>{data.look}</Text>
       </NpcRow>
       <NpcRow>
         <Text size="small" color="yellow">
           Cechy{" "}
         </Text>
-        <Text color="pink" css={{ maxWidth: 250, lineHeight: "1rem" }}>
+        <Text color="pink" css={{ maxWidth: 350, lineHeight: "1rem" }}>
           {data.traits.join(", ")}
         </Text>
       </NpcRow>
@@ -73,7 +72,7 @@ export const NpcCard = ({ data }: { data: NpcType }) => {
         <Text size="small" color="yellow">
           Cel{" "}
         </Text>
-        <Text color="green" css={{ maxWidth: 250, lineHeight: "1rem" }}>
+        <Text color="green" css={{ maxWidth: 350, lineHeight: "1rem" }}>
           {data.goal}
         </Text>
       </NpcRow>

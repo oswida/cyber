@@ -1,35 +1,34 @@
 import { styled } from "@stitches/react";
 import useLocalStorageState from "use-local-storage-state";
 import { DelButton, Flex, Text } from "~/component";
-import { CardBkgImage } from "./CardBkg";
 
 const CorpoCardRoot = styled("div", {
   padding: 20,
   position: "relative",
   display: "flex",
   flexDirection: "column",
-  backgroundImage: `url(data:image/svg+xml;base64,${btoa(
-    CardBkgImage("#e949f5", 2)
-  )})`,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "contain",
-  backgroundPosition: "center center",
-  backgroundOrigin: "border-box",
-  minHeight: 190,
   minWidth: 190,
-  "print-color-adjust": "economy",
+  maxWidth: 350,
+  borderBottom: "solid 1px #f2f230",
+  borderRight: "solid 1px #f2f230",
+  borderRadius: "20px 0px",
+  outlineOffset: 2,
+  outline: "solid 1px #e949f5",
+  marginTop: 3,
 });
 
 const CorpoCardName = styled(Text, {
   display: "flex",
-  alignItems: "flex-end",
-  justifyContent: "center",
+  alignItems: "center",
+  justifyContent: "flex-end",
   width: "100%",
   maxWidth: 350,
-  paddingLeft: 20,
-  paddingTop: 30,
   flexWrap: "wrap",
   textTransform: "uppercase",
+  borderBottom: "solid 1px #2c84fa",
+  paddingBottom: 5,
+  paddingLeft: 10,
+  marginBottom: 5,
 });
 
 const CorpoRow = styled(Flex, {
@@ -67,7 +66,7 @@ export const CorpoCard = ({ data }: { data: CorpoType }) => {
 
   return (
     <CorpoCardRoot>
-      <DelButton onClick={delItem}>X</DelButton>
+      <DelButton onClick={delItem}>x</DelButton>
       <CorpoCardName weight={700} color="blue">
         {data.name1} {data.name2} {data.name3}
       </CorpoCardName>
@@ -76,7 +75,7 @@ export const CorpoCard = ({ data }: { data: CorpoType }) => {
           <Text size="small" color="yellow">
             Działalność{" "}
           </Text>
-          <Text css={{ maxWidth: 250, lineHeight: "1rem" }}>
+          <Text css={{ maxWidth: 350, lineHeight: "1rem" }}>
             {data.domains.join(", ")}
           </Text>
         </CorpoRow>

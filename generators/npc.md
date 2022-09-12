@@ -219,6 +219,81 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 |                    |                     | 100. Życzliwość      |
 
 
+| Pozytywna cecha charakteru |                       |                    |
+| -------------------------- | --------------------- | ------------------ |
+| 1. Aktywny                 | 34.Kontemplacyjny     | 67.Skromny         |
+| 2. Ambitny                 | 35.Krytycznie myślący | 68.Skuteczny       |
+| 3. Bezinteresowny          | 36.Kulturalny         | 69.Słodki          |
+| 4. Bystry                  | 37.Logiczny           | 70.Słowny          |
+| 5. Charyzmatyczny          | 38.Lojalny            | 71.Spokojny        |
+| 6. Ciekawy                 | 39.Moralny            | 72.Spostrzegawczy  |
+| 7. Cierpliwy               | 40.Nieprzekupny       | 73.Sprawny         |
+| 8. Czarujący               | 41.Niezależny         | 74.Sprytny         |
+| 9. Czujny                  | 42.Niezawodny         | 75.Sympatyczny     |
+| 10.Czysty                  | 43.Obowiązkowy        | 76.Szanujący       |
+| 11.Delikatny               | 44.Odpowiedzialny     | 77.Szczery         |
+| 12.Dobroczynny             | 45.Odważny            | 78.Szczodry        |
+| 13.Dobroduszny             | 46.Opiekuńczy         | 79.Troskliwy       |
+| 14.Dobrotliwy              | 47.Pewny siebie       | 80.Uczciwy         |
+| 15.Dobry sędzia charakteru | 48.Pogodny            | 81.Uporządkowany   |
+| 16.Dobry słuchacz          | 49.Pokorny            | 82.Uprzejmy        |
+| 17.Dowcipny                | 50.Pracowity          | 83.Uważny          |
+| 18.Dynamiczny              | 51.Praktyczny         | 84.Wesoły          |
+| 19.Dyskretny               | 52.Przewidujący       | 85.Wierny          |
+| 20.Elastyczny              | 53.Przystosowany      | 86.Wnikliwy        |
+| 21.Elegancki               | 54.Przywódczy         | 87.Wrażliwy        |
+| 22.Elokwentny              | 55.Przyzwoity         | 88.Współczujący    |
+| 23.Empatyczny              | 56.Punktualny         | 89.Współpracujący  |
+| 24.Entuzjastyczny          | 57.Racjonalny         | 90.Wykształcony    |
+| 25.Galant                  | 58.Refleksyjny        | 91.Wyrozumiały     |
+| 26.Godny zaufania          | 59.Rzetelny           | 92.Zasadniczy      |
+| 27.Hojny                   | 60.Samodzielny        | 93.Zdecydowany     |
+| 28.Honorowy                | 61.Samokrytyczny      | 94.Zdolny          |
+| 29.Humorystyczny           | 62.Samowystarczalny   | 95.Zdyscyplinowany |
+| 30.Innowacyjny             | 63.Schludny           | 96.Zorganizowany   |
+| 31.Inteligentny            | 64.Serdeczny          | 97.Zrelaksowany    |
+| 32.Interesujący            | 65.Silny              | 98.Zręczny         |
+| 33.Intuicyjny              | 66.Skoncentrowany     | 99.Zrównoważony    |
+|                            |                       | 100 Żądny przygód  |
+
+
+| Negatywna cecha charakteru |                       |                      |
+| -------------------------- | --------------------- | -------------------- |
+| 1. Aspołeczny              | 34.Niecierpliwy       | 67.Przewidywalny     |
+| 2. Autorytarny             | 35.Nieczuły           | 68.Psychopatyczny    |
+| 3. Bez poczucia humoru     | 36.Niedojrzały        | 69.Rozpieszczony     |
+| 4. Bez wdzięku             | 37.Niegodny zaufania  | 70.Sadysta           |
+| 5. Bezczelny               | 38.Niegrzeczny        | 71.Samolubny         |
+| 6. Bezduszny               | 39.Nielojalny         | 72.Sarkastyczny      |
+| 7. Bezlitosny              | 40.Nieracjonalny      | 73.Sknerus           |
+| 8. Bezmyślny               | 41.Nieśmiały          | 74.Słaby             |
+| 9. Bezwolny                | 42.Nietolerancyjny    | 75.Surowy            |
+| 10. Bigot                  | 43.Nieuczciwy         | 76.Syndrom bohatera  |
+| 11. Brudny                 | 44.Nieuporządkowany   | 77.Szorstki          |
+| 12. Brutalny               | 45.Nieuważny          | 78.Sztuczny          |
+| 13. Buntownicza            | 46.Niewłaściwy        | 79.Śliski            |
+| 14. Chaotyczny             | 47.Niezdyscyplinowany | 80.Tchórz            |
+| 15. Chytry                 | 48.Nijaki             | 81.Tępy              |
+| 16. Destrukcyjny           | 49.Obibok             | 82.Uciążliwy         |
+| 17. Destrukcyjny           | 50.Obłąkany           | 83.Uparty            |
+| 18. Dziecinny              | 51.Obojętny           | 84.Urażony           |
+| 19. Egoistyczny            | 52.Obraźliwy          | 85.Wąsko myślący     |
+| 20. Fałszywy               | 53.Obsesyjny          | 86.Wrogi             |
+| 21. Fanatyczny             | 54.Oszust             | 87.Wścibski          |
+| 22. Flirciarz              | 55.Pechowiec          | 88.Wybredny          |
+| 23. Głupi                  | 56.Pedantyczny        | 89.Wymagający        |
+| 24. Hipokryta              | 57.Pesymista          | 90.Zamknięty w sobie |
+| 25. Idiotyczny             | 58.Podstępny          | 91.Zapominalski      |
+| 26. Ignorant               | 59.Pompatyczny        | 92.Zarozumiały       |
+| 27. Kłamca                 | 60.Poszukiwacz chwały | 93.Zazdrosny         |
+| 28. Łatwowierny            | 61.Pracoholik         | 94.Zboczony          |
+| 29. Masochista             | 62.Pretensjonalny     | 95.Zdezorganizowany  |
+| 30. Nadgorliwy             | 63.Primadonna         | 96.Złośliwy          |
+| 31. Nadmiernie emocjonalny | 64.Prowokujący        | 97.Zły słuchacz      |
+| 32. Nerwowy                | 65.Próżny             | 98.Zuchwały          |
+| 33. Niechlujny             | 66.Przekupny          | 99.Żarłoczny         |
+|                            |                       | 100 Żartowniś        |
+
 ## Cel lub pragnienie (k100)
 
 1. Nauczyć się nowej umiejętności związanej z zawodem

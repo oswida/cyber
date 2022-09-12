@@ -1,4 +1,4 @@
-import { DiceRoll } from "@dice-roller/rpg-dice-roller";
+import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
 import { hasString } from "~/common";
 import {
   npcGoal,
@@ -10,25 +10,27 @@ import {
   NpcType,
 } from "~/data";
 
+const roller = new DiceRoller();
+
 export const useNpcGen = () => {
   const rollNpc = () => {
-    let roll = new DiceRoll(`1d${npcNameTable.length}`);
+    let roll = roller.roll(`1d${npcNameTable.length}`) as DiceRoll;
     const name = npcNameTable[roll.total - 1];
-    roll = new DiceRoll(`1d${npcSurnameTable.length}`);
+    roll = roller.roll(`1d${npcSurnameTable.length}`) as DiceRoll;
     const surname = npcSurnameTable[roll.total - 1];
-    roll = new DiceRoll(`1d${npcGoal.length}`);
+    roll = roller.roll(`1d${npcGoal.length}`) as DiceRoll;
     const goal = npcGoal[roll.total - 1];
-    roll = new DiceRoll(`1d${npcOccupation.length}`);
+    roll = roller.roll(`1d${npcOccupation.length}`) as DiceRoll;
     const occ = npcOccupation[roll.total - 1];
     const looks = [];
     while (looks.length < 2) {
-      roll = new DiceRoll(`1d${npcLook.length}`);
+      roll = roller.roll(`1d${npcLook.length}`) as DiceRoll;
       const l = npcLook[roll.total - 1];
       if (!hasString(looks, l)) looks.push(l);
     }
     const traits = [];
     while (traits.length < 2) {
-      roll = new DiceRoll(`1d${npcTrait.length}`);
+      roll = roller.roll(`1d${npcTrait.length}`) as DiceRoll;
       const t = npcTrait[roll.total - 1];
       if (!hasString(traits, t)) traits.push(t);
     }

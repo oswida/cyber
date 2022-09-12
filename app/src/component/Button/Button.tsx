@@ -30,10 +30,15 @@ export const LinkButton = styled(Link, {
 
 export const DelButton = styled("div", {
   "&:hover": {
-    color: "#0fff50",
+    color: "red",
     cursor: "pointer",
   },
   position: "absolute",
   top: 5,
-  left: 10,
+  left: 5,
+  paddingRight: 4,
+  borderRight: "solid 1px #f2f230",
+  paddingBottom: 2,
+  borderBottom: "solid 1px #f2f230",
+  borderBottomRightRadius: 5,
 });
