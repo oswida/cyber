@@ -21,5 +21,6 @@ export const Flex = styled("div", {
   },
   defaultVariants: {
     direction: "row",
+    center: false,
   },
 });

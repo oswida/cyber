@@ -33,7 +33,7 @@ export const NpcGenView = () => {
           <Text weight={"700"} css={{ marginLeft: 10 }}>
             Postać
           </Text>
-          <Flex css={{ gap: 10, marginRight: 20 }}>
+          <Flex css={{ gap: 10 }}>
             <Button onClick={generate}>Generuj</Button>
             <Button onClick={clean}>Wyczyść</Button>
           </Flex>

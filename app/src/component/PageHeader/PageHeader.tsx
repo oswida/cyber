@@ -4,11 +4,10 @@ import { Flex } from "~/component";
 export const PageHeader = styled(Flex, {
   justifyContent: "space-between",
   alignItems: "center",
-  gap: 10,
   width: "100%",
-  maxWidth: "100vw",
-  paddingLeft: 10,
-  paddingRight: 10,
+  maxWidth: "100%",
   position: "absolute",
-  top: 0,
+  top: -10,
+  left: -10,
+  padding: 5,
 });

@@ -5,12 +5,11 @@ export const PageContent = styled("div", {
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
-  width: "100%",
+  width: "calc(100%-20px)",
   flexWrap: "wrap",
   overflowY: "auto",
-
+  padding: 20,
   marginTop: "2.5rem",
-  height: "calc(100vh - 5rem)",
-  gap: 15,
-  rowGap: 10,
+  height: "calc(100vh - 5rem - 50px )",
+  gap: 10,
 });

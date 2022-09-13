@@ -4,3 +4,4 @@ export * from "./Text";
 export * from "./PageHeader";
 export * from "./PageContent";
 export * from "./PageRoot";
+export * from "./Card";

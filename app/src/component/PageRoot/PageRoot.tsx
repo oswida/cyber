@@ -1,5 +1,4 @@
 import { styled } from "@stitches/react";
-import { Flex } from "../Flex";
 
 export const PageRoot = styled("div", {
   flexDirection: "column",

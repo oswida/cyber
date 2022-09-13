@@ -6,13 +6,13 @@ export const Root = styled("div", {
   color: "#ffffff",
   display: "flex",
   flexDirection: "column",
-  width: "100vw",
-  height: "100vh",
+  width: "100%",
+  height: "100%",
   minHeight: "100vh",
   maxHeight: "100vh",
+  maxWidth: "100vw",
   margin: 0,
   padding: 0,
-  position: "relative",
   overflow: "hidden",
 });
 

@@ -2,11 +2,23 @@ import { styled } from "@stitches/react";
 
 export const Text = styled("div", {
   variants: {
+    align: {
+      right: {
+        display: "flex",
+        width: "100%",
+        justifyContent: "end",
+      },
+      left: {
+        textAlign: "left",
+      },
+    },
     size: {
       regular: {
+        lineHeight: "1.2rem",
         fontSize: "1rem",
       },
       small: {
+        lineHeight: "0.8rem",
         fontSize: "0.8rem",
       },
     },
@@ -23,16 +35,16 @@ export const Text = styled("div", {
         color: "#ffffff",
       },
       pink: {
-        color: "#e949f5",
+        color: "$pink",
       },
       blue: {
-        color: "#2c84fa",
+        color: "$blue",
       },
       yellow: {
-        color: "#f2f230",
+        color: "$yellow",
       },
       green: {
-        color: "#0fff50",
+        color: "$green",
       },
     },
   },
@@ -40,5 +52,6 @@ export const Text = styled("div", {
     weight: 400,
     color: "white",
     size: "regular",
+    align: "left",
   },
 });
