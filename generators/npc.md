@@ -140,7 +140,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 
 ## Charakterystyczny element wyglądu (k100)
 
-1. Skołtuniona, wielkolorowa fryzura z wplecionymi nitkami światłowodów
+1. Skołtuniona, wielokolorowa fryzura z wplecionymi nitkami światłowodów
 2. Wielki, podświetlany symbol religijny zawieszony na grubym łańcuchu
 3. Kamuflaż termooptyczny
 4. Wojskowy pistolet laserowy
@@ -167,7 +167,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 25. Wszystkie zęby przekształcone w kły
 26. Cybernetyczne przewody na powierzchni skóry
 27. Skórzane ubranie, metalowe klamry, ćwieki i paski
-28. Błyszcząca wodoodporna peleryna
+28. Błyszcząca wodoodporna peleryna z wyświetlaczem pogody
 29. Personalne mikrodrony medyczne pełzające po skórze
 30. Cyfrowe tatuaże pobierające dane z sieci
 31. Automatyczny rozpylacz feromonów
@@ -177,6 +177,29 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 35. Dodatkowa cybernetyczna kończyna
 36. Metalowa cybernetyczna twarz
 37. Wykrywacz trucizn wmontowany w jamę ustną
+38. Gogle transmitujące bez przerwy popularny show
+39. Holograficzne, programowalne kolczyki
+40. Chip nagrywający wrażenia zmysłowe
+41. Wszczepiony dozownik stymulantów
+42. Booster kognitywny zwiększający umiejętności interpersonalne
+43. Krótkie, ostre, wysuwane ostrza wbudowane w paznokcie
+44. Wszczepiony projektor holograficzny
+45. Kwaso- i ognioodporna, syntetyczna skóra na rękach
+46. Całe ciało porośnięte krótkim futrem
+47. Modne buty sportowe z systemem nawigacji
+48. Ubranie z błyszczącej metalicznie tkaniny
+49. Dwa japońskie miecze
+50. Wielki tasak kuchenny z wygrawerowanym dziwnym symbolem
+51. Tradycyjne, japońskie kimono
+52. Zbiór pism religijnych z całego świata na podręcznym czytniku
+53. Gładkie, przylizane włosy i opaska wyświetlająca bieżące notowania giełdowe
+54. Dysk z kolekcją wirusów komputerowych
+55. Kuloodporna kurtka i skuter
+56. Deskorolka z dodatkowym napędem i mocnymi głośnikami
+57. Zbiór cennych antyków technologicznych
+58. Neuromięśniowa matryca do programowania rysów twarzy
+59. Rytualne blizny na twarzy i wszczepiony dozownik endorfin
+60. Długie, skórzane buty do kolan i pomarańczowa, puchowa kurtka
 
 
 ## Dominująca cecha charakteru (k100)
@@ -313,7 +336,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 15. Odszyfrować ważne dane osobiste
 16. Zerwać niewygodny kontrakt
 17. Znaleźć tego, kto mnie wydał i dowiedzieć się dlaczego
-18. Dowiedzieć się co planuje korporacja X
+18. Dowiedzieć się co planuje korporacja ...
 19. Zdobyć władzę tak, żeby wszyscy się mnie bali
 20. Znaleźć porządną, legalną pracę
 21. Spłacić stary dług
@@ -347,11 +370,44 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 49. Zdobyć pracę w korporacji
 50. Wyrwać się wreszcie z domu
 51. Wyleczyć się z uzależnienia
-52. Zdobyć pierwsze miejsce w konkursie
+52. Zdobyć pierwsze miejsce w konkursie ...
 53. Pozbyć się dowodów zbrodni
 54. Nagrać interesującego vloga
 55. Zdobyć swój pierwszy milion subskrypcji
 56. Nauczyć się pilotażu
-57. Zbudować własnego drona
+57. Zbudować własne SI
+58. Wystąpić przed publicznością z własną piosenką
+59. Każda informacja powinna być powszechnie dostępna!
+60. Uniknąć wyroku śmierci wydanego przez sektę
+61. Uwolnić kogoś bliskiego od wpływów sekty
+62. Wyleczyć kogoś bliskiego z uzależnienia
+63. Zaimponować znajomej osobie
+64. Zapomnieć swoją korporacyjną przeszłość
+65. Wrobić swojego szefa, bo jest zwykłą świnią
+66. Zaimponować komuś znajomemu
+67. Opchnąć ten trefny towar
+68. Odzyskać swoją tożsamość
+69. Pozbyć się tego nielegalnego wszczepu
+70. Wyjechać z bliskimi na wspaniałe wczasy
+71. Upewnić się, że nikt mnie nie zdemaskuje
+72. Zostać obrzydliwie bogatym, za wszelką cenę
+73. Przekonać innych, że świat jest iluzją
+74. Okradać bogatych i rozdawać biednym
+75. Zająć się działalnością charytatywną
+76. Założyć własną hodowlę prawdziwych zwierząt domowych
+77. Opracować swoją własną wersję znanego narkotyku
+78. Nauczyć się programowania
+79. Stworzyć własną sektę religijną
+80. Umieścić wirusa w swojej biurowej sieci
+81. Wyczyścić swój komputer z nieznanego wirusa
+82. Dowiedzieć się co szef robi w pracy po godzinach
+83. Nagrać to co się dzieje na nocnej zmianie w firmie
+84. Zdobyć nielegalny dostęp do platformy rozrywkowej
+85. Zorganizować najlepszą imprezę na dzielnicy
+86. Namówić przyjaciela na wspólne wyjście do nielegalnego klubu
+87. Wziąć udział w nielegalnych walkach na arenie
+88. Wyplenić zło na tym świecie
+89. Być przykładnym obywatelem
+90. Uzyskać stopień naukowy
 
 

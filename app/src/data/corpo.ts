@@ -161,6 +161,9 @@ export const corpName3 = [
   "Interactive",
   "Laboratory",
   "Games",
+  "Cybernetics",
+  "Aerospace",
+  "Express",
 ];
 
 export const corpNameDomain: Record<string, string> = {
@@ -208,6 +211,8 @@ export const corpNameDomain: Record<string, string> = {
   Computers: "Przemysł komputerowy",
   Laboratory: "Badania i rozwój",
   Games: "Rozrywka",
+  Cybernetics: "Cybertechnika",
+  Aerospace: "Przemysł kosmiczny",
 };
 
 export const corpDomain = [
