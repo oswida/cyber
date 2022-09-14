@@ -1,10 +1,11 @@
 export type NodeType = {
   name: string;
   ntype: string;
-  ochr: number;
-  int: number;
-  personel: string;
-  lod: string;
+  hp: number;
+  inf: number;
+  security: string;
+  ice: string;
+  black: boolean;
   more: string;
   data: string;
   look: string;
@@ -63,5 +64,6 @@ export const infoData = [
   "Komplet fałszywych dokumentów",
   "Największa na świecie kolekcja muzyki",
   "Zestaw artykułów o tajemniczych eksperymentach genetycznych",
-  "Kolekcja filmów ... różnego rodzaju  ",
+  "Kolekcja filmów ... różnego rodzaju",
+  "Kody wejściowe do mieszkań w budżetowym wieżowcu",
 ];

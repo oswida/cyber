@@ -17,9 +17,17 @@ export const Text = styled("div", {
         lineHeight: "1.2rem",
         fontSize: "1rem",
       },
+      middle: {
+        lineHeight: "1rem",
+        fontSize: "0.9rem",
+      },
       small: {
         lineHeight: "0.8rem",
         fontSize: "0.8rem",
+      },
+      xsmall: {
+        lineHeight: "0.6rem",
+        fontSize: "0.6rem",
       },
     },
     weight: {

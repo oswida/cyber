@@ -3,7 +3,7 @@ import { infoData, infoLook, infoType, NodeType } from "~/data";
 
 const roller = new DiceRoller();
 
-type nt =
+export type NodeClass =
   | "Publiczny"
   | "Prywatny"
   | "Prywatny strzeżony"
@@ -12,7 +12,7 @@ type nt =
   | "Wojskowy"
   | "SI";
 
-const ntypeDice = {
+const NodeClassDice = {
   ochr: {
     Publiczny: "1d3",
     Prywatny: "1d6",
@@ -55,37 +55,37 @@ export const useNodeGen = () => {
       .substring(0, length + Math.round(length / 4) - 1);
   }
 
-  const rollNType = (ntype: nt, dice: "ochr" | "int") => {
-    const x = ntypeDice[dice];
+  const rollNType = (ntype: NodeClass, dice: "ochr" | "int") => {
+    const x = NodeClassDice[dice];
     return (roller.roll(x[ntype]) as DiceRoll).total;
   };
 
-  const rollLOD = (ntype: nt) => {
+  const rollLOD = (ntype: NodeClass) => {
     switch (ntype) {
       case "Publiczny":
       case "Prywatny":
-        return "-";
+        return ["-", false];
       case "Prywatny strzeżony":
         const x = (roller.roll("1d6") as DiceRoll).total;
-        if (x <= 3) return "k6";
+        if (x <= 3) return ["k6", false];
         break;
       case "Rządowy":
-        return "k6";
+        return ["k6", false];
       case "Korporacyjny":
         const y = (roller.roll("1d6") as DiceRoll).total;
-        if (y <= 2) return "k8, CZ";
-        return "k8";
+        if (y <= 2) return ["k8", true];
+        return ["k8", false];
       case "Wojskowy":
         const z = (roller.roll("1d6") as DiceRoll).total;
-        if (z <= 3) return "k10, CZ";
-        return "k10";
+        if (z <= 3) return ["k10", true];
+        return ["k10", false];
       case "SI":
-        return "k12";
+        return ["k12", true];
     }
     return "-";
   };
 
-  const rollPersonel = (ntype: nt) => {
+  const rollPersonel = (ntype: NodeClass) => {
     let chance = 0;
     switch (ntype) {
       case "Publiczny":
@@ -93,42 +93,50 @@ export const useNodeGen = () => {
         if (chance == 1) {
           return "wolontariusz INT 10";
         }
+        break;
       case "Prywatny strzeżony":
         chance = (roller.roll("1d6") as DiceRoll).total;
         if (chance <= 2) {
           return "haker INT 10";
         }
+        break;
       case "Rządowy":
         chance = (roller.roll("1d3") as DiceRoll).total;
-        return `haker INT 12 (${chance})`;
+        return `${chance} x haker INT 12`;
       case "Korporacyjny":
         chance = (roller.roll("1d4") as DiceRoll).total;
-        return `haker INT 15 (${chance})`;
+        return `${chance} x haker INT 15`;
       case "Wojskowy":
         chance = (roller.roll("1d6") as DiceRoll).total;
-        return `haker INT 16 (${chance})`;
+        return `${chance} x haker INT 16`;
       case "SI":
         return "samoobrona INT 17";
     }
     return "";
   };
 
-  const rollNode = () => {
-    let roll = roller.roll(`1d${infoType.length}`) as DiceRoll;
-    const ntype = infoType[roll.total - 1];
+  const rollNode = (tp?: NodeClass) => {
+    var roll: DiceRoll;
+    let ntype: NodeClass | undefined = tp;
+    if (!tp) {
+      roll = roller.roll(`1d${infoType.length}`) as DiceRoll;
+      ntype = infoType[roll.total - 1] as NodeClass;
+    }
     roll = roller.roll(`1d${infoLook.length}`) as DiceRoll;
     const look = infoLook[roll.total - 1];
     roll = roller.roll(`1d${infoData.length}`) as DiceRoll;
     const data = infoData[roll.total - 1];
+    const [ice, black] = rollLOD(ntype as NodeClass);
     return [
       {
         name: generateSerialKeys(8, ""),
-        ntype: ntype,
-        ochr: rollNType(ntype as nt, "ochr"),
-        int: rollNType(ntype as nt, "int"),
-        lod: rollLOD(ntype as nt),
-        more: ntypeMore[ntype as nt],
-        personel: rollPersonel(ntype as nt),
+        ntype: ntype!!,
+        hp: rollNType(ntype!!, "ochr"),
+        inf: rollNType(ntype!!, "int"),
+        ice: ice,
+        black: black,
+        more: ntypeMore[ntype!!],
+        security: rollPersonel(ntype!!),
         look: look,
         data: data,
       } as NodeType,

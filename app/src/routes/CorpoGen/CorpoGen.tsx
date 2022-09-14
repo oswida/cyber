@@ -28,8 +28,12 @@ export const CorpoGen = () => {
     <Layout>
       <PageRoot>
         <PageHeader>
-          <Text weight={"700"} css={{ marginLeft: 10 }}>
-            Korporacja
+          <Text
+            color="pink"
+            weight={"700"}
+            css={{ marginLeft: 10, textTransform: "uppercase" }}
+          >
+            &gt; Korporacja
           </Text>
           <Flex css={{ gap: 10 }}>
             <Button onClick={generate}>Generuj</Button>

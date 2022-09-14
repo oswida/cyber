@@ -13,6 +13,8 @@ export const Button = styled("div", {
   },
   textTransform: "uppercase",
   padding: 5,
+  paddingLeft: 7,
+  paddingRight: 7,
   border: "solid 1px #0fff50",
   borderRadius: 5,
   backgroundColor: "transparent",

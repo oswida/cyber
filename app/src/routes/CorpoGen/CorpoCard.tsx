@@ -1,4 +1,12 @@
-import { faGears, faToolbox, faTools } from "@fortawesome/free-solid-svg-icons";
+import {
+  faComputer,
+  faContactCard,
+  faDigitalTachograph,
+  faEarth,
+  faGears,
+  faToolbox,
+  faTools,
+} from "@fortawesome/free-solid-svg-icons";
 import useLocalStorageState from "use-local-storage-state";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
 
@@ -63,7 +71,7 @@ export const CorpoCard = ({ data }: { data: CorpoType }) => {
           </CardRow>
         </>
       )}
-      <RTIconButton icon={faTools} />
+      <RTIconButton icon={faEarth} />
     </Card>
   );
 };
