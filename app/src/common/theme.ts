@@ -6,6 +6,7 @@ export const themeColors = {
   green: "#0fff50",
   darkblue: "#2c84fa",
   blue: "#3f99ff",
+  red: "#ff1818",
 };
 
 export const { styled, css, createTheme, keyframes, theme, globalCss } =

@@ -51,7 +51,7 @@ nav_order: 3
 | 30. Morita               | 63. Kulikov        | 96. Omega         |
 | 31. Takamasa             | 64. Global         | 97. Alpha         |
 | 32. Urushido             | 65. GEICO          | 98. Gamma         |
-| 33. Sharaku              | 66. HSBC           | 99. Delta         |
+| 33. Sharaku              | 66. HASBEC         | 99. Delta         |
 |                          |                    | 100.Sigma         |
 
 

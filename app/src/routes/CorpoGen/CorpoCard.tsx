@@ -1,5 +1,6 @@
+import { faGears, faToolbox, faTools } from "@fortawesome/free-solid-svg-icons";
 import useLocalStorageState from "use-local-storage-state";
-import { Card, CardRow, Text } from "~/component";
+import { Card, CardRow, RTIconButton, Text } from "~/component";
 
 export type CorpoType = {
   name1: string;
@@ -34,6 +35,7 @@ export const CorpoCard = ({ data }: { data: CorpoType }) => {
       title={`${data.name1} ${data.name2} ${data.name3}`}
       titlecolor="blue"
       onDelete={delItem}
+      height={150}
     >
       {data.domains && (
         <>
@@ -61,6 +63,7 @@ export const CorpoCard = ({ data }: { data: CorpoType }) => {
           </CardRow>
         </>
       )}
+      <RTIconButton icon={faTools} />
     </Card>
   );
 };

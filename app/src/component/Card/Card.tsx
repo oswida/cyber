@@ -1,5 +1,6 @@
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { styled } from "~/common";
-import { DelButton, Flex, Text } from "~/component";
+import { Flex, LTIconButton, Text } from "~/component";
 
 const CardRoot = styled("div", {
   padding: 10,
@@ -8,6 +9,8 @@ const CardRoot = styled("div", {
   flexDirection: "column",
   minWidth: 190,
   maxWidth: 350,
+  width: 350,
+  height: 200,
 
   borderRadius: "20px 0px",
   outlineOffset: 2,
@@ -83,6 +86,7 @@ export const CardRow = styled(Flex, {
   marginRight: 10,
   gap: 5,
   alignItems: "center",
+  marginBottom: 10,
 });
 
 export type CardProps = {
@@ -91,6 +95,7 @@ export type CardProps = {
   onDelete: () => void;
   color?: "yellow" | "pink" | "green" | "blue";
   titlecolor?: "yellow" | "pink" | "green" | "blue";
+  height?: number | string;
   children: any;
 };
 
@@ -100,12 +105,13 @@ export const Card = ({
   titlecolor,
   subtitle,
   onDelete,
+  height,
   children,
 }: CardProps) => {
   return (
-    <CardRoot color={color}>
+    <CardRoot color={color} css={{ height: height }}>
       <Flex>
-        <DelButton onClick={onDelete}>x</DelButton>
+        <LTIconButton icon={faClose} onClick={onDelete} hoverColor="red" />
         <CardTitle>
           <Flex direction="column">
             <Text align="right" css={{ marginBottom: 5 }} color={titlecolor}>

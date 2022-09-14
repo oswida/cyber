@@ -1,3 +1,5 @@
+import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { styled } from "@stitches/react";
 import { Link } from "react-router-dom";
 
@@ -28,16 +30,82 @@ export const LinkButton = styled(Link, {
   borderRadius: 5,
 });
 
-export const DelButton = styled("div", {
-  "&:hover": {
-    color: "red",
-    cursor: "pointer",
-  },
-  color: "#ff6666",
+export const LeftTopButton = styled("div", {
   position: "absolute",
-  top: 5,
-  left: 5,
-  padding: 4,
-  borderRadius: "100%",
-  borderRight: "solid 1px red",
+  top: 10,
+  left: 10,
+  variants: {
+    hcolor: {
+      red: {
+        "& :hover": {
+          color: "$red",
+        },
+      },
+      yellow: {
+        "& :hover": {
+          color: "$yellow",
+        },
+      },
+      none: {},
+    },
+  },
+  defaultVariants: {
+    hcolor: "none",
+  },
 });
+
+export const RightBottomButton = styled("div", {
+  position: "absolute",
+  bottom: 10,
+  right: 10,
+  variants: {
+    hcolor: {
+      red: {
+        "& :hover": {
+          color: "$red",
+        },
+      },
+      yellow: {
+        "& :hover": {
+          color: "$yellow",
+        },
+      },
+      none: {},
+    },
+  },
+  defaultVariants: {
+    hcolor: "none",
+  },
+});
+
+export const LTIconButton = ({
+  icon,
+  onClick,
+  hoverColor,
+}: {
+  icon: IconDefinition;
+  onClick: () => void;
+  hoverColor?: "none" | "red" | "yellow";
+}) => {
+  return (
+    <LeftTopButton onClick={onClick} hcolor={hoverColor}>
+      <FontAwesomeIcon icon={icon} />
+    </LeftTopButton>
+  );
+};
+
+export const RTIconButton = ({
+  icon,
+  onClick,
+  hoverColor,
+}: {
+  icon: IconDefinition;
+  onClick?: () => void;
+  hoverColor?: "none" | "red" | "yellow";
+}) => {
+  return (
+    <RightBottomButton onClick={onClick} hcolor={hoverColor}>
+      <FontAwesomeIcon icon={icon} />
+    </RightBottomButton>
+  );
+};

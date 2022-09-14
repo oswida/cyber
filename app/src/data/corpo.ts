@@ -65,7 +65,7 @@ export const corpName1 = [
   "United",
   "Global",
   "GEICO",
-  "HSBC",
+  "HASBEC",
   "TASER",
   "YKK",
   "UPES-DAHL",

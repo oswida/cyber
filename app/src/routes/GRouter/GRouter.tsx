@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 export const GRouter = () => {
   const navigate = useNavigate();
@@ -13,6 +13,9 @@ export const GRouter = () => {
         break;
       case "corpo":
         navigate("/corpo", { replace: false });
+        break;
+      case "node":
+        navigate("/node", { replace: false });
         break;
       default:
         navigate("/npc", { replace: false });

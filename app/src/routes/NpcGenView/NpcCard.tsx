@@ -1,5 +1,6 @@
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import useLocalStorageState from "use-local-storage-state";
-import { Card, CardRow, Text } from "~/component";
+import { Card, CardRow, RTIconButton, Text } from "~/component";
 import { NpcType } from "~/data";
 
 export const NpcCard = ({ data }: { data: NpcType }) => {
@@ -38,6 +39,7 @@ export const NpcCard = ({ data }: { data: NpcType }) => {
           {data.goal}
         </Text>
       </CardRow>
+      <RTIconButton icon={faUser} />
     </Card>
   );
 };
