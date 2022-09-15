@@ -7,7 +7,7 @@ nav_order: 3
 
 # Generator zaibatsu
 
-[Wersja generatora online](https://oswida.github.io/cyber/app/dist/?id=corpo)
+[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/corpo)
 
 ## Losowanie
 

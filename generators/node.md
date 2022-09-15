@@ -7,7 +7,7 @@ nav_order: 5
 
 # Generator węzła Infosfery
 
-[Wersja generatora online](https://oswida.github.io/cyber/app/dist/?id=node)
+[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/node)
 
 ## Procedura
 
