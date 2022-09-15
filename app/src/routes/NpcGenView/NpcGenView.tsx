@@ -26,6 +26,24 @@ export const NpcGenView = () => {
     setData([]);
   };
 
+  const exportData = () => {
+    if (data.length == 0) return;
+    const print = JSON.stringify(
+      data.map((it) => ({
+        Imię: it.name,
+        Nazwisko: it.surname,
+        Zajęcie: it.occupation,
+        Wygląd: it.look,
+        Cechy: it.traits.join(", "),
+        Cel: it.goal,
+      }))
+    );
+    const link = document.createElement("a");
+    link.download = "npc.json";
+    link.href = "data:text/json;charset=utf-8," + encodeURIComponent(print);
+    link.click();
+  };
+
   return (
     <Layout>
       <PageRoot>
@@ -40,6 +58,9 @@ export const NpcGenView = () => {
           <Flex css={{ gap: 10 }}>
             <Button onClick={generate}>Generuj</Button>
             <Button onClick={clean}>Wyczyść</Button>
+            <Button onClick={exportData} title="Eksportuj">
+              Eksport
+            </Button>
           </Flex>
         </PageHeader>
         <PageContent>

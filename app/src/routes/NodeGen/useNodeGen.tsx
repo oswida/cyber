@@ -102,13 +102,13 @@ export const useNodeGen = () => {
         break;
       case "Rządowy":
         chance = (roller.roll("1d3") as DiceRoll).total;
-        return `${chance} x haker INT 12`;
+        return `${chance} × haker INT 12`;
       case "Korporacyjny":
         chance = (roller.roll("1d4") as DiceRoll).total;
-        return `${chance} x haker INT 15`;
+        return `${chance} × haker INT 15`;
       case "Wojskowy":
         chance = (roller.roll("1d6") as DiceRoll).total;
-        return `${chance} x haker INT 16`;
+        return `${chance} × haker INT 16`;
       case "SI":
         return "samoobrona INT 17";
     }

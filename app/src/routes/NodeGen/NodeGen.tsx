@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
 import {
   Button,
@@ -20,6 +20,7 @@ export const NodeGen = () => {
   const { rollNode } = useNodeGen();
   const [modal, setModal] = useState(false);
   const [nclass, setNClass] = useState<NodeClass | undefined>(undefined);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   const generate = (ntype?: NodeClass) => {
     setData((state) => [...state, ...rollNode(ntype)]);
@@ -32,6 +33,27 @@ export const NodeGen = () => {
   const select = (ntype?: NodeClass) => {
     setNClass(ntype);
     setModal(false);
+  };
+
+  const exportNodes = () => {
+    if (data.length == 0) return;
+    const print = JSON.stringify(
+      data.map((it) => ({
+        Nazwa: it.name,
+        Typ: it.ntype,
+        Wygląd: it.look,
+        OCHR: it.hp,
+        INF: it.inf,
+        LOD: it.ice,
+        CZARNY_LOD: it.black ? "tak" : "nie",
+        Zabezpieczenia: `${it.security}; ${it.more}`,
+        Dane: it.data,
+      }))
+    );
+    const link = document.createElement("a");
+    link.download = "infonode.json";
+    link.href = "data:text/json;charset=utf-8," + encodeURIComponent(print);
+    link.click();
   };
 
   return (
@@ -60,12 +82,19 @@ export const NodeGen = () => {
             <Button onClick={clean} title="Wyczyść">
               WYCZYŚĆ
             </Button>
+            <Button onClick={() => exportNodes()} title="Eksportuj">
+              Eksport
+            </Button>
           </Flex>
         </PageHeader>
-        <PageContent>
+        <PageContent ref={contentRef}>
           {!modal &&
             data.map((it) => (
-              <NodeCard data={it} key={`${it.name}`}></NodeCard>
+              <NodeCard
+                data={it}
+                key={`${it.name}`}
+                id={`${it.name}`}
+              ></NodeCard>
             ))}
           {modal && (
             <Flex direction="column" css={{ gap: 10 }}>

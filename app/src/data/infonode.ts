@@ -9,6 +9,7 @@ export type NodeType = {
   more: string;
   data: string;
   look: string;
+  selected: boolean;
 };
 
 export const infoType = [

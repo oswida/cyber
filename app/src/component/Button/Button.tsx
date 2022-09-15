@@ -80,6 +80,12 @@ export const RightBottomButton = styled("div", {
   },
 });
 
+export const LeftBottomButton = styled("div", {
+  position: "absolute",
+  bottom: 5,
+  left: 5,
+});
+
 export const LTIconButton = ({
   icon,
   onClick,
@@ -109,5 +115,19 @@ export const RTIconButton = ({
     <RightBottomButton onClick={onClick} hcolor={hoverColor}>
       <FontAwesomeIcon icon={icon} />
     </RightBottomButton>
+  );
+};
+
+export const LBIconButton = ({
+  icon,
+  onClick,
+}: {
+  icon: IconDefinition;
+  onClick?: () => void;
+}) => {
+  return (
+    <LeftBottomButton onClick={onClick}>
+      <FontAwesomeIcon icon={icon} />
+    </LeftBottomButton>
   );
 };

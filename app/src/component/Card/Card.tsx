@@ -1,4 +1,5 @@
 import { faClose } from "@fortawesome/free-solid-svg-icons";
+import { PropsWithChildren, PropsWithoutRef, PropsWithRef } from "react";
 import { styled } from "~/common";
 import { Flex, LTIconButton, Text } from "~/component";
 
@@ -97,6 +98,7 @@ export type CardProps = {
   titlecolor?: "yellow" | "pink" | "green" | "blue";
   height?: number | string;
   children: any;
+  id?: string;
 };
 
 export const Card = ({
@@ -107,9 +109,10 @@ export const Card = ({
   onDelete,
   height,
   children,
+  id,
 }: CardProps) => {
   return (
-    <CardRoot color={color} css={{ height: height }}>
+    <CardRoot color={color} css={{ height: height }} id={id}>
       <Flex>
         <LTIconButton icon={faClose} onClick={onDelete} hoverColor="red" />
         <CardTitle>

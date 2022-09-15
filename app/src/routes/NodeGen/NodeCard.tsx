@@ -1,10 +1,14 @@
-import { faNetworkWired, faSkull } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCheckCircle,
+  faNetworkWired,
+  faSkull,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useLocalStorageState from "use-local-storage-state";
-import { Card, CardRow, RTIconButton, Text } from "~/component";
+import { Card, CardRow, LBIconButton, RTIconButton, Text } from "~/component";
 import { NodeType } from "~/data";
 
-export const NodeCard = ({ data }: { data: NodeType }) => {
+export const NodeCard = ({ data, id }: { data: NodeType; id: string }) => {
   const [items, setItems] = useLocalStorageState<NodeType[]>("Cyber_NODEGEN", {
     defaultValue: [] as NodeType[],
   });
@@ -20,6 +24,7 @@ export const NodeCard = ({ data }: { data: NodeType }) => {
       subtitle={data.ntype}
       onDelete={delItem}
       height={220}
+      id={id}
     >
       <CardRow>
         <Text color="yellow" css={{ marginRight: 15 }}>
