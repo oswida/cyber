@@ -13,7 +13,7 @@ Wylosuj:
 
 1. Zleceniodawcę
 2. Zadanie
-3. Osobę/organizację, która jest związana ze skokiem
+3. Cel
 4. Miejsce
 5. Komplikację
 
@@ -21,7 +21,7 @@ Wylosuj:
 
 ## Zadanie
 
-## Osoba/Organizacja
+## Cel
 
 ## Miejsce
 
