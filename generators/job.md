@@ -5,7 +5,7 @@ parent: Generatory
 nav_order: 2
 ---
 
-# Generator szybkiego zlecenia
+# Generator szybkiego zlecenia (w przygotowaniu)
 
 ## Procedura
 

@@ -8,10 +8,10 @@ import {
   PageRoot,
   Text,
 } from "~/component";
-import { NodeType } from "~/data";
+import { NodeClass, NodeType } from "~/data";
 import { Layout } from "../Layout";
 import { NodeCard } from "./NodeCard";
-import { NodeClass, useNodeGen } from "./useNodeGen";
+import { useNodeGen } from "./useNodeGen";
 
 export const NodeGen = () => {
   const [data, setData] = useLocalStorageState<NodeType[]>("Cyber_NODEGEN", {

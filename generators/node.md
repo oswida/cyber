@@ -5,7 +5,7 @@ parent: Generatory
 nav_order: 5
 ---
 
-# Generator węzła Infosfery
+# Generator węzła Infosfery (w przygotowaniu)
 
 [Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/node)
 
@@ -80,46 +80,125 @@ nav_order: 5
 38. Biały sześcian bez żadnych dodatkowych oznaczeń
 39. Szachownica z bryłami geometrycznymi zamiast figur
 40. Konstrukcja mechaniczna pełna kół zębatych, przekładni i dźwigni
+41. Przezroczysta sfera wypełniona mistycznymi symbolami
+42. Starannie pielęgnowany japoński ogród
+43. Szary kamienny menhir pokryty świetlistymi runami
+44. Pudełko z origami z klejnotem w środku
+45. Symbol nieskończoności zrobiony z milionów metalowych kulek
+46. Wielka księga z tajemniczym symbolem na skórzanej okładce
+47. Złoty trójkąt z okiem w środku
+48. Wielkie, płonące oko z wąską czarną źrenicą
+49. Wielokolorowy, hipnotyczny wir
+50. Okno wyświetlające dziwaczne obrazy
 
 ## Dane, sekrety, sekreciki
 
+### Publiczny
+
+1. Zestaw starych gier komputerowych
+2. Wielka księga przepisów kulinarnych
+3. Plany budynku użyteczności publicznej
+4. Odpowiedzi na pytania w najbliższym quizie multimedialnym
+5. Cheaty do popularnej gry online
+6. Receptura na domowy wyrób stymulantów
+7. Tomik wierszy wątpliwej jakości 
+8. Bardzo ciekawe projekty modnych ubrań
+9. Lista zwycięzców konkursu piękności, który się jeszcze nie odbył
+10. Największa na świecie kolekcja muzyki
+11. Nieznane, zaszyfrowane dane
+12. Zapis z kamer bezpieczeństwa budynku publicznego
+13. Grafik zajęć znanej gwiazdy medialnej
+14. Nagranie brutalnej interwencji policji
+15. Nagranie protestów aktywistów pod bramą fabryki
+16. Nagranie z manifestem grupy terrorystycznej
+17. Oficjalne oświadczenie grupy hakerskiej
+18. Pełne dane medyczne dotyczące leku na znaną chorobę
+19. Plany techniczne drona policyjnego
+20. Lista skorumpowanych policjantów  
+
+### Prywatny
+
+1. Dane medyczne ukradzione ze szpitala Administracji
+2. Plany techniczne nieznanego cybermodu
+3. Kolekcja filmów ... różnego rodzaju
+4. Zestaw artykułów o tajemniczych eksperymentach genetycznych
+5. 1k4 wejściowek na znane wydarzenie sportowe
+6. Zestaw wirusów komputerowych
+7. Rękopis niewydanej powieści (może być dobra)
+
+
+
+### Prywatny strzeżony
+
+1. Komplet fałszywych dokumentów
+2. 1k4 fałszywych sygnatur dla pojazdów dowolnego typu
+3. Dane konta bankowego z 1k4 tys. kredytów
+4. 1k4 biletów na najbliższy koncert w operze
+5. 1k6 programów hakerskich różnego rodzaju
+6. Kody do hakowania linii energetycznych w wybranej dzielnicy
+7. Kody wejściowe do mieszkań w zwykłym wieżowcu
+8. Adresy rodzin szefów znanych gangów
+9. Dwa karnety do ekskluzywnej restauracji
+10. Pamiętnik szefa mafii
+
+### Rządowy
+
+1. Kody otwierające wszystkie drzwi wybranego urzędu Administracji
+2. Zapis z kamer bezpieczeństwa z nagraną zbrodnią
+3. Spis osób podejrzanych o szpiegostwo
+
+
+
+### Korporacyjny
+
 1. Najnowsze, jeszcze nie emitowane odcinki popularnego serialu
 2. Kompromitujące nagrania ważnego pracownika korporacji
-3. Zestaw starych gier komputerowych
-4. Dane medyczne ukradzione ze szpitala Administracji
-5. Dokładne plany jednej z korporacyjnych arkologii
-6. Dane osobowe całego działu korporacyjnego
-7. Wielka księga przepisów kulinarnych
-8. Plany techniczne nieznanego cybermodu
-9. Plany techniczne drona bojowego
-10. Kody otwierające wszystkie drzwi wybranego urzędu Administracji
-11. Lista skorumpowanych policjantów
-12. Odpowiedzi na pytania w najbliższym quizie multimedialnym
-13. Lista zwycięzców konkursu piękności, który się jeszcze nie odbył
-14. Tomik wierszy wątpliwej jakości
-15. Cheaty do popularnej gry online
-16. Receptura na domowy wyrób stymulantów
-17. Komplet fałszywych dokumentów
-18. Największa na świecie kolekcja muzyki
-19. Zestaw artykułów o tajemniczych eksperymentach genetycznych
-20. Kolekcja filmów ... różnego rodzaju
-21. Kody wejściowe do mieszkań w budżetowym wieżowcu
-22. Bardzo ciekawe projekty modnych ubrań
-23. Zestaw wirusów komputerowych
-24. 1k6 programów hakerskich różnego rodzaju
-25. Adresy rodzin szefów znanych gangów
-26. 1k4 fałszywych sygnatur dla pojazdów dowolnego typu
-27. Wykaz kont bankowych znanego pracownika korporacji
-28. Dane konta bankowego z 1k4 tys. kredytów
-29. 1k4 biletów na najbliższy koncert w operze
-30. 1k4 wejściowek na znane wydarzenie sportowe
-31. Dwa karnety do ekskluzywnej restauracji
-32. Pamiętnik szefa mafii
-33. Nieznane, zaszyfrowane dane
-34. Kody do hakowania linii energetycznych w wybranej dzielnicy
-35. Bilans finansowy jednej z korporacji
-36. Rękopis niewydanej powieści (może być dobra)
-37. Zapis z kamer bezpieczeństwa z nagraną zbrodnią
-38. Kody wejściowe do bazy wojskowej
-39. Grafik zajęć znanej gwiazdy medialnej
-40. Konstrukt (zapis osobowości) zmarłego celebryty 
+3. Dokładne plany jednej z korporacyjnych arkologii
+4. Dane osobowe całego działu korporacyjnego
+5. Wykaz kont bankowych znanego pracownika korporacji
+6. Roczny bilans finansowy
+7. Dane pracowników podejrzewanych o szpiegostwo
+8. Teczki osobowe pracowników konkurencyjnej korporacji
+9. Zestaw przepustek wejściowych do arkologii
+10. Kompromitujące dane polityków
+11. Dane techniczne najnowszego produktu
+12. Informacje o finansowaniu grup terrorystycznych
+13. Lista policjantów na usługach korporacji
+14. Lista urzędników Administracji na usługach korporacji
+15. Plany przejęcia kontroli nad gangami w danej dzielnicy
+16. Kontakty do osób/firm wynajmowanych do 'mokrej roboty'
+17. Dokumentacja nielegalnych eksperymentów genetycznych
+18. Hasła do magazynu pełnego produktów korporacji
+19. Zlecenia transportu nieznanych materiałów do placówki badawczej
+20. Plany korporacyjnej placówki badawczej
+
+### Wojskowy
+
+1. Plany techniczne drona bojowego
+2. Kody wejściowe do bazy wojskowej
+3. Zdalne kody sterujące do myśliwca wojskowego
+4. Program deszyfrujący transmisje w sieci taktycznej
+5. Plany techniczne robota wojskowego
+6. Kody wejściowe do magazynu broni
+7. Przepustka do magazynu wojskowych cybermodów
+8. Dane adresowe ważnych dowódców wojskowych
+9. Dokumentacja produkcyjna wojskowych stymulantów
+10. Kody sterujące satelity wojskowego
+11. Zdjęcia z satelity pokazujące nielegalne placówki badawcze
+12. Lista szpiegów konkurencji w wybranej korporacji
+13. Rozkazy eksterminacji ludności w przypadku zagrożenia nieznaną chorobą
+14. Dokumentacja zabójczego wirusa hodowanego w laboratorium
+15. Plany rozmieszczenia głowic nuklearnych
+16. Zapisy rozmów ze spotkań zarządu wybranej korporacji
+17. Lista korporacyjnych SI postrzeganych jako zagrożenie
+18. Plany techniczne superlekkiego działka EMP
+19. Plany techniczne cyberkończyny z emiterem EMP
+20. Lista szpiegów wojskowych w korporacjach
+
+### SI
+
+1. Konstrukt (zapis osobowości) zmarłego celebryty
+2. Dane techniczne węzła Agencji Energii Atomowej
+3. Kody źródłowe innej SI
+4. Kody wejściowe do wszystkich systemów policyjnych
+5. Zestaw 1k6 potężnych wirusów komputerowych

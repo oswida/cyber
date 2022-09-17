@@ -1,47 +1,16 @@
 import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
-import { infoData, infoLook, infoType, NodeType } from "~/data";
+import {
+  infoLook,
+  NodeClass,
+  NodeClassHP,
+  NodeClassInf,
+  NodeClassMore,
+  NodeClassName,
+  NodeData,
+  NodeType,
+} from "~/data";
 
 const roller = new DiceRoller();
-
-export type NodeClass =
-  | "Publiczny"
-  | "Prywatny"
-  | "Prywatny strzeżony"
-  | "Rządowy"
-  | "Korporacyjny"
-  | "Wojskowy"
-  | "SI";
-
-const NodeClassDice = {
-  ochr: {
-    Publiczny: "1d3",
-    Prywatny: "1d6",
-    "Prywatny strzeżony": "1d6+3",
-    Rządowy: "1d6+6",
-    Korporacyjny: "1d8+6",
-    Wojskowy: "1d10+6",
-    SI: "2d6+6",
-  },
-  int: {
-    Publiczny: "1d6",
-    Prywatny: "1d6+2",
-    "Prywatny strzeżony": "1d8+3",
-    Rządowy: "1d8+6",
-    Korporacyjny: "1d10+6",
-    Wojskowy: "1d12+6",
-    SI: "2d6+8",
-  },
-};
-
-const ntypeMore = {
-  Publiczny: "",
-  Prywatny: "",
-  "Prywatny strzeżony": "",
-  Rządowy: "alarmy informujące o ataku",
-  Korporacyjny: "alarmy, śledzenie włamywacza ",
-  Wojskowy: "alarmy, śledzenie włamywacza",
-  SI: "LOD czarny lub biały, wybór SI",
-};
 
 export const useNodeGen = () => {
   function generateSerialKeys(length: number, separator: string) {
@@ -55,13 +24,8 @@ export const useNodeGen = () => {
       .substring(0, length + Math.round(length / 4) - 1);
   }
 
-  const rollNType = (ntype: NodeClass, dice: "ochr" | "int") => {
-    const x = NodeClassDice[dice];
-    return (roller.roll(x[ntype]) as DiceRoll).total;
-  };
-
-  const rollLOD = (ntype: NodeClass) => {
-    switch (ntype) {
+  const rollICE = (nclass: NodeClass) => {
+    switch (nclass) {
       case "Publiczny":
       case "Prywatny":
         return ["-", false];
@@ -85,9 +49,9 @@ export const useNodeGen = () => {
     return "-";
   };
 
-  const rollPersonel = (ntype: NodeClass) => {
+  const rollPersonel = (nclass: NodeClass) => {
     let chance = 0;
-    switch (ntype) {
+    switch (nclass) {
       case "Publiczny":
         chance = (roller.roll("1d6") as DiceRoll).total;
         if (chance == 1) {
@@ -117,26 +81,26 @@ export const useNodeGen = () => {
 
   const rollNode = (tp?: NodeClass) => {
     var roll: DiceRoll;
-    let ntype: NodeClass | undefined = tp;
+    let nclass: NodeClass | undefined = tp;
     if (!tp) {
-      roll = roller.roll(`1d${infoType.length}`) as DiceRoll;
-      ntype = infoType[roll.total - 1] as NodeClass;
+      roll = roller.roll(`1d${NodeClassName.length}`) as DiceRoll;
+      nclass = NodeClassName[roll.total - 1] as NodeClass;
     }
     roll = roller.roll(`1d${infoLook.length}`) as DiceRoll;
     const look = infoLook[roll.total - 1];
-    roll = roller.roll(`1d${infoData.length}`) as DiceRoll;
-    const data = infoData[roll.total - 1];
-    const [ice, black] = rollLOD(ntype as NodeClass);
+    roll = roller.roll(`1d${NodeData[nclass!!].length}`) as DiceRoll;
+    const data = NodeData[nclass!!][roll.total - 1];
+    const [ice, black] = rollICE(nclass as NodeClass);
     return [
       {
         name: generateSerialKeys(8, ""),
-        ntype: ntype!!,
-        hp: rollNType(ntype!!, "ochr"),
-        inf: rollNType(ntype!!, "int"),
+        ntype: nclass!!,
+        hp: (roller.roll(NodeClassHP[nclass!!]) as DiceRoll).total,
+        inf: (roller.roll(NodeClassInf[nclass!!]) as DiceRoll).total,
         ice: ice,
         black: black,
-        more: ntypeMore[ntype!!],
-        security: rollPersonel(ntype!!),
+        more: NodeClassMore[nclass!!],
+        security: rollPersonel(nclass!!),
         look: look,
         data: data,
       } as NodeType,

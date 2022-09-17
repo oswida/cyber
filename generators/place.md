@@ -5,7 +5,7 @@ parent: Generatory
 nav_order: 4
 ---
 
-# Generator miejsca
+# Generator miejsca (w przygotowaniu)
 
 ## 1. Klub nocny
 
