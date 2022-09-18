@@ -36,6 +36,15 @@ Cybermodyfikacje mogą mieć negatywny wpływ na organizm ludzki. Intensywne uż
 
 **Aktywacja cybermodyfikacji**: Dodatkowo, poza regułami opisanymi w dokumencie referencyjnym, za każdym razem, gdy **zmęczenie wypełni cały ekwipunek** postaci, odejmij **jeden** od jej poziomu **PSY**.
 
+### Ekranowanie wszczepóœ
+
+Całkowita redukcja obrażeń INF wywoływanych przez broń EMP nie jest możliwa, ale każda z postaci może dokupić ekranowanie EMP:
+
+| Modyfikacja                                      | Cena   | Maksimum na postać | Aktywacja |
+| ------------------------------------------------ | ------ | :----------------: | :-------: |
+| +1 do Pancerza podczas rozstrzygania obrażeń INF | 10 000 |         +3         |     -     |
+
+
 ### Przykłady klasycznych cybermodów
 
 TBD...

@@ -42,19 +42,19 @@ Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów
 | Plecak             |  400  |       +4        |
 | Wózek ręczny       |  600  |       +6        |
 
-| Broń                       |        Cena        |          Obrażenia           | Uwagi       |
-| -------------------------- | :----------------: | :--------------------------: | ----------- |
-| Biała (lekka)              |        100         |              k6              |             |
-| Biała (średnia)            |        400         |              k8              |             |
-| Biała (ciężka)             |        650         |             k10              | nieporęczna |
-| Dystansowa (bliski zasięg) |        150         |              k6              |             |
-| Dystansowa (średni zasięg) |        600         |              k8              |             |
-| Dystansowa (daleki zasięg) |        1000        |             k10              | nieporęczna |
-| Dystansowa (daleki zasięg) |        1500        |         k12, podmuch         | nieporęczna |
-| Granaty (5szt)             |        200         |         k6, podmuch          |             |
-| Mikroładunki               |        150         |              k4              |             |
-| Ładunki wybuchowe          | kość obrażeń * 150 |       k6-k12, podmuch        |             |
-| Działko EMP\*              |        2000        | k8, podmuch, obrażenia w INF | nieporęczna |
+| Broń                       |        Cena        |          Obrażenia           | Uwagi                            |
+| -------------------------- | :----------------: | :--------------------------: | -------------------------------- |
+| Biała (lekka)              |        100         |              k6              | nóż, pałka                       |
+| Biała (średnia)            |        400         |              k8              | miecz, topór                     |
+| Biała (ciężka)             |        650         |             k10              | nieporęczna, ostrza mechaniczne  |
+| Dystansowa (bliski zasięg) |        150         |              k6              | pistolet, shotgun                |
+| Dystansowa (średni zasięg) |        600         |              k8              | strzelba, broń automatyczna, łuk |
+| Dystansowa (daleki zasięg) |        1000        |             k10              | nieporęczna, karabin, działko    |
+| Dystansowa (daleki zasięg) |        1500        |         k12, podmuch         | nieporęczna, wyrzutnia rakiet    |
+| Granaty (5szt)             |        200         |         k6, podmuch          |                                  |
+| Mikroładunki               |        150         |              k4              |                                  |
+| Ładunki wybuchowe          | kość obrażeń * 150 |       k6-k12, podmuch        |                                  |
+| Działko EMP\*              |        2000        | k8, podmuch, obrażenia w INF | nieporęczna                      |
 
 \* *Obrażenia krytyczne*: jeśli cel posiada neuroprocesor, zadaj PSY celu, tyle samo punktów obrażeń ile zadałeś INF w tej turze.
 

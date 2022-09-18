@@ -55,26 +55,26 @@ export const useNodeGen = () => {
       case "Publiczny":
         chance = (roller.roll("1d6") as DiceRoll).total;
         if (chance == 1) {
-          return "wolontariusz INT 10";
+          return "wolontariusz INF 10";
         }
         break;
       case "Prywatny strzeżony":
         chance = (roller.roll("1d6") as DiceRoll).total;
         if (chance <= 2) {
-          return "haker INT 10";
+          return "haker INF 10";
         }
         break;
       case "Rządowy":
         chance = (roller.roll("1d3") as DiceRoll).total;
-        return `${chance} × haker INT 12`;
+        return `${chance} × haker INF 12`;
       case "Korporacyjny":
         chance = (roller.roll("1d4") as DiceRoll).total;
-        return `${chance} × haker INT 15`;
+        return `${chance} × haker INF 15`;
       case "Wojskowy":
         chance = (roller.roll("1d6") as DiceRoll).total;
-        return `${chance} × haker INT 16`;
+        return `${chance} × haker INF 16`;
       case "SI":
-        return "samoobrona INT 17";
+        return "samoobrona INF 17";
     }
     return "";
   };

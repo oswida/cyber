@@ -35,7 +35,7 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 | +1 OCHR przy rozstrzyganiu ataku                                                                                          | 1 000                       |          +3           |    tak    |
 | +1 do wybranej zdolności (BIO,PSY,INF) przy teście                                                                        | 7 000                       | +3 (wyklucza poniżej) |    tak    |
 | +1 do rzutu wybranej zdolności przy teście dla konkretnej grupy aktywności                                                | 4 000                       | +3 (wyklucza powyżej) |    tak    |
-| +1 do Pancerza podczas rozstrzygania obrażeń                                                                              | 10 000                      |   +3 (całość <= 3)    |     -     |
+| +1 do Pancerza podczas rozstrzygania obrażeń BIO                                                                          | 10 000                      |   +3 (całość <= 3)    |     -     |
 | +1 miejsce w ekwipunku                                                                                                    | 1 000                       |          +1           |     -     |
 | wmontowane uzbrojenie                                                                                                     | rodzaj kości obrażeń * 1500 |          k12          |     -     |
 | neuroprocesor do hakowania i zapory\*                                                                                     | rodzaj kości obrażeń * 1500 |          k12          |     -     |

@@ -28,15 +28,15 @@ nav_order: 5
 
 ## Zabezpieczenia
 
-| Klasa              | OCHR   | INT    | Personel                    | LOD                 | Dodatkowe                      |
+| Klasa              | OCHR   | INF    | Personel                    | LOD                 | Dodatkowe                      |
 | ------------------ | ------ | ------ | --------------------------- | ------------------- | ------------------------------ |
-| Publiczny          | 1k3    | 1k6    | 1 na 6: wolontariusz INT 10 | -                   |                                |
+| Publiczny          | 1k3    | 1k6    | 1 na 6: wolontariusz INF 10 | -                   |                                |
 | Prywatny           | 1k6    | 1k6+2  | -  (właściciel)             | -                   |                                |
-| Prywatny strzeżony | 1k6+3  | 1k8+3  | 2 na 6:  haker INT 10       | 3 na 6: k6          |                                |
-| Rządowy            | 1k6+6  | 1k8+6  | 1k3  haker INT 12           | k6                  | alarmy informujące o ataku     |
-| Korporacyjny       | 1k8+6  | 1k10+6 | 1k4  haker INT 15           | k8, 2 na 6: Czarny  | alarmy, śledzenie włamywacza   |
-| Wojskowy           | 1k10+6 | 1k12+6 | 1k6  haker INT 16           | k10, 3 na 6: Czarny | alarmy, śledzenie włamywacza   |
-| SI                 | 2k6+6  | 2k6+8  | samoobrona INT 17           | k12                 | LOD czarny lub biały, wybór SI |
+| Prywatny strzeżony | 1k6+3  | 1k8+3  | 2 na 6:  haker INF 10       | 3 na 6: k6          |                                |
+| Rządowy            | 1k6+6  | 1k8+6  | 1k3  haker INF 12           | k6                  | alarmy informujące o ataku     |
+| Korporacyjny       | 1k8+6  | 1k10+6 | 1k4  haker INF 15           | k8, 2 na 6: Czarny  | alarmy, śledzenie włamywacza   |
+| Wojskowy           | 1k10+6 | 1k12+6 | 1k6  haker INF 16           | k10, 3 na 6: Czarny | alarmy, śledzenie włamywacza   |
+| SI                 | 2k6+6  | 2k6+8  | samoobrona INF 17           | k12                 | LOD czarny lub biały, wybór SI |
 
 ## Wygląd
 
@@ -91,7 +91,7 @@ nav_order: 5
 49. Wielokolorowy, hipnotyczny wir
 50. Okno wyświetlające dziwaczne obrazy
 
-## Dane, sekrety, sekreciki
+## Dane
 
 ### Publiczny
 
@@ -101,7 +101,7 @@ nav_order: 5
 4. Odpowiedzi na pytania w najbliższym quizie multimedialnym
 5. Cheaty do popularnej gry online
 6. Receptura na domowy wyrób stymulantów
-7. Tomik wierszy wątpliwej jakości 
+7. Tomik wierszy wątpliwej jakości
 8. Bardzo ciekawe projekty modnych ubrań
 9. Lista zwycięzców konkursu piękności, który się jeszcze nie odbył
 10. Największa na świecie kolekcja muzyki
@@ -122,11 +122,22 @@ nav_order: 5
 2. Plany techniczne nieznanego cybermodu
 3. Kolekcja filmów ... różnego rodzaju
 4. Zestaw artykułów o tajemniczych eksperymentach genetycznych
-5. 1k4 wejściowek na znane wydarzenie sportowe
-6. Zestaw wirusów komputerowych
+5. 1k4 wejściówek na znane wydarzenie sportowe
+6. Zestaw 1k4 wirusów komputerowych
 7. Rękopis niewydanej powieści (może być dobra)
-
-
+8. Kody wejściowe do prywatnego mieszkania
+9. Korespondencja z korporacją dotycząca odszkodowania
+10. Archiwum danych na temat znanego celebryty
+11. Dokumentacja medyczna wskazująca na nieuleczalną chorobę
+12. Kody uruchamiające do prywatnego pojazdu
+13. Redagowany manifest grupy terrorystycznej
+14. Poradnik jak wykonać bombę
+15. Kolekcja maili miłosnych
+16. Autoryzowany testament
+17. Zaproszenia na wesele i lista gości
+18. Zdjęcia z nielegalnej kliniki cybertechnicznej
+19. Amatorskie nagranie z włamu
+20. Nieznany utwór słynnego zespołu muzycznego
 
 ### Prywatny strzeżony
 
@@ -136,16 +147,29 @@ nav_order: 5
 4. 1k4 biletów na najbliższy koncert w operze
 5. 1k6 programów hakerskich różnego rodzaju
 6. Kody do hakowania linii energetycznych w wybranej dzielnicy
-7. Kody wejściowe do mieszkań w zwykłym wieżowcu
+7. Kody wejściowe do kilku mieszkań w zwykłym wieżowcu
 8. Adresy rodzin szefów znanych gangów
 9. Dwa karnety do ekskluzywnej restauracji
-10. Pamiętnik szefa mafii
+10. Kody wejściowe do prywatnego garażu
+11. Hasła do korporacyjnego konta pocztowego
+12. Elektroniczny klucz do skrytki z bronią k6
 
 ### Rządowy
 
 1. Kody otwierające wszystkie drzwi wybranego urzędu Administracji
 2. Zapis z kamer bezpieczeństwa z nagraną zbrodnią
-3. Spis osób podejrzanych o szpiegostwo
+3. Plany ewakuacji w przypadku epidemii nieznanej publicznie choroby zakaźnej
+4. Raport o zmutowanych zwierzętach napotykanych przez pracowników komunalnych
+5. Zeznania finansowe znanych polityków
+6. Ultimatum grupy terrorystycznej grożącej skażeniem chemicznym
+7. Dane finansowe wskazujące na zbliżający się kryzys gospodarczy
+8. Raport o skażeniu radioaktywnym w jednej z dzielnic miasta
+9. Informacje o wygaśnięciu praw korporacji do gruntów zajmowanych przez fabrykę
+10. Szczegółowe plany wybranej dzielnicy miasta
+11. Akt własności niewielkiej posesji miejskiej
+12. Kody wejściowe do systemu szpitala Administracji
+13. Raport o dziwacznym zachowaniu SI zarządzającej transportem miejskim
+14. 1k6 uprawnień do prowadzenia środków komunikacji miejskiej (in blanco)
 
 
 
@@ -156,12 +180,12 @@ nav_order: 5
 3. Dokładne plany jednej z korporacyjnych arkologii
 4. Dane osobowe całego działu korporacyjnego
 5. Wykaz kont bankowych znanego pracownika korporacji
-6. Roczny bilans finansowy
+6. Dokumentacja produkcyjna rzadkiej szczepionki
 7. Dane pracowników podejrzewanych o szpiegostwo
 8. Teczki osobowe pracowników konkurencyjnej korporacji
 9. Zestaw przepustek wejściowych do arkologii
 10. Kompromitujące dane polityków
-11. Dane techniczne najnowszego produktu
+11. Dane techniczne najnowszego produktu firmy
 12. Informacje o finansowaniu grup terrorystycznych
 13. Lista policjantów na usługach korporacji
 14. Lista urzędników Administracji na usługach korporacji

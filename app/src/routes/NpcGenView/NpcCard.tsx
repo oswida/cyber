@@ -21,11 +21,13 @@ export const NpcCard = ({ data }: { data: NpcType }) => {
       onDelete={delItem}
     >
       <CardRow>
-        <Text css={{ maxWidth: 350, marginBottom: 10 }}>{data.look}</Text>
+        <Text size="middle" css={{ maxWidth: 350, marginBottom: 10 }}>
+          {data.look}
+        </Text>
       </CardRow>
       <CardRow>
         <Text size="small" color="yellow">
-          Cechy{" "}
+          Charakter{" "}
         </Text>
         <Text color="pink" css={{ maxWidth: 350, lineHeight: "1rem" }}>
           {data.traits.join(", ")}

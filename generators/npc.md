@@ -5,21 +5,23 @@ parent: Generatory
 nav_order: 1
 ---
 
-# Generator: Bohater niezależny
+# Generator: Bohater niezależny (w przygotowaniu)
 
 [Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/npc)
+
 ## Procedura
 
-Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie rzuty to **k100**):
+Aby wygenerować losowego bohatera niezależnego należy wylosować:
 
 - imię
 - nazwisko
 - zawód
-- przynajmniej 2  elementy wyglądu
-- przynajmniej 2 dominujące cechy charakteru
+- przynajmniej jeden charakterystyczny element wyglądu
+- posiadany sprzęt jeśli BN ma coś takiego
+- pozytywną i negatywną cechę charakteru
 - przynajmniej jeden cel lub pragnienie
 
-## Imię (k100)
+## Imię
 
 | Imię          |              |              |
 | ------------- | ------------ | ------------ |
@@ -58,7 +60,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 | 33. Irina     | 66. Olga     | 99. Yong     |
 |               |              | 100. Yu      |
 
-## Nazwisko (k100)
+## Nazwisko
 
 | Imię        |              |               |
 | ----------- | ------------ | ------------- |
@@ -97,9 +99,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 | 33.Hall     | 66.Peterson  | 99.Wright     |
 |             |              | 100. Young    |
 
-
-
-## Zajęcie (k100)
+## Zajęcie
 
 | Zajęcie                              |                                       |                                    |
 | ------------------------------------ | ------------------------------------- | ---------------------------------- |
@@ -138,109 +138,113 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 | 33.Klubowy DJ                        | 66.Programista gier                   | 99.Złomiarz                        |
 |                                      |                                       | 100 Żołnierz                       |
 
-## Charakterystyczny element wyglądu (k100)
+## Charakterystyczny element wyglądu
 
 1. Skołtuniona, wielokolorowa fryzura z wplecionymi nitkami światłowodów
-2. Wielki, podświetlany symbol religijny zawieszony na grubym łańcuchu
-3. Kamuflaż termooptyczny
-4. Wojskowy pistolet laserowy
-5. Modne ubranie i czarny skórzany trencz
-6. Implant paralizatora ręcznego
-7. Kolczasta obroża i tani komputer
-8. Zmodyfikowane genetycznie zwierzę domowe
-9. Srebrne dredy i opalizujące oczy
-10. Wojskowe spodnie cargo i koszulka znanego zespołu
-11. Zestaw narzędzi elektronicznych
-12. Dron bojowy uzbrojony w karabin maszynowy
-13. Dron zwiadowczy wyposażony w kamery
-14. Kombinezon motocyklisty i wzmacniana kurtka
-15. Różowe dredy i bystre zielone oczy
-16. Pancerz z nanosiatki
-17. Czarny kombinezon rowerowy i implant nawigacyjny
-18. Walizka z narzędziami i częściami zamiennymi
-19. Różowy irokez i czerwone cybernetyczne oczy
-20. Szary garnitur i lustrzane okulary
-21. Cybernetyczne ramię
-22. Całe ciało pokryte tautażami
-23. Ciężkie cybernetyczne dłonie
-24. Aparat oddechowy i modulator głosu na dolnej części twarzy
-25. Wszystkie zęby przekształcone w kły
-26. Cybernetyczne przewody na powierzchni skóry
-27. Skórzane ubranie, metalowe klamry, ćwieki i paski
-28. Błyszcząca wodoodporna peleryna z wyświetlaczem pogody
-29. Personalne mikrodrony medyczne pełzające po skórze
-30. Cyfrowe tatuaże pobierające dane z sieci
-31. Automatyczny rozpylacz feromonów
-32. Metalowe zęby
-33. Przerośnięte, masywne mięśnie
-34. Plątanina zużytej elektroniki zwisająca z szyi
-35. Dodatkowa cybernetyczna kończyna
-36. Metalowa cybernetyczna twarz
-37. Wykrywacz trucizn wmontowany w jamę ustną
-38. Gogle transmitujące bez przerwy popularny show
-39. Holograficzne, programowalne kolczyki
-40. Chip nagrywający wrażenia zmysłowe
-41. Wszczepiony dozownik stymulantów
-42. Booster kognitywny zwiększający umiejętności interpersonalne
-43. Krótkie, ostre, wysuwane ostrza wbudowane w paznokcie
-44. Wszczepiony projektor holograficzny
-45. Kwaso- i ognioodporna, syntetyczna skóra na rękach
-46. Całe ciało porośnięte krótkim futrem
-47. Modne buty sportowe z systemem nawigacji
-48. Ubranie z błyszczącej metalicznie tkaniny
-49. Dwa japońskie miecze
-50. Wielki tasak kuchenny z wygrawerowanym dziwnym symbolem
-51. Tradycyjne, japońskie kimono
-52. Zbiór pism religijnych z całego świata na podręcznym czytniku
-53. Gładkie, przylizane włosy i opaska wyświetlająca bieżące notowania giełdowe
-54. Dysk z kolekcją wirusów komputerowych
-55. Kuloodporna kurtka i skuter
-56. Deskorolka z dodatkowym napędem i mocnymi głośnikami
-57. Zbiór cennych antyków technologicznych
-58. Neuromięśniowa matryca do programowania rysów twarzy
-59. Rytualne blizny na twarzy i wszczepiony dozownik endorfin
-60. Długie, skórzane buty do kolan i pomarańczowa, puchowa kurtka
+2. Modne ubranie i czarny skórzany trencz
+3. Kolczasta obroża na szyi
+4. Srebrne dredy i opalizujące oczy
+5. Wojskowe spodnie cargo i koszulka znanego zespołu
+6. Kombinezon motocyklisty i wzmacniana kurtka
+7. Różowe dredy i bystre zielone oczy
+8. Czarny kombinezon rowerowy
+9. Różowy irokez i czerwone cybernetyczne oczy
+10. Szary garnitur i lustrzane okulary
+11. Całe ciało pokryte tautażami
+12. Ciężkie cybernetyczne dłonie
+13. Wszystkie zęby przekształcone w kły
+14. Cybernetyczne przewody na powierzchni skóry
+15. Skórzane ubranie, metalowe klamry, ćwieki i paski
+16. Cyfrowe tatuaże pobierające dane z sieci
+17. Metalowe zęby
+18. Przerośnięte, masywne mięśnie
+19. Plątanina zużytej elektroniki zwisająca z szyi
+20. Dodatkowa cybernetyczna kończyna
+21. Metalowa cybernetyczna twarz
+22. Holograficzne, programowalne kolczyki
+23. Całe ciało porośnięte krótkim futrem
+24. Modne buty sportowe z systemem nawigacji
+25. Ubranie z błyszczącej metalicznie tkaniny
+26. Tradycyjne, japońskie kimono
+27. Drogi, bawełniany garnitur
+28. Gładkie, przylizane włosy i opaska wyświetlająca bieżące notowania giełdowe
+29. Kuloodporna kurtka ze zniekształconym logo korporacji
+30. Rytualne blizny na twarzy
+31. Długie, skórzane buty do kolan i pomarańczowa, puchowa kurtka
+32. Granatowa kurtka z wbudowanym monitorem funkcji życiowych
+33. Długi szary płaszcz, kapelusz i okulary ze wzmacniaczem optycznym
+34. Rozdwojony język i pionowe źrenice
+35. Dżinsowe spodnie i bluza z naszywką flagi narodowej
+36. Ubranie stylizowane na kombinezon roboczy, pomarańczowe diody na rękawach
+37. Wojskowy beret i apaszka
+38. Długi błyszczący płaszcz z kolorowym, futrzanym kołnierzem
+39. Obcisły, skórzany kombinezon
+40. Bejsbolówka i zółte słuchawki na uszach
+41. Długa, miękka szata ze złotymi nitkami
+42. Wielki, podświetlany symbol religijny zawieszony na grubym łańcuchu
+43. Wygolona głowa z implantem sterującym do dronów
+44. Niebieski irokez i oczy z tęczówkami zmieniającymi kolor
+45. Długie buty, krótkie spodenki, ortalionowa kurtka
+46. Sportowy dres z neonowym logo znanej marki
+47. Ubranie khaki stylizowane na mundur
+48. Garnitur z heksagonalnym deseniem i logo znanej firmy
+49. Kamizelka wzmacniana stalowymi płytkami
+50. Białe, długie włosy i kowbojski kapelusz
 
+## Sprzęt
 
-## Dominująca cecha charakteru (k100)
+1. Kamuflaż termooptyczny
+2. Gogle noktowizyjne
+3. Wojskowy pistolet laserowy
+4. Implant paralizatora ręcznego
+5. Tani komputer przenośny
+6. Zmodyfikowane genetycznie zwierzę domowe
+7. Zestaw narzędzi elektronicznych
+8. Dron bojowy uzbrojony w karabin maszynowy
+9. Dron zwiadowczy wyposażony w kamery
+10. Pancerz z nanosiatki
+11. Implant nawigacyjny
+12. Walizka z narzędziami i częściami zamiennymi
+13. Cybernetyczne ramię
+14. Aparat oddechowy i modulator głosu na dolnej części twarzy
+15. Błyszcząca wodoodporna peleryna z wyświetlaczem pogody
+16. Personalne mikrodrony medyczne pełzające po skórze
+17. Automatyczny rozpylacz feromonów
+18. Wykrywacz trucizn wmontowany w jamę ustną
+19. Gogle transmitujące bez przerwy popularny show
+20. Chip nagrywający wrażenia zmysłowe
+21. Wszczepiony dozownik stymulantów
+22. Booster kognitywny zwiększający umiejętności interpersonalne
+23. Krótkie, ostre, wysuwane ostrza wbudowane w paznokcie
+24. Wszczepiony projektor holograficzny
+25. Kwaso- i ognioodporna, syntetyczna skóra na rękach
+26. Dwa japońskie miecze
+27. Wielki tasak kuchenny z wygrawerowanym dziwnym symbolem
+28. Zbiór pism religijnych z całego świata na podręcznym czytniku
+29. Przenośny dysk z kolekcją wirusów komputerowych
+30. Deskorolka z dodatkowym napędem i mocnymi głośnikami
+31. Zbiór cennych antyków technologicznych
+32. Neuromięśniowa matryca do programowania rysów twarzy
+33. Wszczepiony dozownik endorfin
+34. Ciemnozielony plecak z zestawem pierwszej pomocy
+35. Wbudowany neutralizator toksyn z wyświetlaczem na dłoni
+36. Cybernetyczna dłoń z wbudowanymi narzędziami chirurgicznymi
+37. Przenośny, wielofunkcyjny skaner
+38. Broń krótka w kaburze przy pasie
+39. Cybernetyczne nogi specjalizowane do biegu i skoków
+40. Neutralizator akustyczny
+41. Cybernetyczne oko z infrawizją
+42. Wszczepione filtry oddechowe
+43. Gitara elektryczna z osprzętem
+44. Analizator chemiczny
+45. Imponująca kolekcja cyfrowych autografów znanych celebrytów
+46. Dobrze zabezpieczony, prywatny węzeł w Infosferze
+47. Wbudowany w rękę wykrywacz podsłuchów
+48. Wzmocniony słuch z poszerzonym pasmem częstotliwości
+49. Stary, połatany van (ale na chodzie)
+50. Magnetyczny zestaw wspinaczkowy
 
-| Cecha charakteru   |                     |                      |
-| ------------------ | ------------------- | -------------------- |
-| 1.Agresja          | 34.Kokieteria       | 67.Próżność          |
-| 2.Altruizm         | 35.Lekkomyślność    | 68.Pycha             |
-| 3.Ambicja          | 36.Lenistwo         | 69.Rozsądek          |
-| 4.Arogancja        | 37.Lizus            | 70.Roztropność       |
-| 5.Bezczelność      | 38.Lojalność        | 71.Samochwalstwo     |
-| 6.Bezinteresowność | 39.Lubieżność       | 72.Sceptycyzm        |
-| 7.Bezmyślność      | 40.Komunikatywność  | 73.Skromność         |
-| 8.Brutalność       | 41.Kłótliwość       | 74.Skąpstwo          |
-| 9.Chamstwo         | 42.Małomówność      | 75.Sprawiedliwość    |
-| 10.Chciwość        | 43.Naiwność         | 76.Spryt             |
-| 11.Chytrość        | 44.Niecierpliwość   | 77.Szczerość         |
-| 12.Ciekawość       | 45.Nieczułość       | 78.Szlachetność      |
-| 13.Cierpliwość     | 46.Niefrasobliwość  | 79.Takt              |
-| 14.Cynizm          | 47.Niegodziwość     | 80.Talent            |
-| 15.Despotyzm       | 48.Nieuczciwość     | 81.Tchórzostwo       |
-| 16.Dobroduszność   | 49.Niewinność       | 82.Troskliwość       |
-| 17.Dobroć          | 50.Nikczemność      | 83.Tupet             |
-| 18.Dokładność      | 51.Obłuda           | 84.Uczciwość         |
-| 19.Duma            | 52.Odpowiedzialność | 85.Uprzejmość        |
-| 20.Dzikość         | 53.Odwaga           | 86.Upór              |
-| 21.Egoizm          | 54.Okrucieństwo     | 87.Wdzięk            |
-| 22.Empatia         | 55.Optymizm         | 88.Wielkoduszność    |
-| 23.Fanatyzm        | 56.Ostrożność       | 89.Wrażliwość        |
-| 24.Gadatliwość     | 57.Oszczędność      | 90.Wspaniałomyślność |
-| 25.Geniusz         | 58.Patriotyzm       | 91.Wulgarność        |
-| 26.Gościnność      | 59.Perfekcjonizm    | 92.Wyobraźnia        |
-| 27.Gruboskórność   | 60.Perfidia         | 93.Wyrozumiałość     |
-| 28.Grzeczność      | 61.Pesymizm         | 94.Zaciekłość        |
-| 29.Głupota         | 62.Pobożność        | 95.Złośliwość        |
-| 30.Hipochondria    | 63.Podejrzliwość    | 96.Zrzędliwość       |
-| 31.Hipokryzja      | 64.Powaga           | 97.Łagodność         |
-| 32.Inteligencja    | 65.Pruderia         | 98.Łatwowierność     |
-| 33.Impulsywność    | 66.Przezorność      | 99.Śmiałość          |
-|                    |                     | 100. Życzliwość      |
-
+## Cechy charakteru
 
 | Pozytywna cecha charakteru |                       |                    |
 | -------------------------- | --------------------- | ------------------ |
@@ -279,45 +283,44 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 | 33.Intuicyjny              | 66.Skoncentrowany     | 99.Zrównoważony    |
 |                            |                       | 100 Żądny przygód  |
 
-
 | Negatywna cecha charakteru |                       |                      |
 | -------------------------- | --------------------- | -------------------- |
-| 1. Aspołeczny              | 34.Niecierpliwy       | 67.Przewidywalny     |
-| 2. Autorytarny             | 35.Nieczuły           | 68.Psychopatyczny    |
-| 3. Bez poczucia humoru     | 36.Niedojrzały        | 69.Rozpieszczony     |
-| 4. Bez wdzięku             | 37.Niegodny zaufania  | 70.Sadysta           |
-| 5. Bezczelny               | 38.Niegrzeczny        | 71.Samolubny         |
-| 6. Bezduszny               | 39.Nielojalny         | 72.Sarkastyczny      |
-| 7. Bezlitosny              | 40.Nieracjonalny      | 73.Sknerus           |
-| 8. Bezmyślny               | 41.Nieśmiały          | 74.Słaby             |
-| 9. Bezwolny                | 42.Nietolerancyjny    | 75.Surowy            |
-| 10. Bigot                  | 43.Nieuczciwy         | 76.Syndrom bohatera  |
-| 11. Brudny                 | 44.Nieuporządkowany   | 77.Szorstki          |
-| 12. Brutalny               | 45.Nieuważny          | 78.Sztuczny          |
-| 13. Buntownicza            | 46.Niewłaściwy        | 79.Śliski            |
-| 14. Chaotyczny             | 47.Niezdyscyplinowany | 80.Tchórz            |
-| 15. Chytry                 | 48.Nijaki             | 81.Tępy              |
-| 16. Destrukcyjny           | 49.Obibok             | 82.Uciążliwy         |
-| 17. Destrukcyjny           | 50.Obłąkany           | 83.Uparty            |
-| 18. Dziecinny              | 51.Obojętny           | 84.Urażony           |
-| 19. Egoistyczny            | 52.Obraźliwy          | 85.Wąsko myślący     |
-| 20. Fałszywy               | 53.Obsesyjny          | 86.Wrogi             |
-| 21. Fanatyczny             | 54.Oszust             | 87.Wścibski          |
-| 22. Flirciarz              | 55.Pechowiec          | 88.Wybredny          |
-| 23. Głupi                  | 56.Pedantyczny        | 89.Wymagający        |
-| 24. Hipokryta              | 57.Pesymista          | 90.Zamknięty w sobie |
-| 25. Idiotyczny             | 58.Podstępny          | 91.Zapominalski      |
-| 26. Ignorant               | 59.Pompatyczny        | 92.Zarozumiały       |
-| 27. Kłamca                 | 60.Poszukiwacz chwały | 93.Zazdrosny         |
-| 28. Łatwowierny            | 61.Pracoholik         | 94.Zboczony          |
-| 29. Masochista             | 62.Pretensjonalny     | 95.Zdezorganizowany  |
-| 30. Nadgorliwy             | 63.Primadonna         | 96.Złośliwy          |
-| 31. Nadmiernie emocjonalny | 64.Prowokujący        | 97.Zły słuchacz      |
-| 32. Nerwowy                | 65.Próżny             | 98.Zuchwały          |
-| 33. Niechlujny             | 66.Przekupny          | 99.Żarłoczny         |
-|                            |                       | 100 Żartowniś        |
+| 1. Aspołeczny              | 34.Niecierpliwy       | 67.Psychopatyczny    |
+| 2. Autorytarny             | 35.Nieczuły           | 68.Rozpieszczony     |
+| 3. Bez poczucia humoru     | 36.Niedojrzały        | 69.Sadysta           |
+| 4. Bez wdzięku             | 37.Niegodny zaufania  | 70.Samolubny         |
+| 5. Bezczelny               | 38.Niegrzeczny        | 71.Sarkastyczny      |
+| 6. Bezduszny               | 39.Nielojalny         | 72.Sknerus           |
+| 7. Bezlitosny              | 40.Nieracjonalny      | 73.Słaby             |
+| 8. Bezmyślny               | 41.Nieśmiały          | 74.Surowy            |
+| 9. Bezwolny                | 42.Nietolerancyjny    | 75.Syndrom bohatera  |
+| 10. Bigot                  | 43.Nieuczciwy         | 76.Szorstki          |
+| 11. Brudny                 | 44.Nieuporządkowany   | 77.Sztuczny          |
+| 12. Brutalny               | 45.Nieuważny          | 78.Śliski            |
+| 13. Buntownicza            | 46.Niewłaściwy        | 79.Tchórz            |
+| 14. Chaotyczny             | 47.Niezdyscyplinowany | 80.Tępy              |
+| 15. Chytry                 | 48.Nijaki             | 81.Uciążliwy         |
+| 16. Destrukcyjny           | 49.Obibok             | 82.Uparty            |
+| 17. Destrukcyjny           | 50.Obłąkany           | 83.Urażony           |
+| 18. Dziecinny              | 51.Obojętny           | 84.Wąske horyzonty   |
+| 19. Egoistyczny            | 52.Obraźliwy          | 85.Wrogi             |
+| 20. Fałszywy               | 53.Obsesyjny          | 86.Wścibski          |
+| 21. Fanatyczny             | 54.Oszust             | 87.Wybredny          |
+| 22. Flirciarz              | 55.Pechowiec          | 88.Wymagający        |
+| 23. Głupi                  | 56.Pedantyczny        | 89.Zamknięty w sobie |
+| 24. Hipokryta              | 57.Pesymista          | 90.Zapominalski      |
+| 25. Idiotyczny             | 58.Podstępny          | 91.Zarozumiały       |
+| 26. Ignorant               | 59.Pompatyczny        | 92.Zazdrosny         |
+| 27. Kłamca                 | 60.Pracoholik         | 93.Zboczony          |
+| 28. Łatwowierny            | 61.Pretensjonalny     | 94.Zdezorganizowany  |
+| 29. Masochista             | 62.Primadonna         | 95.Złośliwy          |
+| 30. Nadgorliwy             | 63.Prowokujący        | 96.Zły słuchacz      |
+| 31. Nadmiernie emocjonalny | 64.Próżny             | 97.Zuchwały          |
+| 32. Nerwowy                | 65.Przekupny          | 98.Żarłoczny         |
+| 33. Niechlujny             | 66.Przewidywalny      | 99.Żartowniś         |
+|                            |                       | 100.Żądny chwały     |
 
-## Cel lub pragnienie (k100)
+## Cel lub pragnienie
 
 1. Nauczyć się nowej umiejętności związanej z zawodem
 2. Odłożyć pieniądze na operację kogoś bliskiego
@@ -328,7 +331,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 7. Żyć spokojnie i w miarę dostatnio
 8. Zapewnić swoim dzieciom lepszy start
 9. Wykraść dane z laboratorium korporacji
-10. Uciec przed gangiem ulicznym
+10. Uciec przed zemstą gangu ulicznego
 11. Pozbyć się niewygodnych wspomnień
 12. Wymazać swoją tożsamość z systemu
 13. Dorwać tego, kto wymordował moją rodzinę
@@ -376,8 +379,8 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 55. Zdobyć swój pierwszy milion subskrypcji
 56. Nauczyć się pilotażu
 57. Zbudować własne SI
-58. Wystąpić przed publicznością z własną piosenką
-59. Każda informacja powinna być powszechnie dostępna!
+58. Zaprezentować własną twórczość przed publicznością
+59. Udostępniać publicznie każdą zdobytą informację
 60. Uniknąć wyroku śmierci wydanego przez sektę
 61. Uwolnić kogoś bliskiego od wpływów sekty
 62. Wyleczyć kogoś bliskiego z uzależnienia
@@ -409,5 +412,13 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować (wszystkie r
 88. Wyplenić zło na tym świecie
 89. Być przykładnym obywatelem
 90. Uzyskać stopień naukowy
-
-
+91. Uniknąć odpowiedzialności za popełniony błąd
+92. Doświadczyć czegoś nowego
+93. Odnaleźć wewnętrzny spokój
+94. Obalić ten skorumpowany rząd
+95. Zdobyć kolejną działkę
+96. Bawić się do upadłego w najbliższy weekend
+97. Włamać się do systemu rządowego
+98. Odzyskać utraconą miłość
+99. Spalić cały ten pokręcony świat
+100. Założyć własny biznes
