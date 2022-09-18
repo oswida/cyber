@@ -8,7 +8,7 @@
    version="1.1"
    id="svg4807"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   sodipodi:docname="Charsheet2.svg"
+   sodipodi:docname="Charsheet2M1.svg"
    inkscape:export-filename="Charsheet2.jpg"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
@@ -28,15 +28,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.3278886"
-     inkscape:cx="204.45992"
-     inkscape:cy="581.37407"
+     inkscape:zoom="0.93895904"
+     inkscape:cx="364.23314"
+     inkscape:cy="480.31914"
      inkscape:window-width="1366"
      inkscape:window-height="699"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g602515"
+     inkscape:current-layer="layer1"
      showguides="false" />
   <defs
      id="defs4804">
@@ -324,6 +324,12 @@
        width="252.42131"
        height="32.750343"
        id="rect400456-6-9-2-9-3-6-6-4-5-7" />
+    <rect
+       x="9725.7656"
+       y="146.29839"
+       width="268.59677"
+       height="29.258304"
+       id="rect400456-6-9-2-9-0-67" />
   </defs>
   <g
      inkscape:label="Warstwa 1"
@@ -507,9 +513,9 @@
          transform="translate(30.540151,-15.246732)"><tspan
            x="9725.7656"
            y="167.5332"
-           id="tspan966"><tspan
+           id="tspan1731"><tspan
              style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
-             id="tspan964">Imię</tspan></tspan></text>
+             id="tspan1729">Imię</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text400454-1"
@@ -517,9 +523,9 @@
          transform="translate(29.288319,39.19208)"><tspan
            x="9725.7656"
            y="167.5332"
-           id="tspan970"><tspan
+           id="tspan1735"><tspan
              style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
-             id="tspan968">Przeszłość</tspan></tspan></text>
+             id="tspan1733">Przeszłość</tspan></tspan></text>
       <text
          xml:space="preserve"
          id="text400454-1-2"
@@ -527,9 +533,9 @@
          transform="translate(2.2176424,84.01293)"><tspan
            x="9725.7656"
            y="167.5332"
-           id="tspan974"><tspan
+           id="tspan1739"><tspan
              style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
-             id="tspan972">Abonament podstawowy</tspan></tspan></text>
+             id="tspan1737">Abonament podstawowy</tspan></tspan></text>
       <rect
          style="fill:none;stroke:#808080;stroke-width:1.0743;stroke-linejoin:round"
          id="rect400561"
@@ -561,9 +567,9 @@
            transform="translate(360.44052,84.01293)"><tspan
              x="9725.7656"
              y="167.5332"
-             id="tspan978"><tspan
+             id="tspan1743"><tspan
                style="font-size:21.3333px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
-               id="tspan976">Kredyty</tspan></tspan></text>
+               id="tspan1741">Kredyty</tspan></tspan></text>
         <rect
            style="font-variation-settings:'wght' 400;fill:none;stroke:#808080;stroke-width:1.30629;stroke-linejoin:round"
            id="rect54314"
@@ -574,15 +580,22 @@
       </g>
     </g>
     <rect
-       style="fill:none;stroke:#808080;stroke-width:0.332575;stroke-linejoin:round"
+       style="fill:none;stroke:#808080;stroke-width:0.260382;stroke-linejoin:round"
        id="rect450290"
-       width="187.63971"
-       height="64.922119"
-       x="9.9358282"
-       y="149.46465" />
+       width="114.89063"
+       height="64.994316"
+       x="9.8997316"
+       y="149.25443" />
+    <rect
+       style="fill:none;stroke:#808080;stroke-width:0.203473;stroke-linejoin:round"
+       id="rect450290-3"
+       width="70.096603"
+       height="65.051231"
+       x="129.39856"
+       y="149.22597" />
     <g
        id="g602515"
-       transform="matrix(0.26458327,0,0,0.26458333,-2550.4775,-1.4377452)">
+       transform="matrix(0.26458327,0,0,0.26458333,-2551.5359,-2.4188485)">
       <text
          xml:space="preserve"
          id="text400454-1-2-3-7-3"
@@ -590,11 +603,29 @@
          transform="translate(-45.657565,393.72123)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan984"><tspan
+           id="tspan1749"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan980">Cybermodyfikacje </tspan><tspan
-             style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=400';font-variation-settings:'wght' 400"
-             id="tspan982">(maksymalnie INF/3, zaokrąglone w górę)</tspan></tspan></text>
+             id="tspan1745">Cybermodyfikacje </tspan><tspan
+             style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal'"
+             id="tspan1747">(maks. INF/3)</tspan></tspan></text>
+    </g>
+    <g
+       id="g602515-5"
+       transform="matrix(0.26458327,0,0,0.26458333,-2432.6376,-1.9023818)">
+      <text
+         xml:space="preserve"
+         id="text400454-1-2-3-7-3-3"
+         style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect400456-6-9-2-9-0-67);display:inline;fill:#333333;fill-opacity:1;stroke:none"
+         transform="translate(-43.657565,393.72123)"><tspan
+           x="9725.7656"
+           y="168.25883"
+           id="tspan1757"><tspan
+             style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
+             id="tspan1751">Infodek </tspan><tspan
+             style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal'"
+             id="tspan1753">(maks. INF/3 aktywnych</tspan><tspan
+             style="font-size:16px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal '"
+             id="tspan1755">)</tspan></tspan></text>
     </g>
     <g
        id="g617186"
@@ -606,13 +637,13 @@
          transform="translate(-44.034898,703.06906)"><tspan
            x="9725.7656"
            y="168.25883"
-           id="tspan992"><tspan
+           id="tspan1765"><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan986">Ekwipunek </tspan><tspan
+             id="tspan1759">Ekwipunek </tspan><tspan
              style="font-size:14.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=400';font-variation-settings:'wght' 400"
-             id="tspan988">(2 x ręce, 2 x ciało plus pojemniki)</tspan><tspan
+             id="tspan1761">(2 x ręce, 2 x ciało plus pojemniki)</tspan><tspan
              style="font-family:Oxanium;-inkscape-font-specification:'Oxanium @wght=600';font-variation-settings:'wght' 600"
-             id="tspan990"> </tspan></tspan></text>
+             id="tspan1763"> </tspan></tspan></text>
     </g>
     <g
        id="g3882"
@@ -684,9 +715,9 @@
              y="0"><tspan
                x="9740.6361"
                y="165.8188"
-               id="tspan996"><tspan
+               id="tspan1769"><tspan
                  style="font-size:21.3333px"
-                 id="tspan994">BIO</tspan></tspan></text>
+                 id="tspan1767">BIO</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3"
@@ -694,7 +725,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan998">AKTUAL.</tspan></text>
+               id="tspan1771">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2"
@@ -702,7 +733,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan1000">MAKS.</tspan></text>
+               id="tspan1773">MAKS.</tspan></text>
         </g>
         <g
            id="g1910-8-3"
@@ -768,9 +799,9 @@
              y="0"><tspan
                x="9738.7481"
                y="165.8188"
-               id="tspan1004"><tspan
+               id="tspan1777"><tspan
                  style="font-size:21.3333px"
-                 id="tspan1002">PSY</tspan></tspan></text>
+                 id="tspan1775">PSY</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3-2"
@@ -778,7 +809,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan1006">AKTUAL.</tspan></text>
+               id="tspan1779">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2-7"
@@ -786,7 +817,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan1008">MAKS.</tspan></text>
+               id="tspan1781">MAKS.</tspan></text>
         </g>
         <g
            id="g1910-8-6"
@@ -852,9 +883,9 @@
              y="0"><tspan
                x="9741.1054"
                y="165.8188"
-               id="tspan1012"><tspan
+               id="tspan1785"><tspan
                  style="font-size:21.3333px"
-                 id="tspan1010">INF</tspan></tspan></text>
+                 id="tspan1783">INF</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3-7"
@@ -862,7 +893,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan1014">AKTUAL.</tspan></text>
+               id="tspan1787">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2-9"
@@ -870,7 +901,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan1016">MAKS.</tspan></text>
+               id="tspan1789">MAKS.</tspan></text>
         </g>
         <g
            id="g1910-8-3-5"
@@ -936,9 +967,9 @@
              y="0"><tspan
                x="9729.6708"
                y="165.8188"
-               id="tspan1020"><tspan
+               id="tspan1793"><tspan
                  style="font-size:21.3333px"
-                 id="tspan1018">OCHR</tspan></tspan></text>
+                 id="tspan1791">OCHR</tspan></tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-3-2-1"
@@ -946,7 +977,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2519.4705,130.36213)"><tspan
                x="9725.7656"
                y="154.83883"
-               id="tspan1022">AKTUAL.</tspan></text>
+               id="tspan1795">AKTUAL.</tspan></text>
           <text
              xml:space="preserve"
              id="text400454-1-2-3-7-5-0-2-2-7-2"
@@ -954,7 +985,7 @@
              transform="matrix(0.26458333,0,0,0.26458333,-2533.8423,138.53123)"><tspan
                x="9725.7656"
                y="156.05886"
-               id="tspan1024">MAKS.</tspan></text>
+               id="tspan1797">MAKS.</tspan></text>
         </g>
       </g>
       <g
@@ -988,9 +1019,9 @@
            transform="matrix(0.26458333,0,0,0.26458333,-2577.1319,142.69955)"><tspan
              x="9725.7656"
              y="156.05886"
-             id="tspan1028"><tspan
+             id="tspan1801"><tspan
                style="font-weight:600;-inkscape-font-specification:'Oxanium, Semi-Bold'"
-               id="tspan1026">DYSKOMFORT</tspan></tspan></text>
+               id="tspan1799">DYSKOMFORT</tspan></tspan></text>
       </g>
       <g
          id="g974">
@@ -1022,9 +1053,9 @@
              y="0"><tspan
                x="9732.0559"
                y="165.8188"
-               id="tspan1032"><tspan
+               id="tspan1805"><tspan
                  style="font-size:16px"
-                 id="tspan1030">PANCERZ</tspan></tspan></text>
+                 id="tspan1803">PANCERZ</tspan></tspan></text>
         </g>
       </g>
     </g>
@@ -1049,9 +1080,9 @@
        transform="matrix(0,-0.26458333,0.26458333,0,151.9342,2711.6455)"><tspan
          x="9725.7656"
          y="167.5332"
-         id="tspan1036"><tspan
+         id="tspan1809"><tspan
            style="font-size:10.6667px;font-family:Oxanium;-inkscape-font-specification:'Oxanium, Normal'"
-           id="tspan1034">Miejsce na twoje notatki</tspan></tspan></text>
+           id="tspan1807">Miejsce na twoje notatki</tspan></tspan></text>
     <g
        id="g3388"
        transform="translate(-0.03000095)">

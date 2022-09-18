@@ -62,7 +62,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować:
 
 ## Nazwisko
 
-| Imię        |              |               |
+| Nazwisko    |              |               |
 | ----------- | ------------ | ------------- |
 | 1.Adams     | 34.Harris    | 67.Phillips   |
 | 2.Allen     | 35.Henderson | 68.Powell     |
