@@ -5,3 +5,4 @@ export * from "./PageHeader";
 export * from "./PageContent";
 export * from "./PageRoot";
 export * from "./Card";
+export * from "./MenuOverlay";

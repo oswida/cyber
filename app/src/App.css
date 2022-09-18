@@ -17,5 +17,16 @@ body, html {
   border:0;
 }
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blinker 2s linear infinite;
+}
+
+
 
 

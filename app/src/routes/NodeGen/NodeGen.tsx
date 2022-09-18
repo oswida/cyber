@@ -1,13 +1,8 @@
-import { useRef, useState } from "react";
+import { useAtom } from "jotai";
+import { useEffect, useRef, useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import {
-  Button,
-  Flex,
-  PageContent,
-  PageHeader,
-  PageRoot,
-  Text,
-} from "~/component";
+import { currentPage } from "~/common";
+import { Button, Flex, PageContent, PageHeader, PageRoot } from "~/component";
 import { NodeClass, NodeType } from "~/data";
 import { Layout } from "../Layout";
 import { NodeCard } from "./NodeCard";
@@ -17,10 +12,15 @@ export const NodeGen = () => {
   const [data, setData] = useLocalStorageState<NodeType[]>("Cyber_NODEGEN", {
     defaultValue: [] as NodeType[],
   });
+  const [cp, setCp] = useAtom(currentPage);
   const { rollNode } = useNodeGen();
   const [modal, setModal] = useState(false);
   const [nclass, setNClass] = useState<NodeClass | undefined>(undefined);
   const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setCp("Infowęzeł");
+  }, []);
 
   const generate = (ntype?: NodeClass) => {
     setData((state) => [...state, ...rollNode(ntype)]);
@@ -60,14 +60,14 @@ export const NodeGen = () => {
     <Layout>
       <PageRoot>
         <PageHeader>
-          <Text
-            weight={"700"}
-            color="pink"
-            css={{ marginLeft: 10, textTransform: "uppercase" }}
+          <Flex
+            css={{
+              gap: 10,
+              paddingLeft: 10,
+              paddingBottom: 5,
+              overflow: "auto",
+            }}
           >
-            &gt; Węzeł Infosfery
-          </Text>
-          <Flex css={{ gap: 10 }}>
             <Button
               onClick={() => setModal(true)}
               title="Klasa węzła"

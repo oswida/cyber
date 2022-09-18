@@ -1,4 +1,7 @@
+import { useAtom } from "jotai";
+import { useEffect } from "react";
 import useLocalStorageState from "use-local-storage-state";
+import { currentPage } from "~/common";
 import {
   Button,
   Flex,
@@ -16,6 +19,12 @@ export const CorpoGen = () => {
   const [data, setData] = useLocalStorageState<CorpoType[]>("Cyber_CORPOGEN", {
     defaultValue: [] as CorpoType[],
   });
+  const [cp, setCp] = useAtom(currentPage);
+
+  useEffect(() => {
+    setCp("Korporacja");
+  }, []);
+
   const generate = () => {
     setData((state) => [...state, rollCorpo()]);
   };
@@ -43,14 +52,14 @@ export const CorpoGen = () => {
     <Layout>
       <PageRoot>
         <PageHeader>
-          <Text
-            color="pink"
-            weight={"700"}
-            css={{ marginLeft: 10, textTransform: "uppercase" }}
+          <Flex
+            css={{
+              gap: 10,
+              paddingLeft: 10,
+              paddingBottom: 5,
+              overflow: "auto",
+            }}
           >
-            &gt; Korporacja
-          </Text>
-          <Flex css={{ gap: 10 }}>
             <Button onClick={generate}>Generuj</Button>
             <Button onClick={clean}>Wyczyść</Button>
             <Button onClick={exportData} title="Eksportuj">

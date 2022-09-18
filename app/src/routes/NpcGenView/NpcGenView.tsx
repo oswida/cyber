@@ -1,4 +1,7 @@
+import { useAtom } from "jotai";
+import { useEffect } from "react";
 import useLocalStorageState from "use-local-storage-state";
+import { currentPage, menuVisible } from "~/common";
 import {
   Button,
   Flex,
@@ -13,10 +16,16 @@ import { NpcCard } from "./NpcCard";
 import { useNpcGen } from "./useNpcGen";
 
 export const NpcGenView = () => {
+  const [mv, setMV] = useAtom(menuVisible);
+  const [cp, setCp] = useAtom(currentPage);
   const [data, setData] = useLocalStorageState<NpcType[]>("Cyber_NPCGEN", {
     defaultValue: [] as NpcType[],
   });
   const { rollNpc } = useNpcGen();
+
+  useEffect(() => {
+    setCp("Postać");
+  }, []);
 
   const generate = () => {
     setData((state) => [...state, ...rollNpc()]);
@@ -48,14 +57,14 @@ export const NpcGenView = () => {
     <Layout>
       <PageRoot>
         <PageHeader>
-          <Text
-            color="pink"
-            weight={"700"}
-            css={{ marginLeft: 10, textTransform: "uppercase" }}
+          <Flex
+            css={{
+              gap: 10,
+              paddingLeft: 10,
+              paddingBottom: 5,
+              overflow: "auto",
+            }}
           >
-            &gt; Postać
-          </Text>
-          <Flex css={{ gap: 10 }}>
             <Button onClick={generate}>Generuj</Button>
             <Button onClick={clean}>Wyczyść</Button>
             <Button onClick={exportData} title="Eksportuj">
