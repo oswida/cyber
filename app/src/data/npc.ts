@@ -670,12 +670,22 @@ const npcLook = [
   "Wielki, podświetlany symbol religijny zawieszony na grubym łańcuchu",
   "Wygolona głowa z implantem sterującym do dronów",
   "Niebieski irokez i oczy z tęczówkami zmieniającymi kolor",
-  "Długie buty, krótkie spodenki, ortalionowa kurtka",
+  "Długie buty, krótkie spodenki, ortalionowa kurtka sygnalizacyjna",
   "Sportowy dres z neonowym logo znanej marki",
   "Ubranie khaki stylizowane na mundur",
   "Garnitur z heksagonalnym deseniem i logo znanej firmy",
   "Kamizelka wzmacniana stalowymi płytkami",
   "Białe, długie włosy i kowbojski kapelusz",
+  "Skóra rąk pokryta kolorowymi, gadzimi łuskami",
+  "Metalowa osłona czaszki z wbudowanym sonarem",
+  "Skóra twarzy z programowalnym makijażem",
+  "Cybernetyczny ogon z wmontowaną kamerą",
+  "Sztuczne skrzela z boku szyi",
+  "Karmazynowy kolor skóry i kostne narośla na czole",
+  "Całe ciało zamknięte w metalowej powłoce",
+  "Ubiór stylizowany na komiksowego superbohatera i wszczep symulujący supermoc",
+  "Ubiór stylizowany na wiktoriański, cylinder i laska z projektorem holograficznym",
+  "Hermetyczny kombinezon epidemiologiczny",
 ];
 
 const npcGear = [

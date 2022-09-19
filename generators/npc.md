@@ -184,16 +184,22 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować:
 42. Wielki, podświetlany symbol religijny zawieszony na grubym łańcuchu
 43. Wygolona głowa z implantem sterującym do dronów
 44. Niebieski irokez i oczy z tęczówkami zmieniającymi kolor
-45. Długie buty, krótkie spodenki, ortalionowa kurtka
+45. Długie buty, krótkie spodenki, ortalionowa kurtka sygnalizacyjna
 46. Sportowy dres z neonowym logo znanej marki
 47. Ubranie khaki stylizowane na mundur
 48. Garnitur z heksagonalnym deseniem i logo znanej firmy
 49. Kamizelka wzmacniana stalowymi płytkami
 50. Białe, długie włosy i kowbojski kapelusz
 51. Skóra rąk pokryta kolorowymi, gadzimi łuskami
-52. Metalowa osłona czaszki z wmontowanym reflektorem
+52. Metalowa osłona czaszki z wbudowanym sonarem
 53. Skóra twarzy z programowalnym makijażem
-54. 
+54. Cybernetyczny ogon z wmontowaną kamerą
+55. Sztuczne skrzela z boku szyi
+56. Karmazynowy kolor skóry i kostne narośla na czole
+57. Całe ciało zamknięte w metalowej powłoce
+58. Ubiór stylizowany na komiksowego superbohatera i wszczep symulujący supermoc
+59. Ubiór stylizowany na wiktoriański, cylinder i laska z projektorem holograficznym
+60. Hermetyczny kombinezon epidemiologiczny
 
 ## Sprzęt
 
