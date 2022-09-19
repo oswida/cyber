@@ -1,10 +1,10 @@
-<!-- ---
+---
 layout: default
 title: Economy
 parent: English version
 grand_parent: Dokumenty
 nav_order: 2
---- -->
+---
 
 # Products and services
 
@@ -44,21 +44,21 @@ Any equipment that is officially considered illegal requires appropriate contact
 | Backpack         |  400  |       +4        |
 | Hand trolley     |  600  |       +6        |
 
-| Weapon                |       Price       |      Damage dice      | Notes |
-| --------------------- | :---------------: | :-------------------: | ----- |
-| Melee (light)         |        100        |          d6           |       |
-| Melee (medium)        |        400        |          d8           |       |
-| Melee (heavy)         |        650        |          d10          | bulky |
-| Ranged (short range)  |        150        |          d6           |       |
-| Ranged (medium range) |        600        |          d8           |       |
-| Ranged (long range)   |       1000        |          d10          | bulky |
-| Ranged (long range)   |       1500        |      d12, blast       | bulky |
-| Grenades              |        200        |       d6, blast       |       |
-| Microcharges          |        150        |          d4           |       |
-| Explosives            | damage dice * 150 |     d6-d12, blast     |       |
-| EMP gun\*             |       2000        | d8, blast, INT damage | bulky |
+| Weapon                |       Price       |      Damage dice      | Notes                          |
+| --------------------- | :---------------: | :-------------------: | ------------------------------ |
+| Melee (light)         |        100        |          d6           | knife, club                    |
+| Melee (medium)        |        400        |          d8           | sword, axe                     |
+| Melee (heavy)         |        650        |          d10          | bulky, mechanical blades       |
+| Ranged (short range)  |        150        |          d6           | pistol, shotgun                |
+| Ranged (medium range) |        600        |          d8           | rifle, automatic weapon, bow   |
+| Ranged (long range)   |       1000        |          d10          | bulky, carbine, cannon         |
+| Ranged (long range)   |       1500        |      d12, blast       | bulky, rocket/missile launcher |
+| Grenades              |        200        |       d6, blast       |                                |
+| Microcharges          |        150        |          d4           |                                |
+| Explosives            | damage dice * 150 |     d6-d12, blast     |                                |
+| EMP cannon\*          |       2000        | d8, blast, INF damage | bulky                          |
 
-\* *Critical Damage*: if the target has a neuroprocessor, inflict, the same number of PSY damage as you inflicted INT this turn.
+\* *Critical Damage*: if the target has a neuroprocessor, inflict, the same number of PSY damage as you inflicted INF this turn.
 
 | Armor  | Price | Level | Notes |
 | ------ | :---: | :---: | ----- |
@@ -69,14 +69,14 @@ Any equipment that is officially considered illegal requires appropriate contact
 
 | Drones, vehicles, robots             |         Price          | Inventory Slots |
 | ------------------------------------ | :--------------------: | :-------------: |
-| Small  drone/robot                   |          1000          |       +2        |
-| Medium  drone/robot                  |          5000          |       +4        |
-| Large    drone/robot                 |         10000          |       +6        |
-| Transport drone/robot                |         20000          |       +12       |
-| Small vehicle                        |          5000          |       +6        |
-| Medium vehicle                       |          7000          |       +8        |
-| Large vehicle                        |         10000          |       +10       |
-| Transport vehicle                    |         20000          |       +12       |
+| Small  drone/robot                   |         10000          |       +2        |
+| Medium  drone/robot                  |         50000          |       +4        |
+| Large    drone/robot                 |         100000         |       +6        |
+| Transport drone/robot                |         200000         |       +12       |
+| Small vehicle                        |         50000          |       +6        |
+| Medium vehicle                       |         70000          |       +8        |
+| Large vehicle                        |         100000         |       +10       |
+| Transport vehicle                    |         200000         |       +12       |
 | Accessories (cameras, sensors, etc.) |       1000  each       |        -        |
 | Mounted weapons                      |   damage dice * 1500   |        -        |
 | Armor                                | 5000 per point (max 3) |        -        |
@@ -89,8 +89,9 @@ Any equipment that is officially considered illegal requires appropriate contact
 | Black ICE (illegal) | damage dice * 5000 |
 
 
-| Medical/repair services  |        Price        |            Time            |
-| ------------------------ | :-----------------: | :------------------------: |
-| Medical assistance       | 2000 per BOD point  | 1 day per 1 pt, max 7 days |
-| Psychological assistance | 1500  per PSY point | 1 day per 1 pt, max 7 days |
-| Interface repair         | 2000 per INT point  |      2 hours per 1 pt      |
+| Medical/repair services   |        Price        |            Time            |
+| ------------------------- | :-----------------: | :------------------------: |
+| Medical assistance        | 1000 per BIO point  | 1 day per 1 pt, max 7 days |
+| Psychological assistance  | 1000  per PSY point | 1 day per 1 pt, max 7 days |
+| Interface repair          |  500 per INF point  |      2 hours per 1 pt      |
+| Stimulant pack (10 doses) |        1000         |      immediate effect      |

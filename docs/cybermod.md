@@ -34,7 +34,7 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 | ------------------------------------------------------------------------------------------------------------------------- | --------------------------- | :-------------------: | :-------: |
 | +1 OCHR przy rozstrzyganiu ataku                                                                                          | 1 000                       |          +3           |    tak    |
 | +1 do wybranej zdolności (BIO,PSY,INF) przy teście                                                                        | 7 000                       | +1 (wyklucza poniżej) |    tak    |
-| +1 do rzutu wybranej zdolności przy teście dla konkretnej grupy aktywności                                                | 4 000                       | +3 (wyklucza powyżej) |    tak    |
+| +1 do wybranej zdolności przy teście dla konkretnej grupy aktywności                                                      | 4 000                       | +3 (wyklucza powyżej) |    tak    |
 | +1 do Pancerza podczas rozstrzygania obrażeń BIO                                                                          | 10 000                      |   +3 (całość <= 3)    |     -     |
 | +1 miejsce w ekwipunku                                                                                                    | 1 000                       |          +1           |     -     |
 | wmontowane uzbrojenie                                                                                                     | rodzaj kości obrażeń * 1500 |          k12          |     -     |
@@ -52,16 +52,16 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 
 - **Opis**: Wewnętrzczaszkowy wszczep neuroprocesora, z wbudowaną szerokopasmową anteną do transmisji bezprzewodowych oraz gniazdem optycznym do połączenia przewodowego.
 - **Części**: cybermod bazowy (głowa), neuroprocesor k4
-- **Cena**: 2000 + 4000 = `6 000` ℂ
+- **Cena**: 2000 + 6000 = `8 000` ℂ
 
 #### Cybernetyczna ręka z wysuwanymi szponami
 
 - **Opis**: Kończyna z ciemnego metalu, pokryta syntetyczną skórą. Na przedramieniu, po wewnętrznej stronie mała skrytka otwierana za pomocą odpowiedniego nacisku. W dłoni umieszczone cztery długie, stalowe, wysuwane szpony.
 - **Części**: cybermod bazowy (ręka), +1 miejsce w ekwipunku, szpony k6
-- **Cena**: 1000 + 1000 + 6000 = `8 000` ℂ
+- **Cena**: 1000 + 1000 + 9000 = `11 000` ℂ
 
 #### Dermozbroja
 
 - **Opis**: Cienka siatka z plastostali, umieszczona pod skórą, pokrywająca ramiona, klatkę piersiową i plecy. Mały generator wbudowany w biodro pozwala dodatkowo porazić ładunkiem elektrycznym wszystkich, którzy dotykają postaci z dermozbroją.
 - **Części**: cybermod bazowy (tułów), +1 pancerza, wyładowanie elektryczne k4, obrażenia krytyczne: paraliż na k4 rund
-- **Cena**: 5000 + 10000 + 4000 + 1500 = `20 500` ℂ
+- **Cena**: 5000 + 10000 + 6000 + 1500 = `22 500` ℂ

@@ -59,7 +59,7 @@ Dokumenty w formacie PDF dostępne są na [itch.io](https://oskarswida.itch.io/c
 ### Imię, przeszłość, majątek
 
 Wybierz imię dla swojej postaci oraz jej [przeszłość](./background.md), która informuje o wiedzy i potencjalnych umiejętnościach wynikających z doświadczenia życiowego bohatera.
-Rzuć **1k4** i pomnóż przez **1000** - to początkowa ilość kredytów, które posiada Twoja postać. Mogą one zostać użyte do zakupu ekwipunku startowego (patrz Wyposażenie i Ekonomia).
+Rzuć **1k4** i pomnóż przez **1000** - to początkowa ilość kredytów, które posiada Twoja postać. Mogą one zostać użyte do zakupu ekwipunku startowego (patrz [Wyposażenie](#wyposażenie) i [Ekonomia](#ekonomia)).
 
 ### Poziomy zdolności
 
@@ -76,7 +76,7 @@ Podczas tworzenia postaci, gracz powinien rzucić **3k6** kolejno dla każdej zd
 
 ### Ochrona przed trafieniem
 
-Rzuć **1k6** aby określić początkową wartość atrybutu **Ochrona przed trafieniem** (OCHR), który odzwierciedla umiejętność unikania obrażeń w walce. OCHR nie opisuje zdrowia ani wytrzymałości postaci; postacie nie tracą też tego współczynnika na zbyt długi czas (patrz **Leczenie**).
+Rzuć **1k6** aby określić początkową wartość atrybutu **Ochrona przed trafieniem** (OCHR), który odzwierciedla umiejętność unikania obrażeń w walce. OCHR nie opisuje zdrowia ani wytrzymałości postaci; postacie nie tracą też tego współczynnika na zbyt długi czas (patrz [Leczenie](#leczenie)).
 
 ### Wyposażenie
 
@@ -213,7 +213,7 @@ Obrażenia, które redukują OCHR celu poniżej zera, zmniejszają BIO/INF celu 
 
 Każda postać, która otrzyma obrażenia krytyczne w BIO, nie może zrobić nic poza słabym czołganiem się i kurczowym chwytaniem się resztek życia. Jeśli otrzyma pomoc i będzie mogła odpocząć, jej stan ulegnie stabilizacji. Jeśli postać nie będzie leczona, umrze w ciągu godziny.
 
-Każda postać, która otrzyma obrażenia krytyczne w INF, zostaje unieruchomiona w Infosferze (nie może się przemieszczać pomiędzy węzłami) lub wszystkie jej cybermodyfikacje przestają działać jeśli operuje w świecie fizycznym.
+Każda postać, która otrzyma obrażenia krytyczne w INF, zostaje unieruchomiona w Infosferze (nie może się przemieszczać pomiędzy węzłami) lub wszystkie jej cybermodyfikacje tymczasowo przestają działać jeśli operuje w świecie fizycznym.
 
 **Czarny LOD** oraz **broń EMP** posiadają dodatkowy efekt obrażeń krytycznych: *"jeśli cel posiada neuroprocesor, zadaj tyle punktów obrażeń w PSY celu ile zostało zadanych w INF w tej turze"*.
 
@@ -232,6 +232,7 @@ Ucieczka w trudnej sytuacji zawsze wymaga udanego rzutu obronnego odpowiedniej z
 Duże grupy podobnych wojowników walczących razem są traktowane jako pojedyncze **oddziały**. Kiedy oddział otrzymuje krytyczne obrażenia, zostaje rozproszony lub znacznie osłabiony. Kiedy osiągnie 0 BIO, zostaje zniszczony.
 
 Ataki jednostek na oddziały są [osłabione](#modyfikatory-ataku) (z wyjątkiem obrażeń od [podmuchu](#podmuch)).
+
 Ataki oddziałów na jednostki są [wzmocnione](#modyfikatory-ataku) i zadają obrażenia takie jak od [podmuchu](#podmuch).
 
 #### Morale
@@ -266,17 +267,15 @@ Wyjątkiem od tego systemu abonamentowego są artykuły, usługi i sprzęt specj
 Część z wyjątków powyżej ma swoje oddzielne cenniki a pozostałe zależą od konkretnej potrzeby i oferty - będą zatem przedmiotem negocjacji pomiędzy postaciami graczy a bohaterami niezależnymi.
 Wszelki sprzęt uznawany oficjalnie za nielegalny wymaga odpowiednich kontaktów i może mieć dowolną cenę.
 
-Szczegółowy wykaz produktów i usług oraz wymaganych poziomów kredytu znajdziesz w [dodatku](./equipment.md).
+Szczegółowy wykaz produktów i usług oraz ich cen znajdziesz w [dodatku](./equipment.md).
 
 ### Infosfera
 
-Infosfera to globalna sieć komputerowa, która łączy niemal wszystkie urządzenia i systemy służące człowiekowi. Poszczególne skupiska danych określane są węzłami i reprezentowane jak odpowiedniki "miejsc" w świecie fizycznym.
+**Infosfera** to globalna sieć komputerowa, która łączy niemal wszystkie urządzenia i systemy służące człowiekowi. Poszczególne skupiska danych określane są węzłami i reprezentowane jak odpowiedniki "miejsc" w świecie fizycznym.
 
 Każda postać ma możliwość interakcji z siecią za pomocą awatara reprezentującego danego bohatera. Podłączenie do sieci nie wymaga dodatkowego wyposażenia i odbywa się w sposób bezprzewodowy.
 
 Istnieje możliwość zablokowania dostępu do Infosfery aczkolwiek wszelkie urządzenia, które to realizują są oficjalnie **nielegalne**.
-
-Wszystkie ryzykowne sytuacje w Infosferze są rozwiązywane za pomocą testu zdolności **Interfejs**. Podobnie jest z  obrażeniami, które przewyższają poziom OCHR postaci - powodują one zmniejszanie zdolności Interfejs zamiast zdolności Ciało.
 
 Każda postać może wykonywać pewien zestaw standardowych czynności w Infosferze:
 
@@ -287,18 +286,17 @@ Każda postać może wykonywać pewien zestaw standardowych czynności w Infosfe
 
 Wszystkie inne działania takie jak: **hakowanie, ochrona, dostęp do zastrzeżonej informacji** wymagają cybermodyfikacji określanej jako **neuroprocesor**.
 
-**Działania w Infosferze** są rozstrzygane podobnie jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs.
-Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest redukowana przez ataki jest Interfejs zamiast Ciała.
+**Działania w Infosferze** są rozstrzygane podobnie jak w świecie fizycznym, z tą różnicą, że współczynnikiem branym pod uwagę przy rzutach obronnych jest Interfejs. Podobnie, w sytuacji gdy OCHR postaci spadnie do zera, zdolnością, która jest redukowana przez ataki jest Interfejs zamiast Biologii.
 
 **Blokada**: zredukowanie INF postaci do zera oznacza, że nie może ona korzystać z Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności.
 
-**Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INF. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest wykonanie ataków za pomocą odpowiednich cybermodyfikacji. Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **aktualny poziom INF**.
+**Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INF. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest wykonanie ataków za pomocą neuroprocesora. Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **aktualny poziom INF**.
 
 **Niszczenie danych**: Po zredukowaniu OCHR węzła do zera, gracz może nadal wykonywać atak ale tym razem będzie zmniejszał INF węzła. Zredukowanie **INF węzła do zera** oznacza bezpowrotne **zniszczenie danych lub programu** (o ile ich właściciel nie miał kopii zapasowej). Zmniejszanie INF węzła do wartości innych niż zero nie daje żadnych efektów w grze.
 
 **Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy posiadać neuroprocesor i zdać test INF. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
 
-**Logiczne Oprogramowanie Defensywne (LÓD)**: węzły Infosfery mogą posiadać automatyczne systemy obronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie hakowania wykonują atak na postać, redukując jej INF. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
+**Logiczne Oprogramowanie Defensywne (LOD)**: węzły Infosfery mogą posiadać automatyczne systemy obronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie hakowania wykonują atak na postać, redukując jej OCHR i INF. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
 
 **Czarny LOD** (oficjalnie nielegalny), posiada dodatkową cechę:
 
