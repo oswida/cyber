@@ -59,40 +59,37 @@ nav_order: 3
 
 | Nazwa 2            |                   |
 | ------------------ | ----------------- |
-| 1. Group           | 34. Products      |
-| 2. Industries      | 35. Semiconductor |
-| 3. Ltd             | 36. Cargo         |
-| 4. GmbH            | 37. Research      |
-| 5. Corporation     | 38. Machines      |
-| 6. Defense         | 39. Logistics     |
-| 7. Security        | 40. Motors        |
-| 8. Healthcare      | 41. Instruments   |
-| 9. Entertainment   | 42. Radiotechnics |
-| 10. Communications | 43. Delivery      |
-| 11. Transportation | 44. Agricultural  |
-| 12. Syndicate      | 45. Consumables   |
-| 13. MegaCorp       | 46. Systems       |
-| 14. Digital        | 47. Nanotech      |
-| 15. Cybertronic    | 48. Biotech       |
-| 16. Mechatronic    | 49. Genotech      |
-| 17. Services       | 50. Commtech      |
-| 18. Sciences       | 51. Prototech     |
-| 19. Electric       | 52. Cybertech     |
-| 20. Cosmetics      | 53. Genomics      |
-| 21. Management     | 54. Computers     |
-| 22. Consulting     | 55. Interactive   |
-| 23. Solutions      | 56. Laboratory    |
-| 24. Investments    | 57. Games         |
-| 25. Tacticals      | 58. Cybernetics   |
-| 26. Technologies   | 59. Aerospace     |
-| 27. Incorporated   | 60. Express       |
-| 28. Manufacturing  | 61.               |
-| 29. Software       | 62.               |
-| 30. Automotive     | 63.               |
-| 31. Chemicals      | 64.               |
-| 32. Engineering    | 65.               |
-| 33. Financials     | 66.               |
-|                    |                   |
+| 1. Group           | 31. Chemicals     |
+| 2. Industries      | 32. Engineering   |
+| 3. Ltd             | 33. Financials    |
+| 4. GmbH            | 34. Products      |
+| 5. Corporation     | 35. Semiconductor |
+| 6. Defense         | 36. Cargo         |
+| 7. Security        | 37. Research      |
+| 8. Healthcare      | 38. Machines      |
+| 9. Entertainment   | 39. Logistics     |
+| 10. Communications | 40. Motors        |
+| 11. Transportation | 41. Instruments   |
+| 12. Syndicate      | 42. Radiotechnics |
+| 13. MegaCorp       | 43. Delivery      |
+| 14. Digital        | 44. Agricultural  |
+| 15. Cybertronic    | 45. Consumables   |
+| 16. Mechatronic    | 46. Systems       |
+| 17. Services       | 47. Nanotech      |
+| 18. Sciences       | 48. Biotech       |
+| 19. Electric       | 49. Genotech      |
+| 20. Cosmetics      | 50. Commtech      |
+| 21. Management     | 51. Prototech     |
+| 22. Consulting     | 52. Cybertech     |
+| 23. Solutions      | 53. Genomics      |
+| 24. Investments    | 54. Computers     |
+| 25. Tacticals      | 55. Interactive   |
+| 26. Technologies   | 56. Laboratory    |
+| 27. Incorporated   | 57. Games         |
+| 28. Manufacturing  | 58. Cybernetics   |
+| 29. Software       | 59. Aerospace     |
+| 30. Automotive     | 60. Express       |
+
 
 ## Dziedzina
 

@@ -5,7 +5,7 @@ parent: Generatory
 nav_order: 1
 ---
 
-# Generator: Bohater niezależny (w przygotowaniu)
+# Generator: Bohater niezależny
 
 [Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/npc)
 
@@ -101,42 +101,42 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować:
 
 ## Zajęcie
 
-| Zajęcie                              |                                       |                                    |
-| ------------------------------------ | ------------------------------------- | ---------------------------------- |
-| 1.Aktywista                          | 34.Kontroler ruchu powietrznego       | 67.Programista zabezpieczeń        |
-| 2.Akwizytor                          | 35.Korporacyjny szpieg                | 68.Programista SI                  |
-| 3.Analityk danych                    | 36.Kosmetyczka                        | 69.Prostytutka                     |
-| 4.Ankieter                           | 37.Kucharz                            | 70.Przemytnik                      |
-| 5.Asystent osobisty                  | 38.Kurier                             | 71.Przywódca sekty                 |
-| 6.Barman                             | 39.Laborant                           | 72.Reporter kanału informacyjnego  |
-| 7.Bimbrownik                         | 40.Lekarz                             | 73.Robotnik fabryczny              |
-| 8.Chemik                             | 41.Łowca talentów                     | 74.Rusznikarz                      |
-| 9.Cybertechnik                       | 42.Magazynier                         | 75.Sanitariusz                     |
-| 10.Detektyw                          | 43.Makler giełdowy                    | 76.Sekretarka                      |
-| 11.Ekoterrorysta                     | 44.Masażystka                         | 77.Specjalista ds Public Relations |
-| 12.Elektryk                          | 45.Mechanik                           | 78.Sportowiec                      |
-| 13.Fryzjerka                         | 46.Muzyk                              | 79.Sprzątacz                       |
-| 14.Gejsza                            | 47.Najemnik                           | 80.Sprzedawca sklepowy             |
-| 15.Grafik                            | 48.Nauczyciel                         | 81.Stróż nocny                     |
-| 16.Gospodarz "reality show"          | 49.Naukowiec                          | 82.Stylistka                       |
-| 17.Gwiazda "reality show"            | 50.Negocjator                         | 83.Szef gangu                      |
-| 18.Haker                             | 51.Ochroniarz                         | 84.Taksówkarz                      |
-| 19.Handlarz bronią                   | 52.Ogrodnik                           | 85.Tatuażysta                      |
-| 20.Handlarz narkotykami              | 53.Operator dronów                    | 86.Technik robotyk                 |
-| 21.Handlarz oprogramowaniem          | 54.Operator maszyn ciężkich           | 87.Technik telekomunikacyjny       |
-| 22.Hodowca zwierząt domowych         | 55.Opiekunka do dzieci                | 88.Technik budowlany               |
-| 23.Hostessa                          | 56.Paser                              | 89.Tester oprogramowania           |
-| 24.Influencer                        | 57.Pielęgniarka                       | 90.Trener e-sportu                 |
-| 25.Instruktor fitness                | 58.Pilot cywilny                      | 91.Uliczny iluzjonista             |
-| 26.Instruktor sztuki walki           | 59.Pilot wojskowy                     | 92.Uliczny kaznodzieja             |
-| 27.Inżynier genetyk                  | 60.Piosenkarz                         | 93.Urzędnik Administracji          |
-| 28.Inżynier elektronik               | 61.Pisarz                             | 94.Właściciel klubu                |
-| 29.Inżynier nanotechnologii          | 62.Policjant                          | 95.Zabójca                         |
-| 30.Kierowca ciężarówki transportowej | 63.Pomocnik do wynajęcia              | 96.Zawodnik e-sportu               |
-| 31.Kierowca komunikacji publicznej   | 64.Portier                            | 97.Zawodnik sportów walki          |
-| 32.Kierowca wyścigowy                | 65.Pracownik pogotowia energetycznego | 98.Złodziej                        |
-| 33.Klubowy DJ                        | 66.Programista gier                   | 99.Złomiarz                        |
-|                                      |                                       | 100 Żołnierz                       |
+| Zajęcie                      |                                    |                                    |
+| ---------------------------- | ---------------------------------- | ---------------------------------- |
+| 1.Aktywista                  | 34.Kontroler ruchu                 | 67.Programista zabezpieczeń        |
+| 2.Akwizytor                  | 35.Korporacyjny szpieg             | 68.Programista SI                  |
+| 3.Analityk danych            | 36.Kosmetyczka                     | 69.Prostytutka                     |
+| 4.Ankieter                   | 37.Kucharz                         | 70.Przemytnik                      |
+| 5.Asystent osobisty          | 38.Kurier                          | 71.Przywódca sekty                 |
+| 6.Barman                     | 39.Laborant                        | 72.Reporter kanału informacyjnego  |
+| 7.Bimbrownik                 | 40.Lekarz                          | 73.Robotnik fabryczny              |
+| 8.Chemik                     | 41.Łowca talentów                  | 74.Rusznikarz                      |
+| 9.Cybertechnik               | 42.Magazynier                      | 75.Sanitariusz                     |
+| 10.Detektyw                  | 43.Makler giełdowy                 | 76.Sekretarka                      |
+| 11.Ekoterrorysta             | 44.Masażystka                      | 77.Specjalista ds Public Relations |
+| 12.Elektryk                  | 45.Mechanik                        | 78.Sportowiec                      |
+| 13.Fryzjerka                 | 46.Muzyk                           | 79.Sprzątacz                       |
+| 14.Gejsza                    | 47.Najemnik                        | 80.Sprzedawca sklepowy             |
+| 15.Grafik                    | 48.Nauczyciel                      | 81.Stróż nocny                     |
+| 16.Gospodarz "reality show"  | 49.Naukowiec                       | 82.Stylistka                       |
+| 17.Gwiazda "reality show"    | 50.Negocjator                      | 83.Szef gangu                      |
+| 18.Haker                     | 51.Ochroniarz                      | 84.Taksówkarz                      |
+| 19.Handlarz bronią           | 52.Ogrodnik                        | 85.Tatuażysta                      |
+| 20.Handlarz narkotykami      | 53.Operator dronów                 | 86.Technik robotyk                 |
+| 21.Handlarz software'em      | 54.Operator maszyn ciężkich        | 87.Technik telekomunikacyjny       |
+| 22.Hodowca zwierząt domowych | 55.Opiekunka do dzieci             | 88.Technik budowlany               |
+| 23.Hostessa                  | 56.Paser                           | 89.Tester oprogramowania           |
+| 24.Influencer                | 57.Pielęgniarka                    | 90.Trener e-sportu                 |
+| 25.Instruktor fitness        | 58.Pilot cywilny                   | 91.Uliczny iluzjonista             |
+| 26.Instruktor sztuki walki   | 59.Pilot wojskowy                  | 92.Uliczny kaznodzieja             |
+| 27.Inżynier genetyk          | 60.Piosenkarz                      | 93.Urzędnik Administracji          |
+| 28.Inżynier elektronik       | 61.Pisarz                          | 94.Właściciel klubu                |
+| 29.Inżynier nanotechnolog    | 62.Policjant                       | 95.Zabójca                         |
+| 30.Kierowca transportowy     | 63.Pomocnik do wynajęcia           | 96.Zawodnik e-sportu               |
+| 31.Kierowca autobusu         | 64.Portier                         | 97.Zawodnik sportów walki          |
+| 32.Kierowca wyścigowy        | 65.Pracownik wsparcia technicznego | 98.Złodziej                        |
+| 33.Klubowy DJ                | 66.Programista gier                | 99.Złomiarz                        |
+|                              |                                    | 100 Żołnierz                       |
 
 ## Charakterystyczny element wyglądu
 
@@ -150,7 +150,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować:
 8. Czarny kombinezon rowerowy
 9. Różowy irokez i czerwone cybernetyczne oczy
 10. Szary garnitur i lustrzane okulary
-11. Całe ciało pokryte tautażami
+11. Całe ciało pokryte tatuażami
 12. Ciężkie cybernetyczne dłonie
 13. Wszystkie zęby przekształcone w kły
 14. Cybernetyczne przewody na powierzchni skóry
@@ -179,7 +179,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować:
 37. Wojskowy beret i apaszka
 38. Długi błyszczący płaszcz z kolorowym, futrzanym kołnierzem
 39. Obcisły, skórzany kombinezon
-40. Bejsbolówka i zółte słuchawki na uszach
+40. Bejsbolówka i żółte słuchawki na uszach
 41. Długa, miękka szata ze złotymi nitkami
 42. Wielki, podświetlany symbol religijny zawieszony na grubym łańcuchu
 43. Wygolona głowa z implantem sterującym do dronów
@@ -190,6 +190,10 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować:
 48. Garnitur z heksagonalnym deseniem i logo znanej firmy
 49. Kamizelka wzmacniana stalowymi płytkami
 50. Białe, długie włosy i kowbojski kapelusz
+51. Skóra rąk pokryta kolorowymi, gadzimi łuskami
+52. Metalowa osłona czaszki z wmontowanym reflektorem
+53. Skóra twarzy z programowalnym makijażem
+54. 
 
 ## Sprzęt
 

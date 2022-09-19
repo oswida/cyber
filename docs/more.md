@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Więcej cyberpunka
+title: Cyber Plus
 parent: Dokumenty
 nav_order: 5
 ---
 
-# Więcej cyberpunka w cyberpunku (w przygotowaniu)
+# Cyber Plus (w przygotowaniu)
 
 Rozszerzenie to zawiera zestaw dodatkowych mechanik, które możecie wykorzystać lub nie - wedle uznania.
 
@@ -47,4 +47,21 @@ Całkowita redukcja obrażeń INF wywoływanych przez broń EMP nie jest możliw
 
 ### Przykłady klasycznych cybermodów
 
-TBD...
+| Nazwa                           | Efekt                                                                 |
+| ------------------------------- | --------------------------------------------------------------------- |
+| Dermozbroja                     | +1 do +3 pancerza                                                     |
+| Kieszeń podskórna               | +1 slot ekwipunku                                                     |
+| Skrytka w cyberkończynie        | +1 slot ekwipunku                                                     |
+| Neuroprocesor                   | Możliwość hakowania i zapory w Infosferze                             |
+| Koprocesor sieciowy             | +1 do +3 przy testach INF                                             |
+| Wzmocnienie mięśnio-szkieletowe | +1 do +3 przy testach BIO                                             |
+| Procesor behawioralny           | +1 do +3 przy testach PSY                                             |
+| Akcelerator neuroimpulsów       | +1 do +3 BIO przy testach związanych z szybkością reakcji             |
+| Stabilizator mięśniowy          | +1 do +3 BIO przy testach związanych z precyzyjnym operowaniem ciałem |
+| Wzmacniacz kognitywny           | +1 do +3 PSY przy testach związanych z poznawaniem, wiedzą, nauką     |
+| Stymulator bio/psy/neuralny     | ułatwienie testu dla BIO/PSY/INF                                      |
+| Biosystem taktyczny             | +1 do +3 OCHR przy rozliczaniu ataku                                  |
+| Implant celowniczy              | wybrane obrażenia krytyczne bez ran                                   |
+| Neurokontroler dronów/pojazdów  | +1 BIO przy testach związanych ze sterowaniem                         |
+| Neurokontroler broni            | obrażenia krytyczne zadające dodatkowe rany                           |
+

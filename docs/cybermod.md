@@ -33,13 +33,13 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 | Modyfikacja                                                                                                               | Cena                        | Maksimum  na cybermod | Aktywacja |
 | ------------------------------------------------------------------------------------------------------------------------- | --------------------------- | :-------------------: | :-------: |
 | +1 OCHR przy rozstrzyganiu ataku                                                                                          | 1 000                       |          +3           |    tak    |
-| +1 do wybranej zdolności (BIO,PSY,INF) przy teście                                                                        | 7 000                       | +3 (wyklucza poniżej) |    tak    |
+| +1 do wybranej zdolności (BIO,PSY,INF) przy teście                                                                        | 7 000                       | +1 (wyklucza poniżej) |    tak    |
 | +1 do rzutu wybranej zdolności przy teście dla konkretnej grupy aktywności                                                | 4 000                       | +3 (wyklucza powyżej) |    tak    |
 | +1 do Pancerza podczas rozstrzygania obrażeń BIO                                                                          | 10 000                      |   +3 (całość <= 3)    |     -     |
 | +1 miejsce w ekwipunku                                                                                                    | 1 000                       |          +1           |     -     |
 | wmontowane uzbrojenie                                                                                                     | rodzaj kości obrażeń * 1500 |          k12          |     -     |
 | neuroprocesor do hakowania i zapory\*                                                                                     | rodzaj kości obrażeń * 1500 |          k12          |     -     |
-| ułatwienie/utrudnienie testu dla jednej wybranej zdolności                                                                | 3 500                       |    3 (BIO,PSY,INF)    |    tak    |
+| ułatwienie/utrudnienie testu dla jednej wybranej zdolności                                                                | 3 500                       |    1 (BIO,PSY,INF)    |    tak    |
 | obrażenia krytyczne, które nie ranią celu                                                                                 | 1 500                       | 1 (wyklucza poniżej)  |    tak    |
 | obrażenia krytyczne, które zadają dodatkowe obrażenia                                                                     | rodzaj kości obrażeń * 500  | 1  (wyklucza powyżej) |    tak    |
 | dodatkowa funkcjonalność nie zwiększająca współczynników np. narzędzia w dłoni, oko z podczerwienią, filtry antytoksynowe | 1 000                       |           2           |     -     |
