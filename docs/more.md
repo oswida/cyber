@@ -1,10 +1,3 @@
----
-layout: default
-title: Cyber Plus
-parent: Dokumenty
-nav_order: 5
----
-
 # Cyber Plus (w przygotowaniu)
 
 Rozszerzenie to zawiera zestaw dodatkowych mechanik, które możecie wykorzystać lub nie - wedle uznania.

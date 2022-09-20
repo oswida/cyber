@@ -46,21 +46,48 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 
 \* Uwaga: neuroprocesor pozwala wykonywać akcje hakowania i zapory w Infosferze ale jednocześnie umożliwia programom zadawanie obrażeń w PSY właściciela.
 
-### Przykłady
+## Ekranowanie wszczepów
 
-#### Najprostszy interfejs pozwalający na hakowanie w sieci
+Całkowita redukcja obrażeń INF wywoływanych przez broń EMP nie jest możliwa, ale każda z postaci może dokupić ekranowanie EMP:
+
+| Modyfikacja                                      | Cena   | Maksimum na postać | Aktywacja |
+| ------------------------------------------------ | ------ | :----------------: | :-------: |
+| +1 do Pancerza podczas rozstrzygania obrażeń INF | 10 000 |         +3         |     -     |
+
+## Przykłady klasycznych cybermodów
+
+| Nazwa                           | Efekt                                                                 |
+| ------------------------------- | --------------------------------------------------------------------- |
+| Dermozbroja                     | +1 do +3 pancerza                                                     |
+| Kieszeń podskórna               | +1 slot ekwipunku                                                     |
+| Skrytka w cyberkończynie        | +1 slot ekwipunku                                                     |
+| Neuroprocesor                   | Możliwość hakowania i zapory w Infosferze                             |
+| Koprocesor sieciowy             | +1 do +3 przy testach INF                                             |
+| Wzmocnienie mięśnio-szkieletowe | +1 do +3 przy testach BIO                                             |
+| Procesor behawioralny           | +1 do +3 przy testach PSY                                             |
+| Akcelerator neuroimpulsów       | +1 do +3 BIO przy testach związanych z szybkością reakcji             |
+| Stabilizator mięśniowy          | +1 do +3 BIO przy testach związanych z precyzyjnym operowaniem ciałem |
+| Wzmacniacz kognitywny           | +1 do +3 PSY przy testach związanych z poznawaniem, wiedzą, nauką     |
+| Stymulator bio/psy/neuralny     | ułatwienie testu dla BIO/PSY/INF                                      |
+| Biosystem taktyczny             | +1 do +3 OCHR przy rozliczaniu ataku                                  |
+| Implant celowniczy              | wybrane obrażenia krytyczne bez ran                                   |
+| Neurokontroler dronów/pojazdów  | +1 BIO przy testach związanych ze sterowaniem                         |
+| Neurokontroler broni            | obrażenia krytyczne zadające dodatkowe rany                           |
+
+
+### Najprostszy interfejs pozwalający na hakowanie w sieci
 
 - **Opis**: Wewnętrzczaszkowy wszczep neuroprocesora, z wbudowaną szerokopasmową anteną do transmisji bezprzewodowych oraz gniazdem optycznym do połączenia przewodowego.
 - **Części**: cybermod bazowy (głowa), neuroprocesor k4
 - **Cena**: 2000 + 6000 = `8 000` ℂ
 
-#### Cybernetyczna ręka z wysuwanymi szponami
+### Cybernetyczna ręka z wysuwanymi szponami
 
 - **Opis**: Kończyna z ciemnego metalu, pokryta syntetyczną skórą. Na przedramieniu, po wewnętrznej stronie mała skrytka otwierana za pomocą odpowiedniego nacisku. W dłoni umieszczone cztery długie, stalowe, wysuwane szpony.
 - **Części**: cybermod bazowy (ręka), +1 miejsce w ekwipunku, szpony k6
 - **Cena**: 1000 + 1000 + 9000 = `11 000` ℂ
 
-#### Dermozbroja
+### Dermozbroja
 
 - **Opis**: Cienka siatka z plastostali, umieszczona pod skórą, pokrywająca ramiona, klatkę piersiową i plecy. Mały generator wbudowany w biodro pozwala dodatkowo porazić ładunkiem elektrycznym wszystkich, którzy dotykają postaci z dermozbroją.
 - **Części**: cybermod bazowy (tułów), +1 pancerza, wyładowanie elektryczne k4, obrażenia krytyczne: paraliż na k4 rund

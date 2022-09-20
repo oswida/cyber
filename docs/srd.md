@@ -299,8 +299,24 @@ Wszystkie inne działania takie jak: **hakowanie, ochrona, dostęp do zastrzeżo
 **Logiczne Oprogramowanie Defensywne (LOD)**: węzły Infosfery mogą posiadać automatyczne systemy obronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie hakowania wykonują atak na postać, redukując jej OCHR i INF. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
 
 **Czarny LOD** (oficjalnie nielegalny), posiada dodatkową cechę:
-
 - *Obrażenia krytyczne*: zadaj w PSY celu, tyle samo punktów obrażeń ile zadałeś w INF w tej turze.
+
+**Programy**: każda postać z neuroprocesorem może używać **infodeku** (zajmuje jedno miejsce w ekwipunku) do przechowywania **programów**. Programy mogą wspomagać gracza przy hakowaniu lub obronie węzłów, wymagają jednak **aktywacji**.  Infodek może przechowywać dowolną ilość programów.
+
+**Aktywacja oprogramowania**: Aby wykorzystać funkcje programu zapisanego na infodeku, postać musi aktywować oprogramowanie. Procedura ta nie wymaga zużywania żadnych zasobów ale liczy się jako **akcja w rundzie**. Maksymalna ilość aktywowanych programów jaką może posiadać haker jest równa **aktualnemu poziomowi INF podzielonemu przez 3** (zaokrąglenie w górę). Jedna akcja wystarczy aby aktywować wszystkie dostępne programy w danym momencie. Zamiana dowolnej ilości aktywnych programów na inne wymaga jednej akcji.
+Jeżeli poziom zdolności INF postaci ulegnie zmianie a posiada ona aktywowane programy, należy dostosować ilość aktywowanego oprogramowania do aktualnego poziomu INF.
+
+**Tworzenie oprogramowania**: podobnie jak w przypadku cybermodyfikacji, gracze mogą tworzyć własne oprogramowanie dowolnie opisując jego efekty i dopasowując je do współczynników modyfikujących mechanikę gry.
+
+| Rodzaj oprogramowania   | Efekt                                                    |            Cena             |
+| ----------------------- | -------------------------------------------------------- | :-------------------------: |
+| Wzmacniacz obliczeniowy | +1 OCHR przy rozliczaniu ataku w Infosferze              |            1000             |
+| Tarcza                  | +1 Pancerza przy rozliczaniu ataku w Infosferze          |            10000            |
+| Wzmacniacz neuralny     | +1 INF przy teście w Infosferze                          |            7000             |
+| Lodołamacz              | Dodatkowe obrażenia podczas hakowania                    | rodzaj kości obrażeń * 1500 |
+| Wirus bojowy            | Obrażenia krytyczne zadające uszkodzenia                 | rodzaj kości obrażeń * 500  |
+| Wirus mutagenny         | Obrażenia krytyczne bez dodatkowych uszkodzeń            |            1500             |
+| Użytkowe                | Dodatkowa funkcjonalność nie zwiększająca współczynników |            1000             |
 
 ### Cybermodyfikacje
 
@@ -312,6 +328,8 @@ Postać, której **INF wynosi zero** nie może korzystać z cybermodyfikacji - p
 
 **Aktywacja**: każdy element cybermodyfikacji, który wpływa na mechanikę gry (modyfikatory do rzutów obronnych, obrażenia krytyczne) wymaga **aktywacji** za **każdym razem** gdy postać zechce go użyć. Aktywacja wymaga zaznaczenia jednego punktu Zmęczenia w ekwipunku.
 Elementy cybermodyfikacji, nie oznaczone jako wymagające aktywacji, dają efekt trwały a ich używanie nie podnosi zmęczenia postaci.
+
+**Cyberpsychoza**: cybermodyfikacje mogą mieć negatywny wpływ na organizm ludzki. Intensywne używanie wszczepów może odbić się na kondycji psychicznej postaci. Za każdym razem, gdy **zmęczenie wypełni cały ekwipunek** postaci, odejmij **jeden** od jej poziomu **PSY**.
 
 Więcej informacji na temat tworzenia cybermodyfikacji oraz ich cen można znaleźć w [dodatku](./cybermod.md).
 
