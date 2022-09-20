@@ -301,8 +301,24 @@ All other activities such as hacking, security, access to proprietary informatio
 **Intrusion Countermeasures Electronics (ICE)**: Infosphere nodes can have automatic defense systems. This means they have an additional **ICE** factor expressed in **damage dice** (d4 to d12). Each round of hacking they make an attack on a character, reducing hacker's HP and INF. Hackers recognize the 'white' and 'black' ICE.
 
 **Black ICE** (officially illegal), has an additional feature:
-
 - *Critical Damage*: inflict in the PSY of the target, the same number of points of damage as you have inflicted in the INF this turn.
+
+**Software**: any character with a neuroprocessor can use an **infodeck** (takes up one space in the inventory) to store **programs**. Programs can assist the player with hacking or defending nodes, but require **activation**.  The infodeck can store any number of programs.
+
+**Software Activation**: In order to use the functions of the software stored on the infodeck, the character must activate the software. This procedure does not require any resources but counts as an **action in the round**. The maximum number of activated programs a hacker can have is equal to **the current INF level divided by 3** (round up). One action is sufficient to activate all available programs at any given time. It takes one action to swap any number of active programs for another.
+If a character's INF ability level changes and some programs were activated, adjust the amount of activated software to the current INF level.
+
+**Software creation**: similar to cybermodifications, players can create their own software freely describing its effects and matching them to the game mechanics.
+
+| Software type     | Effect                                                       |       Price        |
+| ----------------- | ------------------------------------------------------------ | :----------------: |
+| Computing booster | +1 HP for resolving Infosphere attack                        |        1000        |
+| Shield            | +1 Armor for resolving Infosphere attack                     |       10000        |
+| Neural booster    | +1 INF for Infosphere tests                                  |        7000        |
+| Icebreaker        | Extra damage when hacking                                    | damage dice * 1500 |
+| Battle virus      | Critical damage that inflicts additional injuries            | damage dice * 500  |
+| Mutagenic virus   | Critical damage that does not injure the target              |        1500        |
+| Utility           | Additional functionality that does not modify game mechanics |        1000        |
 
 ### Cybermodifications
 
