@@ -1,7 +1,7 @@
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useRef, useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import { currentPage } from "~/common";
+import { currentPage, language } from "~/common";
 import { Button, Flex, PageContent, PageHeader, PageRoot } from "~/component";
 import { NodeClass, NodeType } from "~/data";
 import { Layout } from "../Layout";
@@ -17,10 +17,11 @@ export const NodeGen = () => {
   const [modal, setModal] = useState(false);
   const [nclass, setNClass] = useState<NodeClass | undefined>(undefined);
   const contentRef = useRef<HTMLDivElement>(null);
+  const lang = useAtomValue(language);
 
   useEffect(() => {
-    setCp("Infowęzeł");
-  }, []);
+    setCp(lang == "en" ? "Infonode" : "Infowęzeł");
+  }, [lang]);
 
   const generate = (ntype?: NodeClass) => {
     setData((state) => [...state, ...rollNode(ntype)]);
@@ -56,6 +57,29 @@ export const NodeGen = () => {
     link.click();
   };
 
+  const nodeClassName: Record<string, any> = {
+    pl: {
+      Dowolny: "Dowolny",
+      Publiczny: "Publiczny",
+      Prywatny: "Prywatny",
+      "Prywatny strzeżony": "Prywatny strzeżony",
+      Rządowy: "Rządowy",
+      Wojskowy: "Wojskowy",
+      Korporacyjny: "Korporacyjny",
+      SI: "SI",
+    },
+    en: {
+      Dowolny: "Any",
+      Publiczny: "Public",
+      Prywatny: "Private",
+      "Prywatny strzeżony": "Private secured",
+      Rządowy: "Government",
+      Wojskowy: "Military",
+      Korporacyjny: "Corporation",
+      SI: "AI",
+    },
+  };
+
   return (
     <Layout>
       <PageRoot>
@@ -73,17 +97,17 @@ export const NodeGen = () => {
               title="Klasa węzła"
               css={{ color: "$pink" }}
             >
-              {nclass && `${nclass}`}
-              {!nclass && "Dowolny"}
+              {nclass && `${nodeClassName[lang][nclass]}`}
+              {!nclass && `${nodeClassName[lang]["Dowolny"]}`}
             </Button>
             <Button onClick={() => generate(nclass)} title="Generuj">
-              Generuj
+              {lang == "en" ? "Generate" : "Generuj"}
             </Button>
             <Button onClick={clean} title="Wyczyść">
-              WYCZYŚĆ
+              {lang == "en" ? "Clear" : "Wyczyść"}
             </Button>
             <Button onClick={() => exportNodes()} title="Eksportuj">
-              Eksport
+              {lang == "en" ? "Export" : "Eksport"}
             </Button>
           </Flex>
         </PageHeader>
@@ -98,20 +122,34 @@ export const NodeGen = () => {
             ))}
           {modal && (
             <Flex direction="column" css={{ gap: 10 }}>
-              <Button onClick={() => select(undefined)}>Dowolny</Button>
-              <Button onClick={() => select("Publiczny")}>Publiczny</Button>
-              <Button onClick={() => select("Prywatny")}>Prywatny</Button>
+              <Button onClick={() => select(undefined)}>
+                {lang == "en" ? "Any" : "Dowolny"}
+              </Button>
+              <Button onClick={() => select("Publiczny")}>
+                {lang == "en" ? "Public" : "Publiczny"}
+              </Button>
+              <Button onClick={() => select("Prywatny")}>
+                {lang == "en" ? "Private" : "Prywatny"}
+              </Button>
               <Button onClick={() => select("Prywatny strzeżony")}>
-                Prywatny strzeżony
+                {lang == "en" ? "Private secured" : "Prywatny strzeżony"}
               </Button>
-              <Button onClick={() => select("Rządowy")}>Rządowy</Button>
+              <Button onClick={() => select("Rządowy")}>
+                {lang == "en" ? "Government" : "Rządowy"}
+              </Button>
               <Button onClick={() => select("Korporacyjny")}>
-                Korporacyjny
+                {lang == "en" ? "Corporation" : "Korporacyjny"}
               </Button>
-              <Button onClick={() => select("Wojskowy")}>Wojskowy</Button>
-              <Button onClick={() => select("SI")}>SI</Button>
+              <Button onClick={() => select("Wojskowy")}>
+                {lang == "en" ? "Military" : "Wojskowy"}
+              </Button>
+              <Button onClick={() => select("SI")}>
+                {lang == "en" ? "AI" : "SI"}
+              </Button>
 
-              <Button onClick={() => setModal(false)}>Anuluj</Button>
+              <Button onClick={() => setModal(false)}>
+                {lang == "en" ? "Cancel" : "Anuluj"}
+              </Button>
             </Flex>
           )}
         </PageContent>

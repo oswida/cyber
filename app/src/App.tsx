@@ -13,9 +13,13 @@ function App() {
   const [lang, setLang] = useAtom(language);
 
   useEffect(() => {
-    const l = window.location.search.replace("?lang=", "").trim();
-    if (l != "") {
-      setLang(l);
+    const re = new RegExp(".*(lang=[a-zA-Z]+).*", "i");
+    const res = window.location.href.match(re);
+    if (res && res[1]) {
+      const l = res[1].replace("lang=", "").trim();
+      if (l != "") {
+        setLang(l);
+      }
     }
   }, []);
 

@@ -1,4 +1,4 @@
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import useLocalStorageState from "use-local-storage-state";
 import { currentPage, language } from "~/common";
@@ -13,11 +13,11 @@ export const CorpoGen = () => {
     defaultValue: [] as CorpoType[],
   });
   const [cp, setCp] = useAtom(currentPage);
-  const [lang] = useAtom(language);
+  const lang = useAtomValue(language);
 
   useEffect(() => {
-    setCp("Korporacja");
-  }, []);
+    setCp(lang == "en" ? "Corporation" : "Korporacja");
+  }, [lang]);
 
   const generate = () => {
     setData((state) => [...state, rollCorpo()]);

@@ -1,6 +1,6 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { currentPage, language, menuVisible } from "~/common";
@@ -10,6 +10,7 @@ import { NavBar, Root } from "./styles";
 export const Layout = ({ children }: { children: any }) => {
   const [mv, setMv] = useAtom(menuVisible);
   const [cp] = useAtom(currentPage);
+  const lang = useAtomValue(language);
 
   const openMenu = () => {
     setMv(true);
@@ -49,19 +50,19 @@ export const Layout = ({ children }: { children: any }) => {
         <MenuOverlay id="menu">
           <Flex direction="column" css={{ gap: 10 }}>
             <LinkButton to="/npc" onClick={closeMenu}>
-              Postać
+              {lang == "en" ? "NPC" : "Bohater niezależny"}
             </LinkButton>
             <LinkButton to="/place" onClick={closeMenu}>
-              Miejsce
+              {lang == "en" ? "Place" : "Miejsce"}
             </LinkButton>
             <LinkButton to="/corpo" onClick={closeMenu}>
               Zaibatsu
             </LinkButton>
             <LinkButton to="/node" onClick={closeMenu}>
-              Infowęzeł
+              {lang == "en" ? "Infonode" : "Infowęzeł"}
             </LinkButton>
             <LinkButton to="/job" onClick={closeMenu}>
-              Robota
+              {lang == "en" ? "Job" : "Robota"}
             </LinkButton>
           </Flex>
         </MenuOverlay>

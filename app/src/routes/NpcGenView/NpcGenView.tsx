@@ -1,7 +1,7 @@
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import { currentPage, menuVisible } from "~/common";
+import { currentPage, language, menuVisible } from "~/common";
 import {
   Button,
   Flex,
@@ -18,14 +18,15 @@ import { useNpcGen } from "./useNpcGen";
 export const NpcGenView = () => {
   const [mv, setMV] = useAtom(menuVisible);
   const [cp, setCp] = useAtom(currentPage);
+  const lang = useAtomValue(language);
   const [data, setData] = useLocalStorageState<NpcType[]>("Cyber_NPCGEN", {
     defaultValue: [] as NpcType[],
   });
   const { rollNpc } = useNpcGen();
 
   useEffect(() => {
-    setCp("Postać");
-  }, []);
+    setCp(lang == "en" ? "NPC" : "Bohater niezależny");
+  }, [lang]);
 
   const generate = () => {
     setData((state) => [...state, ...rollNpc()]);
@@ -65,10 +66,14 @@ export const NpcGenView = () => {
               overflow: "auto",
             }}
           >
-            <Button onClick={generate}>Generuj</Button>
-            <Button onClick={clean}>Wyczyść</Button>
+            <Button onClick={generate}>
+              {lang == "en" ? "Generate" : "Generuj"}
+            </Button>
+            <Button onClick={clean}>
+              {lang == "en" ? "Clear" : "Wyczyść"}
+            </Button>
             <Button onClick={exportData} title="Eksportuj">
-              Eksport
+              {lang == "en" ? "Export" : "Eksport"}
             </Button>
           </Flex>
         </PageHeader>
