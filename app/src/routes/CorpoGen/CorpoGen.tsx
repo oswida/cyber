@@ -1,15 +1,8 @@
 import { useAtom } from "jotai";
 import { useEffect } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import { currentPage } from "~/common";
-import {
-  Button,
-  Flex,
-  PageContent,
-  PageHeader,
-  PageRoot,
-  Text,
-} from "~/component";
+import { currentPage, language } from "~/common";
+import { Button, Flex, PageContent, PageHeader, PageRoot } from "~/component";
 import { Layout } from "../Layout";
 import { CorpoCard, CorpoType } from "./CorpoCard";
 import { useCorpoGen } from "./useCorpoGen";
@@ -20,6 +13,7 @@ export const CorpoGen = () => {
     defaultValue: [] as CorpoType[],
   });
   const [cp, setCp] = useAtom(currentPage);
+  const [lang] = useAtom(language);
 
   useEffect(() => {
     setCp("Korporacja");
@@ -60,10 +54,14 @@ export const CorpoGen = () => {
               overflow: "auto",
             }}
           >
-            <Button onClick={generate}>Generuj</Button>
-            <Button onClick={clean}>Wyczyść</Button>
+            <Button onClick={generate}>
+              {lang == "en" ? "Generate" : "Generuj"}
+            </Button>
+            <Button onClick={clean}>
+              {lang == "en" ? "Clear" : "Wyczyść"}
+            </Button>
             <Button onClick={exportData} title="Eksportuj">
-              Eksport
+              {lang == "en" ? "Export" : "Eksport"}
             </Button>
           </Flex>
         </PageHeader>

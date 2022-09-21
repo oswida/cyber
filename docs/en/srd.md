@@ -14,6 +14,8 @@ Characters can climb the career ladder of *zaibatsu*, operate on the edge of the
 
 It is based on the [Cairn](https://cairnrpg.com) by [Yochai Gal](https://newschoolrevolution.com/).
 
+Many thanks to **Scott Forbes** for English proofreading.
+
 The game was written by: [Oskar Świda](https://twitter.com/OskarSwida).
 
 <!-- The PDF version is available for free on [itch.io](https://oskarswida.itch.io/cyber). -->
@@ -45,7 +47,7 @@ The game was written by: [Oskar Świda](https://twitter.com/OskarSwida).
 
 ## Introduction
 
-**Cyber** was written with the following design philosophies in mind (inherited straightly from Cairn):
+**Cyber** was written with the following design philosophies in mind (inherited straight from Cairn):
 
 - **Neutrality**: The referee’s role is to portray the rules, situations, NPCs, and narrative clearly, while acting as a neutral arbiter.
 - **Classless**: A character’s role or skills are not limited by a single class. Instead, the equipment they carry, cybermods they own and their experiences defines their specialty.
@@ -94,7 +96,7 @@ Most items take up one slot, and small items can be bundled together. Slots are 
 Bags, backpacks, trolleys can increase the number of inventory slots, the same also applies to cybermodifications. Whereby, items representing containers attached to the character's body or requiring the use of the hand (carried, pulled) **take up one space** in the inventory.
 
 > Example:
-> John takes a rucksack into action, which increases the number of slots by 4. However, the rucksack has to be worn on the back, so it takes up one place. In the end, therefore, John has increased the number of slots by 3. If he had opted for a trolley, which he has to pull with one hand, the item still takes up one slot. With a transport vehicle, automatic trolley, etc., the containers do not take up any slot.
+> John takes a backpack into action, which increases the number of slots by 4. However, the backpack has to be worn on the back, so it takes up one place. In the end, therefore, John has increased the number of slots by 3. If he had opted for a trolley, which he has to pull with one hand, the item still takes up one slot. With a transport vehicle, automatic trolley, etc., the containers do not take up any slot.
 
 A PC cannot carry more items than their inventory allows. Anyone carrying a full inventory (i.e. filling **all available** slots) is reduced to **0 HP**.
 
@@ -131,7 +133,7 @@ Basically only this one type of test is performed in *Cyber* - we check whether 
 You could put it this way:
 
 - if a character performs a risky activity that does not involve other characters (climbing, breaking down a door, hacking an Infosphere node) - a passed test removes the risk of failure
-- if a character performs an action that is actively opposed by another character (outside of combat) - a save eliminates the risk of an opponent interfering with the objective.
+- if (outside of combat) a character performs an action that is actively opposed by another character (PC or NPC) - a save eliminates the risk of an opponent interfering with the objective.
 
 > Examples:
 >
@@ -178,8 +180,8 @@ If the amount of the damage exceeds the opponent's current HP, the remaining poi
 
 - Reducing any of the character's abilities to zero means:
   - BIO - physical death of the character
-  - PSY - catatonia and, after a potential cure, serious mental problems (phobias, anxiety) requiring specialist care or social problems (permanent exclusion from certain societes)
-  - INF - blocked  access to the Infosphere until at least one point of this ability has been regained and failure of all cybermodifications
+  - PSY - catatonia and, after a potential cure, serious mental problems (phobias, anxiety) requiring specialist care or social problems (permanent exclusion from certain societies)
+  - INF - blocked access to the Infosphere and failure of all cybermodifications until at least one point of this ability has been regained
 
 #### Multiple Attackers
 
@@ -191,12 +193,12 @@ If fighting from a **position of weakness** (such as through cover or with bound
 
 If fighting from a position of **advantage** (such as against a helpless foe or through a daring maneuver), the attack is **enhanced**, allowing the attacker to roll **1d12** damage instead of their normal die.
 
-If the 1k4/1k12 modification is insufficient for your style of play, you can define a **imparing/enhancing level** of attack calculated as the **number of dice types** by which you reduce/increase the attack. The level of imparing/enhancing is determined by the referee depending on the circumstances.
+If the 1d4/1d12 modification is insufficient for your style of play, you can define a **imparing/enhancing level** of attack calculated as the **number of dice types** by which you reduce/increase the attack. The level of imparing/enhancing is determined by the referee depending on the circumstances.
 
-The available damage dice are: `k4, k6, k8, k10, k12`. In this case, the imparing/enhancing level is a value between `-4` and `4`.
+The available damage dice are: `d4, d6, d8, d10, d12`. In this case, the imparing/enhancing level is a value between `-4` and `4`.
 
 > Example:
-> John jumps behind the crates to take cover from the guards' fire. The crates are metal so the referee decides that they provide good enough cover to weaken the attacks by 2. In this case the guard who had a k12 damage rolls k8. The other guard fired a k6 pistol, a weakening by 2 admittedly is off the scale but cannot give a dice less than the minimum, so the shot is settled with a k4 dice.
+> John jumps behind the crates to take cover from the guards' fire. The crates are metal so the referee decides that they provide good enough cover to weaken the attacks by 2. In this case the guard who had a d12 damage rolls d8. The other guard fired a d6 pistol, a weakening by 2 admittedly is off the scale but cannot give a dice less than the minimum, so the shot is settled with a d4 dice.
 
 #### Dual Weapons
 
@@ -212,11 +214,11 @@ Damage that reduces a target’s HP below zero decreases a target’s ability (B
 They must then make a BIO/INF save (with the ability value after reduction) to avoid **critical damage**.
 Additionally, some enemies will have special abilities or effects that are triggered when their target fails a critical damage save.
 
-Any PC that suffers BIO critical damage cannot do anything but crawl weakly, grasping for life. If given aid and rest, they will stabilize. If left untreated, they die within the hour.
+Any PC that suffers BIO critical damage cannot do anything but crawl weakly, hanging on to life. If given aid and rest, they will stabilize. If left untreated, they die within the hour.
 
 Any PC that suffers INF critical damage, becomes immobilised in the Infosphere (cannot move between nodes) or all its cyber modifications temporarily cease to function if it operates in the physical world.
 
-The **Black ICE** and **EMP weapons** have an additional critical damage effect: *"if the target has a neuroprocessor, inflict as many points of damage to the target's PSY as have been inflicted in INF this turn"*.
+The **Black ICE** and **EMP weapons** have an additional critical damage effect: *"if the target has a neuroprocessor, inflict as many points of damage to the target's PSY as have been inflicted to INF this turn"*.
 
 #### Armor
 
@@ -300,12 +302,12 @@ All other activities such as hacking, security, access to proprietary informatio
 **Intrusion Countermeasures Electronics (ICE)**: Infosphere nodes can have automatic defense systems. This means they have an additional **ICE** factor expressed in **damage dice** (d4 to d12). Each round of hacking they make an attack on a character, reducing hacker's HP and INF. Hackers recognize the 'white' and 'black' ICE.
 
 **Black ICE** (officially illegal), has an additional feature:
-- *Critical Damage*: inflict in the PSY of the target, the same number of points of damage as you have inflicted in the INF this turn.
+- *Critical Damage*: inflict the same amount of damage to PSY that was inflicted to INF this turn.
 
 **Software**: any character with a neuroprocessor can use an **infodeck** (takes up one space in the inventory) to store **programs**. Programs can assist the player with hacking or defending nodes, but require **activation**.  The infodeck can store any number of programs.
 
 **Software Activation**: In order to use the functions of the software stored on the infodeck, the character must activate the software. This procedure does not require any resources but counts as an **action in the round**. The maximum number of activated programs a hacker can have is equal to **the current INF level divided by 3** (round up). One action is sufficient to activate all available programs at any given time. It takes one action to swap any number of active programs for another.
-If a character's INF ability level changes and some programs were activated, adjust the amount of activated software to the current INF level.
+If a character's INF changes and some programs were activated, adjust the amount of activated software to the current INF.
 
 **Software creation**: similar to cybermodifications, players can create their own software freely describing its effects and matching them to the game mechanics.
 
@@ -323,7 +325,7 @@ If a character's INF ability level changes and some programs were activated, adj
 
 Each character may install cybermodifications in an amount not exceeding the **actual** level of the **Interface ability divided by 3** (rounding up).
 
-> Example: *John Kowalsky's* has Interface ability equal to 10. This means that he can install 4 cyber modifications.
+> Example: *John Kowalsky* has Interface ability equal to 10. This means that he can install 4 cyber modifications.
 
 A character whose **INF is zero** cannot use cybermodifications - they stop working until the character has regained at least one point of Interface.
 

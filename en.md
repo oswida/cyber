@@ -6,3 +6,5 @@ has_children: true
 ---
 
 # English version
+
+This is an English version of the Cyber RPG documents.

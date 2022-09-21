@@ -1,13 +1,7 @@
-import {
-  faComputer,
-  faContactCard,
-  faDigitalTachograph,
-  faEarth,
-  faGears,
-  faToolbox,
-  faTools,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEarth } from "@fortawesome/free-solid-svg-icons";
+import { useAtomValue } from "jotai";
 import useLocalStorageState from "use-local-storage-state";
+import { language } from "~/common";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
 
 export type CorpoType = {
@@ -19,6 +13,8 @@ export type CorpoType = {
 };
 
 export const CorpoCard = ({ data }: { data: CorpoType }) => {
+  const lang = useAtomValue(language);
+
   const [items, setItems] = useLocalStorageState<CorpoType[]>(
     "Cyber_CORPOGEN",
     {
@@ -49,7 +45,7 @@ export const CorpoCard = ({ data }: { data: CorpoType }) => {
         <>
           <CardRow>
             <Text size="small" color="yellow">
-              Działalność{" "}
+              {lang == "en" ? "Operations" : "Działalność"}
             </Text>
           </CardRow>
           <CardRow>

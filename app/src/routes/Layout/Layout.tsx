@@ -1,7 +1,9 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom } from "jotai";
-import { currentPage, menuVisible } from "~/common";
+import { useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
+import { currentPage, language, menuVisible } from "~/common";
 import { Button, Flex, LinkButton, MenuOverlay, Text } from "~/component";
 import { NavBar, Root } from "./styles";
 
