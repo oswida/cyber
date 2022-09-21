@@ -2,7 +2,6 @@
 layout: default
 title: Cybermods
 parent: English version
-grand_parent: Dokumenty
 nav_order: 3
 ---
 

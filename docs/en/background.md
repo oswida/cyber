@@ -2,7 +2,6 @@
 layout: default
 title: Background
 parent: English version
-grand_parent: Dokumenty
 nav_order: 4
 ---
 

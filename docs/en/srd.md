@@ -2,7 +2,6 @@
 layout: default
 title: Cyber SRD
 parent: English version
-grand_parent: Dokumenty
 nav_order: 1
 ---
 
