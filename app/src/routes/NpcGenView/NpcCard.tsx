@@ -1,9 +1,12 @@
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { useAtomValue } from "jotai";
 import useLocalStorageState from "use-local-storage-state";
+import { language } from "~/common";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
 import { NpcType } from "~/data";
 
 export const NpcCard = ({ data }: { data: NpcType }) => {
+  const lang = useAtomValue(language);
   const [items, setItems] = useLocalStorageState<NpcType[]>("Cyber_NPCGEN", {
     defaultValue: [] as NpcType[],
   });
@@ -27,7 +30,7 @@ export const NpcCard = ({ data }: { data: NpcType }) => {
       </CardRow>
       <CardRow>
         <Text size="small" color="yellow">
-          Charakter{" "}
+          {lang == "en" ? "Traits" : "Charakter"}
         </Text>
         <Text color="pink" css={{ maxWidth: 350, lineHeight: "1rem" }}>
           {data.traits.join(", ")}
@@ -35,7 +38,7 @@ export const NpcCard = ({ data }: { data: NpcType }) => {
       </CardRow>
       <CardRow>
         <Text size="small" color="yellow">
-          Cel{" "}
+          {lang == "en" ? "Goal" : "Cel"}
         </Text>
         <Text color="green" css={{ maxWidth: 350, lineHeight: "1rem" }}>
           {data.goal}
