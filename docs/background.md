@@ -102,7 +102,7 @@ Zrezygnowałem, bo:
 2. Wożenie radioaktywnych odpadów nie jest dobre dla zdrowia.
 3. Jakaś córa czy flama mafijnego bossa wlazła mi prosto pod koła.
 4. Miałem wypadek. Ciężko mi teraz pamiętać różne rzeczy, ale lekarze mówią, że będzie lepiej.
-5. Nie zrezygnowałem - firma zbankrutowałą a nas wysłali na bezrobocie.
+5. Nie zrezygnowałem - firma zbankrutowała a nas wysłali na bezrobocie.
 6. Nie jestem coraz młodszy a do tego zawodu potrzebny jest refleks.
 
 ## Ochroniarz klubowy (+1 BIO lub +1 PSY)

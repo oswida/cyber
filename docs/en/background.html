@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>background.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="background">Background</h1>
+<p>Background summarises a character's past life experience and gives them a certain starting status.
+It is not equivalent to a class, it does not define the character's path of development and only describes the character's <strong>past experiences</strong> and resulting knowledge or status. Additionally, the player may (but does not have to) choose or draw a reason for giving up their previous lifestyle.</p>
+<p>Backgrounds proposed below represent 'ordinary' people rather than trained professionals, but don't let that fool you. These people are not ordinary - they have left familiar environments and dared to take a step into the unknown. Dared to change their lives. They are determined and dangerous. They believe that somewhere out there, in the future, a better fate awaits them and they intend to find out. No matter what price they have to pay....</p>
+<p>In addition, to mechanically reflect a character's past experience, each past determines a bonus to one of three abilities.</p>
+<h2 id="zaibatsu-office-worker-1-psy">Zaibatsu office worker (+1 PSY)</h2>
+<p><em>This form should go elsewhere. No, I do not understand that it is a system error! We have IT people to keep the system running smoothly. How about next time, I'm the one who makes a mistake when calculating your leave?</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>I am fed up with this monotonous, unproductive job</li>
+<li>I did not pass the periodic evaluation (it is co-worker fault)</li>
+<li>My immediate supervisor made unambiguous proposals to me.</li>
+<li>Corporations are evil incarnate and I am not going to work for Satan</li>
+<li>In the documents I processed, I discovered shocking facts about the corporation</li>
+<li>A headhunter from a competitor turned out to be a fraud and I can no longer return to my previous job</li>
+</ol>
+<h2 id="zaibatsu-factory-employee-1-bio-or-1-inf">Zaibatsu factory employee (+1 BIO or +1 INF)</h2>
+<p><em>Where are you going!? You don't like your life anymore!? In 15 seconds they're going to put so much current through this ramp that your head will start glowing like a light bulb!</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>One of my colleagues had an accident because of me</li>
+<li>My boss turned out to be an asshole</li>
+<li>Someone snooped that I took something out of the factory during my shift</li>
+<li>I unwittingly damaged a machine on the belt and had to leave</li>
+<li>It turned out that items we produce are used to kill people.</li>
+<li>Corporations are evil incarnate and I am not going to work for Satan</li>
+</ol>
+<h2 id="zaibatsu-guard-1-bio">Zaibatsu guard (+1 BIO)</h2>
+<p><em>All in all, I don't know whether I'm a supervisor, a janitor or a clerk. It's hard to find anything noble in this job.</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>I refused to follow an order that I felt was wrong.</li>
+<li>I have higher aspirations, I would like a job where people respect me.</li>
+<li>I did not pass the periodic fitness tests, I just had a weaker day.</li>
+<li>I saw my immediate supervisor slaughtered one of the company's employees.</li>
+<li>I did not want to take part in the smuggling organised by my colleagues.</li>
+<li>I unintentionally shot an innocent man.</li>
+</ol>
+<h1 id="work-in-progress">WORK IN PROGRESS</h1>
+<h2 id="mechanic-1-bio">Mechanic (+1 BIO)</h2>
+<p><em>Has your robot broken down? How about the washing machine? You sit down, you wait, you get settled.</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>A f*****g gang was destroying my workshop regularly because I didn't want to pay the tribute.</li>
+<li>I broke that motorbike quite accidentally. And then it turned out that it belonged to the Yakuza....</li>
+<li>It's impossible to make a living from this job, no customers, expensive parts ... how to live?</li>
+<li>I didn't know that the junk my friend had left in my garage was military equipment</li>
+<li>My world collapsed after the death of a loved one, to this day I don't know who was responsible</li>
+<li>I've never been very good at my job, maybe it's time to change it?</li>
+</ol>
+<h2 id="doctor-administration-hospital-1-psy">Doctor (Administration Hospital) (+1 PSY)</h2>
+<p><em>Some people call me a &quot;medicaster&quot;, others &quot;Mr Doctor&quot;. I don't know whether helping people is still a vocation or already a burden.</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>I am fed up with underfunded hospitals, lack of equipment and medicines - how can I help people in such conditions?</li>
+<li>I am afraid that the operation failed because of me</li>
+<li>I will not help people who cannot show gratitude</li>
+<li>This job is not for me, I can't stand the sight of blood and death</li>
+<li>Those who really need my help do not end up in hospitals</li>
+<li>I have discovered inconvenient facts in hospital medical records</li>
+</ol>
+<h2 id="pilot-1-bio">Pilot (+1 BIO)</h2>
+<p><em>When I'm up in the air, I feel somehow lighter - I leave all my worries there on the ground. You could say it's kind of cleaner up here ... And I'm not talking about the composition of the air you breathe ...</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>Working 24/7 for these rates is a mockery.</li>
+<li>The Boss found out about that last haul of drugs my mate and I had dropped off.</li>
+<li>It turned out that the family I agreed to drop off had escaped the corporate arcology.</li>
+<li>I overheard a VIP conversation - I'm not going to take part in such perverted fun.</li>
+<li>I thought there was always time to start changing the world for the better.</li>
+<li>It's hard to compete with these youngsters stuffed with implants.</li>
+</ol>
+<h2 id="driver-1-bio">Driver (+1 BIO)</h2>
+<p><em>Are you talking about the LRV 500? The one with three-axle drive? Sure I've ridden one! And that's with a full load, so you won't impress me bream ...</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>My mother-in-law and my wife badgered me that I don't earn enough.</li>
+<li>Hauling radioactive waste is not good for your health.</li>
+<li>Some daughter or wife of a mafia boss went straight under my wheels.</li>
+<li>I had an accident. It's hard for me to remember things now, but the doctors say it will get better.</li>
+<li>I didn't give up - the company went bankrupt and we were sent to unemployment.</li>
+<li>I'm not getting any younger and you need reflexes for this job.</li>
+</ol>
+<h2 id="club-bodyguard-1-bio-or-1-psy">Club bodyguard (+1 BIO or +1 PSY)</h2>
+<p><em>Yes, I understand there are friends of yours in there but we don't let you in without an invitation. Obviously you know the Yakuza boss - then why don't you call him and hand me the phone, okay?</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>I would like to get an education and you need money for that.</li>
+<li>They broke my back in a fight outside a club. The doctor put me back together, but I won't risk it again.</li>
+<li>I got fired for abusing coke at work.</li>
+<li>I met this one ... nice lady ... but she didn't want to mess with the bouncer.</li>
+<li>The boss told me to beat up some quiet knucklehead - supposedly because he'd exposed himself to the VIPs. I don't beat up the defenceless.</li>
+<li>Some jerk drove a drone packed with explosives into a doorway. I've been hard of hearing ever since.</li>
+</ol>
+<h2 id="reporter-1-psy">Reporter (+1 PSY)</h2>
+<p><em>You know, I can of course record it. And I can even publish it, but it won't do any good. In a minute and a half, this footage won't be in the Infosphere anyway and the security will be after you and me. Do you really want that?</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>the Editor-in-Chief refused to print my article on corruption in the Administration</li>
+<li>I unnecessarily described what was going on at that party in the club - and they warned me not to do it.</li>
+<li>I have the impression that I did not do anything important.</li>
+<li>Zaibatsu bought out our publishing house - I don't like the corpo, so I went.</li>
+<li>I discovered something in the old archives and preferred to change profession.</li>
+<li>I haven't given up, I just want to find some incredible news here.</li>
+</ol>
+<h2 id="cybertechnician-1-inf">Cybertechnician (+1 INF)</h2>
+<p><em>If you keep fidgeting like that, I'll screw it to your a</em>* instead of your hand! Want it?*</p>
+<p>I resigned because:</p>
+<ol>
+<li>In a dream, God appeared to me and told me that the combination of machines and people was wrong.</li>
+<li>The hand I fitted to some gangster turned out to be faulty and now I am being chased by a gang of maniacs.</li>
+<li>I went into debt to the mafia to open a workshop. Unfortunately the business didn't go very well....</li>
+<li>My previous employers from zaibatsu finally found me....</li>
+<li>For some time now, every piece of equipment I assemble or repair has been breaking down quickly - I guess it's some kind of a curse....</li>
+<li>I have ideas for groundbreaking cybermodifications, I need money and equipment to make my plans a reality.</li>
+</ol>
+<h2 id="software-developer-1-inf">Software developer (+1 INF)</h2>
+<p><em>Wait I say, wait a minute! If you run this software now, there will be nothing to collect from the disk in a moment. The Infosphere is no place for ignorants ... well, at least in most cases ...</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>I feel I've burnt myself out. Coding no longer makes me happy.</li>
+<li>The last bout of black ice fried half my brain. I need a change of environment.</li>
+<li>The team I worked with turned out to be a bunch of turds. They stole my ideas and made a lot of money from them.</li>
+<li>I destroyed some influencer's node on behalf of zaibatsu - I realised then that I was becoming a soulless monster.</li>
+<li>A loved one left me - she said she wouldn't compete with my life in the Infosphere.</li>
+<li>I encountered a strange kind of artificial intelligence in the Infosphere - truth be told I'm still terrified to this day.</li>
+</ol>
+<h2 id="gang-soldier-1-bio-or-1-psy">Gang soldier (+1 BIO or +1 PSY)</h2>
+<p><em>On the street, things are made clear. You are on our side - then we care about you. You are on the opposite side - then we fight you. Nobody here talks about disrespect. Never.</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>All my life I have obeyed orders, now I want to do something for myself.</li>
+<li>I was framed for betrayal and now I can't go back to the gang.</li>
+<li>I realized I was hurting people. I don't want to do that anymore.</li>
+<li>Our gang was destroyed. I am probably the only survivor.</li>
+<li>For personal reasons - someone has to die.</li>
+<li>I'm sick of living in poverty, this time I'm going to make a fortune.</li>
+</ol>
+<h2 id="influencer-1-psy">Influencer (+1 PSY)</h2>
+<p><em>Hello sweets! We're about to hit three million subscriptions and we're doing a party! Same club as always and remember to leave your avatar for at least an hour!</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>The Infosphere is not the real world and I want to experience real emotions.</li>
+<li>I'm going to get some life experience, it will increase my popularity.</li>
+<li>Zaibatsu wanted to buy my channel, I didn't agree - so they destroyed me.</li>
+<li>The entire Infosphere was attacked by an unknown virus, unfortunately my data was there too....</li>
+<li>I'm sick of people peeping into my life, I need privacy.</li>
+<li>Some bunch of morons broke into my flat and destroyed all my equipment, I have to start from scratch.</li>
+</ol>
+<h2 id="administration-officer-1-psy">Administration Officer (+1 PSY)</h2>
+<p><em>Yes, yes. Zaibatsu promise to take care of everything ... and everyone. Provided you have something to pay or can work for them. It's as if the rest of society doesn't exist at all....</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>I considered that I had already fulfilled my civic duty, now it was the turn of others.</li>
+<li>I have been accused (wrongly) of bribes and scams.</li>
+<li>There are no promotion prospects in this job and I have ambitions.</li>
+<li>No one appreciated my ideas.</li>
+<li>Someone important wanted to demolish the poorhouse district and I did not give permission....</li>
+<li>My position was taken by an experimental artificial intelligence.</li>
+</ol>
+<h2 id="police-officer-1-bio-or-1-psy">Police officer (+1 BIO or +1 PSY)</h2>
+<p><em>So what if we have less funding than a grocery shop and less powers than a carpenter in a car park? Criminals still need to be prosecuted and the law respected. Whose law? The one that protects people, not enslaves them.</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>This job is hideous, everyone hates us, I don't know why I wanted to be a police officer.</li>
+<li>You can forgive a lot for your work partner, but not everything....</li>
+<li>My family was never safe.</li>
+<li>My boss caught me picking up 'gifts' from shopkeepers</li>
+<li>After a false report, illegal jamming equipment was found in my house - someone must have slipped it to me....</li>
+<li>After a few years I realized that I was not really able to shoot a person.</li>
+</ol>
+<h2 id="detective-1-psy">Detective (+1 PSY)</h2>
+<p><em>Murder, kidnapping, extortion. There are a lot of people hurting other people in this city.  And I am trying to find some justice in all of this.</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>Nothing really changes and my work serves no one and no purpose</li>
+<li>It turned out that the girl I helped escape was owned by the Yakuza</li>
+<li>It's better if some things remain unexplained</li>
+<li>I need to lie low for a while, but I'm definitely not going to leave this case behind</li>
+<li>It's high time to start taking care of myself</li>
+<li>I was framed for a criminal case and had my license revoked</li>
+</ol>
+<h2 id="beauty-services-employee-1-psy-or-1-inf">Beauty Services Employee (+1 PSY or +1 INF)</h2>
+<p><em>I take care of my customers every day, I smile at them every day. And who really cares?</em></p>
+<p>I resigned because:</p>
+<ol>
+<li>I feel I deserve better.</li>
+<li>The premises were bought out by dodgy types. They smelled like gangsters from a distance.</li>
+<li>A customer lost something in the premises (just like that!) and they accused me.</li>
+<li>I have to provide for my family and they say I can earn more here.</li>
+<li>The boss said that the new androids are cheaper and work better than me.</li>
+<li>I want to open my own place and for that I need funds.</li>
+</ol>
+<h2 id="municipal-worker-1-bio">Municipal worker (+1 BIO)</h2>
+<p><em>Beautiful morning! The hard grind, the minimum wage, human contempt - what could be worse for me today?</em></p>
+<p>I left because:</p>
+<ol>
+<li>Everyone would leave, and so would you.</li>
+<li>I heard that municipal workers were dying in the basement of the Magnet Railway and I was assigned night duty there.</li>
+<li>There was this one guy on TV who said he had a better job for me. I don't know what happened because he stopped calling.</li>
+<li>I found myself in the wrong place at the wrong time. Don't ask because I won't tell anyway.</li>
+<li>Because! I have to find the mo****er who ran over my dog!</li>
+<li>Our area has been taken over by zaibatsu. The administration promised that there might be new jobs next year.</li>
+</ol>
+
+</body>
+</html>

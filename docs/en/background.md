@@ -5,7 +5,7 @@ parent: English version
 nav_order: 4
 ---
 
-# Background (work in progress!)
+# Background
 
 Background summarises a character's past life experience and gives them a certain starting status.
 It is not equivalent to a class, it does not define the character's path of development and only describes the character's **past experiences** and resulting knowledge or status. Additionally, the player may (but does not have to) choose or draw a reason for giving up their previous lifestyle.
@@ -53,199 +53,197 @@ I resigned because:
 5. I did not want to take part in the smuggling organised by my colleagues.
 6. I unintentionally shot an innocent man.
 
-# WORK IN PROGRESS
+## Mechanic (+1 BIO)
 
-## Mechanik (+1 BIO)
+*Has your robot broken down? How about the washing machine? You sit down, you wait, you get settled.*
 
-*Robot ci się zepsuł? A może pralka? Pan usiądzie, pan poczeka, się załatwi.*
+I resigned because:
 
-Zrezygnowałem, bo:
+1. A f*****g gang was destroying my workshop regularly because I didn't want to pay the tribute.
+2. I broke that motorbike quite accidentally. And then it turned out that it belonged to the Yakuza....
+3. It's impossible to make a living from this job, no customers, expensive parts ... how to live?
+4. I didn't know that the junk my friend had left in my garage was military equipment
+5. My world collapsed after the death of a loved one, to this day I don't know who was responsible
+6. I've never been very good at my job, maybe it's time to change it?
 
-1. Pieprzony gang niszczył mi regularnie warsztat, bo nie chciałem płacić haraczu.
-2. Zepsułem ten motor całkiem przypadkowo. A potem okazało się, że należał do Yakuza...
-3. Z tej roboty nie da się wyżyć, brak klientów, drogie części ... jak żyć?
-4. Nie wiedziałem, że te graty, które znajomy zostawił w moim garażu to sprzęt wojskowy
-5. Mój świat zawalił się po śmierci bliskich, do dzisiaj nie wiem kto jest za to odpowiedzialny
-6. Nigdy nie byłem zbyt dobry w swoim fachu, może czas się przekwalifikować?
+## Doctor (Administration Hospital) (+1 PSY)
 
-## Lekarz (szpital Administracji) (+1 PSY)
+*Some people call me a "medicaster", others "Mr Doctor". I don't know whether helping people is still a vocation or already a burden.*
 
-*Jedni nazywają mnie "konowałem", inni "panem doktorem". Sam nie wiem, czy pomaganie ludziom to jeszcze powołanie czy już brzemię.*
+I resigned because:
 
-Zrezygnowałem, bo:
-
-1. Mam dość niedofinansowanych szpitali, braku sprzętu i leków - jak mam pomagać ludziom w takich warunkach?
-2. Obawiam się, że tamta operacja nie udała się z mojej winy
-3. Nie będę pomagał ludziom, którzy nie potrafią okazać wdzięczności
-4. Ta robota nie jest dla mnie, nie znoszę widoku krwi i śmierci
-5. Ci, którzy naprawdę potrzebują mojej pomocy, nie trafiają do szpitali
-6. Odkryłem niewygodne fakty w dokumentacji medycznej szpitala
+1. I am fed up with underfunded hospitals, lack of equipment and medicines - how can I help people in such conditions?
+2. I am afraid that the operation failed because of me
+3. I will not help people who cannot show gratitude
+4. This job is not for me, I can't stand the sight of blood and death
+5. Those who really need my help do not end up in hospitals
+6. I have discovered inconvenient facts in hospital medical records
 
 ## Pilot (+1 BIO)
 
-*Kiedy jestem w powietrzu, to czuję się jakiś lżejszy - wszystkie troski zostawiam tam na ziemi. Można powiedzieć, że tutaj w górze jest tak jakby czyściej ... I nie mówię o składzie powietrza, którym oddychasz ...*
+*When I'm up in the air, I feel somehow lighter - I leave all my worries there on the ground. You could say it's kind of cleaner up here ... And I'm not talking about the composition of the air you breathe ...*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Robota 24/7 za takie stawki to kpina.
-2. Boss dowiedział się o tym ostatnim transporcie dragów, który odstawiliśmy z kumplem.
-3. Okazało się, że rodzinka, którą zgodziłem się podrzucić uciekła z arkologii korporacyjnej.
-4. Podsłuchałem rozmowę VIPów - nie będę brał udziału w takich zboczonych zabawach.
-5. Pomyślałem, że zawsze jest czas, żeby zacząć zmieniać świat na lepsze.
-6. Ciężko jest rywalizować z tymi młokosami nafaszerowanymi wszczepami.
+1. Working 24/7 for these rates is a mockery.
+2. The Boss found out about that last haul of drugs my mate and I had dropped off.
+3. It turned out that the family I agreed to drop off had escaped the corporate arcology.
+4. I overheard a VIP conversation - I'm not going to take part in such perverted fun.
+5. I thought there was always time to start changing the world for the better.
+6. It's hard to compete with these youngsters stuffed with implants.
 
-## Kierowca (+1 BIO)
+## Driver (+1 BIO)
 
-*Mówisz o LRV 500? Ten z napędem na trzy osie? Pewnie, że jeździłem! I to z pełnym obciążeniem, więc mi nie zaimponujesz leszczu ...*
+*Are you talking about the LRV 500? The one with three-axle drive? Sure I've ridden one! And that's with a full load, so you won't impress me bream ...*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Teściowa z żoną wierciły mi dziurę w brzuchu, że za mało zarabiam.
-2. Wożenie radioaktywnych odpadów nie jest dobre dla zdrowia.
-3. Jakaś córa czy flama mafijnego bossa wlazła mi prosto pod koła.
-4. Miałem wypadek. Ciężko mi teraz pamiętać różne rzeczy, ale lekarze mówią, że będzie lepiej.
-5. Nie zrezygnowałem - firma zbankrutowałą a nas wysłali na bezrobocie.
-6. Nie jestem coraz młodszy a do tego zawodu potrzebny jest refleks.
+1. My mother-in-law and my wife badgered me that I don't earn enough.
+2. Hauling radioactive waste is not good for your health.
+3. Some daughter or wife of a mafia boss went straight under my wheels.
+4. I had an accident. It's hard for me to remember things now, but the doctors say it will get better.
+5. I didn't give up - the company went bankrupt and we were sent to unemployment.
+6. I'm not getting any younger and you need reflexes for this job.
 
-## Ochroniarz klubowy (+1 BIO lub +1 PSY)
+## Club bodyguard (+1 BIO or +1 PSY)
 
-*Tak, ja rozumiem, że tam w środku są pańscy przyjaciele ale bez zaproszenia nie wpuszczamy. Jasne, że zna pan szefa Yakuza - to może pan zadzwoni i przekaże mi telefon, dobrze?*
+*Yes, I understand there are friends of yours in there but we don't let you in without an invitation. Obviously you know the Yakuza boss - then why don't you call him and hand me the phone, okay?*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Chciałbym zdobyć wykształcenie a na to potrzeba pieniędzy.
-2. Złamali mi kręgosłup w bójce ppod klubem. Lekarz mnie poskładał ale drugi raz ryzykował nie będę.
-3. Wywalili mnie za nadużywanie koksu w pracy.
-4. Poznałem taką jedną ... fajna babka ... ale nie chciała zadawać się z bramkarzem.
-5. Szef kazał mi skatować jakiegoś spokojnego knypka - niby, że naraził się VIPom. W d..e mam, nie biję bezbronnych.
-6. Jakiś palant wjechał w drzwi na dronie wypakowanym materiałami wybuchowymi. Od tego czasu słabo słyszę.
+1. I would like to get an education and you need money for that.
+2. They broke my back in a fight outside a club. The doctor put me back together, but I won't risk it again.
+3. I got fired for abusing coke at work.
+4. I met this one ... nice lady ... but she didn't want to mess with the bouncer.
+5. The boss told me to beat up some quiet knucklehead - supposedly because he'd exposed himself to the VIPs. I don't beat up the defenceless.
+6. Some jerk drove a drone packed with explosives into a doorway. I've been hard of hearing ever since.
 
 ## Reporter (+1 PSY)
 
-*Wie pan, ja to oczywiście mogę nagrać. I ja nawet mogę to opublikować, ale to nic nie da. Za półtorej minuty tego materiału i tak nie będzie w Infosferze a za panem i za mną wyślą psy gończe. Naprawdę pan tego chce?*
+*You know, I can of course record it. And I can even publish it, but it won't do any good. In a minute and a half, this footage won't be in the Infosphere anyway and the security will be after you and me. Do you really want that?*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Redaktor naczelny odmówiła druku mojego artykułu o korupcji w Administracji
-2. Niepotrzebnie opisałem co się działo na tej balandze w klubie - a ostrzegali, żebym tego nie robił.
-3. Mam wrażenie, że nie robiłem nic ważnego.
-4. Zaibatsu wykupiło nasze wydawnictwo - nie mam zdrowia do korpo, więc sobie poszedłem.
-5. W starych archiwach odkryłem coś takiego, że wolałem zmienić zawód.
-6. Nie zrezygnowałem, po prostu tutaj znajdę temat mojego życia.  
+1. the Editor-in-Chief refused to print my article on corruption in the Administration
+2. I unnecessarily described what was going on at that party in the club - and they warned me not to do it.
+3. I have the impression that I did not do anything important.
+4. Zaibatsu bought out our publishing house - I don't like the corpo, so I went.
+5. I discovered something in the old archives and preferred to change profession.
+6. I haven't given up, I just want to find some incredible news here.
 
-## Cybertechnik (+1 INF)
+## Cybertechnician (+1 INF)
 
-*Jak się będziesz cały czas tak wiercił, to ci to przykręcę do d**y zamiast do ręki! Pasuje?*
+*If you keep fidgeting like that, I'll screw it to your a** instead of your hand! Want it?*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. We śnie objawił mi się Bóg i powiedział, że łączenie maszyn i ludzi jest złe.
-2. Ręka, którą zamontowałem jakiemuś gangusowi okazała się wadliwa i teraz ściga mnie banda maniaków.
-3. Zadłużyłem się u mafii, żeby otworzyć warsztat. Niestety interes nie poszedł zbyt dobrze...
-4. Moi poprzedni pracodawcy z zaibatsu w końcu mnie znaleźli...
-5. Od pewnego czasu każdy sprzęt, który montuję lub naprawiam szybko się psuje - to chyba jakaś klątwa...
-6. Mam pomysły na przełomowe cybermodyfikacje, potrzebuję pieniędzy i sprzętu, żeby zrealizować swoje plany.
+1. In a dream, God appeared to me and told me that the combination of machines and people was wrong.
+2. The hand I fitted to some gangster turned out to be faulty and now I am being chased by a gang of maniacs.
+3. I went into debt to the mafia to open a workshop. Unfortunately the business didn't go very well....
+4. My previous employers from zaibatsu finally found me....
+5. For some time now, every piece of equipment I assemble or repair has been breaking down quickly - I guess it's some kind of a curse....
+6. I have ideas for groundbreaking cybermodifications, I need money and equipment to make my plans a reality.
 
-## Programista (+1 INF)
+## Software developer (+1 INF)
 
-*Czekaj mówię, czekaj chwilę! Jak teraz uruchomisz ten program, to za moment nie będzie co zbierać z dysku. Infosfera to nie miejsce dla ignorantów ... no przynajmniej w większości przypadków...*
+*Wait I say, wait a minute! If you run this software now, there will be nothing to collect from the disk in a moment. The Infosphere is no place for ignorants ... well, at least in most cases ...*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Czuję, że się wypaliłem. Kodowanie już mnie nie kręci.
-2. Ostatnie starcie z czarnym lodem wysmażyło mi pół mózgu. Potrzebuję zmiany środowiska.
-3. Ekipa, z którą pracowałem okazała się bandą gnojów. Ukradli moje pomysły i zarobili na nich mnóstwo kasy.
-4. Na zlecenie zaibatsu zniszczyłem węzeł jakiejś influencerki - uświadomiłem sobie wtedy, że staję się bezdusznym potworem.
-5. Odeszła ode mnie bliska osoba - powiedziała, że nie będzie rywalizowała z moim życiem w Infosferze.
-6. W Infosferze natknąłem się na dziwny rodzaj sztucznej inteligencji - prawdę mówiąc do dzisiaj jestem przerażony. 
+1. I feel I've burnt myself out. Coding no longer makes me happy.
+2. The last bout of black ice fried half my brain. I need a change of environment.
+3. The team I worked with turned out to be a bunch of turds. They stole my ideas and made a lot of money from them.
+4. I destroyed some influencer's node on behalf of zaibatsu - I realised then that I was becoming a soulless monster.
+5. A loved one left me - she said she wouldn't compete with my life in the Infosphere.
+6. I encountered a strange kind of artificial intelligence in the Infosphere - truth be told I'm still terrified to this day.
 
-## Żołnierz gangu (+1 BIO lub +1 PSY)
+## Gang soldier (+1 BIO or +1 PSY)
 
-*Na ulicy sprawy stawia się jasno. Jesteś po naszej stronie, to dbamy o ciebie. Jesteś po przeciwnej - to walczymy z tobą. Nikt tutaj nie mówi o braku szacunku. Nigdy.*
+*On the street, things are made clear. You are on our side - then we care about you. You are on the opposite side - then we fight you. Nobody here talks about disrespect. Never.*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Przez całe życie słuchałem rozkazów, teraz chcę robić coś dla siebie.
-2. Wrobiono mnie w zdradę i teraz nie mogę wrócić do gangu.
-3. Zdałem sobie sprawę, że krzywdzę ludzi. Nie chcę tego więcej robić.
-4. Nasz gang został zlikwidowany. Jestem chyba jedynym, który przeżył.
-5. Z powodów osobistych - ktoś musi zginąć.
-6. Mam dość życia w biedzie, tym razem zamierzam zdobyć fortunę.
+1. All my life I have obeyed orders, now I want to do something for myself.
+2. I was framed for betrayal and now I can't go back to the gang.
+3. I realized I was hurting people. I don't want to do that anymore.
+4. Our gang was destroyed. I am probably the only survivor.
+5. For personal reasons - someone has to die.
+6. I'm sick of living in poverty, this time I'm going to make a fortune.
 
-## Influencerka (+1 PSY)
+## Influencer (+1 PSY)
 
-*Witajcie cukiereczki! Niedługo dobijemy do trzech milionów subskrypcji i robimy imprezkę! W tym samym klubie co zawsze i pamiętajcie, żeby zostawić awatara przynajmniej na godzinkę!*
+*Hello sweets! We're about to hit three million subscriptions and we're doing a party! Same club as always and remember to leave your avatar for at least an hour!*
 
-Zrezygnowałam, bo:
+I resigned because:
 
-1. Infosfera nie jest realnym światem a ja chcę przeżywać prawdziwe emocje.
-2. Zamierzam zdobyć trochę doświadczenia życiowego, to podniesie oglądalność.
-3. Zaibatsu chciało kupić mój kanał, nie zgodziłam się - więc mnie zniszczyli.
-4. Cały obszar Infosfery został zaatakowany przez nieznanego wirusa, niestety były tam też moje dane...
-5. Mam dość ludzi podglądających moje życie, potrzebuję prywatności.
-6. Jakaś banda debili włamała się do mojego mieszkanie i zniszczyła cały sprzęt, muszę zaczynać od zera.
+1. The Infosphere is not the real world and I want to experience real emotions.
+2. I'm going to get some life experience, it will increase my popularity.
+3. Zaibatsu wanted to buy my channel, I didn't agree - so they destroyed me.
+4. The entire Infosphere was attacked by an unknown virus, unfortunately my data was there too....
+5. I'm sick of people peeping into my life, I need privacy.
+6. Some bunch of morons broke into my flat and destroyed all my equipment, I have to start from scratch.
 
-## Urzędnik Administracji (+1 PSY)
+## Administration Officer (+1 PSY)
 
-*Tak, tak. Zaibatsu obiecują, że zajmą się wszystkim ... i wszystkimi. Pod warunkiem, że masz czym zapłacić albo możesz dla nich pracować. Tak jakby cała reszta społeczeństwa w ogóle nie istniała...*
+*Yes, yes. Zaibatsu promise to take care of everything ... and everyone. Provided you have something to pay or can work for them. It's as if the rest of society doesn't exist at all....*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Uznałem, że wypełniłem już swój obywatelski obowiązek, teraz kolej na innych.
-2. Oskarżono mnie (niesłusznie) o łapówki i przekręty.
-3. W tej pracy nie ma żadnych perspektyw awansu a ja mam ambicje.
-4. Nikt nie doceniał moich pomysłów.
-5. Komuś ważnemu zależało na wyburzeniu dzielnicy biedoty, a ja nie wydałem pozwolenia...
-6. Moje stanowisko zajęła eksperymentalna sztuczna inteligencja.
+1. I considered that I had already fulfilled my civic duty, now it was the turn of others.
+2. I have been accused (wrongly) of bribes and scams.
+3. There are no promotion prospects in this job and I have ambitions.
+4. No one appreciated my ideas.
+5. Someone important wanted to demolish the poorhouse district and I did not give permission....
+6. My position was taken by an experimental artificial intelligence.
 
-## Policjant (+1 BIO lub +1 PSY)
+## Police officer (+1 BIO or +1 PSY)
 
-*No i co z tego, że mamy mniej funduszy niż sklep spożywczy i mniej uprawnień niż cieć na parkingu? Przestępców nadal trzeba ścigać a prawa przestrzegać. Czyjego prawa? Tego, które chroni ludzi a nie ich zniewala.*
+*So what if we have less funding than a grocery shop and less powers than a carpenter in a car park? Criminals still need to be prosecuted and the law respected. Whose law? The one that protects people, not enslaves them.*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Ta robota jest ohydna, wszyscy nas nienawidzą, nie wiem dlaczego chciałem zostać policjantem.
-2. Wiele można wybaczyć swojemu partnerowi w pracy, ale nie wszystko...
-3. Moja rodzina nigdy nie była bezpieczna.
-4. Szef nakrył mnie jak odbierałem "prezenty" od sklepikarzy
-5. Po fałszywym donosie, w moim domu znaleziono nielegalny sprzęt zagłuszający - ktoś musiał mi to podrzucić...
-6. Po kilku latach zdałem sobie sprawę, że tak naprawdę nie jestem w stanie strzelić do człowieka.
+1. This job is hideous, everyone hates us, I don't know why I wanted to be a police officer.
+2. You can forgive a lot for your work partner, but not everything....
+3. My family was never safe.
+4. My boss caught me picking up 'gifts' from shopkeepers
+5. After a false report, illegal jamming equipment was found in my house - someone must have slipped it to me....
+6. After a few years I realized that I was not really able to shoot a person.
 
-## Detektyw (+1 PSY)
+## Detective (+1 PSY)
 
-*Zabójstwa, porwania, wymuszenia. W tym mieście nie brakuje ludzi, którzy krzywdzą innych ludzi a ja próbuję w tym wszystkim znaleźć coś co można nazwać sprawiedliwością.*
+*Murder, kidnapping, extortion. There are a lot of people hurting other people in this city.  And I am trying to find some justice in all of this.*
 
-Zrezygnowałem, bo:
+I resigned because:
 
-1. Tak naprawdę nic się nie zmienia a moja praca nikomu i niczemu nie służy
-2. Okazało się, że dziewczyna, której pomogłem uciec była własnością Yakuza
-3. Lepiej będzie jak niektóre sprawy pozostaną niewyjaśnione
-4. Muszę się na chwilę przyczaić, ale na pewno nie zostawię tej sprawy
-5. Czas najwyższy zacząć troszczyć się o siebie samego
-6. Zostałem wrobiony w sprawę kryminalną i odebrano mi licencję
+1. Nothing really changes and my work serves no one and no purpose
+2. It turned out that the girl I helped escape was owned by the Yakuza
+3. It's better if some things remain unexplained
+4. I need to lie low for a while, but I'm definitely not going to leave this case behind
+5. It's high time to start taking care of myself
+6. I was framed for a criminal case and had my license revoked
 
-## Pracownica lokalu usługowego (+1 PSY lub +1 INF)
+## Beauty Services Employee (+1 PSY or +1 INF)
 
-*Codziennie dbam o klientów, codziennie się do nich uśmiecham. I kogo to tak naprawdę obchodzi?*
+*I take care of my customers every day, I smile at them every day. And who really cares?*
 
-Zrezygnowałam, bo:
+I resigned because:
 
-1. Czuję, że zasługuję na coś lepszego.
-2. Lokal został wykupiony przez podejrzanych typów. Z daleka śmierdzieli mi gangsterką.
-3. Klientowi coś zginęło w lokalu (akurat!) no i oskarżyli mnie.
-4. Muszę jakoś utrzymać rodzinę a podobno tutaj można zarobić więcej.
-5. Szef powiedział, że te nowe androidy są tańsze i pracują lepiej ode mnie.
-6. Chcę otworzyć swój własny lokal a do tego potrzebuję funduszy.
+1. I feel I deserve better.
+2. The premises were bought out by dodgy types. They smelled like gangsters from a distance.
+3. A customer lost something in the premises (just like that!) and they accused me.
+4. I have to provide for my family and they say I can earn more here.
+5. The boss said that the new androids are cheaper and work better than me.
+6. I want to open my own place and for that I need funds.
 
-## Pracownik komunalny (+1 BIO)
+## Municipal worker (+1 BIO)
 
-*Piękny poranek! Ciężka harówka, płaca minimalna, ludzka pogarda - co gorszego może mnie dzisiaj spotkać?*
+*Beautiful morning! The hard grind, the minimum wage, human contempt - what could be worse for me today?*
 
-Odszedłem, bo:
+I left because:
 
-1. Każdy by odszedł, ty też.
-2. Słyszałem, że w podziemiach kolejki magnetycznej giną pracownicy komunalni a ja miałem tam wyznaczony dyżur nocny.
-3. Taki jeden gościu z telewizji mówił, że ma dla mnie lepszą robotę. Nie wiem co się stało, bo przestał dzwonić.
-4. Znalazłem się w nieodpowiednim miejscu o nieodpowiedniej porze. Nie pytaj, bo i tak nie powiem.
-5. Bo sro! Muszę znaleźć tego skurwysyna, który przejechał mi psa!
-6. Nasz rejon przejęło zaibatsu. Administracja obiecała, że może w przyszłym roku będą nowe miejsca pracy.
+1. Everyone would leave, and so would you.
+2. I heard that municipal workers were dying in the basement of the Magnet Railway and I was assigned night duty there.
+3. There was this one guy on TV who said he had a better job for me. I don't know what happened because he stopped calling.
+4. I found myself in the wrong place at the wrong time. Don't ask because I won't tell anyway.
+5. Because! I have to find the mo****er who ran over my dog!
+6. Our area has been taken over by zaibatsu. The administration promised that there might be new jobs next year.

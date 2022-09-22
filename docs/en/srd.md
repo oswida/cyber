@@ -137,9 +137,9 @@ You could put it this way:
 
 > Examples:
 >
-> Ada tries to open the electronic lock without knowing the code so she performs an INT test. A passed test means that she has successfully tricked the system and the door opens.
+> Ada tries to open the electronic lock without knowing the code so she performs an INF test. A passed test means that she has successfully tricked the system and the door opens.
 
-> Kumiko races against a security vehicle that tries to block her path. The vehicle's manoeuvres depend on her reflexes and agility so she has to perform a BOD test. Passing the test means she will be able to escape the security.
+> Kumiko races against a security vehicle that tries to block her path. The vehicle's manoeuvres depend on her reflexes and agility so she has to perform a BIO test. Passing the test means she will be able to escape the security.
 
 > Robert is trying to find a missing family member, and to do so he enlists the help of a street gang friend. A passing PSY test means that he has obtained some information about the wanted man.
 
