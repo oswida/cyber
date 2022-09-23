@@ -8,7 +8,7 @@ nav_order: 4
 # Background
 
 Background summarises a character's past life experience and gives them a certain starting status.
-It is not equivalent to a class, it does not define the character's path of development and only describes the character's **past experiences** and resulting knowledge or status. Additionally, the player may (but does not have to) choose or draw a reason for giving up their previous lifestyle.
+It is not equivalent to a class, it does not define the character's path of development. It only describes the character's **past experiences** and resulting knowledge or status. Additionally, the player may (but does not have to) choose or draw a reason for giving up their previous lifestyle.
 
 Backgrounds proposed below represent 'ordinary' people rather than trained professionals, but don't let that fool you. These people are not ordinary - they have left familiar environments and dared to take a step into the unknown. Dared to change their lives. They are determined and dangerous. They believe that somewhere out there, in the future, a better fate awaits them and they intend to find out. No matter what price they have to pay....
 
@@ -21,7 +21,7 @@ In addition, to mechanically reflect a character's past experience, each past de
 I resigned because:
 
 1. I am fed up with this monotonous, unproductive job
-2. I did not pass the periodic evaluation (it is co-worker fault)
+2. I did not pass the periodic evaluation (it is co-worker's fault)
 3. My immediate supervisor made unambiguous proposals to me.
 4. Corporations are evil incarnate and I am not going to work for Satan
 5. In the documents I processed, I discovered shocking facts about the corporation
@@ -35,7 +35,7 @@ I resigned because:
 
 1. One of my colleagues had an accident because of me
 2. My boss turned out to be an asshole
-3. Someone snooped that I took something out of the factory during my shift
+3. Someone claimed that I took something out of the factory during my shift
 4. I unwittingly damaged a machine on the belt and had to leave
 5. It turned out that items we produce are used to kill people.
 6. Corporations are evil incarnate and I am not going to work for Satan
@@ -49,7 +49,7 @@ I resigned because:
 1. I refused to follow an order that I felt was wrong.
 2. I have higher aspirations, I would like a job where people respect me.
 3. I did not pass the periodic fitness tests, I just had a weaker day.
-4. I saw my immediate supervisor slaughtered one of the company's employees.
+4. I saw my immediate supervisor slaughter one of the company's employees.
 5. I did not want to take part in the smuggling organised by my colleagues.
 6. I unintentionally shot an innocent man.
 
@@ -61,7 +61,7 @@ I resigned because:
 
 1. A f*****g gang was destroying my workshop regularly because I didn't want to pay the tribute.
 2. I broke that motorbike quite accidentally. And then it turned out that it belonged to the Yakuza....
-3. It's impossible to make a living from this job, no customers, expensive parts ... how to live?
+3. It's impossible to make a living from this job. No customers, expensive parts ... how do I live?
 4. I didn't know that the junk my friend had left in my garage was military equipment
 5. My world collapsed after the death of a loved one, to this day I don't know who was responsible
 6. I've never been very good at my job, maybe it's time to change it?
@@ -74,7 +74,7 @@ I resigned because:
 
 1. I am fed up with underfunded hospitals, lack of equipment and medicines - how can I help people in such conditions?
 2. I am afraid that the operation failed because of me
-3. I will not help people who cannot show gratitude
+3. I will not help people who will not show gratitude
 4. This job is not for me, I can't stand the sight of blood and death
 5. Those who really need my help do not end up in hospitals
 6. I have discovered inconvenient facts in hospital medical records
@@ -85,11 +85,11 @@ I resigned because:
 
 I resigned because:
 
-1. Working 24/7 for these rates is a mockery.
+1. Working 24/7 for these rates is a joke.
 2. The Boss found out about that last haul of drugs my mate and I had dropped off.
 3. It turned out that the family I agreed to drop off had escaped the corporate arcology.
 4. I overheard a VIP conversation - I'm not going to take part in such perverted fun.
-5. I thought there was always time to start changing the world for the better.
+5. I thought it was time to start changing the world for the better.
 6. It's hard to compete with these youngsters stuffed with implants.
 
 ## Driver (+1 BIO)
@@ -124,7 +124,7 @@ I resigned because:
 
 I resigned because:
 
-1. the Editor-in-Chief refused to print my article on corruption in the Administration
+1. The boss refused to print my article on corruption in the Administration
 2. I unnecessarily described what was going on at that party in the club - and they warned me not to do it.
 3. I have the impression that I did not do anything important.
 4. Zaibatsu bought out our publishing house - I don't like the corpo, so I went.
@@ -133,27 +133,27 @@ I resigned because:
 
 ## Cybertechnician (+1 INF)
 
-*If you keep fidgeting like that, I'll screw it to your a** instead of your hand! Want it?*
+*If you keep fidgeting like that, I'll screw it to your a__ instead of your hand! Want it?*
 
 I resigned because:
 
 1. In a dream, God appeared to me and told me that the combination of machines and people was wrong.
 2. The hand I fitted to some gangster turned out to be faulty and now I am being chased by a gang of maniacs.
 3. I went into debt to the mafia to open a workshop. Unfortunately the business didn't go very well....
-4. My previous employers from zaibatsu finally found me....
+4. My previous employers from a zaibatsu finally found me....
 5. For some time now, every piece of equipment I assemble or repair has been breaking down quickly - I guess it's some kind of a curse....
-6. I have ideas for groundbreaking cybermodifications, I need money and equipment to make my plans a reality.
+6. I have ideas for groundbreaking cybermodifications, but I need money and equipment to make my plans a reality.
 
 ## Software developer (+1 INF)
 
-*Wait I say, wait a minute! If you run this software now, there will be nothing to collect from the disk in a moment. The Infosphere is no place for ignorants ... well, at least in most cases ...*
+*Wait I say, wait a minute! If you run this software now, there will be nothing to collect from the disk in a moment. The Infosphere is no place for ignorance ... well, at least in most cases ...*
 
 I resigned because:
 
 1. I feel I've burnt myself out. Coding no longer makes me happy.
-2. The last bout of black ice fried half my brain. I need a change of environment.
+2. The last bout with a black ice fried half my brain. I need a change of environment.
 3. The team I worked with turned out to be a bunch of turds. They stole my ideas and made a lot of money from them.
-4. I destroyed some influencer's node on behalf of zaibatsu - I realised then that I was becoming a soulless monster.
+4. I destroyed some influencer's node on behalf of a zaibatsu - I realised then that I was becoming a soulless monster.
 5. A loved one left me - she said she wouldn't compete with my life in the Infosphere.
 6. I encountered a strange kind of artificial intelligence in the Infosphere - truth be told I'm still terrified to this day.
 
@@ -172,7 +172,7 @@ I resigned because:
 
 ## Influencer (+1 PSY)
 
-*Hello sweets! We're about to hit three million subscriptions and we're doing a party! Same club as always and remember to leave your avatar for at least an hour!*
+*Hello sweets! We're about to hit three million subscriptions and we're having a party! Same club as always and remember to leave your avatar for at least an hour!*
 
 I resigned because:
 
@@ -198,15 +198,15 @@ I resigned because:
 
 ## Police officer (+1 BIO or +1 PSY)
 
-*So what if we have less funding than a grocery shop and less powers than a carpenter in a car park? Criminals still need to be prosecuted and the law respected. Whose law? The one that protects people, not enslaves them.*
+*So what if we have less funding than a grocery shop and less power than a parking watchman? Criminals still need to be prosecuted and the law respected. Whose law? The one that protects people, not enslaves them.*
 
 I resigned because:
 
 1. This job is hideous, everyone hates us, I don't know why I wanted to be a police officer.
-2. You can forgive a lot for your work partner, but not everything....
+2. You can overlook a lot for your work partner, but not everything....
 3. My family was never safe.
 4. My boss caught me picking up 'gifts' from shopkeepers
-5. After a false report, illegal jamming equipment was found in my house - someone must have slipped it to me....
+5. After a false report, illegal jamming equipment was found in my house - someone must have planted it here...
 6. After a few years I realized that I was not really able to shoot a person.
 
 ## Detective (+1 PSY)
@@ -230,7 +230,7 @@ I resigned because:
 
 1. I feel I deserve better.
 2. The premises were bought out by dodgy types. They smelled like gangsters from a distance.
-3. A customer lost something in the premises (just like that!) and they accused me.
+3. A customer lost something on the premises (just like that!) and they accused me.
 4. I have to provide for my family and they say I can earn more here.
 5. The boss said that the new androids are cheaper and work better than me.
 6. I want to open my own place and for that I need funds.
@@ -246,4 +246,4 @@ I left because:
 3. There was this one guy on TV who said he had a better job for me. I don't know what happened because he stopped calling.
 4. I found myself in the wrong place at the wrong time. Don't ask because I won't tell anyway.
 5. Because! I have to find the mo****er who ran over my dog!
-6. Our area has been taken over by zaibatsu. The administration promised that there might be new jobs next year.
+6. Our area has been taken over by a zaibatsu. The administration promised that there might be new jobs next year.

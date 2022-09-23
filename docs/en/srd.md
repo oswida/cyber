@@ -178,10 +178,11 @@ The attacker rolls the **damage dice** for their weapon. For physical damage (in
 
 If the amount of the damage exceeds the opponent's current HP, the remaining points **decrease the corresponding ability** of the character (BIO for combat in the physical world, INF for clash in the Infosphere or EMP weapons).
 
-- Reducing any of the character's abilities to zero means:
-  - BIO - physical death of the character
-  - PSY - catatonia and, after a potential cure, serious mental problems (phobias, anxiety) requiring specialist care or social problems (permanent exclusion from certain societies)
-  - INF - blocked access to the Infosphere and failure of all cybermodifications until at least one point of this ability has been regained
+Reducing any of the character's abilities to zero means:
+
+- BIO - physical death of the character
+- PSY - catatonia and, after a potential cure, serious mental problems (phobias, anxiety) requiring specialist care or social problems (permanent exclusion from certain societies)
+- INF - blocked access to the Infosphere and failure of all cybermodifications until at least one point of this ability has been regained
 
 #### Multiple Attackers
 
@@ -232,7 +233,7 @@ Running away from a dire situation always requires a successful save (BIO for ph
 
 #### Detachments
 
-Large groups of similar combatants fighting together are treated as a single **detachment**. When a detachment takes critical damage, it is routed or significantly weakened. When it reaches 0 BOD, it is destroyed.
+Large groups of similar combatants fighting together are treated as a single **detachment**. When a detachment takes critical damage, it is routed or significantly weakened. When it reaches 0 BIO, it is destroyed.
 
 Attacks against detachments by individuals are [impaired](#attack-modifiers) (excluding [blast](#blast) damage).
 
@@ -287,7 +288,7 @@ Each character can perform a certain set of standard activities in the Infospher
 - obtaining public information
 - accessing the products and services offered by Infosphere
 
-All other activities such as hacking, security, access to proprietary information require a cybermodification referred to as a **neuroprocessor**..
+All other activities such as hacking, security, access to proprietary information require a cybermodification referred to as a **neuroprocessor**.
 
 **Infosphere actions** are resolved similarly to the physical world, except that the ability taken into account for saves is Interface. Similarly, when a character's HP is reduced to zero, the ability that is decreased by attacks is Interface instead of Biology.
 
@@ -331,6 +332,8 @@ A character whose **INF is zero** cannot use cybermodifications - they stop work
 
 **Activation**: any cybernetic modification item that affects game mechanics (modifiers to saves, critical damage) requires **activation** every time the character wishes to use it. Activation requires marking **one point of Fatigue** in the inventory.
 Cybermodification items not marked as requiring activation have a permanent effect and their use does not increase a character's Fatigue.
+
+**Cyberpsychosis**: cyber modifications can have a negative impact on the human body. Intense use of implants can take a toll on a character's mental condition. Whenever fatigue fills a character's **entire** inventory, **subtract one** from their **PSY**.
 
 For more information on the creation of cybermodifications and their pricing, see [Appendix](./cybermod.md).
 
