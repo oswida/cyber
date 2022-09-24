@@ -10,7 +10,7 @@ nav_order: 4
 Background summarises a character's past life experience and gives them a certain starting status.
 It is not equivalent to a class, it does not define the character's path of development. It only describes the character's **past experiences** and resulting knowledge or status. Additionally, the player may (but does not have to) choose or draw a reason for giving up their previous lifestyle.
 
-Backgrounds proposed below represent 'ordinary' people rather than trained professionals, but don't let that fool you. These people are not ordinary - they have left familiar environments and dared to take a step into the unknown. Dared to change their lives. They are determined and dangerous. They believe that somewhere out there, in the future, a better fate awaits them and they intend to find out. No matter what price they have to pay....
+Backgrounds proposed below represent 'ordinary' people rather than trained professionals, but don't let that fool you. These people are not ordinary - they have left familiar environments and dared to take a step into the unknown. Dared to change their lives. They are determined and dangerous. They believe that somewhere out there, in the future, a better fate awaits them and they intend to find out. No matter what price they have to pay...
 
 In addition, to mechanically reflect a character's past experience, each past determines a bonus to one of three abilities.
 
@@ -94,7 +94,7 @@ I resigned because:
 
 ## Driver (+1 BIO)
 
-*Are you talking about the LRV 500? The one with three-axle drive? Sure I've ridden one! And that's with a full load, so you won't impress me bream ...*
+*Are you talking about the LRV 500? The one with three-axle drive? Sure I've ridden one! And that's with a full load, so you won't impress me ...*
 
 I resigned because:
 
@@ -120,7 +120,7 @@ I resigned because:
 
 ## Reporter (+1 PSY)
 
-*You know, I can of course record it. And I can even publish it, but it won't do any good. In a minute and a half, this footage won't be in the Infosphere anyway and the security will be after you and me. Do you really want that?*
+*Of course, I can  record it. And I can even publish it, but it won't do any good. In a minute and a half, this footage won't be in the Infosphere anyway and the security will be after you and me. Do you really want that?*
 
 I resigned because:
 
@@ -137,7 +137,7 @@ I resigned because:
 
 I resigned because:
 
-1. In a dream, God appeared to me and told me that the combination of machines and people was wrong.
+1. In a dream, God appeared to me and told me that mixing machines and humans was wrong.
 2. The hand I fitted to some gangster turned out to be faulty and now I am being chased by a gang of maniacs.
 3. I went into debt to the mafia to open a workshop. Unfortunately the business didn't go very well....
 4. My previous employers from a zaibatsu finally found me....
@@ -185,7 +185,7 @@ I resigned because:
 
 ## Administration Officer (+1 PSY)
 
-*Yes, yes. Zaibatsu promise to take care of everything ... and everyone. Provided you have something to pay or can work for them. It's as if the rest of society doesn't exist at all....*
+*Yes, yes. Zaibatsu promise to take care of everything ... and everyone. Provided you have something to pay or can work for them. It's as if the rest of society doesn't exist at all...*
 
 I resigned because:
 
@@ -198,7 +198,7 @@ I resigned because:
 
 ## Police officer (+1 BIO or +1 PSY)
 
-*So what if we have less funding than a grocery shop and less power than a parking watchman? Criminals still need to be prosecuted and the law respected. Whose law? The one that protects people, not enslaves them.*
+*So what if we have less funding than a grocery shop and less authority than a parking watchman? Criminals still need to be prosecuted and the law respected. Whose law? The one that protects people, not enslaves them.*
 
 I resigned because:
 

@@ -7,15 +7,15 @@ nav_order: 3
 
 # Cybermods
 
-During character creation, each player can choose **up to 2 cyber modifications for free, but the cost of these upgrades cannot exceed 20,000 ℂ** .
+During character creation, each player can choose **up to 2 cybermodifications for free, but the cost of these upgrades cannot exceed 20,000 ℂ** .
 
 Cyber modifications are a sandbox for players' imagination. Although you will find examples of specific improvements below, *Cyber* first and foremost proposes a system for constructing implants and determining their market value, so that each of you can literally create whatever you want.
 
-## Creating cyber modifications
+## Creating cybermodifications
 
 Try to describe verbally what the cybermod is supposed to change (possibly how it is supposed to work), this will give you an idea of the abilities being modified. A fictional description of a given cyber modification can also give a lot of satisfaction.
 
-Each enhancement consists of **one base element** that determines where the cyber modification is mounted in the character's body (head, arms, legs, torso) and **any number of elements that modify stats** of the character (after all, they are enhancements). Each element that modifies a stat has a generalised price. The sum of all the elements that make up the developed modification determines the final price of the cyber modification.
+Each enhancement consists of **one base element** that determines where the cyber modification is mounted in the character's body (head, arms, legs, torso) and **some number of elements that modify stats** of the character (after all, they are enhancements). Each element that modifies a stat has a generalised price. The sum of all the elements that make up the developed modification determines the final price of the cybermodification.
 
 | Base element | Price |
 | ------------ | :---: |
@@ -28,9 +28,9 @@ Once a base element has been selected, any number of enhancements modifying stat
 
 Try to make a fictional description for every enhancement. This is especially important with abilities that describe entire groups of character activities. One can imagine a cybernetic modification that generally strengthens the character's body (+X BIO) but there will also be situations where we only care about enhanced speed or stamina and these are described by the same ability.
 
-**Cosmetic modifications**: Cyber modifications that are only intended to produce an aesthetic effect (body covered in fur, cat's eyes, hair changing colour, etc.) cost as much as the **base element** associated with the body part in which they are fitted.
+**Cosmetic modifications**: Cybermodifications that are only intended to produce an aesthetic effect (body covered in fur, cat's eyes, hair changing colour, etc.) cost as much as the **base element** associated with the body part in which they are fitted.
 
-| Enhancement                                                                                                           | Cena                       | Maximum  per cybermod | Activation |
+| Enhancement                                                                                                           | Price                      | Maximum  per cybermod | Activation |
 | --------------------------------------------------------------------------------------------------------------------- | -------------------------- | :-------------------: | :--------: |
 | +1 HP when resolving an attack                                                                                        | 1 000                      |          +3           |    yes     |
 | +1 to the selected ability (BIO,PSY,INF) on test                                                                      | 7 000                      |  +1 (excludes below)  |    yes     |
@@ -50,7 +50,7 @@ Try to make a fictional description for every enhancement. This is especially im
 
 Total reduction of INF damage caused by EMP weapons is not possible, but each character can purchase EMP shielding:
 
-| Modyfication                       | Price  | Max per PC | Activation |
+| Modification                       | Price  | Max per PC | Activation |
 | ---------------------------------- | ------ | :--------: | :--------: |
 | +1 Armor when resolving INF damage | 10 000 |     +3     |     -      |
 
