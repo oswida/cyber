@@ -1,11 +1,13 @@
+import { useAtom } from "jotai";
 import { useCallback, useMemo } from "react";
 import {
   DraggableTitle,
   PaneName,
   TabBarPropsWithAction,
   TabsBarConfig,
+  useGetLeaf,
 } from "react-tile-pane";
-import { styled } from "~/common";
+import { hudPanelActive, hudPanelNames, styled } from "~/common";
 
 const thickness = 30;
 
@@ -73,27 +75,34 @@ const TabBarRoot = styled("div", {
 });
 
 const TabBar = ({ tabs, onTab, action }: TabBarPropsWithAction) => {
+  const getLeaf = useGetLeaf();
+
   const tabBar = useCallback(
-    (tab: PaneName, i: number) => (
-      <TabBarTitleRoot
-        selected={i === onTab}
-        name={tab}
-        key={tab}
-        onClick={() => action.switchTab(i)}
-      >
-        <TabBarTitle>{tab}</TabBarTitle>
-      </TabBarTitleRoot>
-    ),
+    (tab: PaneName, i: number) => {
+      return (
+        <TabBarTitleRoot
+          selected={i === onTab}
+          name={tab}
+          key={tab}
+          onClick={() => action.switchTab(i)}
+        >
+          <TabBarTitle>{tab}</TabBarTitle>
+        </TabBarTitleRoot>
+      );
+    },
     [action, onTab]
   );
+
+  const close = () => {
+    const visible = hudPanelNames.filter((it) => getLeaf(it) !== undefined);
+    if (visible.length > 1) action.closeTab(onTab);
+  };
 
   return useMemo(
     () => (
       <TabBarRoot>
         <TabBarContainer>{tabs.map(tabBar)}</TabBarContainer>
-        <TabBarCloseButton onClick={() => action.closeTab(onTab)}>
-          ×
-        </TabBarCloseButton>
+        <TabBarCloseButton onClick={close}>×</TabBarCloseButton>
       </TabBarRoot>
     ),
     [action, onTab, tabBar, tabs]

@@ -1,4 +1,3 @@
-import { DraggableTitle } from "react-tile-pane";
 import { styled } from "~/common";
 
 export const HudRoot = styled("div", {
@@ -32,9 +31,3 @@ export const HudPane = styled("div", {
   padding: 5,
   userSelect: "none",
 });
-
-// export const HudBarDiv = styled(DraggableTitle, {
-//   height: 25,
-//   backgroundColor: "$background",
-//   color: "$green",
-// });

@@ -1,14 +1,12 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom, useAtomValue } from "jotai";
-import { useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
-import { currentPage, language, menuVisible } from "~/common";
-import { Button, Flex, LinkButton, MenuOverlay, Text } from "~/component";
+import { currentPage, language, modalOpen } from "~/common";
+import { Button, Flex, LinkButton, Overlay, Text } from "~/component";
 import { NavBar, Root } from "./styles";
 
 export const Layout = ({ children }: { children: any }) => {
-  const [mv, setMv] = useAtom(menuVisible);
+  const [mv, setMv] = useAtom(modalOpen);
   const [cp] = useAtom(currentPage);
   const lang = useAtomValue(language);
 
@@ -47,7 +45,7 @@ export const Layout = ({ children }: { children: any }) => {
       </NavBar>
       {children}
       {mv && (
-        <MenuOverlay id="menu">
+        <Overlay id="menu">
           <Flex direction="column" css={{ gap: 10 }}>
             <LinkButton to="/npc" onClick={closeMenu}>
               {lang == "en" ? "NPC" : "Bohater niezależny"}
@@ -65,7 +63,7 @@ export const Layout = ({ children }: { children: any }) => {
               {lang == "en" ? "Job" : "Robota"}
             </LinkButton>
           </Flex>
-        </MenuOverlay>
+        </Overlay>
       )}
     </Root>
   );

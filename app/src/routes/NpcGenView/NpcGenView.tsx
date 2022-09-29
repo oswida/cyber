@@ -1,22 +1,15 @@
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import { currentPage, language, menuVisible } from "~/common";
-import {
-  Button,
-  Flex,
-  PageContent,
-  PageHeader,
-  PageRoot,
-  Text,
-} from "~/component";
+import { currentPage, language, modalOpen } from "~/common";
+import { Button, Flex, PageContent, PageHeader, PageRoot } from "~/component";
 import { NpcType } from "~/data";
 import { Layout } from "../Layout";
 import { NpcCard } from "./NpcCard";
 import { useNpcGen } from "./useNpcGen";
 
 export const NpcGenView = () => {
-  const [mv, setMV] = useAtom(menuVisible);
+  const [mv, setMV] = useAtom(modalOpen);
   const [cp, setCp] = useAtom(currentPage);
   const lang = useAtomValue(language);
   const [data, setData] = useLocalStorageState<NpcType[]>("Cyber_NPCGEN", {
