@@ -1,34 +1,52 @@
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { styled } from "@stitches/react";
 import { Link } from "react-router-dom";
+import { styled } from "~/common";
 
 export const Button = styled("div", {
-  color: "#ffffff",
-  "&:hover": {
-    color: "#0fff50",
-    textDecoration: "none",
-    outline: "none",
-    cursor: "pointer",
-  },
+  color: "$fontPrimary",
+  outline: "none",
   textTransform: "uppercase",
-  padding: 5,
-  paddingLeft: 7,
-  paddingRight: 7,
-  border: "solid 1px #0fff50",
+  border: "solid 1px $blue",
   borderRadius: 5,
   backgroundColor: "transparent",
   userSelect: "none",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  "&:hover": {
+    color: "$blue",
+    textDecoration: "none",
+    cursor: "pointer",
+  },
+  variants: {
+    size: {
+      standard: {
+        padding: 5,
+        paddingLeft: 7,
+        paddingRight: 7,
+      },
+      small: {
+        padding: 2,
+        paddingLeft: 5,
+        paddingRight: 5,
+        fontSize: "small",
+      },
+    },
+  },
+  defaultVariants: {
+    size: "standard",
+  },
 });
 
 export const LinkButton = styled(Link, {
-  color: "#ffffff",
+  color: "$fontPrimary",
   "&:hover": {
-    color: "#0fff50",
+    color: "$blue",
   },
   textTransform: "uppercase",
   padding: 5,
-  border: "solid 1px #0fff50",
+  border: "solid 1px $blue",
   borderRadius: 5,
 });
 
