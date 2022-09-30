@@ -16,7 +16,8 @@ import {
   theme,
 } from "~/common";
 import { Button, Flex, GenMenu, Modal, Text } from "~/component";
-import { HudChat } from "./panels";
+import { HudChat } from "./pane";
+import { RollerPane } from "./pane/RollerPane";
 import { stretchBarConfig } from "./StretchBar";
 import { HudPane, HudRoot, HudToolbar } from "./styles";
 import { tabBarConfig } from "./TabBar";
@@ -49,7 +50,7 @@ export const HudLayout = () => {
   const [paneList, paneNames] = createTilePanes({
     chat: <HudChat />,
     npc: <HudPane>thiis is npc</HudPane>,
-    roll: <HudPane>Dice Roller</HudPane>,
+    roll: <RollerPane />,
     notes: <HudPane>Notes</HudPane>,
     board: <HudPane>board</HudPane>,
   });

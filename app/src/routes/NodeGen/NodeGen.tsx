@@ -74,32 +74,20 @@ export const NodeGen = () => {
   };
 
   return (
-    <GenLayout
-      headerMenu={{
-        generate: generate,
-        clear: clean,
-        export: exportNodes,
-        nodeclass: selectClass,
-      }}
-    >
-      <PageRoot>
-        <PageHeader>
-          <Flex
-            css={{
-              gap: 10,
-              paddingLeft: 10,
-              paddingBottom: 5,
-              overflow: "auto",
-            }}
-          ></Flex>
-        </PageHeader>
-        <PageContent ref={contentRef}>
-          {data.map((it) => (
-            <NodeCard data={it} key={`${it.name}`} id={`${it.name}`}></NodeCard>
-          ))}{" "}
-        </PageContent>
-      </PageRoot>
+    <>
+      <GenLayout
+        headerMenu={{
+          generate: generate,
+          clear: clean,
+          export: exportNodes,
+          nodeclass: selectClass,
+        }}
+      >
+        {data.map((it) => (
+          <NodeCard data={it} key={`${it.name}`} id={`${it.name}`}></NodeCard>
+        ))}{" "}
+      </GenLayout>
       <ClassMenu title={globalStr[lang]["node class"]} />
-    </GenLayout>
+    </>
   );
 };

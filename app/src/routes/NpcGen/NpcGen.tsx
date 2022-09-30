@@ -18,7 +18,7 @@ export const NpcGen = () => {
 
   useEffect(() => {
     setCp(genTitles[lang]["npc"]);
-  }, []);
+  }, [lang]);
 
   const generate = () => {
     setData((state) => [...state, ...rollNpc()]);

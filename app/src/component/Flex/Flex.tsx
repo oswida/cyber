@@ -18,6 +18,11 @@ export const Flex = styled("div", {
         alignItems: "center",
       },
     },
+    scrolled: {
+      true: {
+        overflow: "auto",
+      },
+    },
   },
   defaultVariants: {
     direction: "row",

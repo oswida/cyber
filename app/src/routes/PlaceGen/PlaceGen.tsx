@@ -9,7 +9,7 @@ export const PlaceGen = () => {
 
   useEffect(() => {
     setCp(genTitles[lang]["place"]);
-  }, []);
+  }, [lang]);
 
   const generate = () => {};
 

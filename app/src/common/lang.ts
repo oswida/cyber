@@ -15,6 +15,7 @@ export const globalStr: Record<string, Record<string, string>> = {
     selfdefense: "samoobrona",
     hp: "ochr",
     ice: "lod",
+    "main hud": "start",
   },
   en: {
     generate: "Generate",
@@ -32,6 +33,7 @@ export const globalStr: Record<string, Record<string, string>> = {
     selfdefense: "self-defense",
     hp: "hp",
     ice: "ice",
+    "main hud": "main",
   },
 };
 

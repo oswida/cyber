@@ -8,7 +8,7 @@ export const JobGen = () => {
   const lang = useAtomValue(language);
   useEffect(() => {
     setCp(genTitles[lang]["job"]);
-  }, []);
+  }, [lang]);
 
   const generate = () => {};
 

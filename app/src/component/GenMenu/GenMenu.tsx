@@ -1,5 +1,5 @@
 import { useAtom, useAtomValue } from "jotai";
-import { genMenuOpen, genTitles, language } from "~/common";
+import { genMenuOpen, genTitles, globalStr, language } from "~/common";
 import { Flex, LinkButton, Modal, Text } from "~/component";
 
 export type GenMenuProps = {
@@ -30,7 +30,7 @@ export const GenMenu = ({ extras, title }: GenMenuProps) => {
         {extras !== undefined &&
           Object.keys(extras).map((key) => (
             <LinkButton to={`${extras[key]}`} onClick={close}>
-              {key}
+              {globalStr[lang][key]}
             </LinkButton>
           ))}
       </Flex>
