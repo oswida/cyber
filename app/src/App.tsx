@@ -7,7 +7,7 @@ import { CorpoGen } from "./routes/CorpoGen";
 import { HudLayout } from "./routes/HudLayout";
 import { JobGen } from "./routes/JobGen";
 import { NodeGen } from "./routes/NodeGen";
-import { NpcGenView } from "./routes/NpcGenView";
+import { NpcGen } from "./routes/NpcGen";
 import { PlaceGen } from "./routes/PlaceGen";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HudLayout />}></Route>
         <Route path="/corpo" element={<CorpoGen />}></Route>
-        <Route path="/npc" element={<NpcGenView />}></Route>
+        <Route path="/npc" element={<NpcGen />}></Route>
         <Route path="/node" element={<NodeGen />}></Route>
         <Route path="/place" element={<PlaceGen />}></Route>
         <Route path="/job" element={<JobGen />}></Route>

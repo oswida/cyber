@@ -11,3 +11,10 @@ export const hudPanelSelectionOpen = atom<boolean>(false);
 
 export const hudPanelNames = ["npc", "chat", "board", "roll", "notes"];
 export const hudPanelActive = atom<Record<string, boolean>>({});
+
+export const genNames = ["npc", "corpo", "node", "place", "job"];
+
+export const genMenuOpen = atom<boolean>(false);
+
+export const nodeClassMenuOpen = atom<boolean>(false);
+export const nodeClassSelected = atom<string | undefined>(undefined);

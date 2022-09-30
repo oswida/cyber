@@ -1,4 +1,3 @@
-import { useAtom } from "jotai";
 import { useCallback, useMemo } from "react";
 import {
   DraggableTitle,
@@ -7,7 +6,7 @@ import {
   TabsBarConfig,
   useGetLeaf,
 } from "react-tile-pane";
-import { hudPanelActive, hudPanelNames, styled } from "~/common";
+import { hudPanelNames, styled } from "~/common";
 
 const thickness = 30;
 
@@ -68,7 +67,8 @@ const TabBarRoot = styled("div", {
   flexDirection: "row",
   userSelect: "none",
   border: `solid 1px $darkblue`,
-  borderRadius: 15,
+  // borderRadius: 15,
+  borderRadius: "10px 0px",
   marginTop: "0.25%",
   marginLeft: "0.25%",
   minWidth: 280,

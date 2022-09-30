@@ -11,6 +11,11 @@ export const Text = styled("div", {
       left: {
         textAlign: "left",
       },
+      center: {
+        display: "flex",
+        width: "100%",
+        justifyContent: "center",
+      },
     },
     size: {
       regular: {

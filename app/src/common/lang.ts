@@ -1,0 +1,53 @@
+export const globalStr: Record<string, Record<string, string>> = {
+  pl: {
+    generate: "Generuj",
+    clear: "Wyczyść",
+    export: "Eksport",
+    nodeclass: "Klasa",
+    "node class": "Klasa węzła",
+    any: "Dowolny",
+    d6: "k6",
+    d8: "k8",
+    d10: "k10",
+    d12: "k12",
+    volunteer: "wolontariusz",
+    hacker: "haker",
+    selfdefense: "samoobrona",
+    hp: "ochr",
+    ice: "lod",
+  },
+  en: {
+    generate: "Generate",
+    clear: "Clear",
+    export: "Export",
+    nodeclass: "Class",
+    "node class": "Node Class",
+    any: "Any",
+    d6: "d6",
+    d8: "d8",
+    d10: "d10",
+    d12: "d12",
+    volunteer: "volunteer",
+    hacker: "hacker",
+    selfdefense: "self-defense",
+    hp: "hp",
+    ice: "ice",
+  },
+};
+
+export const genTitles: Record<string, Record<string, string>> = {
+  pl: {
+    npc: "Bohater niezależny",
+    corpo: "Zaibatsu",
+    node: "Infowęzeł",
+    place: "Miejsce",
+    job: "Robota",
+  },
+  en: {
+    npc: "Non-player character",
+    corpo: "Zaibatsu",
+    node: "Infosphere node",
+    place: "Place",
+    job: "Job",
+  },
+};

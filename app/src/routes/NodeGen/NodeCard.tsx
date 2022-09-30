@@ -1,10 +1,13 @@
 import { faNetworkWired, faSkull } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useAtomValue } from "jotai";
 import useLocalStorageState from "use-local-storage-state";
+import { globalStr, language } from "~/common";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
 import { NodeType } from "~/data";
 
 export const NodeCard = ({ data, id }: { data: NodeType; id: string }) => {
+  const lang = useAtomValue(language);
   const [items, setItems] = useLocalStorageState<NodeType[]>("Cyber_NODEGEN", {
     defaultValue: [] as NodeType[],
   });
@@ -24,7 +27,7 @@ export const NodeCard = ({ data, id }: { data: NodeType; id: string }) => {
     >
       <CardRow>
         <Text color="yellow" css={{ marginRight: 15 }}>
-          OCHR:
+          {`${globalStr[lang]["hp"].toUpperCase()}:`}
         </Text>
         <Text css={{ marginRight: 25 }}>{data.hp}</Text>
         <Text color="yellow" css={{ marginRight: 15 }}>
@@ -32,7 +35,7 @@ export const NodeCard = ({ data, id }: { data: NodeType; id: string }) => {
         </Text>
         <Text css={{ marginRight: 25 }}>{data.inf}</Text>
         <Text color="yellow" css={{ marginRight: 15 }}>
-          LOD:
+          {`${globalStr[lang]["ice"].toUpperCase()}:`}
         </Text>
         <Text>{data.ice}</Text>
         {data.black && (

@@ -1,9 +1,8 @@
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import { currentPage, language } from "~/common";
-import { Button, Flex, PageContent, PageHeader, PageRoot } from "~/component";
-import { Layout } from "../Layout";
+import { currentPage, genTitles, language } from "~/common";
+import { GenLayout } from "~/component/GenLayout";
 import { CorpoCard, CorpoType } from "./CorpoCard";
 import { useCorpoGen } from "./useCorpoGen";
 
@@ -16,7 +15,7 @@ export const CorpoGen = () => {
   const lang = useAtomValue(language);
 
   useEffect(() => {
-    setCp(lang == "en" ? "Corporation" : "Korporacja");
+    setCp(genTitles[lang]["corpo"]);
   }, [lang]);
 
   const generate = () => {
@@ -43,37 +42,19 @@ export const CorpoGen = () => {
   };
 
   return (
-    <Layout>
-      <PageRoot>
-        <PageHeader>
-          <Flex
-            css={{
-              gap: 10,
-              paddingLeft: 10,
-              paddingBottom: 5,
-              overflow: "auto",
-            }}
-          >
-            <Button onClick={generate}>
-              {lang == "en" ? "Generate" : "Generuj"}
-            </Button>
-            <Button onClick={clean}>
-              {lang == "en" ? "Clear" : "Wyczyść"}
-            </Button>
-            <Button onClick={exportData} title="Eksportuj">
-              {lang == "en" ? "Export" : "Eksport"}
-            </Button>
-          </Flex>
-        </PageHeader>
-        <PageContent>
-          {data.map((it) => (
-            <CorpoCard
-              data={it}
-              key={`${it.name1}-${it.name2}-${it.name3}`}
-            ></CorpoCard>
-          ))}
-        </PageContent>
-      </PageRoot>
-    </Layout>
+    <GenLayout
+      headerMenu={{
+        generate: generate,
+        clear: clean,
+        export: exportData,
+      }}
+    >
+      {data.map((it) => (
+        <CorpoCard
+          data={it}
+          key={`${it.name1}-${it.name2}-${it.name3}`}
+        ></CorpoCard>
+      ))}
+    </GenLayout>
   );
 };

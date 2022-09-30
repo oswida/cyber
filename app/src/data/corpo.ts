@@ -164,6 +164,7 @@ export const corpName3 = [
   "Cybernetics",
   "Aerospace",
   "Express",
+  "Robotics",
 ];
 
 export const corpNameDomain: Record<string, Record<string, string>> = {
@@ -214,6 +215,7 @@ export const corpNameDomain: Record<string, Record<string, string>> = {
     Games: "Rozrywka",
     Cybernetics: "Cybertechnika",
     Aerospace: "Przemysł kosmiczny",
+    Robotics: "Robotyka",
   },
   en: {
     Transportation: "Transport services",
@@ -262,6 +264,7 @@ export const corpNameDomain: Record<string, Record<string, string>> = {
     Games: "Entertainment",
     Cybernetics: "Cybertechnology",
     Aerospace: "Space Industry",
+    Robotics: "Robotics",
   },
 };
 
@@ -300,6 +303,7 @@ export const corpDomain: Record<string, string[]> = {
     "Nanotechnologia",
     "Biotechnologia",
     "Genetyka",
+    "Robotyka",
   ],
   en: [
     "Media",
@@ -335,6 +339,7 @@ export const corpDomain: Record<string, string[]> = {
     "Nanotechnology",
     "Biotechnology",
     "Genetics",
+    "Robotics",
   ],
 };
 

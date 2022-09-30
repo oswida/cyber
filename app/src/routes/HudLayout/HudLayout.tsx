@@ -1,5 +1,4 @@
 import { useAtom } from "jotai";
-import { useEffect, useMemo } from "react";
 import {
   createTilePanes,
   TileBranchSubstance,
@@ -10,13 +9,13 @@ import {
   useMovePane,
 } from "react-tile-pane";
 import {
-  hudPanelActive,
+  genMenuOpen,
   hudPanelNames,
   hudPanelSelectionOpen,
   inodLayoutKey,
   theme,
 } from "~/common";
-import { Button, Flex, Modal, Text } from "~/component";
+import { Button, Flex, GenMenu, Modal, Text } from "~/component";
 import { HudChat } from "./panels";
 import { stretchBarConfig } from "./StretchBar";
 import { HudPane, HudRoot, HudToolbar } from "./styles";
@@ -45,6 +44,7 @@ const PaneButton = ({ name }: { name: string }) => {
 export const HudLayout = () => {
   const [hudSel, setHudSel] = useAtom(hudPanelSelectionOpen);
   const localRoot = localStorage.getItem(inodLayoutKey);
+  const [, setGm] = useAtom(genMenuOpen);
 
   const [paneList, paneNames] = createTilePanes({
     chat: <HudChat />,
@@ -81,9 +81,11 @@ export const HudLayout = () => {
     <>
       <HudToolbar>
         <Button size="small" onClick={openPanelList}>
-          Panels
+          Pane
         </Button>
-        <Button size="small">Generators</Button>
+        <Button size="small" onClick={() => setGm(true)}>
+          Gen
+        </Button>
         <Button size="small">Config</Button>
       </HudToolbar>
       <HudRoot>
@@ -110,6 +112,7 @@ export const HudLayout = () => {
           </Modal>
         </TileProvider>
       </HudRoot>
+      <GenMenu title="Generator" />
     </>
   );
 };

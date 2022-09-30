@@ -9,7 +9,7 @@ export const themeColors = {
   red: "#ff1818",
 
   fontPrimary: "#ffffff",
-  background: "#000000",
+  background: "#27262b",
 
   background100: "#080c12",
   background200: "#12171d",

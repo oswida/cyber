@@ -1,14 +1,13 @@
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import { currentPage, language, modalOpen } from "~/common";
-import { Button, Flex, PageContent, PageHeader, PageRoot } from "~/component";
+import { currentPage, genTitles, language, modalOpen } from "~/common";
 import { NpcType } from "~/data";
-import { Layout } from "../Layout";
+import { GenLayout } from "~/component/GenLayout";
 import { NpcCard } from "./NpcCard";
 import { useNpcGen } from "./useNpcGen";
 
-export const NpcGenView = () => {
+export const NpcGen = () => {
   const [mv, setMV] = useAtom(modalOpen);
   const [cp, setCp] = useAtom(currentPage);
   const lang = useAtomValue(language);
@@ -18,8 +17,8 @@ export const NpcGenView = () => {
   const { rollNpc } = useNpcGen();
 
   useEffect(() => {
-    setCp(lang == "en" ? "NPC" : "Bohater niezależny");
-  }, [lang]);
+    setCp(genTitles[lang]["npc"]);
+  }, []);
 
   const generate = () => {
     setData((state) => [...state, ...rollNpc()]);
@@ -48,34 +47,16 @@ export const NpcGenView = () => {
   };
 
   return (
-    <Layout>
-      <PageRoot>
-        <PageHeader>
-          <Flex
-            css={{
-              gap: 10,
-              paddingLeft: 10,
-              paddingBottom: 5,
-              overflow: "auto",
-            }}
-          >
-            <Button onClick={generate}>
-              {lang == "en" ? "Generate" : "Generuj"}
-            </Button>
-            <Button onClick={clean}>
-              {lang == "en" ? "Clear" : "Wyczyść"}
-            </Button>
-            <Button onClick={exportData} title="Eksportuj">
-              {lang == "en" ? "Export" : "Eksport"}
-            </Button>
-          </Flex>
-        </PageHeader>
-        <PageContent>
-          {data.map((it) => (
-            <NpcCard data={it} key={`${it.name}-${it.surname}`}></NpcCard>
-          ))}
-        </PageContent>
-      </PageRoot>
-    </Layout>
+    <GenLayout
+      headerMenu={{
+        generate: generate,
+        clear: clean,
+        export: exportData,
+      }}
+    >
+      {data.map((it) => (
+        <NpcCard data={it} key={`${it.name}-${it.surname}`}></NpcCard>
+      ))}
+    </GenLayout>
   );
 };

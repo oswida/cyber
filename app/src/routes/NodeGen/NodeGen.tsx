@@ -1,10 +1,23 @@
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useRef, useState } from "react";
 import useLocalStorageState from "use-local-storage-state";
-import { currentPage, language } from "~/common";
-import { Button, Flex, PageContent, PageHeader, PageRoot } from "~/component";
-import { NodeClass, NodeType } from "~/data";
-import { Layout } from "../Layout";
+import {
+  currentPage,
+  genTitles,
+  globalStr,
+  language,
+  nodeClassMenuOpen,
+  nodeClassSelected,
+} from "~/common";
+import {
+  Flex,
+  PageContent,
+  PageHeader,
+  PageRoot,
+  GenLayout,
+} from "~/component";
+import { NodeClassDict, NodeType } from "~/data";
+import { ClassMenu } from "./ClassMenu";
 import { NodeCard } from "./NodeCard";
 import { useNodeGen } from "./useNodeGen";
 
@@ -12,43 +25,42 @@ export const NodeGen = () => {
   const [data, setData] = useLocalStorageState<NodeType[]>("Cyber_NODEGEN", {
     defaultValue: [] as NodeType[],
   });
-  const [cp, setCp] = useAtom(currentPage);
+  const [, setCp] = useAtom(currentPage);
   const { rollNode } = useNodeGen();
-  const [modal, setModal] = useState(false);
-  const [nclass, setNClass] = useState<NodeClass | undefined>(undefined);
   const contentRef = useRef<HTMLDivElement>(null);
   const lang = useAtomValue(language);
+  const [, setCm] = useAtom(nodeClassMenuOpen);
+  const [nc, setNc] = useAtom(nodeClassSelected);
 
   useEffect(() => {
-    setCp(lang == "en" ? "Infonode" : "Infowęzeł");
-  }, [lang]);
+    setCp(
+      `${genTitles[lang]["node"]} (${
+        nc ? NodeClassDict[lang][nc] : globalStr[lang]["any"]
+      })`
+    );
+  }, [lang, nc]);
 
-  const generate = (ntype?: NodeClass) => {
-    setData((state) => [...state, ...rollNode(ntype)]);
+  const generate = () => {
+    setData((state) => [...state, ...rollNode(nc)]);
   };
 
   const clean = () => {
     setData([]);
   };
 
-  const select = (ntype?: NodeClass) => {
-    setNClass(ntype);
-    setModal(false);
-  };
-
   const exportNodes = () => {
     if (data.length == 0) return;
     const print = JSON.stringify(
       data.map((it) => ({
-        Nazwa: it.name,
-        Typ: it.ntype,
-        Wygląd: it.look,
-        OCHR: it.hp,
-        INF: it.inf,
-        LOD: it.ice,
-        CZARNY_LOD: it.black ? "tak" : "nie",
-        Zabezpieczenia: `${it.security}; ${it.more}`,
-        Dane: it.data,
+        name: it.name,
+        class: it.ntype,
+        look: it.look,
+        hp: it.hp,
+        inf: it.inf,
+        ice: it.ice,
+        black_ice: it.black ? true : false,
+        security: `${it.security}; ${it.more}`,
+        data: it.data,
       }))
     );
     const link = document.createElement("a");
@@ -57,31 +69,19 @@ export const NodeGen = () => {
     link.click();
   };
 
-  const nodeClassName: Record<string, any> = {
-    pl: {
-      Dowolny: "Dowolny",
-      Publiczny: "Publiczny",
-      Prywatny: "Prywatny",
-      "Prywatny strzeżony": "Prywatny strzeżony",
-      Rządowy: "Rządowy",
-      Wojskowy: "Wojskowy",
-      Korporacyjny: "Korporacyjny",
-      SI: "SI",
-    },
-    en: {
-      Dowolny: "Any",
-      Publiczny: "Public",
-      Prywatny: "Private",
-      "Prywatny strzeżony": "Private secured",
-      Rządowy: "Government",
-      Wojskowy: "Military",
-      Korporacyjny: "Corporation",
-      SI: "AI",
-    },
+  const selectClass = () => {
+    setCm(true);
   };
 
   return (
-    <Layout>
+    <GenLayout
+      headerMenu={{
+        generate: generate,
+        clear: clean,
+        export: exportNodes,
+        nodeclass: selectClass,
+      }}
+    >
       <PageRoot>
         <PageHeader>
           <Flex
@@ -91,69 +91,15 @@ export const NodeGen = () => {
               paddingBottom: 5,
               overflow: "auto",
             }}
-          >
-            <Button
-              onClick={() => setModal(true)}
-              title="Klasa węzła"
-              css={{ color: "$pink" }}
-            >
-              {nclass && `${nodeClassName[lang][nclass]}`}
-              {!nclass && `${nodeClassName[lang]["Dowolny"]}`}
-            </Button>
-            <Button onClick={() => generate(nclass)} title="Generuj">
-              {lang == "en" ? "Generate" : "Generuj"}
-            </Button>
-            <Button onClick={clean} title="Wyczyść">
-              {lang == "en" ? "Clear" : "Wyczyść"}
-            </Button>
-            <Button onClick={() => exportNodes()} title="Eksportuj">
-              {lang == "en" ? "Export" : "Eksport"}
-            </Button>
-          </Flex>
+          ></Flex>
         </PageHeader>
         <PageContent ref={contentRef}>
-          {!modal &&
-            data.map((it) => (
-              <NodeCard
-                data={it}
-                key={`${it.name}`}
-                id={`${it.name}`}
-              ></NodeCard>
-            ))}
-          {modal && (
-            <Flex direction="column" css={{ gap: 10 }}>
-              <Button onClick={() => select(undefined)}>
-                {lang == "en" ? "Any" : "Dowolny"}
-              </Button>
-              <Button onClick={() => select("Publiczny")}>
-                {lang == "en" ? "Public" : "Publiczny"}
-              </Button>
-              <Button onClick={() => select("Prywatny")}>
-                {lang == "en" ? "Private" : "Prywatny"}
-              </Button>
-              <Button onClick={() => select("Prywatny strzeżony")}>
-                {lang == "en" ? "Private secured" : "Prywatny strzeżony"}
-              </Button>
-              <Button onClick={() => select("Rządowy")}>
-                {lang == "en" ? "Government" : "Rządowy"}
-              </Button>
-              <Button onClick={() => select("Korporacyjny")}>
-                {lang == "en" ? "Corporation" : "Korporacyjny"}
-              </Button>
-              <Button onClick={() => select("Wojskowy")}>
-                {lang == "en" ? "Military" : "Wojskowy"}
-              </Button>
-              <Button onClick={() => select("SI")}>
-                {lang == "en" ? "AI" : "SI"}
-              </Button>
-
-              <Button onClick={() => setModal(false)}>
-                {lang == "en" ? "Cancel" : "Anuluj"}
-              </Button>
-            </Flex>
-          )}
+          {data.map((it) => (
+            <NodeCard data={it} key={`${it.name}`} id={`${it.name}`}></NodeCard>
+          ))}{" "}
         </PageContent>
       </PageRoot>
-    </Layout>
+      <ClassMenu title={globalStr[lang]["node class"]} />
+    </GenLayout>
   );
 };

@@ -7,3 +7,5 @@ export * from "./PageContent";
 export * from "./PageHeader";
 export * from "./PageRoot";
 export * from "./Modal";
+export * from "./GenMenu";
+export * from "./GenLayout";
