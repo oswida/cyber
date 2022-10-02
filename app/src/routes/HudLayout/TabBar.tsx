@@ -8,14 +8,13 @@ import {
 } from "react-tile-pane";
 import { hudPanelNames, styled } from "~/common";
 
-const thickness = 30;
+const thickness = 32;
 
 const TabBarTitleRoot = styled(DraggableTitle, {
-  flex: 1,
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  background: "$background",
+  backgroundColor: "$background",
   cursor: "move",
   userSelect: "none",
   color: "$fontPrimary",
@@ -35,6 +34,7 @@ const TabBarTitle = styled("div", {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  backgroundColor: "$background",
 });
 
 const TabBarContainer = styled("div", {
@@ -56,10 +56,11 @@ const TabBarCloseButton = styled("div", {
   alignItems: "center",
   marginRight: 10,
   userSelect: "none",
+  backgroundColor: "$background",
 });
 
 const TabBarRoot = styled("div", {
-  background: "$background",
+  backgroundColor: "$background",
   width: "99%",
   display: "flex",
   justifyContent: "space-between",
@@ -67,11 +68,9 @@ const TabBarRoot = styled("div", {
   flexDirection: "row",
   userSelect: "none",
   border: `solid 1px $darkblue`,
-  // borderRadius: 15,
   borderRadius: "10px 0px",
   marginTop: "0.25%",
   marginLeft: "0.25%",
-  minWidth: 280,
 });
 
 const TabBar = ({ tabs, onTab, action }: TabBarPropsWithAction) => {

@@ -24,10 +24,16 @@ export const HudToolbar = styled("div", {
 });
 
 export const HudPane = styled("div", {
-  width: 100,
-  height: 100,
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: 5,
+  width: "100%",
+  height: "100%",
+  minHeight: "max-content",
+  overflow: "auto",
   backgroundColor: "$background",
   color: "$fontPrimary",
-  padding: 5,
   userSelect: "none",
 });

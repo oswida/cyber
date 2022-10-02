@@ -1,0 +1,149 @@
+import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useAtom } from "jotai";
+import { useEffect, useRef, useState } from "react";
+import { selectedRollerDice, styled } from "~/common";
+import { Flex, Button, Text, InputButton } from "~/component";
+
+const Icon = styled(FontAwesomeIcon, {
+  "&:hover": {
+    color: "$blue",
+  },
+});
+
+export const RollButton = () => {
+  const numRef = useRef<HTMLInputElement>();
+  const diceRef = useRef<HTMLInputElement>();
+  const [selDice, setSelDice] = useAtom(selectedRollerDice);
+
+  const updateDice = () => {
+    if (!numRef.current || !diceRef.current) return;
+    setSelDice(`${numRef.current.value}d${diceRef.current.value}`);
+  };
+
+  const inc = () => {
+    if (!numRef.current || !diceRef.current) return;
+    const num = Number.parseInt(numRef.current.value);
+    if (Number.isNaN(num)) {
+      numRef.current.value = "1";
+      updateDice();
+      return;
+    }
+    numRef.current.value = `${num + 1}`;
+    updateDice();
+  };
+
+  const dec = () => {
+    if (!numRef.current || !diceRef.current) return;
+    const num = Number.parseInt(numRef.current.value);
+    if (Number.isNaN(num)) {
+      numRef.current.value = "1";
+      updateDice();
+      return;
+    }
+    if (num > 1) {
+      numRef.current.value = `${num - 1}`;
+      updateDice();
+    }
+  };
+
+  const incDice = () => {
+    if (!numRef.current || !diceRef.current) return;
+    const num = Number.parseInt(diceRef.current.value);
+    if (Number.isNaN(num)) {
+      diceRef.current.value = "1";
+      updateDice();
+      return;
+    }
+    diceRef.current.value = `${num + 1}`;
+    updateDice();
+  };
+
+  const decDice = () => {
+    if (!numRef.current || !diceRef.current) return;
+    const num = Number.parseInt(diceRef.current.value);
+    if (Number.isNaN(num)) {
+      diceRef.current.value = "1";
+      updateDice();
+      return;
+    }
+    if (num > 1) {
+      diceRef.current.value = `${num - 1}`;
+      updateDice();
+    }
+  };
+
+  const setDice = (n: number) => {
+    if (!diceRef.current) return;
+    diceRef.current.value = `${n}`;
+    updateDice();
+  };
+
+  useEffect(() => {
+    if (!numRef.current || !diceRef.current) return;
+    numRef.current.value = "1";
+    diceRef.current.value = "4";
+    updateDice();
+  }, []);
+
+  return (
+    <Flex center>
+      <Flex direction="column">
+        <Icon icon={faPlus} onClick={inc} />
+        <InputButton
+          onChange={updateDice}
+          title="Scroll to inc/dec"
+          type="number"
+          ref={numRef as any}
+          maxLength={2}
+          min={1}
+          css={{ maxWidth: "2.5em" }}
+        />
+        <Icon icon={faMinus} onClick={dec} />
+      </Flex>
+      <Text color="yellow"> d</Text>
+      <Flex>
+        <Flex direction="column">
+          <Icon icon={faPlus} onClick={incDice} />
+          <InputButton
+            onChange={updateDice}
+            title="Scroll to inc/dec"
+            type="number"
+            ref={diceRef as any}
+            maxLength={3}
+            min={1}
+            css={{ maxWidth: "3.5em" }}
+          />
+          <Icon icon={faMinus} onClick={decDice} />
+        </Flex>
+        <Flex direction="column">
+          <Flex>
+            <Button size="small" onClick={() => setDice(4)}>
+              4
+            </Button>
+            <Button size="small" onClick={() => setDice(6)}>
+              6
+            </Button>
+            <Button size="small" onClick={() => setDice(8)}>
+              8
+            </Button>
+            <Button size="small" onClick={() => setDice(10)}>
+              10
+            </Button>
+          </Flex>
+          <Flex>
+            <Button size="small" onClick={() => setDice(12)}>
+              12
+            </Button>
+            <Button size="small" onClick={() => setDice(20)}>
+              20
+            </Button>
+            <Button size="small" onClick={() => setDice(100)}>
+              100
+            </Button>
+          </Flex>
+        </Flex>
+      </Flex>
+    </Flex>
+  );
+};

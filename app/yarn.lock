@@ -353,6 +353,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@layflags/rolling-number@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@layflags/rolling-number/-/rolling-number-1.0.0.tgz#0bc372a522616c24dd65044f484c2fc21bba64b4"
+  integrity sha512-zT21+3iK82DEW4YbNyVXKS4IdnuIgXCLHUhwQTnc8OS/EeEikUho62eLh3ICf5A72nlRADW50K3N7VAbNiRe5g==
+
 "@remix-run/router@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.0.1.tgz#88d7ac31811ab0cef14aaaeae2a0474923b278bc"

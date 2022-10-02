@@ -18,3 +18,12 @@ export const genMenuOpen = atom<boolean>(false);
 
 export const nodeClassMenuOpen = atom<boolean>(false);
 export const nodeClassSelected = atom<string | undefined>(undefined);
+
+export const selectedRollerDice = atom<string>("");
+
+export type RollHistoryEntry = {
+  user: string;
+  time: string;
+  data: string;
+};
+export const stateRollHistory = atom<RollHistoryEntry[]>([]);

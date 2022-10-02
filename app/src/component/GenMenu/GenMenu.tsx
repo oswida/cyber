@@ -23,13 +23,13 @@ export const GenMenu = ({ extras, title }: GenMenuProps) => {
           </Text>
         )}
         {Object.keys(genTitles[lang]).map((key) => (
-          <LinkButton to={`/${key}`} onClick={close}>
+          <LinkButton to={`/${key}`} onClick={close} key={`${key}`}>
             {genTitles[lang][key]}
           </LinkButton>
         ))}
         {extras !== undefined &&
           Object.keys(extras).map((key) => (
-            <LinkButton to={`${extras[key]}`} onClick={close}>
+            <LinkButton to={`${extras[key]}`} onClick={close} key={`${key}`}>
               {globalStr[lang][key]}
             </LinkButton>
           ))}

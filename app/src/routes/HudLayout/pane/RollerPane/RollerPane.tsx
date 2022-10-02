@@ -1,20 +1,37 @@
-import { useAtomValue } from "jotai";
-import { language } from "~/common";
-import { Button, Flex } from "~/component";
+import { useAtom, useAtomValue } from "jotai";
+import { useEffect } from "react";
+import { language, stateRollHistory } from "~/common";
+import { Flex } from "~/component";
+import { HudPane } from "../../styles";
+import { RollButton } from "./RollButton";
+import { RollResult } from "./RollResult";
+import { RollButtons, RollHistory } from "./styles";
 
 export const RollerPane = () => {
   const lang = useAtomValue(language);
+  const [rollHistory] = useAtom(stateRollHistory);
+
+  useEffect(() => {
+    const sc = document.getElementById("roll-history");
+    if (!sc) return;
+    console.log("scrolling");
+
+    sc.scrollIntoView({ behavior: "smooth", block: "end" });
+  }, [rollHistory]);
 
   return (
-    <Flex>
-      <Flex></Flex>
-      <Flex direction="column" scrolled>
-        <Button>d4</Button>
-        <Button>d6</Button>
-        <Button>d8</Button>
-        <Button>d10</Button>
-        <Button>d20</Button>
+    <HudPane>
+      <Flex direction="column" css={{ gap: 10 }}>
+        <RollResult />
+        <RollButtons>
+          <RollButton />
+        </RollButtons>
+        <RollHistory id="roll-history">
+          {rollHistory.map((h) => (
+            <div key={h.data}>{h.data}</div>
+          ))}
+        </RollHistory>
       </Flex>
-    </Flex>
+    </HudPane>
   );
 };

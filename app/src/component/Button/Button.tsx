@@ -33,6 +33,11 @@ export const Button = styled("div", {
         fontSize: "small",
       },
     },
+    noborder: {
+      true: {
+        border: "none",
+      },
+    },
   },
   defaultVariants: {
     size: "standard",
@@ -149,3 +154,43 @@ export const LBIconButton = ({
     </LeftBottomButton>
   );
 };
+
+export const InputButton = styled("input", {
+  "-moz-appearance": "textfield",
+  appearance: "textfield",
+  "& .-webkit-outer-spin-button": {
+    "-webkit-appearance": "none",
+    margin: 0,
+  },
+  fontFamily: "Oxanium !important",
+  fontSize: "$2 !important",
+  color: "$fontPrimary",
+  outline: "none",
+  border: "solid 1px $blue",
+  borderRadius: 5,
+  textAlign: "center",
+  backgroundColor: "transparent",
+  "&:hover": {
+    color: "$blue",
+    textDecoration: "none",
+    cursor: "pointer",
+  },
+  variants: {
+    size: {
+      standard: {
+        padding: 5,
+        paddingLeft: 7,
+        paddingRight: 7,
+      },
+      small: {
+        padding: 2,
+        paddingLeft: 5,
+        paddingRight: 5,
+        fontSize: "small",
+      },
+    },
+  },
+  defaultVariants: {
+    size: "standard",
+  },
+});
