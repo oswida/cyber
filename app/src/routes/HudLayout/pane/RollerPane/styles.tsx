@@ -16,14 +16,14 @@ export const RollButtons = styled("div", {
   justifyContent: "center",
 });
 
-export const RollHistory = styled("div", {
+export const RollHistoryRoot = styled("div", {
   border: "1px solid $darkblue",
   borderRadius: 5,
   padding: 5,
-  height: 100,
-  overflow: "auto",
-  fontSize: "$0",
+  height: 150,
+  width: "99%",
   display: "flex",
   flexDirection: "column",
   alignItems: "flex-start",
+  gap: 2,
 });

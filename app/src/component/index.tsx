@@ -9,3 +9,4 @@ export * from "./PageRoot";
 export * from "./Modal";
 export * from "./GenMenu";
 export * from "./GenLayout";
+export * from "./Input";

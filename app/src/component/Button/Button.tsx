@@ -184,9 +184,9 @@ export const InputButton = styled("input", {
       },
       small: {
         padding: 2,
-        paddingLeft: 5,
-        paddingRight: 5,
-        fontSize: "small",
+        paddingLeft: 3,
+        paddingRight: 3,
+        fontSize: "x-small",
       },
     },
   },

@@ -1,24 +1,35 @@
 import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
+import { useRef } from "react";
+import { v4 as uuidv4 } from "uuid";
 import {
   RollHistoryEntry,
   selectedRollerDice,
   stateRollHistory,
+  stateSessionData,
 } from "~/common";
-import { Button, Flex, LeftTopButton, Text } from "~/component";
+import { prettyNow } from "~/common/util";
+import { Button, Flex, Input, Text } from "~/component";
 import { RollInfo } from "./styles";
 
 export const RollResult = () => {
   const [selDice] = useAtom(selectedRollerDice);
   const roller = new DiceRoller();
   const [rollHistory, setRollHistory] = useAtom(stateRollHistory);
+  const done = useRef<boolean>(true);
+  const commentRef = useRef<HTMLInputElement>();
+  const sessionData = useAtomValue(stateSessionData);
 
   const randomizeText = (elementId: string, roll: DiceRoll) => {
-    const theLetters = "0123456789#%&^+=-"; //"abcdefghijklmnopqrstuvwxyz0123456789#%&^+=-";
-    const speed = 20 / roll.rolls.length; // ms per frame
-    const increment = 3; // frames per step. Must be >2
+    const theLetters = "0123456789#%&^+=-";
+    const speed = 10 / roll.rolls.length;
+    const increment = 3;
 
-    const ctnt = roll.toString();
+    const rollData = roll.toString();
+    const ctnt = rollData
+      .split(":")
+      .filter((d, idx) => idx > 0)
+      .join("");
     let clen = ctnt.length;
     let si = 0;
     let stri = 0;
@@ -30,9 +41,7 @@ export const RollResult = () => {
 
     const nextFrame = (pos: number) => {
       for (let i = 0; i < clen - stri; i++) {
-        //Random number
         var num = Math.floor(theLetters.length * Math.random());
-        //Get random letter
         var letter = theLetters.charAt(num);
         block = block + letter;
       }
@@ -40,23 +49,28 @@ export const RollResult = () => {
         stri++;
       }
       if (si == increment) {
-        // Add a letter;
-        // every speed*10 ms
         fixed = fixed + ctnt.charAt(stri - 1);
         si = 0;
       }
       output.innerHTML = fixed + block;
       block = "";
 
-      if (output.innerHTML == ctnt) {
+      if (output.innerHTML == ctnt && !done.current) {
+        done.current = true;
         setRollHistory((state) => [
           ...state,
-          { user: "", time: "", data: ctnt } as RollHistoryEntry,
+          {
+            id: uuidv4(),
+            user: sessionData.username,
+            time: prettyNow(),
+            data: rollData,
+            comment: commentRef.current?.value,
+          } as RollHistoryEntry,
         ]);
+        commentRef.current!!.value = "";
       }
     };
 
-    //Call self x times, whole function wrapped in setTimeout
     (function rustle(i) {
       setTimeout(function () {
         if (--i) {
@@ -70,6 +84,7 @@ export const RollResult = () => {
 
   const roll = () => {
     const r = roller.roll(selDice) as DiceRoll;
+    done.current = false;
     randomizeText("rollnum", r);
   };
 
@@ -86,6 +101,12 @@ export const RollResult = () => {
             {selDice}
           </span>
         </Button>
+        <Input
+          title="Input comment for a roll"
+          ref={commentRef as any}
+          placeholder="Comment..."
+          small
+        />
         <Button noborder>
           <Text id="rollnum" color="yellow" css={{ overflow: "hidden" }}></Text>
         </Button>
