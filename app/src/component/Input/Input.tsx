@@ -13,6 +13,10 @@ export const Input = styled("input", {
   outline: "none",
   border: "none",
   fontSize: "$2",
+  padding: 3,
+  "&[disabled]": {
+    opacity: 0.3,
+  },
   variants: {
     small: {
       true: {

@@ -1,4 +1,6 @@
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
+import { connect, Msg } from "nats.ws";
+import { useEffect } from "react";
 import {
   createTilePanes,
   TileBranchSubstance,
@@ -9,13 +11,20 @@ import {
   useMovePane,
 } from "react-tile-pane";
 import {
+  configOpen,
   genMenuOpen,
   hudPanelNames,
   hudPanelSelectionOpen,
   inodLayoutKey,
+  queueInfo,
+  sessionDataType,
+  stateNats,
+  stateSessionData,
   theme,
 } from "~/common";
+import { topicConnect, topicInfo, topicRoll, useNats } from "~/common/nats";
 import { Button, Flex, GenMenu, Modal, Text } from "~/component";
+import { Config } from "../Config";
 import { HudChat } from "./pane";
 import { RollerPane } from "./pane/RollerPane";
 import { stretchBarConfig } from "./StretchBar";
@@ -46,6 +55,11 @@ export const HudLayout = () => {
   const [hudSel, setHudSel] = useAtom(hudPanelSelectionOpen);
   const localRoot = localStorage.getItem(inodLayoutKey);
   const [, setGm] = useAtom(genMenuOpen);
+  const [, setCo] = useAtom(configOpen);
+  const [nats, setNats] = useAtom(stateNats);
+  const { processIncoming, publish, getTopic } = useNats();
+  const sessionData = useAtomValue(stateSessionData);
+  const qInfo = useAtomValue(queueInfo);
 
   const [paneList, paneNames] = createTilePanes({
     chat: <HudChat />,
@@ -78,6 +92,34 @@ export const HudLayout = () => {
     setHudSel(true);
   };
 
+  const processSessionData = async (data: sessionDataType) => {
+    if (nats.connection != null) {
+      nats.connection.drain();
+      nats.connection.close();
+      setNats({ connection: null, sub: null });
+    }
+    const nc = await connect({
+      servers: data.nats,
+      tls: null,
+      token: "03c2ba5c-c834-4afa-ac1b-355ae5ce7a1b",
+    });
+    setNats({
+      connection: nc,
+      sub: nc.subscribe(getTopic(topicRoll), { callback: processIncoming }),
+    });
+  };
+
+  useEffect(() => {
+    if (nats.connection == null || nats.sub == null) return;
+    if (!sessionData.hosting) {
+      publish(topicInfo, `Connected ${sessionData.browserID}`);
+    }
+  }, [nats, sessionData]);
+
+  useEffect(() => {
+    console.log(qInfo);
+  }, [qInfo]);
+
   return (
     <>
       <HudToolbar>
@@ -87,7 +129,15 @@ export const HudLayout = () => {
         <Button size="small" onClick={() => setGm(true)}>
           Gen
         </Button>
-        <Button size="small">Config</Button>
+        <Button size="small" onClick={() => setCo(true)}>
+          Config
+        </Button>
+        {nats.connection !== null && sessionData.hosting && (
+          <Text size="small">Hosting on {sessionData.browserID}</Text>
+        )}
+        {nats.connection !== null && !sessionData.hosting && (
+          <Text size="small">Connected to {sessionData.remote}</Text>
+        )}
       </HudToolbar>
       <HudRoot>
         <TileProvider
@@ -114,6 +164,7 @@ export const HudLayout = () => {
         </TileProvider>
       </HudRoot>
       <GenMenu title="Generator" />
+      <Config saveCallback={processSessionData} />
     </>
   );
 };

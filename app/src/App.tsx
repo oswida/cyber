@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import {
+  initialSessionData,
   inodSessionKey,
   language,
   sessionDataType,
@@ -23,7 +24,8 @@ function App() {
   useEffect(() => {
     const sessionData = localStorage.getItem(inodSessionKey);
     if (!sessionData) {
-      const sd = { username: "none", browserID: uuidv4() } as sessionDataType;
+      const sd = initialSessionData;
+      sd.browserID = uuidv4();
       localStorage.setItem(inodSessionKey, JSON.stringify(sd));
       setSession(sd);
     } else {

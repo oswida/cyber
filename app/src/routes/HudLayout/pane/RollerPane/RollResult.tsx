@@ -8,6 +8,7 @@ import {
   stateRollHistory,
   stateSessionData,
 } from "~/common";
+import { topicRoll, useNats } from "~/common/nats";
 import { prettyNow } from "~/common/util";
 import { Button, Flex, Input, Text } from "~/component";
 import { RollInfo } from "./styles";
@@ -15,10 +16,11 @@ import { RollInfo } from "./styles";
 export const RollResult = () => {
   const [selDice] = useAtom(selectedRollerDice);
   const roller = new DiceRoller();
-  const [rollHistory, setRollHistory] = useAtom(stateRollHistory);
+  const [, setRollHistory] = useAtom(stateRollHistory);
   const done = useRef<boolean>(true);
   const commentRef = useRef<HTMLInputElement>();
   const sessionData = useAtomValue(stateSessionData);
+  const { publish } = useNats();
 
   const randomizeText = (elementId: string, roll: DiceRoll) => {
     const theLetters = "0123456789#%&^+=-";
@@ -26,10 +28,10 @@ export const RollResult = () => {
     const increment = 3;
 
     const rollData = roll.toString();
-    const ctnt = rollData
-      .split(":")
-      .filter((d, idx) => idx > 0)
-      .join("");
+    const ctnt = rollData;
+    // .split(":")
+    // .filter((d, idx) => idx > 0)
+    // .join("");
     let clen = ctnt.length;
     let si = 0;
     let stri = 0;
@@ -57,17 +59,16 @@ export const RollResult = () => {
 
       if (output.innerHTML == ctnt && !done.current) {
         done.current = true;
-        setRollHistory((state) => [
-          ...state,
-          {
-            id: uuidv4(),
-            user: sessionData.username,
-            time: prettyNow(),
-            data: rollData,
-            comment: commentRef.current?.value,
-          } as RollHistoryEntry,
-        ]);
+        const newEntry = {
+          id: uuidv4(),
+          user: sessionData.username,
+          time: prettyNow(),
+          data: rollData,
+          comment: commentRef.current?.value,
+        } as RollHistoryEntry;
+        setRollHistory((state) => [...state, newEntry]);
         commentRef.current!!.value = "";
+        publish(topicRoll, newEntry);
       }
     };
 
@@ -107,9 +108,11 @@ export const RollResult = () => {
           placeholder="Comment..."
           small
         />
-        <Button noborder>
-          <Text id="rollnum" color="yellow" css={{ overflow: "hidden" }}></Text>
-        </Button>
+        <Text
+          id="rollnum"
+          color="yellow"
+          css={{ overflow: "hidden", textAlign: "center" }}
+        ></Text>
       </Flex>
     </RollInfo>
   );

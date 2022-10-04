@@ -15,7 +15,7 @@ export const Button = styled("div", {
   alignItems: "center",
   justifyContent: "center",
   "&:hover": {
-    color: "$blue",
+    backgroundColor: "$background200",
     textDecoration: "none",
     cursor: "pointer",
   },
@@ -36,6 +36,15 @@ export const Button = styled("div", {
     noborder: {
       true: {
         border: "none",
+      },
+    },
+    color: {
+      green: {
+        borderColor: "$green",
+        color: "$green",
+        "&:hover": {
+          fontWeight: "bolder",
+        },
       },
     },
   },

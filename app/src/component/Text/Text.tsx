@@ -44,6 +44,9 @@ export const Text = styled("div", {
       },
     },
     color: {
+      primary: {
+        color: "$fontPrimary",
+      },
       white: {
         color: "#ffffff",
       },
