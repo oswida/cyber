@@ -1,16 +1,17 @@
 import { styled } from "~/common";
 
-export const Textarea = styled("textarea", {
-  resize: "vertical",
+export const Textarea = styled("div", {
   fontFamily: "Oxanium !important",
   background: "$background",
   color: "$fontPrimary",
   outline: "none",
+  lineHeight: "1.1em",
   fontSize: "$2",
   padding: 5,
   "&[disabled]": {
     opacity: 0.3,
   },
+  textAlign: "left",
   variants: {
     small: {
       true: {
@@ -29,21 +30,8 @@ export const Textarea = styled("textarea", {
         borderRadius: 5,
       },
     },
-    resize: {
-      none: {},
-      vertical: {
-        resize: "vertical",
-      },
-      horizontal: {
-        resize: "horizontal",
-      },
-      both: {
-        resize: "both",
-      },
-    },
   },
   defaultVariants: {
-    resize: "none",
     border: "none",
   },
 });

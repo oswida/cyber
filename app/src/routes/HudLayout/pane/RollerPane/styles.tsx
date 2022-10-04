@@ -5,6 +5,7 @@ export const RollInfo = styled("div", {
   marginTop: 10,
   padding: 10,
   borderRadius: 5,
+  width: "90%",
   position: "relative",
 });
 
@@ -12,8 +13,6 @@ export const RollButtons = styled("div", {
   display: "flex",
   flexDirection: "column",
   gap: 5,
-  height: "100%",
-
   justifyContent: "center",
 });
 
@@ -27,4 +26,5 @@ export const RollHistoryRoot = styled("div", {
   flexDirection: "column",
   alignItems: "flex-start",
   gap: 2,
+  flex: 1,
 });

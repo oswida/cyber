@@ -11,14 +11,12 @@ export const RollerPane = () => {
   const lang = useAtomValue(language);
 
   return (
-    <HudPane css={{ alignItems: "flex-start" }}>
-      <Flex direction="column" css={{ gap: 10, width: "90%" }}>
-        <RollResult />
-        <RollButtons>
-          <RollButton />
-        </RollButtons>
-        <RollHistory />
-      </Flex>
+    <HudPane>
+      <RollResult />
+      <RollButtons>
+        <RollButton />
+      </RollButtons>
+      <RollHistory />
     </HudPane>
   );
 };

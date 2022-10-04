@@ -29,7 +29,9 @@ export const Modal = ({
         <Overlay id="overlay">
           {children}
           {onClose !== undefined && (
-            <CloseButton onClick={onClose}>×</CloseButton>
+            <CloseButton onClick={onClose} title="Close">
+              ×
+            </CloseButton>
           )}
         </Overlay>
       )}

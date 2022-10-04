@@ -68,7 +68,20 @@ export type NoteType = {
   author: string;
 };
 
-export const statePrivateNotes = atom<Record<string, NoteType>>({});
-export const stateBoardNotes = atom<Record<string, NoteType>>({});
+export const statePrivateNotes = atom<Record<string, NoteType | undefined>>({});
+export const stateBoardNotes = atom<Record<string, NoteType | undefined>>({});
 
 export const stateStorageSize = atom<number>(0);
+
+export type NoteInfoType = {
+  open: boolean;
+  note: NoteType | undefined;
+};
+
+export const stateNoteInfo = atom<NoteInfoType>({
+  open: false,
+  note: undefined,
+});
+
+export const stateSelNote = atom<string>("");
+export const stateNoteFilter = atom<string>("");

@@ -27,14 +27,14 @@ export const HudToolbar = styled("div", {
 
 export const HudPane = styled("div", {
   display: "flex",
-  flexDirection: "row",
+  flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   gap: 5,
-  width: "100%",
-  height: "100%",
+  padding: 10,
+  width: "calc(100% - 20px)",
+  height: "calc(100% - 20px)",
   minHeight: "max-content",
-  overflow: "auto",
   backgroundColor: "$background",
   color: "$fontPrimary",
   userSelect: "none",
