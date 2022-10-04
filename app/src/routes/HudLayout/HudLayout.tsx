@@ -1,5 +1,5 @@
 import { useAtom, useAtomValue } from "jotai";
-import { connect, Msg } from "nats.ws";
+import { connect } from "nats.ws";
 import { useEffect } from "react";
 import {
   createTilePanes,
@@ -15,25 +15,29 @@ import {
   genMenuOpen,
   hudPanelNames,
   hudPanelSelectionOpen,
-  inodLayoutKey,
   queueInfo,
   sessionDataType,
   stateNats,
   stateSessionData,
+  stateStorageSize,
   theme,
 } from "~/common";
-import { topicConnect, topicInfo, topicRoll, useNats } from "~/common/nats";
+import { topicInfo, topicRoll, useNats } from "~/common/nats";
+import { useStorage } from "~/common/storage";
 import { Button, Flex, GenMenu, Modal, Text } from "~/component";
 import { Config } from "../Config";
-import { HudChat } from "./pane";
+import { ChatPane } from "./pane";
+import { GenPane } from "./pane/GenPane";
+import { NotesPane } from "./pane/NotesPane";
 import { RollerPane } from "./pane/RollerPane";
 import { stretchBarConfig } from "./StretchBar";
-import { HudPane, HudRoot, HudToolbar } from "./styles";
+import { HudRoot, HudToolbar } from "./styles";
 import { tabBarConfig } from "./TabBar";
 
 const AutoSaveLayout = () => {
+  const { saveLayout } = useStorage();
   const getRootNode = useGetRootNode();
-  localStorage.setItem(inodLayoutKey, JSON.stringify(getRootNode()));
+  saveLayout(getRootNode());
   return <></>;
 };
 
@@ -53,7 +57,11 @@ const PaneButton = ({ name }: { name: string }) => {
 
 export const HudLayout = () => {
   const [hudSel, setHudSel] = useAtom(hudPanelSelectionOpen);
-  const localRoot = localStorage.getItem(inodLayoutKey);
+  const { loadLayout } = useStorage();
+  const storageSize = useAtomValue(stateStorageSize);
+
+  const localRoot = loadLayout();
+
   const [, setGm] = useAtom(genMenuOpen);
   const [, setCo] = useAtom(configOpen);
   const [nats, setNats] = useAtom(stateNats);
@@ -62,31 +70,48 @@ export const HudLayout = () => {
   const qInfo = useAtomValue(queueInfo);
 
   const [paneList, paneNames] = createTilePanes({
-    chat: <HudChat />,
-    npc: <HudPane>thiis is npc</HudPane>,
+    chat: <ChatPane />,
+    npc: <GenPane />,
     roll: <RollerPane />,
-    notes: <HudPane>Notes</HudPane>,
-    board: <HudPane>board</HudPane>,
+    notes: <NotesPane isBoard={false} />,
+    board: <NotesPane isBoard={true} />,
   });
 
   const rootPane: TileBranchSubstance = {
     children: [
       {
+        children: ["roll"],
+        onTab: 0,
+        grow: 0.25,
+      },
+      {
         children: [
-          paneNames.chat,
-          paneNames.npc,
-          paneNames.board,
-          paneNames.notes,
-          paneNames.roll,
+          {
+            children: [
+              {
+                children: ["board", "notes"],
+                onTab: 0,
+                grow: 0.6,
+              },
+              {
+                children: ["chat", "npc"],
+                onTab: 1,
+                grow: 0.4,
+              },
+            ],
+            isRow: true,
+            grow: 1,
+          },
         ],
-        grow: 1,
+        isRow: false,
+        grow: 0.75,
       },
     ],
+    isRow: true,
+    grow: 1,
   };
 
-  const layoutRoot = localRoot
-    ? (JSON.parse(localRoot) as TileBranchSubstance)
-    : rootPane;
+  const layoutRoot = localRoot ? (localRoot as TileBranchSubstance) : rootPane;
 
   const openPanelList = () => {
     setHudSel(true);
@@ -123,21 +148,24 @@ export const HudLayout = () => {
   return (
     <>
       <HudToolbar>
-        <Button size="small" onClick={openPanelList}>
-          Pane
-        </Button>
-        <Button size="small" onClick={() => setGm(true)}>
-          Gen
-        </Button>
-        <Button size="small" onClick={() => setCo(true)}>
-          Config
-        </Button>
+        <Flex>
+          <Button size="small" onClick={openPanelList}>
+            Pane
+          </Button>
+          <Button size="small" onClick={() => setGm(true)}>
+            Gen
+          </Button>
+          <Button size="small" onClick={() => setCo(true)}>
+            Config
+          </Button>
+        </Flex>
         {nats.connection !== null && sessionData.hosting && (
           <Text size="small">Hosting on {sessionData.browserID}</Text>
         )}
         {nats.connection !== null && !sessionData.hosting && (
           <Text size="small">Connected to {sessionData.remote}</Text>
         )}
+        <Text size="small">{storageSize} B</Text>
       </HudToolbar>
       <HudRoot>
         <TileProvider

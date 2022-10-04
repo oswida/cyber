@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@dice-roller/rpg-dice-roller": "^5.1.0",
+    "@eonasdan/lz-string": "^1.0.3",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -24,6 +25,7 @@
     "react-custom-scrollbars-2": "^4.5.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6",
+    "react-spring-bottom-sheet": "^3.4.1",
     "react-tile-pane": "^0.4.1",
     "react-use-measure": "^2.1.1",
     "typeface-oxanium": "^1.1.13",

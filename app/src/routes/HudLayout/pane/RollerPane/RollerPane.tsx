@@ -1,6 +1,6 @@
 import { useAtomValue } from "jotai";
 import { language } from "~/common";
-import { Flex } from "~/component";
+import { Button, Flex } from "~/component";
 import { HudPane } from "../../styles";
 import { RollButton } from "./RollButton";
 import { RollHistory } from "./RollHistory";
@@ -11,7 +11,7 @@ export const RollerPane = () => {
   const lang = useAtomValue(language);
 
   return (
-    <HudPane>
+    <HudPane css={{ alignItems: "flex-start" }}>
       <Flex direction="column" css={{ gap: 10, width: "90%" }}>
         <RollResult />
         <RollButtons>

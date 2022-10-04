@@ -87,60 +87,61 @@ export const RollButton = () => {
   }, []);
 
   return (
-    <Flex center>
-      <Flex direction="column">
-        <Icon icon={faPlus} onClick={inc} />
-        <InputButton
-          onChange={updateDice}
-          title="Scroll to inc/dec"
-          type="number"
-          ref={numRef as any}
-          maxLength={2}
-          min={1}
-          css={{ maxWidth: "2.5em" }}
-        />
-        <Icon icon={faMinus} onClick={dec} />
+    <Flex direction="column">
+      <Flex center>
+        <Flex>
+          <Button size="small" noborder noupper onClick={() => setDice(4)}>
+            d4
+          </Button>
+          <Button size="small" noborder noupper onClick={() => setDice(6)}>
+            d6
+          </Button>
+          <Button size="small" noborder noupper onClick={() => setDice(8)}>
+            d8
+          </Button>
+          <Button size="small" noborder noupper onClick={() => setDice(10)}>
+            d10
+          </Button>
+
+          <Button size="small" noborder noupper onClick={() => setDice(12)}>
+            d12
+          </Button>
+          <Button size="small" noborder noupper onClick={() => setDice(20)}>
+            d20
+          </Button>
+          <Button size="small" noborder noupper onClick={() => setDice(100)}>
+            d100
+          </Button>
+        </Flex>
       </Flex>
-      <Text color="yellow"> d</Text>
-      <Flex>
+      <Flex center>
         <Flex direction="column">
-          <Icon icon={faPlus} onClick={incDice} />
+          <Icon icon={faPlus} onClick={inc} />
           <InputButton
             onChange={updateDice}
             title="Scroll to inc/dec"
             type="number"
-            ref={diceRef as any}
-            maxLength={3}
+            ref={numRef as any}
+            maxLength={2}
             min={1}
-            css={{ maxWidth: "3.5em" }}
+            css={{ maxWidth: "2.5em" }}
           />
-          <Icon icon={faMinus} onClick={decDice} />
+          <Icon icon={faMinus} onClick={dec} />
         </Flex>
-        <Flex direction="column">
-          <Flex>
-            <Button size="small" onClick={() => setDice(4)}>
-              4
-            </Button>
-            <Button size="small" onClick={() => setDice(6)}>
-              6
-            </Button>
-            <Button size="small" onClick={() => setDice(8)}>
-              8
-            </Button>
-            <Button size="small" onClick={() => setDice(10)}>
-              10
-            </Button>
-          </Flex>
-          <Flex>
-            <Button size="small" onClick={() => setDice(12)}>
-              12
-            </Button>
-            <Button size="small" onClick={() => setDice(20)}>
-              20
-            </Button>
-            <Button size="small" onClick={() => setDice(100)}>
-              100
-            </Button>
+        <Text color="yellow"> d</Text>
+        <Flex>
+          <Flex direction="column">
+            <Icon icon={faPlus} onClick={incDice} />
+            <InputButton
+              onChange={updateDice}
+              title="Scroll to inc/dec"
+              type="number"
+              ref={diceRef as any}
+              maxLength={3}
+              min={1}
+              css={{ maxWidth: "3.5em" }}
+            />
+            <Icon icon={faMinus} onClick={decDice} />
           </Flex>
         </Flex>
       </Flex>

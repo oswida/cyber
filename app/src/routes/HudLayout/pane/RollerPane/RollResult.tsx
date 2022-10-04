@@ -94,6 +94,7 @@ export const RollResult = () => {
       <Flex direction="column">
         <Button
           noborder
+          noupper
           onClick={roll}
           css={{ borderBottom: "solid 1px $green" }}
         >

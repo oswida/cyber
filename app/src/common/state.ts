@@ -4,8 +4,6 @@ import { NatsConnection, Subscription } from "nats.ws";
 export const currentPage = atom<string>("");
 export const language = atom<string>("pl");
 
-export const inodLayoutKey = "inod-hud-layout";
-
 export const modalOpen = atom<boolean>(false);
 export const hudPanelSelectionOpen = atom<boolean>(false);
 
@@ -30,7 +28,6 @@ export type RollHistoryEntry = {
 };
 export const stateRollHistory = atom<RollHistoryEntry[]>([]);
 
-export const inodSessionKey = "inod-session-id";
 export type sessionDataType = {
   username: string;
   browserID: string;
@@ -64,3 +61,14 @@ export type NatsMessage = {
   data: string;
 };
 export const queueInfo = atom<NatsMessage[]>([]);
+
+export type NoteType = {
+  title: string;
+  content: string;
+  author: string;
+};
+
+export const statePrivateNotes = atom<Record<string, NoteType>>({});
+export const stateBoardNotes = atom<Record<string, NoteType>>({});
+
+export const stateStorageSize = atom<number>(0);

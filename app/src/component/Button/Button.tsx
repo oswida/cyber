@@ -38,6 +38,11 @@ export const Button = styled("div", {
         border: "none",
       },
     },
+    noupper: {
+      true: {
+        textTransform: "none",
+      },
+    },
     color: {
       green: {
         borderColor: "$green",

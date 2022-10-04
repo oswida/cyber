@@ -2,13 +2,12 @@ import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   configOpen,
-  inodSessionKey,
   sessionDataType,
   stateNats,
   stateSessionData,
 } from "~/common";
 import { Button, Flex, Input, Modal, Text } from "~/component";
-import { connect } from "nats";
+import { useStorage } from "~/common/storage";
 
 export const Config = ({
   saveCallback,
@@ -25,6 +24,7 @@ export const Config = ({
   const remote = useMemo(() => sessionData.remote, [sessionData]);
   const [host, setHost] = useState(false);
   const nats = useAtomValue(stateNats);
+  const { saveSessionData } = useStorage();
 
   useEffect(() => {
     setHost(sessionData.hosting);
@@ -46,7 +46,7 @@ export const Config = ({
       proxy: natsRef.current.value,
       hosting: host,
     };
-    localStorage.setItem(inodSessionKey, JSON.stringify(newValue));
+    saveSessionData(newValue);
     setSessionData(newValue);
     setCo(false);
     // nats connection

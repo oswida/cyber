@@ -10,16 +10,18 @@ export const HudRoot = styled("div", {
 });
 
 export const HudToolbar = styled("div", {
-  height: 36,
-  width: "100%",
+  height: 40,
+  width: "calc(100% - 20px)",
   position: "fixed",
+  overflow: "hidden",
   top: 0,
   left: 0,
   backgroundColor: "$background",
   display: "flex",
-  justifyContent: "flex-start",
+  justifyContent: "space-between",
   alignItems: "center",
-  padding: 2,
+  paddingLeft: 10,
+  paddingRight: 10,
   gap: 10,
 });
 

@@ -23,9 +23,12 @@ export const Input = styled("input", {
         fontSize: "$1",
       },
     },
-    noborder: {
-      true: {
-        borderBottom: "none",
+    border: {
+      none: {
+        border: "none",
+      },
+      down: {
+        borderBottom: "solid 1px $darkblue",
       },
     },
   },
