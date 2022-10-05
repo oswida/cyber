@@ -1,5 +1,4 @@
 import { useAtom, useAtomValue } from "jotai";
-import { connect } from "nats.ws";
 import { useEffect } from "react";
 import {
   createTilePanes,
@@ -22,7 +21,7 @@ import {
   stateStorageSize,
   theme,
 } from "~/common";
-import { topicInfo, topicRoll, useNats } from "~/common/nats";
+import { topicInfo, topicRoll } from "~/common/nats";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, GenMenu, Modal, Text } from "~/component";
 import { Config } from "../Config";
@@ -65,7 +64,7 @@ export const HudLayout = () => {
   const [, setGm] = useAtom(genMenuOpen);
   const [, setCo] = useAtom(configOpen);
   const [nats, setNats] = useAtom(stateNats);
-  const { processIncoming, publish, getTopic } = useNats();
+  // const { processIncoming, publish, getTopic } = useNats();
   const sessionData = useAtomValue(stateSessionData);
   const qInfo = useAtomValue(queueInfo);
 
@@ -118,26 +117,26 @@ export const HudLayout = () => {
   };
 
   const processSessionData = async (data: sessionDataType) => {
-    if (nats.connection != null) {
-      nats.connection.drain();
-      nats.connection.close();
-      setNats({ connection: null, sub: null });
-    }
-    const nc = await connect({
-      servers: data.nats,
-      tls: null,
-      token: "03c2ba5c-c834-4afa-ac1b-355ae5ce7a1b",
-    });
-    setNats({
-      connection: nc,
-      sub: nc.subscribe(getTopic(topicRoll), { callback: processIncoming }),
-    });
+    // if (nats.connection != null) {
+    //   nats.connection.drain();
+    //   nats.connection.close();
+    //   setNats({ connection: null, sub: null });
+    // }
+    // const nc = await connect({
+    //   servers: data.nats,
+    //   tls: null,
+    //   token: "03c2ba5c-c834-4afa-ac1b-355ae5ce7a1b",
+    // });
+    // setNats({
+    //   connection: nc,
+    //   sub: nc.subscribe(getTopic(topicRoll), { callback: processIncoming }),
+    // });
   };
 
   useEffect(() => {
     if (nats.connection == null || nats.sub == null) return;
     if (!sessionData.hosting) {
-      publish(topicInfo, `Connected ${sessionData.browserID}`);
+      // publish(topicInfo, `Connected ${sessionData.browserID}`);
     }
   }, [nats, sessionData]);
 

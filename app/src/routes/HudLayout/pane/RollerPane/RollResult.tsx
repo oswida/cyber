@@ -8,7 +8,7 @@ import {
   stateRollHistory,
   stateSessionData,
 } from "~/common";
-import { topicRoll, useNats } from "~/common/nats";
+// import { topicRoll, useNats } from "~/common/nats";
 import { prettyNow } from "~/common/util";
 import { Button, Flex, Input, Text } from "~/component";
 import { RollInfo } from "./styles";
@@ -20,7 +20,7 @@ export const RollResult = () => {
   const done = useRef<boolean>(true);
   const commentRef = useRef<HTMLInputElement>();
   const sessionData = useAtomValue(stateSessionData);
-  const { publish } = useNats();
+  // const { publish } = useNats();
 
   const randomizeText = (elementId: string, roll: DiceRoll) => {
     const theLetters = "0123456789#%&^+=-";
@@ -68,7 +68,7 @@ export const RollResult = () => {
         } as RollHistoryEntry;
         setRollHistory((state) => [...state, newEntry]);
         commentRef.current!!.value = "";
-        publish(topicRoll, newEntry);
+        // publish(topicRoll, newEntry);
       }
     };
 
