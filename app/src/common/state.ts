@@ -1,5 +1,6 @@
 import { CorpoType, NodeType, NpcType } from "./types";
 import { atom } from "jotai";
+import { NatsConnection, Subscription } from "nats.ws";
 
 export const currentPage = atom<string>("");
 export const language = atom<string>("pl");
@@ -48,8 +49,8 @@ export const configOpen = atom<boolean>(false);
 
 // nats token: 03c2ba5c-c834-4afa-ac1b-355ae5ce7a1b
 export type NatsType = {
-  connection: any; //NatsConnection | null;
-  sub: any; //Subscription | null;
+  connection: NatsConnection | null;
+  sub: Subscription | null;
 };
 export const stateNats = atom<NatsType>({
   connection: null,
