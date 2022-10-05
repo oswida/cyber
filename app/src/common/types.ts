@@ -18,3 +18,14 @@ export type NodeType = {
   data: string;
   look: string;
 };
+
+export type NpcType = {
+  id: string;
+  name: string;
+  surname: string;
+  traits: string[];
+  occupation: string;
+  goal: string;
+  look: string;
+  gear: string;
+};

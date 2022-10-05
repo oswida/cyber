@@ -1,6 +1,14 @@
 import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
-import { useAtomValue } from "jotai";
-import { language } from "~/common";
+import { useAtom, useAtomValue } from "jotai";
+import {
+  doExport,
+  doImport,
+  language,
+  NpcType,
+  prettyToday,
+  stateGenerator,
+} from "~/common";
+import { useStorage } from "~/common/storage";
 import {
   npcGear,
   npcGoal,
@@ -10,13 +18,16 @@ import {
   npcOccupation,
   npcPositiveTrait,
   npcSurnameTable,
-  NpcType,
 } from "~/data";
+import { v4 as uuidv4 } from "uuid";
 
 const roller = new DiceRoller();
 
 export const useNpcGen = () => {
   const lang = useAtomValue(language);
+  const [gen, setGen] = useAtom(stateGenerator);
+  const { saveGen } = useStorage();
+
   const rollNpc = () => {
     let roll = roller.roll(`1d${npcNameTable.length}`) as DiceRoll;
     const name = npcNameTable[roll.total - 1];
@@ -42,17 +53,55 @@ export const useNpcGen = () => {
     const nnt = npcNegativeTrait[lang];
     roll = roller.roll(`1d${nnt.length}`) as DiceRoll;
     traits.push(nnt[roll.total - 1]);
-    const result: NpcType[] = [];
-    result.push({
+    const result: NpcType = {
+      id: uuidv4(),
       name: name,
       surname: surname,
       goal: goal,
-      look: looks.join(". "),
+      look: looks[0],
+      gear: looks[1],
       occupation: occ,
       traits: traits,
-    } as NpcType);
+    };
     return result;
   };
 
-  return { rollNpc };
+  const generate = () => {
+    const item = rollNpc();
+    const newState = { ...gen };
+    newState.npc[item.id] = item;
+    setGen(newState);
+    saveGen(newState);
+  };
+
+  const clean = () => {
+    const newState = { ...gen, npc: {} };
+    setGen(newState);
+    saveGen(newState);
+  };
+
+  const exportData = () => {
+    const filename = `npc-${prettyToday()}.json`;
+    doExport(gen.npc, filename);
+  };
+
+  const importData = () => {
+    doImport((data: any) => {
+      const newState = { ...gen, npc: data };
+      setGen(newState);
+      saveGen(newState);
+    });
+  };
+
+  const deleteNpc = (id: string) => {
+    const newList: Record<string, NpcType> = {};
+    Object.keys(gen.npc).forEach((k) => {
+      if (k !== id && gen.npc[k]) newList[k] = gen.npc[k]!!;
+    });
+    const newState = { ...gen, npc: newList };
+    setGen(newState);
+    saveGen(newState);
+  };
+
+  return { rollNpc, generate, clean, exportData, importData, deleteNpc };
 };

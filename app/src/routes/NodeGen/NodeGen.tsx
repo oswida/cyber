@@ -1,6 +1,5 @@
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useRef } from "react";
-import useLocalStorageState from "use-local-storage-state";
 import {
   currentPage,
   genTitles,

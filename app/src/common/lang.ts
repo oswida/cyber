@@ -17,6 +17,8 @@ export const globalStr: Record<string, Record<string, string>> = {
     ice: "lod",
     "main hud": "start",
     import: "import",
+    traits: "Charakter",
+    goal: "Cel",
   },
   en: {
     generate: "Generate",
@@ -36,6 +38,8 @@ export const globalStr: Record<string, Record<string, string>> = {
     ice: "ice",
     "main hud": "main",
     import: "import",
+    traits: "Traits",
+    goal: "Goal",
   },
 };
 

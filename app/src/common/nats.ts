@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useAtom, useAtomValue } from "jotai";
-import { NatsError } from "nats";
+import { NatsError } from "nats.ws";
 import { Msg, StringCodec } from "nats.ws";
 import {
   NatsMessage,

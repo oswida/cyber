@@ -1,12 +1,4 @@
-export type NpcType = {
-  name: string;
-  surname: string;
-  traits: string[];
-  occupation: string;
-  goal: string;
-  look: string;
-  gear: string;
-};
+
 
 const npcNameTable = [
   "Maria",

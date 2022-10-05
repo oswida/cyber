@@ -26,7 +26,6 @@ import { topicInfo, topicRoll, useNats } from "~/common/nats";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, GenMenu, Modal, Text } from "~/component";
 import { Config } from "../Config";
-import { ChatPane } from "./pane";
 import { GenCorpoPane } from "./pane/GenPane/GenCorpoPane";
 import { GenNodePane } from "./pane/GenPane/GenNodePane";
 import { NotesPane } from "./pane/NotesPane";
@@ -71,7 +70,6 @@ export const HudLayout = () => {
   const qInfo = useAtomValue(queueInfo);
 
   const [paneList, paneNames] = createTilePanes({
-    chat: <ChatPane />,
     "gen:zaibatsu": <GenCorpoPane />,
     "gen:node": <GenNodePane />,
     roll: <RollerPane />,
