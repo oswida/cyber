@@ -18,15 +18,17 @@ const CloseButton = styled("div", {
   right: 10,
 });
 
-export const Modal = ({
-  children,
-  isOpen,
-  onClose,
-}: PropsWithChildren & { isOpen: boolean; onClose?: () => void }) => {
+type ModalProps = PropsWithChildren & {
+  isOpen: boolean;
+  onClose?: () => void;
+  opacity?: "less" | "more" | "full";
+};
+
+export const Modal = ({ children, isOpen, onClose, opacity }: ModalProps) => {
   return (
     <>
       {isOpen && (
-        <Overlay id="overlay">
+        <Overlay id="overlay" opacity={opacity}>
           {children}
           {onClose !== undefined && (
             <CloseButton onClick={onClose} title="Close">

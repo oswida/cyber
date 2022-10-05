@@ -63,6 +63,7 @@ export type NatsMessage = {
 export const queueInfo = atom<NatsMessage[]>([]);
 
 export type NoteType = {
+  id: string;
   title: string;
   content: string;
   author: string;

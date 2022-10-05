@@ -141,10 +141,7 @@ export const HudLayout = () => {
     }
   }, [nats, sessionData]);
 
-  useEffect(() => {
-    console.log(qInfo);
-  }, [qInfo]);
-
+ 
   return (
     <>
       <HudToolbar>

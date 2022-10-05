@@ -11,3 +11,4 @@ export * from "./GenMenu";
 export * from "./GenLayout";
 export * from "./Input";
 export * from "./Textarea";
+export * from "./Icon";

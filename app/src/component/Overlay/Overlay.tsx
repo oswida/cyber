@@ -10,10 +10,25 @@ export const Overlay = styled("div", {
   position: "fixed",
   top: 0,
   left: 0,
-  opacity: 0.9,
   backdropFilter: "blur(10px)",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
+  variants: {
+    opacity: {
+      less: {
+        opacity: 0.9,
+      },
+      more: {
+        opacity: 0.95,
+      },
+      full: {
+        opacity: 1,
+      },
+    },
+  },
+  defaultVariants: {
+    opacity: "less",
+  },
 });

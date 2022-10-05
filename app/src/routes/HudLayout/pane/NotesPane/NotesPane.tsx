@@ -2,7 +2,11 @@ import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useRef, useState } from "react";
 import Scrollbars from "react-custom-scrollbars-2";
 import {
+  doExport,
+  doImport,
   NoteType,
+  prettyNow,
+  prettyToday,
   stateBoardNotes,
   stateNoteInfo,
   statePrivateNotes,
@@ -11,9 +15,12 @@ import {
   styled,
 } from "~/common";
 import { useStorage } from "~/common/storage";
-import { Button, Flex, Input, Text, Textarea } from "~/component";
+import { Button, Flex, Icon, Input, Text, Textarea } from "~/component";
 import { HudPane } from "../../styles";
 import { InfoModal } from "./InfoModal";
+import { v4 as uuidv4 } from "uuid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDeleteLeft, faFileExport } from "@fortawesome/free-solid-svg-icons";
 
 export const ListRoot = styled("div", {
   border: "1px solid $darkblue",
@@ -38,19 +45,35 @@ export const ContentRoot = styled("div", {
   height: 100,
 });
 
+const ContentItem = styled(Flex, {
+  borderRadius: 2,
+  padding: 3,
+  marginRight: 10,
+  backgroundColor: "$background",
+  variants: {
+    selected: {
+      true: {
+        backgroundColor: "$background200",
+      },
+    },
+  },
+});
+
 type NotesPaneProps = {
   isBoard: boolean;
 };
 
 export const NotesPane = ({ isBoard }: NotesPaneProps) => {
-  const titleRef = useRef<HTMLInputElement>();
-  const contentRef = useRef<HTMLDivElement>();
+  const titleRef = useRef<HTMLInputElement>(null);
+  const searchRef = useRef<HTMLInputElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
   const [boardState, setBoardState] = useAtom(stateBoardNotes);
   const [notesState, setNotesState] = useAtom(statePrivateNotes);
   const sessionData = useAtomValue(stateSessionData);
   const { saveBoardNotes, savePrivateNotes } = useStorage();
   const [selNote, setSelNote] = useAtom(stateSelNote);
   const [no, setNo] = useAtom(stateNoteInfo);
+  const [filter, setFilter] = useState("");
 
   useEffect(() => {
     saveBoardNotes();
@@ -68,6 +91,7 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
     )
       return;
     const note: NoteType = {
+      id: uuidv4(),
       title: titleRef.current.value,
       content: contentRef.current.innerText,
       author: sessionData.username,
@@ -75,62 +99,126 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
 
     if (isBoard) {
       const newState = { ...boardState };
-      newState[note.title] = note;
+      newState[note.id] = note;
       setBoardState(newState);
       //TODO: send note to others
     } else {
       const newState = { ...notesState };
-      newState[note.title] = note;
+      newState[note.id] = note;
       setNotesState(newState);
     }
     titleRef.current.value = "";
     contentRef.current.innerHTML = "";
   };
 
+  const onSearch = (val: any) => {
+    if (!searchRef.current) return;
+    setFilter(searchRef.current.value);
+  };
+
+  const notFiltered = (note: NoteType | undefined) => {
+    if (!note) return false;
+    if (filter === "") return true;
+    return note.title.includes(filter) || note.content.includes(filter);
+  };
+
+  const clear = () => {
+    if (!searchRef.current) return;
+    searchRef.current.value = "";
+    setFilter("");
+    searchRef.current.focus();
+  };
+
+  const exportNotes = () => {
+    if (isBoard) {
+      const filename = `board-${prettyToday()}.json`;
+      doExport(boardState, filename);
+    } else {
+      const filename = `private-notes-${prettyToday()}.json`;
+      doExport(notesState, filename);
+    }
+  };
+
+  const importNotes = () => {
+    if (isBoard) {
+      doImport((data: any) => {
+        setBoardState(data);
+      });
+    } else {
+      doImport((data: any) => {
+        setNotesState(data);
+      });
+    }
+  };
+
   return (
     <>
-      {" "}
       <HudPane>
         <Flex css={{ alignItems: "center", width: "90%", margin: 10 }}>
           <Text color="yellow" size="small">
             Search:
-          </Text>{" "}
-          <Input border="down" css={{ width: "100%" }}></Input>{" "}
+          </Text>
+          <Input
+            border="down"
+            css={{ width: "100%" }}
+            ref={searchRef}
+            onChange={onSearch}
+          />
+          <Icon color="blue" icon={faDeleteLeft} onClick={clear} />
+          <Button noborder noupper size="small" onClick={exportNotes}>
+            Export
+          </Button>
+          <Button noborder noupper size="small" onClick={importNotes}>
+            Import
+          </Button>
         </Flex>
         <ListRoot>
           <Scrollbars>
-            {isBoard &&
-              Object.keys(boardState).map((k) => (
-                <Flex
-                  key={k}
-                  onClick={() => setSelNote(k)}
-                  onDoubleClick={() =>
-                    setNo({ open: true, note: boardState[k] })
-                  }
-                  css={{
-                    padding: 2,
-                    marginRight: 10,
-                    backgroundColor:
-                      selNote === k ? "$background200" : "$background",
-                  }}
-                >
-                  <Text>{boardState[k]?.title}</Text>
-                </Flex>
-              ))}
+            <>
+              {isBoard &&
+                Object.keys(boardState)
+                  .filter((k) => notFiltered(boardState[k]))
+                  .map((k) => (
+                    <ContentItem
+                      key={k}
+                      onClick={() => setSelNote(k)}
+                      onDoubleClick={() =>
+                        setNo({ open: true, note: boardState[k] })
+                      }
+                      selected={selNote === k}
+                    >
+                      <Text>{boardState[k]?.title}</Text>
+                    </ContentItem>
+                  ))}
+              {!isBoard &&
+                Object.keys(notesState)
+                  .filter((k) => notFiltered(notesState[k]))
+                  .map((k) => (
+                    <ContentItem
+                      key={k}
+                      onClick={() => setSelNote(k)}
+                      onDoubleClick={() =>
+                        setNo({ open: true, note: notesState[k] })
+                      }
+                      selected={selNote === k}
+                    >
+                      <Text>{notesState[k]?.title}</Text>
+                    </ContentItem>
+                  ))}
+            </>
           </Scrollbars>
         </ListRoot>
         <Flex css={{ width: "90%" }}>
           <Flex direction="column" css={{ width: "100%", gap: 10 }}>
             <Flex css={{ alignItems: "center", width: "100%" }}>
-              {" "}
               <Text color="yellow" size="small">
                 Title:
-              </Text>{" "}
+              </Text>
               <Input
                 border="down"
                 css={{ width: "100%" }}
                 ref={titleRef as any}
-              ></Input>{" "}
+              ></Input>
               <Button onClick={add}>Add</Button>
             </Flex>
             <Flex css={{ width: "100%" }} direction="column">

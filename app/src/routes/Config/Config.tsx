@@ -5,6 +5,7 @@ import {
   sessionDataType,
   stateNats,
   stateSessionData,
+  stateStorageSize,
 } from "~/common";
 import { Button, Flex, Input, Modal, Text } from "~/component";
 import { useStorage } from "~/common/storage";
@@ -25,6 +26,7 @@ export const Config = ({
   const [host, setHost] = useState(false);
   const nats = useAtomValue(stateNats);
   const { saveSessionData } = useStorage();
+  const storageSize = useAtomValue(stateStorageSize);
 
   useEffect(() => {
     setHost(sessionData.hosting);
@@ -56,6 +58,12 @@ export const Config = ({
   return (
     <Modal isOpen={co} onClose={() => setCo(false)}>
       <Flex direction="column" css={{ alignItems: "flex-end", gap: 15 }}>
+        <Text color="yellow">Storage</Text>
+        <Text css={{ width: 500, textAlign: "right" }}>
+          Current storage use is: <b>{`${storageSize} bytes`}</b>.<br />
+          Please remember that this app is using local browser storage instead
+          of a database. The most popular limit for such a storage is about 5MB.
+        </Text>
         <Text size="small" color="pink">
           Identification
         </Text>

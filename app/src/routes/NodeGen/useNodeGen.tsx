@@ -97,7 +97,6 @@ export const useNodeGen = () => {
     const look = infoLook[lang][roll.total - 1];
     roll = roller.roll(`1d${infoData[lang][nclass!!].length}`) as DiceRoll;
     const data = infoData[lang][nclass!!][roll.total - 1];
-    console.log("data", data);
     const [ice, black] = rollICE(nclass as string);
 
     return [
