@@ -36,7 +36,7 @@ export const ClassMenu = ({ title }: ClassMenuProps) => {
           </Text>
         )}
         {Object.keys(NodeClassDict[lang]).map((key) => (
-          <Button onClick={() => select(key)}>
+          <Button onClick={() => select(key)} key={key}>
             {NodeClassDict[lang][key]}
           </Button>
         ))}

@@ -1,6 +1,16 @@
 import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
-import { useAtomValue } from "jotai";
-import { globalStr, language } from "~/common";
+import { useAtom, useAtomValue } from "jotai";
+import {
+  doExport,
+  doImport,
+  globalStr,
+  language,
+  nodeClassSelected,
+  NodeType,
+  prettyToday,
+  stateGenerator,
+} from "~/common";
+import { useStorage } from "~/common/storage";
 import {
   infoData,
   infoLook,
@@ -8,8 +18,8 @@ import {
   NodeClassHP,
   NodeClassInf,
   NodeClassMore,
-  NodeType,
 } from "~/data";
+import { v4 as uuidv4 } from "uuid";
 
 const roller = new DiceRoller();
 
@@ -17,6 +27,9 @@ const nodetype = ["pub", "priv", "privsec", "gov", "corp", "mil", "ai"];
 
 export const useNodeGen = () => {
   const lang = useAtomValue(language);
+  const [gen, setGen] = useAtom(stateGenerator);
+  const { saveGen } = useStorage();
+  const nc = useAtomValue(nodeClassSelected);
 
   function generateSerialKeys(length: number, separator: string) {
     separator = separator || "-";
@@ -30,30 +43,31 @@ export const useNodeGen = () => {
   }
 
   const rollICE = (nclass: string) => {
+    let chance = 0;
     switch (nclass) {
       case "pub":
       case "priv":
         return ["-", false];
       case "privsec":
-        let x = (roller.roll("1d6") as DiceRoll).total;
-        if (x <= 3) return [globalStr[lang]["d6"], false];
+        chance = (roller.roll("1d6") as DiceRoll).total;
+        if (chance <= 3) return [globalStr[lang]["d6"], false];
         break;
       case "gov":
-        x = (roller.roll("1d6") as DiceRoll).total;
-        if (x <= 3) return [globalStr[lang]["d6"], false];
+        chance = (roller.roll("1d6") as DiceRoll).total;
+        if (chance <= 3) return [globalStr[lang]["d6"], false];
         else return [globalStr[lang]["d8"], false];
       case "corp":
-        const y = (roller.roll("1d6") as DiceRoll).total;
-        if (y <= 2) return [globalStr[lang]["d8"], true];
+        chance = (roller.roll("1d6") as DiceRoll).total;
+        if (chance <= 2) return [globalStr[lang]["d8"], true];
         return [globalStr[lang]["d8"], false];
       case "mil":
-        const z = (roller.roll("1d6") as DiceRoll).total;
-        if (z <= 3) return [globalStr[lang]["d10"], true];
+        chance = (roller.roll("1d6") as DiceRoll).total;
+        if (chance <= 3) return [globalStr[lang]["d10"], true];
         return [globalStr[lang]["d10"], false];
       case "ai":
         return [globalStr[lang]["d12"], true];
     }
-    return "-";
+    return ["-", false];
   };
 
   const rollPersonel = (nclass: string) => {
@@ -86,34 +100,72 @@ export const useNodeGen = () => {
     return "";
   };
 
-  const rollNode = (tp?: string) => {
+  const rollNode = () => {
     var roll: DiceRoll;
-    let nclass: string | undefined = tp;
-    if (!tp) {
+    let nclass: string | undefined = nc;
+    if (!nclass) {
       roll = roller.roll(`1d${nodetype.length}`) as DiceRoll;
       nclass = nodetype[roll.total - 1] as string;
     }
     roll = roller.roll(`1d${infoLook[lang].length}`) as DiceRoll;
     const look = infoLook[lang][roll.total - 1];
+
     roll = roller.roll(`1d${infoData[lang][nclass!!].length}`) as DiceRoll;
     const data = infoData[lang][nclass!!][roll.total - 1];
     const [ice, black] = rollICE(nclass as string);
 
-    return [
-      {
-        name: generateSerialKeys(8, ""),
-        ntype: NodeClassDict[lang][nclass!!],
-        hp: (roller.roll(NodeClassHP[nclass!!]) as DiceRoll).total,
-        inf: (roller.roll(NodeClassInf[nclass!!]) as DiceRoll).total,
-        ice: ice,
-        black: black,
-        more: NodeClassMore[lang][nclass!!],
-        security: rollPersonel(nclass!!),
-        look: look,
-        data: data,
-      } as NodeType,
-    ];
+    const retv: NodeType = {
+      id: uuidv4(),
+      name: generateSerialKeys(8, ""),
+      node_class: NodeClassDict[lang][nclass!!],
+      hp: (roller.roll(NodeClassHP[nclass!!]) as DiceRoll).total,
+      inf: (roller.roll(NodeClassInf[nclass!!]) as DiceRoll).total,
+      ice: ice as string,
+      black_ice: black as boolean,
+      more_security: NodeClassMore[lang][nclass!!],
+      security: rollPersonel(nclass!!),
+      look: look,
+      data: data,
+    };
+    return retv;
   };
 
-  return { rollNode };
+  const generate = () => {
+    const item = rollNode();
+    const newState = { ...gen };
+    newState.node[item.id] = item;
+    setGen(newState);
+    saveGen(newState);
+  };
+
+  const clean = () => {
+    const newState = { ...gen, node: {} };
+    setGen(newState);
+    saveGen(newState);
+  };
+
+  const exportData = () => {
+    const filename = `infonode-${prettyToday()}.json`;
+    doExport(gen.node, filename);
+  };
+
+  const importData = () => {
+    doImport((data: any) => {
+      const newState = { ...gen, node: data };
+      setGen(newState);
+      saveGen(newState);
+    });
+  };
+
+  const deleteNode = (id: string) => {
+    const newList: Record<string, NodeType> = {};
+    Object.keys(gen.node).forEach((k) => {
+      if (k !== id && gen.node[k]) newList[k] = gen.node[k]!!;
+    });
+    const newState = { ...gen, node: newList };
+    setGen(newState);
+    saveGen(newState);
+  };
+
+  return { rollNode, generate, clean, exportData, importData, deleteNode };
 };

@@ -68,7 +68,7 @@ export const GenLayout = ({ children, headerMenu }: GenLayoutProps) => {
                 onClick={headerMenu[key]}
                 key={key}
                 size="small"
-                border="none"
+                border="underline"
               >
                 {globalStr[lang][key]}
               </Button>
@@ -78,8 +78,8 @@ export const GenLayout = ({ children, headerMenu }: GenLayoutProps) => {
         <div
           style={{
             width: "100%",
-            height: "calc(100% - 25px - 4rem)",
-            marginTop: 25,
+            height: "calc(100% - 30px - 4rem)",
+            marginTop: 30,
             flex: 1,
           }}
         >

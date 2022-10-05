@@ -22,7 +22,7 @@ const CardRoot = styled("div", {
         minWidth: 190,
         maxWidth: 250,
         width: 250,
-        // height: 150,
+        fontSize: "$0",
       },
     },
     color: {

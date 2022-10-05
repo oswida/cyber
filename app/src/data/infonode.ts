@@ -1,16 +1,3 @@
-export type NodeType = {
-  name: string;
-  ntype: string;
-  hp: number;
-  inf: number;
-  security: string;
-  ice: string;
-  black: boolean;
-  more: string;
-  data: string;
-  look: string;
-};
-
 export const NodeClassDict: Record<string, Record<string, string>> = {
   pl: {
     pub: "Publiczny",

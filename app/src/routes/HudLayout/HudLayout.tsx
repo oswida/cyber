@@ -27,8 +27,8 @@ import { useStorage } from "~/common/storage";
 import { Button, Flex, GenMenu, Modal, Text } from "~/component";
 import { Config } from "../Config";
 import { ChatPane } from "./pane";
-import { GenPane } from "./pane/GenPane";
 import { GenCorpoPane } from "./pane/GenPane/GenCorpoPane";
+import { GenNodePane } from "./pane/GenPane/GenNodePane";
 import { NotesPane } from "./pane/NotesPane";
 import { RollerPane } from "./pane/RollerPane";
 import { stretchBarConfig } from "./StretchBar";
@@ -73,6 +73,7 @@ export const HudLayout = () => {
   const [paneList, paneNames] = createTilePanes({
     chat: <ChatPane />,
     "gen:zaibatsu": <GenCorpoPane />,
+    "gen:node": <GenNodePane />,
     roll: <RollerPane />,
     notes: <NotesPane isBoard={false} />,
     board: <NotesPane isBoard={true} />,
@@ -95,7 +96,7 @@ export const HudLayout = () => {
                 grow: 0.6,
               },
               {
-                children: ["chat", "gen:zaibatsu"],
+                children: ["gen:node", "gen:zaibatsu"],
                 onTab: 1,
                 grow: 0.4,
               },

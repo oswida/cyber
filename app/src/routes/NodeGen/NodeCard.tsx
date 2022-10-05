@@ -1,31 +1,30 @@
 import { faNetworkWired, faSkull } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtomValue } from "jotai";
-import useLocalStorageState from "use-local-storage-state";
-import { globalStr, language } from "~/common";
+import { globalStr, language, NodeType } from "~/common";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
-import { NodeType } from "~/data";
+import { useNodeGen } from "./useNodeGen";
 
-export const NodeCard = ({ data, id }: { data: NodeType; id: string }) => {
+type NodeCardProps = {
+  data: NodeType;
+  size?: "standard" | "small";
+};
+
+export const NodeCard = ({ data, size }: NodeCardProps) => {
   const lang = useAtomValue(language);
-  const [items, setItems] = useLocalStorageState<NodeType[]>("Cyber_NODEGEN", {
-    defaultValue: [] as NodeType[],
-  });
-
-  const delItem = () => {
-    setItems(items.filter((it) => it.name != data.name));
-  };
+  const { deleteNode } = useNodeGen();
 
   return (
     <Card
       title={data.name}
       titlecolor="yellow"
-      subtitle={data.ntype}
-      onDelete={delItem}
-      height={220}
-      id={id}
+      subtitle={data.node_class}
+      onDelete={() => deleteNode(data.id)}
+      height={size !== "small" ? 220 : undefined}
+      id={data.id}
+      size={size}
     >
-      <CardRow>
+      <CardRow css={{ flexWrap: "wrap" }}>
         <Text color="yellow" css={{ marginRight: 15 }}>
           {`${globalStr[lang]["hp"].toUpperCase()}:`}
         </Text>
@@ -38,7 +37,7 @@ export const NodeCard = ({ data, id }: { data: NodeType; id: string }) => {
           {`${globalStr[lang]["ice"].toUpperCase()}:`}
         </Text>
         <Text>{data.ice}</Text>
-        {data.black && (
+        {data.black_ice && (
           <FontAwesomeIcon
             icon={faSkull}
             title="Czarny LOD"
@@ -46,10 +45,12 @@ export const NodeCard = ({ data, id }: { data: NodeType; id: string }) => {
           />
         )}
       </CardRow>
-      {(data.more || data.security) && (
+      {(data.more_security || data.security) && (
         <CardRow>
           <Text size="middle" color="pink">
-            {[data.more, data.security].filter((it) => it != "").join("; ")}
+            {[data.more_security, data.security]
+              .filter((it) => it != "")
+              .join("; ")}
           </Text>
         </CardRow>
       )}

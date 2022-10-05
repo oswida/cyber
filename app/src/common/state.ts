@@ -1,4 +1,4 @@
-import { CorpoType } from "./types";
+import { CorpoType, NodeType } from "./types";
 import { atom } from "jotai";
 import { NatsConnection, Subscription } from "nats.ws";
 
@@ -90,8 +90,10 @@ export const stateNoteFilter = atom<string>("");
 
 export type GenStateType = {
   corpo: Record<string, CorpoType | undefined>;
+  node: Record<string, NodeType | undefined>;
 };
 
 export const stateGenerator = atom<GenStateType>({
   corpo: {},
+  node: {},
 });
