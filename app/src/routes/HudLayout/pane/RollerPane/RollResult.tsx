@@ -92,12 +92,7 @@ export const RollResult = () => {
   return (
     <RollInfo>
       <Flex direction="column">
-        <Button
-          noborder
-          noupper
-          onClick={roll}
-          css={{ borderBottom: "solid 1px $green" }}
-        >
+        <Button border="underline" noupper onClick={roll}>
           Roll{" "}
           <span style={{ fontWeight: "bold", marginLeft: "0.5em" }}>
             {selDice}

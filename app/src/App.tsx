@@ -13,7 +13,7 @@ import { PlaceGen } from "./routes/PlaceGen";
 
 function App() {
   const [lang, setLang] = useAtom(language);
-  const { loadSessionData, updateStoreSize } = useStorage();
+  const { loadSessionData, updateStoreSize, loadGen } = useStorage();
 
   useEffect(() => {
     const re = new RegExp(".*(lang=[a-zA-Z]+).*", "i");
@@ -25,6 +25,7 @@ function App() {
       }
     }
     loadSessionData();
+    loadGen();
     updateStoreSize();
   }, []);
 

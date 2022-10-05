@@ -7,7 +7,7 @@ export const Button = styled("div", {
   color: "$fontPrimary",
   outline: "none",
   textTransform: "uppercase",
-  border: "solid 1px $blue",
+
   borderRadius: 5,
   backgroundColor: "transparent",
   userSelect: "none",
@@ -32,15 +32,27 @@ export const Button = styled("div", {
         paddingRight: 5,
         fontSize: "small",
       },
-    },
-    noborder: {
-      true: {
-        border: "none",
+      "x-small": {
+        padding: 2,
+        paddingLeft: 5,
+        paddingRight: 5,
+        fontSize: "x-small",
       },
     },
     noupper: {
       true: {
         textTransform: "none",
+      },
+    },
+    border: {
+      standard: {
+        border: "solid 1px $blue",
+      },
+      underline: {
+        borderBottom: "solid 1px $blue",
+      },
+      none: {
+        border: "none",
       },
     },
     color: {
@@ -55,6 +67,7 @@ export const Button = styled("div", {
   },
   defaultVariants: {
     size: "standard",
+    border: "standard",
   },
 });
 

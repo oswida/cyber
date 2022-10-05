@@ -165,10 +165,10 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
             onChange={onSearch}
           />
           <Icon color="blue" icon={faDeleteLeft} onClick={clear} />
-          <Button noborder noupper size="small" onClick={exportNotes}>
+          <Button border="underline" noupper size="small" onClick={exportNotes}>
             Export
           </Button>
-          <Button noborder noupper size="small" onClick={importNotes}>
+          <Button border="underline" noupper size="small" onClick={importNotes}>
             Import
           </Button>
         </Flex>

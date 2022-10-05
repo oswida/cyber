@@ -1,55 +1,48 @@
 import { faEarth } from "@fortawesome/free-solid-svg-icons";
-import { useAtomValue } from "jotai";
-import useLocalStorageState from "use-local-storage-state";
-import { language } from "~/common";
+import { useAtom, useAtomValue } from "jotai";
+import { useCallback } from "react";
+import { CorpoType, genTitles, language, stateGenerator } from "~/common";
+import { useStorage } from "~/common/storage";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
 
-export type CorpoType = {
-  name1: string;
-  name2: string;
-  name3: string;
-  domains: string[];
-  slogan: string;
+type CorpoCardProps = {
+  data: CorpoType;
+  size?: "standard" | "small";
 };
 
-export const CorpoCard = ({ data }: { data: CorpoType }) => {
+export const CorpoCard = ({ data, size }: CorpoCardProps) => {
   const lang = useAtomValue(language);
+  const [gen, setGen] = useAtom(stateGenerator);
+  const { saveGen } = useStorage();
 
-  const [items, setItems] = useLocalStorageState<CorpoType[]>(
-    "Cyber_CORPOGEN",
-    {
-      defaultValue: [] as CorpoType[],
-    }
-  );
-
-  const delItem = () => {
-    setItems(
-      items.filter(
-        (it) =>
-          it.name1 != data.name1 ||
-          it.name2 != data.name2 ||
-          it.name3 != data.name3
-      )
-    );
-  };
+  const delItem = useCallback(() => {
+    const newList: Record<string, CorpoType> = {};
+    Object.keys(gen.corpo).forEach((k) => {
+      if (k !== data.id && gen.corpo[k]) newList[k] = gen.corpo[k]!!;
+    });
+    const newState = { ...gen, corpo: newList };
+    setGen(newState);
+    saveGen(newState);
+  }, [gen]);
 
   return (
     <Card
       color="pink"
-      title={`${data.name1} ${data.name2} ${data.name3}`}
+      title={data.name}
       titlecolor="blue"
       onDelete={delItem}
-      height={150}
+      height={size !== "small" ? 150 : undefined}
+      size={size}
     >
-      {data.domains && (
+      {data.operations && (
         <>
           <CardRow>
             <Text size="small" color="yellow">
-              {lang == "en" ? "Operations" : "Działalność"}
+              {genTitles[lang]["operations"]}
             </Text>
           </CardRow>
           <CardRow>
-            <Text css={{ maxWidth: 350 }}>{data.domains.join(", ")}</Text>
+            <Text css={{ maxWidth: 350 }}>{data.operations.join(", ")}</Text>
           </CardRow>
         </>
       )}
@@ -61,7 +54,9 @@ export const CorpoCard = ({ data }: { data: CorpoType }) => {
             </Text>
           </CardRow>
           <CardRow>
-            <Text css={{ maxWidth: 250, lineHeight: "1rem" }}>
+            <Text
+              css={{ maxWidth: 250, lineHeight: "1rem", overflow: "hidden" }}
+            >
               {data.slogan}
             </Text>
           </CardRow>

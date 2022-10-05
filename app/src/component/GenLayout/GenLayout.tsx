@@ -2,6 +2,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom, useAtomValue } from "jotai";
 import { PropsWithChildren } from "react";
+import Scrollbars from "react-custom-scrollbars-2";
 import { currentPage, genMenuOpen, globalStr, language } from "~/common";
 import {
   Button,
@@ -63,11 +64,29 @@ export const GenLayout = ({ children, headerMenu }: GenLayoutProps) => {
             }}
           >
             {Object.keys(headerMenu).map((key) => (
-              <Button onClick={headerMenu[key]}>{globalStr[lang][key]}</Button>
+              <Button
+                onClick={headerMenu[key]}
+                key={key}
+                size="small"
+                border="none"
+              >
+                {globalStr[lang][key]}
+              </Button>
             ))}
           </Flex>
         </PageHeader>
-        <PageContent>{children}</PageContent>
+        <div
+          style={{
+            width: "100%",
+            height: "calc(100% - 25px - 4rem)",
+            marginTop: 25,
+            flex: 1,
+          }}
+        >
+          <Scrollbars>
+            <PageContent>{children}</PageContent>
+          </Scrollbars>
+        </div>
       </PageRoot>
       <GenMenu extras={{ "main hud": "/" }} />
     </Root>

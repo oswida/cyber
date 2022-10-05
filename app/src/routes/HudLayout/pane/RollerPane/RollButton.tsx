@@ -90,26 +90,61 @@ export const RollButton = () => {
     <Flex direction="column">
       <Flex center>
         <Flex>
-          <Button size="small" noborder noupper onClick={() => setDice(4)}>
+          <Button
+            size="small"
+            border="underline"
+            noupper
+            onClick={() => setDice(4)}
+          >
             d4
           </Button>
-          <Button size="small" noborder noupper onClick={() => setDice(6)}>
+          <Button
+            size="small"
+            border="underline"
+            noupper
+            onClick={() => setDice(6)}
+          >
             d6
           </Button>
-          <Button size="small" noborder noupper onClick={() => setDice(8)}>
+          <Button
+            size="small"
+            border="underline"
+            noupper
+            onClick={() => setDice(8)}
+          >
             d8
           </Button>
-          <Button size="small" noborder noupper onClick={() => setDice(10)}>
+          <Button
+            size="small"
+            border="underline"
+            noupper
+            onClick={() => setDice(10)}
+          >
             d10
           </Button>
 
-          <Button size="small" noborder noupper onClick={() => setDice(12)}>
+          <Button
+            size="small"
+            border="underline"
+            noupper
+            onClick={() => setDice(12)}
+          >
             d12
           </Button>
-          <Button size="small" noborder noupper onClick={() => setDice(20)}>
+          <Button
+            size="small"
+            border="underline"
+            noupper
+            onClick={() => setDice(20)}
+          >
             d20
           </Button>
-          <Button size="small" noborder noupper onClick={() => setDice(100)}>
+          <Button
+            size="small"
+            border="underline"
+            noupper
+            onClick={() => setDice(100)}
+          >
             d100
           </Button>
         </Flex>

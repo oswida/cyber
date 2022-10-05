@@ -1,3 +1,4 @@
+import { CorpoType } from "./types";
 import { atom } from "jotai";
 import { NatsConnection, Subscription } from "nats.ws";
 
@@ -86,3 +87,11 @@ export const stateNoteInfo = atom<NoteInfoType>({
 
 export const stateSelNote = atom<string>("");
 export const stateNoteFilter = atom<string>("");
+
+export type GenStateType = {
+  corpo: Record<string, CorpoType | undefined>;
+};
+
+export const stateGenerator = atom<GenStateType>({
+  corpo: {},
+});

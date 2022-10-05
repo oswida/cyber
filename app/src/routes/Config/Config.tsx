@@ -27,20 +27,25 @@ export const Config = ({
   const nats = useAtomValue(stateNats);
   const { saveSessionData } = useStorage();
   const storageSize = useAtomValue(stateStorageSize);
+  const [err, setErr] = useState("");
 
   useEffect(() => {
     setHost(sessionData.hosting);
   }, [sessionData]);
 
   const save = () => {
-    if (
-      !nameRef.current ||
-      nameRef.current.value == "" ||
-      !remoteRef.current ||
-      !natsRef.current
-    )
+    if (!nameRef.current || !remoteRef.current || !natsRef.current) return;
+    setErr("");
+    if (nameRef.current.value == "") {
+      setErr("Username is required");
       return;
-    if (!host && remoteRef.current.value == "") return;
+    }
+    if (!host && remoteRef.current.value == "") {
+      setErr(
+        "If you selected client connection, the remote ID should be provided"
+      );
+      return;
+    }
     const newValue = {
       ...sessionData,
       username: nameRef.current.value,
@@ -105,6 +110,7 @@ export const Config = ({
         <Button css={{ marginTop: 10, maxWidth: "max-content" }} onClick={save}>
           Save
         </Button>
+        {err !== "" && <Text color="pink">{err}</Text>}
       </Flex>
     </Modal>
   );

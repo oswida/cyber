@@ -16,6 +16,7 @@ export const globalStr: Record<string, Record<string, string>> = {
     hp: "ochr",
     ice: "lod",
     "main hud": "start",
+    import: "import",
   },
   en: {
     generate: "Generate",
@@ -34,6 +35,7 @@ export const globalStr: Record<string, Record<string, string>> = {
     hp: "hp",
     ice: "ice",
     "main hud": "main",
+    import: "import",
   },
 };
 
@@ -44,6 +46,7 @@ export const genTitles: Record<string, Record<string, string>> = {
     node: "Infowęzeł",
     place: "Miejsce",
     job: "Robota",
+    operations: "Działalność",
   },
   en: {
     npc: "Non-player character",
@@ -51,5 +54,6 @@ export const genTitles: Record<string, Record<string, string>> = {
     node: "Infosphere node",
     place: "Place",
     job: "Job",
+    operations: "Operations",
   },
 };

@@ -101,7 +101,7 @@ export const corpName1 = [
   "Sigma",
 ];
 
-export const corpName3 = [
+export const corpName2 = [
   "Group",
   "Company",
   "Industries",

@@ -2,9 +2,11 @@ import { compress, decompress } from "@eonasdan/lz-string";
 import { useAtom } from "jotai";
 import { v4 as uuidv4 } from "uuid";
 import {
+  GenStateType,
   initialSessionData,
   sessionDataType,
   stateBoardNotes,
+  stateGenerator,
   statePrivateNotes,
   stateSessionData,
   stateStorageSize,
@@ -14,12 +16,14 @@ export const inodLayoutKey = "inod-hud-layout";
 export const inodSessionKey = "inod-session";
 export const inodNotesKey = "inod-notes";
 export const inodBoardKey = "inod-board";
+export const inodGenKey = "inod-gen";
 
 export const useStorage = () => {
   const [, setSessionData] = useAtom(stateSessionData);
   const [boardNotes, setBoardNotes] = useAtom(stateBoardNotes);
   const [privNotes, setPrivNotes] = useAtom(statePrivateNotes);
   const [, setStoreSize] = useAtom(stateStorageSize);
+  const [gen, setGen] = useAtom(stateGenerator);
 
   const comp = (data: any) => {
     return compress(JSON.stringify(data));
@@ -80,6 +84,18 @@ export const useStorage = () => {
     return decomp(data);
   };
 
+  const loadGen = () => {
+    const data = localStorage.getItem(inodGenKey);
+    if (!data) return;
+    const item = decomp(data);
+    setGen(item);
+  };
+
+  const saveGen = (state: GenStateType) => {
+    localStorage.setItem(inodGenKey, comp(state));
+    updateStoreSize();
+  };
+
   const updateStoreSize = () => {
     let size = 0;
     let data = localStorage.getItem(inodLayoutKey);
@@ -89,6 +105,8 @@ export const useStorage = () => {
     data = localStorage.getItem(inodNotesKey);
     size += data ? data.length : 0;
     data = localStorage.getItem(inodBoardKey);
+    size += data ? data.length : 0;
+    data = localStorage.getItem(inodGenKey);
     size += data ? data.length : 0;
     setStoreSize(size);
     return size;
@@ -104,5 +122,7 @@ export const useStorage = () => {
     saveLayout,
     loadLayout,
     updateStoreSize,
+    loadGen,
+    saveGen,
   };
 };
