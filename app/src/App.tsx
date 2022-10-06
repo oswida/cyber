@@ -4,6 +4,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { language } from "./common";
 import { useStorage } from "./common/storage";
+import { Connect } from "./routes/Connect";
 import { CorpoGen } from "./routes/CorpoGen";
 import { HudLayout } from "./routes/HudLayout";
 import { JobGen } from "./routes/JobGen";
@@ -38,6 +39,7 @@ function App() {
         <Route path="/node" element={<NodeGen />}></Route>
         <Route path="/place" element={<PlaceGen />}></Route>
         <Route path="/job" element={<JobGen />}></Route>
+        <Route path="/connect" element={<Connect />}></Route>
       </Routes>
     </HashRouter>
   );

@@ -1,6 +1,6 @@
-import { CorpoType, NodeType, NpcType } from "./types";
 import { atom } from "jotai";
 import { NatsConnection, Subscription } from "nats.ws";
+import { CorpoType, NodeType, NpcType } from "./types";
 
 export const currentPage = atom<string>("");
 export const language = atom<string>("pl");
@@ -35,13 +35,15 @@ export type sessionDataType = {
   remote: string;
   hosting: boolean;
   nats: string;
+  nats_token: string;
 };
 export const initialSessionData = {
   username: "",
   browserID: "",
   hosting: false,
   remote: "",
-  nats: "ws://51.68.143.35:4223",
+  nats: "",
+  nats_token: "",
 };
 export const stateSessionData = atom<sessionDataType>(initialSessionData);
 

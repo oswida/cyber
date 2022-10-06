@@ -1,5 +1,4 @@
 import { useAtom, useAtomValue } from "jotai";
-import { connect } from "nats.ws";
 import { useEffect } from "react";
 import {
   createTilePanes,
@@ -22,7 +21,7 @@ import {
   stateStorageSize,
   theme,
 } from "~/common";
-import { topicInfo, topicRoll, useNats } from "~/common/nats";
+import { topicInfo, useNats } from "~/common/nats";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, GenMenu, Modal, Text } from "~/component";
 import { Config } from "../Config";
@@ -65,7 +64,7 @@ export const HudLayout = () => {
   const [, setGm] = useAtom(genMenuOpen);
   const [, setCo] = useAtom(configOpen);
   const [nats, setNats] = useAtom(stateNats);
-  const { processIncoming, publish, getTopic } = useNats();
+  const { publish, connectServer } = useNats();
   const sessionData = useAtomValue(stateSessionData);
   const qInfo = useAtomValue(queueInfo);
 
@@ -118,20 +117,7 @@ export const HudLayout = () => {
   };
 
   const processSessionData = async (data: sessionDataType) => {
-    if (nats.connection != null) {
-      nats.connection.drain();
-      nats.connection.close();
-      setNats({ connection: null, sub: null });
-    }
-    const nc = await connect({
-      servers: data.nats,
-      tls: undefined,
-      token: "03c2ba5c-c834-4afa-ac1b-355ae5ce7a1b",
-    });
-    setNats({
-      connection: nc,
-      sub: nc.subscribe(getTopic(topicRoll), { callback: processIncoming }),
-    });
+    connectServer(data);
   };
 
   useEffect(() => {
