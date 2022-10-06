@@ -48,3 +48,9 @@ export const doImport = (callback: (data: any) => void) => {
   });
   el.click();
 };
+
+export const compareStringTime = (t1: string, t2: string) => {
+  const d1 = new Date(t1);
+  const d2 = new Date(t2);
+  return d1.getTime() - d2.getTime();
+};

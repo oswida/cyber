@@ -16,7 +16,7 @@ import { RollInfo } from "./styles";
 export const RollResult = () => {
   const [selDice] = useAtom(selectedRollerDice);
   const roller = new DiceRoller();
-  const [, setRollHistory] = useAtom(stateRollHistory);
+  const [rollHistory, setRollHistory] = useAtom(stateRollHistory);
   const done = useRef<boolean>(true);
   const commentRef = useRef<HTMLInputElement>();
   const sessionData = useAtomValue(stateSessionData);
@@ -63,9 +63,11 @@ export const RollResult = () => {
           data: rollData,
           comment: commentRef.current?.value,
         } as RollHistoryEntry;
-        setRollHistory((state) => [...state, newEntry]);
+        const newState = { ...rollHistory };
+        newState[newEntry.id] = newEntry;
+        setRollHistory(newState);
         commentRef.current!!.value = "";
-        publish(topicRoll, newEntry);
+        publish(topicRoll, [newEntry]);
       }
     };
 

@@ -28,11 +28,11 @@ export const Connect = () => {
       nats: server ? server : sessionData.nats,
       nats_token: token ? token : sessionData.nats_token,
     };
-    console.log(newState);
 
     setSessionData(newState);
-    connectServer(newState);
-    navigate("/");
+    connectServer(newState).then(() => {
+      navigate("/");
+    });
   }, [params]);
 
   return <></>;

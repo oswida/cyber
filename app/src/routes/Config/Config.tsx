@@ -46,8 +46,6 @@ export const Config = ({
       !natsRef.current ||
       !natsTokenRef.current
     ) {
-      console.log("aaaa");
-
       return;
     }
     setErr("");

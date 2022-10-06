@@ -117,15 +117,8 @@ export const HudLayout = () => {
   };
 
   const processSessionData = async (data: sessionDataType) => {
-    connectServer(data);
+    await connectServer(data);
   };
-
-  useEffect(() => {
-    if (nats.connection == null || nats.sub == null) return;
-    if (!sessionData.hosting) {
-      publish(topicInfo, `Connected ${sessionData.browserID}`);
-    }
-  }, [nats, sessionData]);
 
   return (
     <>

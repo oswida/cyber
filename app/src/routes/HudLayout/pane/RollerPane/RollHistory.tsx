@@ -1,7 +1,12 @@
 import { useAtom } from "jotai";
+import { compare } from "nats.ws/lib/nats-base-client/semver";
 import { useEffect, useRef } from "react";
 import Scrollbars from "react-custom-scrollbars-2";
-import { RollHistoryEntry, stateRollHistory } from "~/common";
+import {
+  compareStringTime,
+  RollHistoryEntry,
+  stateRollHistory,
+} from "~/common";
 import { Flex, Text } from "~/component";
 import { RollHistoryRoot } from "./styles";
 
@@ -26,9 +31,13 @@ export const RollHistory = () => {
   return (
     <RollHistoryRoot id="roll-history">
       <Scrollbars ref={ref as any}>
-        {rollHistory.map((h) => (
-          <RollHistoryItem key={h.id} entry={h} />
-        ))}
+        {Object.values(rollHistory)
+          .sort((a, b) => {
+            return compareStringTime(a.time, b.time);
+          })
+          .map((k) => (
+            <RollHistoryItem key={k.id} entry={k} />
+          ))}
       </Scrollbars>
     </RollHistoryRoot>
   );

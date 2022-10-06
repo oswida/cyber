@@ -27,7 +27,8 @@ export type RollHistoryEntry = {
   comment: string;
   data: string;
 };
-export const stateRollHistory = atom<RollHistoryEntry[]>([]);
+
+export const stateRollHistory = atom<Record<string, RollHistoryEntry>>({});
 
 export type sessionDataType = {
   username: string;
