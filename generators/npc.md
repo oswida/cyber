@@ -312,7 +312,7 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować:
 | 15. Chytry                 | 48.Nijaki             | 81.Uciążliwy         |
 | 16. Destrukcyjny           | 49.Obibok             | 82.Uparty            |
 | 17. Destrukcyjny           | 50.Obłąkany           | 83.Urażony           |
-| 18. Dziecinny              | 51.Obojętny           | 84.Wąske horyzonty   |
+| 18. Dziecinny              | 51.Obojętny           | 84.Wąskie horyzonty  |
 | 19. Egoistyczny            | 52.Obraźliwy          | 85.Wrogi             |
 | 20. Fałszywy               | 53.Obsesyjny          | 86.Wścibski          |
 | 21. Fanatyczny             | 54.Oszust             | 87.Wybredny          |

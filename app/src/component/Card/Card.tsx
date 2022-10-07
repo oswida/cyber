@@ -15,7 +15,7 @@ const CardRoot = styled("div", {
       standard: {
         minWidth: 190,
         maxWidth: 350,
-        width: 350,
+        width: 330,
         height: 200,
       },
       small: {

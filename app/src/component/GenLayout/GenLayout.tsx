@@ -77,9 +77,8 @@ export const GenLayout = ({ children, headerMenu }: GenLayoutProps) => {
         </PageHeader>
         <div
           style={{
-            width: "100%",
+            width: "calc(100% - 10px)",
             height: "calc(100% - 30px - 4rem)",
-            marginTop: 30,
             flex: 1,
           }}
         >

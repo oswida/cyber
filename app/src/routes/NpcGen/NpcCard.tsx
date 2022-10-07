@@ -22,7 +22,7 @@ export const NpcCard = ({ data, size }: NpcCardProps) => {
     >
       <CardRow>
         <Text size="middle" css={{ maxWidth: 350, marginBottom: 10 }}>
-          {data.look}
+          {data.look}. {data.gear}.
         </Text>
       </CardRow>
       <CardRow>

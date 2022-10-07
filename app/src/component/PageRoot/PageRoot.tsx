@@ -8,6 +8,7 @@ export const PageRoot = styled("div", {
   position: "relative",
   top: "1rem",
   width: "100%",
-  maxWidth: "100vw",
-  minHeight: "stretch",
+  paddingTop: "30px",
+  display: "flex",
+  flex: 1,
 });

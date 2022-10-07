@@ -73,7 +73,7 @@ nav_order: 5
 31. Wir powietrzny wypełniony kryształkami lodu
 32. Zielona, noeonowa wstęga Moebiusa
 33. Prostokątny ekran, na którym bez przerwy rysowane są fraktale
-34. Heksagonalna siatka z metalicznymi pająkami 
+34. Heksagonalna siatka z metalicznymi pająkami
 35. Błękitna kula, na jej powierzchni losowo zapalają się zielone punkty
 36. Okrągła brama międzywymiarowa, przypominająca Gwiezdne Wrota
 37. Trójwymiarowy model podwójnej helisy z logo firmy/właściciela w środku
@@ -153,6 +153,14 @@ nav_order: 5
 10. Kody wejściowe do prywatnego garażu
 11. Hasła do korporacyjnego konta pocztowego
 12. Elektroniczny klucz do skrytki z bronią k6
+13. Pamiętnik ważnego polityka
+14. Lista kontaktów gwiazdy medialnej
+15. Adres sieciowy członka zarządu korporacji
+16. Kod wejściowy do jednej z korporacyjnych arkologii
+17. Hasło do konta z platynowym abonamentem podstawowym
+18. Kody dostępowe do skrytki z nielegalnymi stymulantami
+19. Adres kontaktowy do znanego pasera
+20. Dokument odbioru cybermodu / drona bojowego"
 
 ### Rządowy
 
@@ -170,8 +178,12 @@ nav_order: 5
 12. Kody wejściowe do systemu szpitala Administracji
 13. Raport o dziwacznym zachowaniu SI zarządzającej transportem miejskim
 14. 1k6 uprawnień do prowadzenia środków komunikacji miejskiej (in blanco)
-
-
+15. Kalendarz wyłączenia linii energetycznych w poszczególnych częściach miasta
+16. Projekt nowej ustawy podatkowej dla obywateli
+17. Kody wejściowe do magazynu szpitala miejskiego
+18. Hasła i kody, które wprowadzają stan zagrożenia epidemiologicznego
+19. 1k4 czystych formularzy pozwalających na rejestrację tożsamości
+20. Kody dostępowe do systemu sterowania wybranymi usługami komunalnymi
 
 ### Korporacyjny
 
@@ -226,3 +238,18 @@ nav_order: 5
 3. Kody źródłowe innej SI
 4. Kody wejściowe do wszystkich systemów policyjnych
 5. Zestaw 1k6 potężnych wirusów komputerowych
+6. Hasło do węzła całkowicie odpornego na hakowanie
+7. Hasło do anonimowego konta z 1k20 tys. kredytów
+8. Procedura jednorazowego dostępu do dowolnego węzła w Infosferze
+9. Wirus, który na 1k20 minut wyłącza systemy bezpieczeństwa we wskazanym budynku
+10. Kody kontrolne automatycznego pojazdu wojskowego
+11. Kody kontrolne systemu komunikacji miejskiej
+12. Receptura na uzależniające stymulanty k10
+13. Kody międzykontynentalnej rakiety z głowicami jądrowymi
+14. Dane medyczne eksperymentu związanego z ludzką nieśmiertelnością
+15. Dane tajnej placówki badawczej hodującej ludzkie mutanty
+16. Wirus całkowicie blokujący transmisje wybranej sieci medialnej
+17. Tajne plany wojskowe dotyczące ataku na jedną z korporacji
+18. Dowody na to, że jedną z korporacji całkowicie zarządzają SI
+19. Plan ataku na Infosferę, który mają przeprowadzić zbuntowane SI
+20. Destrukcyjny wirus, natychmiastowo kasujący wszystkie dane na węźle, na którym go uruchomiono
