@@ -1,8 +1,8 @@
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { language } from "./common";
+import { language, stateNats, stateSessionData, useNats } from "./common";
 import { useStorage } from "./common/storage";
 import { Connect } from "./routes/Connect";
 import { CorpoGen } from "./routes/CorpoGen";
@@ -14,7 +14,16 @@ import { PlaceGen } from "./routes/PlaceGen";
 
 function App() {
   const [lang, setLang] = useAtom(language);
-  const { loadSessionData, updateStoreSize, loadGen } = useStorage();
+  const sessionData = useAtomValue(stateSessionData);
+  const { connectNats } = useNats();
+  const nats = useAtomValue(stateNats);
+  const {
+    loadSessionData,
+    updateStoreSize,
+    loadGen,
+    loadBoardNotes,
+    loadPrivateNotes,
+  } = useStorage();
 
   useEffect(() => {
     const re = new RegExp(".*(lang=[a-zA-Z]+).*", "i");
@@ -27,8 +36,16 @@ function App() {
     }
     loadSessionData();
     loadGen();
+    loadBoardNotes();
+    loadPrivateNotes();
     updateStoreSize();
   }, []);
+
+  useEffect(() => {
+    if (nats.connection === null) {
+      connectNats(sessionData);
+    }
+  }, [sessionData]);
 
   return (
     <HashRouter>

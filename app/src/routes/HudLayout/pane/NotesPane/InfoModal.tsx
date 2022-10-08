@@ -1,15 +1,19 @@
 import { faShare, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useRef } from "react";
 import Scrollbars from "react-custom-scrollbars-2";
 import {
   stateBoardNotes,
+  stateNats,
   stateNoteInfo,
   statePrivateNotes,
   stateSelNote,
   styled,
+  topicBoard,
+  useNats,
 } from "~/common";
+import { useStorage } from "~/common/storage";
 import { Button, Flex, Modal, Text, Textarea } from "~/component";
 
 const DeleteButton = styled("div", {
@@ -50,6 +54,9 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
   const [notesState, setNotesState] = useAtom(statePrivateNotes);
   const [selNote, setSelNote] = useAtom(stateSelNote);
   const contentRef = useRef<HTMLDivElement>();
+  const { publish } = useNats();
+  const { saveBoardNotes, savePrivateNotes } = useStorage();
+  const nats = useAtomValue(stateNats);
 
   const deleteNote = () => {
     if (no.note == null) return;
@@ -77,11 +84,13 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
       const newState = { ...boardState };
       newState[no.note.id]!!.content = contentRef.current.innerText;
       setBoardState(newState);
-      //TODO: send note to others
+      publish(nats.connection, topicBoard, [newState[no.note.id]]);
+      saveBoardNotes(newState);
     } else {
       const newState = { ...notesState };
       newState[no.note.id]!!.content = contentRef.current.innerText;
       setNotesState(newState);
+      savePrivateNotes(newState);
     }
     setNo({ open: false, note: undefined });
   };

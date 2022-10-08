@@ -8,11 +8,14 @@ import {
   prettyNow,
   prettyToday,
   stateBoardNotes,
+  stateNats,
   stateNoteInfo,
   statePrivateNotes,
   stateSelNote,
   stateSessionData,
   styled,
+  topicBoard,
+  useNats,
 } from "~/common";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, Icon, Input, Text, Textarea } from "~/component";
@@ -74,14 +77,8 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
   const [selNote, setSelNote] = useAtom(stateSelNote);
   const [no, setNo] = useAtom(stateNoteInfo);
   const [filter, setFilter] = useState("");
-
-  useEffect(() => {
-    saveBoardNotes();
-  }, [boardState]);
-
-  useEffect(() => {
-    savePrivateNotes();
-  }, [notesState]);
+  const { publish } = useNats();
+  const nats = useAtomValue(stateNats);
 
   const add = () => {
     if (
@@ -101,11 +98,13 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
       const newState = { ...boardState };
       newState[note.id] = note;
       setBoardState(newState);
-      //TODO: send note to others
+      saveBoardNotes(newState);
+      publish(nats.connection, topicBoard, [note]);
     } else {
       const newState = { ...notesState };
       newState[note.id] = note;
       setNotesState(newState);
+      savePrivateNotes(newState);
     }
     titleRef.current.value = "";
     contentRef.current.innerHTML = "";

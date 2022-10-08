@@ -55,11 +55,15 @@ export const NodeCard = ({ data, size }: NodeCardProps) => {
         </CardRow>
       )}
       <CardRow>
-        <Text color="yellow">{data.look}</Text>
+        <Text color="yellow" size="middle">
+          {data.look}
+        </Text>
       </CardRow>
 
       <CardRow>
-        <Text color="green">{data.data}</Text>
+        <Text color="green" size="middle">
+          {data.data}
+        </Text>
       </CardRow>
       <RTIconButton icon={faNetworkWired} />
     </Card>

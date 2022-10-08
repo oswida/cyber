@@ -8,7 +8,7 @@ export const Connect = () => {
   const navigate = useNavigate();
 
   const [sessionData, setSessionData] = useAtom(stateSessionData);
-  const { connectServer } = useNats();
+  const { connectNats } = useNats();
 
   useEffect(() => {
     if (!params) return;
@@ -30,7 +30,7 @@ export const Connect = () => {
     };
 
     setSessionData(newState);
-    connectServer(newState).then(() => {
+    connectNats(newState).then(() => {
       navigate("/");
     });
   }, [params]);

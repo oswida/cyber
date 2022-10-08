@@ -128,7 +128,6 @@ nav_order: 3
 | 31. Przemysł spożywczy      |
 | 32. Nanotechnologia         |
 | 33. Biotechnologia          |
-| 34. Genetyka                |
 
 ## Slogan
 
@@ -167,4 +166,3 @@ nav_order: 3
 | 31. Jesteśmy zawsze z Tobą      | 64. Bądź najlepszy, jaki możesz być      |
 | 32. Zawsze na pierwszej linii   | 65. Standardy doskonałości               |
 | 33. Tylko to, co najlepsze      | 66. Ty jesteś na pierwszym miejscu       |
-|                                 |                                          |

@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import {
   GenStateType,
   initialSessionData,
+  NoteType,
   sessionDataType,
   stateBoardNotes,
   stateGenerator,
@@ -53,12 +54,14 @@ export const useStorage = () => {
   const loadBoardNotes = () => {
     const data = localStorage.getItem(inodBoardKey);
     if (data && data !== "") {
+      console.log(decomp(data));
+
       setBoardNotes(decomp(data));
     }
   };
 
-  const saveBoardNotes = () => {
-    localStorage.setItem(inodBoardKey, comp(boardNotes));
+  const saveBoardNotes = (state: Record<string, NoteType | undefined>) => {
+    localStorage.setItem(inodBoardKey, comp(state));
     updateStoreSize();
   };
 
@@ -69,8 +72,8 @@ export const useStorage = () => {
     }
   };
 
-  const savePrivateNotes = () => {
-    localStorage.setItem(inodNotesKey, comp(privNotes));
+  const savePrivateNotes = (state: Record<string, NoteType | undefined>) => {
+    localStorage.setItem(inodNotesKey, comp(state));
     updateStoreSize();
   };
 

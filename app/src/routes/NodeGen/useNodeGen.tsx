@@ -14,6 +14,9 @@ import { useStorage } from "~/common/storage";
 import {
   infoData,
   infoLook,
+  infoLookColor,
+  infoLookDetail,
+  infoLookShape,
   NodeClassDict,
   NodeClassHP,
   NodeClassInf,
@@ -107,8 +110,15 @@ export const useNodeGen = () => {
       roll = roller.roll(`1d${nodetype.length}`) as DiceRoll;
       nclass = nodetype[roll.total - 1] as string;
     }
-    roll = roller.roll(`1d${infoLook[lang].length}`) as DiceRoll;
-    const look = infoLook[lang][roll.total - 1];
+    // roll = roller.roll(`1d${infoLook[lang].length}`) as DiceRoll;
+    // const look = infoLook[lang][roll.total - 1];
+    roll = roller.roll(`1d${infoLookShape[lang].length}`) as DiceRoll;
+    const l1 = infoLookShape[lang][roll.total - 1];
+    roll = roller.roll(`1d${infoLookColor[lang].length}`) as DiceRoll;
+    const l2 = infoLookColor[lang][roll.total - 1];
+    roll = roller.roll(`1d${infoLookDetail[lang].length}`) as DiceRoll;
+    const l3 = infoLookDetail[lang][roll.total - 1];
+    const look = `${l2} ${globalStr[lang]["inshape"]} ${l1}. ${l3}.`;
 
     roll = roller.roll(`1d${infoData[lang][nclass!!].length}`) as DiceRoll;
     const data = infoData[lang][nclass!!][roll.total - 1];

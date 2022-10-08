@@ -38,58 +38,30 @@ nav_order: 5
 | Wojskowy           | 1k10+6 | 1k12+6 | 1k6  haker INF 16           | k10, 3 na 6: Czarny | alarmy, śledzenie włamywacza   |
 | SI                 | 2k6+6  | 2k6+8  | samoobrona INF 17           | k12                 | LOD czarny lub biały, wybór SI |
 
-## Wygląd
+## Wygląd (3 razy k20)
 
-1. Rubinowa, przezroczysta piramida obracająca się wokół własnej osi
-2. Cztery błękitne sześciany połączone ze sobą rogami
-3. Czarna kula połyskliwej cieczy z drobnymi wypustkami pojawiającymi się na powierzchni
-4. Kilkanaście okręgów z kolorowego światła obracających się wokół wspólnego środka
-5. Płaska, szara powierzchnia (jakby blat stołu)
-6. Wielki, ciemnoniebieski wir z plamkami czerwonego światła wewnątrz
-7. Długi, czarny budynek bez okien, z pojedynczym wejściem
-8. Ozdobna skrzynia z serialu o piratach
-9. Miniaturowy model układu słonecznego z węzłem w centrum
-10. Czerwona klatka zrobiona z laserowych prętów
-11. Pojedynczy sześcian płonący zielonym, neonowym światłem
-12. Wielki, obracający się neon z nazwą lub logo firmy
-13. Maska z kamienia przedstawiająca twarz właściciela lub osoby ważnej dla tego węzła
-14. Stalowe kule wirujące wokół wspólnego środka
-15. Kostka Rubika z błyszczącego metalu z obracającymi się ciągle segmentami
-16. Wielki, świetlisty ziggurat
-17. Bryła geometryczna ze świetlistymi symbolami matematycznymi wyświetlanymi na ścianach
-18. Długi ciąg szklanych tafli podświetlanych różnokolorowymi diodami
-19. Bezkształtna, brunatna chmura wypełniona błyskawicami
-20. Przezroczysty prostopadłościan wypełniony promieniami lasera
-21. Model kuli ziemskiej zrobiony z malutkich klocków
-22. Świetlisty trapezoid z symbolami matematycznymi w środku
-23. Kolumna światła niknąca w nieskończoności z czerwonymi sześcianami w środku
-24. Ludzka postać zrobiona z metalowych sześcianów
-25. Trójwymiarowa makieta budynku, z czarnego, matowego materiału
-26. Czerwona, płonąca kula, emitująca regularne błyski
-27. Figura geometryczna przypominająca origami
-28. Dziwaczna konstrukcja z metalowych rur
-29. Trójwymiarowe logo firmy lub właściciela
-30. Kolorowa chmura tekstu (slogany reklamowe)
-31. Wir powietrzny wypełniony kryształkami lodu
-32. Zielona, noeonowa wstęga Moebiusa
-33. Prostokątny ekran, na którym bez przerwy rysowane są fraktale
-34. Heksagonalna siatka z metalicznymi pająkami
-35. Błękitna kula, na jej powierzchni losowo zapalają się zielone punkty
-36. Okrągła brama międzywymiarowa, przypominająca Gwiezdne Wrota
-37. Trójwymiarowy model podwójnej helisy z logo firmy/właściciela w środku
-38. Biały sześcian bez żadnych dodatkowych oznaczeń
-39. Szachownica z bryłami geometrycznymi zamiast figur
-40. Konstrukcja mechaniczna pełna kół zębatych, przekładni i dźwigni
-41. Przezroczysta sfera wypełniona mistycznymi symbolami
-42. Starannie pielęgnowany japoński ogród
-43. Szary kamienny menhir pokryty świetlistymi runami
-44. Pudełko z origami z klejnotem w środku
-45. Symbol nieskończoności zrobiony z milionów metalowych kulek
-46. Wielka księga z tajemniczym symbolem na skórzanej okładce
-47. Złoty trójkąt z okiem w środku
-48. Wielkie, płonące oko z wąską czarną źrenicą
-49. Wielokolorowy, hipnotyczny wir
-50. Okno wyświetlające dziwaczne obrazy
+| k20 | Kształt                | Kolor i/lub materiał             | Szczegół                                        |
+| --- | ---------------------- | -------------------------------- | ----------------------------------------------- |
+| 1   | Kula                   | Rubinowy, przezroczysty          | Promienie lasera wypełniające kształt           |
+| 2   | Piramida/ziggurat      | Przezroczysty                    | Symbole matematyczne wyświetlane na powierzchni |
+| 3   | Symbol nieskończoności | Czarny, matowy                   | Płonie zielonym światłem                        |
+| 4   | Sześcian               | Srebrny                          | Świetlne pierścienie wirujące naokoło           |
+| 5   | Makieta budynku        | Zielony, neonowy                 | Slogany reklamowe wyświetlane na powierzchni    |
+| 6   | Maska                  | Biały, połyskliwy                | Przypominający origami                          |
+| 7   | Menhir                 | Czarny, połyskliwy               | Wypełniony błyskawicami                         |
+| 8   | Krąg                   | Błękitny, jarzący się            | Wypełniony kryształkami lodu                    |
+| 9   | Model atomu            | Szary, kamienny                  | Bez żadnych dodatkowych oznaczeń                |
+| 10  | Logo                   | Błękitny, zamglony               | Wielkie logo firmy/właściciela                  |
+| 11  | Wstęga Moebiusa        | Zielony, świetlisty              | Czerwone, świecące sześciany w środku           |
+| 12  | Kostka Rubika          | Czerwony, płomienny              | Mistyczne symbole wirujące naokoło              |
+| 13  | Ekran                  | Wielokolorowy                    | Losowo pojawiające się plamki światła           |
+| 14  | Wir                    | Złoty                            | Losowe obrazy z sieci wyświetlane wewnątrz      |
+| 15  | Kolumna                | Metalowy, lśniący                | Opleciony metaliczną siatką                     |
+| 16  | Trójkąt                | Ciemnoniebieski, pokryty smugami | Błyskający regularnie niebieskim światłem       |
+| 17  | Oko                    | Szklany, przezroczysty           | Wirujący wokół własnej osi                      |
+| 18  | Brama                  | Kłębiący się, brunatny           | Obracające się ciągle segmenty                  |
+| 19  | Trapezoid              | Pomarańczowy, jaskrawy           | Dynamiczne fraktale rysowane na powierzchni     |
+| 20  | Prostopadłościan       | Stalowy, pokryty symbolami       | Co jakiś czas znika i pojawia się               |
 
 ## Dane
 
@@ -160,7 +132,7 @@ nav_order: 5
 17. Hasło do konta z platynowym abonamentem podstawowym
 18. Kody dostępowe do skrytki z nielegalnymi stymulantami
 19. Adres kontaktowy do znanego pasera
-20. Dokument odbioru cybermodu / drona bojowego"
+20. Dokument odbioru cybermodu / drona bojowego
 
 ### Rządowy
 

@@ -19,6 +19,7 @@ export const globalStr: Record<string, Record<string, string>> = {
     import: "import",
     traits: "Charakter",
     goal: "Cel",
+    inshape: "kształt",
   },
   en: {
     generate: "Generate",
@@ -40,6 +41,7 @@ export const globalStr: Record<string, Record<string, string>> = {
     import: "import",
     traits: "Traits",
     goal: "Goal",
+    inshape: "",
   },
 };
 

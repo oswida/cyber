@@ -63,8 +63,8 @@ export const HudLayout = () => {
 
   const [, setGm] = useAtom(genMenuOpen);
   const [, setCo] = useAtom(configOpen);
-  const [nats, setNats] = useAtom(stateNats);
-  const { publish, connectServer } = useNats();
+  const nats = useAtomValue(stateNats);
+  const { publish, connectNats } = useNats();
   const sessionData = useAtomValue(stateSessionData);
   const qInfo = useAtomValue(queueInfo);
 
@@ -116,8 +116,8 @@ export const HudLayout = () => {
     setHudSel(true);
   };
 
-  const processSessionData = async (data: sessionDataType) => {
-    await connectServer(data);
+  const processSessionData = (data: sessionDataType) => {
+    connectNats(data);
   };
 
   return (

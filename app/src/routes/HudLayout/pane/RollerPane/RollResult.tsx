@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import {
   RollHistoryEntry,
   selectedRollerDice,
+  stateNats,
   stateRollHistory,
   stateSessionData,
 } from "~/common";
@@ -21,6 +22,7 @@ export const RollResult = () => {
   const commentRef = useRef<HTMLInputElement>();
   const sessionData = useAtomValue(stateSessionData);
   const { publish } = useNats();
+  const nats = useAtomValue(stateNats);
 
   const randomizeText = (elementId: string, roll: DiceRoll) => {
     const theLetters = "0123456789#%&^+=-";
@@ -67,7 +69,7 @@ export const RollResult = () => {
         newState[newEntry.id] = newEntry;
         setRollHistory(newState);
         commentRef.current!!.value = "";
-        publish(topicRoll, [newEntry]);
+        publish(nats.connection, topicRoll, [newEntry]);
       }
     };
 

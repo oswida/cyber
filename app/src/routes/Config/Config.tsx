@@ -1,6 +1,5 @@
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useResolvedPath } from "react-router-dom";
 import {
   configOpen,
   language,
@@ -79,14 +78,13 @@ export const Config = ({
   };
 
   const hostLink = useMemo(() => {
-    if (!natsRef.current || !natsTokenRef.current) return;
     const server =
-      natsRef.current.value !== ""
-        ? `&server=${encodeURIComponent(natsRef.current.value)}`
+      sessionData.nats !== ""
+        ? `&server=${encodeURIComponent(sessionData.nats)}`
         : "";
     const token =
-      natsTokenRef.current.value !== ""
-        ? `&token=${encodeURIComponent(natsTokenRef.current.value)}`
+      sessionData.nats_token !== ""
+        ? `&token=${encodeURIComponent(sessionData.nats_token)}`
         : "";
     let location = window.location.toString();
     if (!location.endsWith("#")) {
@@ -95,7 +93,7 @@ export const Config = ({
     return `${location}/connect?lang=${lang}&id=${encodeURIComponent(
       sessionData.browserID
     )}${server}${token}`;
-  }, [natsRef.current, natsTokenRef.current, refreshLink]);
+  }, [sessionData]);
 
   useEffect(() => {
     setRefreshLink(!refreshLink);

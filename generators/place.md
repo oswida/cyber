@@ -7,8 +7,47 @@ nav_order: 4
 
 # Generator miejsca (w przygotowaniu)
 
-## 1. Klub nocny
+## Rodzaj (k66)
 
+11. Klub
+12. Salon z elektroniką
+13. Salon masażu/tatuażu
+14. Dojo sztuk walki
+15. Supermarket
+16. Posterunek policji
+21. Urząd Administracji
+22. Stacja kolejki/przystanek autobusowy
+23. Blok mieszkalny/apartamenty
+24. Hotel
+25. Kawiarnia/restauracja/bar
+26. Placówka medyczna
+31. Klinika cybermodów
+32. Salon gier/centrum rozrywki
+33. Apteka
+34. Siłownia
+35. Oddział banku
+36. Sklep z antykami/galeria sztuki
+41. Szkoła
+42. Budynek sakralny
+43. Biurowiec
+44. Sklep z bronią
+45. Siedziba firmy usługowej
+46. Agencja wynajmu
+51. Miejscówka gangu
+52. Laboratorium
+53. Budynek korporacyjny
+54. Agencja towarzyska
+55. Opuszczony budynek
+56. Warsztat
+61. Fabryka
+62. Obiekt sportowy
+63. Siedziba sekty religijnej
+64. Studio multimedialne
+65. Sala koncertowa
+66. Budynek komunalny
+
+
+## 11. Klub
 ### Wygląd
 
 1. Głośna muzyka, stroboskopowe światła, tłum ludzi, zabawa
@@ -27,7 +66,9 @@ nav_order: 4
 5. Korporacja i gangi załatwiają tu wspólne interesy
 6. Można tu znaleźć robotę
 
-## 2. Salon z elektroniką
+## 12. Salon z elektroniką
+
+
 ## 3. Salon masażu/tatuażu
 ## 4. Dojo sztuk walki
 ## 5. Supermarket
