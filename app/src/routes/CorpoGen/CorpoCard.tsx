@@ -31,30 +31,47 @@ export const CorpoCard = ({ data, size }: CorpoCardProps) => {
       title={data.name}
       titlecolor="blue"
       onDelete={delItem}
-      height={size !== "small" ? 150 : undefined}
+      height={size !== "small" ? 170 : undefined}
       size={size}
     >
       {data.operations && (
         <>
-          <CardRow>
+          <CardRow css={{ alignItems: "start" }}>
             <Text size="small" color="yellow">
               {genTitles[lang]["operations"]}
             </Text>
+            <Text css={{ maxWidth: 350 }} size="middle">
+              {data.operations.join(", ")}
+            </Text>
           </CardRow>
-          <CardRow>
-            <Text css={{ maxWidth: 350 }}>{data.operations.join(", ")}</Text>
+        </>
+      )}
+      {data.gossip && (
+        <>
+          <CardRow css={{ alignItems: "start" }}>
+            <Text size="small" color="yellow">
+              {genTitles[lang]["gossip"]}
+            </Text>
+            <Text
+              color="pink"
+              size="middle"
+              css={{ maxWidth: 250, lineHeight: "1rem", overflow: "hidden" }}
+            >
+              {data.gossip}
+            </Text>
           </CardRow>
         </>
       )}
       {data.slogan && (
         <>
-          <CardRow>
+          <CardRow css={{ alignItems: "start" }}>
             <Text size="small" color="yellow">
               Slogan{" "}
             </Text>
-          </CardRow>
-          <CardRow>
+
             <Text
+              color="green"
+              size="middle"
               css={{ maxWidth: 250, lineHeight: "1rem", overflow: "hidden" }}
             >
               {data.slogan}

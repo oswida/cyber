@@ -26,3 +26,9 @@ Wylosuj:
 ## Miejsce
 
 ## Komplikacja
+
+Corp Extraction
+Celebrity Under Threat
+Decker Causing Havoc
+PC’s Past Catches up with Them
+Valuable Item Suddenly Within Reach

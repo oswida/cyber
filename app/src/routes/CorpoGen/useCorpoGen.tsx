@@ -1,5 +1,6 @@
 import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
 import { useAtom } from "jotai";
+import { v4 as uuidv4 } from "uuid";
 import {
   CorpoType,
   doExport,
@@ -9,15 +10,15 @@ import {
   prettyToday,
   stateGenerator,
 } from "~/common";
+import { useStorage } from "~/common/storage";
 import {
   corpDomain,
+  corpGossip,
   corpName1,
   corpName2,
   corpNameDomain,
   corpSlogan,
 } from "~/data";
-import { v4 as uuidv4 } from "uuid";
-import { useStorage } from "~/common/storage";
 
 const roller = new DiceRoller();
 
@@ -45,15 +46,20 @@ export const useCorpoGen = () => {
       const t = cdomain[roll.total - 1];
       if (!hasString(domains, t)) domains.push(t);
     }
-
     const cslogan = corpSlogan[lang];
     roll = roller.roll(`1d${cslogan.length}`) as DiceRoll;
     const slogan = cslogan[roll.total - 1];
+
+    const cgossip = corpGossip[lang];
+    roll = roller.roll(`1d${cgossip.length}`) as DiceRoll;
+    const gossip = cgossip[roll.total - 1];
+
     const retv: CorpoType = {
       id: uuidv4(),
       name: `${name1} ${name2}`,
       operations: domains,
       slogan: slogan,
+      gossip: gossip,
     };
     return retv;
   };

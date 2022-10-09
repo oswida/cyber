@@ -19,7 +19,7 @@ export const globalStr: Record<string, Record<string, string>> = {
     import: "import",
     traits: "Charakter",
     goal: "Cel",
-    inshape: "kształt",
+    inshape: "obiekt w kształcie",
   },
   en: {
     generate: "Generate",
@@ -53,6 +53,7 @@ export const genTitles: Record<string, Record<string, string>> = {
     place: "Miejsce",
     job: "Robota",
     operations: "Działalność",
+    gossip: "Plotka",
   },
   en: {
     npc: "Non-player character",
@@ -61,5 +62,6 @@ export const genTitles: Record<string, Record<string, string>> = {
     place: "Place",
     job: "Job",
     operations: "Operations",
+    gossip: "Gossip",
   },
 };

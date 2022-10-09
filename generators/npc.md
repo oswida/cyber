@@ -21,122 +21,88 @@ Aby wygenerować losowego bohatera niezależnego należy wylosować:
 - pozytywną i negatywną cechę charakteru
 - przynajmniej jeden cel lub pragnienie
 
-## Imię
+## Imię (1k20 + 1k20)
 
-| Imię          |              |              |
-| ------------- | ------------ | ------------ |
-| 1. Abdul      | 34. Ivan     | 67. Patricia |
-| 2. Ahmad      | 35. James    | 68. Patrick  |
-| 3. Ahmed      | 36. Jean     | 69. Paul     |
-| 4. Alan       | 37. Joao     | 70. Pedro    |
-| 5. Alexander  | 38. John     | 71. Peng     |
-| 6. Ali        | 39. Jorge    | 72. Peter    |
-| 7. Ana        | 40. Jose     | 73. Ping     |
-| 8. Andrea     | 41. Joseph   | 74. Qing     |
-| 9. Andrey     | 42. Juan     | 75. Ram      |
-| 10. Angela    | 43. Laura    | 76. Richard  |
-| 11. Anita     | 44. Lei      | 77. Rita     |
-| 12. Anna      | 45. Li       | 78. Robert   |
-| 13. Antonio   | 46. Lin      | 79. Roberto  |
-| 14. Barbara   | 47. Linda    | 80. Rosa     |
-| 15. Bin       | 48. Ling     | 81. Samuel   |
-| 16. Carlos    | 49. Luis     | 82. Sandra   |
-| 17. Carmen    | 50. Manuel   | 83. Sarah    |
-| 18. Charles   | 51. Maria    | 84. Sergey   |
-| 19. Christine | 52. Marie    | 85. Siti     |
-| 20. Daniel    | 53. Marina   | 86. Sri      |
-| 21. David     | 54. Mario    | 87. Sunita   |
-| 22. Elena     | 55. Mark     | 88. Susan    |
-| 23. Elizabeth | 56. Martha   | 89. Svetlana |
-| 24. Emmanuel  | 57. Martin   | 90. Tatyana  |
-| 25. Fatima    | 58. Mary     | 91. Thomas   |
-| 26. Francisco | 59. Michael  | 92. Victor   |
-| 27. George    | 60. Miguel   | 93. Vladimir |
-| 28. Ghulam    | 61. Min      | 94. Wei      |
-| 29. Hassan    | 62. Ming     | 95. William  |
-| 30. Hong      | 63. Mohammed | 96. Xin      |
-| 31. Hui       | 64. Natalya  | 97. Yan      |
-| 32. Ibrahim   | 65. Nushi    | 98. Ying     |
-| 33. Irina     | 66. Olga     | 99. Yong     |
-|               |              | 100. Yu      |
+Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 
-## Nazwisko
+| k20 | Kolumna | C1 `(1-4)` | C2 `(5-8)` | C3 `(9-12)` | C4 `(13-16)` | C5 `(17-20)` |
+| --- | :-----: | ---------- | ---------- | ----------- | ------------ | ------------ |
+| 1   |    1    | Abdul      | David      | Joseph      | Min          | Samuel       |
+| 2   |    1    | Ahmad      | Elena      | Juan        | Ming         | Sandra       |
+| 3   |    1    | Ahmed      | Elizabeth  | Laura       | Mohammed     | Sarah        |
+| 4   |    1    | Alan       | Emmanuel   | Lei         | Natalya      | Sergey       |
+| 5   |    2    | Alexander  | Fatima     | Li          | Nushi        | Siti         |
+| 6   |    2    | Ali        | Francisco  | Lin         | Olga         | Sri          |
+| 7   |    2    | Ana        | George     | Linda       | Patricia     | Sunita       |
+| 8   |    2    | Andrea     | Ghulam     | Ling        | Patrick      | Susan        |
+| 9   |    3    | Andrey     | Hassan     | Luis        | Paul         | Svetlana     |
+| 10  |    3    | Angela     | Hong       | Manuel      | Pedro        | Tatyana      |
+| 11  |    3    | Anita      | Hui        | Maria       | Peng         | Thomas       |
+| 12  |    3    | Anna       | Ibrahim    | Marie       | Peter        | Victor       |
+| 13  |    4    | Antonio    | Irina      | Marina      | Ping         | Vladimir     |
+| 14  |    4    | Barbara    | Ivan       | Mario       | Qing         | Wei          |
+| 15  |    4    | Bin        | James      | Mark        | Ram          | William      |
+| 16  |    4    | Carlos     | Jean       | Martha      | Richard      | Xin          |
+| 17  |    5    | Carmen     | Joao       | Martin      | Rita         | Yan          |
+| 18  |    5    | Charles    | John       | Mary        | Robert       | Ying         |
+| 19  |    5    | Christine  | Jorge      | Michael     | Roberto      | Yong         |
+| 20  |    5    | Daniel     | Jose       | Miguel      | Rosa         | Yu           |
 
-| Nazwisko    |              |               |
-| ----------- | ------------ | ------------- |
-| 1.Adams     | 34.Harris    | 67.Phillips   |
-| 2.Allen     | 35.Henderson | 68.Powell     |
-| 3.Anderson  | 36.Hernandez | 69.Price      |
-| 4.Bailey    | 37.Hill      | 70.Ramirez    |
-| 5.Baker     | 38.Howard    | 71.Reed       |
-| 6.Barnes    | 39.Hughes    | 72.Reyes      |
-| 7.Bell      | 40.Jackson   | 73.Richardson |
-| 8.Bennett   | 41.James     | 74.Rivera     |
-| 9.Brooks    | 42.Jenkins   | 75.Roberts    |
-| 10.Brown    | 43.Johnson   | 76.Robinson   |
-| 11.Butler   | 44.Jones     | 77.Rodriguez  |
-| 12.Campbell | 45.Kelly     | 78.Rogers     |
-| 13.Carter   | 46.Kim       | 79.Ross       |
-| 14.Clark    | 47.King      | 80.Russell    |
-| 15.Coleman  | 48.Lee       | 81.Sanchez    |
-| 16.Collins  | 49.Lewis     | 82.Sanders    |
-| 17.Cook     | 50.Long      | 83.Scott      |
-| 18.Cooper   | 51.Lopez     | 84.Smith      |
-| 19.Cox      | 52.Martin    | 85.Stewart    |
-| 20.Cruz     | 53.Martinez  | 86.Sullivan   |
-| 21.Davis    | 54.Miller    | 87.Taylor     |
-| 22.Diaz     | 55.Mitchell  | 88.Thomas     |
-| 23.Edwards  | 56.Moore     | 89.Thompson   |
-| 24.Evans    | 57.Morgan    | 90.Torres     |
-| 25.Fisher   | 58.Morris    | 91.Turner     |
-| 26.Flores   | 59.Murphy    | 92.Walker     |
-| 27.Foster   | 60.Myers     | 93.Ward       |
-| 28.Garcia   | 61.Nelson    | 94.Watson     |
-| 29.Gomez    | 62.Nguyen    | 95.White      |
-| 30.Gonzalez | 63.Parker    | 96.Williams   |
-| 31.Gray     | 64.Perez     | 97.Wilson     |
-| 32.Green    | 65.Perry     | 98.Wood       |
-| 33.Hall     | 66.Peterson  | 99.Wright     |
-|             |              | 100. Young    |
 
-## Zajęcie
 
-| Zajęcie                      |                                    |                                    |
-| ---------------------------- | ---------------------------------- | ---------------------------------- |
-| 1.Aktywista                  | 34.Kontroler ruchu                 | 67.Programista zabezpieczeń        |
-| 2.Akwizytor                  | 35.Korporacyjny szpieg             | 68.Programista SI                  |
-| 3.Analityk danych            | 36.Kosmetyczka                     | 69.Prostytutka                     |
-| 4.Ankieter                   | 37.Kucharz                         | 70.Przemytnik                      |
-| 5.Asystent osobisty          | 38.Kurier                          | 71.Przywódca sekty                 |
-| 6.Barman                     | 39.Laborant                        | 72.Reporter kanału informacyjnego  |
-| 7.Bimbrownik                 | 40.Lekarz                          | 73.Robotnik fabryczny              |
-| 8.Chemik                     | 41.Łowca talentów                  | 74.Rusznikarz                      |
-| 9.Cybertechnik               | 42.Magazynier                      | 75.Sanitariusz                     |
-| 10.Detektyw                  | 43.Makler giełdowy                 | 76.Sekretarka                      |
-| 11.Ekoterrorysta             | 44.Masażystka                      | 77.Specjalista ds Public Relations |
-| 12.Elektryk                  | 45.Mechanik                        | 78.Sportowiec                      |
-| 13.Fryzjerka                 | 46.Muzyk                           | 79.Sprzątacz                       |
-| 14.Gejsza                    | 47.Najemnik                        | 80.Sprzedawca sklepowy             |
-| 15.Grafik                    | 48.Nauczyciel                      | 81.Stróż nocny                     |
-| 16.Gospodarz "reality show"  | 49.Naukowiec                       | 82.Stylistka                       |
-| 17.Gwiazda "reality show"    | 50.Negocjator                      | 83.Szef gangu                      |
-| 18.Haker                     | 51.Ochroniarz                      | 84.Taksówkarz                      |
-| 19.Handlarz bronią           | 52.Ogrodnik                        | 85.Tatuażysta                      |
-| 20.Handlarz narkotykami      | 53.Operator dronów                 | 86.Technik robotyk                 |
-| 21.Handlarz software'em      | 54.Operator maszyn ciężkich        | 87.Technik telekomunikacyjny       |
-| 22.Hodowca zwierząt domowych | 55.Opiekunka do dzieci             | 88.Technik budowlany               |
-| 23.Hostessa                  | 56.Paser                           | 89.Tester oprogramowania           |
-| 24.Influencer                | 57.Pielęgniarka                    | 90.Trener e-sportu                 |
-| 25.Instruktor fitness        | 58.Pilot cywilny                   | 91.Uliczny iluzjonista             |
-| 26.Instruktor sztuki walki   | 59.Pilot wojskowy                  | 92.Uliczny kaznodzieja             |
-| 27.Inżynier genetyk          | 60.Piosenkarz                      | 93.Urzędnik Administracji          |
-| 28.Inżynier elektronik       | 61.Pisarz                          | 94.Właściciel klubu                |
-| 29.Inżynier nanotechnolog    | 62.Policjant                       | 95.Zabójca                         |
-| 30.Kierowca transportowy     | 63.Pomocnik do wynajęcia           | 96.Zawodnik e-sportu               |
-| 31.Kierowca autobusu         | 64.Portier                         | 97.Zawodnik sportów walki          |
-| 32.Kierowca wyścigowy        | 65.Pracownik wsparcia technicznego | 98.Złodziej                        |
-| 33.Klubowy DJ                | 66.Programista gier                | 99.Złomiarz                        |
-|                              |                                    | 100 Żołnierz                       |
+## Nazwisko (k20+k20)
+
+Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
+
+| k20 | Kolumna | C1 `(1-4)` | C2 `(5-8)` | C3 `(9-12)` | C4 `(13-16)` | C5 `(17-20)` |
+| --- | :-----: | ---------- | ---------- | ----------- | ------------ | ------------ |
+| 1   |    1    | Adams      | Davis      | James       | Nelson       | Sanchez      |
+| 2   |    1    | Allen      | Diaz       | Jenkins     | Nguyen       | Sanders      |
+| 3   |    1    | Anderson   | Edwards    | Johnson     | Parker       | Scott        |
+| 4   |    1    | Bailey     | Evans      | Jones       | Perez        | Smith        |
+| 5   |    2    | Baker      | Fisher     | Kelly       | Perry        | Stewart      |
+| 6   |    2    | Barnes     | Flores     | Kim         | Peterson     | Sullivan     |
+| 7   |    2    | Bell       | Foster     | King        | Phillips     | Taylor       |
+| 8   |    2    | Bennett    | Garcia     | Lee         | Powell       | Thomas       |
+| 9   |    3    | Brooks     | Gomez      | Lewis       | Price        | Thompson     |
+| 10  |    3    | Brown      | Gonzalez   | Long        | Ramirez      | Torres       |
+| 11  |    3    | Butler     | Gray       | Lopez       | Reed         | Turner       |
+| 12  |    3    | Campbell   | Green      | Martin      | Reyes        | Walker       |
+| 13  |    4    | Carter     | Hall       | Martinez    | Richardson   | Ward         |
+| 14  |    4    | Clark      | Harris     | Miller      | Rivera       | Watson       |
+| 15  |    4    | Coleman    | Henderson  | Mitchell    | Roberts      | White        |
+| 16  |    4    | Collins    | Hernandez  | Moore       | Robinson     | Williams     |
+| 17  |    5    | Cook       | Hill       | Morgan      | Rodriguez    | Wilson       |
+| 18  |    5    | Cooper     | Howard     | Morris      | Rogers       | Wood         |
+| 19  |    5    | Cox        | Hughes     | Murphy      | Ross         | Wright       |
+| 20  |    5    | Cruz       | Jackson    | Myers       | Russell      | Young        |
+
+## Zajęcie (k20+k20)
+
+Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
+
+| k20 | Kolumna | C1 `(1-4)`               | C2 `(5-8)`                | C3 `(9-12)`              | C4 `(13-16)`                    | C5 `(17-20)`              |
+| --- | :-----: | ------------------------ | ------------------------- | ------------------------ | ------------------------------- | ------------------------- |
+| 1   |    1    | Aktywista                | Handlarz software'em      | Łowca talentów           | Pisarz                          | Stróż nocny               |
+| 2   |    1    | Akwizytor                | Hodowca zwierząt domowych | Magazynier               | Policjant                       | Stylistka                 |
+| 3   |    1    | Analityk danych          | Hostessa                  | Makler giełdowy          | Pomocnik do wynajęcia           | Szef gangu                |
+| 4   |    1    | Ankieter                 | Influencer                | Masażystka               | Portier                         | Taksówkarz                |
+| 5   |    2    | Asystent osobisty        | Instruktor fitness        | Mechanik                 | Pracownik wsparcia technicznego | Tatuażysta                |
+| 6   |    2    | Barman                   | Instruktor sztuki walki   | Muzyk                    | Programista gier                | Technik robotyk           |
+| 7   |    2    | Bimbrownik               | Inżynier genetyk          | Najemnik                 | Programista zabezpieczeń        | Technik telekomunikacyjny |
+| 8   |    2    | Chemik                   | Inżynier elektronik       | Nauczyciel               | Programista SI                  | Technik budowlany         |
+| 9   |    3    | Cybertechnik             | Inżynier nanotechnolog    | Naukowiec                | Prostytutka                     | Tester oprogramowania     |
+| 10  |    3    | Detektyw                 | Kierowca transportowy     | Negocjator               | Przemytnik                      | Trener e-sportu           |
+| 11  |    3    | Ekoterrorysta            | Kierowca autobusu         | Ochroniarz               | Przywódca sekty                 | Uliczny iluzjonista       |
+| 12  |    3    | Elektryk                 | Kierowca wyścigowy        | Ogrodnik                 | Reporter kanału informacyjnego  | Uliczny kaznodzieja       |
+| 13  |    4    | Fryzjerka                | Klubowy DJ                | Operator dronów          | Robotnik fabryczny              | Urzędnik Administracji    |
+| 14  |    4    | Gejsza                   | Kontroler ruchu           | Operator maszyn ciężkich | Rusznikarz                      | Właściciel klubu          |
+| 15  |    4    | Grafik                   | Korporacyjny szpieg       | Opiekunka do dzieci      | Sanitariusz                     | Zabójca                   |
+| 16  |    4    | Gospodarz "reality show" | Kosmetyczka               | Paser                    | Sekretarka                      | Zawodnik e-sportu         |
+| 17  |    5    | Gwiazda "reality show"   | Kucharz                   | Pielęgniarka             | Specjalista PR                  | Zawodnik sportów walki    |
+| 18  |    5    | Haker                    | Kurier                    | Pilot cywilny            | Sportowiec                      | Złodziej                  |
+| 19  |    5    | Handlarz bronią          | Laborant                  | Pilot wojskowy           | Sprzątacz                       | Złomiarz                  |
+| 20  |    5    | Handlarz narkotykami     | Lekarz                    | Piosenkarz               | Sprzedawca sklepowy             | Żołnierz                  |
 
 ## Charakterystyczny element wyglądu
 

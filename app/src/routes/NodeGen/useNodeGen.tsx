@@ -13,7 +13,6 @@ import {
 import { useStorage } from "~/common/storage";
 import {
   infoData,
-  infoLook,
   infoLookColor,
   infoLookDetail,
   infoLookShape,

@@ -3,6 +3,7 @@ export type CorpoType = {
   name: string;
   operations: string[];
   slogan: string;
+  gossip: string;
 };
 
 export type NodeType = {

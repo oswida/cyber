@@ -13,3 +13,4 @@ This is an English version of the Cyber RPG documents.
 
 - [Zaibatsu](https://oswida.github.io/cyber/app/dist/#/corpo?lang=en)
 - [NPC](https://oswida.github.io/cyber/app/dist/#/npc?lang=en)
+- [Infosphere node](https://oswida.github.io/cyber/app/dist/#/node?lang=en)

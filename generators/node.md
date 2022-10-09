@@ -5,7 +5,7 @@ parent: Generatory
 nav_order: 5
 ---
 
-# Generator węzła Infosfery (w przygotowaniu)
+# Generator węzła Infosfery
 
 [Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/node)
 
@@ -63,7 +63,7 @@ nav_order: 5
 | 19  | Trapezoid              | Pomarańczowy, jaskrawy           | Dynamiczne fraktale rysowane na powierzchni     |
 | 20  | Prostopadłościan       | Stalowy, pokryty symbolami       | Co jakiś czas znika i pojawia się               |
 
-## Dane
+## Dane (k20)
 
 ### Publiczny
 
