@@ -44,7 +44,7 @@ nav_order: 5
 | --- | ---------------------- | -------------------------------- | ----------------------------------------------- |
 | 1   | Kula                   | Rubinowy, przezroczysty          | Promienie lasera wypełniające kształt           |
 | 2   | Piramida/ziggurat      | Przezroczysty                    | Symbole matematyczne wyświetlane na powierzchni |
-| 3   | Symbol nieskończoności | Czarny, matowy                   | Płonie zielonym światłem                        |
+| 3   | Symbol nieskończoności | Czarny, matowy                   | Płonie jaskrawym światłem                       |
 | 4   | Sześcian               | Srebrny                          | Świetlne pierścienie wirujące naokoło           |
 | 5   | Makieta budynku        | Zielony, neonowy                 | Slogany reklamowe wyświetlane na powierzchni    |
 | 6   | Maska                  | Biały, połyskliwy                | Przypominający origami                          |
@@ -52,12 +52,12 @@ nav_order: 5
 | 8   | Krąg                   | Błękitny, jarzący się            | Wypełniony kryształkami lodu                    |
 | 9   | Model atomu            | Szary, kamienny                  | Bez żadnych dodatkowych oznaczeń                |
 | 10  | Logo                   | Błękitny, zamglony               | Wielkie logo firmy/właściciela                  |
-| 11  | Wstęga Moebiusa        | Zielony, świetlisty              | Czerwone, świecące sześciany w środku           |
+| 11  | Wstęga Moebiusa        | Zielony, świetlisty              | Świecące sześciany w środku                     |
 | 12  | Kostka Rubika          | Czerwony, płomienny              | Mistyczne symbole wirujące naokoło              |
 | 13  | Ekran                  | Wielokolorowy                    | Losowo pojawiające się plamki światła           |
 | 14  | Wir                    | Złoty                            | Losowe obrazy z sieci wyświetlane wewnątrz      |
 | 15  | Kolumna                | Metalowy, lśniący                | Opleciony metaliczną siatką                     |
-| 16  | Trójkąt                | Ciemnoniebieski, pokryty smugami | Błyskający regularnie niebieskim światłem       |
+| 16  | Trójkąt                | Ciemnoniebieski, pokryty smugami | Błyskający regularnie przyćmionym światłem      |
 | 17  | Oko                    | Szklany, przezroczysty           | Wirujący wokół własnej osi                      |
 | 18  | Brama                  | Kłębiący się, brunatny           | Obracające się ciągle segmenty                  |
 | 19  | Trapezoid              | Pomarańczowy, jaskrawy           | Dynamiczne fraktale rysowane na powierzchni     |
