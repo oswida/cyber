@@ -7,122 +7,29 @@ nav_order: 4
 
 # Generator miejsca (w przygotowaniu)
 
-## Rodzaj (k66)
+Po wielu próbach postanowiłem zrezygnować z koncepcji generowania budynku lub miejsca z konkretnym opisem.
+Zamiast tego chciałbym zaproponować listę sytuacji, przedmiotów i osób, które mogą zaskoczyć bohaterów podczas eksploracji danego typu miejsca. Elementy tej listy mają być inspiracją do:
 
-11. Klub
-12. Salon z elektroniką
-13. Salon masażu/tatuażu
-14. Dojo sztuk walki
-15. Supermarket
-16. Posterunek policji
-21. Urząd Administracji
-22. Stacja kolejki/przystanek autobusowy
-23. Blok mieszkalny/apartamenty
-24. Hotel
-25. Kawiarnia/restauracja/bar
-26. Placówka medyczna
-31. Klinika cybermodów
-32. Salon gier/centrum rozrywki
-33. Apteka
-34. Siłownia
-35. Oddział banku
-36. Sklep z antykami/galeria sztuki
-41. Szkoła
-42. Budynek sakralny
-43. Biurowiec
-44. Sklep z bronią
-45. Siedziba firmy usługowej
-46. Agencja wynajmu
-51. Miejscówka gangu
-52. Laboratorium
-53. Budynek korporacyjny
-54. Agencja towarzyska
-55. Opuszczony budynek
-56. Warsztat
-61. Fabryka
-62. Obiekt sportowy
-63. Siedziba sekty religijnej
-64. Studio multimedialne
-65. Sala koncertowa
-66. Budynek komunalny
+- rozgrywania dramatycznych scen
+- oferowania graczom możliwości zastosowania nietypowego rozwiązania
+- budowania atmosfery miejsca
 
+Nie mam żadnej sugestii dotyczącej ilości elementów losowanych dla pojedynczego miejsca - wylosuj lub wybierz tyle szczegółów ile będzie potrzebne do zapewnienia dobrej zabawy.
 
-## 11. Klub
-### Wygląd
+## Otwarte miejsce publiczne (plac, ulice, przystanek komunikacji publicznej)
 
-1. Głośna muzyka, stroboskopowe światła, tłum ludzi, zabawa
-2. Spokojna muzyka, przygaszone światła, pojedyncze grupki ludzi
-3. Solistka na scenie, kelnerki roznoszące drinki do stolików, miejsce spotkań Yakuza
-4. Wykwintny lokal, silna ochrona, tylko zaproszeni goście
-5. Brudna spelunka, pijani goście na zewnątrz i w środku, głośna muzyka
-6. Modernistyczne wnętrza, nowoczesna technologia, lasery, grupki hakerów
+## Budynek użyteczności publicznej (szpital, dworzec, lotnisko, centrum handlowe)
 
-### Plotki
+## Budynek mieszkalny (apartamenty, mieszkania w mrówkowcu, domy prywatne, rezydencje)
 
-1. Barman sprzedaje nielegalne dopalacze
-2. W tym lokalu można spotkać słynnego pasera
-3. Na zapleczu sprzedają nielegalne wszczepy i oprogramowanie dla hakerów
-4. Od czasu do czasu pojawia się tu szefostwo korporacji
-5. Korporacja i gangi załatwiają tu wspólne interesy
-6. Można tu znaleźć robotę
+## Placówka korporacyjna (biurowiec, fabryka, laboratorium)
 
-## 12. Salon z elektroniką
+## Placówka wojskowa (jednostka, poligon, laboratorium, sztab)
 
+## Placówka rządowa (ambasada, posterunek/komenda policji, urząd)
 
-## 3. Salon masażu/tatuażu
-## 4. Dojo sztuk walki
-## 5. Supermarket
-## 6. Posterunek policji
-## 7. Urząd Administracji
-## 8. Stacja kolejki/przystanek autobusowy
-## 9. Blok mieszkalny/apartamenty
-## 10. Hotel
-## 11. Kawiarnia/restauracja/bar
-## 12. Szpital miejski
-## 13. Klinika medyczna
-## 14. Klinika cybermodów
-## 15. Salon gier/centrum rozrywki
-## 16. Apteka
-## 17. Siłownia
-## 18. Oddział banku
-## 19. Sklep z antykami/galeria sztuki
-## 20. Szkoła
-## 21. Budynek sakralny
-## 22. Biurowiec
-## 23. Butik
-## 24. Sklep z bronią
-## 25. Siedziba firmy usługowej
-## 26. Agencja wynajmu
-## 27. Miejscówka
-## 28. Laboratorium
-## 29. Budynek korporacyjny
-## 30. Agencja towarzyska
-## 31. Opuszczony budynek
-## 32. Warsztat
-## 33. Fabryka
-## 34. Obiekt sportowy
-## 35. Budynek komunalny
+## Tereny podmiejskie (parki, lasy, ośrodki wypoczynkowe, tereny rolnicze)
 
+## Obiekty lub wydarzenia rozrywkowe (opera, koncert, zawody sportowe, walki na arenie)
 
-## Wrażenie
-
-1. Niejasne poczucie zagrożenia
-2. Atmosfera dobrej zabawy
-3. Nieprzyjazne spojrzenia miejscowych
-4. Totalna pustka wokoło
-5. Cisza i smutek
-6. Cisza pełna napięcia
-7. Nieznośny hałas i zamieszanie
-8. Panika i przerażenie
-9. Skupienie i efektywna praca
-10. Strach, unikanie spojrzeń, szepty po kątach
-11. Serdeczność i otwartość miejscowych
-12. Brud, zaniedbanie, rozkład
-13. Sterylna przestrzeń, sztywne zachowania
-14. Luksus, elegancja, dobre maniery
-15. Dzikość, agresja, niepoczytalność, szał
-16. Rozluźnienie, spokój, wypoczynek
-17. Rytm, muzyka, światła
-18. Wzniosła atmosfera, szacunek, sacrum
-19. Mroczne żądze, dewiacja, skrytość
-20. Radość, taniec i śpiew
+## Tereny opustoszałe (zrujnowane dzielnice, opuszczone domy, obszary po katastrofie)
