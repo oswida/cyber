@@ -12,7 +12,7 @@ nav_order: 3
 ## Losowanie
 
 - 2 rzuty na części składowe nazwy w odpowiednich tabelach
-- 1-2 rzuty na dziedziny przemysłu
+- 1-2 rzuty na branżę
 - Co najmniej jeden rzut na plotkę
 - 1 rzut na slogan
 
@@ -35,7 +35,7 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 | 11  |    4    | Freya      | Macro      | Tanner               | Sharaku        | Zhen Chen     | United        |
 | 12  |    4    | Rama       | Hexagon    | Hamilton             | Fukuma-Tatsuki | Xian Hua      | Universal     |
 | 13  |    4    | Indra      | Octagon    | Shannon              | Nishikiri-Kei  | Fan Yimu      | National      |
-| 14  |    4    | Isis       | Prism      | Brock-Dawson         | Mitsue-Sakae   | Duan Qigang   | Global        |
+| 14  |    4    | Iris       | Prism      | Brock-Dawson         | Mitsue-Sakae   | Duan Qigang   | Global        |
 | 15  |    5    | Kali       | Radius     | Stewart-Cobb         | Hashimoto      | Liang Jun     | Integrated    |
 | 16  |    5    | Selene     | Scalar     | Delaney              | Sakamoto       | Geng Guanyu   | Tactical      |
 | 17  |    5    | Sol        | Solid      | Hawkins              | Katagiri       | Huang Luoyang | International |
@@ -71,7 +71,7 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 | 20  |    3    | Cosmetics      | Motors        | Express       |
 
 
-## Dziedzina (1k20 + 1k20)
+## Branża (1k20 + 1k20)
 
 Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 
@@ -87,7 +87,7 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 | 8   |    1    | Energetyka              | Rolnictwo            |
 | 9   |    1    | Genetyka                | Rozrywka             |
 | 10  |    1    | Górnictwo               | Telekomunikacja      |
-| 11  |    2    | Gry komputerowe         | Usługi audytowe      |
+| 11  |    2    | Gry komputerowe         | Usługi audytu        |
 | 12  |    2    | Media                   | Usługi doradcze      |
 | 13  |    2    | Nanotechnologia         | Usługi finansowe     |
 | 14  |    2    | Oprogramowanie          | Usługi komunalne     |

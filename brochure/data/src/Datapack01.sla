@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.5.8">
+    <DOCUMENT ANZPAGES="7" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="1" DFONT="DejaVu Sans Book" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" TextDistLeft="0" TextDistRight="0" TextDistBottom="0" TextDistTop="0" FirstLineOffset="1" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="100" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="34" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPPr="ISO Coated v2 300% (basICColor)" DPIn="sRGB display profile (ICC v2.2)" DPInCMYK="ISO Coated v2 300% (basICColor)" DPIn2="sRGB display profile (ICC v2.2)" DPIn3="ISO Coated v2 300% (basICColor)" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="pl" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="0" SnapToGrid="0" SnapToElement="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="0" showcolborders="1" SHOWFRAME="0" SHOWControl="0" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWLINK="0" rulerMode="0" showrulers="0" showBleed="0" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.502045814642449" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" AutoSaveCount="1" AutoSaveKeep="0" AUtoSaveInDocDir="1" AutoSaveDir="" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" CPICT="None" PICTSHADE="100" CSPICT="None" PICTSSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10.0006299212598" dispY="10.0006299212598" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" renderStack="2 0 4 1 3" GridType="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PDF 1.4" calligraphicPenFillColor="Black" calligraphicPenLineColor="Black" calligraphicPenFillColorShade="100" calligraphicPenLineColorShade="100" calligraphicPenLineWidth="1" calligraphicPenAngle="0" calligraphicPenWidth="10" calligraphicPenStyle="1">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.6" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-1a" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="1" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <COLOR NAME="Black" SPACE="CMYK" C="0" M="0" Y="0" K="100"/>
+        <COLOR NAME="Blue" SPACE="RGB" R="0" G="0" B="255"/>
+        <COLOR NAME="Cool Black" SPACE="CMYK" C="60" M="0" Y="0" K="100"/>
+        <COLOR NAME="Cyan" SPACE="CMYK" C="100" M="0" Y="0" K="0"/>
+        <COLOR NAME="Cyber Blue" SPACE="RGB" R="0" G="144" B="191"/>
+        <COLOR NAME="FromSVG#000000" SPACE="RGB" R="0" G="0" B="0"/>
+        <COLOR NAME="FromSVG#ffffff" SPACE="RGB" R="255" G="255" B="255"/>
+        <COLOR NAME="Green" SPACE="RGB" R="0" G="255" B="0"/>
+        <COLOR NAME="Magenta" SPACE="CMYK" C="0" M="100" Y="0" K="0"/>
+        <COLOR NAME="Red" SPACE="RGB" R="255" G="0" B="0"/>
+        <COLOR NAME="Registration" SPACE="CMYK" C="100" M="100" Y="100" K="100" Register="1"/>
+        <COLOR NAME="Rich Black" SPACE="CMYK" C="60" M="40" Y="40" K="100"/>
+        <COLOR NAME="Warm Black" SPACE="CMYK" C="0" M="60" Y="29.8039215686275" K="100"/>
+        <COLOR NAME="White" SPACE="CMYK" C="0" M="0" Y="0" K="0"/>
+        <COLOR NAME="Yellow" SPACE="CMYK" C="0" M="0" Y="100" K="0"/>
+        <HYPHEN/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="DejaVu Sans Book" FONTSIZE="12" FONTFEATURES="" FEATURES="inherit" FCOLOR="Black" FSHADE="100" HyphenWordMin="3" SCOLOR="Black" BGCOLOR="None" BGSHADE="100" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="pl"/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100"/>
+        <TableStyle NAME="Default Table Style" DefaultStyle="1" FillColor="None" FillShade="100">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </TableStyle>
+        <CellStyle NAME="Default Cell Style" DefaultStyle="1" FillColor="None" FillShade="100" LeftPadding="1" RightPadding="1" TopPadding="1" BottomPadding="1">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </CellStyle>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Tło" SICHTBAR="1" DRUCKEN="1" EDIT="1" SELECT="0" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="3" markLength="20.0013" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="MG2400-series" filename="" separationName="All" printerCommand=""/>
+        <PDF firstUse="1" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="0" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="ISO Coated v2 300% (basICColor)" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="0" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="20.0012598425197" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="0" PageLayout="0" openAction="">
+            <LPI Color="" Frequency="0" Angle="0" SpotFunction="0"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <NotesStyles>
+            <notesStyle Name="Default" Start="1" Endnotes="0" Type="Type_1_2_3" Range="0" Prefix="" Suffix=")" AutoHeight="1" AutoWidth="1" AutoRemove="1" AutoWeld="1" SuperNote="1" SuperMaster="1" MarksStyle="" NotesStyle=""/>
+        </NotesStyles>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Facing Pages" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="0" From="0" To="6" Type="Type_1_2_3" Start="1" Reversed="0" Active="1" FillChar="0" FieldWidth="0"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="Normalna" MNAM="" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="" MNAM="Normalna" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="901.890708661418" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="1" NAM="" MNAM="Normalna" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="1783.78015748032" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="2" NAM="" MNAM="Normalna" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="2665.66960629921" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="3" NAM="" MNAM="Normalna" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="3547.55905511811" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="4" NAM="" MNAM="Normalna" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="4429.44850393701" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="5" NAM="" MNAM="Normalna" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="5311.33795275591" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="6" NAM="" MNAM="Normalna" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGEOBJECT XPOS="403.813543307087" YPOS="4545.12472440945" OwnPage="5" ItemID="1408603790" PTYPE="4" WIDTH="252.047874015748" HEIGHT="382.877064807706" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="2.83464566929134" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L252.048 0 L252.048 382.877 L0 382.877 L0 0 Z" copath="M0 0 L252.048 0 L252.048 382.877 L0 382.877 L0 0 Z" gXpos="271.605669291339" gYpos="-25.369741056057" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="      1-10"/>
+                <ITEXT CH=" "/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Badania i rozwój"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Bezpieczeństwo"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Biotechnologia"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Broń i amunicja"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Cybertechnika"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Edukacja"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Elektronika"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Energetyka"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Genetyka"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Górnictwo"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Gry komputerowe"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Media"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Nanotechnologia"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Oprogramowanie"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Chemia"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Przemysł ciężki"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Farmaceutyka"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Komputery"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Przem. kosmiczny"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Lotnictwo"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="11-20"/>
+                <ITEXT CH=" "/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Przemysł maszynowy"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Przemysł morski"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Przemysł odzieżowy"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Przemysł precyzyjny"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Przem. samochodowy"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Przemysł spożywczy"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Robotyka"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Rolnictwo"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Rozrywka"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Telekomunikacja"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Usługi audyt"/>
+                <ITEXT CH="u"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Usługi doradcze"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Usługi finansowe"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Usługi komunalne"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Usługi kurierskie"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Usługi medyczne"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Usługi militarne"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Usługi prawnicze"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Usługi transportowe"/>
+                <para ALIGN="2" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Utylizacja odpadów"/>
+                <trail ALIGN="2" LINESP="18"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="185.04" YPOS="147.300005" OwnPage="0" ItemID="1362834398" PTYPE="12" WIDTH="425.196850393701" HEIGHT="94.9634731221978" FRTYPE="0" CLIPEDIT="0" TEXTFLOWMODE="2" groupWidth="497" groupHeight="110.99999" groupClips="1" path="M0 0 L425.197 0 L425.197 94.9635 L0 94.9635 L0 0 Z" copath="M0 0 L425.197 0 L425.197 94.9635 L0 94.9635 L0 0 Z" gXpos="134.495850393701" gYpos="-201.99848031496" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="285.041" YPOS="167.301005" OwnPage="0" ItemID="1362823230" PTYPE="2" WIDTH="497" HEIGHT="110.99999" FRTYPE="3" CLIPEDIT="1" PWIDTH="1" PLINEART="1" ANNAME=" image53818" LOCALSCX="1" LOCALSCY="0.99999990990991" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="0" Pagenumber="0" PFILE="" isInlineImage="1" inlineImageExt="png" ImageData="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" IRENDER="0" EMBEDDED="0" path="M0 0 L497 0 L497 111 L0 111 L0 0 Z" copath="M0 0 L497 0 L497 111 L0 111 L0 0 Z" gXpos="0" gYpos="0" gWidth="497" gHeight="110.99999" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="100.00062992126" YPOS="20.0012598425197" OwnPage="0" ItemID="1362930590" PTYPE="2" WIDTH="595.275590551181" HEIGHT="841.889763779528" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="tlo" LOCALSCX="0.8001016002032" LOCALSCY="0.8001016002032" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="hex.svg" IRENDER="0" EMBEDDED="0" LOCK="1" TransValue="0.25" path="M0 0 L595.276 0 L595.276 841.89 L0 841.89 L0 0 Z" copath="M0 0 L595.276 0 L595.276 841.89 L0 841.89 L0 0 Z" ImageRes="0" gXpos="100.00025984252" gYpos="20.0015196850394" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="138.766299212599" YPOS="128.2" OwnPage="0" ItemID="1362963918" PTYPE="2" WIDTH="510.236220472441" HEIGHT="117.354330708661" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.850393700787399" LOCALSCY="0.850393700787399" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="" isInlineImage="1" inlineImageExt="png" ImageData="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" IRENDER="0" EMBEDDED="0" path="M0 0 L510.236 0 L510.236 117.354 L0 117.354 L0 0 Z" copath="M0 0 L510.236 0 L510.236 117.354 L0 117.354 L0 0 Z" gXpos="138.765929133859" gYpos="128.20025984252" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="139.19962992126" YPOS="267.658842519685" OwnPage="0" ItemID="1362994366" PTYPE="4" WIDTH="515.52" HEIGHT="35.8069842519685" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L515.52 0 L515.52 35.807 L0 35.807 L0 0 Z" copath="M0 0 L515.52 0 L515.52 35.807 L0 35.807 L0 0 Z" gXpos="139.19962992126" gYpos="267.658842519685" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="35" FEATURES="inherit allcaps" CH="Pakiet danych  001"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="227.55968503937" YPOS="382.586716535433" OwnPage="0" ItemID="1362921630" PTYPE="2" WIDTH="340.157480314961" HEIGHT="340.157480314961" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1.32874015748032" LOCALSCY="1.32874015748032" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../images/cube03.jpeg" IRENDER="0" EMBEDDED="0" LOCK="1" path="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" copath="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" gXpos="227.55968503937" gYpos="382.586716535433" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="214.946110527951" YPOS="1044.47965504741" OwnPage="1" ItemID="1363059502" PTYPE="4" WIDTH="365.384629337799" HEIGHT="343.680289834484" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L365.385 0 L365.385 343.68 L0 343.68 L0 0 Z" copath="M0 0 L365.385 0 L365.385 343.68 L0 343.68 L0 0 Z" gXpos="214.945740449211" gYpos="1044.4795999293" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="Cyber"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH=": "/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="pakiet danych"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH=" to zestaw materiałów dodatkowych do gry fabularnej Cyber — gry o"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="eksploracji mrocznego świata niedalekiej przyszłości, zdominowanego przez megakorporacje i technologię."/>
+                <para ALIGN="1" LINESPMode="0" LINESP="18"/>
+                <para ALIGN="4" LINESPMode="0"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="15" CH="Grafiki wygenerowane za pomocą: "/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="15" CH="Craiyon: (https://www.craiyon.com)"/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <para ALIGN="4" LINESPMode="0"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="15" CH="Autorem gry jest: "/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="15" CH="Oskar Świda"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="15" CH=".     "/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <para ALIGN="4" LINESPMode="0"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="15" CH="Tekst na licencji CC-BY-SA 4.0."/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <para ALIGN="4" LINESPMode="0"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="15" CH="Więcej informacji, na stronie:"/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="15" CH="                      "/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="15" CH=" https://oswida.github.io/cyber/"/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="15" CH="Białystok, 2022"/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+                <para ALIGN="3" LINESPMode="0"/>
+                <para ALIGN="3" LINESPMode="0"/>
+                <para ALIGN="3" LINESPMode="0"/>
+                <para ALIGN="3" LINESPMode="0"/>
+                <para ALIGN="3" LINESPMode="0"/>
+                <para ALIGN="3" LINESPMode="0"/>
+                <para ALIGN="3" LINESPMode="0"/>
+                <para ALIGN="3" LINESPMode="0"/>
+                <para ALIGN="3" LINESPMode="0"/>
+                <para ALIGN="3" LINESPMode="0"/>
+                <para ALIGN="3" LINESPMode="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="306.901047244095" YPOS="1427.03994488189" OwnPage="1" ItemID="1364049950" PTYPE="2" WIDTH="198.425196850394" HEIGHT="198.425196850394" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.775098425196852" LOCALSCY="0.775098425196852" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../images/dice02.jpeg" IRENDER="0" EMBEDDED="0" LOCK="1" path="M0 0 L198.425 0 L198.425 198.425 L0 198.425 L0 0 Z" copath="M0 0 L198.425 0 L198.425 198.425 L0 198.425 L0 0 Z" gXpos="306.901047244095" gYpos="1427.03994488189" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="142.52031496063" YPOS="2753.54362204724" OwnPage="3" ItemID="1364009854" PTYPE="4" WIDTH="510.236220472441" HEIGHT="674.645669291339" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L510.236 0 L510.236 674.646 L0 674.646 L0 0 Z" copath="M0 0 L510.236 0 L510.236 674.646 L0 674.646 L0 0 Z" gXpos="142.51994488189" gYpos="1871.65380314961" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium Bold" FONTSIZE="25" CH="    "/>
+                <para ALIGN="1" LINESPMode="0" LINESP="23"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="25" CH="        WSTĘP"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="20"/>
+                <para ALIGN="1" LINESPMode="0" LINESP="15"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="TUTAJ NALEŻY WPISAC WSTE"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="15" CH="Rzut k20+k20"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Rzut oznaczony jako k20+k20 oznacza, że rzucamy dwoma kośćmi k20 ale pierw-szej wartości używamy do określenia kolumny (grupy) a drugiej — pozycji w"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="grupie. "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Rzut ten zastępuje rzut kośćmi o"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="więk-szej ilości ścianek (np. k100), a"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="jedno-cześnie umożliwia losowanie z puli będącej wielokrotnością dwudziestki: 40,60,80 lub 120."/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="P ."/>
+                <trail ALIGN="3" LINESP="16"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="142.56" YPOS="2696.98677165354" OwnPage="3" ItemID="1362954846" PTYPE="12" WIDTH="250.762999999996" HEIGHT="39.3599999999999" FRTYPE="0" CLIPEDIT="0" ANNAME="Grupa6" LOCK="1" groupWidth="250.762999999996" groupHeight="39.3599999999999" groupClips="1" path="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" copath="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" gXpos="142.56" gYpos="2696.98677165354" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="142.56" YPOS="1836.47338582677" OwnPage="3" ItemID="1362958014" PTYPE="4" WIDTH="30.2399439770707" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L30.2399 0 L30.2399 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L30.2399 0 L30.2399 14.4907 L0 14.4907 L0 0 Z" gXpos="0" gYpos="21.376062992126" gWidth="250.762999999996" gHeight="39.3599999999999" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1"/>
+                    <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="001"/>
+                    <trail ALIGN="1" LINESPMode="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="393.322999999996" YPOS="1854.45732283464" OwnPage="3" ItemID="1363080542" PTYPE="2" WIDTH="240.959553595064" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" ROT="180" PWIDTH="1" PLINEART="1" LOCALSCX="0.23999955537357" LOCALSCY="0.24" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="circuit3.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" copath="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" gXpos="250.762999999996" gYpos="39.3599999999999" gWidth="250.762999999996" gHeight="39.3599999999999" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="403.8431496063" YPOS="3436.51212598425" OwnPage="3" ItemID="1365896878" PTYPE="12" WIDTH="253.307401574802" HEIGHT="39.3600000000001" FRTYPE="0" CLIPEDIT="0" ANNAME="Grupa7" LOCK="1" groupWidth="253.307401574802" groupHeight="39.3600000000001" groupClips="1" path="M0 0 L253.307 0 L253.307 39.36 L0 39.36 L0 0 Z" copath="M0 0 L253.307 0 L253.307 39.36 L0 39.36 L0 0 Z" gXpos="403.8431496063" gYpos="3436.51212598425" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="623.514330708661" YPOS="2560.96157480315" OwnPage="3" ItemID="1365887246" PTYPE="4" WIDTH="33.6362204724411" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L33.6362 0 L33.6362 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L33.6362 0 L33.6362 14.4907 L0 14.4907 L0 0 Z" gXpos="219.671181102361" gYpos="6.33889763780189" gWidth="253.307401574802" gHeight="39.3600000000001" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1"/>
+                    <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="001"/>
+                    <trail ALIGN="1" LINESPMode="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="403.8431496063" YPOS="2554.62267716535" OwnPage="3" ItemID="1365940446" PTYPE="2" WIDTH="240.96" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="circuit3.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" copath="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" gXpos="0" gYpos="0" gWidth="253.307401574802" gHeight="39.3600000000001" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="142.56" YPOS="1815.09732283465" OwnPage="2" ItemID="1375022718" PTYPE="12" WIDTH="250.76346456693" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" ANNAME="Kopia Grupa13" LOCK="1" groupWidth="250.76346456693" groupHeight="39.36" groupClips="1" path="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" copath="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" gXpos="142.56" gYpos="933.207874015748" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="242.56062992126" YPOS="3620.2535433071" OwnPage="2" ItemID="1374817230" PTYPE="4" WIDTH="30.24" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L30.24 0 L30.24 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L30.24 0 L30.24 14.4907 L0 14.4907 L0 0 Z" gXpos="0" gYpos="21.376062992126" gWidth="250.76346456693" gHeight="39.36" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1"/>
+                    <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="000"/>
+                    <trail ALIGN="1" LINESPMode="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="493.32409448819" YPOS="3638.23748031497" OwnPage="2" ItemID="1374988942" PTYPE="2" WIDTH="240.96" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" ROT="180" PWIDTH="1" PLINEART="1" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="circuit3.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" copath="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" gXpos="250.76346456693" gYpos="39.36" gWidth="250.76346456693" gHeight="39.36" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="256.738582677165" YPOS="1868.81952755906" OwnPage="2" ItemID="1374904798" PTYPE="4" WIDTH="281.79968503937" HEIGHT="307.50047244094" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L281.8 0 L281.8 307.5 L0 307.5 L0 0 Z" copath="M0 0 L281.8 0 L281.8 307.5 L0 307.5 L0 0 Z" gXpos="256.738582677165" gYpos="986.930078740158" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="20" CH="SPIS TREŚCI"/>
+                <para ALIGN="1" LINESPMode="0"/>
+                <para/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="001"/>
+                <tab FONT="Oxanium Regular" FONTSIZE="16"/>
+                <tab FONT="Oxanium Regular" FONTSIZE="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="WSTĘP"/>
+                <para LINESP="20"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="002"/>
+                <tab FONT="Oxanium Regular" FONTSIZE="16"/>
+                <tab FONT="Oxanium Regular" FONTSIZE="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="KORPORACJE"/>
+                <para LINESP="20"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="003"/>
+                <tab FONT="Oxanium Regular" FONTSIZE="16"/>
+                <tab FONT="Oxanium Regular" FONTSIZE="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="WĘZŁY INFOSFERY"/>
+                <para LINESP="20"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="011"/>
+                <tab FONT="Oxanium Regular" FONTSIZE="16"/>
+                <tab FONT="Oxanium Regular" FONTSIZE="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="BOHATEROWIE NIEZALEŻNI"/>
+                <para LINESP="20"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="403.8431496063" YPOS="2554.62267716536" OwnPage="2" ItemID="1370914574" PTYPE="12" WIDTH="253.307401574802" HEIGHT="39.3599999999999" FRTYPE="0" CLIPEDIT="0" ANNAME="Kopia Grupa14" LOCK="1" groupWidth="253.307401574802" groupHeight="39.3599999999999" groupClips="1" path="M0 0 L253.307 0 L253.307 39.36 L0 39.36 L0 0 Z" copath="M0 0 L253.307 0 L253.307 39.36 L0 39.36 L0 0 Z" gXpos="403.8431496063" gYpos="1672.73322834646" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="723.514960629921" YPOS="4344.74173228348" OwnPage="2" ItemID="1371191694" PTYPE="4" WIDTH="33.6362204724411" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L33.6362 0 L33.6362 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L33.6362 0 L33.6362 14.4907 L0 14.4907 L0 0 Z" gXpos="219.671181102361" gYpos="6.33889763780144" gWidth="253.307401574802" gHeight="39.3599999999999" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1"/>
+                    <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="000"/>
+                    <trail ALIGN="1" LINESPMode="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="503.84377952756" YPOS="4338.40283464568" OwnPage="2" ItemID="1371201598" PTYPE="2" WIDTH="240.96" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="circuit3.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" copath="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" gXpos="0" gYpos="0" gWidth="253.307401574802" gHeight="39.3599999999999" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="234.804724409449" YPOS="2136.00724409449" OwnPage="2" ItemID="1371187278" PTYPE="2" WIDTH="340.157480314961" HEIGHT="340.157480314961" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1.32874015748032" LOCALSCY="1.32874015748032" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../images/factory02.jpeg" IRENDER="0" EMBEDDED="0" LOCK="1" path="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" copath="M0 0 L340.157 0 L340.157 340.157 L0 340.157 L0 0 Z" gXpos="234.804724409449" gYpos="2136.00724409449" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="141.200667424241" YPOS="2755.24612490282" OwnPage="3" ItemID="1371446126" PTYPE="2" WIDTH="174.608743891674" HEIGHT="52.0414037754244" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.374398588312406" LOCALSCY="0.374398588312406" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="symbol03.png" IRENDER="0" EMBEDDED="0" LOCK="1" path="M0 0 L174.609 0 L174.609 52.0414 L0 52.0414 L0 0 Z" copath="M0 0 L174.609 0 L174.609 52.0414 L0 52.0414 L0 0 Z" gXpos="141.200667424241" gYpos="2755.24612490282" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="142.52031496063" YPOS="3635.43307086614" OwnPage="4" ItemID="1373152030" PTYPE="4" WIDTH="510.236220472441" HEIGHT="674.645669291339" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L510.236 0 L510.236 674.646 L0 674.646 L0 0 Z" copath="M0 0 L510.236 0 L510.236 674.646 L0 674.646 L0 0 Z" gXpos="142.51994488189" gYpos="1871.65380314961" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium Bold" FONTSIZE="25" CH="    "/>
+                <para ALIGN="1" LINESPMode="0" LINESP="23"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="25" CH="        KORPORACJE"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="20"/>
+                <para ALIGN="1" LINESPMode="0" LINESP="15"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="Procedura"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Wylosuj lub wybierz:"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="1. Pierwszy człon nazwy (k20+k20)"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="2. Drugi człon nazwy (k20+k20)"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="3. Jedną lub więcej gałęzi przemysłu w"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="jakiej działa korporacja (zwróć uwagę na drugi człon nazwy i w razie potrzeby uzupełnij dziedziną pasującą branżą) (k20+k20)"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="Pierwsza część nazwy"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="4. Przynajmniej jedną plotkę dotyczącą generowanej korporacji (może być praw-dziwa lub nie)"/>
+                <ITEXT CH=" "/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="(k20+k20)"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="5. Jeden slogan reklamowy"/>
+                <ITEXT CH=" "/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="(k20+k20)"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="142.56" YPOS="3578.87622047244" OwnPage="4" ItemID="1367763502" PTYPE="12" WIDTH="250.762999999996" HEIGHT="39.3600000000001" FRTYPE="0" CLIPEDIT="0" ANNAME="Grupa20" LOCK="1" groupWidth="250.762999999996" groupHeight="39.3600000000001" groupClips="1" path="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" copath="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" gXpos="142.56" gYpos="3578.87622047244" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="142.56" YPOS="3600.25228346456" OwnPage="4" ItemID="1383203726" PTYPE="4" WIDTH="30.2399439770707" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L30.2399 0 L30.2399 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L30.2399 0 L30.2399 14.4907 L0 14.4907 L0 0 Z" gXpos="0" gYpos="21.3760629921267" gWidth="250.762999999996" gHeight="39.3600000000001" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1"/>
+                    <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="002"/>
+                    <trail ALIGN="1" LINESPMode="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="393.322999999996" YPOS="3618.23622047244" OwnPage="4" ItemID="1377799822" PTYPE="2" WIDTH="240.959553595064" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" ROT="180" PWIDTH="1" PLINEART="1" LOCALSCX="0.23999955537357" LOCALSCY="0.24" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="circuit3.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" copath="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" gXpos="250.762999999996" gYpos="39.3600000000001" gWidth="250.762999999996" gHeight="39.3600000000001" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="403.8431496063" YPOS="4318.40157480315" OwnPage="4" ItemID="1383181854" PTYPE="12" WIDTH="253.307401574802" HEIGHT="39.3599999999997" FRTYPE="0" CLIPEDIT="0" ANNAME="Grupa21" groupWidth="253.307401574802" groupHeight="39.3599999999997" groupClips="1" path="M0 0 L253.307 0 L253.307 39.36 L0 39.36 L0 0 Z" copath="M0 0 L253.307 0 L253.307 39.36 L0 39.36 L0 0 Z" gXpos="403.8431496063" gYpos="4318.40157480315" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="623.514330708661" YPOS="4324.74047244095" OwnPage="4" ItemID="1378526878" PTYPE="4" WIDTH="33.6362204724411" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L33.6362 0 L33.6362 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L33.6362 0 L33.6362 14.4907 L0 14.4907 L0 0 Z" gXpos="219.671181102361" gYpos="6.33889763780189" gWidth="253.307401574802" gHeight="39.3599999999997" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1"/>
+                    <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="002"/>
+                    <trail ALIGN="1" LINESPMode="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="403.8431496063" YPOS="4318.40157480315" OwnPage="4" ItemID="1367801886" PTYPE="2" WIDTH="240.96" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="circuit3.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" copath="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" gXpos="0" gYpos="0" gWidth="253.307401574802" gHeight="39.3599999999997" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="141.200667424241" YPOS="3637.13557372172" OwnPage="4" ItemID="1365772334" PTYPE="2" WIDTH="174.608743891674" HEIGHT="52.0414037754244" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.374398588312406" LOCALSCY="0.374398588312406" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="symbol03.png" IRENDER="0" EMBEDDED="0" LOCK="1" path="M0 0 L174.609 0 L174.609 52.0414 L0 52.0414 L0 0 Z" copath="M0 0 L174.609 0 L174.609 52.0414 L0 52.0414 L0 0 Z" gXpos="141.200667424242" gYpos="2755.24612490282" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="156.103937007874" YPOS="3893.38582677166" OwnPage="4" ItemID="1388394542" PTYPE="4" WIDTH="507.991181102362" HEIGHT="419.527559055118" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="6" COLGAP="2.83464566929134" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L507.991 0 L507.991 419.528 L0 419.528 L0 0 Z" copath="M0 0 L507.991 0 L507.991 419.528 L0 419.528 L0 0 Z" gXpos="23.8960629921261" gYpos="0.63118110236428" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="1-3"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Apollo"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Athena"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Ares"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Hermes"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Hades"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Odin"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Thor"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Mimir"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Fenrir"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Thyr"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Freya"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Rama"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Indra"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Iris"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Kali"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Selene"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Sol"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Lakshmi"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Chandra"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Mitra"/>
+                <para ALIGN="1" LINESP="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="4-6"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Alpha"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Beta"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Gamma"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Delta"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Sigma"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Omega"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Quantum"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Proton"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Nucleo"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Tensor"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Macro"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Hexagon"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Octagon"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Prism"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Radius"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Scalar"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Solid"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Tangent"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Vector"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Prime"/>
+                <para ALIGN="1" LINESP="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="7-10"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Schultz       Nitzsche-Green"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Blick-Nolan"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Kunze"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Keeling"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Hansen"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Emard"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Senger"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Rice-Kreiger"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Hedegaard"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Tanner        Hamilton    Shannon     Brock-Dawson"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Stewart-Cobb"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Delaney      Hawkins     Tyson         "/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Cooper       Morgan-Walsh"/>
+                <para ALIGN="1" LINESP="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="11-14"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Moriyama"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Katsuyoshi Yorikane"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Ryu"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Rokuda       Hideaki"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Sano"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Morita"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Takamasa"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Urushido"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Sharaku"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Fukuma-Tatsuki"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Nishikiri-Kei "/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Mitsue-Sakae"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Hashimoto Sakamoto"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Katagiri"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Asari"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Kojima-Kazumi"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Senri"/>
+                <para ALIGN="1" LINESP="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="15-17"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Gorbunov"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Garanin"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Lukyanov   Kovalevsky"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Nabatov"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Zhutov"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Volodin"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Mirnov"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Yermushin"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Kulikov"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Zhen Chen"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Xian Hua"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Fan Yimu"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Duan Qigang"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Liang Jun"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Geng Guanyu"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Huang Luoyang"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Xie Fang"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Lian Xiuying"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Zhu Da"/>
+                <para ALIGN="1" LINESP="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="18-20"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Bhadrakali  Damayanti Bumati"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Karnavati"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Indira"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Lavanya"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Shruti"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Archita"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Shristi"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Progressive"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="United"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Universal"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="National"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Global"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Integrated"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Tactical"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="International"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Strategic"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Networked  Industrial"/>
+                <para ALIGN="1" LINESP="18"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.609763779528" YPOS="3912.43464566929" OwnPage="4" ItemID="1406859486" PTYPE="5" WIDTH="513.726316948288" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" path="" gXpos="8.40188976377971" gYpos="19.6800000000003" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="171.84" YPOS="3892.75464566929" OwnPage="4" ItemID="1406416206" PTYPE="5" WIDTH="392.641173592378" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" path="" gXpos="39.632125984252" gYpos="4.54747350886464e-13" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="239.871496062992" YPOS="3892.75464566929" OwnPage="4" ItemID="1391666398" PTYPE="5" WIDTH="392.641173592377" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" path="" gXpos="107.663622047244" gYpos="0" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="324.910866141732" YPOS="3892.75464566929" OwnPage="4" ItemID="1398594190" PTYPE="5" WIDTH="392.641173592377" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" path="" gXpos="192.702992125984" gYpos="0" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="409.950236220471" YPOS="3892.75464566929" OwnPage="4" ItemID="1400017934" PTYPE="5" WIDTH="392.641173592377" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" path="" gXpos="277.742362204724" gYpos="0" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="495.839999999999" YPOS="3892.75464566929" OwnPage="4" ItemID="1405733486" PTYPE="5" WIDTH="392.641173592377" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" LOCK="1" path="" gXpos="363.632125984251" gYpos="0" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="580.028976377953" YPOS="3892.75464566929" OwnPage="4" ItemID="1405549294" PTYPE="5" WIDTH="392.641173592377" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" path="" gXpos="447.821102362205" gYpos="0" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="132.207874015748" YPOS="3893.66929133859" OwnPage="4" ItemID="1399823502" PTYPE="4" WIDTH="40.32" HEIGHT="446.995275590548" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L40.32 0 L40.32 446.995 L0 446.995 L0 0 Z" copath="M0 0 L40.32 0 L40.32 446.995 L0 446.995 L0 0 Z" gXpos="0" gYpos="0.914645669295169" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="9" CH="k20"/>
+                <para ALIGN="1" LINESP="9"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="9" CH="+k20"/>
+                <para ALIGN="1" LINESP="9"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="1"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="2"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="3"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="4"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="5"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="6"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="7"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="8"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="9"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="10"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="11"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="12"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="13"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="14"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="15"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="16"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="17"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="19"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="20"/>
+                <para ALIGN="1" LINESP="18"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="466.514645669291" YPOS="3637.39464566929" OwnPage="4" ItemID="1408738286" PTYPE="2" WIDTH="127.55905511811" HEIGHT="127.55905511811" FRTYPE="29" CLIPEDIT="1" PWIDTH="1" PCOLOR2="Cyber Blue" PLINEART="1" LOCALSCX="0.498277559055118" LOCALSCY="0.498277559055118" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../images/corpo04.jpeg" IRENDER="0" EMBEDDED="0" LOCK="1" path="M0 63.7795 L25.5118 0 L102.047 0 L127.559 63.7795 L102.047 127.559 L25.5118 127.559 L0 63.7795 Z" copath="M0 0 L127.559 0 L127.559 127.559 L0 127.559 L0 0 Z" gXpos="466.514645669291" gYpos="3637.39464566929" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="142.52031496063" YPOS="4517.32251968503" OwnPage="5" ItemID="1408855534" PTYPE="4" WIDTH="511.23968503937" HEIGHT="40.7877165354384" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L511.24 0 L511.24 40.7877 L0 40.7877 L0 0 Z" copath="M0 0 L511.24 0 L511.24 40.7877 L0 40.7877 L0 0 Z" gXpos="142.51994488189" gYpos="1871.65380314961" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="Druga część nazwy i branża"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="142.56" YPOS="4460.76566929133" OwnPage="5" ItemID="1392940366" PTYPE="12" WIDTH="250.762999999996" HEIGHT="39.3599999999997" FRTYPE="0" CLIPEDIT="0" ANNAME="Grupa28" LOCK="1" groupWidth="250.762999999996" groupHeight="39.3599999999997" groupClips="1" path="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" copath="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" gXpos="142.56" gYpos="4460.76566929133" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="142.56" YPOS="4482.14173228346" OwnPage="5" ItemID="1375928190" PTYPE="4" WIDTH="30.2399439770707" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L30.2399 0 L30.2399 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L30.2399 0 L30.2399 14.4907 L0 14.4907 L0 0 Z" gXpos="0" gYpos="21.3760629921271" gWidth="250.762999999996" gHeight="39.3599999999997" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1"/>
+                    <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="003"/>
+                    <trail ALIGN="1" LINESPMode="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="393.322999999996" YPOS="4500.12566929133" OwnPage="5" ItemID="1383414654" PTYPE="2" WIDTH="240.959553595064" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" ROT="180" PWIDTH="1" PLINEART="1" LOCALSCX="0.23999955537357" LOCALSCY="0.24" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="circuit3.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" copath="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" gXpos="250.762999999996" gYpos="39.3599999999997" gWidth="250.762999999996" gHeight="39.3599999999997" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="403.8431496063" YPOS="5200.29102362204" OwnPage="5" ItemID="1405332942" PTYPE="12" WIDTH="253.307401574802" HEIGHT="39.3599999999997" FRTYPE="0" CLIPEDIT="0" ANNAME="Grupa29" LOCK="1" groupWidth="253.307401574802" groupHeight="39.3599999999997" groupClips="1" path="M0 0 L253.307 0 L253.307 39.36 L0 39.36 L0 0 Z" copath="M0 0 L253.307 0 L253.307 39.36 L0 39.36 L0 0 Z" gXpos="403.8431496063" gYpos="5200.29102362204" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="623.514330708661" YPOS="5206.62992125985" OwnPage="5" ItemID="1412150430" PTYPE="4" WIDTH="33.6362204724411" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L33.6362 0 L33.6362 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L33.6362 0 L33.6362 14.4907 L0 14.4907 L0 0 Z" gXpos="219.671181102361" gYpos="6.33889763780189" gWidth="253.307401574802" gHeight="39.3599999999997" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1"/>
+                    <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="003"/>
+                    <trail ALIGN="1" LINESPMode="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="403.8431496063" YPOS="5200.29102362204" OwnPage="5" ItemID="1378197454" PTYPE="2" WIDTH="240.96" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="circuit3.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" copath="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" gXpos="0" gYpos="0" gWidth="253.307401574802" gHeight="39.3599999999997" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="139.152125984252" YPOS="4545.12564656787" OwnPage="5" ItemID="1407416702" PTYPE="4" WIDTH="278.493228346457" HEIGHT="382.877064807706" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="0.912638649222572" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="3" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L278.493 0 L278.493 382.877 L0 382.877 L0 0 Z" copath="M0 0 L278.493 0 L278.493 382.877 L0 382.877 L0 0 Z" gXpos="6.94425196850414" gYpos="-25.3688188976357" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH=" 1-7"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Group"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Industries"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Ltd"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="GmbH"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Corporation"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Defense"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Security"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Healthcare"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Entertainment"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Communications "/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Transportation"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Syndicate"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="MegaCorp"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Digital"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Cybertronic"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Mechatronic"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Services"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Sciences"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Electric"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Cosmetics"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH=" 8-14"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Management"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Consulting"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Solutions"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Investments"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Tacticals"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Technologies"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Incorporated Manufacturing"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Software"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Automotive"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Chemicals"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Engineering"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Financials"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Products"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Semiconductor"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Cargo"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Research"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Machines"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Logistics"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Motors"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH=" 15-20"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Instruments"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Radiotechnics"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Delivery"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Agricultural"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Consumables"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Systems"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Nanotech"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Biotech"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Genotech"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Commtech"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Prototech"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Cybertech"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Genomics"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Computers"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Interactive"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Laboratory"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Games"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Cybernetics"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Aerospace"/>
+                <para ALIGN="0" LINESP="18"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Express"/>
+                <trail ALIGN="0" LINESP="18"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="139.775118110236" YPOS="4563.37647664818" OwnPage="5" ItemID="1409471582" PTYPE="5" WIDTH="513.726316948288" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" path="" gXpos="7.56724409448839" gYpos="-5.45385826771623" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="534.461858460261" YPOS="4545.54960629919" OwnPage="5" ItemID="1409222382" PTYPE="5" WIDTH="379.21128785437" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" LOCK="1" path="" gXpos="433.947086614172" gYpos="-25" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="398.207874015748" YPOS="4544.18078740158" OwnPage="5" ItemID="1402872750" PTYPE="4" WIDTH="40.32" HEIGHT="382.342677165349" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L40.32 0 L40.32 382.343 L0 382.343 L0 0 Z" copath="M0 0 L40.32 0 L40.32 382.343 L0 382.343 L0 0 Z" gXpos="266" gYpos="-230.46330708661" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="9" CH="k20"/>
+                <para ALIGN="1" LINESP="9"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="9" CH="+k20"/>
+                <para ALIGN="1" LINESP="9"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="1"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="2"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="3"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="4"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="5"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="6"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="7"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="8"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="9"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="10"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="11"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="12"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="13"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="14"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="15"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="16"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="17"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="18"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="19"/>
+                <para ALIGN="1" LINESP="18"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="20"/>
+                <para ALIGN="1" LINESP="18"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="433.26500806656" YPOS="4545.54960629919" OwnPage="5" ItemID="1408140974" PTYPE="5" WIDTH="379.21128785437" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" path="" gXpos="332.750236220472" gYpos="-25" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="404.918551373647" YPOS="4545.54960629919" OwnPage="5" ItemID="1376632238" PTYPE="5" WIDTH="379.21128785437" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" path="" gXpos="304.403779527559" gYpos="-25" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="314.209889956325" YPOS="4545.54960629919" OwnPage="5" ItemID="1403311150" PTYPE="5" WIDTH="379.21128785437" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" path="" gXpos="213.695118110236" gYpos="-25" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="227.46973247601" YPOS="4545.54960629919" OwnPage="5" ItemID="1410017982" PTYPE="5" WIDTH="379.21128785437" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="90" PWIDTH="1" SHADE="0" PCOLOR2="Cyber Blue" PLINEART="1" LOCK="1" path="" gXpos="126.954960629921" gYpos="-25" gWidth="531.887244094488" gHeight="447.909921259843" LAYER="0"/>
+        <PAGEOBJECT XPOS="142.52031496063" YPOS="4945.35401574807" OwnPage="5" ItemID="1403941214" PTYPE="4" WIDTH="511.23968503937" HEIGHT="248.589921259809" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L511.24 0 L511.24 248.59 L0 248.59 L0 0 Z" copath="M0 0 L511.24 0 L511.24 248.59 L0 248.59 L0 0 Z" gXpos="142.51994488189" gYpos="2299.68529921259" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="14" CH="Branża zależna od nazwy"/>
+                <para/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Nazwy korporacji w większości przypad-ków mają angielskie brzmienie. Jest to zamierzony efekt związany z"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="klasycznymi grami i literaturą nurtu. Jeśli zdecydu-jesz się skorzystać z"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="generatora, zwróć proszę uwagę, że druga część nazwy często  oddaje jednocześnie branżę, w"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="której działa firma („software” prawdo-podobnie sugeruje oprogramowanie a"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="„chemicals” — przemysł chemiczny).  Warto uwzględnić te zależności podczas kreowania „zaibatsu”."/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="14" CH="Wiele branż dla jednej firmy"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="Podczas losowania korporacji, możesz wybrać więcej niż jedną branżę dla firmy. Czasem wylosowane branże mogą wydawać się zbyt odległe od siebie jak na"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="przykład „rolnictwo” i „usługi finanso-we”. Nie ma w tym jednak żadnej sprzeczności. Korporacje jako potężne  organizacje nastawione na maksymalny zysk i sprawne operowanie na rynku, często poszerzają swoją działalność. Daje im to dodatkowe dochody oraz zabezpie-cza przed nagłymi wahaniami rynkowymi w"/>
+                <nbspace FONT="Oxanium Regular" FONTSIZE="13"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="13" CH="ramach pojedynczej branży."/>
+                <trail ALIGN="3" LINESP="16"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="142.52031496063" YPOS="5395.10929133858" OwnPage="6" ItemID="1417012814" PTYPE="4" WIDTH="511.23968503937" HEIGHT="693.120000000001" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" LOCK="1" path="M0 0 L511.24 0 L511.24 693.12 L0 693.12 L0 0 Z" copath="M0 0 L511.24 0 L511.24 693.12 L0 693.12 L0 0 Z" gXpos="142.51994488189" gYpos="1867.55112598426" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="16" CH="Plotka (k20+k20)"/>
+                <para ALIGN="3" LINESP="13"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="1-10"/>
+                <para ALIGN="1" LINESP="12"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="1."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="   Opracowali sposób na przedłużanie ludzkiego życia"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="2. "/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="  Mają SI, która posiada świadomość"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="3."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="   Opracowują plan przejęcia władzy administracyjnej"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="4."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="   W swoich produktach montują sprzęt do śledzenia konsumentów"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="5."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="   Przeprowadzają eksperymenty na nieświadomych pracownikach"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="6."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="   Są w stanie podsłuchać i zanalizować dowolną transmisję danych"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="7."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="   Opracowali wirusa zdolnego zniszczyć całą Infosferę"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="8."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="   W sytuacji zagrożenia wykorzystają nieznaną broń bakteriologiczną"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="9."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="   Posiadają możliwości transferu wiedzy bezpośrednio do umysłu"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="10."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Prowadzą program hodowli niebezpiecznych, genetycznie modyfikowanych bestii"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="11."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Planują wrogie przejęcie pozostałych korporacji ze swojego sektora rynku"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="12."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Wyhodowali klony znanych polityków i podmienili niektórych z nich"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="13."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Są w posiadaniu minerału, który może zastąpić wszelkie znane paliwa"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="14. "/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="Opracowali zminiaturyzowaną broń EMP"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="15."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Mają oprogramowanie pozwalające na emisję przekazu podprogowego w ich reklamach"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="16."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Ukrywają fakt masowej eksterminacji jednej ze swoich własnych arkologii"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="17."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Większość ich pracowników to androidy"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="18."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Wykorzystują ciała swoich zmarłych pracowników do tajemniczych eksperymentów"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="19."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Zbudowali tajną bazę na Księżycu"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="20."/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH=" Są odpowiedzialni za serię epidemii w różnych miejscach na świecie"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium SemiBold" FONTSIZE="11" CH="11-20"/>
+                <para ALIGN="1" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="1. Nawiązali w tajemnicy kontakt z obcą cywilizacją                                  "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="2. Składują odpady produkcyjne w biedniejszych dzielnicach                           "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="3. Ich oficjalna działalność jest przykrywką dla narkobiznesu                        "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="4. Ukrywają i wspierają rozmaite grupy ekoterrorystyczne                             "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="5. Utrzymują grupy hakerów regularnie atakujących Infosferę                          "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="6. Wszyscy ich pracownicy są fanatykami o wypranych mózgach                          "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="7. Masowo skupują wszystkie dostępne dzieła sztuki i antyki                          "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="8. Nigdzie nie można znaleźć żadnych wiarygodnych informacji na ich temat            "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="9. Przeprowadzali testy taktycznej broni jądrowej w zamieszkanych dzielnicach        "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="10. Testowali broń chemiczną w biedniejszych częściach miasta                         "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="11. Ich oficjalna działalność jest przykrywką dla handlu organami ludzkimi            "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="12. Ich pracownicy planują krwawy bunt i zamierzają zniszczyć korporację od wewnątrz  "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="13. Ich szalony zarząd planuje światową apokalipsę                                    "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="14. Cała korporacja jest w zasadzie religijną sektą                                   "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="15. Odkryli ślady starożytnej cywilizacji i nieznanej technologii                     "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="16. Korporacją zarządza SI ale nikt z pracowników i zarządu o tym nie wie             "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="17. Zarząd korporacji nie żyje a podszywa się pod niego grupa najemników              "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="18. Umysły pracowników po ich śmierci są ładowane do korporacyjnej bazy danych        "/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="19. Opracowali nanotechnologię, pozwalającą produkować dowolne rzeczy z każdej materii"/>
+                <para ALIGN="3" LINESP="16"/>
+                <ITEXT FONT="Oxanium Regular" FONTSIZE="11" CH="20. Opracowali technologię zdalnej kontroli ludzkiego umysłu  "/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="142.56" YPOS="5342.65511811023" OwnPage="6" ItemID="1426559886" PTYPE="12" WIDTH="250.762999999996" HEIGHT="39.3599999999997" FRTYPE="0" CLIPEDIT="0" ANNAME="Grupa32" LOCK="1" groupWidth="250.762999999996" groupHeight="39.3599999999997" groupClips="1" path="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" copath="M0 0 L250.763 0 L250.763 39.36 L0 39.36 L0 0 Z" gXpos="142.56" gYpos="5342.65511811023" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="142.56" YPOS="5364.03118110236" OwnPage="6" ItemID="1417536318" PTYPE="4" WIDTH="30.2399439770707" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L30.2399 0 L30.2399 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L30.2399 0 L30.2399 14.4907 L0 14.4907 L0 0 Z" gXpos="0" gYpos="21.3760629921271" gWidth="250.762999999996" gHeight="39.3599999999997" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1"/>
+                    <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="004"/>
+                    <trail ALIGN="1" LINESPMode="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="393.322999999996" YPOS="5382.01511811023" OwnPage="6" ItemID="1417514910" PTYPE="2" WIDTH="240.959553595064" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" ROT="180" PWIDTH="1" PLINEART="1" LOCALSCX="0.23999955537357" LOCALSCY="0.24" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="circuit3.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" copath="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" gXpos="250.762999999996" gYpos="39.3599999999997" gWidth="250.762999999996" gHeight="39.3599999999997" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="403.8431496063" YPOS="6082.18047244094" OwnPage="6" ItemID="1422891902" PTYPE="12" WIDTH="253.307401574802" HEIGHT="39.3599999999997" FRTYPE="0" CLIPEDIT="0" ANNAME="Grupa33" LOCK="1" groupWidth="253.307401574802" groupHeight="39.3599999999997" groupClips="1" path="M0 0 L253.307 0 L253.307 39.36 L0 39.36 L0 0 Z" copath="M0 0 L253.307 0 L253.307 39.36 L0 39.36 L0 0 Z" gXpos="403.8431496063" gYpos="6082.18047244094" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="623.514330708661" YPOS="6088.51937007874" OwnPage="6" ItemID="1417479790" PTYPE="4" WIDTH="33.6362204724411" HEIGHT="14.4907086614174" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L33.6362 0 L33.6362 14.4907 L0 14.4907 L0 0 Z" copath="M0 0 L33.6362 0 L33.6362 14.4907 L0 14.4907 L0 0 Z" gXpos="219.671181102361" gYpos="6.33889763780189" gWidth="253.307401574802" gHeight="39.3599999999997" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1"/>
+                    <ITEXT FONT="Oxanium Regular" FONTSIZE="16" CH="004"/>
+                    <trail ALIGN="1" LINESPMode="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="403.8431496063" YPOS="6082.18047244094" OwnPage="6" ItemID="1417494078" PTYPE="2" WIDTH="240.96" HEIGHT="39.36" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="circuit3.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" copath="M0 0 L240.96 0 L240.96 39.36 L0 39.36 L0 0 Z" gXpos="0" gYpos="0" gWidth="253.307401574802" gHeight="39.3599999999997" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>
