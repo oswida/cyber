@@ -1,3 +1,4 @@
+import { useAtomValue } from "jotai";
 import { useCallback, useMemo } from "react";
 import {
   DraggableTitle,
@@ -6,7 +7,7 @@ import {
   TabsBarConfig,
   useGetLeaf,
 } from "react-tile-pane";
-import { hudPanelNames, styled } from "~/common";
+import { globalPaneNames, styled } from "~/common";
 
 const thickness = 32;
 
@@ -75,6 +76,7 @@ const TabBarRoot = styled("div", {
 
 const TabBar = ({ tabs, onTab, action }: TabBarPropsWithAction) => {
   const getLeaf = useGetLeaf();
+  const gpn = useAtomValue(globalPaneNames);
 
   const tabBar = useCallback(
     (tab: PaneName, i: number) => {
@@ -93,7 +95,7 @@ const TabBar = ({ tabs, onTab, action }: TabBarPropsWithAction) => {
   );
 
   const close = () => {
-    const visible = hudPanelNames.filter((it) => getLeaf(it) !== undefined);
+    const visible = gpn.filter((it) => getLeaf(it) !== undefined);
     if (visible.length > 1) action.closeTab(onTab);
   };
 

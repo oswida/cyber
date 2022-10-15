@@ -45,6 +45,7 @@ export const ContentRoot = styled("div", {
   padding: 5,
   height: "50vh",
   minWidth: 550,
+  width: "75vw",
   display: "flex",
 });
 
@@ -107,7 +108,7 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
       onClose={() => setNo({ open: false, note: undefined })}
     >
       <Flex direction="column">
-        <Text color="yellow" css={{ marginBottom: 10 }}>
+        <Text color="yellow" css={{ marginBottom: 10, textAlign: "center" }}>
           {no.note?.title}
         </Text>
         <ContentRoot>

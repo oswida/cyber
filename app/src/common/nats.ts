@@ -1,21 +1,18 @@
-import { useAtom, useAtomValue } from "jotai";
+import { useAtomValue, useSetAtom } from "jotai";
 import { useAtomCallback } from "jotai/utils";
-import { useCallback, useEffect } from "react";
+import { useCallback } from "react";
 import { RollHistoryEntry } from "~/common";
 
 import {
   connect,
   Msg,
   NatsConnection,
-  NatsError,
   StringCodec,
   Subscription,
 } from "nats.ws";
 import {
   NatsMessage,
-  NatsType,
   NoteType,
-  queueInfo,
   sessionDataType,
   stateBoardNotes,
   stateNats,
@@ -32,9 +29,33 @@ export const topicBoard = "TopicBoard";
 export const useNats = () => {
   const sc = StringCodec();
   const sessionData = useAtomValue(stateSessionData);
-  const [rollHistory, setRollHistory] = useAtom(stateRollHistory);
-  const [nats, setNats] = useAtom(stateNats);
-  const [boardState, setBoardState] = useAtom(stateBoardNotes);
+  const setRollHistory = useSetAtom(stateRollHistory);
+  const setNats = useSetAtom(stateNats);
+  const setBoardState = useSetAtom(stateBoardNotes);
+  const cnats = useAtomCallback(
+    useCallback(
+      (get, set) => {
+        return get(stateNats);
+      },
+      [stateNats]
+    )
+  );
+  const crollHistory = useAtomCallback(
+    useCallback(
+      (get, set) => {
+        return get(stateRollHistory);
+      },
+      [stateRollHistory]
+    )
+  );
+  const cboardState = useAtomCallback(
+    useCallback(
+      (get, set) => {
+        return get(stateBoardNotes);
+      },
+      [stateBoardNotes]
+    )
+  );
 
   const unpackNatsMsg = (msg: Msg): NatsMessage => {
     return JSON.parse(sc.decode(msg.data));
@@ -43,34 +64,6 @@ export const useNats = () => {
   const packNatsMsg = (msg: NatsMessage) => {
     return sc.encode(JSON.stringify(msg));
   };
-
-  // const processIncoming = (err: NatsError | null, msg: Msg) => {
-  //   if (err) console.error(err);
-  //   const m = unpackNatsMsg(msg);
-  //   if (m.sender === sessionData().browserID) return;
-  //   switch (msg.subject) {
-  //     case getTopic(topicInfo):
-  //       console.log("info", m.data, m.sender);
-  //       setQInfo((state) => [...state, m]);
-  //       break;
-  //     case getTopic(topicConnect):
-  //       console.log("client connected");
-
-  //       // on connect host resends roll history
-  //       if (sessionData.hosting) {
-  //         publish(topicRoll, Object.values(currentRollHistory()));
-  //       }
-  //       break;
-  //     case getTopic(topicRoll):
-  //       const rolls = JSON.parse(m.data) as RollHistoryEntry[];
-  //       const newState = { ...rollHistory };
-  //       rolls.forEach((roll) => {
-  //         newState[roll.id] = roll;
-  //       });
-  //       setRollHistory(newState);
-  //       break;
-  //   }
-  // };
 
   const getTopic = useCallback(
     (suffix: string) => {
@@ -91,7 +84,7 @@ export const useNats = () => {
     if (connection === null) {
       console.log(
         "NATS connection not ready, ignoring",
-        nats.connection,
+        connection,
         topic,
         data
       );
@@ -107,6 +100,7 @@ export const useNats = () => {
 
   const connectNats = async (data: sessionDataType) => {
     if (data.nats.trim() === "") return;
+    const nats = await cnats();
     if (nats.connection !== null && nats.connection.getServer() === data.nats)
       return;
     if (nats.connection !== null) {
@@ -138,10 +132,13 @@ export const useNats = () => {
       if (m.sender === sessionData.browserID) {
         continue;
       }
+      const cn = await cnats();
+      const rollHistory = await crollHistory();
+      const boardState = await cboardState();
       if (msg.subject === getTopic(topicConnect)) {
         if (sessionData.hosting) {
-          publish(nats.connection, topicRoll, Object.values(rollHistory));
-          publish(nats.connection, topicBoard, Object.values(boardState));
+          publish(cn.connection, topicRoll, Object.values(rollHistory));
+          publish(cn.connection, topicBoard, Object.values(boardState));
         }
         continue;
       }

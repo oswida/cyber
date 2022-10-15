@@ -1,4 +1,4 @@
-import { useAtom, useAtomValue } from "jotai";
+import { useAtom, useAtomValue, useSetAtom } from "jotai";
 import { useEffect } from "react";
 import {
   createTilePanes,
@@ -12,7 +12,7 @@ import {
 import {
   configOpen,
   genMenuOpen,
-  hudPanelNames,
+  globalPaneNames,
   hudPanelSelectionOpen,
   queueInfo,
   sessionDataType,
@@ -21,7 +21,7 @@ import {
   stateStorageSize,
   theme,
 } from "~/common";
-import { topicInfo, useNats } from "~/common/nats";
+import { useNats } from "~/common/nats";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, GenMenu, Modal, Text } from "~/component";
 import { Config } from "../Config";
@@ -64,9 +64,10 @@ export const HudLayout = () => {
   const [, setGm] = useAtom(genMenuOpen);
   const [, setCo] = useAtom(configOpen);
   const nats = useAtomValue(stateNats);
-  const { publish, connectNats } = useNats();
+  const { connectNats } = useNats();
   const sessionData = useAtomValue(stateSessionData);
   const qInfo = useAtomValue(queueInfo);
+  const setGpn = useSetAtom(globalPaneNames);
 
   const [paneList, paneNames] = createTilePanes({
     "gen:zaibatsu": <GenCorpoPane />,
@@ -75,6 +76,10 @@ export const HudLayout = () => {
     notes: <NotesPane isBoard={false} />,
     board: <NotesPane isBoard={true} />,
   });
+
+  useEffect(() => {
+    setGpn(Object.keys(paneNames));
+  }, [paneNames]);
 
   const rootPane: TileBranchSubstance = {
     children: [
@@ -159,7 +164,7 @@ export const HudLayout = () => {
           <Modal isOpen={hudSel} onClose={() => setHudSel(false)}>
             <Flex direction="column" css={{ gap: 10 }}>
               <Text>Click on the button to make panel visible</Text>
-              {hudPanelNames.map((it) => (
+              {Object.keys(paneNames).map((it) => (
                 <PaneButton key={it} name={it} />
               ))}
             </Flex>
