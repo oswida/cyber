@@ -1,12 +1,12 @@
 import { faEarth } from "@fortawesome/free-solid-svg-icons";
 import { useAtom, useAtomValue } from "jotai";
 import { useCallback } from "react";
-import { CorpoType, genTitles, language, stateGenerator } from "~/common";
+import { CorpoInfo, genTitles, language, stateGenerator } from "~/common";
 import { useStorage } from "~/common/storage";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
 
 type CorpoCardProps = {
-  data: CorpoType;
+  data: CorpoInfo;
   size?: "standard" | "small";
 };
 
@@ -16,7 +16,7 @@ export const CorpoCard = ({ data, size }: CorpoCardProps) => {
   const { saveGen } = useStorage();
 
   const delItem = useCallback(() => {
-    const newList: Record<string, CorpoType> = {};
+    const newList: Record<string, CorpoInfo> = {};
     Object.keys(gen.corpo).forEach((k) => {
       if (k !== data.id && gen.corpo[k]) newList[k] = gen.corpo[k]!!;
     });

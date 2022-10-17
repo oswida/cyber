@@ -1,12 +1,13 @@
 import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
 import { useAtom, useAtomValue } from "jotai";
+import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
   doImport,
   globalStr,
   language,
   nodeClassSelected,
-  NodeType,
+  NodeInfo,
   prettyToday,
   stateGenerator,
 } from "~/common";
@@ -21,7 +22,6 @@ import {
   NodeClassInf,
   NodeClassMore,
 } from "~/data";
-import { v4 as uuidv4 } from "uuid";
 
 const roller = new DiceRoller();
 
@@ -123,7 +123,7 @@ export const useNodeGen = () => {
     const data = infoData[lang][nclass!!][roll.total - 1];
     const [ice, black] = rollICE(nclass as string);
 
-    const retv: NodeType = {
+    const retv: NodeInfo = {
       id: uuidv4(),
       name: generateSerialKeys(8, ""),
       node_class: NodeClassDict[lang][nclass!!],
@@ -167,7 +167,7 @@ export const useNodeGen = () => {
   };
 
   const deleteNode = (id: string) => {
-    const newList: Record<string, NodeType> = {};
+    const newList: Record<string, NodeInfo> = {};
     Object.keys(gen.node).forEach((k) => {
       if (k !== id && gen.node[k]) newList[k] = gen.node[k]!!;
     });

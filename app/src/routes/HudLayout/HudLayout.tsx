@@ -1,9 +1,11 @@
 import { useAtom, useAtomValue, useSetAtom } from "jotai";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   createTilePanes,
   TileBranchSubstance,
   TileContainer,
+  TilePane,
   TileProvider,
   useGetLeaf,
   useGetRootNode,
@@ -15,7 +17,8 @@ import {
   globalPaneNames,
   hudPanelSelectionOpen,
   queueInfo,
-  sessionDataType,
+  SessionInfo,
+  stateHudLayout,
   stateNats,
   stateSessionData,
   stateStorageSize,
@@ -25,6 +28,7 @@ import { useNats } from "~/common/nats";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, GenMenu, Modal, Text } from "~/component";
 import { Config } from "../Config";
+import { gmLayout, playerLayout } from "./layout";
 import { GenCorpoPane } from "./pane/GenPane/GenCorpoPane";
 import { GenNodePane } from "./pane/GenPane/GenNodePane";
 import { NotesPane } from "./pane/NotesPane";
@@ -33,22 +37,29 @@ import { stretchBarConfig } from "./StretchBar";
 import { HudRoot, HudToolbar } from "./styles";
 import { tabBarConfig } from "./TabBar";
 
-const AutoSaveLayout = () => {
-  const { saveLayout } = useStorage();
-  const getRootNode = useGetRootNode();
-  saveLayout(getRootNode());
-  return <></>;
-};
-
 const PaneButton = ({ name }: { name: string }) => {
   const getLeaf = useGetLeaf();
   const move = useMovePane();
   const shown = getLeaf(name) !== undefined;
+  const setHudLayout = useSetAtom(stateHudLayout);
+  const getRootNode = useGetRootNode();
+  const { saveLayout } = useStorage();
 
   return (
     <>
       {!shown && (
-        <Button onClick={() => move(name, [0.99, 0.5])}>{name}</Button>
+        <Button
+          onClick={() => {
+            move(name, [0.99, 0.5]);
+            setHudLayout(getRootNode());
+            setTimeout(() => {
+              // delayed
+              saveLayout(getRootNode());
+            }, 500);
+          }}
+        >
+          {name}
+        </Button>
       )}
     </>
   );
@@ -56,11 +67,8 @@ const PaneButton = ({ name }: { name: string }) => {
 
 export const HudLayout = () => {
   const [hudSel, setHudSel] = useAtom(hudPanelSelectionOpen);
-  const { loadLayout } = useStorage();
+  const { loadLayout, saveLayout } = useStorage();
   const storageSize = useAtomValue(stateStorageSize);
-
-  const localRoot = loadLayout();
-
   const [, setGm] = useAtom(genMenuOpen);
   const [, setCo] = useAtom(configOpen);
   const nats = useAtomValue(stateNats);
@@ -68,61 +76,40 @@ export const HudLayout = () => {
   const sessionData = useAtomValue(stateSessionData);
   const qInfo = useAtomValue(queueInfo);
   const setGpn = useSetAtom(globalPaneNames);
+  const [paneList, setPaneList] = useState<TilePane[]>([]);
+  const [paneNames, setPaneNames] = useState<Record<string, string>>({});
+  const [layoutRoot, setLayoutRoot] = useAtom(stateHudLayout);
 
-  const [paneList, paneNames] = createTilePanes({
-    "gen:zaibatsu": <GenCorpoPane />,
-    "gen:node": <GenNodePane />,
-    roll: <RollerPane />,
-    notes: <NotesPane isBoard={false} />,
-    board: <NotesPane isBoard={true} />,
-  });
+  useEffect(() => {
+    const [pl, pn] = createTilePanes({
+      "gen:zaibatsu": <GenCorpoPane />,
+      "gen:node": <GenNodePane />,
+      roll: <RollerPane />,
+      notes: <NotesPane isBoard={false} />,
+      board: <NotesPane isBoard={true} />,
+    });
+    setPaneList(pl);
+    setPaneNames(pn);
+  }, []);
 
   useEffect(() => {
     setGpn(Object.keys(paneNames));
+    const localRoot = loadLayout();
+    setLayoutRoot(localRoot ? (localRoot as TileBranchSubstance) : gmLayout);
   }, [paneNames]);
-
-  const rootPane: TileBranchSubstance = {
-    children: [
-      {
-        children: ["roll"],
-        onTab: 0,
-        grow: 0.25,
-      },
-      {
-        children: [
-          {
-            children: [
-              {
-                children: ["board", "notes"],
-                onTab: 0,
-                grow: 0.6,
-              },
-              {
-                children: ["gen:node", "gen:zaibatsu"],
-                onTab: 1,
-                grow: 0.4,
-              },
-            ],
-            isRow: true,
-            grow: 1,
-          },
-        ],
-        isRow: false,
-        grow: 0.75,
-      },
-    ],
-    isRow: true,
-    grow: 1,
-  };
-
-  const layoutRoot = localRoot ? (localRoot as TileBranchSubstance) : rootPane;
 
   const openPanelList = () => {
     setHudSel(true);
   };
 
-  const processSessionData = (data: sessionDataType) => {
+  const processSessionData = (data: SessionInfo) => {
     connectNats(data);
+  };
+
+  const handleLayoutChange = (node: TileBranchSubstance) => {
+    setHudSel(false);
+    saveLayout(node);
+    window.location.href = "/";
   };
 
   return (
@@ -147,30 +134,38 @@ export const HudLayout = () => {
         )}
         <Text size="small">{storageSize} B</Text>
       </HudToolbar>
-      <HudRoot>
-        <TileProvider
-          rootNode={layoutRoot}
-          tilePanes={paneList}
-          pane={{
-            style: {
-              backgroundColor: theme.colors.background.value,
-            },
-          }}
-          stretchBar={stretchBarConfig}
-          tabBar={tabBarConfig}
-        >
-          <TileContainer />
-          <AutoSaveLayout />
-          <Modal isOpen={hudSel} onClose={() => setHudSel(false)}>
-            <Flex direction="column" css={{ gap: 10 }}>
-              <Text>Click on the button to make panel visible</Text>
-              {Object.keys(paneNames).map((it) => (
-                <PaneButton key={it} name={it} />
-              ))}
-            </Flex>
-          </Modal>
-        </TileProvider>
-      </HudRoot>
+      {layoutRoot && (
+        <HudRoot>
+          <TileProvider
+            rootNode={layoutRoot}
+            tilePanes={paneList}
+            pane={{
+              style: {
+                backgroundColor: theme.colors.background.value,
+              },
+            }}
+            stretchBar={stretchBarConfig}
+            tabBar={tabBarConfig}
+          >
+            <TileContainer />
+            <Modal isOpen={hudSel} onClose={() => setHudSel(false)}>
+              <Flex direction="column" css={{ gap: 10 }}>
+                <Text>Click on the button to make panel visible</Text>
+                {Object.keys(paneNames).map((it) => (
+                  <PaneButton key={it} name={it} />
+                ))}
+                <Text>Click to restore predefined layout</Text>
+                <Button onClick={() => handleLayoutChange(gmLayout)}>
+                  GM Layout
+                </Button>
+                <Button onClick={() => handleLayoutChange(playerLayout)}>
+                  Player Layout
+                </Button>
+              </Flex>
+            </Modal>
+          </TileProvider>
+        </HudRoot>
+      )}
       <GenMenu title="Generator" />
       <Config saveCallback={processSessionData} />
     </>

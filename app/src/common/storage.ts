@@ -1,17 +1,17 @@
 import { compress, decompress } from "@eonasdan/lz-string";
 import { useAtom } from "jotai";
+import { TileBranchSubstance } from "react-tile-pane";
 import { v4 as uuidv4 } from "uuid";
 import {
   GenStateType,
   initialSessionData,
-  NoteType,
-  sessionDataType,
   stateBoardNotes,
   stateGenerator,
   statePrivateNotes,
   stateSessionData,
   stateStorageSize,
 } from "./state";
+import { Note, SessionInfo } from "./types";
 
 export const inodLayoutKey = "inod-hud-layout";
 export const inodSessionKey = "inod-session";
@@ -46,7 +46,7 @@ export const useStorage = () => {
     }
   };
 
-  const saveSessionData = (value: sessionDataType) => {
+  const saveSessionData = (value: SessionInfo) => {
     localStorage.setItem(inodSessionKey, comp(value));
     updateStoreSize();
   };
@@ -60,7 +60,7 @@ export const useStorage = () => {
     }
   };
 
-  const saveBoardNotes = (state: Record<string, NoteType | undefined>) => {
+  const saveBoardNotes = (state: Record<string, Note | undefined>) => {
     localStorage.setItem(inodBoardKey, comp(state));
     updateStoreSize();
   };
@@ -72,19 +72,25 @@ export const useStorage = () => {
     }
   };
 
-  const savePrivateNotes = (state: Record<string, NoteType | undefined>) => {
+  const savePrivateNotes = (state: Record<string, Note | undefined>) => {
     localStorage.setItem(inodNotesKey, comp(state));
     updateStoreSize();
   };
 
   const saveLayout = (root: any) => {
+    console.log("saving layout", root);
+
     localStorage.setItem(inodLayoutKey, comp(root));
     updateStoreSize();
   };
 
+  const clearLayout = () => {
+    localStorage.removeItem(inodLayoutKey);
+  };
+
   const loadLayout = () => {
     const data = localStorage.getItem(inodLayoutKey);
-    return decomp(data);
+    return decomp(data) as TileBranchSubstance;
   };
 
   const loadGen = () => {
@@ -124,6 +130,7 @@ export const useStorage = () => {
     savePrivateNotes,
     saveLayout,
     loadLayout,
+    clearLayout,
     updateStoreSize,
     loadGen,
     saveGen,

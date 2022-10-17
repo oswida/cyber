@@ -1,11 +1,12 @@
+import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
 import { useAtom, useAtomValue } from "jotai";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Scrollbars from "react-custom-scrollbars-2";
+import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
   doImport,
-  NoteType,
-  prettyNow,
+  Note,
   prettyToday,
   stateBoardNotes,
   stateNats,
@@ -21,9 +22,6 @@ import { useStorage } from "~/common/storage";
 import { Button, Flex, Icon, Input, Text, Textarea } from "~/component";
 import { HudPane } from "../../styles";
 import { InfoModal } from "./InfoModal";
-import { v4 as uuidv4 } from "uuid";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDeleteLeft, faFileExport } from "@fortawesome/free-solid-svg-icons";
 
 export const ListRoot = styled("div", {
   border: "1px solid $darkblue",
@@ -87,7 +85,7 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
       titleRef.current.value == ""
     )
       return;
-    const note: NoteType = {
+    const note: Note = {
       id: uuidv4(),
       title: titleRef.current.value,
       content: contentRef.current.innerText,
@@ -115,7 +113,7 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
     setFilter(searchRef.current.value);
   };
 
-  const notFiltered = (note: NoteType | undefined) => {
+  const notFiltered = (note: Note | undefined) => {
     if (!note) return false;
     if (filter === "") return true;
     return note.title.includes(filter) || note.content.includes(filter);

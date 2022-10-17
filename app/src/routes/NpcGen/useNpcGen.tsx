@@ -1,10 +1,11 @@
 import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
 import { useAtom, useAtomValue } from "jotai";
+import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
   doImport,
   language,
-  NpcType,
+  NpcInfo,
   prettyToday,
   stateGenerator,
 } from "~/common";
@@ -19,7 +20,6 @@ import {
   npcPositiveTrait,
   npcSurnameTable,
 } from "~/data";
-import { v4 as uuidv4 } from "uuid";
 
 const roller = new DiceRoller();
 
@@ -53,7 +53,7 @@ export const useNpcGen = () => {
     const nnt = npcNegativeTrait[lang];
     roll = roller.roll(`1d${nnt.length}`) as DiceRoll;
     traits.push(nnt[roll.total - 1]);
-    const result: NpcType = {
+    const result: NpcInfo = {
       id: uuidv4(),
       name: name,
       surname: surname,
@@ -94,7 +94,7 @@ export const useNpcGen = () => {
   };
 
   const deleteNpc = (id: string) => {
-    const newList: Record<string, NpcType> = {};
+    const newList: Record<string, NpcInfo> = {};
     Object.keys(gen.npc).forEach((k) => {
       if (k !== id && gen.npc[k]) newList[k] = gen.npc[k]!!;
     });

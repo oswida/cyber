@@ -1,6 +1,15 @@
+import { TileBranchSubstance } from "react-tile-pane";
 import { atom } from "jotai";
-import { NatsConnection, Subscription } from "nats.ws";
-import { CorpoType, NodeType, NpcType } from "./types";
+import {
+  CorpoInfo,
+  NatsInfo,
+  NodeInfo,
+  Note,
+  NoteInfo,
+  NpcInfo,
+  RollHistoryEntry,
+  SessionInfo,
+} from "./types";
 
 export const currentPage = atom<string>("");
 export const language = atom<string>("pl");
@@ -20,24 +29,8 @@ export const nodeClassSelected = atom<string | undefined>(undefined);
 
 export const selectedRollerDice = atom<string>("");
 
-export type RollHistoryEntry = {
-  id: string;
-  user: string;
-  time: string;
-  comment: string;
-  data: string;
-};
-
 export const stateRollHistory = atom<Record<string, RollHistoryEntry>>({});
 
-export type sessionDataType = {
-  username: string;
-  browserID: string;
-  remote: string;
-  hosting: boolean;
-  nats: string;
-  nats_token: string;
-};
 export const initialSessionData = {
   username: "",
   browserID: "",
@@ -46,16 +39,13 @@ export const initialSessionData = {
   nats: "",
   nats_token: "",
 };
-export const stateSessionData = atom<sessionDataType>(initialSessionData);
+export const stateSessionData = atom<SessionInfo>(initialSessionData);
 
 export const configOpen = atom<boolean>(false);
 
 // nats token: 03c2ba5c-c834-4afa-ac1b-355ae5ce7a1b
-export type NatsType = {
-  connection: NatsConnection | null;
-  sub: Subscription | null;
-};
-export const stateNats = atom<NatsType>({
+
+export const stateNats = atom<NatsInfo>({
   connection: null,
   sub: null,
 });
@@ -66,24 +56,12 @@ export type NatsMessage = {
 };
 export const queueInfo = atom<NatsMessage[]>([]);
 
-export type NoteType = {
-  id: string;
-  title: string;
-  content: string;
-  author: string;
-};
-
-export const statePrivateNotes = atom<Record<string, NoteType | undefined>>({});
-export const stateBoardNotes = atom<Record<string, NoteType | undefined>>({});
+export const statePrivateNotes = atom<Record<string, Note | undefined>>({});
+export const stateBoardNotes = atom<Record<string, Note | undefined>>({});
 
 export const stateStorageSize = atom<number>(0);
 
-export type NoteInfoType = {
-  open: boolean;
-  note: NoteType | undefined;
-};
-
-export const stateNoteInfo = atom<NoteInfoType>({
+export const stateNoteInfo = atom<NoteInfo>({
   open: false,
   note: undefined,
 });
@@ -92,9 +70,9 @@ export const stateSelNote = atom<string>("");
 export const stateNoteFilter = atom<string>("");
 
 export type GenStateType = {
-  corpo: Record<string, CorpoType | undefined>;
-  node: Record<string, NodeType | undefined>;
-  npc: Record<string, NpcType | undefined>;
+  corpo: Record<string, CorpoInfo | undefined>;
+  node: Record<string, NodeInfo | undefined>;
+  npc: Record<string, NpcInfo | undefined>;
 };
 
 export const stateGenerator = atom<GenStateType>({
@@ -102,3 +80,5 @@ export const stateGenerator = atom<GenStateType>({
   node: {},
   npc: {},
 });
+
+export const stateHudLayout = atom<TileBranchSubstance | null>(null);

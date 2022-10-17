@@ -1,4 +1,6 @@
-export type CorpoType = {
+import { NatsConnection, Subscription } from "nats.ws";
+
+export type CorpoInfo = {
   id: string;
   name: string;
   operations: string[];
@@ -6,7 +8,7 @@ export type CorpoType = {
   gossip: string;
 };
 
-export type NodeType = {
+export type NodeInfo = {
   id: string;
   name: string;
   node_class: string;
@@ -20,7 +22,7 @@ export type NodeType = {
   look: string;
 };
 
-export type NpcType = {
+export type NpcInfo = {
   id: string;
   name: string;
   surname: string;
@@ -29,4 +31,64 @@ export type NpcType = {
   goal: string;
   look: string;
   gear: string;
+};
+
+export type PcSlot = {
+  description: string;
+  fatigue: boolean;
+};
+
+export type PcMod = {
+  id: string;
+  name: string;
+  description: string;
+  activated: boolean;
+  need_activation: boolean;
+};
+
+export type PcInfo = {
+  id: string;
+  name: string;
+  bio: [number, number];
+  psy: [number, number];
+  inf: [number, number];
+  subscription: string;
+  credits: number;
+  inventory: PcSlot[];
+  cybermods: PcMod[];
+  cyberdeck: PcMod[];
+};
+
+export type RollHistoryEntry = {
+  id: string;
+  user: string;
+  time: string;
+  comment: string;
+  data: string;
+};
+
+export type SessionInfo = {
+  username: string;
+  browserID: string;
+  remote: string;
+  hosting: boolean;
+  nats: string;
+  nats_token: string;
+};
+
+export type Note = {
+  id: string;
+  title: string;
+  content: string;
+  author: string;
+};
+
+export type NoteInfo = {
+  open: boolean;
+  note: Note | undefined;
+};
+
+export type NatsInfo = {
+  connection: NatsConnection | null;
+  sub: Subscription | null;
 };

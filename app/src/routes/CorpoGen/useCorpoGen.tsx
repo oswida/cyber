@@ -2,7 +2,7 @@ import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
 import { useAtom } from "jotai";
 import { v4 as uuidv4 } from "uuid";
 import {
-  CorpoType,
+  CorpoInfo,
   doExport,
   doImport,
   hasString,
@@ -54,7 +54,7 @@ export const useCorpoGen = () => {
     roll = roller.roll(`1d${cgossip.length}`) as DiceRoll;
     const gossip = cgossip[roll.total - 1];
 
-    const retv: CorpoType = {
+    const retv: CorpoInfo = {
       id: uuidv4(),
       name: `${name1} ${name2}`,
       operations: domains,

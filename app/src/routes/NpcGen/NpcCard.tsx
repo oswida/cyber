@@ -1,11 +1,11 @@
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { useAtomValue } from "jotai";
-import { globalStr, language, NpcType } from "~/common";
+import { globalStr, language, NpcInfo } from "~/common";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
 import { useNpcGen } from "./useNpcGen";
 
 type NpcCardProps = {
-  data: NpcType;
+  data: NpcInfo;
   size?: "standard" | "small";
 };
 

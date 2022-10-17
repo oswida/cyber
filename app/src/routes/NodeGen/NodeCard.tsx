@@ -1,12 +1,12 @@
 import { faNetworkWired, faSkull } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtomValue } from "jotai";
-import { globalStr, language, NodeType } from "~/common";
+import { globalStr, language, NodeInfo } from "~/common";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
 import { useNodeGen } from "./useNodeGen";
 
 type NodeCardProps = {
-  data: NodeType;
+  data: NodeInfo;
   size?: "standard" | "small";
 };
 

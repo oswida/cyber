@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import {
   configOpen,
   language,
-  sessionDataType,
+  SessionInfo,
   stateNats,
   stateSessionData,
   stateStorageSize,
@@ -14,7 +14,7 @@ import { Button, Flex, Input, Modal, Text } from "~/component";
 export const Config = ({
   saveCallback,
 }: {
-  saveCallback: (data: sessionDataType) => void;
+  saveCallback: (data: SessionInfo) => void;
 }) => {
   const [sessionData, setSessionData] = useAtom(stateSessionData);
   const [co, setCo] = useAtom(configOpen);
@@ -62,7 +62,7 @@ export const Config = ({
       );
       return;
     }
-    const newValue: sessionDataType = {
+    const newValue: SessionInfo = {
       ...sessionData,
       username: nameRef.current.value,
       remote: remoteRef.current.value,
