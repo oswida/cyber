@@ -7,17 +7,19 @@ import {
   initialSessionData,
   stateBoardNotes,
   stateGenerator,
+  statePlayers,
   statePrivateNotes,
   stateSessionData,
   stateStorageSize,
 } from "./state";
-import { Note, SessionInfo } from "./types";
+import { Note, PcInfo, SessionInfo } from "./types";
 
 export const inodLayoutKey = "inod-hud-layout";
 export const inodSessionKey = "inod-session";
 export const inodNotesKey = "inod-notes";
 export const inodBoardKey = "inod-board";
 export const inodGenKey = "inod-gen";
+export const inodPlayersKey = "inod-players";
 
 export const useStorage = () => {
   const [, setSessionData] = useAtom(stateSessionData);
@@ -25,6 +27,7 @@ export const useStorage = () => {
   const [privNotes, setPrivNotes] = useAtom(statePrivateNotes);
   const [, setStoreSize] = useAtom(stateStorageSize);
   const [gen, setGen] = useAtom(stateGenerator);
+  const [players, setPlayers] = useAtom(statePlayers);
 
   const comp = (data: any) => {
     return compress(JSON.stringify(data));
@@ -105,18 +108,32 @@ export const useStorage = () => {
     updateStoreSize();
   };
 
+  const loadPlayers = () => {
+    const data = localStorage.getItem(inodPlayersKey);
+    if (data && data !== "") {
+      setPlayers(decomp(data));
+    }
+  };
+
+  const savePlayers = (state: Record<string, PcInfo | undefined>) => {
+    localStorage.setItem(inodPlayersKey, comp(state));
+    updateStoreSize();
+  };
+
   const updateStoreSize = () => {
     let size = 0;
-    let data = localStorage.getItem(inodLayoutKey);
-    size += data ? data.length : 0;
-    data = localStorage.getItem(inodSessionKey);
-    size += data ? data.length : 0;
-    data = localStorage.getItem(inodNotesKey);
-    size += data ? data.length : 0;
-    data = localStorage.getItem(inodBoardKey);
-    size += data ? data.length : 0;
-    data = localStorage.getItem(inodGenKey);
-    size += data ? data.length : 0;
+    const keys = [
+      inodLayoutKey,
+      inodSessionKey,
+      inodNotesKey,
+      inodBoardKey,
+      inodGenKey,
+      inodPlayersKey,
+    ];
+    keys.forEach((k) => {
+      const data = localStorage.getItem(k);
+      size += data ? data.length : 0;
+    });
     setStoreSize(size);
     return size;
   };
@@ -134,5 +151,7 @@ export const useStorage = () => {
     updateStoreSize,
     loadGen,
     saveGen,
+    loadPlayers,
+    savePlayers,
   };
 };

@@ -7,6 +7,7 @@ import {
   Note,
   NoteInfo,
   NpcInfo,
+  PcInfo,
   RollHistoryEntry,
   SessionInfo,
 } from "./types";
@@ -82,3 +83,14 @@ export const stateGenerator = atom<GenStateType>({
 });
 
 export const stateHudLayout = atom<TileBranchSubstance | null>(null);
+
+export const statePlayers = atom<Record<string, PcInfo | undefined>>({});
+
+export type PlayerFormState = {
+  item: PcInfo | undefined;
+  open: boolean;
+};
+export const statePlayerForm = atom<PlayerFormState>({
+  item: undefined,
+  open: false,
+});

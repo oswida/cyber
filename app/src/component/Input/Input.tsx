@@ -31,5 +31,10 @@ export const Input = styled("input", {
         borderBottom: "solid 1px $darkblue",
       },
     },
+    center: {
+      true: {
+        textAlign: "center",
+      },
+    },
   },
 });

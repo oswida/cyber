@@ -23,6 +23,7 @@ function App() {
     loadGen,
     loadBoardNotes,
     loadPrivateNotes,
+    loadPlayers,
   } = useStorage();
 
   useEffect(() => {
@@ -38,6 +39,7 @@ function App() {
     loadGen();
     loadBoardNotes();
     loadPrivateNotes();
+    loadPlayers();
     updateStoreSize();
   }, []);
 

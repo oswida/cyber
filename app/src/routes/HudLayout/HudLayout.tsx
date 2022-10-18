@@ -32,6 +32,7 @@ import { gmLayout, playerLayout } from "./layout";
 import { GenCorpoPane } from "./pane/GenPane/GenCorpoPane";
 import { GenNodePane } from "./pane/GenPane/GenNodePane";
 import { NotesPane } from "./pane/NotesPane";
+import { PlayerPane } from "./pane/PlayerPane";
 import { RollerPane } from "./pane/RollerPane";
 import { stretchBarConfig } from "./StretchBar";
 import { HudRoot, HudToolbar } from "./styles";
@@ -87,6 +88,7 @@ export const HudLayout = () => {
       roll: <RollerPane />,
       notes: <NotesPane isBoard={false} />,
       board: <NotesPane isBoard={true} />,
+      players: <PlayerPane />,
     });
     setPaneList(pl);
     setPaneNames(pn);

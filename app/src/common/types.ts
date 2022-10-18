@@ -52,11 +52,14 @@ export type PcInfo = {
   bio: [number, number];
   psy: [number, number];
   inf: [number, number];
+  hp: [number, number];
+  armor: number;
   subscription: string;
   credits: number;
   inventory: PcSlot[];
   cybermods: PcMod[];
   cyberdeck: PcMod[];
+  shared: boolean;
 };
 
 export type RollHistoryEntry = {
