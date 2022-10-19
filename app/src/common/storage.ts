@@ -1,3 +1,4 @@
+import { RollHistoryEntry } from "~/common";
 import { compress, decompress } from "@eonasdan/lz-string";
 import { useAtom } from "jotai";
 import { TileBranchSubstance } from "react-tile-pane";
@@ -9,6 +10,7 @@ import {
   stateGenerator,
   statePlayers,
   statePrivateNotes,
+  stateRollHistory,
   stateSessionData,
   stateStorageSize,
 } from "./state";
@@ -20,6 +22,7 @@ export const inodNotesKey = "inod-notes";
 export const inodBoardKey = "inod-board";
 export const inodGenKey = "inod-gen";
 export const inodPlayersKey = "inod-players";
+export const inodRollsKey = "inod-rolls";
 
 export const useStorage = () => {
   const [, setSessionData] = useAtom(stateSessionData);
@@ -28,6 +31,7 @@ export const useStorage = () => {
   const [, setStoreSize] = useAtom(stateStorageSize);
   const [gen, setGen] = useAtom(stateGenerator);
   const [players, setPlayers] = useAtom(statePlayers);
+  const [rollHistory, setRollHistory] = useAtom(stateRollHistory);
 
   const comp = (data: any) => {
     return compress(JSON.stringify(data));
@@ -120,6 +124,18 @@ export const useStorage = () => {
     updateStoreSize();
   };
 
+  const loadRolls = () => {
+    const data = localStorage.getItem(inodRollsKey);
+    if (data && data !== "") {
+      setRollHistory(decomp(data));
+    }
+  };
+
+  const saveRolls = (state: Record<string, RollHistoryEntry | undefined>) => {
+    localStorage.setItem(inodRollsKey, comp(state));
+    updateStoreSize();
+  };
+
   const updateStoreSize = () => {
     let size = 0;
     const keys = [
@@ -129,6 +145,7 @@ export const useStorage = () => {
       inodBoardKey,
       inodGenKey,
       inodPlayersKey,
+      inodRollsKey,
     ];
     keys.forEach((k) => {
       const data = localStorage.getItem(k);
@@ -153,5 +170,7 @@ export const useStorage = () => {
     saveGen,
     loadPlayers,
     savePlayers,
+    loadRolls,
+    saveRolls,
   };
 };

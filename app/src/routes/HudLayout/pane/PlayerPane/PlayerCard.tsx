@@ -166,22 +166,26 @@ export const PlayerCard = ({
           <Text size="middle" color="yellow">
             {activatedCybermods.length}/{item?.cybermods?.length}
           </Text>
-          <FontAwesomeIcon
-            icon={faPowerOff}
-            title="Deactivate all cybermods"
-            onClick={deactivateCybermods}
-          />
+          {activatedCybermods.length > 0 && (
+            <FontAwesomeIcon
+              icon={faPowerOff}
+              title="Deactivate all cybermods"
+              onClick={deactivateCybermods}
+            />
+          )}
           <Text size="middle" title={cdTooltip()}>
             Cyberdeck:{" "}
           </Text>
           <Text size="middle" color="yellow">
             {activatedPrograms.length}/{item?.cyberdeck?.length}
           </Text>
-          <FontAwesomeIcon
-            icon={faStopCircle}
-            title="Deactivate all programs"
-            onClick={deactivatePrograms}
-          />
+          {activatedPrograms.length > 0 && (
+            <FontAwesomeIcon
+              icon={faStopCircle}
+              title="Deactivate all programs"
+              onClick={deactivatePrograms}
+            />
+          )}
         </Flex>
       </Flex>
       {item && item.shared && (

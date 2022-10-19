@@ -1,3 +1,5 @@
+import { faEraser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom } from "jotai";
 import { compare } from "nats.ws/lib/nats-base-client/semver";
 import { useEffect, useRef } from "react";

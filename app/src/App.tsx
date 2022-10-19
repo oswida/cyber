@@ -24,6 +24,7 @@ function App() {
     loadBoardNotes,
     loadPrivateNotes,
     loadPlayers,
+    loadRolls,
   } = useStorage();
 
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
     loadBoardNotes();
     loadPrivateNotes();
     loadPlayers();
+    loadRolls();
     updateStoreSize();
   }, []);
 
