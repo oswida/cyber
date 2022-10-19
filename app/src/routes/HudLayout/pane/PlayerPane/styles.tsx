@@ -28,6 +28,7 @@ export const ContentItem = styled(Flex, {
   borderRadius: 5,
   padding: 10,
   marginRight: 10,
+
   backgroundColor: "$background",
   variants: {
     selected: {

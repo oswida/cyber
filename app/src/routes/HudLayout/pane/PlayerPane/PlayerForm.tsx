@@ -1,8 +1,15 @@
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import Scrollbars from "react-custom-scrollbars-2";
 import { useForm } from "react-hook-form";
-import { PcInfo, statePlayerForm, statePlayers } from "~/common";
+import {
+  PcInfo,
+  stateNats,
+  statePlayerForm,
+  statePlayers,
+  topicChars,
+  useNats,
+} from "~/common";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, Modal, Text } from "~/component";
 import { CyberdeckForm } from "./CyberdeckForm";
@@ -16,6 +23,8 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
   const { register, handleSubmit, watch, setValue, getValues, control } =
     useForm<PcInfo>();
   const { savePlayers } = useStorage();
+  const { publish } = useNats();
+  const nats = useAtomValue(stateNats);
 
   useEffect(() => {
     if (!item) return;
@@ -38,12 +47,12 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
     setPlayers(newState);
     savePlayers(newState);
     setPf({ item: undefined, open: false });
-    //TODO: share data
+    if (data.shared) {
+      publish(nats.connection, topicChars, [data]);
+    }
   };
 
   const deleteItem = () => {
-    console.log("delete item", item);
-
     if (!item) return;
     const newState = { ...players };
     newState[item.id] = undefined;

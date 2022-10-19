@@ -2,6 +2,7 @@ import { useAtom } from "jotai";
 import { useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { stateSessionData, useNats } from "~/common";
+import { useStorage } from "~/common/storage";
 
 export const Connect = () => {
   const [params] = useSearchParams();
@@ -9,6 +10,7 @@ export const Connect = () => {
 
   const [sessionData, setSessionData] = useAtom(stateSessionData);
   const { connectNats } = useNats();
+  const { saveSessionData } = useStorage();
 
   useEffect(() => {
     if (!params) return;
@@ -30,6 +32,7 @@ export const Connect = () => {
     };
 
     setSessionData(newState);
+    saveSessionData(newState);
     connectNats(newState).then(() => {
       navigate("/");
     });

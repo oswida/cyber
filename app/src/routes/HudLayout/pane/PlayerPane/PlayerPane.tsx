@@ -1,9 +1,20 @@
 import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
-import { useAtom, useSetAtom } from "jotai";
-import { useRef, useState } from "react";
+import { useAtom, useAtomValue, useSetAtom } from "jotai";
+import { useMemo, useRef, useState } from "react";
 import Scrollbars from "react-custom-scrollbars-2";
 import { v4 as uuidv4 } from "uuid";
-import { PcInfo, statePlayerForm, statePlayers } from "~/common";
+import {
+  doExport,
+  doImport,
+  PcInfo,
+  prettyToday,
+  stateNats,
+  statePlayerForm,
+  statePlayers,
+  stateSessionData,
+  topicChars,
+  useNats,
+} from "~/common";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, Icon, Input, Text } from "~/component";
 import { HudPane } from "../../styles";
@@ -17,6 +28,9 @@ export const PlayerPane = () => {
   const [sel, setSel] = useState("");
   const [pf, setPf] = useAtom(statePlayerForm);
   const { savePlayers } = useStorage();
+  const sessionData = useAtomValue(stateSessionData);
+  const { publish } = useNats();
+  const nats = useAtomValue(stateNats);
 
   const clear = () => {
     if (!nameRef.current) return;
@@ -47,11 +61,23 @@ export const PlayerPane = () => {
     savePlayers(newState);
   };
 
-  const exportPlayers = () => {};
+  const exportPlayers = () => {
+    const filename = `players-${prettyToday()}.json`;
+    doExport(players, filename);
+  };
 
   const importPlayers = () => {
-    //TODO: share data
+    doImport((data: any) => {
+      setPlayers(data);
+      if (sessionData.hosting) {
+        publish(nats.connection, topicChars, [Object.values(data)]);
+      }
+    });
   };
+
+  const currentItem = useMemo(() => {
+    return pf.item;
+  }, [pf]);
 
   return (
     <HudPane>
@@ -93,7 +119,7 @@ export const PlayerPane = () => {
           )}
         </Scrollbars>
       </ListRoot>
-      <PlayerForm item={pf.item} />
+      {currentItem && <PlayerForm item={currentItem} />}
     </HudPane>
   );
 };

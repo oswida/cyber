@@ -1,7 +1,8 @@
+import { useStorage } from "~/common/storage";
 import { useAtomValue, useSetAtom } from "jotai";
 import { useAtomCallback } from "jotai/utils";
 import { useCallback } from "react";
-import { RollHistoryEntry } from "~/common";
+import { Note, PcInfo, RollHistoryEntry, SessionInfo } from "~/common";
 
 import {
   connect,
@@ -12,10 +13,9 @@ import {
 } from "nats.ws";
 import {
   NatsMessage,
-  NoteType,
-  sessionDataType,
   stateBoardNotes,
   stateNats,
+  statePlayers,
   stateRollHistory,
   stateSessionData,
 } from "./state";
@@ -24,6 +24,7 @@ export const topicInfo = "TopicInfo";
 export const topicConnect = "TopicConnect";
 export const topicRoll = "TopicRoll";
 export const topicBoard = "TopicBoard";
+export const topicChars = "TopicChars";
 // 03c2ba5c-c834-4afa-ac1b-355ae5ce7a1b
 
 export const useNats = () => {
@@ -31,6 +32,7 @@ export const useNats = () => {
   const sessionData = useAtomValue(stateSessionData);
   const setRollHistory = useSetAtom(stateRollHistory);
   const setNats = useSetAtom(stateNats);
+  const setPlayers = useSetAtom(statePlayers);
   const setBoardState = useSetAtom(stateBoardNotes);
   const cnats = useAtomCallback(
     useCallback(
@@ -56,6 +58,15 @@ export const useNats = () => {
       [stateBoardNotes]
     )
   );
+  const cPlayers = useAtomCallback(
+    useCallback(
+      (get, set) => {
+        return get(statePlayers);
+      },
+      [statePlayers]
+    )
+  );
+  const { saveBoardNotes, savePlayers } = useStorage();
 
   const unpackNatsMsg = (msg: Msg): NatsMessage => {
     return JSON.parse(sc.decode(msg.data));
@@ -98,7 +109,7 @@ export const useNats = () => {
     connection.publish(tp, packNatsMsg(m));
   };
 
-  const connectNats = async (data: sessionDataType) => {
+  const connectNats = async (data: SessionInfo) => {
     if (data.nats.trim() === "") return;
     const nats = await cnats();
     if (nats.connection !== null && nats.connection.getServer() === data.nats)
@@ -126,7 +137,7 @@ export const useNats = () => {
     });
   };
 
-  const processIncoming = async (sub: Subscription, data: sessionDataType) => {
+  const processIncoming = async (sub: Subscription, data: SessionInfo) => {
     for await (const msg of sub) {
       const m = unpackNatsMsg(msg);
       if (m.sender === sessionData.browserID) {
@@ -135,30 +146,40 @@ export const useNats = () => {
       const cn = await cnats();
       const rollHistory = await crollHistory();
       const boardState = await cboardState();
+      const playerState = await cPlayers();
       if (msg.subject === getTopic(topicConnect)) {
         if (sessionData.hosting) {
           publish(cn.connection, topicRoll, Object.values(rollHistory));
           publish(cn.connection, topicBoard, Object.values(boardState));
+          publish(
+            cn.connection,
+            topicChars,
+            Object.values(playerState).filter((it) => it?.shared)
+          );
         }
-        continue;
-      }
-      if (msg.subject === getTopic(topicRoll)) {
+      } else if (msg.subject === getTopic(topicRoll)) {
         const rolls = JSON.parse(m.data) as RollHistoryEntry[];
         const newState = { ...rollHistory };
         rolls.forEach((roll) => {
           newState[roll.id] = roll;
         });
         setRollHistory(newState);
-        continue;
-      }
-      if (msg.subject === getTopic(topicBoard)) {
-        const notes = JSON.parse(m.data) as NoteType[];
+      } else if (msg.subject === getTopic(topicBoard)) {
+        const notes = JSON.parse(m.data) as Note[];
         const newState = { ...boardState };
         notes.forEach((note) => {
           newState[note.id] = note;
         });
         setBoardState(newState);
-        continue;
+        saveBoardNotes(newState);
+      } else if (msg.subject === getTopic(topicChars)) {
+        const chars = JSON.parse(m.data) as PcInfo[];
+        const newState = { ...playerState };
+        chars.forEach((cr) => {
+          newState[cr.id] = cr;
+        });
+        setPlayers(newState);
+        savePlayers(newState);
       }
     }
   };
