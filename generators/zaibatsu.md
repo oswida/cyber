@@ -126,30 +126,145 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 | 19  |    2    | Zbudowali tajną bazę na Księżycu                                                | Opracowali nanotechnologię, pozwalającą produkować dowolne rzeczy z każdej materii |
 | 20  |    2    | Są odpowiedzialni za serię epidemii w różnych miejscach na świecie              | Opracowali technologię zdalnej kontroli ludzkiego umysłu                           |
 
-## Slogan (1k20 + 1k20)
+## Produkt najlepszy na świecie
 
-Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
+### Badania i rozwój
 
-| k20 | Kolumna | C1 `(1-7)`                         | C2 `(8-14)`                       | C3 `(15-20)`                         |
-| --- | :-----: | ---------------------------------- | --------------------------------- | ------------------------------------ |
-| 1   |    1    | Bądź najlepszy                     | Nic nie pobije tego, co najlepsze | To Twój wybór                        |
-| 2   |    1    | Biznes na miarę Twoich możliwości  | Nieskończone możliwości           | Twoje życzenie jest dla nas rozkazem |
-| 3   |    1    | Budujemy przyszłość                | Niezłomny duch                    | Ty jesteś na pierwszym miejscu       |
-| 4   |    1    | Chwila harmonii                    | Nigdy nie przestawaj marzyć       | Tylko to, co najlepsze               |
-| 5   |    1    | Chwile błogości                    | Odważ się być sobą                | Sukces to nasze dziedzictwo          |
-| 6   |    1    | Dajemy ci siłę                     | Opiekujemy się Tobą               | Uwolnij swoją moc                    |
-| 7   |    1    | Dla tych, którym zależy            | Otwieramy cię na możliwości       | Wierzymy w Ciebie.                   |
-| 8   |    2    | Do ciebie należy decyzja           | Podnosimy poprzeczkę              | Wszyscy jak jeden mąż                |
-| 9   |    2    | Doświadczenie jest kluczem         | Ponad wszelkimi granicami         | Wyobraź sobie jutro                  |
-| 10  |    2    | Dotrzymujemy obietnic              | Prawdziwe wrażenia                | Wyobraź sobie niemożliwe             |
-| 11  |    2    | Jakość przede wszystkim            | Przekraczamy granice              | Zapewniamy doskonałość               |
-| 12  |    2    | Jesteśmy zawsze z Tobą             | Przemyślane rozwiązania           | Zaskocz siebie samego                |
-| 13  |    2    | Każdy potrzebuje przerwy           | Przepis na sukces                 | Zaufaj nam                           |
-| 14  |    2    | Komfort w Twoich rękach            | Rewolucja to Ty                   | Zawsze na pierwszej linii            |
-| 15  |    3    | Lepsze standardy                   | Rośniemy z Tobą                   | Zmieniające się jutro                |
-| 16  |    3    | Małe przyjemności, wielkie radości | Standardy doskonałości            | Zmieniamy jutro                      |
-| 17  |    3    | Mistrzowska perfekcja              | Sztuka doskonałości               | Zmień swoje życie                    |
-| 18  |    3    | Myślimy pozytywnie                 | Teraz nadszedł czas               | Żadnych problemów                    |
-| 19  |    3    | Nam zależy                         | To dopiero początek               | Żyj chwilą                           |
-| 20  |    3    | Następne pokolenie                 | To nasza pasja                    | Żyj swoimi marzeniami                |
+1. SI do wielowymiarowej analizy danych i wyszukiwania
+2. Wzmacniacze kognitywne
+3. Sprzęt do diagnostyki i kalibracji wszczepów
+4. SI (de-)szyfrujące i kompresujące dane
+5. Neuroprocesory i sprzęt do zapisu/odczytu ludzkiej pamięci
+6. Kompleksowe wyposażenie laboratoriów naukowych
 
+### Bezpieczeństwo
+
+1. Zapory i LOD do ochrony węzłów Infosfery
+2. Kompleksowe automatyczne systemy strażnicze (kamery, drony, roboty)
+3. Genetycznie modyfikowane zwierzęta z wszczepami wykorzystywane jako strażnicy
+4. Sieci sensorów (alarmy, czujniki)
+5. Szkolenia strażników i agentów ochrony, fizyczne zabezpieczenie mienia
+6. Sejfy, skrytki i zamki elektroniczne
+
+### Biotechnologia
+
+1. 
+
+Broń i amunicja
+
+1. Broń palna niezawodna w każdych warunkach środowiskowych 
+2. Personalne emitery impulsu EMP
+3. Amunicja o zwiększonej sile rażenia lub specyficznych właściwościach (okruchy radioaktywne, materiały znakujące)
+4. 
+
+### Cybertechnika
+
+1. Wszczepy optyczne i słuchowe poszerzające percepcję lub filtrujące niechciane bodźce
+2. Zawodne ale bardzo tanie wszczepy różnego rodzaju (cybermod dla każdego)
+3. 
+
+Edukacja               
+Elektronika            
+Energetyka             
+### Genetyka
+
+1. Hodowla zwierząt z wybranymi  modyfikacjami genetycznymi
+2. 
+### Górnictwo
+
+1. Niewykrywalne, miniaturowe ładunki wybuchowe
+2. Autonomiczne roboty górnicze
+3. 
+
+Gry komputerowe
+
+1. Rozwój i utrzymanie personalnych osiągnięć w grach online
+2. Spersonalizowane gry edukacyjne dla pracowników
+3. Dedykowane gry taktyczne dla oddziałów bojowych
+4. 
+
+Media                  
+Nanotechnologia        
+Oprogramowanie         
+Przemysł chemiczny     
+Przemysł ciężki        
+### Przemysł farmaceutyczny
+
+1. Systemy permanentnego nanomakijażu
+2. 
+
+Przemysł komputerowy   
+Przemysł kosmiczny     
+Przemysł lotniczy      
+Przemysł maszynowy  
+Przemysł morski     
+### Przemysł odzieżowy
+
+1. Kombinezony kamuflujące i ekranujące
+2. Odzież ochronna, pancerze, superwytrzymałe ubrania
+3. 
+
+Przemysł precyzyjny 
+Przemysł samochodowy
+### Przemysł spożywczy
+
+1. Bezpieczne stymulanty na bazie naturalnych hormonów
+2. Samopodgrzewające, hermetyczne pakiety żywnościowe
+3. 
+
+### Robotyka
+
+1. Androidy służebne lub specjalizowane do opieki nad dziećmi
+2. 
+
+Rolnictwo           
+### Rozrywka
+
+1. Rekordery i symulatory wrażeń zmysłowych
+2. 
+
+Telekomunikacja     
+Usługi audytu       
+Usługi doradcze     
+Usługi finansowe    
+### Usługi komunalne
+
+1. Automatyczne systemy czyszczące i sprzątające
+2. Automatyczne systemy kontroli ruchu
+
+### Usługi kurierskie
+
+1. 
+### Usługi medyczne
+
+1. Sprzęt i usługi kriogeniczne
+2. Kompleksowe usługi ratownictwa medycznego
+3. 
+### Usługi militarne
+
+1. Dedykowane, prywatne armie
+2. 
+
+### Usługi prawnicze
+
+1. Procedury wyzwoleńcze dla SI
+2. Pozwy i wsparcie procesowe przeciwko korporacjom
+3. Pozwy i wsparcie procesowe przeciwko instytucjom Administracji
+4. Usługi negocjacyjne
+5. Komunikacja międzykulturowa, kodeksy zachowań subkulturowych
+6. 
+
+
+### Usługi transportowe
+
+1. Paczki dostarczane za pomocą dronów (gwarantowana dyskrecja)
+2. Automatyczne pojazdy transportowe
+3. Transport materiałów i osób niebezpiecznych
+4. Błyskawiczna dystrybucja do masowego odbiorcy (ulotki, szczepionki)
+5. 
+
+### Utylizacja odpadów
+
+1. Środowiskowe kombinezony ochronne
+2. Leki antymutagenne i antyradiacyjne
+3. 
