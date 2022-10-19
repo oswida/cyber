@@ -111,7 +111,7 @@ export const HudLayout = () => {
   const handleLayoutChange = (node: TileBranchSubstance) => {
     setHudSel(false);
     saveLayout(node);
-    window.location.href = "/";
+    window.location.href = window.location.href;
   };
 
   return (
@@ -127,6 +127,13 @@ export const HudLayout = () => {
           <Button size="small" onClick={() => setCo(true)}>
             Config
           </Button>
+          <Text
+            size="middle"
+            color="blue"
+            css={{ alignSelf: "center", marginLeft: 20 }}
+          >
+            {sessionData.username}
+          </Text>
         </Flex>
         {nats.connection !== null && sessionData.hosting && (
           <Text size="small">Hosting on {sessionData.browserID}</Text>
