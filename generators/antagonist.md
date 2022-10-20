@@ -7,6 +7,18 @@ nav_order: 6
 
 # Antagoniści
 
+Szybki generator antagonistów w postaci oddziału oraz przykłady pojedynczych przedstawicieli danego rodzaju.
+
+Zasada określania współczynników postaci:
+- OCHR wynosi **3** jeśli nie podano
+- Zdolności (BIO,PSY,INF) wynoszą **10** jeśli nie podano
+- Pancerz wynosi **0** jeśli nie podano
+
+Termin `X na Y` określa prawdopodobieństwo z jakim cecha występuje podczas starcia.
+
+> Przykład
+> Snajperzy w danym oddziale dają szansę `1 na 6`, że atak danej postaci w aktualnej rundzie będzie rozliczany jako wzmocniony. Innymi słowy, dla każdej rundy, rzucamy jednokrotnie k6 i jeśli wypadnie jedynka - jeden, wybrany atak możemy rozliczyć jako **wzmocniony**. 
+
 ## Typ
 
 1. Gang/inna grupa runnerów
@@ -30,20 +42,24 @@ nav_order: 6
 |   5   | Kompetentny zarządca | Z lekka fanatyczni, połączeni wspólną sprawą  |
 |   6   | Ulubieniec grupy     | Luzaki na wakacjach                           |
 
-|  k6   | Dodatkowa broń | Specyficzny szczegół                                             |
-| :---: | :------------: | ---------------------------------------------------------------- |
-|   1   |       -        | nawszczepiani po uszy, `1 na 6: +1 do rzutów obronnych`          |
-|   2   |     EMP k4     | weterani, `1 na 6:atak wzmocniony`                               |
-|   3   |    haker k6    | posługują się zmutowanymi zwierzętami w walce                    |
-|   4   |    robot k6    | świetnie wykorzystują warunki otoczenia (bonusy do ochrony)      |
-|   5   |   palna k12    | doskonale się ukrywają (bonusy do zaskoczenia, ucieczki, osłony) |
-|   6   |    dron k6     | niesamowicie twardzi (bonusy do ochrony i siły)                  |
+|  k6   | Dodatkowa broń | Specyficzny szczegół                                               |
+| :---: | :------------: | ------------------------------------------------------------------ |
+|   1   |       -        | nawszczepiani po uszy, `1 na 6: +1 do wszystkich rzutów obronnych` |
+|   2   |     EMP k4     | weterani, `1 na 6:atak wzmocniony`                                 |
+|   3   |    haker k6    | posługują się zmutowanymi zwierzętami w walce                      |
+|   4   |    robot k6    | świetnie wykorzystują warunki otoczenia (bonusy do ochrony)        |
+|   5   |   palna k12    | doskonale się ukrywają (bonusy do zaskoczenia, ucieczki, osłony)   |
+|   6   |    dron k6     | niesamowicie twardzi (bonusy do ochrony i siły)                    |
 
-**Wojownik**
-**Czujka**
-**Haker**
-**Technik/mechanik**
-**Kierowca/pilot**
+**Wojownik**: 4 OCHR, 1 Pancerz, 12 BIO, pistolet k6 lub miecz k8, wszczep +BIO
+
+**Czujka**: 4 OCHR, 12 PSY, noże k6, wszczep +BIO do percepcji
+
+**Haker**: 3 OCHR, 12 PSY, pistolet k6, neuroprocesor k4/k6
+
+**Technik/mechanik**: 4 OCHR, 12 BIO, shotgun k6, wszczep +INF do sterowania dronem/robotem
+
+**Kierowca/pilot**: 4 OCHR, 12 BIO, shotgun k6, wszczep +BIO do kierowania pojazdem
 
 ### 2. Policja/strażnicy
 
@@ -66,11 +82,16 @@ nav_order: 6
 |   6   |        dron k6        | Snajperzy: `1 na 6: atak wzmocniony`                                     |
 
 
-**Strażnik korporacyjny**
-**Policjant**
-**Detektyw policyjny**
-**Haker ochroniarz**
-**Ochroniarz klubowy**
+**Strażnik korporacyjny**: 5 OCHR, 12 BIO, 11 PSY, strzelba k6
+
+**Policjant**: 4 OCHR, 13 BIO, 12 PSY, karabin k8, granaty dymne, gaz łzawiący
+
+**Detektyw policyjny**: 5 OCHR, 14 PSY, pistolet k6, 
+
+**Haker ochroniarz**: 3 OCHR, 14 PSY, 13 INF, pistolet k6, neuroprocesor k8
+
+**Ochroniarz klubowy**: 6 OCHR, 13 BIO, 12 PSY, pałka/nóż k6, wszczep +BIO do akrobatyki, zwinności
+
 
 ### 3. Oddział wojskowy/służby specjalne
 
@@ -92,12 +113,15 @@ nav_order: 6
 |   5   |        EMP k8         | Zgrany oddział: `2 na 6: bonusy do ochrony`               |
 |   6   |       palna k10       | Wzmocnienie fizyczne: `3 na 6: bonusy do rzutów BIO`      |
 
-**Żołnierz/specjalista**
-**Oficer**
-**Agent służb specjalnych**
-**Funkcjonariusz oddziału antyterrorystycznego**
-**Szpieg**
+**Żołnierz/specjalista**: 5 OCHR, 1 Pancerz, 13 BIO, karabin k8
 
+**Oficer**: 6 OCHR, 1 Pancerz, 14 BIO, 12 PSY, pistolet k6
+
+**Agent służb specjalnych**: 6 OCHR, 1 Pancerz, 15 BIO, 14 PSY, 11 INF, pistolet k6, wszczep +OCHR
+
+**Funkcjonariusz oddziału antyterrorystycznego**: 7 OCHR, 2 Pancerz, 16 BIO, 13 PSY, 12 INF, karabin k8, wszczep +BIO
+
+**Szpieg**: 5 OCHR, 12 BIO, 15 PSY, 15 INF, pistolet k6, wszczep +INF, neuroprocesor k4
 
 ### 4. Terroryści/tłum uliczny
 
@@ -119,13 +143,15 @@ nav_order: 6
 |   5   |       haker k4       | Słuszny gniew: dylematy moralne u przeciwników               |
 |   6   |       palna k8       | Napór tłumu: `2 na 6: ułatwiony rzut na obrażenia krytyczne` |
 
+**Bojownik**: 3 OCHR, 11 BIO, nóż k6 lub miecz k8
 
-**Bojownik**
-**Kamikadze**
-**Przypadkowy uczestnik zamieszek**
-**Fanatyk**
-**Weteran uliczny**
+**Kamikadze**: 3 OCHR, 11 PSY, ładunki wybuchowe k6
 
+**Przypadkowy uczestnik zamieszek**: 3 OCHR, pałka/nóż k6
+
+**Fanatyk**: 3 OCHR, 9 PSY, nóż k6 lub miecz k8
+
+**Weteran uliczny**: 4 OCHR, 11 BIO, 12 PSY, pistolet k6
 
 ### 5. Oddział korporacyjny/grupa najemników
 
@@ -147,11 +173,15 @@ nav_order: 6
 |   5   | pojazd opancerzony k10 | Komunikacja: `3 na 6: ułatwione rzuty INF, BIO`                                  |
 |   6   |       haker k10        | Osłony elektromag.: `3 na 6: ekranowanie EMP i utrudnione rzuty INF przeciwnika` |
 
-**Zwiadowca**
-**Snajper**
-**Haker bojowy**
-**Operator dronów bojowych**
-**Specjalista broni ciężkiej**
+**Zwiadowca**: 4 OCHR, pistolet k6, ładunki wybuchowe k4, jeśli wykonał rozpoznanie - daje oddziałowi bonus do OCHR
+
+**Snajper**: 4 OCHR, 11 BIO, 12 PSY, karabin k8, atak wzmocniony (jeśli strzela z ukrycia lub zdany test PSY w sytuacji stresu)
+
+**Haker bojowy**: 4 OCHR, 13 PSY, 14 INF, neuroprocesor k8, lodołamacz k4
+
+**Operator dronów bojowych**: 4 OCHR, 13 BIO, 11 PSY ,12 INF, dron bojowy k6 lub k8
+
+**Specjalista broni ciężkiej**: 6 OCHR, 1 Pancerz, 14 BIO, broń ciężka k10 lub k12
 
 ### 6. Cyberpsychole/mutanci
 
@@ -173,8 +203,12 @@ nav_order: 6
 |   5   |       biała k10       | Naturalna pancerz: bonus do pancerza                          |
 |   6   | trucizny, gazy bojowe | Wszczepy bojowe: ataki rozliczane jako broń podwójna          |
 
-**Cyberserk**
-**Antytech**
-**Hybryda**
-**Infomutant**
-**Zbuntowana SI**
+**Cyberserk**: 6 OCHR, 2 Pancerz, 15 BIO, 6 PSY, karabin k8 lub piła mechaniczna k10, wszczep +BIO 
+
+**Antytech**: 3 OCHR, 11 INF, pistolet k6, jammer: przeciwnik ma utrudnione testy INF
+
+**Hybryda**: 4 OCHR, 1 Pancerz, 13 BIO, kły/pazury k6 lub kwas/trucizna k8, Obrażenia krytyczne: infekcja - dodatkowe obrażenia k4
+
+**Infomutant**: 3 OCHR, 15 PSY, 15 INF, neuroprocesor k8, oprogramowanie z bonusem do OCHR
+
+**Zbuntowana SI**: 8 OCHR, 16 INF, czarny LOD k10, oprogramowanie Pancerz 2
