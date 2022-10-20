@@ -2,6 +2,7 @@ import { faEraser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtomValue, useSetAtom } from "jotai";
 import { language, stateRollHistory } from "~/common";
+import { useStorage } from "~/common/storage";
 import { Button, Flex } from "~/component";
 import { HudPane } from "../../styles";
 import { RollButton } from "./RollButton";
@@ -12,9 +13,11 @@ import { RollButtons } from "./styles";
 export const RollerPane = () => {
   const lang = useAtomValue(language);
   const setRolls = useSetAtom(stateRollHistory);
+  const { saveRolls } = useStorage();
 
   const clearRolls = () => {
     setRolls({});
+    saveRolls({});
   };
   return (
     <HudPane>

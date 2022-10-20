@@ -5,7 +5,7 @@ parent: Generatory
 nav_order: 3
 ---
 
-# Generator zaibatsu
+# Generator zaibatsu (w przygotowaniu)
 
 [Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/corpo)
 
@@ -14,7 +14,7 @@ nav_order: 3
 - 2 rzuty na części składowe nazwy w odpowiednich tabelach
 - 1-2 rzuty na branżę
 - Co najmniej jeden rzut na plotkę
-- 1 rzut na slogan
+- 1 rzut na produkt flagowy
 
 ## Nazwa 1 (1k20 + 1k20)
 
@@ -126,7 +126,7 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 | 19  |    2    | Zbudowali tajną bazę na Księżycu                                                | Opracowali nanotechnologię, pozwalającą produkować dowolne rzeczy z każdej materii |
 | 20  |    2    | Są odpowiedzialni za serię epidemii w różnych miejscach na świecie              | Opracowali technologię zdalnej kontroli ludzkiego umysłu                           |
 
-## Produkt najlepszy na świecie
+## Produkt flagowy
 
 ### Badania i rozwój
 
@@ -144,89 +144,157 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 3. Genetycznie modyfikowane zwierzęta z wszczepami wykorzystywane jako strażnicy
 4. Sieci sensorów (alarmy, czujniki)
 5. Szkolenia strażników i agentów ochrony, fizyczne zabezpieczenie mienia
-6. Sejfy, skrytki i zamki elektroniczne
+6. Hakerzy-specjaliści do wynajęcia - pełna gama cenowa i jakościowa
 
 ### Biotechnologia
 
-1. 
+1. Miniaturowe farmy wielkości szafy do hodowania żywności we własnym domu
 
-Broń i amunicja
+### Budownictwo
+
+1. Schrony każdego typu
+2. Eksluzywne, zautomatyzowane domy jednorodzinne
+3. Zautomatyzowane hotele kapsułowe
+4. 
+
+### Broń i amunicja
 
 1. Broń palna niezawodna w każdych warunkach środowiskowych 
 2. Personalne emitery impulsu EMP
 3. Amunicja o zwiększonej sile rażenia lub specyficznych właściwościach (okruchy radioaktywne, materiały znakujące)
-4. 
+4. Broń nieśmiercionośna: paralizatory, sieci, ogłuszacze
+5. Eksluzywna broń biała (miecze, noże)
+6. Broń znaczona genetycznie, nikt poza właścicielem nie może jej użyć
 
 ### Cybertechnika
 
 1. Wszczepy optyczne i słuchowe poszerzające percepcję lub filtrujące niechciane bodźce
 2. Zawodne ale bardzo tanie wszczepy różnego rodzaju (cybermod dla każdego)
+3. Wzmocnienia mięśni i szkieletu wszelkiego rodzaju
+4. Cybernetyczne kończyny
+
+### Edukacja               
+
+### Elektronika
+
+1. Cyberdeki
+2. 
+
+### Energetyka
+
+1. Ładowarki urządzeń elektrycznych, które korzystają z biologicznych funkcji organizmu
+2. Paralizatory
 3. 
 
-Edukacja               
-Elektronika            
-Energetyka             
 ### Genetyka
 
 1. Hodowla zwierząt z wybranymi  modyfikacjami genetycznymi
-2. 
+2. Mutanty bojowe bazujące na owadach
+3. Usługi klonowania dowolnych organizmów żywych poza ludźmi
+4. 
+
+
+
 ### Górnictwo
 
 1. Niewykrywalne, miniaturowe ładunki wybuchowe
 2. Autonomiczne roboty górnicze
-3. 
+3. Cybermodyfikacje wzmacniające mięśnie i szkielet
+4. 
 
-Gry komputerowe
+### Gry komputerowe
 
 1. Rozwój i utrzymanie personalnych osiągnięć w grach online
 2. Spersonalizowane gry edukacyjne dla pracowników
 3. Dedykowane gry taktyczne dla oddziałów bojowych
 4. 
 
-Media                  
-Nanotechnologia        
-Oprogramowanie         
-Przemysł chemiczny     
-Przemysł ciężki        
+### Media
+
+1. Stymulatory nastroju - emitują fale wzbudzające tymczasowe uczucia różnego rodzaju
+2. Projektory holograficzne
+3. Zestawy rozszerzonej rzeczywistości
+4. 
+
+
+
+### Nanotechnologia
+
+1. Nanoboty medyczne
+
+
+### Oprogramowanie         
+### Przemysł chemiczny     
+### Przemysł ciężki        
 ### Przemysł farmaceutyczny
 
 1. Systemy permanentnego nanomakijażu
-2. 
+2. Kosmetyki odmładzające
+3. 
+4. 
 
-Przemysł komputerowy   
-Przemysł kosmiczny     
-Przemysł lotniczy      
-Przemysł maszynowy  
-Przemysł morski     
+### Przemysł komputerowy
+
+1. Cyberdeki
+2. 
+  
+### Przemysł lotniczy
+
+1. Drony transportowe
+2. Drony zwiadowcze i inspekcyjne
+3. Transportowce powietrzne
+4. 
+
+
+### Przemysł maszynowy  
+   
 ### Przemysł odzieżowy
 
 1. Kombinezony kamuflujące i ekranujące
 2. Odzież ochronna, pancerze, superwytrzymałe ubrania
 3. 
 
-Przemysł precyzyjny 
-Przemysł samochodowy
+### Przemysł precyzyjny
+
+1. Sprzęt do tatuażu
+### Przemysł samochodowy
+
+1. Opancerzenie pojazdów
+2. Pojazdy transportowe
+3. 
 ### Przemysł spożywczy
 
 1. Bezpieczne stymulanty na bazie naturalnych hormonów
 2. Samopodgrzewające, hermetyczne pakiety żywnościowe
-3. 
+3. Konwertery spożywcze pozwalające na przetworzenie zepsutej żywności w wartościowe jedzenie
+4. Hermetyczne, niezniszczalne opakowania
+5. 
 
 ### Robotyka
 
 1. Androidy służebne lub specjalizowane do opieki nad dziećmi
-2. 
+2. Androidy bojowe
+3. Drony zwiadowcze i szpiegowskie
+4. Drony bojowe
+5. 
 
-Rolnictwo           
+### Rolnictwo
+
 ### Rozrywka
 
 1. Rekordery i symulatory wrażeń zmysłowych
-2. 
+2. Organizacja gier terenowych
 
-Telekomunikacja     
-Usługi audytu       
-Usługi doradcze     
-Usługi finansowe    
+### Telekomunikacja
+
+1. Sprzęt przeciwpodsłuchowy, urządzenia do transmisji szyfrowanych
+2. Jammery - zakłócanie transmisji radiowych dowolnego rodzaju
+3. Neuroprocesory
+4. 
+
+
+
+
 ### Usługi komunalne
 
 1. Automatyczne systemy czyszczące i sprzątające
@@ -234,7 +302,11 @@ Usługi finansowe
 
 ### Usługi kurierskie
 
-1. 
+1. Sieć anonimowych skrytek pozwalających na dyskretną wymianę niewielkich pakunków
+2. Bezpieczne przechowywanie i dostarczanie wiadomości/dokumentów przekazywanych w razie śmierci lub zaginięcia klienta
+3. 
+
+
 ### Usługi medyczne
 
 1. Sprzęt i usługi kriogeniczne
@@ -242,8 +314,10 @@ Usługi finansowe
 3. 
 ### Usługi militarne
 
-1. Dedykowane, prywatne armie
-2. 
+1. Dedykowane, doskonale wyszkolone prywatne oddziały uderzeniowe
+2. Tanie, pobieżnie przeszkolone oddziały o dużej liczebności i zredukowanym poziomie instynktu samozachowawczego
+3. Specjaliści wywiadu gospodarczego i wojskowego
+4. 
 
 ### Usługi prawnicze
 
@@ -252,7 +326,7 @@ Usługi finansowe
 3. Pozwy i wsparcie procesowe przeciwko instytucjom Administracji
 4. Usługi negocjacyjne
 5. Komunikacja międzykulturowa, kodeksy zachowań subkulturowych
-6. 
+6. Realizacja "ostatniej woli" klienta, nawet tej najbardziej nieprawdopodobnej czy egzotycznej
 
 
 ### Usługi transportowe
@@ -267,4 +341,5 @@ Usługi finansowe
 
 1. Środowiskowe kombinezony ochronne
 2. Leki antymutagenne i antyradiacyjne
-3. 
+3. Systemy wykrywania substancji szkodliwych (trucizny, wirusy biologiczne)
+4. 

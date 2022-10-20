@@ -91,7 +91,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   css={{
                     width: 250,
                   }}
-                  defaultValue={item?.name}
+                  defaultValue={item?.name ?? ""}
                   {...register("name")}
                 />
               </Flex>
@@ -102,7 +102,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
 
                 <PFInput
                   {...register("credits")}
-                  defaultValue={item?.credits}
+                  defaultValue={item?.credits ?? 0}
                   css={{
                     width: 130,
                   }}
@@ -116,7 +116,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   css={{
                     width: 130,
                   }}
-                  defaultValue={item?.subscription}
+                  defaultValue={item?.subscription ?? ""}
                   {...register("subscription")}
                 />
               </Flex>
@@ -139,7 +139,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   <PFInput
                     center
                     css={{ width: "2em" }}
-                    defaultValue={item?.bio[0]}
+                    defaultValue={item?.bio ? item?.bio[0] : 0}
                     {...register("bio.0")}
                     maxLength={2}
                   />
@@ -147,7 +147,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   <PFInput
                     center
                     css={{ width: "2em" }}
-                    defaultValue={item?.bio[1]}
+                    defaultValue={item?.bio ? item?.bio[1] : 0}
                     {...register("bio.1")}
                     maxLength={2}
                   />
@@ -162,7 +162,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   <PFInput
                     center
                     css={{ width: "2em" }}
-                    defaultValue={item?.psy[0]}
+                    defaultValue={item?.psy ? item?.psy[0] : 0}
                     {...register("psy.0")}
                     maxLength={2}
                   />
@@ -170,7 +170,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   <PFInput
                     center
                     css={{ width: "2em" }}
-                    defaultValue={item?.psy[1]}
+                    defaultValue={item?.psy ? item?.psy[1] : 0}
                     {...register("psy.1")}
                     maxLength={2}
                   />
@@ -185,7 +185,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   <PFInput
                     center
                     css={{ width: "2em" }}
-                    defaultValue={item?.inf[0]}
+                    defaultValue={item?.inf ? item?.inf[0] : 0}
                     {...register("inf.0")}
                     maxLength={2}
                   />
@@ -193,7 +193,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   <PFInput
                     center
                     css={{ width: "2em" }}
-                    defaultValue={item?.inf[1]}
+                    defaultValue={item?.inf ? item?.inf[1] : 0}
                     {...register("inf.1")}
                     maxLength={2}
                   />
@@ -208,7 +208,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   <PFInput
                     center
                     css={{ width: "2em" }}
-                    defaultValue={item?.hp[0]}
+                    defaultValue={item?.hp ? item?.hp[0] : 0}
                     {...register("hp.0")}
                     maxLength={2}
                   />
@@ -216,7 +216,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   <PFInput
                     center
                     css={{ width: "2em" }}
-                    defaultValue={item?.hp[1]}
+                    defaultValue={item?.hp ? item?.hp[1] : 0}
                     {...register("hp.1")}
                     maxLength={2}
                   />
@@ -231,7 +231,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                   <PFInput
                     center
                     css={{ width: "2em" }}
-                    defaultValue={item?.armor}
+                    defaultValue={item?.armor ?? 0}
                     {...register("armor")}
                     maxLength={2}
                   />

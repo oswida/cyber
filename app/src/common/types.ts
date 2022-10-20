@@ -95,3 +95,9 @@ export type NatsInfo = {
   connection: NatsConnection | null;
   sub: Subscription | null;
 };
+
+export type SessionPack = {
+  board: Record<string, Note | undefined>;
+  notes: Record<string, Note | undefined>;
+  players: Record<string, PcInfo | undefined>;
+};

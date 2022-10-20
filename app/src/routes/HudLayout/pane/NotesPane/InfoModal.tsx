@@ -65,10 +65,12 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
       const newState = { ...boardState };
       newState[no.note.id] = undefined;
       setBoardState(newState);
+      saveBoardNotes(newState);
     } else {
       const newState = { ...notesState };
       newState[no.note.id] = undefined;
       setNotesState(newState);
+      savePrivateNotes(newState);
     }
     setNo({ open: false, note: undefined });
     setSelNote("");

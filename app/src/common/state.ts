@@ -94,3 +94,5 @@ export const statePlayerForm = atom<PlayerFormState>({
   item: undefined,
   open: false,
 });
+
+export const stateNotification = atom<string>("");

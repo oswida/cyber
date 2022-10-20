@@ -1,3 +1,4 @@
+import { useNotify } from "./notify";
 import { useStorage } from "~/common/storage";
 import { useAtomValue, useSetAtom } from "jotai";
 import { useAtomCallback } from "jotai/utils";
@@ -67,6 +68,7 @@ export const useNats = () => {
     )
   );
   const { saveBoardNotes, savePlayers } = useStorage();
+  const { notify } = useNotify();
 
   const unpackNatsMsg = (msg: Msg): NatsMessage => {
     return JSON.parse(sc.decode(msg.data));
@@ -156,6 +158,7 @@ export const useNats = () => {
             topicChars,
             Object.values(playerState).filter((it) => it?.shared)
           );
+          notify("New client connected", 10000);
         }
       } else if (msg.subject === getTopic(topicRoll)) {
         const rolls = JSON.parse(m.data) as RollHistoryEntry[];
@@ -164,6 +167,7 @@ export const useNats = () => {
           newState[roll.id] = roll;
         });
         setRollHistory(newState);
+        notify("New dice roll registered", 10000);
       } else if (msg.subject === getTopic(topicBoard)) {
         const notes = JSON.parse(m.data) as Note[];
         const newState = { ...boardState };
@@ -172,6 +176,7 @@ export const useNats = () => {
         });
         setBoardState(newState);
         saveBoardNotes(newState);
+        notify("Board note created/updated", 10000);
       } else if (msg.subject === getTopic(topicChars)) {
         const chars = JSON.parse(m.data) as PcInfo[];
         const newState = { ...playerState };
@@ -180,6 +185,7 @@ export const useNats = () => {
         });
         setPlayers(newState);
         savePlayers(newState);
+        notify("Character created/updated", 10000);
       }
     }
   };

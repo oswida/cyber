@@ -37,7 +37,7 @@ export const PlayerCard = ({
   };
 
   const cmTooltip = () => {
-    if (!item) return "";
+    if (!item || !item.cybermods) return "";
     const tt = item.cybermods.map((it) => {
       let res = `${it.name}: ${it.description}`;
       if (!it.need_activation) {
@@ -51,7 +51,7 @@ export const PlayerCard = ({
   };
 
   const cdTooltip = () => {
-    if (!item) return "";
+    if (!item || !item.cyberdeck) return "";
     const tt = item.cyberdeck.map((it) => {
       let res = `${it.name}: ${it.description}`;
       if (it.activated) {
@@ -63,7 +63,7 @@ export const PlayerCard = ({
   };
 
   const invTooltip = () => {
-    if (!item) return "";
+    if (!item || !item.inventory) return "";
     const tt = item.inventory.map((it) => {
       let res = `${it.description}`;
       if (it.fatigue) {
@@ -75,21 +75,21 @@ export const PlayerCard = ({
   };
 
   const activatedCybermods = useMemo(() => {
-    if (!item) return [];
+    if (!item || !item.cybermods) return [];
     return item.cybermods.filter((m) => {
       return m.need_activation && m.activated;
     });
   }, [item, item?.cybermods]);
 
   const activatedPrograms = useMemo(() => {
-    if (!item) return [];
+    if (!item || !item.cyberdeck) return [];
     return item.cyberdeck.filter((m) => {
       return m.need_activation && m.activated;
     });
   }, [item, item?.cyberdeck]);
 
   const fatiguedSlots = useMemo(() => {
-    if (!item) return [];
+    if (!item || !item.inventory) return [];
     return item.inventory.filter((s) => s.fatigue);
   }, [item, item?.inventory]);
 
@@ -133,20 +133,20 @@ export const PlayerCard = ({
         <Flex css={{ gap: 10 }}>
           <Text size="middle">BIO: </Text>
           <Text size="middle" color="yellow">
-            {item?.bio[0]}/{item?.bio[1]}
+            {item?.bio ? item?.bio[0] : 0}/{item?.bio ? item?.bio[1] : 0}
           </Text>
           <Text size="middle">PSY: </Text>
           <Text size="middle" color="yellow">
-            {item?.psy[0]}/{item?.psy[1]}
+            {item?.psy ? item?.psy[0] : 0}/{item?.psy ? item?.psy[1] : 0}
           </Text>
           <Text size="middle">INF: </Text>
           <Text size="middle" color="yellow">
-            {item?.inf[0]}/{item?.inf[1]}
+            {item?.inf ? item?.inf[0] : 0}/{item?.inf ? item?.inf[1] : 0}
           </Text>
 
           <Text size="middle">HP: </Text>
           <Text size="middle" color="yellow">
-            {item?.hp[0]}/{item?.hp[1]}
+            {item?.hp ? item?.hp[0] : 0}/{item?.hp ? item?.hp[1] : 0}
           </Text>
           <Text size="middle">Armor: </Text>
           <Text size="middle" color="yellow">
