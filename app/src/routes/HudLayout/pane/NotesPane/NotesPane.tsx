@@ -148,6 +148,11 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
     }
   };
 
+  const noteTooltip = (it: Note | undefined) => {
+    if (!it) return "";
+    return it.content.substring(0, 250);
+  };
+
   return (
     <>
       <HudPane>
@@ -184,7 +189,9 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
                       }
                       selected={selNote === k}
                     >
-                      <Text>{boardState[k]?.title}</Text>
+                      <Text title={noteTooltip(boardState[k])}>
+                        {boardState[k]?.title}
+                      </Text>
                     </ContentItem>
                   ))}
               {!isBoard &&
@@ -199,7 +206,9 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
                       }
                       selected={selNote === k}
                     >
-                      <Text>{notesState[k]?.title}</Text>
+                      <Text title={noteTooltip(notesState[k])}>
+                        {notesState[k]?.title}
+                      </Text>
                     </ContentItem>
                   ))}
             </>

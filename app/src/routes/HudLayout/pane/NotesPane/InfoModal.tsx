@@ -14,7 +14,7 @@ import {
   useNats,
 } from "~/common";
 import { useStorage } from "~/common/storage";
-import { Button, Flex, Modal, Text, Textarea } from "~/component";
+import { Button, Flex, Input, Modal, Text, Textarea } from "~/component";
 
 const DeleteButton = styled("div", {
   height: 25 * 0.8,
@@ -43,7 +43,7 @@ export const ContentRoot = styled("div", {
   border: "solid 1px $darkblue",
   borderRadius: 5,
   padding: 5,
-  height: "50vh",
+  height: "60vh",
   minWidth: 550,
   width: "75vw",
   display: "flex",
@@ -55,6 +55,7 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
   const [notesState, setNotesState] = useAtom(statePrivateNotes);
   const [selNote, setSelNote] = useAtom(stateSelNote);
   const contentRef = useRef<HTMLDivElement>();
+  const nameRef = useRef<HTMLInputElement>(null);
   const { publish } = useNats();
   const { saveBoardNotes, savePrivateNotes } = useStorage();
   const nats = useAtomValue(stateNats);
@@ -82,16 +83,18 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
   };
 
   const updateNote = () => {
-    if (!contentRef.current || !no.note) return;
+    if (!contentRef.current || !no.note || !nameRef.current) return;
     if (isBoard) {
       const newState = { ...boardState };
       newState[no.note.id]!!.content = contentRef.current.innerText;
+      newState[no.note.id]!!.title = nameRef.current.value;
       setBoardState(newState);
       publish(nats.connection, topicBoard, [newState[no.note.id]]);
       saveBoardNotes(newState);
     } else {
       const newState = { ...notesState };
       newState[no.note.id]!!.content = contentRef.current.innerText;
+      newState[no.note.id]!!.title = nameRef.current.value;
       setNotesState(newState);
       savePrivateNotes(newState);
     }
@@ -99,8 +102,9 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
   };
 
   useEffect(() => {
-    if (!contentRef.current || !no.note) return;
+    if (!contentRef.current || !no.note || !nameRef.current) return;
     contentRef.current.innerHTML = no.note.content;
+    nameRef.current.value = no.note.title;
   }, [no]);
 
   return (
@@ -113,6 +117,12 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
         <Text color="yellow" css={{ marginBottom: 10, textAlign: "center" }}>
           {no.note?.title}
         </Text>
+        <Input
+          ref={nameRef}
+          border="down"
+          css={{ borderRadius: 5, padding: 5, marginBottom: 10 }}
+        />
+
         <ContentRoot>
           <Scrollbars>
             <Textarea
