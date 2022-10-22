@@ -60,6 +60,7 @@ export type PcInfo = {
   cybermods: PcMod[];
   cyberdeck: PcMod[];
   shared: boolean;
+  deprived?: boolean;
 };
 
 export type RollHistoryEntry = {

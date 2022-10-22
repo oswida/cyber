@@ -36,12 +36,14 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
     setValue("cyberdeck", item.cyberdeck);
     setValue("id", item.id);
     setValue("shared", item.shared);
+    setValue("deprived", item.deprived ? true : false);
   }, [item]);
 
   const inventory = watch("inventory");
   const cybermods = watch("cybermods");
   const cyberdeck = watch("cyberdeck");
   const shared = watch("shared");
+  const deprived = watch("deprived");
 
   const onSubmit = (data: PcInfo) => {
     if (!item) return;
@@ -68,6 +70,15 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
     if (!item) return;
     const info = getValues();
     setValue("shared", !info.shared);
+  };
+
+  const toggleDeprived = () => {
+    if (!item) return;
+
+    const info = getValues();
+    console.log("deprived", info);
+
+    setValue("deprived", info.deprived ? false : true);
   };
 
   return (
@@ -241,6 +252,17 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                     maxLength={2}
                   />
                 </Flex>
+              </Flex>
+
+              <Flex direction="column">
+                <Button
+                  onClick={toggleDeprived}
+                  size="small"
+                  border={deprived ? "standard" : "underline"}
+                  color={deprived ? "filled" : undefined}
+                >
+                  {langHud[sessionData.lang!!].deprived}
+                </Button>
               </Flex>
             </Flex>
 

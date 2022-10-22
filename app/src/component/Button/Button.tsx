@@ -63,6 +63,16 @@ export const Button = styled("div", {
           fontWeight: "bolder",
         },
       },
+      ghost: {
+        backgroundColor: "$background",
+      },
+      filled: {
+        backgroundColor: "$pink",
+        color: "black",
+        "&:hover": {
+          backgroundColor: "$pink",
+        },
+      },
     },
   },
   defaultVariants: {

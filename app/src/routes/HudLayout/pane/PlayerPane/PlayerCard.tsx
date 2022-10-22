@@ -191,6 +191,11 @@ export const PlayerCard = ({
               onClick={deactivatePrograms}
             />
           )}
+          {item?.deprived && (
+            <Text size="middle" color="pink" css={{ marginLeft: 30 }}>
+              {langHud[sessionData.lang!!].deprived}
+            </Text>
+          )}
         </Flex>
       </Flex>
       {item && item.shared && (
