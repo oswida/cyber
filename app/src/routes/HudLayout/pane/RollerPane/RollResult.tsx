@@ -3,6 +3,7 @@ import { useAtom, useAtomValue } from "jotai";
 import { useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
 import {
+  langHud,
   RollHistoryEntry,
   selectedRollerDice,
   stateNats,
@@ -97,15 +98,15 @@ export const RollResult = () => {
     <RollInfo>
       <Flex direction="column">
         <Button border="underline" noupper onClick={roll}>
-          Roll{" "}
+          {langHud[sessionData.lang!!].roll}{" "}
           <span style={{ fontWeight: "bold", marginLeft: "0.5em" }}>
             {selDice}
           </span>
         </Button>
         <Input
-          title="Input comment for a roll"
+          title={langHud[sessionData.lang!!].input_comment}
           ref={commentRef as any}
-          placeholder="Comment..."
+          placeholder={`${langHud[sessionData.lang!!].comment}...`}
           small
         />
         <Text

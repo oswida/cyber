@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
   doImport,
+  langHud,
   PcInfo,
   prettyToday,
   stateNats,
@@ -83,7 +84,7 @@ export const PlayerPane = () => {
     <HudPane>
       <Flex css={{ alignItems: "center", width: "90%", margin: 10 }}>
         <Text color="yellow" size="small">
-          Name:
+          {langHud[sessionData.lang!!].name}:
         </Text>
         <Input border="down" css={{ width: "100%" }} ref={nameRef} />
         <Icon color="blue" icon={faDeleteLeft} onClick={clear} />
@@ -94,10 +95,10 @@ export const PlayerPane = () => {
           onClick={add}
           css={{ marginRight: 20 }}
         >
-          Add
+          {langHud[sessionData.lang!!].add}
         </Button>
         <Button border="underline" noupper size="small" onClick={exportPlayers}>
-          Export
+          {langHud[sessionData.lang!!].export}
         </Button>
         <Button border="underline" noupper size="small" onClick={importPlayers}>
           Import

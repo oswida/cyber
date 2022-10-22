@@ -35,7 +35,7 @@ export const RollHistory = () => {
       <Scrollbars ref={ref as any}>
         {Object.values(rollHistory)
           .sort((a, b) => {
-            return compareStringTime(a.time, b.time);
+            return compareStringTime(b.time, a.time);
           })
           .map((k) => (
             <RollHistoryItem key={k.id} entry={k} />

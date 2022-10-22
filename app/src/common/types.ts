@@ -77,6 +77,7 @@ export type SessionInfo = {
   hosting: boolean;
   nats: string;
   nats_token: string;
+  lang?: string;
 };
 
 export type Note = {

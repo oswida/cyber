@@ -3,10 +3,12 @@ import { useEffect } from "react";
 import Scrollbars from "react-custom-scrollbars-2";
 import { useForm } from "react-hook-form";
 import {
+  langHud,
   PcInfo,
   stateNats,
   statePlayerForm,
   statePlayers,
+  stateSessionData,
   topicChars,
   useNats,
 } from "~/common";
@@ -25,6 +27,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
   const { savePlayers } = useStorage();
   const { publish } = useNats();
   const nats = useAtomValue(stateNats);
+  const sessionData = useAtomValue(stateSessionData);
 
   useEffect(() => {
     if (!item) return;
@@ -85,7 +88,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
             <Flex css={{ gap: 40 }} center>
               <Flex direction="column" css={{ flex: 1 }}>
                 <Text color="yellow" size="small">
-                  Name
+                  {langHud[sessionData.lang!!].name}
                 </Text>
                 <PFInput
                   css={{
@@ -97,7 +100,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
               </Flex>
               <Flex direction="column">
                 <Text color="yellow" size="small">
-                  Credits
+                  {langHud[sessionData.lang!!].credits}
                 </Text>
 
                 <PFInput
@@ -110,7 +113,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
               </Flex>
               <Flex direction="column">
                 <Text color="yellow" size="small">
-                  Subscription
+                  {langHud[sessionData.lang!!].subscription}
                 </Text>
                 <PFInput
                   css={{
@@ -126,7 +129,9 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
                 css={{ alignSelf: "center" }}
                 onClick={toggleShared}
               >
-                {shared ? "shared" : "private"}
+                {shared
+                  ? langHud[sessionData.lang!!].shared
+                  : langHud[sessionData.lang!!].private}
               </Button>
             </Flex>
 
@@ -202,7 +207,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
 
               <Flex direction="column" center>
                 <Text color="yellow" size="small">
-                  HP
+                  {langHud[sessionData.lang!!].hp}
                 </Text>
                 <Flex>
                   <PFInput
@@ -225,7 +230,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
 
               <Flex direction="column" center>
                 <Text color="yellow" size="small">
-                  Armor
+                  {langHud[sessionData.lang!!].armor}
                 </Text>
                 <Flex>
                   <PFInput
@@ -269,13 +274,13 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
         onClick={handleSubmit(onSubmit)}
       >
         {" "}
-        Save
+        {langHud[sessionData.lang!!].save}
       </Button>
       <Button
         css={{ position: "absolute", bottom: 120, right: 20, color: "red" }}
         onClick={deleteItem}
       >
-        Delete
+        {langHud[sessionData.lang!!].delete}
       </Button>
     </Modal>
   );

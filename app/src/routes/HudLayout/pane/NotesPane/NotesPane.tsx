@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
   doImport,
+  langHud,
   Note,
   prettyToday,
   stateBoardNotes,
@@ -158,7 +159,7 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
       <HudPane>
         <Flex css={{ alignItems: "center", width: "90%", margin: 10 }}>
           <Text color="yellow" size="small">
-            Search:
+            {langHud[sessionData.lang!!].search}:
           </Text>
           <Input
             border="down"
@@ -168,7 +169,7 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
           />
           <Icon color="blue" icon={faDeleteLeft} onClick={clear} />
           <Button border="underline" noupper size="small" onClick={exportNotes}>
-            Export
+            {langHud[sessionData.lang!!].export}
           </Button>
           <Button border="underline" noupper size="small" onClick={importNotes}>
             Import
@@ -218,18 +219,18 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
           <Flex direction="column" css={{ width: "100%", gap: 10 }}>
             <Flex css={{ alignItems: "center", width: "100%" }}>
               <Text color="yellow" size="small">
-                Title:
+                {langHud[sessionData.lang!!].title}:
               </Text>
               <Input
                 border="down"
                 css={{ width: "100%" }}
                 ref={titleRef as any}
               ></Input>
-              <Button onClick={add}>Add</Button>
+              <Button onClick={add}>{langHud[sessionData.lang!!].add}</Button>
             </Flex>
             <Flex css={{ width: "100%" }} direction="column">
               <Text color="yellow" size="small">
-                Content:
+                {langHud[sessionData.lang!!].content}:
               </Text>
               <ContentRoot>
                 <Scrollbars>

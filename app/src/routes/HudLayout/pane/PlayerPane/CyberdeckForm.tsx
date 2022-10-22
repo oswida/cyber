@@ -1,22 +1,29 @@
 import {
-  faBoltLightning,
-  faMinus,
-  faPlus,
   faArrowDown,
   faArrowUp,
+  faBoltLightning,
+  faMinus,
   faPlay,
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useAtomValue } from "jotai";
+import { useState } from "react";
 import {
   UseFormGetValues,
-  UseFormSetValue,
   UseFormRegister,
+  UseFormSetValue,
 } from "react-hook-form";
-import { PcInfo, PcMod, themeColors } from "~/common";
-import { Flex, Button, Text } from "~/component";
-import { PFInput, SelectableItem } from "./styles";
 import { v4 as uuidv4 } from "uuid";
-import { useState } from "react";
+import {
+  langHud,
+  PcInfo,
+  PcMod,
+  stateSessionData,
+  themeColors,
+} from "~/common";
+import { Button, Flex, Text } from "~/component";
+import { PFInput, SelectableItem } from "./styles";
 
 type Props = {
   getValues: UseFormGetValues<PcInfo>;
@@ -33,6 +40,7 @@ export const CyberdeckForm = ({
 }: Props) => {
   const [selInv, setSelInv] = useState(-1);
   const [folded, setFolded] = useState(false);
+  const sessionData = useAtomValue(stateSessionData);
 
   const activateHint = (it: PcMod) => {
     return it.activated
@@ -90,7 +98,8 @@ export const CyberdeckForm = ({
           </Button>
         )}
         <Text color="yellow" size="small">
-          Cyberdeck ({cyberdeck ? cyberdeck.length : "0"})
+          {langHud[sessionData.lang!!].cyberdeck} (
+          {cyberdeck ? cyberdeck.length : "0"})
         </Text>
         <Button border="underline" onClick={addProg}>
           <FontAwesomeIcon icon={faPlus} />

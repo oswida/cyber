@@ -49,7 +49,9 @@ export const useStorage = () => {
       localStorage.setItem(inodSessionKey, comp(sd));
       setSessionData(sd);
     } else {
-      setSessionData(decomp(sessionData));
+      const dd = decomp(sessionData);
+      if (!dd.lang) dd.lang = "en";
+      setSessionData(dd);
     }
   };
 

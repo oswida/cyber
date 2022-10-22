@@ -1,17 +1,21 @@
-import { useAtom, useAtomValue } from "jotai";
-import { PcInfo, statePlayers, themeColors } from "~/common";
-import { ContentItem } from "./styles";
-import { Text, Flex } from "~/component";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEarth,
   faPowerOff,
-  faStop,
   faStopCircle,
-  faStopwatch,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useAtom, useAtomValue } from "jotai";
 import { useMemo } from "react";
+import {
+  langHud,
+  PcInfo,
+  statePlayers,
+  stateSessionData,
+  themeColors,
+} from "~/common";
 import { useStorage } from "~/common/storage";
+import { Flex, Text } from "~/component";
+import { ContentItem } from "./styles";
 
 type Props = {
   playerId: string;
@@ -29,6 +33,7 @@ export const PlayerCard = ({
   const [players, setPlayers] = useAtom(statePlayers);
   const item: PcInfo | undefined = players[playerId];
   const { savePlayers } = useStorage();
+  const sessionData = useAtomValue(stateSessionData);
 
   const tooltip = () => {
     if (!item) return "";
@@ -144,24 +149,24 @@ export const PlayerCard = ({
             {item?.inf ? item?.inf[0] : 0}/{item?.inf ? item?.inf[1] : 0}
           </Text>
 
-          <Text size="middle">HP: </Text>
+          <Text size="middle">{langHud[sessionData.lang!!].hp}: </Text>
           <Text size="middle" color="yellow">
             {item?.hp ? item?.hp[0] : 0}/{item?.hp ? item?.hp[1] : 0}
           </Text>
-          <Text size="middle">Armor: </Text>
+          <Text size="middle">{langHud[sessionData.lang!!].armor}: </Text>
           <Text size="middle" color="yellow">
             {item?.armor}
           </Text>
         </Flex>
         <Flex css={{ gap: 10 }}>
           <Text size="middle" title={invTooltip()}>
-            Items:{" "}
+            {langHud[sessionData.lang!!].items}:{" "}
           </Text>
           <Text size="middle" color="yellow">
             {fatiguedSlots.length}/{item?.inventory?.length}
           </Text>
           <Text size="middle" title={cmTooltip()}>
-            Cybermods:{" "}
+            {langHud[sessionData.lang!!].cybermods}:{" "}
           </Text>
           <Text size="middle" color="yellow">
             {activatedCybermods.length}/{item?.cybermods?.length}
@@ -169,12 +174,12 @@ export const PlayerCard = ({
           {activatedCybermods.length > 0 && (
             <FontAwesomeIcon
               icon={faPowerOff}
-              title="Deactivate all cybermods"
+              title={langHud[sessionData.lang!!].deactivate_cybermods}
               onClick={deactivateCybermods}
             />
           )}
           <Text size="middle" title={cdTooltip()}>
-            Cyberdeck:{" "}
+            {langHud[sessionData.lang!!].cyberdeck}:{" "}
           </Text>
           <Text size="middle" color="yellow">
             {activatedPrograms.length}/{item?.cyberdeck?.length}
@@ -182,7 +187,7 @@ export const PlayerCard = ({
           {activatedPrograms.length > 0 && (
             <FontAwesomeIcon
               icon={faStopCircle}
-              title="Deactivate all programs"
+              title={langHud[sessionData.lang!!].deactivate_programs}
               onClick={deactivatePrograms}
             />
           )}
@@ -192,7 +197,7 @@ export const PlayerCard = ({
         <FontAwesomeIcon
           icon={faEarth}
           style={{ alignSelf: "start" }}
-          title="Shared character"
+          title={langHud[sessionData.lang!!].shared_character}
           color={themeColors.blue}
         />
       )}

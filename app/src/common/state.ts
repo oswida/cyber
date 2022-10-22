@@ -1,5 +1,5 @@
-import { TileBranchSubstance } from "react-tile-pane";
 import { atom } from "jotai";
+import { TileBranchSubstance } from "react-tile-pane";
 import {
   CorpoInfo,
   NatsInfo,
@@ -39,6 +39,7 @@ export const initialSessionData = {
   remote: "",
   nats: "",
   nats_token: "",
+  lang: "en",
 };
 export const stateSessionData = atom<SessionInfo>(initialSessionData);
 

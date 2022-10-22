@@ -1,25 +1,27 @@
 import {
   faArrowDown,
-  faArrowRight,
-  faArrowsDownToLine,
   faArrowUp,
-  faClosedCaptioning,
-  faFolderOpen,
   faLock,
   faLockOpen,
   faMinus,
   faPlus,
-  faTeethOpen,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useAtomValue } from "jotai";
 import { useState } from "react";
 import {
   UseFormGetValues,
-  UseFormSetValue,
   UseFormRegister,
+  UseFormSetValue,
 } from "react-hook-form";
-import { PcInfo, PcSlot, themeColors } from "~/common";
-import { Flex, Button, Text } from "~/component";
+import {
+  langHud,
+  PcInfo,
+  PcSlot,
+  stateSessionData,
+  themeColors,
+} from "~/common";
+import { Button, Flex, Text } from "~/component";
 import { PFInput, SelectableItem } from "./styles";
 
 type Props = {
@@ -37,6 +39,7 @@ export const InventoryForm = ({
 }: Props) => {
   const [selInv, setSelInv] = useState(-1);
   const [folded, setFolded] = useState(false);
+  const sessionData = useAtomValue(stateSessionData);
 
   const toggleFatigue = (index: number) => {
     if (inventory.length <= index) return;
@@ -75,7 +78,8 @@ export const InventoryForm = ({
           </Button>
         )}
         <Text color="yellow" size="small">
-          Inventory ({inventory ? inventory.length : "0"})
+          {langHud[sessionData.lang!!].inventory} (
+          {inventory ? inventory.length : "0"})
         </Text>
         <Button border="underline" onClick={addInventory}>
           <FontAwesomeIcon icon={faPlus} />
@@ -107,7 +111,7 @@ export const InventoryForm = ({
                 alignSelf: "center",
                 color: it?.fatigue ? themeColors.pink : themeColors.green,
               }}
-              title="Fatigue"
+              title={langHud[sessionData.lang!!].fatigue}
               icon={it?.fatigue ? faLock : faLockOpen}
               onClick={() => toggleFatigue(index)}
             />

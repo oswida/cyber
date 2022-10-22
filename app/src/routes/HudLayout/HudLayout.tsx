@@ -1,3 +1,5 @@
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom, useAtomValue, useSetAtom } from "jotai";
 import { useEffect, useState } from "react";
 import {
@@ -18,6 +20,7 @@ import {
   globalPaneNames,
   hudPanelSelectionOpen,
   keyframes,
+  langHud,
   prettyToday,
   queueInfo,
   SessionInfo,
@@ -123,7 +126,9 @@ export const HudLayout = () => {
   useEffect(() => {
     setGpn(Object.keys(paneNames));
     const localRoot = loadLayout();
-    setLayoutRoot(localRoot ? (localRoot as TileBranchSubstance) : gmLayout);
+    setLayoutRoot(
+      localRoot ? (localRoot as TileBranchSubstance) : playerLayout
+    );
   }, [paneNames]);
 
   const openPanelList = () => {
@@ -165,15 +170,10 @@ export const HudLayout = () => {
       <HudToolbar>
         <Flex>
           <Button size="small" onClick={openPanelList}>
-            Pane
+            <FontAwesomeIcon icon={faBars} />
           </Button>
-          {sessionData.hosting && (
-            <Button size="small" onClick={() => setGm(true)}>
-              Gen
-            </Button>
-          )}
           <Button size="small" onClick={() => setCo(true)}>
-            Config
+            {langHud[sessionData.lang!!].config}
           </Button>
           <Text
             size="middle"
@@ -190,13 +190,13 @@ export const HudLayout = () => {
             </Button>
             <Text size="small">Hosting on {sessionData.browserID}</Text>
             <Button size="x-small" border="underline" onClick={exportSession}>
-              Export
+              {langHud[sessionData.lang!!].export}
             </Button>
           </Flex>
         )}
         {nats.connection !== null && !sessionData.hosting && (
           <Text size="small" css={{ marginLeft: 20 }}>
-            Connected to {sessionData.remote}
+            {langHud[sessionData.lang!!].connected_to} {sessionData.remote}
           </Text>
         )}
         <Flex css={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
@@ -222,20 +222,9 @@ export const HudLayout = () => {
             <TileContainer />
             <Modal isOpen={hudSel} onClose={() => setHudSel(false)}>
               <Flex direction="column" css={{ gap: 10 }}>
-                {sessionData.hosting && (
-                  <>
-                    <Text>Click on the button to make panel visible</Text>
-                    {Object.keys(paneNames).map((it) => (
-                      <PaneButton key={it} name={it} />
-                    ))}
-                  </>
-                )}
-                <Text>Click to restore predefined layout</Text>
-                <Button onClick={() => handleLayoutChange(gmLayout)}>
-                  GM Layout
-                </Button>
+                <Text>{langHud[sessionData.lang!!].restore_layout_desc}</Text>
                 <Button onClick={() => handleLayoutChange(playerLayout)}>
-                  Player Layout
+                  {langHud[sessionData.lang!!].player_layout}
                 </Button>
               </Flex>
             </Modal>

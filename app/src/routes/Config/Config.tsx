@@ -2,6 +2,7 @@ import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   configOpen,
+  langHud,
   language,
   SessionInfo,
   stateNats,
@@ -49,7 +50,7 @@ export const Config = ({
     }
     setErr("");
     if (nameRef.current.value == "") {
-      setErr("Username is required");
+      setErr(langHud[sessionData.lang!!].username_required);
       return;
     }
     if (
@@ -99,40 +100,47 @@ export const Config = ({
     setRefreshLink(!refreshLink);
   }, [natsRef.current, natsTokenRef.current]);
 
+  const toggleLang = () => {
+    if (sessionData.lang === "pl")
+      setSessionData((state) => ({ ...state, lang: "en" }));
+    else setSessionData((state) => ({ ...state, lang: "pl" }));
+  };
+
   return (
     <Modal isOpen={co} onClose={() => setCo(false)}>
       <Flex direction="column" css={{ alignItems: "center", gap: 15 }}>
         <Text size="small" color="pink">
-          Storage
+          {langHud[sessionData.lang!!].storage}
         </Text>
-        <Text css={{ width: 700, textAlign: "center" }} size="small">
-          Current storage use is: <b>{`${storageSize} bytes`}</b>.<br />
-          Please remember that this app is using local browser storage instead
-          of a database.
-          <br /> The most popular limit for such a storage is about 5MB.
+        <Text css={{ width: 850, textAlign: "center" }} size="small">
+          {langHud[sessionData.lang!!].storage_desc1}{" "}
+          <b>{`${storageSize} bytes`}</b>.<br />
+          {langHud[sessionData.lang!!].storage_desc2}
         </Text>
         <Text size="small" color="pink">
-          Identification
+          {langHud[sessionData.lang!!].identification}
         </Text>
         <Flex>
           <Text>ID:</Text>
           <Text color="yellow">{sessionData.browserID}</Text>
         </Flex>
         <Flex css={{ alignItems: "center" }}>
-          <Text>Username:</Text>
+          <Text>{langHud[sessionData.lang!!].username}:</Text>
           <Input ref={nameRef as any} defaultValue={uname} />
+          <Button css={{ marginLeft: 20 }} size="small" onClick={toggleLang}>
+            {sessionData.lang}
+          </Button>
         </Flex>
         <Text size="small" color={nats.connection != null ? "green" : "pink"}>
-          Connection {nats.connection != null && `(established)`}
+          {langHud[sessionData.lang!!].connection}{" "}
+          {nats.connection != null &&
+            `(${langHud[sessionData.lang!!].established})`}
         </Text>
         <Text css={{ width: 700, textAlign: "center" }} size="small">
-          If you have an access to some NATS server, you can share dice rolls
-          and board notes with other users. Please select 'Host' or 'Client'
-          mode below. In 'Host' mode, you need only a NATS server address, for
-          'Client' there should be also an ID of the hosting browser provided.
+          {langHud[sessionData.lang!!].nats_desc}
         </Text>
         <Flex css={{ alignItems: "center" }}>
-          <Text>NATS Server:</Text>
+          <Text>{langHud[sessionData.lang!!].nats_server}:</Text>
           <Input
             ref={natsRef as any}
             defaultValue={proxy}
@@ -141,7 +149,7 @@ export const Config = ({
           />
         </Flex>
         <Flex css={{ alignItems: "center" }}>
-          <Text>NATS Auth Token (if needed):</Text>
+          <Text>{langHud[sessionData.lang!!].nats_token}:</Text>
           <Input
             ref={natsTokenRef as any}
             defaultValue={token}
@@ -150,12 +158,18 @@ export const Config = ({
           />
         </Flex>
         <Flex css={{ alignItems: "center" }}>
-          {host && <Text color="pink">Hosting...</Text>}
           {host && (
-            <Button onClick={() => setHost(false)}>switch to Client</Button>
+            <Text color="pink">{langHud[sessionData.lang!!].hosting}...</Text>
+          )}
+          {host && (
+            <Button onClick={() => setHost(false)}>
+              {langHud[sessionData.lang!!].switch_client}
+            </Button>
           )}
           {!host && (
-            <Button onClick={() => setHost(true)}>switch to Host</Button>
+            <Button onClick={() => setHost(true)}>
+              {langHud[sessionData.lang!!].switch_host}
+            </Button>
           )}
         </Flex>
 
@@ -166,7 +180,9 @@ export const Config = ({
             height: host ? 0 : undefined,
           }}
         >
-          <Text color={host ? "pink" : "primary"}>Remote ID:</Text>
+          <Text color={host ? "pink" : "primary"}>
+            {langHud[sessionData.lang!!].remote_id}:
+          </Text>
           <Input
             ref={remoteRef as any}
             defaultValue={remote}
@@ -177,7 +193,9 @@ export const Config = ({
 
         {host && (
           <Flex direction="column">
-            <Text size="small">Connection link:</Text>
+            <Text size="small">
+              {langHud[sessionData.lang!!].connection_link}:
+            </Text>
             <Text size="small" css={{ maxWidth: 700 }}>
               {hostLink}
             </Text>
@@ -185,7 +203,7 @@ export const Config = ({
         )}
 
         <Button css={{ marginTop: 10, maxWidth: "max-content" }} onClick={save}>
-          Save
+          {langHud[sessionData.lang!!].save}
         </Button>
         {err !== "" && <Text color="pink">{err}</Text>}
       </Flex>

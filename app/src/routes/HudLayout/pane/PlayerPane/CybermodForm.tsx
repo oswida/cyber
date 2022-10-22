@@ -9,6 +9,7 @@ import {
   faRotate,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useAtomValue } from "jotai";
 import { useState } from "react";
 import {
   UseFormGetValues,
@@ -16,7 +17,13 @@ import {
   UseFormSetValue,
 } from "react-hook-form";
 import { v4 as uuidv4 } from "uuid";
-import { PcInfo, PcMod, themeColors } from "~/common";
+import {
+  langHud,
+  PcInfo,
+  PcMod,
+  stateSessionData,
+  themeColors,
+} from "~/common";
 import { Button, Flex, Text } from "~/component";
 import { PFInput, SelectableItem } from "./styles";
 
@@ -35,6 +42,7 @@ export const CybermodForm = ({
 }: Props) => {
   const [selInv, setSelInv] = useState(-1);
   const [folded, setFolded] = useState(false);
+  const sessionData = useAtomValue(stateSessionData);
 
   const addMod = () => {
     const entry: PcMod = {
@@ -122,7 +130,8 @@ export const CybermodForm = ({
           </Button>
         )}
         <Text color="yellow" size="small">
-          Cybermods ({cybermods ? cybermods.length : "0"})
+          {langHud[sessionData.lang!!].cybermods} (
+          {cybermods ? cybermods.length : "0"})
         </Text>
         <Button border="underline" onClick={addMod}>
           <FontAwesomeIcon icon={faPlus} />
