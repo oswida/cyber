@@ -7,14 +7,15 @@ nav_order: 3
 
 # Generator zaibatsu (w przygotowaniu)
 
-[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/corpo)
+<!-- [Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/corpo) -->
 
 ## Losowanie
 
 - 2 rzuty na części składowe nazwy w odpowiednich tabelach
 - 1-2 rzuty na branżę
 - Co najmniej jeden rzut na plotkę
-- 1 rzut na produkt flagowy
+- 1-2 rzuty na zasoby
+- 1-2 rzuty na cel
 
 ## Nazwa 1 (1k20 + 1k20)
 
@@ -70,34 +71,55 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 | 19  |    3    | Electric       | Logistics     | Aerospace     |
 | 20  |    3    | Cosmetics      | Motors        | Express       |
 
-
 ## Branża (1k20 + 1k20)
 
-Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
+Pierwszy rzut wybiera grupę, drugi pozycję w grupie.
 
-| k20 | Kolumna | C1 `(1-10)`             | C2 `(11-20)`         |
-| --- | :-----: | ----------------------- | -------------------- |
-| 1   |    1    | Badania i rozwój        | Przemysł maszynowy   |
-| 2   |    1    | Bezpieczeństwo          | Przemysł morski      |
-| 3   |    1    | Biotechnologia          | Przemysł odzieżowy   |
-| 4   |    1    | Broń i amunicja         | Przemysł precyzyjny  |
-| 5   |    1    | Cybertechnika           | Przemysł samochodowy |
-| 6   |    1    | Edukacja                | Przemysł spożywczy   |
-| 7   |    1    | Elektronika             | Robotyka             |
-| 8   |    1    | Energetyka              | Rolnictwo            |
-| 9   |    1    | Genetyka                | Rozrywka             |
-| 10  |    1    | Górnictwo               | Telekomunikacja      |
-| 11  |    2    | Gry komputerowe         | Usługi audytu        |
-| 12  |    2    | Media                   | Usługi doradcze      |
-| 13  |    2    | Nanotechnologia         | Usługi finansowe     |
-| 14  |    2    | Oprogramowanie          | Usługi komunalne     |
-| 15  |    2    | Przemysł chemiczny      | Usługi kurierskie    |
-| 16  |    2    | Przemysł ciężki         | Usługi medyczne      |
-| 17  |    2    | Przemysł farmaceutyczny | Usługi militarne     |
-| 18  |    2    | Przemysł komputerowy    | Usługi prawnicze     |
-| 19  |    2    | Przemysł kosmiczny      | Usługi transportowe  |
-| 20  |    2    | Przemysł lotniczy       | Utylizacja odpadów   |
+### 1 - 10
 
+1. Badania i rozwój: SI do analizy danych i wyszukiwania, neuroprocesory i sprzęt do zapisu/odczytu ludzkiej pamięci, SI (de-)szyfrujące i kompresujące dane
+2. Bezpieczeństwo: kompleksowe automatyczne systemy strażnicze, sieci sensorów (alarmy, czujniki)
+3. Biotechnologia: nowe rodzaje żywności, hormony zwiększające ludzkie możliwości, stymulanty
+4. Broń i amunicja: broń palna niezawodna w każdych warunkach, broń znaczona genetycznie, inteligentna amunicja
+5. Budownictwo: schrony, zautomatyzowane hotele i domy, elektroniczne wyposażenie wnętrz
+6. Cybertechnika: wszelkiego rodzaju cybermodyfikacje (wszczepy), sprzęt do kalibracji i diagnostyki cybermodów
+7. Edukacja: szkolenia różnego typu, oprogramowanie edukacyjne, gry edukacyjne
+8. Elektronika: wszelkiego rodzaju sprzęt elektroniczny
+9. Energetyka: generatory energii, baterie, zasilacze
+10. Genetyka: modyfikacje genetyczne na zamówienie, mutanty bojowe bazujące na owadach, usługi klonowania dowolnych organizmów żywych poza ludźmi
+11. Górnictwo: miniaturowe ładunki wybuchowe, autonomiczne roboty górnicze, cybermodyfikacje wzmacniające mięśnie i szkielet, pozyskiwanie zasobów naturalnych
+12. Gry komputerowe: rozwój i utrzymanie personalnych osiągnięć w grach online, spersonalizowane gry edukacyjne dla pracowników, dedykowane gry taktyczne dla oddziałów bojowych
+13. Media: programy rozrywkowe transmitowane online, informacje, reportażę, kształtowanie opinii publicznej
+14. Nanotechnologia: nanoboty medyczne i produkcyjne, sprzęt szpiegowski
+15. Oprogramowanie: zapory i LOD do ochrony węzłów Infosfery, oprogramowanie użytkowe, programy hakerskie
+16. Przemysł chemiczny: chemia bojowa, środki ochrony chemicznej, chemia domowa
+17. Przemysł farmaceutyczny: leki, stymulanty, środki kosmetyczne
+18. Przemysł komputerowy: cyberdeki, peryferia komputerowe, hakerzy-specjaliści do wynajęcia
+19. Przemysł kosmiczny: stacje kosmiczne, promy orbitalne i stratosferyczne, wytrzymałe materiały, systemy podtrzymywania życia
+20. Przemysł lotniczy: samoloty, helikoptery, poduszkowce, systemy nawigacyjne, drony
+
+### 11 - 20
+
+1. Przemysł maszynowy: maszyny mechaniczne, roboty przemysłowe, hutnictwo i obróbka metali  
+2. Przemysł morski: pozyskiwanie zasobów morskich, pojazdy pływające, eksploracja mórz i oceanów
+3. Przemysł odzieżowy: odzież zwykła, kamuflująca, ochronna, moda, pancerze
+4. Przemysł precyzyjny: wyposażenie laboratoriów, narzędzia
+5. Przemysł samochodowy: pojazdy naziemne, części, opancerzenie i broń montowana na pojazdach
+6. Przemysł spożywczy: żywność, stymulanty, narkotyki; hermetyczne, niezniszczalne opakowania
+7. Psychotechnika: wsparcie duchowe, techniki rozwoju osobistego, organizacje religijne, trening mentalny 
+8. Robotyka: roboty wszelkiego rodzaju, drony, androidy do opieki nad dziećmi lub prowadzenia gospodarstwa domowego
+9. Rolnictwo: genetycznie modyfikowane zwierzęta z wszczepami, specjalizowane rośliny
+10. Rozrywka: organizacja imprez sportowych, muzycznych, gry terenowe, rajdy, kasyna, loterie; rekordery i symulatory wrażeń zmysłowych
+11. Telekomunikacja: sprzęt przeciwpodsłuchowy, urządzenia dostępowe do sieci, infrastruktura Infosfery, jammery, neuroprocesory
+12. Usługi finansowe: pożyczki, odzyskiwanie długów, loterie, systemy rozliczeniowe
+13. Usługi informacyjne: wywiad, usługi detektywistyczne, wyszukiwanie informacji w Infosferze
+14. Usługi komunalne: sprzątanie, czyszczenie, transport publiczny, systemy kontroli ruchu naziemnego
+15. Usługi kurierskie: dostarczanie przesyłek, bezpieczne przechowywanie i dostarczanie wiadomości/dokumentów, anonimowe skrytki
+16. Przemysł i usługi medyczne: leczenie szpitalne i usługi ratunkowe, sprzęt medyczny, pojazdy ratunkowe 
+17. Usługi militarne: wynajem i szkolenie oddziałów, wynajem sprzętu wojskowego, broń i pojazdy bojowe
+18. Usługi prawnicze: procedury wyzwoleńcze dla SI, pozwy i wsparcie procesowe, komunikacja międzykulturowa, negocjacje, realizacja "ostatniej woli" klienta
+19. Usługi transportowe: Automatyczne pojazdy transportowe, transport materiałów i osób (również niebezpiecznych), błyskawiczna dystrybucja do masowego odbiorcy (ulotki, szczepionki)
+20. Utylizacja odpadów: środowiskowe kombinezony ochronne, leki antymutagenne i antyradiacyjne, systemy wykrywania substancji szkodliwych (trucizny, wirusy biologiczne)
 
 ## Plotka (1k20 + 1k20)
 
@@ -126,220 +148,54 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 | 19  |    2    | Zbudowali tajną bazę na Księżycu                                                | Opracowali nanotechnologię, pozwalającą produkować dowolne rzeczy z każdej materii |
 | 20  |    2    | Są odpowiedzialni za serię epidemii w różnych miejscach na świecie              | Opracowali technologię zdalnej kontroli ludzkiego umysłu                           |
 
-## Produkt flagowy
-
-### Badania i rozwój
-
-1. SI do wielowymiarowej analizy danych i wyszukiwania
-2. Wzmacniacze kognitywne
-3. Sprzęt do diagnostyki i kalibracji wszczepów
-4. SI (de-)szyfrujące i kompresujące dane
-5. Neuroprocesory i sprzęt do zapisu/odczytu ludzkiej pamięci
-6. Kompleksowe wyposażenie laboratoriów naukowych
-
-### Bezpieczeństwo
-
-1. Zapory i LOD do ochrony węzłów Infosfery
-2. Kompleksowe automatyczne systemy strażnicze (kamery, drony, roboty)
-3. Genetycznie modyfikowane zwierzęta z wszczepami wykorzystywane jako strażnicy
-4. Sieci sensorów (alarmy, czujniki)
-5. Szkolenia strażników i agentów ochrony, fizyczne zabezpieczenie mienia
-6. Hakerzy-specjaliści do wynajęcia - pełna gama cenowa i jakościowa
-
-### Biotechnologia
-
-1. Miniaturowe farmy wielkości szafy do hodowania żywności we własnym domu
-
-### Budownictwo
-
-1. Schrony każdego typu
-2. Eksluzywne, zautomatyzowane domy jednorodzinne
-3. Zautomatyzowane hotele kapsułowe
-4. 
-
-### Broń i amunicja
-
-1. Broń palna niezawodna w każdych warunkach środowiskowych 
-2. Personalne emitery impulsu EMP
-3. Amunicja o zwiększonej sile rażenia lub specyficznych właściwościach (okruchy radioaktywne, materiały znakujące)
-4. Broń nieśmiercionośna: paralizatory, sieci, ogłuszacze
-5. Eksluzywna broń biała (miecze, noże)
-6. Broń znaczona genetycznie, nikt poza właścicielem nie może jej użyć
-
-### Cybertechnika
-
-1. Wszczepy optyczne i słuchowe poszerzające percepcję lub filtrujące niechciane bodźce
-2. Zawodne ale bardzo tanie wszczepy różnego rodzaju (cybermod dla każdego)
-3. Wzmocnienia mięśni i szkieletu wszelkiego rodzaju
-4. Cybernetyczne kończyny
-
-### Edukacja               
-
-### Elektronika
-
-1. Cyberdeki
-2. 
-
-### Energetyka
-
-1. Ładowarki urządzeń elektrycznych, które korzystają z biologicznych funkcji organizmu
-2. Paralizatory
-3. 
-
-### Genetyka
-
-1. Hodowla zwierząt z wybranymi  modyfikacjami genetycznymi
-2. Mutanty bojowe bazujące na owadach
-3. Usługi klonowania dowolnych organizmów żywych poza ludźmi
-4. 
-
-
-
-### Górnictwo
-
-1. Niewykrywalne, miniaturowe ładunki wybuchowe
-2. Autonomiczne roboty górnicze
-3. Cybermodyfikacje wzmacniające mięśnie i szkielet
-4. 
-
-### Gry komputerowe
-
-1. Rozwój i utrzymanie personalnych osiągnięć w grach online
-2. Spersonalizowane gry edukacyjne dla pracowników
-3. Dedykowane gry taktyczne dla oddziałów bojowych
-4. 
-
-### Media
-
-1. Stymulatory nastroju - emitują fale wzbudzające tymczasowe uczucia różnego rodzaju
-2. Projektory holograficzne
-3. Zestawy rozszerzonej rzeczywistości
-4. 
-
-
-
-### Nanotechnologia
-
-1. Nanoboty medyczne
-
-
-### Oprogramowanie         
-### Przemysł chemiczny     
-### Przemysł ciężki        
-### Przemysł farmaceutyczny
-
-1. Systemy permanentnego nanomakijażu
-2. Kosmetyki odmładzające
-3. 
-4. 
-
-### Przemysł komputerowy
-
-1. Cyberdeki
-2. 
-  
-### Przemysł lotniczy
-
-1. Drony transportowe
-2. Drony zwiadowcze i inspekcyjne
-3. Transportowce powietrzne
-4. 
-
-
-### Przemysł maszynowy  
-   
-### Przemysł odzieżowy
-
-1. Kombinezony kamuflujące i ekranujące
-2. Odzież ochronna, pancerze, superwytrzymałe ubrania
-3. 
-
-### Przemysł precyzyjny
-
-1. Sprzęt do tatuażu
-### Przemysł samochodowy
-
-1. Opancerzenie pojazdów
-2. Pojazdy transportowe
-3. 
-### Przemysł spożywczy
-
-1. Bezpieczne stymulanty na bazie naturalnych hormonów
-2. Samopodgrzewające, hermetyczne pakiety żywnościowe
-3. Konwertery spożywcze pozwalające na przetworzenie zepsutej żywności w wartościowe jedzenie
-4. Hermetyczne, niezniszczalne opakowania
-5. 
-
-### Robotyka
-
-1. Androidy służebne lub specjalizowane do opieki nad dziećmi
-2. Androidy bojowe
-3. Drony zwiadowcze i szpiegowskie
-4. Drony bojowe
-5. 
-
-### Rolnictwo
-
-### Rozrywka
-
-1. Rekordery i symulatory wrażeń zmysłowych
-2. Organizacja gier terenowych
-
-### Telekomunikacja
-
-1. Sprzęt przeciwpodsłuchowy, urządzenia do transmisji szyfrowanych
-2. Jammery - zakłócanie transmisji radiowych dowolnego rodzaju
-3. Neuroprocesory
-4. 
-
-
-
-
-### Usługi komunalne
-
-1. Automatyczne systemy czyszczące i sprzątające
-2. Automatyczne systemy kontroli ruchu
-
-### Usługi kurierskie
-
-1. Sieć anonimowych skrytek pozwalających na dyskretną wymianę niewielkich pakunków
-2. Bezpieczne przechowywanie i dostarczanie wiadomości/dokumentów przekazywanych w razie śmierci lub zaginięcia klienta
-3. 
-
-
-### Usługi medyczne
-
-1. Sprzęt i usługi kriogeniczne
-2. Kompleksowe usługi ratownictwa medycznego
-3. 
-### Usługi militarne
-
-1. Dedykowane, doskonale wyszkolone prywatne oddziały uderzeniowe
-2. Tanie, pobieżnie przeszkolone oddziały o dużej liczebności i zredukowanym poziomie instynktu samozachowawczego
-3. Specjaliści wywiadu gospodarczego i wojskowego
-4. 
-
-### Usługi prawnicze
-
-1. Procedury wyzwoleńcze dla SI
-2. Pozwy i wsparcie procesowe przeciwko korporacjom
-3. Pozwy i wsparcie procesowe przeciwko instytucjom Administracji
-4. Usługi negocjacyjne
-5. Komunikacja międzykulturowa, kodeksy zachowań subkulturowych
-6. Realizacja "ostatniej woli" klienta, nawet tej najbardziej nieprawdopodobnej czy egzotycznej
-
-
-### Usługi transportowe
-
-1. Paczki dostarczane za pomocą dronów (gwarantowana dyskrecja)
-2. Automatyczne pojazdy transportowe
-3. Transport materiałów i osób niebezpiecznych
-4. Błyskawiczna dystrybucja do masowego odbiorcy (ulotki, szczepionki)
-5. 
-
-### Utylizacja odpadów
-
-1. Środowiskowe kombinezony ochronne
-2. Leki antymutagenne i antyradiacyjne
-3. Systemy wykrywania substancji szkodliwych (trucizny, wirusy biologiczne)
-4. 
+## Zasoby i cele
+
+### Zasoby (1k20)
+
+1. Zasoby technologiczne: dostęp do najnowszych osiągnięć technologicznych
+2. Zasoby finansowe: pieniądze bez ograniczeń
+3. Kontakty w kręgach wojskowych: przepustki do obiektów wojskowych, kontakt z dowództwem, sprzęt wojskowy
+4. Wpływy w grupach hakerskich: dostęp do dowolnej informacji w sieci, kradzież danych, wejścia do węzłów Infosfery
+5. Wiarygodność w mediach: możliwość przekazania dowolnej informacji do opinii publicznej, pozyskiwanie dowolnej informacji
+6. Zaufanie prostych ludzi: możliwość wywołania zamieszek i demonstracji, kontrola tłumu, szerzenie plotek
+7. Kontakty wśród przemytników: dostęp do nielegalnych produktów, ukrywanie osób i rzeczy, przemyt
+8. Kontrola nad wybranymi gangami: dostęp do nielegalnych produktów, napady, włamania, wymuszenia, porwania
+9. Wpływy w urzędach Administracji: przepustki, fałszywe tożsamości, dostęp do informacji niepublicznej
+10. Laboratoria naukowe: diagnostyka, analiza danych, dane i technologie z dowolnej dziedziny nauki
+11. Kontrola nad przemytem narkotyków: nielegalne stymulanty, siatka sprzedawców, tajne kanały przerzutu towarów i ludzi
+12. Kontrola nad mediami: możliwość manipulowania przekazem medialnym, dostęp do kompromitujacych informacji (politycy, osoby publiczne)
+13. Kontrola nad policją i służbami miejskimi: dostęp do systemów policyjnych, wsparcie służb, bezkarność w obliczu prawa
+14. Wpływy w sektach religijnych: możliwość wywołania zamieszek i demonstracji, dostęp do nielegalnych produktów, możliwość manipulowania wspólnotami religijnymi
+15. Możliwości wywiadowcze: dostęp do dowolnej informacji, śledzenie, wykrywanie, tuszowanie incydentów 
+16. Kontakty wśród runnerów: możliwość wynajęcia grupy, informacje przydatne podczas roboty, bezpieczne miejscówki
+17. Wpływy wśród handlarzy bronią: dostęp do broni dowolnego rodzaju
+18. Zasoby biotechnologiczne: modyfikacje genetyczne, mutacje, klonowanie, nielegalne zabiegi, trucizny, stymulanty 
+19. Zasoby przestrzenne: lokale i tereny do wynajęcia lub wykorzystania
+20. Kontrola nad przemysłem rozrywkowym: kontakty w klubach, sieci informatorów, dane dłużników, organizacja dowolnych imprez i zawodów, manipulowanie wygranymi w grach hazardowych
+
+### Cel
+
+1. Zlikwidować fizycznie konkurencję (zniszczenie sprzętu, miejsca lub likwidacja/transfer pracowników)
+2. Zdyskredytować konkurencję publicznie (afera w mediach lub na arenie politycznej)
+3. Przejąć kontrolę nad wybraną domeną publiczną (transportem, finansowaniem komunalnym, planowaniem przestrzennym)
+4. Zmaksymalizować zyski ze sprzedaży (pozyskanie kontraktu, reklama produktu)
+5. Wykraść dane konkurencji (dokumentacja techniczna produktu, dane osobowe)
+6. Zdyskredytować znanego polityka (w celu pozyskania wpływów politycznych; jako akt zemsty)
+7. Zmusić/przekonać znaną postać publiczną do podpisania kontraktu marketingowego
+8. Ujawnić nieprawidłowości w instytucjach rządowych (plan ograniczenia praw obywateli, przekupstwo, nielegalna działalność urzędników)
+9. Zapobiec ujawnieniu niewygodnej prawdy o korporacji (nielegalna działalność, eksperymenty)
+10. Wykryć i zlikwidować zdrajcę wewnątrz korporacji
+11. Wytropić i odzyskać zbiegłego pracownika (ceniony naukowiec; ktoś z rodziny zarządu; osoba, która wykradła informacje)
+12. Pozyskać pracownika konkurencji
+13. Wprowadzić własnego szpiega na wysokie stanowisko do konkurencji
+14. Przetestować najnowszy produkt bezpośrednio na ludziach (chemia, żywność, stymulant, broń)
+15. Wprowadzić na rynek niebezpieczny produkt (stymulant o skutkach ubocznych, awaryjna cybertechnologia )
+16. Zapobiec katastrofie wywołanej przez eksperymenty korporacji (ekologiczna, społeczna)
+17. Wywołać kontrolowaną katastrofę (epidemia w celu wprowadzenia szczepionki, skażenie w celu sprzedaży środków ochronnych)
+18. Dyskretnie opanować niekontrolowaną katastrofę wewnątrz korporacji (epidemia wirusa wśród pracowników, awaria wewnętrznej sieci komputerowej)
+19. Odzyskać skradzione dane (dokumentacja techniczna produktu, dane osobowe)
+20. Dyskretnie pozbyć się niewygodnego członka własnego zarządu (publiczna afera, porwanie, fabrykowane dowody przestępstwa)
+
+### Przysługa za przysługę
+
+Prosty koncept współpracy graczy z korporacjami: jeśli działania graczy w trakcie sesji przyczyniły się do realizacji jakiegokolwiek celu korporacji, prowadzący zaznacza przy tej korporacji punkt wiarygodności (kropkę, symbol  - cokolwiek). Każdy punkt wiarygodności można wykorzystać jednorazowo aby uzyskać dostęp do jednego z zasobów korporacji. Pomoc w realizacji celu może być jawna (wykonanie jednego lub więcej zleceń) lub przypadkowa (działania nieświadomych graczy pozostają w zbieżności z celami zaibatsu).
