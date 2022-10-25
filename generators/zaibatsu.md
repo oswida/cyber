@@ -7,15 +7,24 @@ nav_order: 3
 
 # Generator zaibatsu (w przygotowaniu)
 
+Korporacje (nazywane żargonowo z japońskiego "zaibatsu") to integralna część cyberpunkowego świata. Posiadają olbrzymie wpływy i zasoby. Są w stanie kontrolować politykę, media i określać warunki życia większości ludzi na świecie. Nie są jednak wszechpotężne a w ich szeregach nadal znajdują się zwykli ludzie ze swoimi ambicjami, obawami i żądzami. Zaibatsu mają też wrogów - czasem są to instytucje rządowe, czasem wojsko a czasem ... rynkowi rywale.
+
+Prezentowany generator ma być inspiracją do zapełniania Waszego świata złowrogimi korporacjami.
+
 <!-- [Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/corpo) -->
 
 ## Losowanie
 
 - 2 rzuty na części składowe nazwy w odpowiednich tabelach
-- 1-2 rzuty na branżę
-- Co najmniej jeden rzut na plotkę
+- 1-2 rzuty na branżę (zwróćcie proszę uwagę na drugą część nazwy korporacji, może ona bowiem sugerować branżę)
+- Co najmniej jeden rzut na plotkę dotyczącą zaibatsu (może być prawdziwa albo nie)
 - 1-2 rzuty na zasoby
 - 1-2 rzuty na cel
+
+## Rzut k20+k20
+
+Rzut oznaczony jako k20+k20 oznacza, że rzucamy dwoma kośćmi k20 ale pierwszej wartości używamy do określenia kolumny (grupy) a drugiej — pozycji w grupie.
+Rzut ten zastępuje rzut kośćmi o większej ilości ścianek (np. k100), a jednocześnie umożliwia losowanie z puli będącej wielokrotnością dwudziestki: 40,60,80 lub 120.
 
 ## Nazwa 1 (1k20 + 1k20)
 
@@ -48,32 +57,41 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 
 Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 
-| k20 | Kolumna | C1 `(1-7)`     | C2 `(8-14)`   | C3 `(15-20)`  |
-| --- | :-----: | -------------- | ------------- | ------------- |
-| 1   |    1    | Group          | Management    | Instruments   |
-| 2   |    1    | Industries     | Consulting    | Radiotechnics |
-| 3   |    1    | Ltd            | Solutions     | Delivery      |
-| 4   |    1    | GmbH           | Investments   | Agricultural  |
-| 5   |    1    | Corporation    | Tacticals     | Consumables   |
-| 6   |    1    | Defense        | Technologies  | Systems       |
-| 7   |    1    | Security       | Incorporated  | Nanotech      |
-| 8   |    2    | Healthcare     | Manufacturing | Biotech       |
-| 9   |    2    | Entertainment  | Software      | Genotech      |
-| 10  |    2    | Communications | Automotive    | Commtech      |
-| 11  |    2    | Transportation | Chemicals     | Prototech     |
-| 12  |    2    | Syndicate      | Engineering   | Cybertech     |
-| 13  |    2    | MegaCorp       | Financials    | Genomics      |
-| 14  |    2    | Digital        | Products      | Computers     |
-| 15  |    3    | Cybertronic    | Semiconductor | Interactive   |
-| 16  |    3    | Mechatronic    | Cargo         | Laboratory    |
-| 17  |    3    | Services       | Research      | Games         |
-| 18  |    3    | Sciences       | Machines      | Cybernetics   |
-| 19  |    3    | Electric       | Logistics     | Aerospace     |
-| 20  |    3    | Cosmetics      | Motors        | Express       |
+| k20 | Kolumna | C1 `(1-7)`    | C2 `(8-14)`   | C3 `(15-20)`   |
+| --- | :-----: | ------------- | ------------- | -------------- |
+| 1   |    1    | Aerospace     | Engineering   | Manufacturing  |
+| 2   |    1    | Agricultural  | Entertainment | Mechatronic    |
+| 3   |    1    | Automotive    | Express       | MegaCorp       |
+| 4   |    1    | Biotech       | Financials    | Motors         |
+| 5   |    1    | Cargo         | Games         | Nanotech       |
+| 6   |    1    | Chemicals     | Genomics      | Products       |
+| 7   |    1    | Commtech      | Genotech      | Prototech      |
+| 8   |    2    | Communication | GmbH          | Radiotechnics  |
+| 9   |    2    | Computers     | Group         | Research       |
+| 10  |    2    | Consulting    | Healthcare    | Sciences       |
+| 11  |    2    | Consumables   | Incorporated  | Security       |
+| 12  |    2    | Corporation   | Industries    | Semiconductor  |
+| 13  |    2    | Cosmetics     | Instruments   | Services       |
+| 14  |    2    | Cybernetics   | Interactive   | Software       |
+| 15  |    3    | Cybertech     | Investments   | Solutions      |
+| 16  |    3    | Cybertronic   | Laboratory    | Syndicate      |
+| 17  |    3    | Defense       | Logistics     | Systems        |
+| 18  |    3    | Delivery      | Ltd           | Tacticals      |
+| 19  |    3    | Digital       | Machines      | Technologies   |
+| 20  |    3    | Electric      | Management    | Transportation |
+
 
 ## Branża (1k20 + 1k20)
 
 Pierwszy rzut wybiera grupę, drugi pozycję w grupie.
+Przy każdej branży podano przykładowe produkty jakie mogą pojawić się w ofercie zaibatsu.
+### Branża zależna od nazwy
+
+Nazwy korporacji w większości przypadków mają angielskie brzmienie. Jest to zamierzony efekt związany z klasycznymi grami i literaturą nurtu. Jeśli zdecydujesz się skorzystać z generatora, zwróć proszę uwagę, że druga część nazwy często  oddaje jednocześnie branżę, w której działa firma („software” prawdopodobnie sugeruje oprogramowanie a „chemicals” — przemysł chemiczny).  Warto uwzględnić te zależności podczas kreowania „zaibatsu”.
+
+### Wiele branż dla jednej firmy
+
+Podczas losowania korporacji, możesz wybrać więcej niż jedną branżę dla firmy. Czasem wylosowane branże mogą wydawać się zbyt odległe od siebie jak na przykład „rolnictwo” i „usługi finansowe”. Nie ma w tym jednak żadnej sprzeczności. Korporacje jako potężne  organizacje nastawione na maksymalny zysk i sprawne operowanie na rynku, często poszerzają swoją działalność. Daje im to dodatkowe dochody oraz zabezpiecza przed nagłymi wahaniami rynkowymi w ramach pojedynczej branży.
 
 ### 1 - 10
 
@@ -140,7 +158,7 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 | 11  |    2    | Planują wrogie przejęcie pozostałych korporacji ze swojego sektora rynku        | Ich oficjalna działalność jest przykrywką dla handlu organami ludzkimi             |
 | 12  |    2    | Wyhodowali klony znanych polityków i podmienili niektórych z nich               | Ich pracownicy planują krwawy bunt i zamierzają zniszczyć korporację od wewnątrz   |
 | 13  |    2    | Są w posiadaniu minerału, który może zastąpić wszelkie znane paliwa             | Ich szalony zarząd planuje światową apokalipsę                                     |
-| 14  |    2    | Opracowali zminiaturyzowaną broń EMP                                            | Cała korporacja jest w zasadzie religijną sektą                                    |
+| 14  |    2    | Opracowali zminiaturyzowaną, osobistą broń EMP                                  | Cała korporacja jest w zasadzie religijną sektą                                    |
 | 15  |    2    | Mają oprogramowanie pozwalające na emisję przekazu podprogowego w ich reklamach | Odkryli ślady starożytnej cywilizacji i nieznanej technologii                      |
 | 16  |    2    | Ukrywają fakt masowej eksterminacji jednej ze swoich własnych arkologii         | Korporacją zarządza SI ale nikt z pracowników i zarządu o tym nie wie              |
 | 17  |    2    | Większość ich pracowników to androidy                                           | Zarząd korporacji nie żyje a podszywa się pod niego grupa najemników               |
@@ -152,12 +170,14 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 
 ### Zasoby (1k20)
 
+Przy każdym z zasobów podano przykładowe benefity wynikające z jego posiadania.
+
 1. Zasoby technologiczne: dostęp do najnowszych osiągnięć technologicznych
 2. Zasoby finansowe: pieniądze bez ograniczeń
 3. Kontakty w kręgach wojskowych: przepustki do obiektów wojskowych, kontakt z dowództwem, sprzęt wojskowy
 4. Wpływy w grupach hakerskich: dostęp do dowolnej informacji w sieci, kradzież danych, wejścia do węzłów Infosfery
 5. Wiarygodność w mediach: możliwość przekazania dowolnej informacji do opinii publicznej, pozyskiwanie dowolnej informacji
-6. Zaufanie prostych ludzi: możliwość wywołania zamieszek i demonstracji, kontrola tłumu, szerzenie plotek
+6. Zaufanie zwykłych ludzi: możliwość wywołania zamieszek i demonstracji, kontrola tłumu, szerzenie plotek
 7. Kontakty wśród przemytników: dostęp do nielegalnych produktów, ukrywanie osób i rzeczy, przemyt
 8. Kontrola nad wybranymi gangami: dostęp do nielegalnych produktów, napady, włamania, wymuszenia, porwania
 9. Wpływy w urzędach Administracji: przepustki, fałszywe tożsamości, dostęp do informacji niepublicznej
@@ -174,6 +194,9 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 20. Kontrola nad przemysłem rozrywkowym: kontakty w klubach, sieci informatorów, dane dłużników, organizacja dowolnych imprez i zawodów, manipulowanie wygranymi w grach hazardowych
 
 ### Cel
+
+Przy każdym z celów podano przykładowe sposoby osiągnięcia celu, mogą one składać się z więcej niż jednej aktywności.
+Cele korporacji można wykorzystać jako potencjalne zadania dla graczy lub elementy świata, z którymi gracze będą musieli się zmierzyć (na przykład przeciwdziałając osiągnięciu danego celu).
 
 1. Zlikwidować fizycznie konkurencję (zniszczenie sprzętu, miejsca lub likwidacja/transfer pracowników)
 2. Zdyskredytować konkurencję publicznie (afera w mediach lub na arenie politycznej)
