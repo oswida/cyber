@@ -18,8 +18,9 @@ Prezentowany generator ma być inspiracją do zapełniania Waszego świata złow
 - 2 rzuty na części składowe nazwy w odpowiednich tabelach
 - 1-2 rzuty na branżę (zwróćcie proszę uwagę na drugą część nazwy korporacji, może ona bowiem sugerować branżę)
 - Co najmniej jeden rzut na plotkę dotyczącą zaibatsu (może być prawdziwa albo nie)
-- 1-2 rzuty na zasoby
-- 1-2 rzuty na cel
+- 1-2 rzuty na zasoby posiadane przez korporację
+- 1-2 rzuty na główny cel zaibatsu
+- rzut na profil pracownika jeśli zechcecie go określić
 
 ## Rzut k20+k20
 
@@ -95,49 +96,49 @@ Podczas losowania korporacji, możesz wybrać więcej niż jedną branżę dla f
 
 ### 1 - 10
 
-1. Badania i rozwój: SI do analizy danych i wyszukiwania, neuroprocesory i sprzęt do zapisu/odczytu ludzkiej pamięci, SI (de-)szyfrujące i kompresujące dane
-2. Bezpieczeństwo: kompleksowe automatyczne systemy strażnicze, sieci sensorów (alarmy, czujniki)
-3. Biotechnologia: nowe rodzaje żywności, hormony zwiększające ludzkie możliwości, stymulanty
-4. Broń i amunicja: broń palna niezawodna w każdych warunkach, broń znaczona genetycznie, inteligentna amunicja
-5. Budownictwo: schrony, zautomatyzowane hotele i domy, elektroniczne wyposażenie wnętrz
-6. Cybertechnika: wszelkiego rodzaju cybermodyfikacje (wszczepy), sprzęt do kalibracji i diagnostyki cybermodów
-7. Edukacja: szkolenia różnego typu, oprogramowanie edukacyjne, gry edukacyjne
-8. Elektronika: wszelkiego rodzaju sprzęt elektroniczny
-9. Energetyka: generatory energii, baterie, zasilacze
-10. Genetyka: modyfikacje genetyczne na zamówienie, mutanty bojowe bazujące na owadach, usługi klonowania dowolnych organizmów żywych poza ludźmi
-11. Górnictwo: miniaturowe ładunki wybuchowe, autonomiczne roboty górnicze, cybermodyfikacje wzmacniające mięśnie i szkielet, pozyskiwanie zasobów naturalnych
-12. Gry komputerowe: rozwój i utrzymanie personalnych osiągnięć w grach online, spersonalizowane gry edukacyjne dla pracowników, dedykowane gry taktyczne dla oddziałów bojowych
-13. Media: programy rozrywkowe transmitowane online, informacje, reportażę, kształtowanie opinii publicznej
-14. Nanotechnologia: nanoboty medyczne i produkcyjne, sprzęt szpiegowski
-15. Oprogramowanie: zapory i LOD do ochrony węzłów Infosfery, oprogramowanie użytkowe, programy hakerskie
-16. Przemysł chemiczny: chemia bojowa, środki ochrony chemicznej, chemia domowa
-17. Przemysł farmaceutyczny: leki, stymulanty, środki kosmetyczne
-18. Przemysł komputerowy: cyberdeki, peryferia komputerowe, hakerzy-specjaliści do wynajęcia
-19. Przemysł kosmiczny: stacje kosmiczne, promy orbitalne i stratosferyczne, wytrzymałe materiały, systemy podtrzymywania życia
-20. Przemysł lotniczy: samoloty, helikoptery, poduszkowce, systemy nawigacyjne, drony
+1. **Badania i rozwój**: SI do analizy danych i wyszukiwania, neuroprocesory i sprzęt do zapisu/odczytu ludzkiej pamięci, SI (de-)szyfrujące i kompresujące dane
+2. **Bezpieczeństwo**: kompleksowe automatyczne systemy strażnicze, sieci sensorów (alarmy, czujniki)
+3. **Biotechnologia**: nowe rodzaje żywności, hormony zwiększające ludzkie możliwości, stymulanty
+4. **Broń i amunicja**: broń palna niezawodna w każdych warunkach, broń znaczona genetycznie, inteligentna amunicja
+5. **Budownictwo**: schrony, zautomatyzowane hotele i domy, elektroniczne wyposażenie wnętrz
+6. **Cybertechnika**: wszelkiego rodzaju cybermodyfikacje (wszczepy), sprzęt do kalibracji i diagnostyki cybermodów
+7. **Edukacja**: szkolenia różnego typu, oprogramowanie edukacyjne, gry edukacyjne
+8. **Elektronika**: wszelkiego rodzaju sprzęt elektroniczny
+9. **Energetyka**: generatory energii, baterie, zasilacze
+10. **Genetyka**: modyfikacje genetyczne na zamówienie, mutanty bojowe bazujące na owadach, usługi klonowania dowolnych organizmów żywych poza ludźmi
+11. **Górnictwo**: miniaturowe ładunki wybuchowe, autonomiczne roboty górnicze, cybermodyfikacje wzmacniające mięśnie i szkielet, pozyskiwanie zasobów naturalnych
+12. **Gry komputerowe**: rozwój i utrzymanie personalnych osiągnięć w grach online, spersonalizowane gry edukacyjne dla pracowników, dedykowane gry taktyczne dla oddziałów bojowych
+13. **Media**: programy rozrywkowe transmitowane online, informacje, reportażę, kształtowanie opinii publicznej
+14. **Nanotechnologia**: nanoboty medyczne i produkcyjne, sprzęt szpiegowski
+15. **Oprogramowanie**: zapory i LOD do ochrony węzłów Infosfery, oprogramowanie użytkowe, programy hakerskie
+16. **Przemysł chemiczny**: chemia bojowa, środki ochrony chemicznej, chemia domowa
+17. **Przemysł farmaceutyczny**: leki, stymulanty, środki kosmetyczne
+18. **Przemysł komputerowy**: cyberdeki, peryferia komputerowe, hakerzy-specjaliści do wynajęcia
+19. **Przemysł kosmiczny**: stacje kosmiczne, promy orbitalne i stratosferyczne, wytrzymałe materiały, systemy podtrzymywania życia
+20. **Przemysł lotniczy**: samoloty, helikoptery, poduszkowce, systemy nawigacyjne, drony
 
 ### 11 - 20
 
-1. Przemysł maszynowy: maszyny mechaniczne, roboty przemysłowe, hutnictwo i obróbka metali  
-2. Przemysł morski: pozyskiwanie zasobów morskich, pojazdy pływające, eksploracja mórz i oceanów
-3. Przemysł odzieżowy: odzież zwykła, kamuflująca, ochronna, moda, pancerze
-4. Przemysł precyzyjny: wyposażenie laboratoriów, narzędzia
-5. Przemysł samochodowy: pojazdy naziemne, części, opancerzenie i broń montowana na pojazdach
-6. Przemysł spożywczy: żywność, stymulanty, narkotyki; hermetyczne, niezniszczalne opakowania
-7. Psychotechnika: wsparcie duchowe, techniki rozwoju osobistego, organizacje religijne, trening mentalny 
-8. Robotyka: roboty wszelkiego rodzaju, drony, androidy do opieki nad dziećmi lub prowadzenia gospodarstwa domowego
-9. Rolnictwo: genetycznie modyfikowane zwierzęta z wszczepami, specjalizowane rośliny
-10. Rozrywka: organizacja imprez sportowych, muzycznych, gry terenowe, rajdy, kasyna, loterie; rekordery i symulatory wrażeń zmysłowych
-11. Telekomunikacja: sprzęt przeciwpodsłuchowy, urządzenia dostępowe do sieci, infrastruktura Infosfery, jammery, neuroprocesory
-12. Usługi finansowe: pożyczki, odzyskiwanie długów, loterie, systemy rozliczeniowe
-13. Usługi informacyjne: wywiad, usługi detektywistyczne, wyszukiwanie informacji w Infosferze
-14. Usługi komunalne: sprzątanie, czyszczenie, transport publiczny, systemy kontroli ruchu naziemnego
-15. Usługi kurierskie: dostarczanie przesyłek, bezpieczne przechowywanie i dostarczanie wiadomości/dokumentów, anonimowe skrytki
-16. Przemysł i usługi medyczne: leczenie szpitalne i usługi ratunkowe, sprzęt medyczny, pojazdy ratunkowe 
-17. Usługi militarne: wynajem i szkolenie oddziałów, wynajem sprzętu wojskowego, broń i pojazdy bojowe
-18. Usługi prawnicze: procedury wyzwoleńcze dla SI, pozwy i wsparcie procesowe, komunikacja międzykulturowa, negocjacje, realizacja "ostatniej woli" klienta
-19. Usługi transportowe: Automatyczne pojazdy transportowe, transport materiałów i osób (również niebezpiecznych), błyskawiczna dystrybucja do masowego odbiorcy (ulotki, szczepionki)
-20. Utylizacja odpadów: środowiskowe kombinezony ochronne, leki antymutagenne i antyradiacyjne, systemy wykrywania substancji szkodliwych (trucizny, wirusy biologiczne)
+1. **Przemysł maszynowy**: maszyny mechaniczne, roboty przemysłowe, hutnictwo i obróbka metali  
+2. **Przemysł morski**: pozyskiwanie zasobów morskich, pojazdy pływające, eksploracja mórz i oceanów
+3. **Przemysł odzieżowy**: odzież zwykła, kamuflująca, ochronna, moda, pancerze
+4. **Przemysł precyzyjny**: wyposażenie laboratoriów, narzędzia
+5. **Przemysł samochodowy**: pojazdy naziemne, części, opancerzenie i broń montowana na pojazdach
+6. **Przemysł spożywczy**: żywność, stymulanty, narkotyki; hermetyczne, niezniszczalne opakowania
+7. **Psychotechnika**: wsparcie duchowe, techniki rozwoju osobistego, organizacje religijne, trening mentalny 
+8. **Robotyka**: roboty wszelkiego rodzaju, drony, androidy do opieki nad dziećmi lub prowadzenia gospodarstwa domowego
+9. **Rolnictwo**: genetycznie modyfikowane zwierzęta z wszczepami, specjalizowane rośliny
+10. **Rozrywka**: organizacja imprez sportowych, muzycznych, gry terenowe, rajdy, kasyna, loterie; rekordery i symulatory wrażeń zmysłowych
+11. **Telekomunikacja**: sprzęt przeciwpodsłuchowy, urządzenia dostępowe do sieci, infrastruktura Infosfery, jammery, neuroprocesory
+12. **Usługi finansowe**: pożyczki, odzyskiwanie długów, loterie, systemy rozliczeniowe
+13. **Usługi informacyjne**: wywiad, usługi detektywistyczne, wyszukiwanie informacji w Infosferze
+14. **Usługi komunalne**: sprzątanie, czyszczenie, transport publiczny, systemy kontroli ruchu naziemnego
+15. **Usługi kurierskie**: dostarczanie przesyłek, bezpieczne przechowywanie i dostarczanie wiadomości/dokumentów, anonimowe skrytki
+16. **Przemysł i usługi medyczne**: leczenie szpitalne i usługi ratunkowe, sprzęt medyczny, pojazdy ratunkowe 
+17. **Usługi militarne**: wynajem i szkolenie oddziałów, wynajem sprzętu wojskowego, broń i pojazdy bojowe
+18. **Usługi prawnicze**: procedury wyzwoleńcze dla SI, pozwy i wsparcie procesowe, komunikacja międzykulturowa, negocjacje, realizacja "ostatniej woli" klienta
+19. **Usługi transportowe**: Automatyczne pojazdy transportowe, transport materiałów i osób (również niebezpiecznych), błyskawiczna dystrybucja do masowego odbiorcy (ulotki, szczepionki)
+20. **Utylizacja odpadów**: środowiskowe kombinezony ochronne, leki antymutagenne i antyradiacyjne, systemy wykrywania substancji szkodliwych (trucizny, wirusy biologiczne)
 
 ## Plotka (1k20 + 1k20)
 
@@ -193,7 +194,7 @@ Przy każdym z zasobów podano przykładowe benefity wynikające z jego posiadan
 19. Zasoby przestrzenne: lokale i tereny do wynajęcia lub wykorzystania
 20. Kontrola nad przemysłem rozrywkowym: kontakty w klubach, sieci informatorów, dane dłużników, organizacja dowolnych imprez i zawodów, manipulowanie wygranymi w grach hazardowych
 
-### Cel
+### Cel (1k20)
 
 Przy każdym z celów podano przykładowe sposoby osiągnięcia celu, mogą one składać się z więcej niż jednej aktywności.
 Cele korporacji można wykorzystać jako potencjalne zadania dla graczy lub elementy świata, z którymi gracze będą musieli się zmierzyć (na przykład przeciwdziałając osiągnięciu danego celu).
@@ -222,3 +223,29 @@ Cele korporacji można wykorzystać jako potencjalne zadania dla graczy lub elem
 ### Przysługa za przysługę
 
 Prosty koncept współpracy graczy z korporacjami: jeśli działania graczy w trakcie sesji przyczyniły się do realizacji jakiegokolwiek celu korporacji, prowadzący zaznacza przy tej korporacji punkt wiarygodności (kropkę, symbol  - cokolwiek). Każdy punkt wiarygodności można wykorzystać jednorazowo aby uzyskać dostęp do jednego z zasobów korporacji. Pomoc w realizacji celu może być jawna (wykonanie jednego lub więcej zleceń) lub przypadkowa (działania nieświadomych graczy pozostają w zbieżności z celami zaibatsu).
+
+## Profil pracownika (1k20)
+
+W trakcie gry bohaterowie na pewno zetkną się z pracownikami zaibatsu. A może nawet zechcą poprowadzić rozgrywkę, w której przynajmniej przez chwilę będą mogli poruszać się w korporacyjnej rzeczywistości. Aby nadać każdej z korporacji pewien charakterystyczny rys, można określić profil jej pracownika. Nie oznacza to, że przedstawiciele danego zaibatsu są wszyscy tacy sami, ale należą do społeczności, w której pewne modele zachowań są akceptowane a nawet popularyzowane przez firmowe zarządy.
+Propozycje przedstawione poniżej nie są jedynie korporacyjnymi sloganami czy kodeksami, to raczej formy zachowań wypracowane przez społeczności korporacyjne - tym samym wybiegają poza zwykłą lojalność pracownika wobec pracodawcy. 
+
+1. Osobisty honor i poczucie obowiązku - sam podejmuję decyzje i za nie odpowiadam; jedną z takich decyzji było podjęcie pracy w korporacji ale nie jestem niewolnikiem a korporacja nie jest moim panem. 
+2. Wspólne dobro (korporacji) wartością najwyższą - ci, którzy mnie zatrudniają wiedzą lepiej, moim zadaniem jest jak najstaranniej realizować ich plany
+3. Nie istnieje to czego nie widać a każdy ma wiele twarzy - stanowczo zaprzeczam tym ohydnym pomówieniom, ta osoba na nagraniu to zapewne podstawiony klon albo samo nagranie zostało sfałszowane.
+4. Jaka płaca taka praca - mam wejść do tej dziury? nie ma mowy, aż tyle to tutaj nie zarabiam
+5. Jedna wielka rodzina - w przyszłym tygodniu obchodzimy imieniny szefa działu, moja córka już przygotowała wiersz na tę okazję
+6. To tylko praca, nic personalnego - robię co robię, każdy ma jakieś obowiązki do wykonania więc o co ta awantura?
+7. Tylko najlepsi osiągają szczyt - brakuje mi tylko 20 punktów, żeby wejść do strefy awansu. W takim tempie do końca roku będę kierownikiem działu.
+8. Co zdobędziesz własnoręcznie, jest twoje - i co z tego, że Anna była lepsza ode mnie? Zagapiła się, popełniła błąd a ja wykorzystałam okazję. Życie.
+9.  Im mniej cię widać, tym bezpieczniej - może lepiej nie wysyłajmy tego listu, ktoś może zobaczyć, powie komu nie trzeba i będziemy mieli kłopoty. Komu to potrzebne?
+10. Sukces odnosi się za pomocą cierpliwości - twój dziadek zaczynał jako zwykły pracownik fabryczny, ja pracuję już jako majster. Jak tak dalej pójdzie może ty dotrzesz do kierownika działu. 
+11. Kiedyś nadejdzie dzień odpłaty - tak, teraz musimy robić co nam każą, jakoś trzeba żyć ale kiedyś ... kiedyś powstaniemy a wtedy poleje się krew 
+12. Każdy może mieć swój zysk - firma zarabia i ja też zarabiam, a jak firma zarabia więcej to ja również mogę mieć wiecej - proste
+13. Świadomie i odpowiedzialnie tworzymy lepszy świat - te apokaliptyczne wizje są przesadzone, korporacje to naturalny krok w ewolucji, rozumiemy to i bierzemy udział w procesie budowania przyszłości. Jeśli masz lepszą alternatywę, zapraszamy do dyskusji.
+14. Dla każdego miejsce, każdy na swoim miejscu - każdy chce czuć się potrzebny a nie każdy z nas ma te same możliwości, dzięki tej pracy nie ma wśród nas ludzi lekceważonych czy niedocenionych
+15. Jak się nie ma co się lubi... - to się lubi co się ma. Nie ma co narzekać, zawsze może być gorzej.
+16. Zjednoczeni wspólnym wrogiem - może u nas nie jest idealnie ale za to u nich, to dopiero jest syf. Trzeba wyplenić tę zarazę do gołej ziemi
+17. Wiara we wspólną misję - możesz się śmiać, możesz wątpić i sączyć truciznę zdrady. Gdy nadejdzie ten wielki dzień przekonasz się, że staliśmy po właściwej stronie. I jeszcze wszyscy nam podziękują.
+18. Jesteśmy lepsi od innych - nasi specjaliści są najlepsi, nasze metody najbardziej skuteczne. Bycie członkiem tej społeczności to zaszczyt i nobilitacja. Nie spoufalamy się z motłochem.
+19. Jasno ustalone reguły - zasady są znane i każdy ich przestrzega, co w tym dziwnego? Wolałabyś kompletny chaos, kumoterstwo i nieuczciwe gierki?
+20. Warto rozmawiać - komunikacja, komunikacja i jeszcze raz komunikacja. Z każdym można rozmawiać i każdego przekonać ... albo przynajmniej wypracować jakiś konsensus. Najgorzej jak ludzie szepczą po kątach.
