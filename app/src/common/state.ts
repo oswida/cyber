@@ -30,7 +30,7 @@ export const nodeClassSelected = atom<string | undefined>(undefined);
 
 export const selectedRollerDice = atom<string>("");
 
-export const stateRollHistory = atom<Record<string, RollHistoryEntry>>({});
+export const stateRollHistory = atom<RollHistoryEntry[]>([]);
 
 export const initialSessionData = {
   username: "",

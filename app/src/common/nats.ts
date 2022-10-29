@@ -26,6 +26,7 @@ export const topicConnect = "TopicConnect";
 export const topicRoll = "TopicRoll";
 export const topicBoard = "TopicBoard";
 export const topicChars = "TopicChars";
+export const topicBoardDelete = "TopicBoardDelete";
 // 03c2ba5c-c834-4afa-ac1b-355ae5ce7a1b
 
 export const useNats = () => {
@@ -151,7 +152,7 @@ export const useNats = () => {
       const playerState = await cPlayers();
       if (msg.subject === getTopic(topicConnect)) {
         if (sessionData.hosting) {
-          publish(cn.connection, topicRoll, Object.values(rollHistory));
+          publish(cn.connection, topicRoll, rollHistory);
           publish(cn.connection, topicBoard, Object.values(boardState));
           publish(
             cn.connection,
@@ -162,10 +163,20 @@ export const useNats = () => {
         }
       } else if (msg.subject === getTopic(topicRoll)) {
         const rolls = JSON.parse(m.data) as RollHistoryEntry[];
-        const newState = { ...rollHistory };
-        rolls.forEach((roll) => {
-          newState[roll.id] = roll;
-        });
+        const st = [...rolls, ...rollHistory];
+        let newState: RollHistoryEntry[] = [];
+        // remove duplicates
+        if (rolls.length > 1) {
+          const c: Record<string, boolean> = {};
+          st.forEach((it) => {
+            if (!c[it.id]) {
+              c[it.id] = true;
+              newState.push(it);
+            }
+          });
+        } else {
+          newState = st;
+        }
         setRollHistory(newState);
         notify("New dice roll registered", 10000);
       } else if (msg.subject === getTopic(topicBoard)) {
@@ -186,6 +197,15 @@ export const useNats = () => {
         setPlayers(newState);
         savePlayers(newState);
         notify("Character created/updated", 10000);
+      } else if (msg.subject === getTopic(topicBoardDelete)) {
+        const notes = JSON.parse(m.data) as Note[];
+        const newState = { ...boardState };
+        notes.forEach((note) => {
+          newState[note.id] = undefined;
+        });
+        setBoardState(newState);
+        saveBoardNotes(newState);
+        notify("Board note created/updated", 10000);
       }
     }
   };

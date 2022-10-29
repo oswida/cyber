@@ -21,8 +21,8 @@ export const RollerPane = () => {
   const sessionData = useAtomValue(stateSessionData);
 
   const clearRolls = () => {
-    setRolls({});
-    saveRolls({});
+    setRolls([]);
+    saveRolls([]);
   };
   return (
     <HudPane>

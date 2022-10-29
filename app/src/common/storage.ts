@@ -1,8 +1,8 @@
-import { RollHistoryEntry } from "~/common";
 import { compress, decompress } from "@eonasdan/lz-string";
 import { useAtom } from "jotai";
 import { TileBranchSubstance } from "react-tile-pane";
 import { v4 as uuidv4 } from "uuid";
+import { RollHistoryEntry } from "~/common";
 import {
   GenStateType,
   initialSessionData,
@@ -129,11 +129,13 @@ export const useStorage = () => {
   const loadRolls = () => {
     const data = localStorage.getItem(inodRollsKey);
     if (data && data !== "") {
-      setRollHistory(decomp(data));
+      const d = decomp(data);
+      if (Array.isArray(d)) setRollHistory(d);
+      else setRollHistory([]);
     }
   };
 
-  const saveRolls = (state: Record<string, RollHistoryEntry | undefined>) => {
+  const saveRolls = (state: RollHistoryEntry[]) => {
     localStorage.setItem(inodRollsKey, comp(state));
     updateStoreSize();
   };

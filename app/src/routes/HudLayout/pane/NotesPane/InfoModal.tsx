@@ -11,6 +11,7 @@ import {
   stateSelNote,
   styled,
   topicBoard,
+  topicBoardDelete,
   useNats,
 } from "~/common";
 import { useStorage } from "~/common/storage";
@@ -73,6 +74,7 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
       setNotesState(newState);
       savePrivateNotes(newState);
     }
+    publish(nats.connection, topicBoardDelete, [no.note]);
     setNo({ open: false, note: undefined });
     setSelNote("");
   };

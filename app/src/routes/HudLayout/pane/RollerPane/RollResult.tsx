@@ -68,8 +68,7 @@ export const RollResult = () => {
           data: rollData,
           comment: commentRef.current?.value,
         } as RollHistoryEntry;
-        const newState = { ...rollHistory };
-        newState[newEntry.id] = newEntry;
+        const newState = [newEntry, ...rollHistory];
         setRollHistory(newState);
         saveRolls(newState);
         commentRef.current!!.value = "";

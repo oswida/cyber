@@ -1,4 +1,5 @@
-import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faDeleteLeft, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom, useAtomValue } from "jotai";
 import { useRef, useState } from "react";
 import Scrollbars from "react-custom-scrollbars-2";
@@ -48,8 +49,10 @@ export const ContentRoot = styled("div", {
 });
 
 const ContentItem = styled(Flex, {
-  borderRadius: 2,
-  padding: 3,
+  borderRadius: 5,
+  flex: 1,
+  alignItems: "center",
+  padding: 5,
   marginRight: 10,
   backgroundColor: "$background",
   variants: {
@@ -80,19 +83,12 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
   const nats = useAtomValue(stateNats);
 
   const add = () => {
-    if (
-      !titleRef.current ||
-      !contentRef.current ||
-      titleRef.current.value == ""
-    )
-      return;
     const note: Note = {
       id: uuidv4(),
-      title: titleRef.current.value,
-      content: contentRef.current.innerText,
+      title: "<new note>",
+      content: "",
       author: sessionData.username,
     };
-
     if (isBoard) {
       const newState = { ...boardState };
       newState[note.id] = note;
@@ -105,8 +101,8 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
       setNotesState(newState);
       savePrivateNotes(newState);
     }
-    titleRef.current.value = "";
-    contentRef.current.innerHTML = "";
+    setSelNote(note.id);
+    setNo({ open: true, note: note });
   };
 
   const onSearch = (val: any) => {
@@ -149,15 +145,19 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
     }
   };
 
-  const noteTooltip = (it: Note | undefined) => {
-    if (!it) return "";
-    return it.content.substring(0, 250);
-  };
-
   return (
     <>
       <HudPane>
         <Flex css={{ alignItems: "center", width: "90%", margin: 10 }}>
+          <Button
+            border="underline"
+            onClick={add}
+            title={langHud[sessionData.lang!!].add}
+            css={{ marginRight: 20 }}
+          >
+            <FontAwesomeIcon icon={faPlus} />
+            {/* {langHud[sessionData.lang!!].add} */}
+          </Button>
           <Text color="yellow" size="small">
             {langHud[sessionData.lang!!].search}:
           </Text>
@@ -190,9 +190,14 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
                       }
                       selected={selNote === k}
                     >
-                      <Text title={noteTooltip(boardState[k])}>
-                        {boardState[k]?.title}
-                      </Text>
+                      <Flex
+                        css={{ width: "100%", justifyContent: "space-between" }}
+                      >
+                        <Text>{boardState[k]?.title}</Text>
+                        <Text size="small" css={{ alignSelf: "center" }}>
+                          {boardState[k]?.author}
+                        </Text>
+                      </Flex>
                     </ContentItem>
                   ))}
               {!isBoard &&
@@ -207,9 +212,7 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
                       }
                       selected={selNote === k}
                     >
-                      <Text title={noteTooltip(notesState[k])}>
-                        {notesState[k]?.title}
-                      </Text>
+                      <Text>{notesState[k]?.title}</Text>
                     </ContentItem>
                   ))}
             </>
@@ -217,32 +220,31 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
         </ListRoot>
         <Flex css={{ width: "90%" }}>
           <Flex direction="column" css={{ width: "100%", gap: 10 }}>
-            <Flex css={{ alignItems: "center", width: "100%" }}>
-              <Text color="yellow" size="small">
-                {langHud[sessionData.lang!!].title}:
-              </Text>
-              <Input
-                border="down"
-                css={{ width: "100%" }}
-                ref={titleRef as any}
-              ></Input>
-              <Button onClick={add}>{langHud[sessionData.lang!!].add}</Button>
-            </Flex>
-            <Flex css={{ width: "100%" }} direction="column">
-              <Text color="yellow" size="small">
-                {langHud[sessionData.lang!!].content}:
-              </Text>
-              <ContentRoot>
-                <Scrollbars>
-                  <Textarea
-                    ref={contentRef as any}
-                    small
-                    contentEditable={true}
-                    border="none"
-                    css={{ minHeight: 100 }}
-                  />
-                </Scrollbars>
-              </ContentRoot>
+            <Flex css={{ height: 200 }}>
+              <Scrollbars>
+                <Text>
+                  <>
+                    {isBoard && selNote !== "" && (
+                      <Textarea
+                        contentEditable={false}
+                        border="none"
+                        css={{ flex: 1, whiteSpace: "pre-wrap" }}
+                      >
+                        {boardState[selNote]?.content}
+                      </Textarea>
+                    )}
+                    {!isBoard && selNote !== "" && (
+                      <Textarea
+                        contentEditable={false}
+                        border="none"
+                        css={{ flex: 1, whiteSpace: "pre-wrap" }}
+                      >
+                        {notesState[selNote]?.content}
+                      </Textarea>
+                    )}
+                  </>
+                </Text>
+              </Scrollbars>
             </Flex>
           </Flex>
         </Flex>
