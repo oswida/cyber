@@ -20,6 +20,7 @@ export const Config = ({
   const [sessionData, setSessionData] = useAtom(stateSessionData);
   const [co, setCo] = useAtom(configOpen);
   const nameRef = useRef<HTMLInputElement>();
+  const colorRef = useRef<HTMLInputElement>();
   const remoteRef = useRef<HTMLInputElement>();
   const natsRef = useRef<HTMLInputElement>();
   const natsTokenRef = useRef<HTMLInputElement>();
@@ -27,6 +28,8 @@ export const Config = ({
   const proxy = useMemo(() => sessionData.nats, [sessionData]);
   const remote = useMemo(() => sessionData.remote, [sessionData]);
   const token = useMemo(() => sessionData.nats_token, [sessionData]);
+  const ucolor = useMemo(() => sessionData.color, [sessionData]);
+
   const [host, setHost] = useState(false);
   const nats = useAtomValue(stateNats);
   const { saveSessionData } = useStorage();
@@ -70,6 +73,7 @@ export const Config = ({
       nats: natsRef.current.value,
       hosting: host,
       nats_token: natsTokenRef.current.value,
+      color: colorRef.current?.value,
     };
     saveSessionData(newValue);
     setSessionData(newValue);
@@ -127,6 +131,12 @@ export const Config = ({
         <Flex css={{ alignItems: "center" }}>
           <Text>{langHud[sessionData.lang!!].username}:</Text>
           <Input ref={nameRef as any} defaultValue={uname} />
+          <Text>{langHud[sessionData.lang!!].color}:</Text>
+          <Input
+            ref={colorRef as any}
+            defaultValue={ucolor}
+            css={{ width: "7em" }}
+          />
           <Button css={{ marginLeft: 20 }} size="small" onClick={toggleLang}>
             {sessionData.lang}
           </Button>

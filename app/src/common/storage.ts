@@ -52,6 +52,7 @@ export const useStorage = () => {
     } else {
       const dd = decomp(sessionData);
       if (!dd.lang) dd.lang = "en";
+      if (!dd.color) dd.color = "#ffffff";
       setSessionData(dd);
     }
   };

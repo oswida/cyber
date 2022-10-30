@@ -7,7 +7,7 @@ import { RollHistoryRoot } from "./styles";
 const RollHistoryItem = ({ entry }: { entry: RollHistoryEntry }) => {
   return (
     <Flex title={`${entry.time} ${entry.comment}`}>
-      <Text color="yellow">{entry.user}</Text>
+      <Text css={{ color: entry.color }}>{entry.user}</Text>
       <Text>{entry.data}</Text>
     </Flex>
   );

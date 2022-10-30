@@ -118,6 +118,7 @@ export const langHud: Record<string, Record<string, string>> = {
     username_required: "Username is required",
     username: "Username",
     draw: "Draw",
+    color: "Color",
   },
   pl: {
     add: "Dodaj",
@@ -170,5 +171,6 @@ export const langHud: Record<string, Record<string, string>> = {
     username_required: "Nazwa użytkownika jest wymagana",
     username: "Nazwa użytkownika",
     draw: "Tablica",
+    color: "Kolor",
   },
 };

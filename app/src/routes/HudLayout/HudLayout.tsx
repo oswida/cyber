@@ -179,7 +179,11 @@ export const HudLayout = () => {
           <Text
             size="middle"
             color="blue"
-            css={{ alignSelf: "center", marginLeft: 20 }}
+            css={{
+              alignSelf: "center",
+              marginLeft: 20,
+              borderBottom: `solid 2px ${sessionData.color}`,
+            }}
           >
             {sessionData.username}
           </Text>

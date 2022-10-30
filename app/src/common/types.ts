@@ -69,6 +69,7 @@ export type RollHistoryEntry = {
   time: string;
   comment: string;
   data: string;
+  color: string;
 };
 
 export type SessionInfo = {
@@ -79,6 +80,7 @@ export type SessionInfo = {
   nats: string;
   nats_token: string;
   lang?: string;
+  color?: string;
 };
 
 export type Note = {

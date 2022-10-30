@@ -61,13 +61,14 @@ export const RollResult = () => {
 
       if (output.innerHTML == ctnt && !done.current) {
         done.current = true;
-        const newEntry = {
+        const newEntry: RollHistoryEntry = {
           id: uuidv4(),
           user: sessionData.username,
           time: prettyNow(),
           data: rollData,
-          comment: commentRef.current?.value,
-        } as RollHistoryEntry;
+          comment: commentRef.current?.value ? commentRef.current?.value : "",
+          color: sessionData.color ? sessionData.color : "#ffffff",
+        };
         const newState = [newEntry, ...rollHistory];
         setRollHistory(newState);
         saveRolls(newState);
