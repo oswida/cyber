@@ -2,6 +2,7 @@ import {
   faArrowDown,
   faArrowUp,
   faBoltLightning,
+  faGears,
   faMinus,
   faPlay,
   faPlus,
@@ -72,14 +73,42 @@ export const CyberdeckForm = ({
   };
 
   const handleActivate = (it: PcMod) => {
+    // const info = getValues();
+    // const bias = Math.ceil(info.inf[0] / 3);
+    // const anum = info.cyberdeck.filter((it) => it.activated).length;
+    // if (!it.activated && anum >= bias) {
+    //   alert(
+    //     `Cannot activate more than ${bias} programs. Current INF is ${info.inf[0]}`
+    //   );
+    //   return;
+    // }
+    // info.cyberdeck.forEach((cb) => {
+    //   if (cb.id === it.id) {
+    //     cb.activated = !cb.activated;
+    //   }
+    // });
+    // setValue("cyberdeck", [...info.cyberdeck]);
     const info = getValues();
-    const bias = Math.ceil(info.inf[0] / 3);
-    const anum = info.cyberdeck.filter((it) => it.activated).length;
-    if (!it.activated && anum >= bias) {
-      alert(
-        `Cannot activate more than ${bias} programs. Current INF is ${info.inf[0]}`
-      );
-      return;
+    let freeSlots = info.inventory.filter((it) => !it.fatigue).length;
+    if (!it.activated) {
+      if (freeSlots === 0) {
+        alert("Cannot activate program! Character has full fatigue");
+        return;
+      }
+      for (let i = 0; i < info.inventory.length; i++) {
+        if (!info.inventory[i].fatigue) {
+          info.inventory[i].fatigue = true;
+          freeSlots--;
+          break;
+        }
+      }
+      setValue("inventory", [...info.inventory]);
+      if (freeSlots === 0) {
+        alert(
+          "Last inventory slot fatigued! Character suffers PSY damage from neuroprocessor overuse."
+        );
+        setValue("psy.0", info.psy[0] > 0 ? info.psy[0] - 1 : 0);
+      }
     }
     info.cyberdeck.forEach((cb) => {
       if (cb.id === it.id) {
@@ -122,6 +151,7 @@ export const CyberdeckForm = ({
                 }}
                 {...register(`cyberdeck.${index}.name`)}
               />
+
               <PFInput
                 small
                 border="down"
