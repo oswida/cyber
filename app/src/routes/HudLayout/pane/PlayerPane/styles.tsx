@@ -13,6 +13,7 @@ export const ListRoot = styled("div", {
   gap: 2,
   flex: 1,
   marginBottom: 10,
+  overflowY: "auto",
 });
 
 export const ContentRoot = styled("div", {
@@ -27,8 +28,7 @@ export const ContentRoot = styled("div", {
 export const ContentItem = styled(Flex, {
   borderRadius: 5,
   padding: 10,
-  marginRight: 10,
-
+  width: "calc(100% - 20px)",
   backgroundColor: "$background",
   variants: {
     selected: {

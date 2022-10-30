@@ -1,6 +1,7 @@
 import { styled } from "~/common";
 
 export const Textarea = styled("div", {
+  userSelect: "contain",
   fontFamily: "Oxanium !important",
   background: "$background",
   color: "$fontPrimary",

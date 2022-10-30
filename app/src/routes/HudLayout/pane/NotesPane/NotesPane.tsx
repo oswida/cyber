@@ -2,7 +2,6 @@ import { faDeleteLeft, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom, useAtomValue } from "jotai";
 import { useRef, useState } from "react";
-import Scrollbars from "react-custom-scrollbars-2";
 import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
@@ -37,6 +36,7 @@ export const ListRoot = styled("div", {
   gap: 2,
   flex: 1,
   marginBottom: 10,
+  overflowY: "auto",
 });
 
 export const ContentRoot = styled("div", {
@@ -50,10 +50,11 @@ export const ContentRoot = styled("div", {
 
 const ContentItem = styled(Flex, {
   borderRadius: 5,
-  flex: 1,
+  width: "calc(100% - 20px)",
   alignItems: "center",
-  padding: 5,
-  marginRight: 10,
+  padding: "5px",
+  paddingRight: "10px",
+  paddingLeft: "10px",
   backgroundColor: "$background",
   variants: {
     selected: {
@@ -62,6 +63,15 @@ const ContentItem = styled(Flex, {
       },
     },
   },
+});
+
+const Preview = styled("div", {
+  overflow: "auto",
+  height: 200,
+  width: "calc(90% - 10px)",
+  borderLeft: `1px solid $darkblue`,
+  borderBottom: `1px solid $darkblue`,
+  padding: 5,
 });
 
 type NotesPaneProps = {
@@ -176,78 +186,71 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
           </Button>
         </Flex>
         <ListRoot>
-          <Scrollbars>
-            <>
-              {isBoard &&
-                Object.keys(boardState)
-                  .filter((k) => notFiltered(boardState[k]))
-                  .map((k) => (
-                    <ContentItem
-                      key={k}
-                      onClick={() => setSelNote(k)}
-                      onDoubleClick={() =>
-                        setNo({ open: true, note: boardState[k] })
-                      }
-                      selected={selNote === k}
+          <>
+            {isBoard &&
+              Object.keys(boardState)
+                .filter((k) => notFiltered(boardState[k]))
+                .map((k) => (
+                  <ContentItem
+                    key={k}
+                    onClick={() => setSelNote(k)}
+                    onDoubleClick={() =>
+                      setNo({ open: true, note: boardState[k] })
+                    }
+                    selected={selNote === k}
+                  >
+                    <Flex
+                      css={{ width: "100%", justifyContent: "space-between" }}
                     >
-                      <Flex
-                        css={{ width: "100%", justifyContent: "space-between" }}
-                      >
-                        <Text>{boardState[k]?.title}</Text>
-                        <Text size="small" css={{ alignSelf: "center" }}>
-                          {boardState[k]?.author}
-                        </Text>
-                      </Flex>
-                    </ContentItem>
-                  ))}
-              {!isBoard &&
-                Object.keys(notesState)
-                  .filter((k) => notFiltered(notesState[k]))
-                  .map((k) => (
-                    <ContentItem
-                      key={k}
-                      onClick={() => setSelNote(k)}
-                      onDoubleClick={() =>
-                        setNo({ open: true, note: notesState[k] })
-                      }
-                      selected={selNote === k}
-                    >
-                      <Text>{notesState[k]?.title}</Text>
-                    </ContentItem>
-                  ))}
-            </>
-          </Scrollbars>
+                      <Text>{boardState[k]?.title}</Text>
+                      <Text size="small" css={{ alignSelf: "center" }}>
+                        {boardState[k]?.author}
+                      </Text>
+                    </Flex>
+                  </ContentItem>
+                ))}
+            {!isBoard &&
+              Object.keys(notesState)
+                .filter((k) => notFiltered(notesState[k]))
+                .map((k) => (
+                  <ContentItem
+                    key={k}
+                    onClick={() => setSelNote(k)}
+                    onDoubleClick={() =>
+                      setNo({ open: true, note: notesState[k] })
+                    }
+                    selected={selNote === k}
+                  >
+                    <Text>{notesState[k]?.title}</Text>
+                  </ContentItem>
+                ))}
+          </>
         </ListRoot>
-        <Flex css={{ width: "90%" }}>
-          <Flex direction="column" css={{ width: "100%", gap: 10 }}>
-            <Flex css={{ height: 200 }}>
-              <Scrollbars>
-                <Text>
-                  <>
-                    {isBoard && selNote !== "" && (
-                      <Textarea
-                        contentEditable={false}
-                        border="none"
-                        css={{ flex: 1, whiteSpace: "pre-wrap" }}
-                      >
-                        {boardState[selNote]?.content}
-                      </Textarea>
-                    )}
-                    {!isBoard && selNote !== "" && (
-                      <Textarea
-                        contentEditable={false}
-                        border="none"
-                        css={{ flex: 1, whiteSpace: "pre-wrap" }}
-                      >
-                        {notesState[selNote]?.content}
-                      </Textarea>
-                    )}
-                  </>
-                </Text>
-              </Scrollbars>
-            </Flex>
-          </Flex>
-        </Flex>
+
+        <Preview>
+          <Text>
+            <>
+              {isBoard && selNote !== "" && (
+                <Textarea
+                  contentEditable={false}
+                  border="none"
+                  css={{ flex: 1, whiteSpace: "pre-wrap" }}
+                >
+                  {boardState[selNote]?.content}
+                </Textarea>
+              )}
+              {!isBoard && selNote !== "" && (
+                <Textarea
+                  contentEditable={false}
+                  border="none"
+                  css={{ flex: 1, whiteSpace: "pre-wrap" }}
+                >
+                  {notesState[selNote]?.content}
+                </Textarea>
+              )}
+            </>
+          </Text>
+        </Preview>
       </HudPane>
       <InfoModal isBoard={isBoard} />
     </>

@@ -6,7 +6,7 @@ export const PageContent = styled("div", {
   alignItems: "center",
   justifyContent: "center",
   width: "100%",
-  // width: "calc(100% - 40px)",
+  overflow: "auto",
   flexWrap: "wrap",
   gap: "10px",
   padding: "5px",

@@ -1,13 +1,20 @@
 import { useAtom } from "jotai";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import Scrollbars from "react-custom-scrollbars-2";
 import { create, SimpleDrawingBoard } from "simple-drawing-board";
-import { stateDrawAutosave, useNats } from "~/common";
+import { stateDrawAutosave, styled, useNats } from "~/common";
 import { useStorage } from "~/common/storage";
 import { HudPane } from "../../styles";
 import { Tools } from "./Tools";
 import debounce from "lodash.debounce";
 import { useAtomCallback } from "jotai/utils";
+
+const CanvasRoot = styled("div", {
+  width: "calc(100% - 10px)",
+  padding: "5px",
+  height: "calc(100% - 10px)",
+  overflow: "auto",
+  backgroundColor: "$background50",
+});
 
 export const DrawPane = () => {
   const sdb = useRef<SimpleDrawingBoard | null>(null);
@@ -28,7 +35,10 @@ export const DrawPane = () => {
     if (!sdb.current) return;
     const data = sdb.current.toDataURL({ type: "image/webp" });
     saveDraw(data);
-    // TODO: publish
+  };
+
+  const share = () => {
+    if (!sdb.current) return;
   };
 
   useEffect(() => {
@@ -49,15 +59,15 @@ export const DrawPane = () => {
   return (
     <HudPane>
       <Tools sdb={sdb} drawMode={md} setDrawMode={setMd} save={save} />
-      <Scrollbars>
+      <CanvasRoot>
         <canvas
           ref={canvasRef}
           id="draw"
-          width="2000"
+          width="1500"
           height="1000"
-          style={{ cursor: md === "draw" ? "crosshair" : "grab", margin: 10 }}
-        ></canvas>
-      </Scrollbars>
+          style={{ cursor: md === "draw" ? "crosshair" : "grab" }}
+        />
+      </CanvasRoot>
     </HudPane>
   );
 };

@@ -64,6 +64,14 @@ export const doOpenImage = (callback: (data: any) => void) => {
   el.click();
 };
 
+export const doSaveImage = (data: any, filename: string) => {
+  if (!data) return;
+  const link = document.createElement("a");
+  link.download = filename;
+  link.href = data;
+  link.click();
+};
+
 export const compareStringTime = (t1: string, t2: string) => {
   const now = new Date();
   const time1 = Date.parse(

@@ -1,6 +1,5 @@
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
-import Scrollbars from "react-custom-scrollbars-2";
 import { useForm } from "react-hook-form";
 import {
   langHud,
@@ -9,6 +8,7 @@ import {
   statePlayerForm,
   statePlayers,
   stateSessionData,
+  styled,
   topicChars,
   useNats,
 } from "~/common";
@@ -18,6 +18,14 @@ import { CyberdeckForm } from "./CyberdeckForm";
 import { CybermodForm } from "./CybermodForm";
 import { InventoryForm } from "./InventoryForm";
 import { PFInput } from "./styles";
+
+const FormRoot = styled("div", {
+  overflowY: "auto",
+  overflowX: "hidden",
+  width: "80vw",
+  marginTop: 30,
+  marginBottom: 30,
+});
 
 export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
   const [pf, setPf] = useAtom(statePlayerForm);
@@ -87,13 +95,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
       isOpen={pf.open}
       onClose={() => setPf({ open: false, item: undefined })}
     >
-      <Scrollbars
-        style={{
-          width: "80vw",
-          marginTop: 30,
-          marginBottom: 30,
-        }}
-      >
+      <FormRoot>
         <form>
           <Flex direction="column" css={{ width: "80vw", gap: 30 }} center>
             <Flex css={{ gap: 40 }} center>
@@ -290,7 +292,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
             </Flex>
           </Flex>
         </form>
-      </Scrollbars>
+      </FormRoot>
       <Button
         css={{ position: "absolute", bottom: 20, right: 20 }}
         onClick={handleSubmit(onSubmit)}

@@ -2,7 +2,6 @@ import { faShare, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useRef } from "react";
-import Scrollbars from "react-custom-scrollbars-2";
 import {
   stateBoardNotes,
   stateNats,
@@ -48,6 +47,7 @@ export const ContentRoot = styled("div", {
   minWidth: 550,
   width: "75vw",
   display: "flex",
+  overflow: "auto",
 });
 
 export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
@@ -126,15 +126,13 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
         />
 
         <ContentRoot>
-          <Scrollbars>
-            <Textarea
-              ref={contentRef as any}
-              small
-              contentEditable={true}
-              border="none"
-              css={{ flex: 1, whiteSpace: "pre-wrap" }}
-            />
-          </Scrollbars>
+          <Textarea
+            ref={contentRef as any}
+            small
+            contentEditable={true}
+            border="none"
+            css={{ flex: 1, whiteSpace: "pre-wrap" }}
+          />
         </ContentRoot>
 
         <DeleteButton title="Delete note" onClick={deleteNote}>

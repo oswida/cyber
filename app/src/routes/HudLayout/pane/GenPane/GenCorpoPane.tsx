@@ -1,5 +1,4 @@
 import { useAtomValue } from "jotai";
-import Scrollbars from "react-custom-scrollbars-2";
 import { stateGenerator, language, styled } from "~/common";
 import { Flex, Button } from "~/component";
 import { CorpoCard } from "~/routes/CorpoGen/CorpoCard";
@@ -24,6 +23,7 @@ const Content = styled("div", {
   justifyContent: "center",
   gap: 10,
   flex: 1,
+  overflow: "auto",
 });
 
 export const GenCorpoPane = () => {
@@ -54,13 +54,12 @@ export const GenCorpoPane = () => {
             Import
           </Button>
         </Flex>
-        <Scrollbars>
-          <Content>
-            {Object.keys(gen.corpo).map((k) => (
-              <CorpoCard size="small" data={gen.corpo[k]!!} key={k}></CorpoCard>
-            ))}
-          </Content>
-        </Scrollbars>
+
+        <Content>
+          {Object.keys(gen.corpo).map((k) => (
+            <CorpoCard size="small" data={gen.corpo[k]!!} key={k}></CorpoCard>
+          ))}
+        </Content>
       </ContentRoot>
     </HudPane>
   );

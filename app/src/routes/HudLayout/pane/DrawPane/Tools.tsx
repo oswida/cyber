@@ -17,7 +17,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom } from "jotai";
 import { useState } from "react";
 import { SimpleDrawingBoard } from "simple-drawing-board";
-import { doOpenImage, stateDrawAutosave, themeColors } from "~/common";
+import {
+  doOpenImage,
+  doSaveImage,
+  prettyToday,
+  stateDrawAutosave,
+  themeColors,
+} from "~/common";
 import { useStorage } from "~/common/storage";
 import { Button, Flex } from "~/component";
 
@@ -79,6 +85,13 @@ export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
   const toggleAutosave = () => {
     if (!autosave) save();
     setAutosave(!autosave);
+  };
+
+  const exp = () => {
+    if (!sdb.current) return;
+    const data = sdb.current.toDataURL({ type: "image/webp" });
+    const filename = `draw-${prettyToday()}.webp`;
+    doSaveImage(data, filename);
   };
 
   return (
@@ -185,7 +198,10 @@ export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
 
       <Flex>
         <Button onClick={image}>
-          <FontAwesomeIcon icon={faImage} title="Fill with image" />
+          <FontAwesomeIcon icon={faImage} title="Load image" />
+        </Button>
+        <Button onClick={exp}>
+          <FontAwesomeIcon icon={faFileExport} title="Export" />
         </Button>
         <Button
           onClick={toggleAutosave}

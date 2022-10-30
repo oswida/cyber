@@ -1,5 +1,4 @@
 import { useAtomValue } from "jotai";
-import Scrollbars from "react-custom-scrollbars-2";
 import { stateGenerator, language, styled } from "~/common";
 import { Flex, Button } from "~/component";
 import { NodeCard } from "~/routes/NodeGen/NodeCard";
@@ -26,6 +25,7 @@ const Content = styled("div", {
   justifyContent: "center",
   gap: 10,
   flex: 1,
+  overflow: "auto",
 });
 
 export const GenNpcPane = () => {
@@ -56,13 +56,12 @@ export const GenNpcPane = () => {
             Import
           </Button>
         </Flex>
-        <Scrollbars>
-          <Content>
-            {Object.keys(gen.npc).map((k) => (
-              <NpcCard size="small" data={gen.npc[k]!!} key={k}></NpcCard>
-            ))}
-          </Content>
-        </Scrollbars>
+
+        <Content>
+          {Object.keys(gen.npc).map((k) => (
+            <NpcCard size="small" data={gen.npc[k]!!} key={k}></NpcCard>
+          ))}
+        </Content>
       </ContentRoot>
     </HudPane>
   );

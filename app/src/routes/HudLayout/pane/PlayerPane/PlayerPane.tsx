@@ -1,7 +1,6 @@
 import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
 import { useAtom, useAtomValue, useSetAtom } from "jotai";
 import { useMemo, useRef, useState } from "react";
-import Scrollbars from "react-custom-scrollbars-2";
 import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
@@ -105,20 +104,18 @@ export const PlayerPane = () => {
         </Button>
       </Flex>
       <ListRoot>
-        <Scrollbars>
-          {Object.keys(players).map(
-            (k) =>
-              players[k] && (
-                <PlayerCard
-                  key={k}
-                  playerId={k}
-                  onClick={() => setSel(k)}
-                  onDoubleClick={() => setPf({ open: true, item: players[k] })}
-                  selected={sel === k}
-                />
-              )
-          )}
-        </Scrollbars>
+        {Object.keys(players).map(
+          (k) =>
+            players[k] && (
+              <PlayerCard
+                key={k}
+                playerId={k}
+                onClick={() => setSel(k)}
+                onDoubleClick={() => setPf({ open: true, item: players[k] })}
+                selected={sel === k}
+              />
+            )
+        )}
       </ListRoot>
       {currentItem && <PlayerForm item={currentItem} />}
     </HudPane>

@@ -27,4 +27,5 @@ export const RollHistoryRoot = styled("div", {
   alignItems: "flex-start",
   gap: 2,
   flex: 1,
+  overflow: "auto",
 });
