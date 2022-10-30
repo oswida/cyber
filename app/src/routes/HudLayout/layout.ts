@@ -1,12 +1,4 @@
-import {
-  createTilePanes,
-  TileBranchSubstance,
-  TileContainer,
-  TileProvider,
-  useGetLeaf,
-  useGetRootNode,
-  useMovePane,
-} from "react-tile-pane";
+import { TileBranchSubstance } from "react-tile-pane";
 
 export const gmLayout: TileBranchSubstance = {
   children: [
@@ -20,7 +12,7 @@ export const gmLayout: TileBranchSubstance = {
         {
           children: [
             {
-              children: ["board", "notes", "players"],
+              children: ["board", "players", "draw", "notes"],
               onTab: 0,
               grow: 0.6,
             },
@@ -54,7 +46,7 @@ export const playerLayout: TileBranchSubstance = {
         {
           children: [
             {
-              children: ["board", "notes", "players"],
+              children: ["players", "draw", "board", "notes"],
               onTab: 0,
               grow: 1.0,
             },

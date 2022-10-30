@@ -23,6 +23,7 @@ export const inodBoardKey = "inod-board";
 export const inodGenKey = "inod-gen";
 export const inodPlayersKey = "inod-players";
 export const inodRollsKey = "inod-rolls";
+export const inodDrawKey = "inod-draw";
 
 export const useStorage = () => {
   const [, setSessionData] = useAtom(stateSessionData);
@@ -140,6 +141,20 @@ export const useStorage = () => {
     updateStoreSize();
   };
 
+  const saveDraw = (state: string) => {
+    localStorage.setItem(inodDrawKey, comp(state));
+    updateStoreSize();
+  };
+
+  const loadDraw = () => {
+    const data = localStorage.getItem(inodDrawKey);
+    if (data && data !== "") {
+      const d = decomp(data);
+      return d;
+    }
+    return "";
+  };
+
   const updateStoreSize = () => {
     let size = 0;
     const keys = [
@@ -150,6 +165,7 @@ export const useStorage = () => {
       inodGenKey,
       inodPlayersKey,
       inodRollsKey,
+      inodDrawKey,
     ];
     keys.forEach((k) => {
       const data = localStorage.getItem(k);
@@ -176,5 +192,7 @@ export const useStorage = () => {
     savePlayers,
     loadRolls,
     saveRolls,
+    saveDraw,
+    loadDraw,
   };
 };

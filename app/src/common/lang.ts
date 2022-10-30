@@ -117,11 +117,12 @@ export const langHud: Record<string, Record<string, string>> = {
     title: "Title",
     username_required: "Username is required",
     username: "Username",
+    draw: "Draw",
   },
   pl: {
     add: "Dodaj",
     armor: "Pancerz",
-    board: "Tablica",
+    board: "Ogłoszenia",
     comment: "Komentarz",
     clear_roll_history: "Wyczyść lokalną historię rzutów",
     config: "Konfiguracja",
@@ -168,5 +169,6 @@ export const langHud: Record<string, Record<string, string>> = {
     title: "Tytuł",
     username_required: "Nazwa użytkownika jest wymagana",
     username: "Nazwa użytkownika",
+    draw: "Tablica",
   },
 };

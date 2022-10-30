@@ -42,6 +42,7 @@ function App() {
     loadPrivateNotes();
     loadPlayers();
     loadRolls();
+
     updateStoreSize();
   }, []);
 

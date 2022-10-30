@@ -27,6 +27,7 @@ export const topicRoll = "TopicRoll";
 export const topicBoard = "TopicBoard";
 export const topicChars = "TopicChars";
 export const topicBoardDelete = "TopicBoardDelete";
+export const topicDraw = "TopicDraw";
 // 03c2ba5c-c834-4afa-ac1b-355ae5ce7a1b
 
 export const useNats = () => {

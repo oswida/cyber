@@ -29,7 +29,6 @@ import {
   stateHudLayout,
   stateNats,
   stateNotification,
-  statePlayerForm,
   statePlayers,
   statePrivateNotes,
   stateSessionData,
@@ -41,7 +40,8 @@ import { useNotify } from "~/common/notify";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, GenMenu, Modal, Text } from "~/component";
 import { Config } from "../Config";
-import { gmLayout, playerLayout } from "./layout";
+import { playerLayout } from "./layout";
+import { DrawPane } from "./pane/DrawPane";
 import { GenCorpoPane } from "./pane/GenPane/GenCorpoPane";
 import { GenNodePane } from "./pane/GenPane/GenNodePane";
 import { NotesPane } from "./pane/NotesPane";
@@ -118,6 +118,7 @@ export const HudLayout = () => {
       notes: <NotesPane isBoard={false} />,
       board: <NotesPane isBoard={true} />,
       players: <PlayerPane />,
+      draw: <DrawPane />,
     });
     setPaneList(pl);
     setPaneNames(pn);

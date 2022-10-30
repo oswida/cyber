@@ -49,6 +49,21 @@ export const doImport = (callback: (data: any) => void) => {
   el.click();
 };
 
+export const doOpenImage = (callback: (data: any) => void) => {
+  const el = document.createElement("input");
+  el.setAttribute("type", "file");
+  el.setAttribute("accept", "image/*");
+  el.addEventListener("change", function () {
+    if (!this.files || this.files.length === 0) return;
+    const reader = new FileReader();
+    reader.addEventListener("load", (event: any) => {
+      callback(event.target.result);
+    });
+    reader.readAsDataURL(this.files[0]);
+  });
+  el.click();
+};
+
 export const compareStringTime = (t1: string, t2: string) => {
   const now = new Date();
   const time1 = Date.parse(
