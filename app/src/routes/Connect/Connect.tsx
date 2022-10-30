@@ -14,7 +14,6 @@ export const Connect = () => {
 
   useEffect(() => {
     if (!params) return;
-    console.log("Connect", params);
 
     const id = params.get("id");
     if (!id) {

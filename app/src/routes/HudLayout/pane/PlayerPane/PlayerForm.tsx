@@ -84,8 +84,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
     if (!item) return;
 
     const info = getValues();
-    console.log("deprived", info);
-
+   
     setValue("deprived", info.deprived ? false : true);
   };
 

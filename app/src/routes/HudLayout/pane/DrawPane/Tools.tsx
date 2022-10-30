@@ -10,11 +10,13 @@ import {
   faPencil,
   faRedo,
   faSave,
+  faShare,
+  faShareAlt,
   faTrashAlt,
   faUndo,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { useState } from "react";
 import { SimpleDrawingBoard } from "simple-drawing-board";
 import {
@@ -22,10 +24,14 @@ import {
   doSaveImage,
   prettyToday,
   stateDrawAutosave,
+  stateNats,
   themeColors,
+  topicDraw,
+  useNats,
 } from "~/common";
-import { useStorage } from "~/common/storage";
+import { useNotify } from "~/common/notify";
 import { Button, Flex } from "~/component";
+import { IMAGE_QUALITY } from "./consts";
 
 type Props = {
   sdb: React.MutableRefObject<SimpleDrawingBoard | null>;
@@ -36,9 +42,11 @@ type Props = {
 
 export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
   const [clr, setClr] = useState("white");
-  const [sz, setSz] = useState(0);
-  const { saveDraw } = useStorage();
+  const [sz, setSz] = useState(1);
   const [autosave, setAutosave] = useAtom(stateDrawAutosave);
+  const { publish } = useNats();
+  const nats = useAtomValue(stateNats);
+  const { notify } = useNotify();
 
   const setMode = (er: boolean) => {
     if (!sdb.current) return;
@@ -89,9 +97,22 @@ export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
 
   const exp = () => {
     if (!sdb.current) return;
-    const data = sdb.current.toDataURL({ type: "image/webp" });
+    const data = sdb.current.toDataURL({
+      type: "image/webp",
+      quality: IMAGE_QUALITY,
+    });
     const filename = `draw-${prettyToday()}.webp`;
     doSaveImage(data, filename);
+  };
+
+  const share = () => {
+    if (!sdb.current) return;
+    const data = sdb.current.toDataURL({
+      type: "image/webp",
+      quality: IMAGE_QUALITY,
+    });
+    publish(nats.connection, topicDraw, { data: data });
+    notify("Image published", 3000);
   };
 
   return (
@@ -197,6 +218,9 @@ export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
       </Flex>
 
       <Flex>
+        <Button onClick={share}>
+          <FontAwesomeIcon icon={faShareAlt} title="Share" />
+        </Button>
         <Button onClick={image}>
           <FontAwesomeIcon icon={faImage} title="Load image" />
         </Button>

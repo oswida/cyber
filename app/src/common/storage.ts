@@ -64,8 +64,6 @@ export const useStorage = () => {
   const loadBoardNotes = () => {
     const data = localStorage.getItem(inodBoardKey);
     if (data && data !== "") {
-      console.log(decomp(data));
-
       setBoardNotes(decomp(data));
     }
   };
@@ -88,8 +86,6 @@ export const useStorage = () => {
   };
 
   const saveLayout = (root: any) => {
-    console.log("saving layout", root);
-
     localStorage.setItem(inodLayoutKey, comp(root));
     updateStoreSize();
   };

@@ -1,6 +1,6 @@
 import { useNotify } from "./notify";
 import { useStorage } from "~/common/storage";
-import { useAtomValue, useSetAtom } from "jotai";
+import { useAtom, useAtomValue, useSetAtom } from "jotai";
 import { useAtomCallback } from "jotai/utils";
 import { useCallback } from "react";
 import { Note, PcInfo, RollHistoryEntry, SessionInfo } from "~/common";
@@ -15,6 +15,7 @@ import {
 import {
   NatsMessage,
   stateBoardNotes,
+  stateDrawCache,
   stateNats,
   statePlayers,
   stateRollHistory,
@@ -71,6 +72,7 @@ export const useNats = () => {
   );
   const { saveBoardNotes, savePlayers } = useStorage();
   const { notify } = useNotify();
+  const [, setDrawCache] = useAtom(stateDrawCache);
 
   const unpackNatsMsg = (msg: Msg): NatsMessage => {
     return JSON.parse(sc.decode(msg.data));
@@ -207,6 +209,10 @@ export const useNats = () => {
         setBoardState(newState);
         saveBoardNotes(newState);
         notify("Board note created/updated", 10000);
+      } else if (msg.subject === getTopic(topicDraw)) {
+        const img = JSON.parse(m.data);
+        setDrawCache(img.data);
+        notify("Image updated", 10000);
       }
     }
   };

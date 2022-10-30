@@ -99,3 +99,5 @@ export const statePlayerForm = atom<PlayerFormState>({
 export const stateNotification = atom<string>("");
 
 export const stateDrawAutosave = atom<boolean>(true);
+
+export const stateDrawCache = atom<any>(null);

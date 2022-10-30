@@ -1,12 +1,13 @@
-import { useAtom } from "jotai";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { create, SimpleDrawingBoard } from "simple-drawing-board";
-import { stateDrawAutosave, styled, useNats } from "~/common";
+import { stateDrawAutosave, stateDrawCache, styled, useNats } from "~/common";
 import { useStorage } from "~/common/storage";
 import { HudPane } from "../../styles";
 import { Tools } from "./Tools";
 import debounce from "lodash.debounce";
 import { useAtomCallback } from "jotai/utils";
+import { IMAGE_QUALITY } from "./consts";
+import { useAtom } from "jotai";
 
 const CanvasRoot = styled("div", {
   width: "calc(100% - 10px)",
@@ -30,15 +31,15 @@ export const DrawPane = () => {
       [stateDrawAutosave]
     )
   );
+  const [drawCache, setDrawCache] = useAtom(stateDrawCache);
 
   const save = () => {
     if (!sdb.current) return;
-    const data = sdb.current.toDataURL({ type: "image/webp" });
+    const data = sdb.current.toDataURL({
+      type: "image/webp",
+      quality: IMAGE_QUALITY,
+    });
     saveDraw(data);
-  };
-
-  const share = () => {
-    if (!sdb.current) return;
   };
 
   useEffect(() => {
@@ -55,6 +56,13 @@ export const DrawPane = () => {
       if (asv) debounce(save, 1000)();
     });
   }, []);
+
+  useEffect(() => {
+    if (drawCache === null || !sdb.current) return;
+    sdb.current.fillImageByDataURL(drawCache);
+    saveDraw(drawCache);
+    setDrawCache(null);
+  }, [drawCache]);
 
   return (
     <HudPane>
