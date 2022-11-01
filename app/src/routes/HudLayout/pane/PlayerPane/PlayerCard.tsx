@@ -23,7 +23,10 @@ type Props = {
   selected: boolean;
   onClick?: () => void;
   onDoubleClick?: () => void;
-  onShowCyberdeck?: () => void;
+  showSubform?: (
+    subform: "cyberdeck" | "cybermod" | "basic" | "stat" | "inventory",
+    visible: boolean
+  ) => void;
 };
 
 const ClickableText = styled(Text, {
@@ -38,7 +41,7 @@ export const PlayerCard = ({
   selected,
   onClick,
   onDoubleClick,
-  onShowCyberdeck,
+  showSubform,
 }: Props) => {
   const [players, setPlayers] = useAtom(statePlayers);
   const item: PcInfo | undefined = players[playerId];
@@ -90,8 +93,8 @@ export const PlayerCard = ({
   };
 
   const showCyberdeck = () => {
-    if (!onShowCyberdeck) return;
-    onShowCyberdeck();
+    if (!showSubform) return;
+    showSubform("cyberdeck", true);
   };
 
   const activatedCybermods = useMemo(() => {

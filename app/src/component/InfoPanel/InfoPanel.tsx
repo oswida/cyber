@@ -45,7 +45,6 @@ export const InfoPanel = ({ onClose, children }: Props) => {
       <PanelRoot>
         <>
           {children}
-
           <CloseButton onClick={onClose} title="Close">
             ×
           </CloseButton>

@@ -28,6 +28,7 @@ export const ModForm = ({
   setValue,
   itemType,
   triggerPsyWatch,
+  responsive,
 }: Props) => {
   const [selInv, setSelInv] = useState(-1);
   const [folded, setFolded] = useState(false);
@@ -139,11 +140,14 @@ export const ModForm = ({
   return (
     <Flex direction="column">
       <Flex center css={{ gap: 20 }}>
-        {itemState && itemState[itemType] && itemState[itemType].length > 0 && (
-          <Button border="underline" onClick={() => setFolded(!folded)}>
-            <FontAwesomeIcon icon={folded ? faArrowDown : faArrowUp} />
-          </Button>
-        )}
+        {itemState &&
+          itemState[itemType] &&
+          itemState[itemType].length > 0 &&
+          !responsive && (
+            <Button border="underline" onClick={() => setFolded(!folded)}>
+              <FontAwesomeIcon icon={folded ? faArrowDown : faArrowUp} />
+            </Button>
+          )}
         <Text color="yellow" size="small">
           {langHud[sessionData.lang!!][itemType]} (
           {itemState && itemState[itemType] ? itemState[itemType].length : "0"}{" "}
@@ -165,50 +169,54 @@ export const ModForm = ({
             selected={selInv === index}
             onClick={() => setSelInv(index)}
           >
-            <Flex>
-              <PFInput
-                small
-                border="down"
-                defaultValue={it?.name}
-                css={{
-                  width: 250,
-                }}
-                onChange={(e: any) => updateName(e, index)}
-              />
-              <FontAwesomeIcon
-                style={{
-                  alignSelf: "center",
-                  color: it?.need_activation
-                    ? themeColors.pink
-                    : themeColors.green,
-                }}
-                icon={it.need_activation ? faGears : faRotate}
-                title={activationHint(it)}
-                onClick={() => handleNeedsActivation(it)}
-              />
-              <PFInput
-                small
-                border="down"
-                defaultValue={it?.description}
-                css={{
-                  width: 450,
-                }}
-                onChange={(e: any) => updateDesc(e, index)}
-              />
-
-              {it.need_activation && (
+            <Flex direction={responsive ? "column" : undefined}>
+              <Flex>
+                <PFInput
+                  small
+                  border="down"
+                  defaultValue={it?.name}
+                  css={{
+                    width: responsive ? 350 : 250,
+                  }}
+                  onChange={(e: any) => updateName(e, index)}
+                />
                 <FontAwesomeIcon
                   style={{
                     alignSelf: "center",
-                    color: !it?.activated
+                    color: it?.need_activation
                       ? themeColors.pink
                       : themeColors.green,
                   }}
-                  title={activateHint(it)}
-                  icon={it.activated ? faBoltLightning : faPlay}
-                  onClick={() => handleActivate(it)}
+                  icon={it.need_activation ? faGears : faRotate}
+                  title={activationHint(it)}
+                  onClick={() => handleNeedsActivation(it)}
                 />
-              )}
+              </Flex>
+              <Flex>
+                <PFInput
+                  small
+                  border="down"
+                  defaultValue={it?.description}
+                  css={{
+                    width: responsive ? "100%" : 450,
+                  }}
+                  onChange={(e: any) => updateDesc(e, index)}
+                />
+
+                {it.need_activation && (
+                  <FontAwesomeIcon
+                    style={{
+                      alignSelf: "center",
+                      color: !it?.activated
+                        ? themeColors.pink
+                        : themeColors.green,
+                    }}
+                    title={activateHint(it)}
+                    icon={it.activated ? faBoltLightning : faPlay}
+                    onClick={() => handleActivate(it)}
+                  />
+                )}
+              </Flex>
             </Flex>
           </SelectableItem>
         ))}

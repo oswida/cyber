@@ -1,25 +1,27 @@
 import { useAtom, useAtomValue } from "jotai";
-import { PropsWithChildren, useEffect } from "react";
+import { PropsWithChildren } from "react";
 import {
   langHud,
   PcInfo,
-  PcMod,
   stateNats,
   statePlayers,
   stateSessionData,
-  topicChars,
   useNats,
 } from "~/common";
 import { useStorage } from "~/common/storage";
 import { Button, InfoPanel, Text } from "~/component";
+import { ModForm } from "./ModForm";
+import { usePlayerForm } from "./usePlayerForm";
 
 type Props = PropsWithChildren & {
   onClose?: () => void;
-  itemId: string;
+  item: PcInfo | undefined;
 };
 
-export const CyberdeckInfo = ({ onClose, itemId }: Props) => {
+export const CyberdeckInfo = ({ onClose, item }: Props) => {
   const [players, setPlayers] = useAtom(statePlayers);
+  const { itemState, setValue, psyWatch, triggerPsyWatch } =
+    usePlayerForm(item);
 
   const { savePlayers } = useStorage();
   const { publish } = useNats();
@@ -41,12 +43,18 @@ export const CyberdeckInfo = ({ onClose, itemId }: Props) => {
 
   return (
     <InfoPanel onClose={onClose}>
-      {itemId && (
+      {itemState && (
         <Text css={{ alignSelf: "center", margin: 10 }} color="blue">
-          {players[itemId]?.name}
+          {itemState.name}
         </Text>
       )}
-
+      <ModForm
+        responsive={true}
+        itemState={itemState}
+        itemType="cyberdeck"
+        setValue={setValue}
+        triggerPsyWatch={triggerPsyWatch}
+      />
       <Button css={{ position: "absolute", bottom: 20, right: 20 }}>
         {" "}
         {langHud[sessionData.lang!!].save}

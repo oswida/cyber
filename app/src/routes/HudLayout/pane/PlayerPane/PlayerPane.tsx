@@ -1,7 +1,6 @@
 import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
-import { useAtom, useAtomValue, useSetAtom } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { useMemo, useRef, useState } from "react";
-import { set } from "react-hook-form";
 import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
@@ -18,7 +17,6 @@ import {
 } from "~/common";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, Icon, Input, Text } from "~/component";
-import { InfoPanel } from "~/component/InfoPanel";
 import { HudPane } from "../../styles";
 import { CyberdeckInfo } from "./CyberdeckInfo";
 import { PlayerCard } from "./PlayerCard";
@@ -34,7 +32,9 @@ export const PlayerPane = () => {
   const sessionData = useAtomValue(stateSessionData);
   const { publish } = useNats();
   const nats = useAtomValue(stateNats);
-  const [cyberdeckInfo, setCyberdeckInfo] = useState(false);
+  const [subformVisible, setSubformVisible] = useState<Record<string, boolean>>(
+    {}
+  );
 
   const clear = () => {
     if (!nameRef.current) return;
@@ -84,7 +84,7 @@ export const PlayerPane = () => {
   }, [pf]);
 
   const clearPanels = () => {
-    setCyberdeckInfo(false);
+    setSubformVisible({});
   };
 
   const cardClick = (k: string) => {
@@ -93,8 +93,13 @@ export const PlayerPane = () => {
     setSel(k);
   };
 
-  const showDeck = () => {
-    setCyberdeckInfo(true);
+  const showSubform = (
+    subform: "cyberdeck" | "cybermod" | "basic" | "stat" | "inventory",
+    visible: boolean
+  ) => {
+    const newState = { ...subformVisible };
+    newState[subform] = visible;
+    setSubformVisible(newState);
   };
 
   return (
@@ -126,7 +131,7 @@ export const PlayerPane = () => {
           (k) =>
             players[k] && (
               <PlayerCard
-                onShowCyberdeck={showDeck}
+                showSubform={showSubform}
                 key={k}
                 playerId={k}
                 onClick={() => cardClick(k)}
@@ -136,10 +141,10 @@ export const PlayerPane = () => {
             )
         )}
       </ListRoot>
-      {cyberdeckInfo && sel !== "" && (
+      {subformVisible["cyberdeck"] && sel !== "" && (
         <CyberdeckInfo
           item={players[sel]}
-          onClose={() => setCyberdeckInfo(false)}
+          onClose={() => showSubform("cyberdeck", false)}
         />
       )}
       {currentItem && <PlayerForm item={currentItem} />}
