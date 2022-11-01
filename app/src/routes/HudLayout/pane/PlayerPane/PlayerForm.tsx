@@ -1,6 +1,4 @@
 import { useAtom, useAtomValue } from "jotai";
-import { useEffect } from "react";
-import { useForm } from "react-hook-form";
 import {
   langHud,
   PcInfo,
@@ -13,11 +11,12 @@ import {
   useNats,
 } from "~/common";
 import { useStorage } from "~/common/storage";
-import { Button, Flex, Modal, Text } from "~/component";
-import { CyberdeckForm } from "./CyberdeckForm";
-import { CybermodForm } from "./CybermodForm";
+import { Button, Flex, Modal } from "~/component";
+import { BasicForm } from "./BasicForm";
+import { ModForm } from "./ModForm";
 import { InventoryForm } from "./InventoryForm";
-import { PFInput } from "./styles";
+import { StatForm } from "./StatForm";
+import { usePlayerForm } from "./usePlayerForm";
 
 const FormRoot = styled("div", {
   overflowY: "auto",
@@ -30,38 +29,24 @@ const FormRoot = styled("div", {
 export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
   const [pf, setPf] = useAtom(statePlayerForm);
   const [players, setPlayers] = useAtom(statePlayers);
-  const { register, handleSubmit, watch, setValue, getValues, control } =
-    useForm<PcInfo>();
+
+  const { itemState, setValue, psyWatch, triggerPsyWatch } =
+    usePlayerForm(item);
+
   const { savePlayers } = useStorage();
   const { publish } = useNats();
   const nats = useAtomValue(stateNats);
   const sessionData = useAtomValue(stateSessionData);
 
-  useEffect(() => {
-    if (!item) return;
-    setValue("inventory", item.inventory);
-    setValue("cybermods", item.cybermods);
-    setValue("cyberdeck", item.cyberdeck);
-    setValue("id", item.id);
-    setValue("shared", item.shared);
-    setValue("deprived", item.deprived ? true : false);
-  }, [item]);
-
-  const inventory = watch("inventory");
-  const cybermods = watch("cybermods");
-  const cyberdeck = watch("cyberdeck");
-  const shared = watch("shared");
-  const deprived = watch("deprived");
-
-  const onSubmit = (data: PcInfo) => {
-    if (!item) return;
+  const onSubmit = () => {
+    if (!item || !itemState) return;
     const newState = { ...players };
-    newState[item.id] = data;
+    newState[item.id] = itemState;
     setPlayers(newState);
     savePlayers(newState);
     setPf({ item: undefined, open: false });
-    if (data.shared) {
-      publish(nats.connection, topicChars, [data]);
+    if (itemState.shared) {
+      publish(nats.connection, topicChars, [itemState]);
     }
   };
 
@@ -74,20 +59,6 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
     setPf({ item: undefined, open: false });
   };
 
-  const toggleShared = () => {
-    if (!item) return;
-    const info = getValues();
-    setValue("shared", !info.shared);
-  };
-
-  const toggleDeprived = () => {
-    if (!item) return;
-
-    const info = getValues();
-   
-    setValue("deprived", info.deprived ? false : true);
-  };
-
   return (
     <Modal
       opacity="more"
@@ -95,206 +66,36 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
       onClose={() => setPf({ open: false, item: undefined })}
     >
       <FormRoot>
-        <form>
-          <Flex direction="column" css={{ width: "80vw", gap: 30 }} center>
-            <Flex css={{ gap: 40 }} center>
-              <Flex direction="column" css={{ flex: 1 }}>
-                <Text color="yellow" size="small">
-                  {langHud[sessionData.lang!!].name}
-                </Text>
-                <PFInput
-                  css={{
-                    width: 250,
-                  }}
-                  defaultValue={item?.name ?? ""}
-                  {...register("name")}
-                />
-              </Flex>
-              <Flex direction="column">
-                <Text color="yellow" size="small">
-                  {langHud[sessionData.lang!!].credits}
-                </Text>
+        <Flex direction="column" css={{ width: "80vw", gap: 30 }} center>
+          <BasicForm itemState={itemState} setValue={setValue} />
+          <StatForm
+            itemState={itemState}
+            setValue={setValue}
+            psyWatch={psyWatch}
+          />
 
-                <PFInput
-                  {...register("credits")}
-                  defaultValue={item?.credits ?? 0}
-                  css={{
-                    width: 130,
-                  }}
-                />
-              </Flex>
-              <Flex direction="column">
-                <Text color="yellow" size="small">
-                  {langHud[sessionData.lang!!].subscription}
-                </Text>
-                <PFInput
-                  css={{
-                    width: 130,
-                  }}
-                  defaultValue={item?.subscription ?? ""}
-                  {...register("subscription")}
-                />
-              </Flex>
-              <Button
-                size="small"
-                color={shared ? "green" : undefined}
-                css={{ alignSelf: "center" }}
-                onClick={toggleShared}
-              >
-                {shared
-                  ? langHud[sessionData.lang!!].shared
-                  : langHud[sessionData.lang!!].private}
-              </Button>
-            </Flex>
+          <Flex css={{ gap: 40 }} direction="column">
+            <InventoryForm itemState={itemState} setValue={setValue} />
 
-            <Flex css={{ gap: 40 }}>
-              <Flex direction="column" center>
-                <Text color="yellow" size="small">
-                  BIO
-                </Text>
-                <Flex>
-                  <PFInput
-                    center
-                    css={{ width: "2em" }}
-                    defaultValue={item?.bio ? item?.bio[0] : 0}
-                    {...register("bio.0")}
-                    maxLength={2}
-                  />
-                  /
-                  <PFInput
-                    center
-                    css={{ width: "2em" }}
-                    defaultValue={item?.bio ? item?.bio[1] : 0}
-                    {...register("bio.1")}
-                    maxLength={2}
-                  />
-                </Flex>
-              </Flex>
+            <ModForm
+              itemState={itemState}
+              setValue={setValue}
+              itemType="cybermods"
+              triggerPsyWatch={triggerPsyWatch}
+            />
 
-              <Flex direction="column" center>
-                <Text color="yellow" size="small">
-                  PSY
-                </Text>
-                <Flex>
-                  <PFInput
-                    center
-                    css={{ width: "2em" }}
-                    defaultValue={item?.psy ? item?.psy[0] : 0}
-                    {...register("psy.0")}
-                    maxLength={2}
-                  />
-                  /
-                  <PFInput
-                    center
-                    css={{ width: "2em" }}
-                    defaultValue={item?.psy ? item?.psy[1] : 0}
-                    {...register("psy.1")}
-                    maxLength={2}
-                  />
-                </Flex>
-              </Flex>
-
-              <Flex direction="column" center>
-                <Text color="yellow" size="small">
-                  INF
-                </Text>
-                <Flex>
-                  <PFInput
-                    center
-                    css={{ width: "2em" }}
-                    defaultValue={item?.inf ? item?.inf[0] : 0}
-                    {...register("inf.0")}
-                    maxLength={2}
-                  />
-                  /
-                  <PFInput
-                    center
-                    css={{ width: "2em" }}
-                    defaultValue={item?.inf ? item?.inf[1] : 0}
-                    {...register("inf.1")}
-                    maxLength={2}
-                  />
-                </Flex>
-              </Flex>
-
-              <Flex direction="column" center>
-                <Text color="yellow" size="small">
-                  {langHud[sessionData.lang!!].hp}
-                </Text>
-                <Flex>
-                  <PFInput
-                    center
-                    css={{ width: "2em" }}
-                    defaultValue={item?.hp ? item?.hp[0] : 0}
-                    {...register("hp.0")}
-                    maxLength={2}
-                  />
-                  /
-                  <PFInput
-                    center
-                    css={{ width: "2em" }}
-                    defaultValue={item?.hp ? item?.hp[1] : 0}
-                    {...register("hp.1")}
-                    maxLength={2}
-                  />
-                </Flex>
-              </Flex>
-
-              <Flex direction="column" center>
-                <Text color="yellow" size="small">
-                  {langHud[sessionData.lang!!].armor}
-                </Text>
-                <Flex>
-                  <PFInput
-                    center
-                    css={{ width: "2em" }}
-                    defaultValue={item?.armor ?? 0}
-                    {...register("armor")}
-                    maxLength={2}
-                  />
-                </Flex>
-              </Flex>
-
-              <Flex direction="column">
-                <Button
-                  onClick={toggleDeprived}
-                  size="small"
-                  border={deprived ? "standard" : "underline"}
-                  color={deprived ? "filled" : undefined}
-                >
-                  {langHud[sessionData.lang!!].deprived}
-                </Button>
-              </Flex>
-            </Flex>
-
-            <Flex css={{ gap: 40 }} direction="column">
-              <InventoryForm
-                getValues={getValues}
-                setValue={setValue}
-                inventory={inventory}
-                register={register}
-              />
-
-              <CybermodForm
-                getValues={getValues}
-                setValue={setValue}
-                cybermods={cybermods}
-                register={register}
-              />
-
-              <CyberdeckForm
-                getValues={getValues}
-                setValue={setValue}
-                cyberdeck={cyberdeck}
-                register={register}
-              />
-            </Flex>
+            <ModForm
+              itemState={itemState}
+              setValue={setValue}
+              itemType="cyberdeck"
+              triggerPsyWatch={triggerPsyWatch}
+            />
           </Flex>
-        </form>
+        </Flex>
       </FormRoot>
       <Button
         css={{ position: "absolute", bottom: 20, right: 20 }}
-        onClick={handleSubmit(onSubmit)}
+        onClick={onSubmit}
       >
         {" "}
         {langHud[sessionData.lang!!].save}

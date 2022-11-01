@@ -10,62 +10,56 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtomValue } from "jotai";
-import { useState } from "react";
-import {
-  UseFormGetValues,
-  UseFormRegister,
-  UseFormSetValue,
-} from "react-hook-form";
+import { useMemo, useState } from "react";
+
 import { v4 as uuidv4 } from "uuid";
-import {
-  langHud,
-  PcInfo,
-  PcMod,
-  stateSessionData,
-  themeColors,
-} from "~/common";
+import { langHud, PcMod, stateSessionData, themeColors } from "~/common";
 import { Button, Flex, Text } from "~/component";
 import { PFInput, SelectableItem } from "./styles";
+import { SubformProps } from "./usePlayerForm";
 
-type Props = {
-  getValues: UseFormGetValues<PcInfo>;
-  setValue: UseFormSetValue<PcInfo>;
-  register: UseFormRegister<PcInfo>;
-  cybermods: PcMod[];
+type Props = SubformProps & {
+  itemType: "cybermods" | "cyberdeck";
+  triggerPsyWatch: React.Dispatch<React.SetStateAction<number[] | undefined>>;
 };
 
-export const CybermodForm = ({
-  getValues,
+export const ModForm = ({
+  itemState,
   setValue,
-  register,
-  cybermods,
+  itemType,
+  triggerPsyWatch,
 }: Props) => {
   const [selInv, setSelInv] = useState(-1);
   const [folded, setFolded] = useState(false);
   const sessionData = useAtomValue(stateSessionData);
 
+  const itemName = useMemo(() => {
+    return itemType === "cybermods" ? "cybermod" : "program";
+  }, [itemType]);
+
   const addMod = () => {
+    if (!itemState) return;
     const entry: PcMod = {
       id: uuidv4(),
-      name: "cybermod",
+      name: itemName,
       activated: false,
-      need_activation: false,
+      need_activation: itemType === "cyberdeck" ? true : false,
       description: "",
     };
-    const info = getValues();
-    if (info.cybermods) {
-      setValue("cybermods", [...info.cybermods, entry]);
+    if (itemState[itemType]) {
+      setValue(itemType, [...itemState[itemType], entry]);
     } else {
-      setValue("cybermods", [entry]);
+      setValue(itemType, [entry]);
     }
     setFolded(false);
   };
 
   const delMod = () => {
-    if (cybermods.length <= selInv || selInv < 0) return;
-    const newState = [...cybermods];
+    if (!itemState || itemState[itemType].length <= selInv || selInv < 0)
+      return;
+    const newState = [...itemState[itemType]];
     newState.splice(selInv, 1);
-    setValue("cybermods", newState);
+    setValue(itemType, newState);
   };
 
   const activationHint = (it: PcMod) => {
@@ -76,62 +70,84 @@ export const CybermodForm = ({
 
   const activateHint = (it: PcMod) => {
     return it.activated
-      ? "Cybermod activated. Click after action to switch off."
-      : "Cybermod inactive. Click to activate.";
+      ? `${itemName} activated. Click after action to switch off.`
+      : `${itemName} inactive. Click to activate.`;
   };
 
   const handleNeedsActivation = (it: PcMod) => {
-    const info = getValues();
-    info.cybermods.forEach((cb) => {
+    if (!itemState) return;
+    const newState = [...itemState[itemType]];
+    newState.forEach((cb) => {
       if (cb.id === it.id) {
         cb.need_activation = !cb.need_activation;
       }
     });
-    setValue("cybermods", [...info.cybermods]);
+    setValue(itemType, newState);
   };
 
   const handleActivate = (it: PcMod) => {
-    const info = getValues();
-    let freeSlots = info.inventory.filter((it) => !it.fatigue).length;
+    if (!itemState) return;
+    let freeSlots = itemState.inventory.filter((it) => !it.fatigue).length;
     if (!it.activated) {
       if (freeSlots === 0) {
-        alert("Cannot activate cybermod! Character has full fatigue");
+        alert(`Cannot activate ${itemName}! Character has full fatigue`);
         return;
       }
-      for (let i = 0; i < info.inventory.length; i++) {
-        if (!info.inventory[i].fatigue) {
-          info.inventory[i].fatigue = true;
+      const newState = [...itemState.inventory];
+      for (let i = 0; i < newState.length; i++) {
+        if (!newState[i].fatigue) {
+          newState[i].fatigue = true;
           freeSlots--;
           break;
         }
       }
-      setValue("inventory", [...info.inventory]);
+      setValue("inventory", newState);
       if (freeSlots === 0) {
         alert(
-          "Last inventory slot fatigued! Character suffers PSY damage from cybermod overuse."
+          "Last inventory slot fatigued! Character suffers PSY damage from cybernetic overuse."
         );
-        setValue("psy.0", info.psy[0] > 0 ? info.psy[0] - 1 : 0);
+        const newPsy = [...itemState.psy];
+        if (newPsy[0] > 0) newPsy[0] = newPsy[0] - 1;
+        triggerPsyWatch(newPsy);
       }
     }
-    info.cybermods.forEach((cb) => {
+    const newState = [...itemState[itemType]];
+    newState.forEach((cb) => {
       if (cb.id === it.id) {
         cb.activated = !cb.activated;
       }
     });
-    setValue("cybermods", [...info.cybermods]);
+    setValue(itemType, newState);
+  };
+
+  const updateName = (e: any, index: number) => {
+    if (!itemState) return;
+    const value = e.target.value;
+    const newState = [...itemState[itemType]];
+    newState[index].name = value;
+    setValue(itemType, newState);
+  };
+
+  const updateDesc = (e: any, index: number) => {
+    if (!itemState) return;
+    const value = e.target.value;
+    const newState = [...itemState[itemType]];
+    newState[index].description = value;
+    setValue(itemType, newState);
   };
 
   return (
     <Flex direction="column">
       <Flex center css={{ gap: 20 }}>
-        {cybermods && cybermods.length > 0 && (
+        {itemState && itemState[itemType] && itemState[itemType].length > 0 && (
           <Button border="underline" onClick={() => setFolded(!folded)}>
             <FontAwesomeIcon icon={folded ? faArrowDown : faArrowUp} />
           </Button>
         )}
         <Text color="yellow" size="small">
-          {langHud[sessionData.lang!!].cybermods} (
-          {cybermods ? cybermods.length : "0"})
+          {langHud[sessionData.lang!!][itemType]} (
+          {itemState && itemState[itemType] ? itemState[itemType].length : "0"}{" "}
+          )
         </Text>
         <Button border="underline" onClick={addMod}>
           <FontAwesomeIcon icon={faPlus} />
@@ -140,11 +156,12 @@ export const CybermodForm = ({
           <FontAwesomeIcon icon={faMinus} />
         </Button>
       </Flex>
-      {cybermods &&
+      {itemState &&
+        itemState[itemType] &&
         !folded &&
-        cybermods.map((it, index) => (
+        itemState[itemType].map((it, index) => (
           <SelectableItem
-            key={`cmod-${index}`}
+            key={`${itemName}-${index}`}
             selected={selInv === index}
             onClick={() => setSelInv(index)}
           >
@@ -156,7 +173,7 @@ export const CybermodForm = ({
                 css={{
                   width: 250,
                 }}
-                {...register(`cybermods.${index}.name`)}
+                onChange={(e: any) => updateName(e, index)}
               />
               <FontAwesomeIcon
                 style={{
@@ -176,7 +193,7 @@ export const CybermodForm = ({
                 css={{
                   width: 450,
                 }}
-                {...register(`cybermods.${index}.description`)}
+                onChange={(e: any) => updateDesc(e, index)}
               />
 
               {it.need_activation && (

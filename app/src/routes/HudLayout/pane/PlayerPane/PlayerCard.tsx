@@ -11,6 +11,7 @@ import {
   PcInfo,
   statePlayers,
   stateSessionData,
+  styled,
   themeColors,
 } from "~/common";
 import { useStorage } from "~/common/storage";
@@ -22,13 +23,22 @@ type Props = {
   selected: boolean;
   onClick?: () => void;
   onDoubleClick?: () => void;
+  onShowCyberdeck?: () => void;
 };
+
+const ClickableText = styled(Text, {
+  cursor: "pointer",
+  "&:hover": {
+    fontWeight: "bolder",
+  },
+});
 
 export const PlayerCard = ({
   playerId,
   selected,
   onClick,
   onDoubleClick,
+  onShowCyberdeck,
 }: Props) => {
   const [players, setPlayers] = useAtom(statePlayers);
   const item: PcInfo | undefined = players[playerId];
@@ -77,6 +87,11 @@ export const PlayerCard = ({
       return res;
     });
     return tt.join("\n");
+  };
+
+  const showCyberdeck = () => {
+    if (!onShowCyberdeck) return;
+    onShowCyberdeck();
   };
 
   const activatedCybermods = useMemo(() => {
@@ -157,6 +172,11 @@ export const PlayerCard = ({
           <Text size="middle" color="yellow">
             {item?.armor}
           </Text>
+          {item?.deprived && (
+            <Text size="middle" color="pink" css={{ marginLeft: 30 }}>
+              {langHud[sessionData.lang!!].deprived}
+            </Text>
+          )}
         </Flex>
         <Flex css={{ gap: 10 }}>
           <Text size="middle" title={invTooltip()}>
@@ -178,9 +198,13 @@ export const PlayerCard = ({
               onClick={deactivateCybermods}
             />
           )}
-          <Text size="middle" title={cdTooltip()}>
+          <ClickableText
+            size="middle"
+            title={cdTooltip()}
+            onClick={showCyberdeck}
+          >
             {langHud[sessionData.lang!!].cyberdeck}:{" "}
-          </Text>
+          </ClickableText>
           <Text size="middle" color="yellow">
             {activatedPrograms.length}/{item?.cyberdeck?.length}
           </Text>
@@ -190,11 +214,6 @@ export const PlayerCard = ({
               title={langHud[sessionData.lang!!].deactivate_programs}
               onClick={deactivatePrograms}
             />
-          )}
-          {item?.deprived && (
-            <Text size="middle" color="pink" css={{ marginLeft: 30 }}>
-              {langHud[sessionData.lang!!].deprived}
-            </Text>
           )}
         </Flex>
       </Flex>

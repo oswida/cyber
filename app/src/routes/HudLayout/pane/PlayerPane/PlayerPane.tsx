@@ -1,6 +1,7 @@
 import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
 import { useAtom, useAtomValue, useSetAtom } from "jotai";
 import { useMemo, useRef, useState } from "react";
+import { set } from "react-hook-form";
 import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
@@ -17,7 +18,9 @@ import {
 } from "~/common";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, Icon, Input, Text } from "~/component";
+import { InfoPanel } from "~/component/InfoPanel";
 import { HudPane } from "../../styles";
+import { CyberdeckInfo } from "./CyberdeckInfo";
 import { PlayerCard } from "./PlayerCard";
 import { PlayerForm } from "./PlayerForm";
 import { ListRoot } from "./styles";
@@ -31,6 +34,7 @@ export const PlayerPane = () => {
   const sessionData = useAtomValue(stateSessionData);
   const { publish } = useNats();
   const nats = useAtomValue(stateNats);
+  const [cyberdeckInfo, setCyberdeckInfo] = useState(false);
 
   const clear = () => {
     if (!nameRef.current) return;
@@ -79,6 +83,20 @@ export const PlayerPane = () => {
     return pf.item;
   }, [pf]);
 
+  const clearPanels = () => {
+    setCyberdeckInfo(false);
+  };
+
+  const cardClick = (k: string) => {
+    if (sel === k) return;
+    clearPanels();
+    setSel(k);
+  };
+
+  const showDeck = () => {
+    setCyberdeckInfo(true);
+  };
+
   return (
     <HudPane>
       <Flex css={{ alignItems: "center", width: "90%", margin: 10 }}>
@@ -108,15 +126,22 @@ export const PlayerPane = () => {
           (k) =>
             players[k] && (
               <PlayerCard
+                onShowCyberdeck={showDeck}
                 key={k}
                 playerId={k}
-                onClick={() => setSel(k)}
+                onClick={() => cardClick(k)}
                 onDoubleClick={() => setPf({ open: true, item: players[k] })}
                 selected={sel === k}
               />
             )
         )}
       </ListRoot>
+      {cyberdeckInfo && sel !== "" && (
+        <CyberdeckInfo
+          item={players[sel]}
+          onClose={() => setCyberdeckInfo(false)}
+        />
+      )}
       {currentItem && <PlayerForm item={currentItem} />}
     </HudPane>
   );
