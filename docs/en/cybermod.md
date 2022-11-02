@@ -32,7 +32,7 @@ Try to make a fictional description for every enhancement. This is especially im
 
 | Enhancement                                                                                                           | Price                      | Maximum  per cybermod | Activation |
 | --------------------------------------------------------------------------------------------------------------------- | -------------------------- | :-------------------: | :--------: |
-| +1 HP when resolving an attack                                                                                        | 1 000                      |          +3           |    yes     |
+| +1 to character's HP                                                                                                  | 1 000                      |          +3           |    yes     |
 | +1 to the selected ability (BIO,PSY,INF) on test                                                                      | 7 000                      |  +1 (excludes below)  |    yes     |
 | +1 to the selected ability when tested for a specific activity group                                                  | 4 000                      |  +3 (excludes above)  |    yes     |
 | +1 to Armor when dealing with BIO damage                                                                              | 10 000                     |    +3 (total <= 3)    |     -      |

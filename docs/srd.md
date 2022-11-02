@@ -303,14 +303,13 @@ Wszystkie inne działania takie jak: **hakowanie, ochrona, dostęp do zastrzeżo
 
 **Programy**: każda postać z neuroprocesorem może używać **infodeku** (zajmuje jedno miejsce w ekwipunku) do przechowywania **programów**. Programy mogą wspomagać gracza przy hakowaniu lub obronie węzłów, wymagają jednak **aktywacji**.  Infodek może przechowywać dowolną ilość programów.
 
-**Aktywacja oprogramowania**: Aby wykorzystać funkcje programu zapisanego na infodeku, postać musi aktywować oprogramowanie. Procedura ta nie wymaga zużywania żadnych zasobów ale liczy się jako **akcja w rundzie**. Maksymalna ilość aktywowanych programów jaką może posiadać haker jest równa **aktualnemu poziomowi INF podzielonemu przez 3** (zaokrąglenie w górę). Jedna akcja wystarczy aby aktywować wszystkie dostępne programy w danym momencie. Zamiana dowolnej ilości aktywnych programów na inne wymaga jednej akcji.
-Jeżeli poziom zdolności INF postaci ulegnie zmianie a posiada ona aktywowane programy, należy dostosować ilość aktywowanego oprogramowania do aktualnego poziomu INF.
+**Aktywacja oprogramowania**: Aby wykorzystać funkcje programu zapisanego na infodeku, postać musi aktywować oprogramowanie za każdym razem gdy zechce go użyć. Aktywacja wymaga zaznaczenia jednego punktu Zmęczenia w ekwipunku ale **nie liczy się** jako akcja w rundzie. Maksymalna ilość programów jaką może aktywować haker jest równa **aktualnemu poziomowi INF podzielonemu przez 3** (zaokrąglenie w górę). Wyjątkiem od powyższej reguły są programy użytkowe, które nie modyfikują współczynników w mechanice gry, nie zadają obrażeń ani nie mają efektów typu "obrażenia krytyczne" - tego oprogramowania można użyć bez aktywacji. Przykładem takiego programu może być program strażniczy, który uruchamia alert po zarejestrowaniu określonego zdarzenia.
 
 **Tworzenie oprogramowania**: podobnie jak w przypadku cybermodyfikacji, gracze mogą tworzyć własne oprogramowanie dowolnie opisując jego efekty i dopasowując je do współczynników modyfikujących mechanikę gry.
 
 | Rodzaj oprogramowania   | Efekt                                                    |            Cena             |
 | ----------------------- | -------------------------------------------------------- | :-------------------------: |
-| Wzmacniacz obliczeniowy | +1 OCHR przy rozliczaniu ataku w Infosferze              |            1000             |
+| Wzmacniacz obliczeniowy | +1 do OCHR postaci w Infosferze                          |            1000             |
 | Tarcza                  | +1 Pancerza przy rozliczaniu ataku w Infosferze          |            10000            |
 | Wzmacniacz neuralny     | +1 INF przy teście w Infosferze                          |            7000             |
 | Lodołamacz              | Dodatkowe obrażenia podczas hakowania                    | rodzaj kości obrażeń * 1500 |
@@ -326,7 +325,7 @@ Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekrac
 
 Postać, której **INF wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać dopóki bohater nie odzyska **przynajmniej jednego** punktu Interfejsu.
 
-**Aktywacja**: każdy element cybermodyfikacji, który wpływa na mechanikę gry (modyfikatory do rzutów obronnych, obrażenia krytyczne) wymaga **aktywacji** za **każdym razem** gdy postać zechce go użyć. Aktywacja wymaga zaznaczenia jednego punktu Zmęczenia w ekwipunku.
+**Aktywacja**: każdy element cybermodyfikacji, który wpływa na mechanikę gry (modyfikatory do rzutów obronnych, obrażenia krytyczne) wymaga **aktywacji** za **każdym razem** gdy postać zechce go użyć. Aktywacja wymaga zaznaczenia jednego punktu Zmęczenia w ekwipunku ale **nie liczy się** jako akcja w rundzie.
 Elementy cybermodyfikacji, nie oznaczone jako wymagające aktywacji, dają efekt trwały a ich używanie nie podnosi zmęczenia postaci.
 
 **Cyberpsychoza**: cybermodyfikacje mogą mieć negatywny wpływ na organizm ludzki. Intensywne używanie wszczepów może odbić się na kondycji psychicznej postaci. Za każdym razem, gdy **zmęczenie wypełni cały ekwipunek** postaci, odejmij **jeden** od jej poziomu **PSY**.
@@ -350,6 +349,8 @@ W takich sytuacjach **rzuć 1k6**.
 - Wynik **3 lub mniej** oznacza rozwiązanie **niekorzystne**.
 
 Przed rzutem warto klarownie opisać graczom zarówno korzystne jak i niekorzystne jego skutki.
+
+Może się również zdarzyć, że prawdopodobieństwo danego rozstrzygnięcia jest inne niż 50%, wtedy decyzja korzystna (i odpowiednio też niekorzystna) może wynikać z większej (na przykład 2 lub więcej) albo mniejszej (na przykład 5 lub więcej) ilości wyników rzutu.
 
 ## Rozwój postaci
 

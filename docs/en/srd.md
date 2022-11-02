@@ -307,14 +307,13 @@ All other activities such as hacking, security, access to proprietary informatio
 
 **Software**: any character with a neuroprocessor can use an **infodeck** (takes up one space in the inventory) to store **programs**. Programs can assist the player with hacking or defending nodes, but require **activation**.  The infodeck can store any number of programs.
 
-**Software Activation**: In order to use the functions of the software stored on the infodeck, the character must activate the software. This procedure does not require any resources but counts as an **action in the round**. The maximum number of activated programs a hacker can have is equal to **the current INF level divided by 3** (round up). One action is sufficient to activate all available programs at any given time. It takes one action to swap any number of active programs for another.
-If a character's INF changes and some programs were activated, adjust the amount of activated software to the current INF.
+**Software Activation**: In order to use the functions of the software stored on the infodeck, characters must activate the software each time they wish to use it. Activation requires marking one point of Fatigue in the inventory but **is not considered** an action in the round. The maximum amount of software a hacker can activate, is equal to **her current INF level divided by 3** (rounding up). Exceptions to the above rule are utility programs that do not modify game mechanics, do not deal damage or have effects such as "critical damage" - this software can be used without activation. An example would be a "guardian program" that triggers an alert when a specific event is registered.
 
 **Software creation**: similar to cybermodifications, players can create their own software freely describing its effects and matching them to the game mechanics.
 
 | Software type     | Effect                                                       |       Price        |
 | ----------------- | ------------------------------------------------------------ | :----------------: |
-| Computing booster | +1 HP for resolving Infosphere attack                        |        1000        |
+| Computing booster | +1 to character's HP for Infosphere actions                  |        1000        |
 | Shield            | +1 Armor for resolving Infosphere attack                     |       10000        |
 | Neural booster    | +1 INF for Infosphere tests                                  |        7000        |
 | Icebreaker        | Extra damage when hacking                                    | damage dice * 1500 |
@@ -330,7 +329,7 @@ Each character may install cybermodifications in an amount not exceeding the **a
 
 A character whose **INF is zero** cannot use cybermodifications - they stop working until the character has regained at least one point of Interface.
 
-**Activation**: any cybernetic modification item that affects game mechanics (modifiers to saves, critical damage) requires **activation** every time the character wishes to use it. Activation requires marking **one point of Fatigue** in the inventory.
+**Activation**: any cybernetic modification item that affects game mechanics (modifiers to saves, critical damage) requires **activation** every time the character wishes to use it. Activation requires marking **one point of Fatigue** in the inventory, but **is not considered** an action in the round.
 Cybermodification items not marked as requiring activation have a permanent effect and their use does not increase a character's Fatigue.
 
 **Cyberpsychosis**: cyber modifications can have a negative impact on the human body. Intense use of implants can take a toll on a character's mental condition. Whenever fatigue fills a character's **entire** inventory, **subtract one** from their **PSY**.
@@ -354,6 +353,8 @@ In these situations, roll **1d6**.
 - A roll of **3 or under** tends to mean **bad luck** for the PCs or their allies.
 
 Before the roll, it is useful to clearly describe to the players both the favourable and unfavourable effects of the roll.
+
+It may also happen that the probability of a given outcome is other than 50%, in which case a favourable (and correspondingly unfavourable) decision may result from a higher (for example, 2 or more) or lower (for example, 5 or more) number of roll results.
 
 ## Character development
 
