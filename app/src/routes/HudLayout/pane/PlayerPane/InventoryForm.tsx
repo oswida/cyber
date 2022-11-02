@@ -1,6 +1,7 @@
 import {
   faArrowDown,
   faArrowUp,
+  faBoxArchive,
   faLock,
   faLockOpen,
   faMinus,
@@ -90,6 +91,10 @@ export const InventoryForm = ({ itemState, setValue }: SubformProps) => {
             selected={selInv === index}
             onClick={() => setSelInv(index)}
           >
+            <FontAwesomeIcon
+              style={{ alignSelf: "center" }}
+              icon={faBoxArchive}
+            />
             <PFInput
               small
               border="down"

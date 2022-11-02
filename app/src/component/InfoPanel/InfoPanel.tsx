@@ -16,11 +16,12 @@ const PanelRoot = styled("div", {
   //   border: `solid 1px $green`,
   borderRadius: 10,
   zIndex: 1000,
-  backgroundColor: "$background200",
+  backgroundColor: "$background100",
   boxShadow: `-2px -2px 4px 2px #0fff50`,
   padding: 5,
   display: "flex",
   flexDirection: "column",
+  overflowY: "auto",
 });
 
 const CloseButton = styled("div", {

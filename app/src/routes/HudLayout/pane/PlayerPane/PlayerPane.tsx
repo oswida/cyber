@@ -18,9 +18,11 @@ import {
 import { useStorage } from "~/common/storage";
 import { Button, Flex, Icon, Input, Text } from "~/component";
 import { HudPane } from "../../styles";
-import { CyberdeckInfo } from "./CyberdeckInfo";
+import { InvInfo } from "./InvInfo";
+import { ModInfo } from "./ModInfo";
 import { PlayerCard } from "./PlayerCard";
 import { PlayerForm } from "./PlayerForm";
+import { StatInfo } from "./StatInfo";
 import { ListRoot } from "./styles";
 
 export const PlayerPane = () => {
@@ -142,9 +144,29 @@ export const PlayerPane = () => {
         )}
       </ListRoot>
       {subformVisible["cyberdeck"] && sel !== "" && (
-        <CyberdeckInfo
+        <ModInfo
           item={players[sel]}
+          itemType="cyberdeck"
           onClose={() => showSubform("cyberdeck", false)}
+        />
+      )}
+      {subformVisible["cybermod"] && sel !== "" && (
+        <ModInfo
+          item={players[sel]}
+          itemType="cybermods"
+          onClose={() => showSubform("cybermod", false)}
+        />
+      )}
+      {subformVisible["inventory"] && sel !== "" && (
+        <InvInfo
+          item={players[sel]}
+          onClose={() => showSubform("inventory", false)}
+        />
+      )}
+      {subformVisible["stat"] && sel !== "" && (
+        <StatInfo
+          item={players[sel]}
+          onClose={() => showSubform("stat", false)}
         />
       )}
       {currentItem && <PlayerForm item={currentItem} />}

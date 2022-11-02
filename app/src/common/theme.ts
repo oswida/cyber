@@ -13,7 +13,7 @@ export const themeColors = {
 
   background100: "#080c12",
   background200: "#12171d",
-  backgground300: "#567091",
+  background300: "#567091",
 };
 
 export const { styled, css, createTheme, keyframes, theme, globalCss } =

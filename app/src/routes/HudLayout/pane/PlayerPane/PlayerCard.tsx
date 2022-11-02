@@ -97,6 +97,21 @@ export const PlayerCard = ({
     showSubform("cyberdeck", true);
   };
 
+  const showCybermods = () => {
+    if (!showSubform) return;
+    showSubform("cybermod", true);
+  };
+
+  const showInventory = () => {
+    if (!showSubform) return;
+    showSubform("inventory", true);
+  };
+
+  const showStat = () => {
+    if (!showSubform) return;
+    showSubform("stat", true);
+  };
+
   const activatedCybermods = useMemo(() => {
     if (!item || !item.cybermods) return [];
     return item.cybermods.filter((m) => {
@@ -154,24 +169,34 @@ export const PlayerCard = ({
           {item?.name}
         </Text>
         <Flex css={{ gap: 10 }}>
-          <Text size="middle">BIO: </Text>
+          <ClickableText size="middle" onClick={showStat}>
+            BIO:{" "}
+          </ClickableText>
           <Text size="middle" color="yellow">
             {item?.bio ? item?.bio[0] : 0}/{item?.bio ? item?.bio[1] : 0}
           </Text>
-          <Text size="middle">PSY: </Text>
+          <ClickableText size="middle" onClick={showStat}>
+            PSY:{" "}
+          </ClickableText>
           <Text size="middle" color="yellow">
             {item?.psy ? item?.psy[0] : 0}/{item?.psy ? item?.psy[1] : 0}
           </Text>
-          <Text size="middle">INF: </Text>
+          <ClickableText size="middle" onClick={showStat}>
+            INF:{" "}
+          </ClickableText>
           <Text size="middle" color="yellow">
             {item?.inf ? item?.inf[0] : 0}/{item?.inf ? item?.inf[1] : 0}
           </Text>
 
-          <Text size="middle">{langHud[sessionData.lang!!].hp}: </Text>
+          <ClickableText size="middle" onClick={showStat}>
+            {langHud[sessionData.lang!!].hp}:{" "}
+          </ClickableText>
           <Text size="middle" color="yellow">
             {item?.hp ? item?.hp[0] : 0}/{item?.hp ? item?.hp[1] : 0}
           </Text>
-          <Text size="middle">{langHud[sessionData.lang!!].armor}: </Text>
+          <ClickableText size="middle" onClick={showStat}>
+            {langHud[sessionData.lang!!].armor}:{" "}
+          </ClickableText>
           <Text size="middle" color="yellow">
             {item?.armor}
           </Text>
@@ -182,15 +207,23 @@ export const PlayerCard = ({
           )}
         </Flex>
         <Flex css={{ gap: 10 }}>
-          <Text size="middle" title={invTooltip()}>
+          <ClickableText
+            size="middle"
+            title={invTooltip()}
+            onClick={showInventory}
+          >
             {langHud[sessionData.lang!!].items}:{" "}
-          </Text>
+          </ClickableText>
           <Text size="middle" color="yellow">
             {fatiguedSlots.length}/{item?.inventory?.length}
           </Text>
-          <Text size="middle" title={cmTooltip()}>
+          <ClickableText
+            size="middle"
+            title={cmTooltip()}
+            onClick={showCybermods}
+          >
             {langHud[sessionData.lang!!].cybermods}:{" "}
-          </Text>
+          </ClickableText>
           <Text size="middle" color="yellow">
             {activatedCybermods.length}/{item?.cybermods?.length}
           </Text>

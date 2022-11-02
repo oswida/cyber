@@ -30,8 +30,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
   const [pf, setPf] = useAtom(statePlayerForm);
   const [players, setPlayers] = useAtom(statePlayers);
 
-  const { itemState, setValue, psyWatch, triggerPsyWatch } =
-    usePlayerForm(item);
+  const { itemState, setValue, setValues, saveItem } = usePlayerForm(item);
 
   const { savePlayers } = useStorage();
   const { publish } = useNats();
@@ -39,15 +38,8 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
   const sessionData = useAtomValue(stateSessionData);
 
   const onSubmit = () => {
-    if (!item || !itemState) return;
-    const newState = { ...players };
-    newState[item.id] = itemState;
-    setPlayers(newState);
-    savePlayers(newState);
+    saveItem();
     setPf({ item: undefined, open: false });
-    if (itemState.shared) {
-      publish(nats.connection, topicChars, [itemState]);
-    }
   };
 
   const deleteItem = () => {
@@ -68,11 +60,7 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
       <FormRoot>
         <Flex direction="column" css={{ width: "80vw", gap: 30 }} center>
           <BasicForm itemState={itemState} setValue={setValue} />
-          <StatForm
-            itemState={itemState}
-            setValue={setValue}
-            psyWatch={psyWatch}
-          />
+          <StatForm itemState={itemState} setValue={setValue} />
 
           <Flex css={{ gap: 40 }} direction="column">
             <InventoryForm itemState={itemState} setValue={setValue} />
@@ -81,14 +69,14 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
               itemState={itemState}
               setValue={setValue}
               itemType="cybermods"
-              triggerPsyWatch={triggerPsyWatch}
+              setValues={setValues}
             />
 
             <ModForm
               itemState={itemState}
               setValue={setValue}
               itemType="cyberdeck"
-              triggerPsyWatch={triggerPsyWatch}
+              setValues={setValues}
             />
           </Flex>
         </Flex>

@@ -5,11 +5,14 @@ import { Button, Flex, Text } from "~/component";
 import { PFInput } from "./styles";
 import { SubformProps } from "./usePlayerForm";
 
-type Props = SubformProps & {
-  psyWatch: number[] | undefined;
-};
+type Props = SubformProps;
 
-export const StatForm = ({ itemState, setValue, psyWatch }: Props) => {
+export const StatForm = ({
+  itemState,
+  setValue,
+
+  responsive,
+}: Props) => {
   const sessionData = useAtomValue(stateSessionData);
   const psyRef = useRef<HTMLInputElement>(null);
 
@@ -35,13 +38,18 @@ export const StatForm = ({ itemState, setValue, psyWatch }: Props) => {
   };
 
   useEffect(() => {
-    if (!itemState || !psyRef.current || !psyWatch) return;
-    psyRef.current.value = `${psyWatch[0]}`;
-    setValue("psy", psyWatch);
-  }, [psyWatch]);
+    if (!psyRef.current) return;
+    psyRef.current.value = `${itemState?.psy[0]}`;
+  }, [itemState?.psy]);
 
   return (
-    <Flex css={{ gap: 40 }}>
+    <Flex
+      css={{
+        gap: responsive ? 10 : 40,
+        overflowY: responsive ? "auto" : undefined,
+      }}
+      direction={responsive ? "column" : undefined}
+    >
       <Flex direction="column" center>
         <Text color="yellow" size="small">
           BIO
@@ -150,12 +158,13 @@ export const StatForm = ({ itemState, setValue, psyWatch }: Props) => {
         </Flex>
       </Flex>
 
-      <Flex direction="column">
+      <Flex direction="column" center={responsive ? true : undefined}>
         <Button
           onClick={toggleDeprived}
           size="small"
           border={itemState?.deprived ? "standard" : "underline"}
           color={itemState?.deprived ? "filled" : undefined}
+          css={{ maxWidth: "max-content" }}
         >
           {langHud[sessionData.lang!!].deprived}
         </Button>

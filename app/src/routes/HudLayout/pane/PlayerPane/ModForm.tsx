@@ -3,32 +3,43 @@ import {
   faArrowUp,
   faBoltLightning,
   faGears,
+  faKitMedical,
+  faMicrochip,
   faMinus,
   faPlay,
   faPlus,
+  faRobot,
   faRotate,
+  faToolbox,
+  faTools,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtomValue } from "jotai";
 import { useMemo, useState } from "react";
 
 import { v4 as uuidv4 } from "uuid";
-import { langHud, PcMod, stateSessionData, themeColors } from "~/common";
+import {
+  langHud,
+  PcInfo,
+  PcMod,
+  stateSessionData,
+  themeColors,
+} from "~/common";
 import { Button, Flex, Text } from "~/component";
 import { PFInput, SelectableItem } from "./styles";
-import { SubformProps } from "./usePlayerForm";
+import { PcInfoKeys, SubformProps } from "./usePlayerForm";
 
 type Props = SubformProps & {
   itemType: "cybermods" | "cyberdeck";
-  triggerPsyWatch: React.Dispatch<React.SetStateAction<number[] | undefined>>;
+  setValues: (items: [keyof PcInfo, any][]) => void;
 };
 
 export const ModForm = ({
   itemState,
   setValue,
   itemType,
-  triggerPsyWatch,
   responsive,
+  setValues,
 }: Props) => {
   const [selInv, setSelInv] = useState(-1);
   const [folded, setFolded] = useState(false);
@@ -89,27 +100,25 @@ export const ModForm = ({
   const handleActivate = (it: PcMod) => {
     if (!itemState) return;
     let freeSlots = itemState.inventory.filter((it) => !it.fatigue).length;
+    const inv = [...itemState.inventory];
+    const newPsy = [...itemState.psy];
     if (!it.activated) {
       if (freeSlots === 0) {
         alert(`Cannot activate ${itemName}! Character has full fatigue`);
         return;
       }
-      const newState = [...itemState.inventory];
-      for (let i = 0; i < newState.length; i++) {
-        if (!newState[i].fatigue) {
-          newState[i].fatigue = true;
+      for (let i = 0; i < inv.length; i++) {
+        if (!inv[i].fatigue) {
+          inv[i].fatigue = true;
           freeSlots--;
           break;
         }
       }
-      setValue("inventory", newState);
       if (freeSlots === 0) {
         alert(
           "Last inventory slot fatigued! Character suffers PSY damage from cybernetic overuse."
         );
-        const newPsy = [...itemState.psy];
         if (newPsy[0] > 0) newPsy[0] = newPsy[0] - 1;
-        triggerPsyWatch(newPsy);
       }
     }
     const newState = [...itemState[itemType]];
@@ -118,7 +127,11 @@ export const ModForm = ({
         cb.activated = !cb.activated;
       }
     });
-    setValue(itemType, newState);
+    setValues([
+      ["inventory", inv],
+      ["psy", newPsy],
+      [itemType, newState],
+    ]);
   };
 
   const updateName = (e: any, index: number) => {
@@ -171,12 +184,16 @@ export const ModForm = ({
           >
             <Flex direction={responsive ? "column" : undefined}>
               <Flex>
+                <FontAwesomeIcon
+                  icon={itemType == "cyberdeck" ? faMicrochip : faTools}
+                  style={{ alignSelf: "center" }}
+                />
                 <PFInput
                   small
                   border="down"
                   defaultValue={it?.name}
                   css={{
-                    width: responsive ? 350 : 250,
+                    width: responsive ? 330 : 250,
                   }}
                   onChange={(e: any) => updateName(e, index)}
                 />
