@@ -21,17 +21,20 @@ Termin `X na Y` określa prawdopodobieństwo z jakim cecha występuje podczas st
 
 ## Typ
 
-1. Gang/inna grupa runnerów
-2. Policja/strażnicy
-3. Oddział wojskowy/służby specjalne
-4. Terroryści/tłum uliczny
-5. Oddział korporacyjny/grupa najemników
-6. Cyberpsychole/mutanci
+1. Gang/inna grupa runnerów (k6)
+2. Policja/strażnicy (k6)
+3. Oddział wojskowy/służby specjalne (k8)
+4. Terroryści/tłum uliczny (k6)
+5. Oddział korporacyjny/grupa najemników (k10)
+6. Cyberpsychole/mutanci (k12)
 
 
 ## Charakterystyka grupy (4k6)
 
 ### 1. Gang/inna grupa runnerów
+
+Podstawowa broń: k6
+
 
 |  k6   | Przywódca            | Grupa                                         |
 | :---: | -------------------- | --------------------------------------------- |
@@ -62,6 +65,8 @@ Termin `X na Y` określa prawdopodobieństwo z jakim cecha występuje podczas st
 **Kierowca/pilot**: 4 OCHR, 12 BIO, shotgun k6, wszczep +BIO do kierowania pojazdem
 
 ### 2. Policja/strażnicy
+
+Podstawowa broń: k6
 
 |  k6   | Przywódca                         | Grupa                          |
 | :---: | --------------------------------- | ------------------------------ |
@@ -95,6 +100,8 @@ Termin `X na Y` określa prawdopodobieństwo z jakim cecha występuje podczas st
 
 ### 3. Oddział wojskowy/służby specjalne
 
+Podstawowa broń: k8
+
 |  k6   | Przywódca                    | Grupa                                |
 | :---: | ---------------------------- | ------------------------------------ |
 |   1   | Kompetentny taktyk           | Profesjonaliści w każdym calu        |
@@ -124,6 +131,8 @@ Termin `X na Y` określa prawdopodobieństwo z jakim cecha występuje podczas st
 **Szpieg**: 5 OCHR, 12 BIO, 15 PSY, 15 INF, pistolet k6, wszczep +INF, neuroprocesor k4
 
 ### 4. Terroryści/tłum uliczny
+
+Podstawowa broń: k6
 
 |  k6   | Przywódca                        | Grupa                          |
 | :---: | -------------------------------- | ------------------------------ |
@@ -155,6 +164,8 @@ Termin `X na Y` określa prawdopodobieństwo z jakim cecha występuje podczas st
 
 ### 5. Oddział korporacyjny/grupa najemników
 
+Podstawowa broń: k10
+
 |  k6   | Przywódca                    | Grupa                                           |
 | :---: | ---------------------------- | ----------------------------------------------- |
 |   1   | Karierowicz                  | Bezduszni profesjonaliści wykonujący zadanie    |
@@ -184,6 +195,8 @@ Termin `X na Y` określa prawdopodobieństwo z jakim cecha występuje podczas st
 **Specjalista broni ciężkiej**: 6 OCHR, 1 Pancerz, 14 BIO, broń ciężka k10 lub k12
 
 ### 6. Cyberpsychole/mutanci
+
+Podstawowa broń: k12
 
 |  k6   | Przywódca                                        | Grupa                                          |
 | :---: | ------------------------------------------------ | ---------------------------------------------- |

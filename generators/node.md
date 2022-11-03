@@ -28,15 +28,30 @@ nav_order: 5
 
 ## Zabezpieczenia
 
-| Klasa              | OCHR   | INF    | Personel                    | LOD                 | Dodatkowe                      |
-| ------------------ | ------ | ------ | --------------------------- | ------------------- | ------------------------------ |
-| Publiczny          | 1k3    | 1k6    | 1 na 6: wolontariusz INF 10 | -                   |                                |
-| Prywatny           | 1k6    | 1k6+2  | -  (właściciel)             | -                   |                                |
-| Prywatny strzeżony | 1k6+3  | 1k8+3  | 2 na 6:  haker INF 10       | 3 na 6: k6          |                                |
-| Rządowy            | 1k6+6  | 1k8+6  | 1k3  haker INF 12           | k6                  | alarmy informujące o ataku     |
-| Korporacyjny       | 1k8+6  | 1k10+6 | 1k4  haker INF 15           | k8, 2 na 6: Czarny  | alarmy, śledzenie włamywacza   |
-| Wojskowy           | 1k10+6 | 1k12+6 | 1k6  haker INF 16           | k10, 3 na 6: Czarny | alarmy, śledzenie włamywacza   |
-| SI                 | 2k6+6  | 2k6+8  | samoobrona INF 17           | k12                 | LOD czarny lub biały, wybór SI |
+| Klasa              | OCHR | INF | Oprogramowanie | LOD                 |
+| ------------------ | ---- | --- | -------------- | ------------------- |
+| Publiczny          | k4   | k4  | KP/1 los k4    | k4                  |
+| Prywatny           | k4   | k4  | KP/1-2 los k4  | k4                  |
+| Prywatny strzeżony | k6   | k6  | KP/1-3 los k6  | k6                  |
+| Rządowy            | k8   | k8  | KP/1-4 los k8  | k8                  |
+| Korporacyjny       | k10  | k10 | KP/1-3 los k10 | k10, KP/1-2: Czarny |
+| Wojskowy           | k12  | k12 | KP/1-4 los k12 | k12, KP/1-2: Czarny |
+| SI                 | k20  | k20 | KP/1-5 los k12 | k20, KP/1-4: Czarny |
+
+| k6/k12 | Oprogramowanie dodatkowe                                   |
+| ------ | ---------------------------------------------------------- |
+| 1      | OCHR +1                                                    |
+| 2      | OCHR +2                                                    |
+| 3      | OCHR +3                                                    |
+| 4      | Pancerz +1                                                 |
+| 5      | Pancerz +2                                                 |
+| 6      | Pancerz +3                                                 |
+| 7      | Rozproszenie (atak hakera jest osłabiony)                  |
+| 8      | Obrażenia krytyczne: dodatkowe obrażenia k4                |
+| 9      | Obrażenia krytyczne: atak osłabiony na k4 rund             |
+| 10     | Obrażenia krytyczne: odłączenie od sieci na k4 rund        |
+| 11     | Zapora (niemożność hakowania w tej rundzie)                |
+| 12     | Podwójny atak (rzut dwiema kośćmi, wybieramy wyższy wynik) |
 
 ## Wygląd (3 razy k20)
 
