@@ -1,6 +1,8 @@
 import {
+  fa0,
   fa1,
   fa2,
+  fa3,
   fa4,
   fa8,
   faEraser,
@@ -40,6 +42,11 @@ type Props = {
   save: () => void;
 };
 
+const lineSizeMap: Record<string, number[]> = {
+  draw: [1, 2, 4, 8],
+  erase: [5, 7, 11, 13],
+};
+
 export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
   const [clr, setClr] = useState("white");
   const [sz, setSz] = useState(1);
@@ -52,6 +59,7 @@ export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
     if (!sdb.current) return;
     sdb.current.toggleMode();
     setDrawMode(sdb.current.mode);
+    sdb.current.setLineSize(lineSizeMap[sdb.current.mode][sz]);
   };
 
   const undo = () => {
@@ -78,7 +86,7 @@ export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
 
   const linesize = (s: number) => {
     if (!sdb.current) return;
-    sdb.current.setLineSize(s);
+    sdb.current.setLineSize(lineSizeMap[drawMode][s]);
     setSz(s);
   };
 
@@ -192,28 +200,28 @@ export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
       </Flex>
       <Flex>
         <Button
+          onClick={() => linesize(0)}
+          border={sz === 0 ? undefined : "underline"}
+        >
+          <FontAwesomeIcon icon={fa1} />
+        </Button>
+        <Button
           onClick={() => linesize(1)}
           border={sz === 1 ? undefined : "underline"}
         >
-          <FontAwesomeIcon icon={fa1} />
+          <FontAwesomeIcon icon={fa2} />
         </Button>
         <Button
           onClick={() => linesize(2)}
           border={sz === 2 ? undefined : "underline"}
         >
-          <FontAwesomeIcon icon={fa2} />
+          <FontAwesomeIcon icon={fa3} />
         </Button>
         <Button
-          onClick={() => linesize(4)}
-          border={sz === 4 ? undefined : "underline"}
+          onClick={() => linesize(3)}
+          border={sz === 3 ? undefined : "underline"}
         >
           <FontAwesomeIcon icon={fa4} />
-        </Button>
-        <Button
-          onClick={() => linesize(8)}
-          border={sz === 8 ? undefined : "underline"}
-        >
-          <FontAwesomeIcon icon={fa8} />
         </Button>
       </Flex>
 

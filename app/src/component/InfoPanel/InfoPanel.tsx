@@ -13,11 +13,11 @@ const PanelRoot = styled("div", {
   right: 4,
   width: 400,
   height: "calc(100% - 100px)",
-  //   border: `solid 1px $green`,
+  border: `solid 1px #0fff50aa`,
   borderRadius: 10,
   zIndex: 1000,
   backgroundColor: "$background100",
-  boxShadow: `-2px -2px 4px 2px #0fff50`,
+
   padding: 5,
   display: "flex",
   flexDirection: "column",

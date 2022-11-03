@@ -69,9 +69,11 @@ const Preview = styled("div", {
   overflow: "auto",
   height: 200,
   width: "calc(90% - 10px)",
-  borderLeft: `1px solid $darkblue`,
-  borderBottom: `1px solid $darkblue`,
   padding: 5,
+  borderRadius: 10,
+  border: "1px solid #0fff50aa",
+  backgroundColor: "$background100a70",
+  // boxShadow: `-2px -2px 4px 2px #0fff50aa`,
 });
 
 type NotesPaneProps = {
@@ -234,7 +236,11 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
                 <Textarea
                   contentEditable={false}
                   border="none"
-                  css={{ flex: 1, whiteSpace: "pre-wrap" }}
+                  css={{
+                    flex: 1,
+                    whiteSpace: "pre-wrap",
+                    backgroundColor: "transparent",
+                  }}
                 >
                   {boardState[selNote]?.content}
                 </Textarea>
@@ -243,7 +249,11 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
                 <Textarea
                   contentEditable={false}
                   border="none"
-                  css={{ flex: 1, whiteSpace: "pre-wrap" }}
+                  css={{
+                    flex: 1,
+                    whiteSpace: "pre-wrap",
+                    backgroundColor: "transparent",
+                  }}
                 >
                   {notesState[selNote]?.content}
                 </Textarea>
