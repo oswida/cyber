@@ -178,7 +178,7 @@ Podstawowa broń: k10
 |  k6   |     Dodatkowa broń     | Specyficzny szczegół                                                             |
 | :---: | :--------------------: | -------------------------------------------------------------------------------- |
 |   1   |        EMP k10         | Cybermodyfikacje szybkości: `3 na 6: bonus do ochrony`                           |
-|   2   |  ładunki wybuchowe k8  | Cybermodyfikacje budowy: `3 na 6: bonus do rzutów BIO`                           |
+|   2   | ładunki wybuchowe k10  | Cybermodyfikacje budowy: `3 na 6: bonus do rzutów BIO`                           |
 |   3   |       robot k10        | Opancerzenie: `3 na 6: bonusy do pancerza`                                       |
 |   4   |        dron k10        | Koordynacja zespołowa: `3 na 6: ataki wzmocnione`                                |
 |   5   | pojazd opancerzony k10 | Komunikacja: `3 na 6: ułatwione rzuty INF, BIO`                                  |

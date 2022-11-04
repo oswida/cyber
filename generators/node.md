@@ -28,15 +28,15 @@ nav_order: 5
 
 ## Zabezpieczenia
 
-| Klasa              | OCHR | INF | Oprogramowanie | LOD                 |
-| ------------------ | ---- | --- | -------------- | ------------------- |
-| Publiczny          | k4   | k4  | KP/1 los k4    | k4                  |
-| Prywatny           | k4   | k4  | KP/1-2 los k4  | k4                  |
-| Prywatny strzeżony | k6   | k6  | KP/1-3 los k6  | k6                  |
-| Rządowy            | k8   | k8  | KP/1-4 los k8  | k8                  |
-| Korporacyjny       | k10  | k10 | KP/1-3 los k10 | k10, KP/1-2: Czarny |
-| Wojskowy           | k12  | k12 | KP/1-4 los k12 | k12, KP/1-2: Czarny |
-| SI                 | k20  | k20 | KP/1-5 los k12 | k20, KP/1-4: Czarny |
+| Klasa              | OCHR | INF | Max prog | Oprogramowanie | LOD                 |
+| ------------------ | ---- | --- | :------: | -------------- | ------------------- |
+| Publiczny          | k4   | k4  |    1     | KP/1 los k4    | k4                  |
+| Prywatny           | k4   | k4  |    2     | KP/1-2 los k4  | k4                  |
+| Prywatny strzeżony | k6   | k6  |    3     | KP/1-3 los k6  | k6                  |
+| Rządowy            | k8   | k8  |    4     | KP/1-4 los k8  | k8                  |
+| Korporacyjny       | k10  | k10 |    3     | KP/1-3 los k10 | k10, KP/1-2: Czarny |
+| Wojskowy           | k12  | k12 |    4     | KP/1-4 los k12 | k12, KP/1-2: Czarny |
+| SI                 | k20  | k20 |    5     | KP/1-5 los k12 | k20, KP/1-4: Czarny |
 
 | k6/k12 | Oprogramowanie dodatkowe                                   |
 | ------ | ---------------------------------------------------------- |

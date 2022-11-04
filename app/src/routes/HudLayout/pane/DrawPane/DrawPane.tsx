@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { create, SimpleDrawingBoard } from "simple-drawing-board";
+import { create, SimpleDrawingBoard } from "@tguesdon/simple-drawing-board";
 import { stateDrawAutosave, stateDrawCache, styled, useNats } from "~/common";
 import { useStorage } from "~/common/storage";
 import { HudPane } from "../../styles";

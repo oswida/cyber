@@ -7,6 +7,7 @@ import {
   fa8,
   faEraser,
   faFileExport,
+  faFill,
   faImage,
   faPalette,
   faPencil,
@@ -20,7 +21,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom, useAtomValue } from "jotai";
 import { useState } from "react";
-import { SimpleDrawingBoard } from "simple-drawing-board";
+import { SimpleDrawingBoard } from "@tguesdon/simple-drawing-board";
 import {
   doOpenImage,
   doSaveImage,
@@ -44,7 +45,8 @@ type Props = {
 
 const lineSizeMap: Record<string, number[]> = {
   draw: [1, 2, 4, 8],
-  erase: [5, 7, 11, 13],
+  erase: [12, 20, 35, 45],
+  flood: [8, 12, 16, 20],
 };
 
 export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
@@ -55,10 +57,12 @@ export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
   const nats = useAtomValue(stateNats);
   const { notify } = useNotify();
 
-  const setMode = (er: boolean) => {
+  const setMode = (mode: string) => {
     if (!sdb.current) return;
-    sdb.current.toggleMode();
+    sdb.current.toggleMode(mode);
     setDrawMode(sdb.current.mode);
+    console.log(sdb.current.mode);
+
     sdb.current.setLineSize(lineSizeMap[sdb.current.mode][sz]);
   };
 
@@ -130,15 +134,21 @@ export const Tools = ({ sdb, setDrawMode, drawMode, save }: Props) => {
       <Flex>
         <Button
           color={drawMode === "draw" ? "filled" : undefined}
-          onClick={() => setMode(false)}
+          onClick={() => setMode("DRAW")}
         >
           <FontAwesomeIcon icon={faPencil} title="Draw" />
         </Button>
         <Button
           color={drawMode === "erase" ? "filled" : undefined}
-          onClick={() => setMode(true)}
+          onClick={() => setMode("ERASE")}
         >
           <FontAwesomeIcon icon={faEraser} title="Erase" />
+        </Button>
+        <Button
+          color={drawMode === "flood" ? "filled" : undefined}
+          onClick={() => setMode("FLOOD")}
+        >
+          <FontAwesomeIcon icon={faFill} title="Flood" />
         </Button>
       </Flex>
       <Flex>

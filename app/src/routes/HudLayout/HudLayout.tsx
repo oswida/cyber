@@ -42,7 +42,6 @@ import { Button, Flex, GenMenu, Modal, Text } from "~/component";
 import { Config } from "../Config";
 import { playerLayout } from "./layout";
 import { DrawPane } from "./pane/DrawPane";
-import { DrawPane2 } from "./pane/DrawPane2";
 import { GenCorpoPane } from "./pane/GenPane/GenCorpoPane";
 import { GenNodePane } from "./pane/GenPane/GenNodePane";
 import { NotesPane } from "./pane/NotesPane";
