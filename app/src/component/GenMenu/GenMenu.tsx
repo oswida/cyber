@@ -1,6 +1,9 @@
 import { useAtom, useAtomValue } from "jotai";
 import { genMenuOpen, genTitles, globalStr, language } from "~/common";
-import { Flex, LinkButton, Modal, Text } from "~/component";
+import { LinkButton } from "../Button";
+import { Flex } from "../Flex";
+import { Modal } from "../Modal";
+import { Text } from "../Text";
 
 export type GenMenuProps = {
   extras?: Record<string, string>;

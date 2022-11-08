@@ -3,15 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAtom, useAtomValue } from "jotai";
 import { PropsWithChildren } from "react";
 import { currentPage, genMenuOpen, globalStr, language } from "~/common";
-import {
-  Button,
-  Flex,
-  GenMenu,
-  PageContent,
-  PageHeader,
-  PageRoot,
-  Text,
-} from "~/component";
+import { Button } from "../Button";
+import { Flex } from "../Flex";
+import { GenMenu } from "../GenMenu";
+import { PageContent } from "../PageContent";
+import { PageHeader } from "../PageHeader";
+import { PageRoot } from "../PageRoot";
+import { Text } from "../Text";
 import { NavBar, Root } from "./styles";
 
 export type GenLayoutProps = PropsWithChildren & {

@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 import { styled } from "~/common";
-import { Overlay } from "~/component";
+import { Overlay } from "../Overlay";
 
 const CloseButton = styled("div", {
   height: 30 * 0.8,

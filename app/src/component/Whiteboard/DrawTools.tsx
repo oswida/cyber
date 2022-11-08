@@ -28,8 +28,9 @@ import {
   useNats,
 } from "~/common";
 import { useNotify } from "~/common/notify";
-import { Button, Flex } from "~/component";
 import { WhiteboardState } from "~/component/Whiteboard/types";
+import { Button } from "../Button";
+import { Flex } from "../Flex";
 
 type Props = {
   wbState: WhiteboardState;

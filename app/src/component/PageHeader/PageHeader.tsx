@@ -1,5 +1,5 @@
 import { styled } from "@stitches/react";
-import { Flex } from "~/component";
+import { Flex } from "../Flex";
 
 export const PageHeader = styled(Flex, {
   justifyContent: "space-between",

@@ -1,6 +1,8 @@
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { styled } from "~/common";
-import { Flex, LTIconButton, Text } from "~/component";
+import { LTIconButton } from "../Button";
+import { Flex } from "../Flex";
+import { Text } from "../Text";
 
 const CardRoot = styled("div", {
   padding: 10,

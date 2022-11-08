@@ -1,7 +1,5 @@
 import { PropsWithChildren } from "react";
 import { styled } from "~/common";
-import { Flex } from "../Flex";
-import { Overlay } from "../Overlay";
 
 type Props = PropsWithChildren & {
   onClose?: () => void;

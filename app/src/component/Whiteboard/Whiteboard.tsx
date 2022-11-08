@@ -3,8 +3,8 @@ import { useAtomValue } from "jotai";
 import { useEffect, useRef, useState } from "react";
 import { stateDrawCache, styled } from "~/common";
 import { useStorage } from "~/common/storage";
-import { DrawTools } from "~/routes/HudLayout/pane/DrawPaneAlt/DrawTools";
 import { Flex } from "../Flex";
+import { DrawTools } from "./DrawTools";
 import { WhiteboardState } from "./types";
 import { useCanvas } from "./useCanvas";
 
