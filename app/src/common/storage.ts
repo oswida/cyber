@@ -138,7 +138,7 @@ export const useStorage = () => {
     updateStoreSize();
   };
 
-  const saveDraw = (state: string) => {
+  const saveDraw = (state: any) => {
     localStorage.setItem(inodDrawKey, comp(state));
     updateStoreSize();
   };

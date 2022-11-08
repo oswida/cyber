@@ -16,8 +16,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@stitches/react": "^1.2.8",
-    "@tguesdon/simple-drawing-board": "^3.1.3",
     "@use-gesture/react": "^10.2.20",
+    "fabric": "^5.2.4",
     "jotai": "^1.8.3",
     "lodash.debounce": "^4.0.8",
     "nats.ws": "1.8.1",
@@ -30,6 +30,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/fabric": "^4.5.12",
     "@types/lodash.debounce": "^4.0.7",
     "@types/node": "^18.7.16",
     "@types/react": "^18.0.17",

@@ -200,7 +200,7 @@ export const InputButton = styled("input", {
     margin: 0,
   },
   fontFamily: "Oxanium !important",
-  fontSize: "$2 !important",
+  fontSize: "$3 !important",
   color: "$fontPrimary",
   outline: "none",
   border: "solid 1px $blue",

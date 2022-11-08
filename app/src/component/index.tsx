@@ -13,3 +13,4 @@ export * from "./Input";
 export * from "./Textarea";
 export * from "./Icon";
 export * from "./InfoPanel";
+export * from "./Whiteboard";

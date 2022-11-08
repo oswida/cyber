@@ -29,7 +29,7 @@ const TabBarTitleRoot = styled(DraggableTitle, {
   color: "$fontPrimary",
   paddingLeft: 10,
   paddingRight: 10,
-  fontSize: "$1",
+  fontSize: "$2",
   variants: {
     selected: {
       true: {

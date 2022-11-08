@@ -12,7 +12,7 @@ export const Input = styled("input", {
   color: "$fontPrimary",
   outline: "none",
   border: "none",
-  fontSize: "$2",
+  fontSize: "$3",
   padding: 3,
   "&[disabled]": {
     opacity: 0.3,
@@ -20,7 +20,7 @@ export const Input = styled("input", {
   variants: {
     small: {
       true: {
-        fontSize: "$1",
+        fontSize: "$2",
       },
     },
     border: {

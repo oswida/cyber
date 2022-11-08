@@ -12,6 +12,8 @@ import { NodeGen } from "./routes/NodeGen";
 import { NpcGen } from "./routes/NpcGen";
 import { PlaceGen } from "./routes/PlaceGen";
 
+window.global ||= window;
+
 function App() {
   const [lang, setLang] = useAtom(language);
   const sessionData = useAtomValue(stateSessionData);
