@@ -1,6 +1,7 @@
+import { t } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
-import { currentPage, genTitles, language } from "~/common";
+import { currentPage, language } from "~/common";
 import { GenLayout } from "~/component/GenLayout";
 
 export const PlaceGen = () => {
@@ -8,7 +9,7 @@ export const PlaceGen = () => {
   const lang = useAtomValue(language);
 
   useEffect(() => {
-    setCp(genTitles[lang]["place"]);
+    setCp(t`Place`);
   }, [lang]);
 
   const generate = () => {};

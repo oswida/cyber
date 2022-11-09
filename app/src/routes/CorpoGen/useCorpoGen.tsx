@@ -1,4 +1,5 @@
 import { DiceRoller } from "@dice-roller/rpg-dice-roller";
+import { i18n } from "@lingui/core";
 import { useAtom } from "jotai";
 import { v4 as uuidv4 } from "uuid";
 import {
@@ -8,17 +9,20 @@ import {
   hasString,
   language,
   prettyToday,
+  rollFrom,
   rollSingle,
   stateGenerator,
-  translateObject,
 } from "~/common";
 import { useStorage } from "~/common/storage";
 import {
   dictCorpoDomain,
+  dictCorpoDomainTrans,
+  dictCorpoEmployeeProfile,
   dictCorpoGossip,
   dictCorpoNameDomain,
   dictCorpoNameFirst,
   dictCorpoNameSecond,
+  dictCorpoResources,
 } from "~/data";
 
 const roller = new DiceRoller();
@@ -49,16 +53,25 @@ export const useCorpoGen = () => {
     roll = rollSingle(roller, `1d${dictCorpoGossip.length}`);
     const gossip = dictCorpoGossip[roll.total - 1];
 
+    const resources: string[] = [];
+    const num = rollSingle(roller, `1d2`).total;
+    while (resources.length < num) {
+      const r = rollFrom(roller, dictCorpoResources);
+      if (!hasString(resources, r)) resources.push(r);
+    }
+
+    const profile = rollFrom(roller, dictCorpoEmployeeProfile);
+
     const retv: CorpoInfo = {
       id: uuidv4(),
       name: `${name1} ${name2}`,
-      operations: domains,
-      gossip: gossip,
-      resources: [], //TODO
-      employeeProfile: "", //TODO
+      operations: domains.map((it) => i18n._(dictCorpoDomainTrans[it])),
+      gossip: i18n._(gossip),
+      resources: resources.map((it) => i18n._(it)),
+      employeeProfile: i18n._(profile),
     };
 
-    return translateObject(retv);
+    return retv;
   };
 
   const generate = () => {

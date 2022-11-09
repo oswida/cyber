@@ -90,3 +90,8 @@ export const compareStringTime = (t1: string, t2: string) => {
 export const rollSingle = (roller: DiceRoller, roll: string) => {
   return roller.roll(roll) as DiceRoll;
 };
+
+export const rollFrom = (roller: DiceRoller, source: string[]) => {
+  const num = rollSingle(roller, `1d${source.length}`).total;
+  return source[num - 1];
+};

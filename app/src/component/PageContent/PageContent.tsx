@@ -5,10 +5,9 @@ export const PageContent = styled("div", {
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
-  width: "100%",
-  overflow: "auto",
+  width: "calc(100% - 10px)",
+  minHeight: "max-content",
   flexWrap: "wrap",
   gap: "10px",
   padding: "5px",
-  flex: 1,
 });

@@ -69,6 +69,7 @@ function App() {
   return (
     <I18nProvider i18n={i18n}>
       <HashRouter>
+        {/*  */}
         <Routes>
           <Route path="/" element={<HudLayout />}></Route>
           <Route path="/corpo" element={<CorpoGen />}></Route>

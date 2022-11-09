@@ -27,9 +27,9 @@ export const GenMenu = ({ extras, title }: GenMenuProps) => {
             {title}
           </Text>
         )}
-        {Object.keys(genTitles[lang]).map((key) => (
+        {Object.keys(genTitles).map((key) => (
           <LinkButton to={`/${key}`} onClick={close} key={`${key}`}>
-            {genTitles[lang][key]}
+            {genTitles[key]}
           </LinkButton>
         ))}
         {extras !== undefined &&

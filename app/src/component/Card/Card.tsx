@@ -12,6 +12,7 @@ const CardRoot = styled("div", {
   borderRadius: "20px 0px",
   outlineOffset: 2,
   marginTop: 3,
+  minHeight: "max-content",
   variants: {
     size: {
       standard: {

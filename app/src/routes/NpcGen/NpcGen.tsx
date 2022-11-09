@@ -1,8 +1,8 @@
+import { t } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import {
   currentPage,
-  genTitles,
   language,
   modalOpen,
   stateGenerator,
@@ -21,7 +21,7 @@ export const NpcGen = () => {
   const { generate, clean, exportData, importData } = useNpcGen();
 
   useEffect(() => {
-    setCp(genTitles[lang]["npc"]);
+    setCp(t`NPC`);
   }, [lang]);
 
   return (

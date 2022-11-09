@@ -1,4 +1,5 @@
 import { faEarth } from "@fortawesome/free-solid-svg-icons";
+import { Trans } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { useCallback } from "react";
 import {
@@ -39,14 +40,14 @@ export const CorpoCard = ({ data, size }: CorpoCardProps) => {
       title={data ? data.name : ""}
       titlecolor="blue"
       onDelete={delItem}
-      height={size !== "small" ? 170 : undefined}
+      height={size !== "small" ? 250 : undefined}
       size={size}
     >
       {data?.operations && (
         <>
-          <CardRow css={{ alignItems: "start" }}>
+          <CardRow direction="column" css={{ alignItems: "start" }}>
             <Text size="small" color="yellow">
-              {genTitles[lang]["operations"]}
+              <Trans>Operations</Trans>
             </Text>
             <Text css={{ maxWidth: 350 }} size="middle">
               {data?.operations.join(", ")}
@@ -56,14 +57,14 @@ export const CorpoCard = ({ data, size }: CorpoCardProps) => {
       )}
       {data?.gossip && (
         <>
-          <CardRow css={{ alignItems: "start" }}>
+          <CardRow direction="column" css={{ alignItems: "start" }}>
             <Text size="small" color="yellow">
-              {genTitles[lang]["gossip"]}
+              <Trans>Gossip</Trans>
             </Text>
             <Text
               color="pink"
               size="middle"
-              css={{ maxWidth: 250, lineHeight: "1rem", overflow: "hidden" }}
+              css={{ maxWidth: 350, lineHeight: "1rem", overflow: "hidden" }}
             >
               {data?.gossip}
             </Text>
@@ -72,17 +73,34 @@ export const CorpoCard = ({ data, size }: CorpoCardProps) => {
       )}
       {data?.resources && (
         <>
-          <CardRow css={{ alignItems: "start" }}>
+          <CardRow direction="column" css={{ alignItems: "start" }}>
             <Text size="small" color="yellow">
-              Resources{" "}
+              <Trans>Resources</Trans>{" "}
             </Text>
 
             <Text
               color="green"
               size="middle"
-              css={{ maxWidth: 250, lineHeight: "1rem", overflow: "hidden" }}
+              css={{ maxWidth: 350, lineHeight: "1rem", overflow: "hidden" }}
             >
-              {data?.resources}
+              {data?.resources.join(",")}
+            </Text>
+          </CardRow>
+        </>
+      )}
+      {data?.employeeProfile && (
+        <>
+          <CardRow direction="column" css={{ alignItems: "start" }}>
+            <Text size="small" color="yellow">
+              <Trans>Employee Profile</Trans>{" "}
+            </Text>
+
+            <Text
+              color="white"
+              size="middle"
+              css={{ maxWidth: 350, lineHeight: "1rem", overflow: "hidden" }}
+            >
+              {data?.employeeProfile}
             </Text>
           </CardRow>
         </>

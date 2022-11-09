@@ -10,5 +10,5 @@ export const PageRoot = styled("div", {
   width: "100%",
   paddingTop: "30px",
   display: "flex",
-  flex: 1,
+  // flex: 1,
 });

@@ -3,7 +3,6 @@ import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import {
   currentPage,
-  genTitles,
   language,
   nodeClassMenuOpen,
   nodeClassSelected,
@@ -26,7 +25,7 @@ export const NodeGen = () => {
 
   useEffect(() => {
     setCp(
-      `${genTitles[lang]["node"]} (${
+      `${t`Infosphere node`} (${
         nc ? NodeClassDict[lang][nc] : <Trans>any</Trans>
       })`
     );

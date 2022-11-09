@@ -1,5 +1,4 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { i18n } from "@lingui/core";
 import { t } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { PropsWithChildren } from "react";
@@ -15,6 +14,13 @@ import { NavBar, Root } from "./styles";
 
 export type GenLayoutProps = PropsWithChildren & {
   headerMenu: Record<string, () => void>;
+};
+
+const MenuNames: Record<string, string> = {
+  generate: t`generate`,
+  export: t`export`,
+  import: t`import`,
+  clear: t`clear`,
 };
 
 export const GenLayout = ({ children, headerMenu }: GenLayoutProps) => {
@@ -36,9 +42,9 @@ export const GenLayout = ({ children, headerMenu }: GenLayoutProps) => {
             width: "100%",
           }}
         >
-          <Button onClick={openMenu}>
+          {/* <Button onClick={openMenu}>
             <FontAwesomeIcon icon={faBars} />
-          </Button>
+          </Button> */}
           {cp && (
             <Text
               color="pink"
@@ -68,16 +74,17 @@ export const GenLayout = ({ children, headerMenu }: GenLayoutProps) => {
                 size="small"
                 border="underline"
               >
-                {key}
+                {i18n._(MenuNames[key])}
               </Button>
             ))}
           </Flex>
         </PageHeader>
         <div
           style={{
-            width: "calc(100% - 10px)",
-            height: "calc(100% - 30px - 4rem)",
-            flex: 1,
+            width: "calc(100vw - 10px)",
+            height: "calc(100vh - 100px)",
+            overflowY: "auto",
+            overflowX: "hidden",
           }}
         >
           <PageContent>{children}</PageContent>

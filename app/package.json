@@ -82,7 +82,6 @@
           "src/i18n/locales/**/*",
           "**/*.stories.tsx",
           "src/common/**/*",
-          "src/data/**/*",
           "src/lz-string.d.ts",
           "src/main.tsx"
         ]

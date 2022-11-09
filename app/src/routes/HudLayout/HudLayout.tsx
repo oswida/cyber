@@ -1,6 +1,8 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { i18n } from "@lingui/core";
 import { Trans } from "@lingui/macro";
+import { I18nProvider } from "@lingui/react";
 import { useAtom, useAtomValue, useSetAtom } from "jotai";
 import { useEffect, useState } from "react";
 import {
