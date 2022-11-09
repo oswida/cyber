@@ -1,8 +1,9 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { t } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { PropsWithChildren } from "react";
-import { currentPage, genMenuOpen, globalStr, language } from "~/common";
+import { currentPage, genMenuOpen, language } from "~/common";
 import { Button } from "../Button";
 import { Flex } from "../Flex";
 import { GenMenu } from "../GenMenu";
@@ -67,7 +68,7 @@ export const GenLayout = ({ children, headerMenu }: GenLayoutProps) => {
                 size="small"
                 border="underline"
               >
-                {globalStr[lang][key]}
+                {key}
               </Button>
             ))}
           </Flex>

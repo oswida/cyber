@@ -1,8 +1,8 @@
+import { Trans } from "@lingui/macro";
 import { useAtomValue } from "jotai";
 import { PropsWithChildren } from "react";
-import { langHud, PcInfo, stateSessionData } from "~/common";
+import { PcInfo, stateSessionData } from "~/common";
 import { Button, Flex, InfoPanel, Text } from "~/component";
-import { InventoryForm } from "./InventoryForm";
 import { StatForm } from "./StatForm";
 import { usePlayerForm } from "./usePlayerForm";
 
@@ -38,7 +38,7 @@ export const StatInfo = ({ onClose, item }: Props) => {
         onClick={save}
       >
         {" "}
-        {langHud[sessionData.lang!!].save}
+        <Trans>Save</Trans>
       </Button>
     </InfoPanel>
   );

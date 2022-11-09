@@ -1,12 +1,13 @@
 import { faDeleteLeft, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { i18n } from "@lingui/core";
+import { t, Trans } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { useRef, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
   doImport,
-  langHud,
   Note,
   prettyToday,
   stateBoardNotes,
@@ -164,14 +165,13 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
           <Button
             border="underline"
             onClick={add}
-            title={langHud[sessionData.lang!!].add}
+            title={t`Add`}
             css={{ marginRight: 20 }}
           >
             <FontAwesomeIcon icon={faPlus} />
-            {/* {langHud[sessionData.lang!!].add} */}
           </Button>
           <Text color="yellow" size="small">
-            {langHud[sessionData.lang!!].search}:
+            {t`Search`}:
           </Text>
           <Input
             border="down"
@@ -181,10 +181,10 @@ export const NotesPane = ({ isBoard }: NotesPaneProps) => {
           />
           <Icon color="blue" icon={faDeleteLeft} onClick={clear} />
           <Button border="underline" noupper size="small" onClick={exportNotes}>
-            {langHud[sessionData.lang!!].export}
+            <Trans>Export</Trans>
           </Button>
           <Button border="underline" noupper size="small" onClick={importNotes}>
-            Import
+            <Trans>Import</Trans>
           </Button>
         </Flex>
         <ListRoot>

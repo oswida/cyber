@@ -1,14 +1,7 @@
-import { useAtom, useAtomValue } from "jotai";
+import { Trans } from "@lingui/macro";
+import { useAtomValue } from "jotai";
 import { PropsWithChildren } from "react";
-import {
-  langHud,
-  PcInfo,
-  stateNats,
-  statePlayers,
-  stateSessionData,
-  useNats,
-} from "~/common";
-import { useStorage } from "~/common/storage";
+import { PcInfo, stateSessionData } from "~/common";
 import { Button, InfoPanel, Text } from "~/component";
 import { ModForm } from "./ModForm";
 import { usePlayerForm } from "./usePlayerForm";
@@ -21,7 +14,6 @@ type Props = PropsWithChildren & {
 
 export const ModInfo = ({ onClose, item, itemType }: Props) => {
   const { itemState, setValue, saveItem, setValues } = usePlayerForm(item);
-  const sessionData = useAtomValue(stateSessionData);
 
   const save = () => {
     saveItem();
@@ -50,7 +42,7 @@ export const ModInfo = ({ onClose, item, itemType }: Props) => {
         onClick={save}
       >
         {" "}
-        {langHud[sessionData.lang!!].save}
+        <Trans>Save</Trans>
       </Button>
     </InfoPanel>
   );

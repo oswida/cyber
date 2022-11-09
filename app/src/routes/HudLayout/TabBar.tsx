@@ -1,5 +1,6 @@
-import { useAtomValue, useSetAtom } from "jotai";
-import { useCallback, useMemo } from "react";
+import { t, Trans } from "@lingui/macro";
+import { useAtomValue } from "jotai";
+import { ReactElement, useCallback, useMemo } from "react";
 import {
   DraggableTitle,
   PaneName,
@@ -8,13 +9,7 @@ import {
   useGetLeaf,
   useGetRootNode,
 } from "react-tile-pane";
-import {
-  globalPaneNames,
-  langHud,
-  stateHudLayout,
-  stateSessionData,
-  styled,
-} from "~/common";
+import { globalPaneNames, styled } from "~/common";
 import { useStorage } from "~/common/storage";
 
 const thickness = 32;
@@ -82,13 +77,19 @@ const TabBarRoot = styled("div", {
   marginLeft: "0.25%",
 });
 
+const TabName: Record<string, ReactElement> = {
+  roll: <Trans>tab_roll</Trans>,
+  notes: <Trans>tab_notes</Trans>,
+  board: <Trans>tab_board</Trans>,
+  players: <Trans>tab_players</Trans>,
+  draw: <Trans>tab_draw</Trans>,
+};
+
 const TabBar = ({ tabs, onTab, action }: TabBarPropsWithAction) => {
   const getLeaf = useGetLeaf();
   const gpn = useAtomValue(globalPaneNames);
-  const setHudLayout = useSetAtom(stateHudLayout);
   const getRootNode = useGetRootNode();
   const { saveLayout } = useStorage();
-  const sessionData = useAtomValue(stateSessionData);
 
   const tabBar = useCallback(
     (tab: PaneName, i: number) => {
@@ -99,7 +100,7 @@ const TabBar = ({ tabs, onTab, action }: TabBarPropsWithAction) => {
           key={tab}
           onClick={() => action.switchTab(i)}
         >
-          <TabBarTitle>{langHud[sessionData.lang!!][tab]}</TabBarTitle>
+          <TabBarTitle>{TabName[tab]}</TabBarTitle>
         </TabBarTitleRoot>
       );
     },

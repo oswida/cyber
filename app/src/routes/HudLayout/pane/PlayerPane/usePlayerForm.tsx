@@ -1,12 +1,18 @@
 import { useAtom, useAtomValue } from "jotai";
 import { useState } from "react";
-import { PcInfo, stateNats, statePlayers, topicChars, useNats } from "~/common";
+import {
+  PcInfo,
+  PcInfoKeys,
+  stateNats,
+  statePlayers,
+  topicChars,
+  useNats,
+} from "~/common";
 import { useStorage } from "~/common/storage";
 
-export type PcInfoKeys = keyof PcInfo;
 export type SubformProps = {
   itemState: PcInfo | undefined;
-  setValue: (arg: keyof PcInfo, value: any) => void;
+  setValue: (arg: PcInfoKeys, value: any) => void;
   responsive?: boolean;
 };
 
@@ -18,18 +24,17 @@ export const usePlayerForm = (item?: PcInfo) => {
   const nats = useAtomValue(stateNats);
 
   const setValue = (arg: PcInfoKeys, value: any) => {
-    if (!itemState) return;
-    const newState = { ...itemState };
-    (newState[arg] as any) = value;
+    if (itemState === undefined) return;
+    const newState = { ...itemState, [arg]: value };
     setItemState(newState);
   };
 
-  const setValues = (items: [keyof PcInfo, any][]) => {
+  const setValues = (items: [PcInfoKeys, any][]) => {
     if (!itemState) return;
-    const newState = { ...itemState };
+    let newState = { ...itemState };
     items.forEach((it) => {
       const key = it[0];
-      (newState[key] as any) = it[1];
+      newState = { ...newState, [key]: it[1] };
     });
     setItemState(newState);
   };

@@ -1,13 +1,14 @@
+import { t, Trans } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import {
   currentPage,
   genTitles,
-  globalStr,
   language,
   nodeClassMenuOpen,
   nodeClassSelected,
   stateGenerator,
+  toNodeInfo,
 } from "~/common";
 import { GenLayout } from "~/component";
 import { NodeClassDict } from "~/data";
@@ -26,7 +27,7 @@ export const NodeGen = () => {
   useEffect(() => {
     setCp(
       `${genTitles[lang]["node"]} (${
-        nc ? NodeClassDict[lang][nc] : globalStr[lang]["any"]
+        nc ? NodeClassDict[lang][nc] : <Trans>any</Trans>
       })`
     );
   }, [lang, nc]);
@@ -47,10 +48,10 @@ export const NodeGen = () => {
         }}
       >
         {Object.keys(gen.node).map((k) => (
-          <NodeCard data={gen.node[k]!!} key={k}></NodeCard>
+          <NodeCard data={toNodeInfo(gen.node[k])} key={k}></NodeCard>
         ))}{" "}
       </GenLayout>
-      <ClassMenu title={globalStr[lang]["node class"]} />
+      <ClassMenu title={t`node class`} />
     </>
   );
 };

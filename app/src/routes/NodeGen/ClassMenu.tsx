@@ -1,12 +1,7 @@
+import { Trans } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
-import {
-  genTitles,
-  globalStr,
-  language,
-  nodeClassMenuOpen,
-  nodeClassSelected,
-} from "~/common";
-import { Button, Flex, LinkButton, Modal, Text } from "~/component";
+import { language, nodeClassMenuOpen, nodeClassSelected } from "~/common";
+import { Button, Flex, Modal, Text } from "~/component";
 import { NodeClassDict } from "~/data";
 
 export type ClassMenuProps = {
@@ -41,7 +36,7 @@ export const ClassMenu = ({ title }: ClassMenuProps) => {
           </Button>
         ))}
         <Button onClick={() => select(undefined)}>
-          {globalStr[lang]["any"]}
+          <Trans>any</Trans>
         </Button>
       </Flex>
     </Modal>

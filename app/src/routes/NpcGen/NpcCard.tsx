@@ -1,6 +1,7 @@
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { Trans } from "@lingui/macro";
 import { useAtomValue } from "jotai";
-import { globalStr, language, NpcInfo } from "~/common";
+import { language, NpcInfo } from "~/common";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
 import { useNpcGen } from "./useNpcGen";
 
@@ -27,7 +28,7 @@ export const NpcCard = ({ data, size }: NpcCardProps) => {
       </CardRow>
       <CardRow>
         <Text size="small" color="yellow">
-          {globalStr[lang]["traits"]}
+          <Trans>Traits</Trans>
         </Text>
         <Text color="pink" css={{ maxWidth: 350, lineHeight: "1rem" }}>
           {data.traits.join(", ")}
@@ -35,7 +36,7 @@ export const NpcCard = ({ data, size }: NpcCardProps) => {
       </CardRow>
       <CardRow>
         <Text size="small" color="yellow">
-          {globalStr[lang]["goal"]}
+          <Trans>Goal</Trans>
         </Text>
         <Text color="green" css={{ maxWidth: 350, lineHeight: "1rem" }}>
           {data.goal}

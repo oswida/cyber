@@ -55,8 +55,8 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
   const [boardState, setBoardState] = useAtom(stateBoardNotes);
   const [notesState, setNotesState] = useAtom(statePrivateNotes);
   const [selNote, setSelNote] = useAtom(stateSelNote);
-  const contentRef = useRef<HTMLDivElement>();
-  const nameRef = useRef<HTMLInputElement>(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  const nameRef = useRef<HTMLInputElement | null>(null);
   const { publish } = useNats();
   const { saveBoardNotes, savePrivateNotes } = useStorage();
   const nats = useAtomValue(stateNats);
@@ -88,15 +88,19 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
     if (!contentRef.current || !no.note || !nameRef.current) return;
     if (isBoard) {
       const newState = { ...boardState };
-      newState[no.note.id]!!.content = contentRef.current.innerText;
-      newState[no.note.id]!!.title = nameRef.current.value;
+      const obj = newState[no.note.id];
+      if (!obj) return;
+      obj.content = contentRef.current.innerText;
+      obj.title = nameRef.current.value;
       setBoardState(newState);
       publish(nats.connection, topicBoard, [newState[no.note.id]]);
       saveBoardNotes(newState);
     } else {
       const newState = { ...notesState };
-      newState[no.note.id]!!.content = contentRef.current.innerText;
-      newState[no.note.id]!!.title = nameRef.current.value;
+      const obj = newState[no.note.id];
+      if (!obj) return;
+      obj.content = contentRef.current.innerText;
+      obj.title = nameRef.current.value;
       setNotesState(newState);
       savePrivateNotes(newState);
     }
@@ -127,7 +131,7 @@ export const InfoModal = ({ isBoard }: { isBoard: boolean }) => {
 
         <ContentRoot>
           <Textarea
-            ref={contentRef as any}
+            ref={contentRef}
             small
             contentEditable={true}
             border="none"

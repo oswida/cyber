@@ -1,11 +1,11 @@
 import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
+import { Trans } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { useMemo, useRef, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import {
   doExport,
   doImport,
-  langHud,
   PcInfo,
   prettyToday,
   stateNats,
@@ -25,6 +25,8 @@ import { PlayerForm } from "./PlayerForm";
 import { StatInfo } from "./StatInfo";
 import { ListRoot } from "./styles";
 
+type Visibles = Record<string, boolean>;
+
 export const PlayerPane = () => {
   const nameRef = useRef<HTMLInputElement>(null);
   const [players, setPlayers] = useAtom(statePlayers);
@@ -34,9 +36,7 @@ export const PlayerPane = () => {
   const sessionData = useAtomValue(stateSessionData);
   const { publish } = useNats();
   const nats = useAtomValue(stateNats);
-  const [subformVisible, setSubformVisible] = useState<Record<string, boolean>>(
-    {}
-  );
+  const [subformVisible, setSubformVisible] = useState<Visibles>({});
 
   const clear = () => {
     if (!nameRef.current) return;
@@ -108,7 +108,7 @@ export const PlayerPane = () => {
     <HudPane>
       <Flex css={{ alignItems: "center", width: "90%", margin: 10 }}>
         <Text color="yellow" size="small">
-          {langHud[sessionData.lang!!].name}:
+          <Trans>Name</Trans>:
         </Text>
         <Input border="down" css={{ width: "100%" }} ref={nameRef} />
         <Icon color="blue" icon={faDeleteLeft} onClick={clear} />
@@ -119,13 +119,13 @@ export const PlayerPane = () => {
           onClick={add}
           css={{ marginRight: 20 }}
         >
-          {langHud[sessionData.lang!!].add}
+          <Trans>Add</Trans>
         </Button>
         <Button border="underline" noupper size="small" onClick={exportPlayers}>
-          {langHud[sessionData.lang!!].export}
+          <Trans>Export</Trans>
         </Button>
         <Button border="underline" noupper size="small" onClick={importPlayers}>
-          Import
+          <Trans>Import</Trans>
         </Button>
       </Flex>
       <ListRoot>

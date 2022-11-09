@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "i18n:extract": "lingui extract",
+    "i18n:compile": "lingui compile"
   },
   "dependencies": {
     "@dice-roller/rpg-dice-roller": "^5.1.0",
@@ -15,6 +17,9 @@
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@lingui/core": "^3.15.0",
+    "@lingui/macro": "^3.15.0",
+    "@lingui/react": "^3.15.0",
     "@stitches/react": "^1.2.8",
     "@use-gesture/react": "^10.2.20",
     "fabric": "^5.2.4",
@@ -30,6 +35,19 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-syntax-flow": "^7.18.6",
+    "@babel/plugin-syntax-jsx": "^7.18.6",
+    "@babel/plugin-transform-react-jsx-self": "^7.18.6",
+    "@babel/plugin-transform-react-jsx-source": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/runtime": "^7.20.1",
+    "@lingui/babel-plugin-extract-messages": "^3.15.0",
+    "@lingui/babel-preset-react": "^2.9.2",
+    "@lingui/cli": "^3.15.0",
+    "@rollup/plugin-babel": "^6.0.2",
     "@types/fabric": "^4.5.12",
     "@types/lodash.debounce": "^4.0.7",
     "@types/node": "^18.7.16",
@@ -37,8 +55,54 @@
     "@types/react-dom": "^18.0.6",
     "@types/uuid": "^8.3.4",
     "@vitejs/plugin-react": "^2.0.1",
+    "babel-loader": "9.1.0",
+    "babel-plugin-flow-to-typescript": "^0.6.0",
+    "babel-plugin-macros": "3.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "styled-components": "^5.3.5",
     "typescript": "^4.6.4",
     "vite": "^3.0.7"
+  },
+  "lingui": {
+    "locales": [
+      "en",
+      "pl"
+    ],
+    "sourceLocale": "en",
+    "compileNamespace": "ts",
+    "catalogs": [
+      {
+        "path": "src/i18n/locales/{locale}/messages",
+        "include": [
+          "src/**/*"
+        ],
+        "exclude": [
+          "node_modules",
+          "src/i18n/locales/**/*",
+          "**/*.stories.tsx",
+          "src/common/**/*",
+          "src/data/**/*",
+          "src/lz-string.d.ts",
+          "src/main.tsx"
+        ]
+      }
+    ],
+    "format": "po",
+    "extractBabelOptions": {
+      "plugins": [
+        "@babel/plugin-syntax-jsx",
+        "@babel/plugin-syntax-flow",
+        "@babel/plugin-transform-react-jsx-self",
+        "@babel/plugin-transform-react-jsx-source",
+        "babel-plugin-flow-to-typescript"
+      ],
+      "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react",
+        "@lingui/babel-preset-react",
+        "@babel/preset-typescript"
+      ]
+    }
   }
 }

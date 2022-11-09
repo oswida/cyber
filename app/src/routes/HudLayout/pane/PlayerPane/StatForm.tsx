@@ -1,6 +1,7 @@
+import { Trans } from "@lingui/macro";
 import { useAtomValue } from "jotai";
 import { useEffect, useRef } from "react";
-import { langHud, stateSessionData } from "~/common";
+import { stateSessionData } from "~/common";
 import { Button, Flex, Text } from "~/component";
 import { PFInput } from "./styles";
 import { SubformProps } from "./usePlayerForm";
@@ -122,7 +123,7 @@ export const StatForm = ({
 
       <Flex direction="column" center>
         <Text color="yellow" size="small">
-          {langHud[sessionData.lang!!].hp}
+          <Trans>HP</Trans>
         </Text>
         <Flex>
           <PFInput
@@ -145,7 +146,7 @@ export const StatForm = ({
 
       <Flex direction="column" center>
         <Text color="yellow" size="small">
-          {langHud[sessionData.lang!!].armor}
+          <Trans>Armor</Trans>
         </Text>
         <Flex>
           <PFInput
@@ -166,7 +167,7 @@ export const StatForm = ({
           color={itemState?.deprived ? "filled" : undefined}
           css={{ maxWidth: "max-content" }}
         >
-          {langHud[sessionData.lang!!].deprived}
+          <Trans>Deprived</Trans>
         </Button>
       </Flex>
     </Flex>

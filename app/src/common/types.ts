@@ -1,11 +1,17 @@
 import { NatsConnection, Subscription } from "nats.ws";
+import { TileBranchSubstance } from "react-tile-pane";
 
 export type CorpoInfo = {
   id: string;
   name: string;
   operations: string[];
-  slogan: string;
   gossip: string;
+  resources: string[];
+  employeeProfile: string;
+};
+
+export const toCorpoInfo = (obj: any) => {
+  return obj as CorpoInfo;
 };
 
 export type NodeInfo = {
@@ -22,6 +28,10 @@ export type NodeInfo = {
   look: string;
 };
 
+export const toNodeInfo = (obj: any) => {
+  return obj as NodeInfo;
+};
+
 export type NpcInfo = {
   id: string;
   name: string;
@@ -31,6 +41,10 @@ export type NpcInfo = {
   goal: string;
   look: string;
   gear: string;
+};
+
+export const toNpcInfo = (obj: any) => {
+  return obj as NpcInfo;
 };
 
 export type PcSlot = {
@@ -62,6 +76,7 @@ export type PcInfo = {
   shared: boolean;
   deprived?: boolean;
 };
+export type PcInfoKeys = keyof PcInfo;
 
 export type RollHistoryEntry = {
   id: string;
@@ -104,4 +119,12 @@ export type SessionPack = {
   board: Record<string, Note | undefined>;
   notes: Record<string, Note | undefined>;
   players: Record<string, PcInfo | undefined>;
+};
+
+export const toTileBranchSubstance = (obj: any) => {
+  return obj as TileBranchSubstance;
+};
+
+export const toAny = (obj: never) => {
+  return obj as any;
 };

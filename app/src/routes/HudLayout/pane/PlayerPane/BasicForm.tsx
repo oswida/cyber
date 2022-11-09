@@ -1,6 +1,7 @@
+import { Trans } from "@lingui/macro";
 import { useAtomValue } from "jotai";
-import { useEffect, useRef } from "react";
-import { langHud, PcInfo, stateSessionData } from "~/common";
+import { useRef } from "react";
+import { stateSessionData } from "~/common";
 import { Button, Flex, Text } from "~/component";
 import { PFInput } from "./styles";
 import { SubformProps } from "./usePlayerForm";
@@ -30,7 +31,7 @@ export const BasicForm = ({ itemState, setValue }: SubformProps) => {
     <Flex css={{ gap: 40 }} center>
       <Flex direction="column" css={{ flex: 1 }}>
         <Text color="yellow" size="small">
-          {langHud[sessionData.lang!!].name}
+          <Trans>Name</Trans>
         </Text>
         <PFInput
           css={{
@@ -42,7 +43,7 @@ export const BasicForm = ({ itemState, setValue }: SubformProps) => {
       </Flex>
       <Flex direction="column">
         <Text color="yellow" size="small">
-          {langHud[sessionData.lang!!].credits}
+          <Trans>Credits</Trans>
         </Text>
 
         <PFInput
@@ -55,7 +56,7 @@ export const BasicForm = ({ itemState, setValue }: SubformProps) => {
       </Flex>
       <Flex direction="column">
         <Text color="yellow" size="small">
-          {langHud[sessionData.lang!!].subscription}
+          <Trans>Subscription</Trans>
         </Text>
         <PFInput
           css={{
@@ -71,9 +72,7 @@ export const BasicForm = ({ itemState, setValue }: SubformProps) => {
         css={{ alignSelf: "center" }}
         onClick={toggleShared}
       >
-        {itemState?.shared
-          ? langHud[sessionData.lang!!].shared
-          : langHud[sessionData.lang!!].private}
+        {itemState?.shared ? <Trans>Shared</Trans> : <Trans>Private</Trans>}
       </Button>
     </Flex>
   );

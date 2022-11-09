@@ -1,5 +1,5 @@
 import { useAtomValue } from "jotai";
-import { stateGenerator, language, styled } from "~/common";
+import { stateGenerator, language, styled, toCorpoInfo } from "~/common";
 import { Flex, Button } from "~/component";
 import { CorpoCard } from "~/routes/CorpoGen/CorpoCard";
 import { useCorpoGen } from "~/routes/CorpoGen/useCorpoGen";
@@ -57,7 +57,11 @@ export const GenCorpoPane = () => {
 
         <Content>
           {Object.keys(gen.corpo).map((k) => (
-            <CorpoCard size="small" data={gen.corpo[k]!!} key={k}></CorpoCard>
+            <CorpoCard
+              size="small"
+              data={toCorpoInfo(gen.corpo[k])}
+              key={k}
+            ></CorpoCard>
           ))}
         </Content>
       </ContentRoot>

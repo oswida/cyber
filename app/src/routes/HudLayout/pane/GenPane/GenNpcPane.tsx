@@ -1,8 +1,6 @@
 import { useAtomValue } from "jotai";
-import { stateGenerator, language, styled } from "~/common";
-import { Flex, Button } from "~/component";
-import { NodeCard } from "~/routes/NodeGen/NodeCard";
-import { useNodeGen } from "~/routes/NodeGen/useNodeGen";
+import { language, stateGenerator, styled, toNpcInfo } from "~/common";
+import { Button, Flex } from "~/component";
 import { NpcCard } from "~/routes/NpcGen/NpcCard";
 import { useNpcGen } from "~/routes/NpcGen/useNpcGen";
 import { HudPane } from "../../styles";
@@ -59,7 +57,11 @@ export const GenNpcPane = () => {
 
         <Content>
           {Object.keys(gen.npc).map((k) => (
-            <NpcCard size="small" data={gen.npc[k]!!} key={k}></NpcCard>
+            <NpcCard
+              size="small"
+              data={toNpcInfo(gen.npc[k])}
+              key={k}
+            ></NpcCard>
           ))}
         </Content>
       </ContentRoot>

@@ -1,7 +1,8 @@
 import { faNetworkWired, faSkull } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { t } from "@lingui/macro";
 import { useAtomValue } from "jotai";
-import { globalStr, language, NodeInfo } from "~/common";
+import { language, NodeInfo } from "~/common";
 import { Card, CardRow, RTIconButton, Text } from "~/component";
 import { useNodeGen } from "./useNodeGen";
 
@@ -26,7 +27,7 @@ export const NodeCard = ({ data, size }: NodeCardProps) => {
     >
       <CardRow css={{ flexWrap: "wrap" }}>
         <Text color="yellow" css={{ marginRight: 15 }}>
-          {`${globalStr[lang]["hp"].toUpperCase()}:`}
+          {`${t`hp`.toUpperCase()}:`}
         </Text>
         <Text css={{ marginRight: 25 }}>{data.hp}</Text>
         <Text color="yellow" css={{ marginRight: 15 }}>
@@ -34,7 +35,7 @@ export const NodeCard = ({ data, size }: NodeCardProps) => {
         </Text>
         <Text css={{ marginRight: 25 }}>{data.inf}</Text>
         <Text color="yellow" css={{ marginRight: 15 }}>
-          {`${globalStr[lang]["ice"].toUpperCase()}:`}
+          {`${t`ice`.toUpperCase()}:`}
         </Text>
         <Text>{data.ice}</Text>
         {data.black_ice && (

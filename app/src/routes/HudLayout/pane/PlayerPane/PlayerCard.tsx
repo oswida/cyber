@@ -4,10 +4,11 @@ import {
   faStopCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { i18n } from "@lingui/core";
+import { t, Trans } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { useMemo } from "react";
 import {
-  langHud,
   PcInfo,
   statePlayers,
   stateSessionData,
@@ -189,20 +190,20 @@ export const PlayerCard = ({
           </Text>
 
           <ClickableText size="middle" onClick={showStat}>
-            {langHud[sessionData.lang!!].hp}:{" "}
+            <Trans>HP</Trans>:{" "}
           </ClickableText>
           <Text size="middle" color="yellow">
             {item?.hp ? item?.hp[0] : 0}/{item?.hp ? item?.hp[1] : 0}
           </Text>
           <ClickableText size="middle" onClick={showStat}>
-            {langHud[sessionData.lang!!].armor}:{" "}
+            <Trans>Armor</Trans>:{" "}
           </ClickableText>
           <Text size="middle" color="yellow">
             {item?.armor}
           </Text>
           {item?.deprived && (
             <Text size="middle" color="pink" css={{ marginLeft: 30 }}>
-              {langHud[sessionData.lang!!].deprived}
+              <Trans>Deprived</Trans>
             </Text>
           )}
         </Flex>
@@ -212,7 +213,7 @@ export const PlayerCard = ({
             title={invTooltip()}
             onClick={showInventory}
           >
-            {langHud[sessionData.lang!!].items}:{" "}
+            <Trans>Items</Trans>:{" "}
           </ClickableText>
           <Text size="middle" color="yellow">
             {fatiguedSlots.length}/{item?.inventory?.length}
@@ -222,7 +223,7 @@ export const PlayerCard = ({
             title={cmTooltip()}
             onClick={showCybermods}
           >
-            {langHud[sessionData.lang!!].cybermods}:{" "}
+            <Trans>Cybermods</Trans>:{" "}
           </ClickableText>
           <Text size="middle" color="yellow">
             {activatedCybermods.length}/{item?.cybermods?.length}
@@ -230,7 +231,7 @@ export const PlayerCard = ({
           {activatedCybermods.length > 0 && (
             <FontAwesomeIcon
               icon={faPowerOff}
-              title={langHud[sessionData.lang!!].deactivate_cybermods}
+              title={t`Deactivate cybermods`}
               onClick={deactivateCybermods}
             />
           )}
@@ -239,7 +240,7 @@ export const PlayerCard = ({
             title={cdTooltip()}
             onClick={showCyberdeck}
           >
-            {langHud[sessionData.lang!!].cyberdeck}:{" "}
+            <Trans>Cyberdeck</Trans>:{" "}
           </ClickableText>
           <Text size="middle" color="yellow">
             {activatedPrograms.length}/{item?.cyberdeck?.length}
@@ -247,7 +248,7 @@ export const PlayerCard = ({
           {activatedPrograms.length > 0 && (
             <FontAwesomeIcon
               icon={faStopCircle}
-              title={langHud[sessionData.lang!!].deactivate_programs}
+              title={t`Deactivate programs`}
               onClick={deactivatePrograms}
             />
           )}
@@ -257,7 +258,7 @@ export const PlayerCard = ({
         <FontAwesomeIcon
           icon={faEarth}
           style={{ alignSelf: "start" }}
-          title={langHud[sessionData.lang!!].shared_character}
+          title={t`Shared character`}
           color={themeColors.blue}
         />
       )}

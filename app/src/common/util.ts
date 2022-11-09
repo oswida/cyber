@@ -1,3 +1,5 @@
+import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
+
 export const prettyNow = () => {
   var date = new Date();
   return date.toLocaleTimeString(navigator.language, {
@@ -83,4 +85,8 @@ export const compareStringTime = (t1: string, t2: string) => {
   if (time1 < time2) return -1;
   if (time1 === time2) return 0;
   return 1;
+};
+
+export const rollSingle = (roller: DiceRoller, roll: string) => {
+  return roller.roll(roll) as DiceRoll;
 };

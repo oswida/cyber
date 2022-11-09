@@ -1,20 +1,19 @@
+import { Trans } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import {
-  langHud,
   PcInfo,
   stateNats,
   statePlayerForm,
   statePlayers,
   stateSessionData,
   styled,
-  topicChars,
   useNats,
 } from "~/common";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, Modal } from "~/component";
 import { BasicForm } from "./BasicForm";
-import { ModForm } from "./ModForm";
 import { InventoryForm } from "./InventoryForm";
+import { ModForm } from "./ModForm";
 import { StatForm } from "./StatForm";
 import { usePlayerForm } from "./usePlayerForm";
 
@@ -86,13 +85,13 @@ export const PlayerForm = ({ item }: { item: PcInfo | undefined }) => {
         onClick={onSubmit}
       >
         {" "}
-        {langHud[sessionData.lang!!].save}
+        <Trans>Save</Trans>
       </Button>
       <Button
         css={{ position: "absolute", bottom: 120, right: 20, color: "red" }}
         onClick={deleteItem}
       >
-        {langHud[sessionData.lang!!].delete}
+        <Trans>Delete</Trans>
       </Button>
     </Modal>
   );

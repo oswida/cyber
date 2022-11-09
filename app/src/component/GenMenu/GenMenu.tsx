@@ -1,5 +1,7 @@
+import { i18n } from "@lingui/core";
+import { t } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
-import { genMenuOpen, genTitles, globalStr, language } from "~/common";
+import { genMenuOpen, genTitles, language } from "~/common";
 import { LinkButton } from "../Button";
 import { Flex } from "../Flex";
 import { Modal } from "../Modal";
@@ -33,7 +35,7 @@ export const GenMenu = ({ extras, title }: GenMenuProps) => {
         {extras !== undefined &&
           Object.keys(extras).map((key) => (
             <LinkButton to={`${extras[key]}`} onClick={close} key={`${key}`}>
-              {globalStr[lang][key]}
+              {key}
             </LinkButton>
           ))}
       </Flex>

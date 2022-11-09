@@ -1,9 +1,12 @@
+import { i18n } from "@lingui/core";
+import { I18nProvider } from "@lingui/react";
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { language, stateNats, stateSessionData, useNats } from "./common";
 import { useStorage } from "./common/storage";
+
 import { Connect } from "./routes/Connect";
 import { CorpoGen } from "./routes/CorpoGen";
 import { HudLayout } from "./routes/HudLayout";
@@ -13,6 +16,8 @@ import { NpcGen } from "./routes/NpcGen";
 import { PlaceGen } from "./routes/PlaceGen";
 
 window.global ||= window;
+
+i18n.activate("en");
 
 function App() {
   const [lang, setLang] = useAtom(language);
@@ -54,18 +59,27 @@ function App() {
     }
   }, [sessionData]);
 
+  useEffect(() => {
+    import(`./i18n/locales/${lang}/messages.ts`).then(({ messages }) => {
+      i18n.load(lang, messages);
+      i18n.activate(lang);
+    });
+  }, [lang]);
+
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<HudLayout />}></Route>
-        <Route path="/corpo" element={<CorpoGen />}></Route>
-        <Route path="/npc" element={<NpcGen />}></Route>
-        <Route path="/node" element={<NodeGen />}></Route>
-        <Route path="/place" element={<PlaceGen />}></Route>
-        <Route path="/job" element={<JobGen />}></Route>
-        <Route path="/connect" element={<Connect />}></Route>
-      </Routes>
-    </HashRouter>
+    <I18nProvider i18n={i18n}>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<HudLayout />}></Route>
+          <Route path="/corpo" element={<CorpoGen />}></Route>
+          <Route path="/npc" element={<NpcGen />}></Route>
+          <Route path="/node" element={<NodeGen />}></Route>
+          <Route path="/place" element={<PlaceGen />}></Route>
+          <Route path="/job" element={<JobGen />}></Route>
+          <Route path="/connect" element={<Connect />}></Route>
+        </Routes>
+      </HashRouter>
+    </I18nProvider>
   );
 }
 

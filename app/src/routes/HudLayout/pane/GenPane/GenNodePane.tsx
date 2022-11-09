@@ -1,6 +1,6 @@
 import { useAtomValue } from "jotai";
-import { stateGenerator, language, styled } from "~/common";
-import { Flex, Button } from "~/component";
+import { language, stateGenerator, styled, toNodeInfo } from "~/common";
+import { Button, Flex } from "~/component";
 import { NodeCard } from "~/routes/NodeGen/NodeCard";
 import { useNodeGen } from "~/routes/NodeGen/useNodeGen";
 import { HudPane } from "../../styles";
@@ -57,7 +57,11 @@ export const GenNodePane = () => {
 
         <Content>
           {Object.keys(gen.node).map((k) => (
-            <NodeCard size="small" data={gen.node[k]!!} key={k}></NodeCard>
+            <NodeCard
+              size="small"
+              data={toNodeInfo(gen.node[k])}
+              key={k}
+            ></NodeCard>
           ))}
         </Content>
       </ContentRoot>

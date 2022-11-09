@@ -15,7 +15,6 @@ const RollHistoryItem = ({ entry }: { entry: RollHistoryEntry }) => {
 
 export const RollHistory = () => {
   const [rollHistory] = useAtom(stateRollHistory);
-  const ref = useRef<any>();
 
   return (
     <RollHistoryRoot id="roll-history">

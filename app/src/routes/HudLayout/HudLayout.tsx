@@ -1,5 +1,6 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Trans } from "@lingui/macro";
 import { useAtom, useAtomValue, useSetAtom } from "jotai";
 import { useEffect, useState } from "react";
 import {
@@ -8,9 +9,6 @@ import {
   TileContainer,
   TilePane,
   TileProvider,
-  useGetLeaf,
-  useGetRootNode,
-  useMovePane,
 } from "react-tile-pane";
 import {
   configOpen,
@@ -19,10 +17,7 @@ import {
   genMenuOpen,
   globalPaneNames,
   hudPanelSelectionOpen,
-  keyframes,
-  langHud,
   prettyToday,
-  queueInfo,
   SessionInfo,
   SessionPack,
   stateBoardNotes,
@@ -34,6 +29,7 @@ import {
   stateSessionData,
   stateStorageSize,
   theme,
+  toTileBranchSubstance,
 } from "~/common";
 import { useNats } from "~/common/nats";
 import { useNotify } from "~/common/notify";
@@ -51,58 +47,54 @@ import { stretchBarConfig } from "./StretchBar";
 import { HudRoot, HudToolbar } from "./styles";
 import { tabBarConfig } from "./TabBar";
 
-const fadeOut = keyframes({
-  "0%": { opacity: 1 },
-  "100%": { opacity: 0 },
-});
+// const fadeOut = keyframes({
+//   "0%": { opacity: 1 },
+//   "100%": { opacity: 0 },
+// });
 
-const PaneButton = ({ name }: { name: string }) => {
-  const getLeaf = useGetLeaf();
-  const move = useMovePane();
-  const shown = getLeaf(name) !== undefined;
-  const setHudLayout = useSetAtom(stateHudLayout);
-  const getRootNode = useGetRootNode();
-  const { saveLayout } = useStorage();
+// const PaneButton = ({ name }: { name: string }) => {
+//   const getLeaf = useGetLeaf();
+//   const move = useMovePane();
+//   const shown = getLeaf(name) !== undefined;
+//   const setHudLayout = useSetAtom(stateHudLayout);
+//   const getRootNode = useGetRootNode();
+//   const { saveLayout } = useStorage();
 
-  return (
-    <>
-      {!shown && (
-        <Button
-          onClick={() => {
-            move(name, [0.99, 0.5]);
-            setHudLayout(getRootNode());
-            setTimeout(() => {
-              // delayed
-              saveLayout(getRootNode());
-            }, 500);
-          }}
-        >
-          {name}
-        </Button>
-      )}
-    </>
-  );
-};
+//   return (
+//     <>
+//       {!shown && (
+//         <Button
+//           onClick={() => {
+//             move(name, [0.99, 0.5]);
+//             setHudLayout(getRootNode());
+//             setTimeout(() => {
+//               // delayed
+//               saveLayout(getRootNode());
+//             }, 500);
+//           }}
+//         >
+//           {name}
+//         </Button>
+//       )}
+//     </>
+//   );
+// };
+
+type TilePanes = TilePane[];
+type Names = Record<string, string>;
 
 export const HudLayout = () => {
   const [hudSel, setHudSel] = useAtom(hudPanelSelectionOpen);
-  const {
-    loadLayout,
-    saveLayout,
-    savePrivateNotes,
-    saveBoardNotes,
-    savePlayers,
-  } = useStorage();
+  const { loadLayout, saveLayout } = useStorage();
   const storageSize = useAtomValue(stateStorageSize);
   const [, setGm] = useAtom(genMenuOpen);
   const [, setCo] = useAtom(configOpen);
   const nats = useAtomValue(stateNats);
   const { connectNats } = useNats();
   const sessionData = useAtomValue(stateSessionData);
-  const qInfo = useAtomValue(queueInfo);
   const setGpn = useSetAtom(globalPaneNames);
-  const [paneList, setPaneList] = useState<TilePane[]>([]);
-  const [paneNames, setPaneNames] = useState<Record<string, string>>({});
+  const [paneList, setPaneList] = useState<TilePanes>([]);
+  const [paneNames, setPaneNames] = useState<Names>({});
   const [layoutRoot, setLayoutRoot] = useAtom(stateHudLayout);
   const { notify } = useNotify();
   const nt = useAtomValue(stateNotification);
@@ -127,9 +119,7 @@ export const HudLayout = () => {
   useEffect(() => {
     setGpn(Object.keys(paneNames));
     const localRoot = loadLayout();
-    setLayoutRoot(
-      localRoot ? (localRoot as TileBranchSubstance) : playerLayout
-    );
+    setLayoutRoot(localRoot ? toTileBranchSubstance(localRoot) : playerLayout);
   }, [paneNames]);
 
   const openPanelList = () => {
@@ -174,7 +164,7 @@ export const HudLayout = () => {
             <FontAwesomeIcon icon={faBars} />
           </Button>
           <Button size="small" onClick={() => setCo(true)}>
-            {langHud[sessionData.lang!!].config}
+            <Trans>Config</Trans>
           </Button>
           <Text
             size="middle"
@@ -195,13 +185,13 @@ export const HudLayout = () => {
             </Button>
             <Text size="small">Hosting on {sessionData.browserID}</Text>
             <Button size="x-small" border="underline" onClick={exportSession}>
-              {langHud[sessionData.lang!!].export}
+              <Trans>Export</Trans>
             </Button>
           </Flex>
         )}
         {nats.connection !== null && !sessionData.hosting && (
           <Text size="small" css={{ marginLeft: 20 }}>
-            {langHud[sessionData.lang!!].connected_to} {sessionData.remote}
+            <Trans>Connected to: </Trans> {sessionData.remote}
           </Text>
         )}
         <Flex css={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
@@ -227,9 +217,11 @@ export const HudLayout = () => {
             <TileContainer />
             <Modal isOpen={hudSel} onClose={() => setHudSel(false)}>
               <Flex direction="column" css={{ gap: 10 }}>
-                <Text>{langHud[sessionData.lang!!].restore_layout_desc}</Text>
+                <Text>
+                  <Trans>Click to restore predefined layout</Trans>
+                </Text>
                 <Button onClick={() => handleLayoutChange(playerLayout)}>
-                  {langHud[sessionData.lang!!].player_layout}
+                  <Trans>Player layout</Trans>
                 </Button>
               </Flex>
             </Modal>

@@ -6,6 +6,7 @@ import {
   language,
   modalOpen,
   stateGenerator,
+  toNpcInfo,
 } from "~/common";
 import { GenLayout } from "~/component/GenLayout";
 import { NpcCard } from "./NpcCard";
@@ -33,7 +34,7 @@ export const NpcGen = () => {
       }}
     >
       {Object.keys(gen.npc).map((k) => (
-        <NpcCard data={gen.npc[k]!!} key={k}></NpcCard>
+        <NpcCard data={toNpcInfo(gen.npc[k])} key={k}></NpcCard>
       ))}
     </GenLayout>
   );

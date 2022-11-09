@@ -1,6 +1,7 @@
+import { t } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
-import { currentPage, genTitles, language, stateGenerator } from "~/common";
+import { currentPage, language, stateGenerator } from "~/common";
 import { GenLayout } from "~/component/GenLayout";
 import { CorpoCard } from "./CorpoCard";
 import { useCorpoGen } from "./useCorpoGen";
@@ -12,7 +13,7 @@ export const CorpoGen = () => {
   const lang = useAtomValue(language);
 
   useEffect(() => {
-    setCp(genTitles[lang]["corpo"]);
+    setCp(t`Corporation`);
   }, [lang]);
 
   return (
@@ -25,7 +26,7 @@ export const CorpoGen = () => {
       }}
     >
       {Object.keys(gen.corpo).map((k) => (
-        <CorpoCard data={gen.corpo[k]!!} key={k}></CorpoCard>
+        <CorpoCard data={gen.corpo[k]} key={k}></CorpoCard>
       ))}
     </GenLayout>
   );

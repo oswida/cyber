@@ -1,4 +1,4 @@
-import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
+import { DiceRoller } from "@dice-roller/rpg-dice-roller";
 import { useAtom } from "jotai";
 import { v4 as uuidv4 } from "uuid";
 import {
@@ -8,16 +8,17 @@ import {
   hasString,
   language,
   prettyToday,
+  rollSingle,
   stateGenerator,
+  translateObject,
 } from "~/common";
 import { useStorage } from "~/common/storage";
 import {
-  corpDomain,
-  corpGossip,
-  corpName1,
-  corpName2,
-  corpNameDomain,
-  corpSlogan,
+  dictCorpoDomain,
+  dictCorpoGossip,
+  dictCorpoNameDomain,
+  dictCorpoNameFirst,
+  dictCorpoNameSecond,
 } from "~/data";
 
 const roller = new DiceRoller();
@@ -28,40 +29,36 @@ export const useCorpoGen = () => {
   const { saveGen } = useStorage();
 
   const rollCorpo = () => {
-    let roll = roller.roll(`1d${corpName1.length}`) as DiceRoll;
-    const name1 = corpName1[roll.total - 1];
-    roll = roller.roll(`1d${corpName2.length}`) as DiceRoll;
-    const name2 = corpName2[roll.total - 1];
-
+    let roll = rollSingle(roller, `1d${dictCorpoNameFirst.length}`);
+    const name1 = dictCorpoNameFirst[roll.total - 1];
+    roll = rollSingle(roller, `1d${dictCorpoNameSecond.length}`);
+    const name2 = dictCorpoNameSecond[roll.total - 1];
     const domains = [];
-    const cndomain = corpNameDomain[lang];
-    if (cndomain[name2]) {
-      domains.push(cndomain[name2]);
+    if (Object.hasOwn(dictCorpoNameDomain, name2)) {
+      domains.push(
+        Object.entries(dictCorpoNameDomain).filter((e) => e[0] === name2)[0][1]
+      );
     }
-
-    const dl = (roller.roll("1d3") as DiceRoll).total;
-    const cdomain = corpDomain[lang];
+    const dl = rollSingle(roller, "1d3").total;
     while (domains.length < dl) {
-      roll = roller.roll(`1d${cdomain.length}`) as DiceRoll;
-      const t = cdomain[roll.total - 1];
+      roll = rollSingle(roller, `1d${dictCorpoDomain.length}`);
+      const t = dictCorpoDomain[roll.total - 1];
       if (!hasString(domains, t)) domains.push(t);
     }
-    const cslogan = corpSlogan[lang];
-    roll = roller.roll(`1d${cslogan.length}`) as DiceRoll;
-    const slogan = cslogan[roll.total - 1];
 
-    const cgossip = corpGossip[lang];
-    roll = roller.roll(`1d${cgossip.length}`) as DiceRoll;
-    const gossip = cgossip[roll.total - 1];
+    roll = rollSingle(roller, `1d${dictCorpoGossip.length}`);
+    const gossip = dictCorpoGossip[roll.total - 1];
 
     const retv: CorpoInfo = {
       id: uuidv4(),
       name: `${name1} ${name2}`,
       operations: domains,
-      slogan: slogan,
       gossip: gossip,
+      resources: [], //TODO
+      employeeProfile: "", //TODO
     };
-    return retv;
+
+    return translateObject(retv);
   };
 
   const generate = () => {

@@ -8,16 +8,11 @@ import {
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { t, Trans } from "@lingui/macro";
 import { useAtomValue } from "jotai";
 import { useState } from "react";
 
-import {
-  langHud,
-  PcInfo,
-  PcSlot,
-  stateSessionData,
-  themeColors,
-} from "~/common";
+import { PcSlot, stateSessionData, themeColors } from "~/common";
 import { Button, Flex, Text } from "~/component";
 import { PFInput, SelectableItem } from "./styles";
 import { SubformProps } from "./usePlayerForm";
@@ -73,7 +68,7 @@ export const InventoryForm = ({ itemState, setValue }: SubformProps) => {
           </Button>
         )}
         <Text color="yellow" size="small">
-          {langHud[sessionData.lang!!].inventory} (
+          <Trans>Inventory</Trans> (
           {itemState?.inventory ? itemState?.inventory.length : "0"})
         </Text>
         <Button border="underline" onClick={addInventory}>
@@ -110,7 +105,7 @@ export const InventoryForm = ({ itemState, setValue }: SubformProps) => {
                 alignSelf: "center",
                 color: it?.fatigue ? themeColors.pink : themeColors.green,
               }}
-              title={langHud[sessionData.lang!!].fatigue}
+              title={t`Fatigue`}
               icon={it?.fatigue ? faLock : faLockOpen}
               onClick={() => toggleFatigue(index)}
             />

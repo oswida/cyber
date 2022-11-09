@@ -1,9 +1,10 @@
 import { DiceRoll, DiceRoller } from "@dice-roller/rpg-dice-roller";
+import { i18n } from "@lingui/core";
+import { t, Trans } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
 import {
-  langHud,
   RollHistoryEntry,
   selectedRollerDice,
   stateNats,
@@ -12,7 +13,7 @@ import {
 } from "~/common";
 import { topicRoll, useNats } from "~/common/nats";
 import { useStorage } from "~/common/storage";
-import { prettyNow } from "~/common/util";
+import { prettyNow, rollSingle } from "~/common/util";
 import { Button, Flex, Input, Text } from "~/component";
 import { RollInfo } from "./styles";
 
@@ -21,7 +22,7 @@ export const RollResult = () => {
   const roller = new DiceRoller();
   const [rollHistory, setRollHistory] = useAtom(stateRollHistory);
   const done = useRef<boolean>(true);
-  const commentRef = useRef<HTMLInputElement>();
+  const commentRef = useRef<HTMLInputElement | null>(null);
   const sessionData = useAtomValue(stateSessionData);
   const { publish } = useNats();
   const nats = useAtomValue(stateNats);
@@ -72,7 +73,7 @@ export const RollResult = () => {
         const newState = [newEntry, ...rollHistory];
         setRollHistory(newState);
         saveRolls(newState);
-        commentRef.current!!.value = "";
+        if (commentRef.current) commentRef.current.value = "";
         publish(nats.connection, topicRoll, [newEntry]);
       }
     };
@@ -89,7 +90,7 @@ export const RollResult = () => {
   };
 
   const roll = () => {
-    const r = roller.roll(selDice) as DiceRoll;
+    const r = rollSingle(roller, selDice);
     done.current = false;
     randomizeText("rollnum", r);
   };
@@ -98,15 +99,15 @@ export const RollResult = () => {
     <RollInfo>
       <Flex direction="column">
         <Button border="underline" noupper onClick={roll}>
-          {langHud[sessionData.lang!!].roll}{" "}
+          <Trans>Roll</Trans>{" "}
           <span style={{ fontWeight: "bold", marginLeft: "0.5em" }}>
             {selDice}
           </span>
         </Button>
         <Input
-          title={langHud[sessionData.lang!!].input_comment}
-          ref={commentRef as any}
-          placeholder={`${langHud[sessionData.lang!!].comment}...`}
+          title={t`Input comment for a roll`}
+          ref={commentRef}
+          placeholder={`${t`Comment`}...`}
           small
         />
         <Text

@@ -1,12 +1,8 @@
 import { faEraser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { t } from "@lingui/macro";
 import { useAtomValue, useSetAtom } from "jotai";
-import {
-  langHud,
-  language,
-  stateRollHistory,
-  stateSessionData,
-} from "~/common";
+import { language, stateRollHistory, stateSessionData } from "~/common";
 import { useStorage } from "~/common/storage";
 import { HudPane } from "../../styles";
 import { RollButton } from "./RollButton";
@@ -33,7 +29,7 @@ export const RollerPane = () => {
       <FontAwesomeIcon
         icon={faEraser}
         style={{ alignSelf: "end", marginTop: -15, marginRight: 10 }}
-        title={langHud[sessionData.lang!!].clear_roll_history}
+        title={t`Clear roll history locally`}
         onClick={clearRolls}
       />
       <RollHistory />

@@ -1,0 +1,325 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2022-11-08 21:34+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/routes/HudLayout/pane/NotesPane/NotesPane.tsx:168
+#: src/routes/HudLayout/pane/PlayerPane/PlayerPane.tsx:122
+msgid "Add"
+msgstr "Add"
+
+#: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:199
+#: src/routes/HudLayout/pane/PlayerPane/StatForm.tsx:149
+msgid "Armor"
+msgstr "Armor"
+
+#: src/routes/HudLayout/pane/RollerPane/RollerPane.tsx:32
+msgid "Clear roll history locally"
+msgstr "Clear roll history locally"
+
+#: src/routes/HudLayout/HudLayout.tsx:221
+msgid "Click to restore predefined layout"
+msgstr "Click to restore predefined layout"
+
+#: src/routes/Config/Config.tsx:144
+msgid "Color"
+msgstr "Color"
+
+#: src/routes/HudLayout/pane/RollerPane/RollResult.tsx:110
+msgid "Comment"
+msgstr "Comment"
+
+#: src/routes/HudLayout/HudLayout.tsx:167
+msgid "Config"
+msgstr "Config"
+
+#: src/routes/HudLayout/HudLayout.tsx:194
+msgid "Connected to:"
+msgstr "Connected to:"
+
+#: src/routes/Config/Config.tsx:152
+msgid "Connection"
+msgstr "Connection"
+
+#: src/routes/Config/Config.tsx:224
+msgid "Connection link"
+msgstr "Connection link"
+
+#: src/routes/CorpoGen/CorpoGen.tsx:16
+msgid "Corporation"
+msgstr "Corporation"
+
+#: src/routes/HudLayout/pane/PlayerPane/BasicForm.tsx:46
+msgid "Credits"
+msgstr "Credits"
+
+#: src/routes/Config/Config.tsx:123
+msgid "Current storage use is:"
+msgstr "Current storage use is:"
+
+#: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:243
+msgid "Cyberdeck"
+msgstr "Cyberdeck"
+
+#: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:226
+msgid "Cybermods"
+msgstr "Cybermods"
+
+#: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:234
+msgid "Deactivate cybermods"
+msgstr "Deactivate cybermods"
+
+#: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:251
+msgid "Deactivate programs"
+msgstr "Deactivate programs"
+
+#: src/routes/HudLayout/pane/PlayerPane/PlayerForm.tsx:94
+msgid "Delete"
+msgstr "Delete"
+
+#: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:206
+#: src/routes/HudLayout/pane/PlayerPane/StatForm.tsx:170
+msgid "Deprived"
+msgstr "Deprived"
+
+#: src/routes/HudLayout/HudLayout.tsx:188
+#: src/routes/HudLayout/pane/NotesPane/NotesPane.tsx:184
+#: src/routes/HudLayout/pane/PlayerPane/PlayerPane.tsx:125
+msgid "Export"
+msgstr "Export"
+
+#: src/routes/HudLayout/pane/PlayerPane/InventoryForm.tsx:108
+msgid "Fatigue"
+msgstr "Fatigue"
+
+#: src/routes/NpcGen/NpcCard.tsx:39
+msgid "Goal"
+msgstr "Goal"
+
+#: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:193
+#: src/routes/HudLayout/pane/PlayerPane/StatForm.tsx:126
+msgid "HP"
+msgstr "HP"
+
+#: src/routes/Config/Config.tsx:188
+msgid "Hosting"
+msgstr "Hosting"
+
+#: src/routes/Config/Config.tsx:132
+msgid "Identification"
+msgstr "Identification"
+
+#: src/routes/Config/Config.tsx:156
+msgid "If you have an access to some NATS server, you can share dice rolls and board notes with other users. Please select 'Host' or 'Client' mode below. In 'Host' mode, you need only a NATS server address, for 'Client' there should be also an ID of the hosting browser provided"
+msgstr "If you have an access to some NATS server, you can share dice rolls and board notes with other users. Please select 'Host' or 'Client' mode below. In 'Host' mode, you need only a NATS server address, for 'Client' there should be also an ID of the hosting browser provided"
+
+#: src/routes/Config/Config.tsx:65
+msgid "If you provided NATS server and selected client connection, the remote ID should be provided"
+msgstr "If you provided NATS server and selected client connection, the remote ID should be provided"
+
+#: src/routes/HudLayout/pane/NotesPane/NotesPane.tsx:187
+#: src/routes/HudLayout/pane/PlayerPane/PlayerPane.tsx:128
+msgid "Import"
+msgstr "Import"
+
+#: src/routes/HudLayout/pane/RollerPane/RollResult.tsx:108
+msgid "Input comment for a roll"
+msgstr "Input comment for a roll"
+
+#: src/routes/HudLayout/pane/PlayerPane/InventoryForm.tsx:71
+msgid "Inventory"
+msgstr "Inventory"
+
+#: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:216
+msgid "Items"
+msgstr "Items"
+
+#: src/routes/Config/Config.tsx:176
+msgid "NATS Auth Token (if needed)"
+msgstr "NATS Auth Token (if needed)"
+
+#: src/routes/Config/Config.tsx:165
+msgid "NATS Server"
+msgstr "NATS Server"
+
+#: src/routes/HudLayout/pane/PlayerPane/BasicForm.tsx:34
+#: src/routes/HudLayout/pane/PlayerPane/PlayerPane.tsx:111
+msgid "Name"
+msgstr "Name"
+
+#: src/routes/HudLayout/HudLayout.tsx:224
+msgid "Player layout"
+msgstr "Player layout"
+
+#: src/routes/Config/Config.tsx:125
+msgid "Please remember that this app is using local browser storage instead of a database. The most popular limit for such a storage is about 5MB."
+msgstr "Please remember that this app is using local browser storage instead of a database. The most popular limit for such a storage is about 5MB."
+
+#: src/routes/HudLayout/pane/PlayerPane/BasicForm.tsx:75
+msgid "Private"
+msgstr "Private"
+
+#: src/routes/Config/Config.tsx:211
+msgid "Remote ID"
+msgstr "Remote ID"
+
+#: src/routes/HudLayout/pane/RollerPane/RollResult.tsx:102
+msgid "Roll"
+msgstr "Roll"
+
+#: src/routes/Config/Config.tsx:233
+#: src/routes/HudLayout/pane/PlayerPane/InvInfo.tsx:45
+#: src/routes/HudLayout/pane/PlayerPane/ModInfo.tsx:45
+#: src/routes/HudLayout/pane/PlayerPane/PlayerForm.tsx:88
+#: src/routes/HudLayout/pane/PlayerPane/StatInfo.tsx:41
+msgid "Save"
+msgstr "Save"
+
+#: src/routes/HudLayout/pane/RollerPane/RollButton.tsx:159
+#: src/routes/HudLayout/pane/RollerPane/RollButton.tsx:174
+msgid "Scroll to inc/dec"
+msgstr "Scroll to inc/dec"
+
+#: src/routes/HudLayout/pane/NotesPane/NotesPane.tsx:174
+msgid "Search"
+msgstr "Search"
+
+#: src/routes/HudLayout/pane/PlayerPane/BasicForm.tsx:75
+msgid "Shared"
+msgstr "Shared"
+
+#: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:261
+msgid "Shared character"
+msgstr "Shared character"
+
+#: src/routes/Config/Config.tsx:120
+msgid "Storage"
+msgstr "Storage"
+
+#: src/routes/HudLayout/pane/PlayerPane/BasicForm.tsx:59
+msgid "Subscription"
+msgstr "Subscription"
+
+#: src/routes/NpcGen/NpcCard.tsx:31
+msgid "Traits"
+msgstr "Traits"
+
+#: src/routes/Config/Config.tsx:140
+msgid "Username"
+msgstr "Username"
+
+#: src/routes/Config/Config.tsx:56
+msgid "Username required"
+msgstr "Username required"
+
+#: src/routes/NodeGen/ClassMenu.tsx:39
+#: src/routes/NodeGen/NodeGen.tsx:30
+msgid "any"
+msgstr "any"
+
+#: src/routes/HudLayout/pane/PlayerPane/ModForm.tsx:157
+msgid "cyberdeck"
+msgstr "cyberdeck"
+
+#: src/routes/HudLayout/pane/PlayerPane/ModForm.tsx:157
+msgid "cybermods"
+msgstr "cybermods"
+
+#: src/routes/NodeGen/useNodeGen.tsx:77
+#: src/routes/NodeGen/useNodeGen.tsx:78
+msgid "d10"
+msgstr "d10"
+
+#: src/routes/NodeGen/useNodeGen.tsx:80
+msgid "d12"
+msgstr "d12"
+
+#: src/routes/NodeGen/useNodeGen.tsx:65
+#: src/routes/NodeGen/useNodeGen.tsx:69
+msgid "d6"
+msgstr "d6"
+
+#: src/routes/NodeGen/useNodeGen.tsx:70
+#: src/routes/NodeGen/useNodeGen.tsx:73
+#: src/routes/NodeGen/useNodeGen.tsx:74
+msgid "d8"
+msgstr "d8"
+
+#: src/routes/Config/Config.tsx:153
+msgid "established"
+msgstr "established"
+
+#: src/routes/NodeGen/useNodeGen.tsx:97
+#: src/routes/NodeGen/useNodeGen.tsx:108
+msgid "hacker"
+msgstr "hacker"
+
+#: src/routes/NodeGen/NodeCard.tsx:30
+msgid "hp"
+msgstr "hp"
+
+#: src/routes/NodeGen/NodeCard.tsx:38
+msgid "ice"
+msgstr "ice"
+
+#: src/routes/NodeGen/useNodeGen.tsx:130
+msgid "inshape"
+msgstr "inshape"
+
+#: src/routes/NodeGen/NodeGen.tsx:54
+msgid "node class"
+msgstr "node class"
+
+#: src/routes/NodeGen/useNodeGen.tsx:110
+msgid "selfdefense"
+msgstr "selfdefense"
+
+#: src/routes/Config/Config.tsx:193
+msgid "switch to Client"
+msgstr "switch to Client"
+
+#: src/routes/Config/Config.tsx:198
+msgid "switch to Host"
+msgstr "switch to Host"
+
+#: src/routes/HudLayout/TabBar.tsx:83
+msgid "tab_board"
+msgstr "Messages"
+
+#: src/routes/HudLayout/TabBar.tsx:85
+msgid "tab_draw"
+msgstr "Drawboard"
+
+#: src/routes/HudLayout/TabBar.tsx:82
+msgid "tab_notes"
+msgstr "Private"
+
+#: src/routes/HudLayout/TabBar.tsx:84
+msgid "tab_players"
+msgstr "Players"
+
+#: src/routes/HudLayout/TabBar.tsx:81
+msgid "tab_roll"
+msgstr "Roll"
+
+#: src/routes/NodeGen/useNodeGen.tsx:91
+msgid "volunteer"
+msgstr "volunteer"
+
+#: src/routes/HudLayout/pane/PlayerPane/ModForm.tsx:157
+#~ msgid "{itemType}"
+#~ msgstr "{itemType}"
+
+#: src/component/GenMenu/GenMenu.tsx:38
+#~ msgid "{key}"
+#~ msgstr "{key}"

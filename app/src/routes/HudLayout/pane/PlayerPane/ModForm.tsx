@@ -3,35 +3,27 @@ import {
   faArrowUp,
   faBoltLightning,
   faGears,
-  faKitMedical,
   faMicrochip,
   faMinus,
   faPlay,
   faPlus,
-  faRobot,
   faRotate,
-  faToolbox,
   faTools,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { t } from "@lingui/macro";
 import { useAtomValue } from "jotai";
 import { useMemo, useState } from "react";
 
 import { v4 as uuidv4 } from "uuid";
-import {
-  langHud,
-  PcInfo,
-  PcMod,
-  stateSessionData,
-  themeColors,
-} from "~/common";
+import { PcInfoKeys, PcMod, stateSessionData, themeColors } from "~/common";
 import { Button, Flex, Text } from "~/component";
 import { PFInput, SelectableItem } from "./styles";
-import { PcInfoKeys, SubformProps } from "./usePlayerForm";
+import { SubformProps } from "./usePlayerForm";
 
 type Props = SubformProps & {
   itemType: "cybermods" | "cyberdeck";
-  setValues: (items: [keyof PcInfo, any][]) => void;
+  setValues: (items: [PcInfoKeys, any][]) => void;
 };
 
 export const ModForm = ({
@@ -162,7 +154,7 @@ export const ModForm = ({
             </Button>
           )}
         <Text color="yellow" size="small">
-          {langHud[sessionData.lang!!][itemType]} (
+          {itemType === "cybermods" ? t`cybermods` : t`cyberdeck`} (
           {itemState && itemState[itemType] ? itemState[itemType].length : "0"}{" "}
           )
         </Text>

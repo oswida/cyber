@@ -1,13 +1,9 @@
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { t } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useRef } from "react";
-import {
-  langHud,
-  selectedRollerDice,
-  stateSessionData,
-  styled,
-} from "~/common";
+import { selectedRollerDice, stateSessionData, styled } from "~/common";
 import { Button, Flex, InputButton, Text } from "~/component";
 
 const Icon = styled(FontAwesomeIcon, {
@@ -17,8 +13,8 @@ const Icon = styled(FontAwesomeIcon, {
 });
 
 export const RollButton = () => {
-  const numRef = useRef<HTMLInputElement>();
-  const diceRef = useRef<HTMLInputElement>();
+  const numRef = useRef<HTMLInputElement | null>(null);
+  const diceRef = useRef<HTMLInputElement | null>(null);
   const [selDice, setSelDice] = useAtom(selectedRollerDice);
   const sessionData = useAtomValue(stateSessionData);
 
@@ -160,9 +156,9 @@ export const RollButton = () => {
           <Icon icon={faPlus} onClick={inc} />
           <InputButton
             onChange={updateDice}
-            title={langHud[sessionData.lang!!].scroll_to_inc}
+            title={t`Scroll to inc/dec`}
             type="number"
-            ref={numRef as any}
+            ref={numRef}
             maxLength={2}
             min={1}
             css={{ maxWidth: "2.5em" }}
@@ -175,9 +171,9 @@ export const RollButton = () => {
             <Icon icon={faPlus} onClick={incDice} />
             <InputButton
               onChange={updateDice}
-              title={langHud[sessionData.lang!!].scroll_to_inc}
+              title={t`Scroll to inc/dec`}
               type="number"
-              ref={diceRef as any}
+              ref={diceRef}
               maxLength={3}
               min={1}
               css={{ maxWidth: "3.5em" }}

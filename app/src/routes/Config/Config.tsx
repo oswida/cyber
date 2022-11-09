@@ -2,7 +2,6 @@ import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   configOpen,
-  langHud,
   language,
   SessionInfo,
   stateNats,
@@ -11,6 +10,7 @@ import {
 } from "~/common";
 import { useStorage } from "~/common/storage";
 import { Button, Flex, Input, Modal, Text } from "~/component";
+import { Trans } from "@lingui/macro";
 
 export const Config = ({
   saveCallback,
@@ -18,12 +18,13 @@ export const Config = ({
   saveCallback: (data: SessionInfo) => void;
 }) => {
   const [sessionData, setSessionData] = useAtom(stateSessionData);
+  const [, setLang] = useAtom(language);
   const [co, setCo] = useAtom(configOpen);
-  const nameRef = useRef<HTMLInputElement>();
-  const colorRef = useRef<HTMLInputElement>();
-  const remoteRef = useRef<HTMLInputElement>();
-  const natsRef = useRef<HTMLInputElement>();
-  const natsTokenRef = useRef<HTMLInputElement>();
+  const nameRef = useRef<HTMLInputElement | null>(null);
+  const colorRef = useRef<HTMLInputElement | null>(null);
+  const remoteRef = useRef<HTMLInputElement | null>(null);
+  const natsRef = useRef<HTMLInputElement | null>(null);
+  const natsTokenRef = useRef<HTMLInputElement | null>(null);
   const uname = useMemo(() => sessionData.username, [sessionData]);
   const proxy = useMemo(() => sessionData.nats, [sessionData]);
   const remote = useMemo(() => sessionData.remote, [sessionData]);
@@ -34,7 +35,7 @@ export const Config = ({
   const nats = useAtomValue(stateNats);
   const { saveSessionData } = useStorage();
   const storageSize = useAtomValue(stateStorageSize);
-  const [err, setErr] = useState("");
+  const [err, setErr] = useState<any>(null);
   const lang = useAtomValue(language);
   const [refreshLink, setRefreshLink] = useState(false);
 
@@ -53,7 +54,7 @@ export const Config = ({
     }
     setErr("");
     if (nameRef.current.value == "") {
-      setErr(langHud[sessionData.lang!!].username_required);
+      setErr(<Trans>Username required</Trans>);
       return;
     }
     if (
@@ -62,7 +63,10 @@ export const Config = ({
       remoteRef.current.value == ""
     ) {
       setErr(
-        "If you provided NATS server and selected client connection, the remote ID should be provided"
+        <Trans>
+          If you provided NATS server and selected client connection, the remote
+          ID should be provided
+        </Trans>
       );
       return;
     }
@@ -105,63 +109,79 @@ export const Config = ({
   }, [natsRef.current, natsTokenRef.current]);
 
   const toggleLang = () => {
-    if (sessionData.lang === "pl")
+    if (sessionData.lang === "pl") {
       setSessionData((state) => ({ ...state, lang: "en" }));
-    else setSessionData((state) => ({ ...state, lang: "pl" }));
+      setLang("en");
+    } else {
+      setSessionData((state) => ({ ...state, lang: "pl" }));
+      setLang("pl");
+    }
   };
 
   return (
     <Modal isOpen={co} onClose={() => setCo(false)}>
       <Flex direction="column" css={{ alignItems: "center", gap: 15 }}>
         <Text size="small" color="pink">
-          {langHud[sessionData.lang!!].storage}
+          {<Trans>Storage</Trans>}
         </Text>
         <Text css={{ width: 850, textAlign: "center" }} size="small">
-          {langHud[sessionData.lang!!].storage_desc1}{" "}
-          <b>{`${storageSize} bytes`}</b>.<br />
-          {langHud[sessionData.lang!!].storage_desc2}
+          <Trans>Current storage use is:</Trans> <b>{`${storageSize} bytes`}</b>
+          .<br />
+          <Trans>
+            Please remember that this app is using local browser storage instead
+            of a database. The most popular limit for such a storage is about
+            5MB.
+          </Trans>
         </Text>
         <Text size="small" color="pink">
-          {langHud[sessionData.lang!!].identification}
+          <Trans>Identification</Trans>
         </Text>
         <Flex>
           <Text>ID:</Text>
           <Text color="yellow">{sessionData.browserID}</Text>
         </Flex>
         <Flex css={{ alignItems: "center" }}>
-          <Text>{langHud[sessionData.lang!!].username}:</Text>
-          <Input ref={nameRef as any} defaultValue={uname} />
-          <Text>{langHud[sessionData.lang!!].color}:</Text>
-          <Input
-            ref={colorRef as any}
-            defaultValue={ucolor}
-            css={{ width: "7em" }}
-          />
+          <Text>
+            <Trans>Username</Trans>:
+          </Text>
+          <Input ref={nameRef} defaultValue={uname} />
+          <Text>
+            <Trans>Color</Trans>:
+          </Text>
+          <Input ref={colorRef} defaultValue={ucolor} css={{ width: "7em" }} />
           <Button css={{ marginLeft: 20 }} size="small" onClick={toggleLang}>
             {sessionData.lang}
           </Button>
         </Flex>
         <Text size="small" color={nats.connection != null ? "green" : "pink"}>
-          {langHud[sessionData.lang!!].connection}{" "}
-          {nats.connection != null &&
-            `(${langHud[sessionData.lang!!].established})`}
+          <Trans>Connection</Trans>
+          {nats.connection != null && <Trans>established</Trans>}
         </Text>
         <Text css={{ width: 700, textAlign: "center" }} size="small">
-          {langHud[sessionData.lang!!].nats_desc}
+          <Trans>
+            If you have an access to some NATS server, you can share dice rolls
+            and board notes with other users. Please select 'Host' or 'Client'
+            mode below. In 'Host' mode, you need only a NATS server address, for
+            'Client' there should be also an ID of the hosting browser provided
+          </Trans>
         </Text>
         <Flex css={{ alignItems: "center" }}>
-          <Text>{langHud[sessionData.lang!!].nats_server}:</Text>
+          <Text>
+            <Trans>NATS Server</Trans>:
+          </Text>
           <Input
-            ref={natsRef as any}
+            ref={natsRef}
             defaultValue={proxy}
             css={{ width: "20em" }}
             onChange={() => setRefreshLink(!refreshLink)}
           />
         </Flex>
         <Flex css={{ alignItems: "center" }}>
-          <Text>{langHud[sessionData.lang!!].nats_token}:</Text>
+          <Text>
+            <Trans>NATS Auth Token (if needed)</Trans>:
+          </Text>
           <Input
-            ref={natsTokenRef as any}
+            ref={natsTokenRef}
             defaultValue={token}
             css={{ width: "20em" }}
             onChange={() => setRefreshLink(!refreshLink)}
@@ -169,16 +189,18 @@ export const Config = ({
         </Flex>
         <Flex css={{ alignItems: "center" }}>
           {host && (
-            <Text color="pink">{langHud[sessionData.lang!!].hosting}...</Text>
+            <Text color="pink">
+              <Trans>Hosting</Trans>...
+            </Text>
           )}
           {host && (
             <Button onClick={() => setHost(false)}>
-              {langHud[sessionData.lang!!].switch_client}
+              <Trans>switch to Client</Trans>
             </Button>
           )}
           {!host && (
             <Button onClick={() => setHost(true)}>
-              {langHud[sessionData.lang!!].switch_host}
+              <Trans>switch to Host</Trans>
             </Button>
           )}
         </Flex>
@@ -191,10 +213,10 @@ export const Config = ({
           }}
         >
           <Text color={host ? "pink" : "primary"}>
-            {langHud[sessionData.lang!!].remote_id}:
+            <Trans>Remote ID</Trans>:
           </Text>
           <Input
-            ref={remoteRef as any}
+            ref={remoteRef}
             defaultValue={remote}
             disabled={host}
             css={{ width: "20em" }}
@@ -204,7 +226,7 @@ export const Config = ({
         {host && (
           <Flex direction="column">
             <Text size="small">
-              {langHud[sessionData.lang!!].connection_link}:
+              <Trans>Connection link</Trans>:
             </Text>
             <Text size="small" css={{ maxWidth: 700 }}>
               {hostLink}
@@ -213,7 +235,7 @@ export const Config = ({
         )}
 
         <Button css={{ marginTop: 10, maxWidth: "max-content" }} onClick={save}>
-          {langHud[sessionData.lang!!].save}
+          <Trans>Save</Trans>
         </Button>
         {err !== "" && <Text color="pink">{err}</Text>}
       </Flex>

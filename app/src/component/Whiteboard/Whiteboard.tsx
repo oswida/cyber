@@ -16,7 +16,7 @@ const Root = styled("div", {
 });
 
 export const Whiteboard = () => {
-  const canvasRef = useRef<fabric.Canvas>();
+  const canvasRef = useRef<fabric.Canvas | null>(null);
   const boardRef = useRef<HTMLDivElement>(null);
   const [wbState, setWbState] = useState<WhiteboardState>({
     brush: "white",
