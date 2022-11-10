@@ -21,14 +21,26 @@ msgstr "Jaka płaca taka praca"
 msgid "A place for everyone, everyone in their place"
 msgstr "Dla każdego miejsce, każdy na swoim miejscu"
 
+#: src/data/infonode.ts:12
+msgid "AI"
+msgstr "SI"
+
 #: src/data/corpo.ts:397
 msgid "Acquire a competitor's employee"
 msgstr "Pozyskać pracownika konkurencji"
+
+#: src/routes/NodeGen/NodeCard.tsx:53
+msgid "Activation threshold"
+msgstr "Próg aktywacji ochrony"
 
 #: src/routes/HudLayout/pane/NotesPane/NotesPane.tsx:168
 #: src/routes/HudLayout/pane/PlayerPane/PlayerPane.tsx:122
 msgid "Add"
 msgstr "Dodaj"
+
+#: src/data/infonode.ts:121
+msgid "Advertising slogans projected on the surface"
+msgstr "Slogany reklamowe wyświetlane na powierzchni"
 
 #: src/data/corpo.ts:277
 msgid "Agriculture"
@@ -38,6 +50,9 @@ msgstr "Rolnictwo"
 msgid "All their employees are brainwashed fanatics"
 msgstr "Wszyscy ich pracownicy są fanatykami o wypranych mózgach"
 
+#: src/data/infonode.ts:59
+#: src/data/infonode.ts:60
+#: src/data/infonode.ts:61
 #: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:199
 #: src/routes/HudLayout/pane/PlayerPane/StatForm.tsx:149
 msgid "Armor"
@@ -58,6 +73,30 @@ msgstr "Biotechnologia"
 #: src/data/corpo.ts:380
 msgid "Biotechnology resources"
 msgstr "Zasoby biotechnologiczne"
+
+#: src/routes/NodeGen/NodeCard.tsx:45
+msgid "Black ICE"
+msgstr "Czarny LOD"
+
+#: src/data/infonode.ts:100
+msgid "Black, glossy"
+msgstr "Czarny, połyskliwy"
+
+#: src/data/infonode.ts:96
+msgid "Black, mat"
+msgstr "Czarny, matowy"
+
+#: src/data/infonode.ts:101
+msgid "Blue, glowing"
+msgstr "Błękitny, jarzący się"
+
+#: src/data/infonode.ts:103
+msgid "Blue, hazy"
+msgstr "Błękitny, zamglony"
+
+#: src/data/infonode.ts:119
+msgid "Burning with bright light"
+msgstr "Płonie jaskrawym światłem"
 
 #: src/data/corpo.ts:282
 msgid "Chemical Industry"
@@ -115,6 +154,10 @@ msgstr "Połączenie"
 msgid "Connection link"
 msgstr "Odnośnik klienta"
 
+#: src/data/infonode.ts:134
+msgid "Constantly rotating segments"
+msgstr "Obracające się ciągle segmenty"
+
 #: src/data/corpo.ts:285
 msgid "Construction"
 msgstr "Budownictwo"
@@ -131,6 +174,7 @@ msgstr "Kontrola nad wybranymi gangami"
 msgid "Control over police and municipal services"
 msgstr "Kontrola nad policją i służbami miejskimi"
 
+#: src/data/infonode.ts:10
 #: src/routes/CorpoGen/CorpoGen.tsx:16
 msgid "Corporation"
 msgstr "Korporacja"
@@ -139,9 +183,25 @@ msgstr "Korporacja"
 msgid "Courier Services"
 msgstr "Usługi kurierskie"
 
+#: src/data/infonode.ts:113
+msgid "Covered with symbols, steel"
+msgstr "Stalowy, pokryty symbolami"
+
 #: src/routes/HudLayout/pane/PlayerPane/BasicForm.tsx:46
 msgid "Credits"
 msgstr "Kredyty"
+
+#: src/data/infonode.ts:63
+msgid "Critical damage: additional d4 damage"
+msgstr "Obrażenia krytyczne: dodatkowe obrażenia k4"
+
+#: src/data/infonode.ts:65
+msgid "Critical damage: hacker disconnected from the network for d4 rounds"
+msgstr "Obrażenia krytyczne: haker odłączony od sieci na k4 rund"
+
+#: src/data/infonode.ts:64
+msgid "Critical damage: hacker's attack weakened for d4 rounds"
+msgstr "Obrażenia krytyczne: atak hakera osłabiony na k4 rund"
 
 #: src/routes/Config/Config.tsx:128
 msgid "Current storage use is:"
@@ -162,6 +222,14 @@ msgstr "Cybertechnologia"
 #: src/data/corpo.ts:386
 msgid "Damage the competition"
 msgstr "Zlikwidować fizycznie konkurencję"
+
+#: src/data/infonode.ts:111
+msgid "Dappled, brown"
+msgstr "Kłębiący się, brunatny"
+
+#: src/data/infonode.ts:109
+msgid "Dark blue, streaked"
+msgstr "Ciemnoniebieski, pokryty smugami"
 
 #: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:234
 msgid "Deactivate cybermods"
@@ -184,6 +252,10 @@ msgstr "Dyskomfort"
 msgid "Detect and eliminate traitors inside the corporation"
 msgstr "Wykryć i zlikwidować zdrajcę wewnątrz korporacji"
 
+#: src/data/infonode.ts:136
+msgid "Disappearing and reappearing from time to time"
+msgstr "Co jakiś czas znika i pojawia się"
+
 #: src/data/corpo.ts:391
 msgid "Discredit a well-known politician"
 msgstr "Zdyskredytować znanego polityka"
@@ -200,9 +272,21 @@ msgstr "Dyskretnie opanować niekontrolowaną katastrofę wewnątrz korporacji"
 msgid "Discreetly get rid of an inconvenient member of your own management"
 msgstr "Dyskretnie pozbyć się niewygodnego członka własnego zarządu"
 
+#: src/data/infonode.ts:62
+msgid "Distraction: the hacker's next attack is weakened"
+msgstr "Rozproszenie: następny atak hakera jest osłabiony"
+
+#: src/data/infonode.ts:67
+msgid "Double attack (roll two dice, choose the higher result)"
+msgstr "Podwójny atak (rzut dwiema kośćmi, wybierz wyższy wynik)"
+
 #: src/data/corpo.ts:373
 msgid "Drug trafficking control"
 msgstr "Kontrola nad przemytem narkotyków"
+
+#: src/data/infonode.ts:135
+msgid "Dynamic fractals drawn on the surface"
+msgstr "Dynamiczne fraktale rysowane na powierzchni"
 
 #: src/data/corpo.ts:288
 msgid "Education"
@@ -242,6 +326,14 @@ msgstr "Eksport"
 msgid "Fatigue"
 msgstr "Zmęczenie"
 
+#: src/data/infonode.ts:124
+msgid "Filled with ice crystals"
+msgstr "Wypełniony kryształkami lodu"
+
+#: src/data/infonode.ts:123
+msgid "Filled with lightning"
+msgstr "Wypełniony błyskawicami"
+
 #: src/data/corpo.ts:292
 msgid "Financial Services"
 msgstr "Usługi finansowe"
@@ -249,6 +341,14 @@ msgstr "Usługi finansowe"
 #: src/data/corpo.ts:364
 msgid "Financial resources"
 msgstr "Zasoby finansowe"
+
+#: src/data/infonode.ts:66
+msgid "Firewall: inability to hack in the next round"
+msgstr "Zapora: niemożność hakowania w następnej rundzie"
+
+#: src/data/infonode.ts:132
+msgid "Flashing with regular dimmed ligh"
+msgstr "Błyskający regularnie przyćmionym światłem"
 
 #: src/data/corpo.ts:293
 msgid "Food Industry"
@@ -262,14 +362,45 @@ msgstr "Zmusić/przekonać znaną postać publiczną do podpisania kontraktu m
 msgid "Genetics"
 msgstr "Genetyka"
 
+#: src/data/infonode.ts:110
+msgid "Glass, transparent"
+msgstr "Szklany, przezroczysty"
+
+#: src/data/infonode.ts:127
+msgid "Glowing cubes in the centre"
+msgstr "Świecące sześciany w środku"
+
 #: src/routes/NpcGen/NpcCard.tsx:39
 msgid "Goal"
 msgstr "Cel"
+
+#: src/data/infonode.ts:107
+msgid "Gold"
+msgstr "Złoty"
 
 #: src/routes/CorpoGen/CorpoCard.tsx:62
 msgid "Gossip"
 msgstr "Plotka"
 
+#: src/data/infonode.ts:9
+msgid "Government"
+msgstr "Rządowy"
+
+#: src/data/infonode.ts:104
+msgid "Green, luminous"
+msgstr "Zielony, świetlisty"
+
+#: src/data/infonode.ts:98
+msgid "Green, neon"
+msgstr "Zielony, neonowy"
+
+#: src/data/infonode.ts:102
+msgid "Grey, stony"
+msgstr "Szary, kamienny"
+
+#: src/data/infonode.ts:56
+#: src/data/infonode.ts:57
+#: src/data/infonode.ts:58
 #: src/routes/HudLayout/pane/PlayerPane/PlayerCard.tsx:193
 #: src/routes/HudLayout/pane/PlayerPane/StatForm.tsx:126
 msgid "HP"
@@ -324,7 +455,7 @@ msgstr "Wpływy w sektach religijnych"
 msgid "Information Services"
 msgstr "Usługi informacyjne"
 
-#: src/routes/NodeGen/NodeGen.tsx:28
+#: src/routes/NodeGen/NodeGen.tsx:29
 msgid "Infosphere node"
 msgstr "Węzeł Infosfery"
 
@@ -360,6 +491,10 @@ msgstr "Robota"
 msgid "Landscape resources"
 msgstr "Zasoby przestrzenne"
 
+#: src/data/infonode.ts:126
+msgid "Large company/owner logo"
+msgstr "Wielkie logo firmy/właściciela"
+
 #: src/data/corpo.ts:296
 msgid "Legal Services"
 msgstr "Usługi prawnicze"
@@ -368,6 +503,10 @@ msgstr "Usługi prawnicze"
 msgid "Let's talk about it"
 msgstr "Warto rozmawiać"
 
+#: src/data/infonode.ts:120
+msgid "Luminous rings swirling around"
+msgstr "Świetlne pierścienie wirujące naokoło"
+
 #: src/data/corpo.ts:298
 msgid "Machinery Industry"
 msgstr "Przemysł maszynowy"
@@ -375,6 +514,10 @@ msgstr "Przemysł maszynowy"
 #: src/data/corpo.ts:297
 msgid "Marine Industry"
 msgstr "Przemysł morski"
+
+#: src/data/infonode.ts:118
+msgid "Mathematical symbols displayed on the surface"
+msgstr "Symbole matematyczne wyświetlane na powierzchni"
 
 #: src/data/corpo.ts:389
 msgid "Maximise sales profits"
@@ -396,6 +539,14 @@ msgstr "Wiarygodność w mediach"
 msgid "Medical Services"
 msgstr "Przemysł i usługi medyczne"
 
+#: src/data/infonode.ts:108
+msgid "Metallic, shiny"
+msgstr "Metalowy, lśniący"
+
+#: src/data/infonode.ts:11
+msgid "Military"
+msgstr "Wojskowy"
+
 #: src/data/corpo.ts:301
 msgid "Military Services"
 msgstr "Usługi militarne"
@@ -408,13 +559,25 @@ msgstr "Kontakty w kręgach wojskowych"
 msgid "Mining"
 msgstr "Górnictwo"
 
+#: src/data/infonode.ts:81
+msgid "Moebius ribbon"
+msgstr "Wstęga Moebiusa"
+
 #: src/data/corpo.ts:336
 msgid "Most of their employees are androids"
 msgstr "Większość ich pracowników to androidy"
 
+#: src/data/infonode.ts:106
+msgid "Multicoloured"
+msgstr "Wielokolorowy"
+
 #: src/data/corpo.ts:303
 msgid "Municipal Services"
 msgstr "Usługi komunalne"
+
+#: src/data/infonode.ts:128
+msgid "Mystical symbols swirling around"
+msgstr "Mistyczne symbole wirujące naokoło"
 
 #: src/routes/Config/Config.tsx:181
 msgid "NATS Auth Token (if needed)"
@@ -453,6 +616,10 @@ msgstr "Tylko najlepsi osiągają szczyt"
 msgid "Operations"
 msgstr "Branża"
 
+#: src/data/infonode.ts:112
+msgid "Orange, bright"
+msgstr "Pomarańczowy, jaskrawy"
+
 #: src/data/corpo.ts:409
 msgid "Personal honour and sense of duty"
 msgstr "Osobisty honor i poczucie obowiązku"
@@ -489,21 +656,46 @@ msgstr "Zapobiec katastrofie wywołanej przez eksperymenty korporacji"
 msgid "Prevent the disclosure of inconvenient truths about a corporation"
 msgstr "Zapobiec ujawnieniu niewygodnej prawdy o korporacji"
 
+#: src/data/infonode.ts:7
 #: src/routes/HudLayout/pane/PlayerPane/BasicForm.tsx:75
 msgid "Private"
 msgstr "Prywatny"
+
+#: src/data/infonode.ts:8
+msgid "Private Secured"
+msgstr "Prywatny strzeżony"
 
 #: src/data/corpo.ts:307
 msgid "Psychotechnics"
 msgstr "Psychotechnika"
 
+#: src/data/infonode.ts:6
+msgid "Public"
+msgstr "Publiczny"
+
 #: src/data/corpo.ts:398
 msgid "Put your spy on the management board of your competitors"
 msgstr "Wprowadzić własnego szpiega na wysokie stanowisko do konkurencji"
 
+#: src/data/infonode.ts:130
+msgid "Random Infosphere images projected inside"
+msgstr "Losowe obrazy z sieci wyświetlane wewnątrz"
+
+#: src/data/infonode.ts:129
+msgid "Randomly appearing specks of ligh"
+msgstr "Losowo pojawiające się plamki światła"
+
 #: src/data/corpo.ts:404
 msgid "Recover stolen data"
 msgstr "Odzyskać skradzione dane"
+
+#: src/data/infonode.ts:105
+msgid "Red, flaming"
+msgstr "Czerwony, płomienny"
+
+#: src/data/infonode.ts:122
+msgid "Reminiscent of origami"
+msgstr "Przypominający origami"
 
 #: src/routes/Config/Config.tsx:216
 msgid "Remote ID"
@@ -528,6 +720,14 @@ msgstr "Robotyka"
 #: src/routes/HudLayout/pane/RollerPane/RollResult.tsx:102
 msgid "Roll"
 msgstr "Rzut"
+
+#: src/data/infonode.ts:82
+msgid "Rubik's cube"
+msgstr "Kostka Rubika"
+
+#: src/data/infonode.ts:94
+msgid "Ruby, transparent"
+msgstr "Rubinowy, przezroczysty"
 
 #: src/routes/Config/Config.tsx:238
 #: src/routes/HudLayout/pane/PlayerPane/InvInfo.tsx:45
@@ -554,6 +754,10 @@ msgstr "Szukaj"
 msgid "Security"
 msgstr "Bezpieczeństwo"
 
+#: src/data/infonode.ts:117
+msgid "Shape-filling laser beams"
+msgstr "Promienie lasera wypełniające kształt"
+
 #: src/routes/HudLayout/pane/PlayerPane/BasicForm.tsx:75
 msgid "Shared"
 msgstr "Współdzielony"
@@ -562,6 +766,10 @@ msgstr "Współdzielony"
 msgid "Shared character"
 msgstr "Postać współdzielona"
 
+#: src/data/infonode.ts:97
+msgid "Silver"
+msgstr "Srebrny"
+
 #: src/data/corpo.ts:369
 msgid "Smuggler contacts"
 msgstr "Kontakty wśród przemytników"
@@ -569,6 +777,10 @@ msgstr "Kontakty wśród przemytników"
 #: src/data/corpo.ts:312
 msgid "Space Industry"
 msgstr "Przemysł kosmiczny"
+
+#: src/data/infonode.ts:133
+msgid "Spinning around its axis"
+msgstr "Wirujący wokół własnej osi"
 
 #: src/data/corpo.ts:390
 msgid "Steal competitor data"
@@ -766,6 +978,10 @@ msgstr "Wytropić i odzyskać zbiegłego pracownika"
 msgid "Traits"
 msgstr "Cechy"
 
+#: src/data/infonode.ts:95
+msgid "Transparent"
+msgstr "Przezroczysty"
+
 #: src/data/corpo.ts:314
 msgid "Transport Services"
 msgstr "Usługi transportowe"
@@ -810,14 +1026,41 @@ msgstr "Nie istnieje to czego nie widać a każdy ma wiele twarzy"
 msgid "What you gain with your own hands is yours"
 msgstr "Co zdobędziesz własnoręcznie, jest twoje"
 
+#: src/data/infonode.ts:99
+msgid "White, glossy"
+msgstr "Biały, połyskliwy"
+
+#: src/data/infonode.ts:125
+msgid "Without any additional markings"
+msgstr "Bez żadnych dodatkowych oznaczeń"
+
+#: src/data/infonode.ts:131
+msgid "Wrapped in a metallic grid"
+msgstr "Opleciony metaliczną siatką"
+
 #: src/routes/NodeGen/ClassMenu.tsx:39
-#: src/routes/NodeGen/NodeGen.tsx:29
 msgid "any"
 msgstr "dowolny"
+
+#: src/component/GenLayout/GenLayout.tsx:24
+msgid "class"
+msgstr "klasa"
 
 #: src/component/GenLayout/GenLayout.tsx:23
 msgid "clear"
 msgstr "wyczyść"
+
+#: src/routes/NodeGen/NodeCard.tsx:67
+msgid "color"
+msgstr "kolor"
+
+#: src/data/infonode.ts:85
+msgid "column"
+msgstr "kolumna"
+
+#: src/data/infonode.ts:74
+msgid "cube"
+msgstr "sześcian"
 
 #: src/routes/HudLayout/pane/PlayerPane/ModForm.tsx:157
 msgid "cyberdeck"
@@ -827,25 +1070,33 @@ msgstr "cyberdek"
 msgid "cybermods"
 msgstr "cybermodyfikacje"
 
-#: src/routes/NodeGen/useNodeGen.tsx:77
-#: src/routes/NodeGen/useNodeGen.tsx:78
+#: src/data/infonode.ts:3
 msgid "d10"
 msgstr "k10"
 
-#: src/routes/NodeGen/useNodeGen.tsx:80
+#: src/data/infonode.ts:3
 msgid "d12"
 msgstr "k12"
 
-#: src/routes/NodeGen/useNodeGen.tsx:65
-#: src/routes/NodeGen/useNodeGen.tsx:69
+#: src/data/infonode.ts:3
+msgid "d20"
+msgstr "k20"
+
+#: src/data/infonode.ts:3
+msgid "d4"
+msgstr "k4"
+
+#: src/data/infonode.ts:3
 msgid "d6"
 msgstr "k6"
 
-#: src/routes/NodeGen/useNodeGen.tsx:70
-#: src/routes/NodeGen/useNodeGen.tsx:73
-#: src/routes/NodeGen/useNodeGen.tsx:74
+#: src/data/infonode.ts:3
 msgid "d8"
 msgstr "k8"
+
+#: src/routes/NodeGen/NodeCard.tsx:75
+msgid "detail"
+msgstr "szczegóły"
 
 #: src/routes/Config/Config.tsx:158
 msgid "established"
@@ -855,20 +1106,28 @@ msgstr "aktywne"
 msgid "export"
 msgstr "eksport"
 
+#: src/data/infonode.ts:87
+msgid "eye"
+msgstr "oko"
+
+#: src/data/infonode.ts:88
+msgid "gate"
+msgstr "brama"
+
 #: src/component/GenLayout/GenLayout.tsx:20
 msgid "generate"
 msgstr "generuj"
 
 #: src/routes/NodeGen/useNodeGen.tsx:97
 #: src/routes/NodeGen/useNodeGen.tsx:108
-msgid "hacker"
-msgstr "haker"
+#~ msgid "hacker"
+#~ msgstr "haker"
 
-#: src/routes/NodeGen/NodeCard.tsx:30
+#: src/routes/NodeGen/NodeCard.tsx:31
 msgid "hp"
 msgstr "ochr"
 
-#: src/routes/NodeGen/NodeCard.tsx:38
+#: src/routes/NodeGen/NodeCard.tsx:39
 msgid "ice"
 msgstr "lod"
 
@@ -876,17 +1135,65 @@ msgstr "lod"
 msgid "import"
 msgstr "import"
 
-#: src/routes/NodeGen/useNodeGen.tsx:130
-msgid "inshape"
-msgstr "w kształcie"
+#: src/data/infonode.ts:73
+msgid "infinity symbol"
+msgstr "symbol nieskończoności"
 
-#: src/routes/NodeGen/NodeGen.tsx:53
+#: src/routes/NodeGen/useNodeGen.tsx:66
+#~ msgid "inshape"
+#~ msgstr "w kształcie"
+
+#: src/data/infonode.ts:80
+msgid "logo"
+msgstr "logo"
+
+#: src/data/infonode.ts:76
+msgid "mask"
+msgstr "maska"
+
+#: src/data/infonode.ts:77
+msgid "menhir"
+msgstr "menhir"
+
+#: src/data/infonode.ts:75
+msgid "mock-up of a building"
+msgstr "makieta budynku"
+
+#: src/data/infonode.ts:79
+msgid "model of an atom"
+msgstr "model atomu"
+
+#: src/routes/NodeGen/NodeGen.tsx:54
 msgid "node class"
 msgstr "klasa węzła"
 
+#: src/data/infonode.ts:90
+msgid "perpendicular"
+msgstr "prostopadłościan"
+
+#: src/data/infonode.ts:72
+msgid "pyramid"
+msgstr "piramida/ziggurat "
+
+#: src/data/infonode.ts:78
+msgid "ring"
+msgstr "pierścień"
+
+#: src/data/infonode.ts:83
+msgid "screen"
+msgstr "ekran"
+
 #: src/routes/NodeGen/useNodeGen.tsx:110
-msgid "selfdefense"
-msgstr "samoobrona"
+#~ msgid "selfdefense"
+#~ msgstr "samoobrona"
+
+#: src/routes/NodeGen/NodeCard.tsx:59
+msgid "shape"
+msgstr "kształt"
+
+#: src/data/infonode.ts:71
+msgid "sphere"
+msgstr "kula"
 
 #: src/routes/Config/Config.tsx:198
 msgid "switch to Client"
@@ -916,6 +1223,18 @@ msgstr "Postacie"
 msgid "tab_roll"
 msgstr "Rzut"
 
+#: src/data/infonode.ts:89
+msgid "trapezoid"
+msgstr "trapezoid"
+
+#: src/data/infonode.ts:86
+msgid "triangle"
+msgstr "trójkąt"
+
 #: src/routes/NodeGen/useNodeGen.tsx:91
-msgid "volunteer"
-msgstr "wolontariusz"
+#~ msgid "volunteer"
+#~ msgstr "wolontariusz"
+
+#: src/data/infonode.ts:84
+msgid "vortex"
+msgstr "wir"

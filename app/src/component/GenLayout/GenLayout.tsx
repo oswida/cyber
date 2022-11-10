@@ -21,6 +21,7 @@ const MenuNames: Record<string, string> = {
   export: t`export`,
   import: t`import`,
   clear: t`clear`,
+  nodeclass: t`class`,
 };
 
 export const GenLayout = ({ children, headerMenu }: GenLayoutProps) => {

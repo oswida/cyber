@@ -1,15 +1,15 @@
+import { i18n } from "@lingui/core";
 import { Trans } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { language, nodeClassMenuOpen, nodeClassSelected } from "~/common";
 import { Button, Flex, Modal, Text } from "~/component";
-import { NodeClassDict } from "~/data";
+import { dictNodeClass, dictNodeClassTrans } from "~/data";
 
 export type ClassMenuProps = {
   title: string;
 };
 
 export const ClassMenu = ({ title }: ClassMenuProps) => {
-  const lang = useAtomValue(language);
   const [cm, setCm] = useAtom(nodeClassMenuOpen);
   const [nc, setNc] = useAtom(nodeClassSelected);
 
@@ -30,9 +30,9 @@ export const ClassMenu = ({ title }: ClassMenuProps) => {
             {title}
           </Text>
         )}
-        {Object.keys(NodeClassDict[lang]).map((key) => (
+        {dictNodeClass.map((key) => (
           <Button onClick={() => select(key)} key={key}>
-            {NodeClassDict[lang][key]}
+            {i18n._(dictNodeClassTrans[key])}
           </Button>
         ))}
         <Button onClick={() => select(undefined)}>

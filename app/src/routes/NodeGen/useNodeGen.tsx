@@ -10,32 +10,24 @@ import {
   nodeClassSelected,
   NodeInfo,
   prettyToday,
+  rollFrom,
   rollSingle,
   stateGenerator,
 } from "~/common";
 import { useStorage } from "~/common/storage";
 import {
-  infoData,
-  infoLookColor,
-  infoLookDetail,
-  infoLookShape,
-  NodeClassDict,
-  NodeClassHP,
-  NodeClassInf,
-  NodeClassMore,
+  dictNodeActivation,
+  dictNodeBlackIceProb,
+  dictNodeClass,
+  dictNodeClassTrans,
+  dictNodeData,
+  dictNodeDice,
+  dictNodeLookColor,
+  dictNodeLookDetail,
+  dictNodeLookShape,
 } from "~/data";
 
 const roller = new DiceRoller();
-
-const nodetype: string[] = [
-  "pub",
-  "priv",
-  "privsec",
-  "gov",
-  "corp",
-  "mil",
-  "ai",
-];
 
 export const useNodeGen = () => {
   const lang = useAtomValue(language);
@@ -54,97 +46,41 @@ export const useNodeGen = () => {
       .substring(0, length + Math.round(length / 4) - 1);
   }
 
-  const rollICE = (nclass: string): [string, boolean] => {
-    let chance = 0;
-    switch (nclass) {
-      case "pub":
-      case "priv":
-        return ["-", false];
-      case "privsec":
-        chance = rollSingle(roller, "1d6").total;
-        if (chance <= 3) return [t`d6`, false];
-        break;
-      case "gov":
-        chance = rollSingle(roller, "1d6").total;
-        if (chance <= 3) return [t`d6`, false];
-        else return [t`d8`, false];
-      case "corp":
-        chance = rollSingle(roller, "1d6").total;
-        if (chance <= 2) return [t`d8`, true];
-        return [t`d8`, false];
-      case "mil":
-        chance = rollSingle(roller, "1d6").total;
-        if (chance <= 3) return [t`d10`, true];
-        return [t`d10`, false];
-      case "ai":
-        return [t`d12`, true];
-    }
-    return ["-", false];
-  };
-
-  const rollPersonel = (nclass: string) => {
-    let chance = 0;
-    switch (nclass) {
-      case "pub":
-        chance = rollSingle(roller, "1d6").total;
-        if (chance == 1) {
-          return `${t`volunteer`} INF 10`;
-        }
-        break;
-      case "privsec":
-        chance = rollSingle(roller, "1d6").total;
-        if (chance <= 2) {
-          return `${t`hacker`} INF 10`;
-        }
-        break;
-      case "gov":
-        chance = rollSingle(roller, "1d3").total;
-        return `${chance} × haker INF 12`;
-      case "corp":
-        chance = rollSingle(roller, "1d4").total;
-        return `${chance} × haker INF 15`;
-      case "mil":
-        chance = rollSingle(roller, "1d6").total;
-        return `${chance} × ${t`hacker`} INF 16`;
-      case "ai":
-        return `${t`selfdefense`} INF 17`;
-    }
-    return "";
+  const hasBlackICE = (nc: string) => {
+    const num = dictNodeBlackIceProb[nc];
+    const roll = rollSingle(roller, "1d6").total;
+    return roll <= num;
   };
 
   const rollNode = () => {
     var roll: DiceRoll;
     let nclass: string | undefined = nc;
-    if (!nclass) {
-      roll = rollSingle(roller, `1d${nodetype.length}`);
-      nclass = nodetype[roll.total - 1];
-    }
-    // roll = roller.roll(`1d${infoLook[lang].length}`) as DiceRoll;
-    // const look = infoLook[lang][roll.total - 1];
-    roll = rollSingle(roller, `1d${infoLookShape[lang].length}`);
-    const l1 = infoLookShape[lang][roll.total - 1];
-    roll = rollSingle(roller, `1d${infoLookColor[lang].length}`);
-    const l2 = infoLookColor[lang][roll.total - 1];
-    roll = rollSingle(roller, `1d${infoLookDetail[lang].length}`);
-    const l3 = infoLookDetail[lang][roll.total - 1];
-    const look = `${l2} ${t`inshape`} ${l1}. ${l3}.`;
 
-    roll = rollSingle(roller, `1d${infoData[lang][nclass].length}`);
-    const data = infoData[lang][nclass][roll.total - 1];
-    const ib = rollICE(nclass);
+    if (!nclass) {
+      nclass = rollFrom(roller, dictNodeClass);
+    }
+
+    const l1 = rollFrom(roller, dictNodeLookShape);
+    const l2 = rollFrom(roller, dictNodeLookColor);
+    const l3 = rollFrom(roller, dictNodeLookDetail);
+
+    const data = rollFrom(roller, dictNodeData[nclass]);
+    const isblack = hasBlackICE(nclass);
+    const dice = dictNodeDice[nclass];
 
     const retv: NodeInfo = {
       id: uuidv4(),
       name: generateSerialKeys(8, ""),
-      node_class: NodeClassDict[lang][nclass],
-      hp: rollSingle(roller, NodeClassHP[nclass]).total,
-      inf: rollSingle(roller, NodeClassInf[nclass]).total,
-      ice: ib[0],
-      black_ice: ib[1],
-      more_security: NodeClassMore[lang][nclass],
-      security: rollPersonel(nclass),
-      look: look,
+      node_class: i18n._(dictNodeClassTrans[nclass]),
+      hp: rollSingle(roller, dice[0]).total,
+      inf: rollSingle(roller, dice[1]).total,
+      ice: i18n._(dice[1]),
+      black_ice: isblack,
+      shape: i18n._(l1),
+      color: i18n._(l2),
+      detail: i18n._(l3),
       data: data,
+      activation: dictNodeActivation[nclass],
     };
     return retv;
   };

@@ -1,3 +1,4 @@
+import { i18n } from "@lingui/core";
 import { t, Trans } from "@lingui/macro";
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect } from "react";
@@ -10,7 +11,7 @@ import {
   toNodeInfo,
 } from "~/common";
 import { GenLayout } from "~/component";
-import { NodeClassDict } from "~/data";
+import { dictNodeClassTrans } from "~/data";
 import { ClassMenu } from "./ClassMenu";
 import { NodeCard } from "./NodeCard";
 import { useNodeGen } from "./useNodeGen";
@@ -26,7 +27,7 @@ export const NodeGen = () => {
   useEffect(() => {
     setCp(
       `${t`Infosphere node`} (${
-        nc ? NodeClassDict[lang][nc] : <Trans>any</Trans>
+        nc !== undefined ? i18n._(dictNodeClassTrans[nc]) : i18n._("any")
       })`
     );
   }, [lang, nc]);

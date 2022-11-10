@@ -12,7 +12,7 @@ nav_order: 5
 ## Procedura
 
 1. Określ lub wylosuj klasę bezpieczeństwa
-2. Określ zabezpieczenia
+2. Określ współczynniki i zabezpieczenia
 3. Wybierz lub wylosuj wygląd jeśli chcesz
 4. Wybierz lub wylosuj dane przechowywane w węźle
 
@@ -26,32 +26,51 @@ nav_order: 5
 6. Wojskowy
 7. SI
 
-## Zabezpieczenia
+## Współczynniki i zabezpieczenia
 
-| Klasa              | OCHR | INF | Max prog | Oprogramowanie | LOD                 |
-| ------------------ | ---- | --- | :------: | -------------- | ------------------- |
-| Publiczny          | k4   | k4  |    1     | KP/1 los k4    | k4                  |
-| Prywatny           | k4   | k4  |    2     | KP/1-2 los k4  | k4                  |
-| Prywatny strzeżony | k6   | k6  |    3     | KP/1-3 los k6  | k6                  |
-| Rządowy            | k8   | k8  |    4     | KP/1-4 los k8  | k8                  |
-| Korporacyjny       | k10  | k10 |    3     | KP/1-3 los k10 | k10, KP/1-2: Czarny |
-| Wojskowy           | k12  | k12 |    4     | KP/1-4 los k12 | k12, KP/1-2: Czarny |
-| SI                 | k20  | k20 |    5     | KP/1-5 los k12 | k20, KP/1-4: Czarny |
+Każdy węzeł Infosfery posiada współczynniki OCHR i INF oraz dodatkowe parametry związane z jego ochroną.
+Zredukowanie OCHR węzła do zera oznacza przejęcie kontroli, zredukowanie INF do zera - zniszczenie danych.
+Poniższa tabela opisuje współczynniki i zabezpieczenia dla poszczególnych klas bezpieczeństwa.
 
-| k6/k12 | Oprogramowanie dodatkowe                                   |
-| ------ | ---------------------------------------------------------- |
-| 1      | OCHR +1                                                    |
-| 2      | OCHR +2                                                    |
-| 3      | OCHR +3                                                    |
-| 4      | Pancerz +1                                                 |
-| 5      | Pancerz +2                                                 |
-| 6      | Pancerz +3                                                 |
-| 7      | Rozproszenie (atak hakera jest osłabiony)                  |
-| 8      | Obrażenia krytyczne: dodatkowe obrażenia k4                |
-| 9      | Obrażenia krytyczne: atak osłabiony na k4 rund             |
-| 10     | Obrażenia krytyczne: odłączenie od sieci na k4 rund        |
-| 11     | Zapora (niemożność hakowania w tej rundzie)                |
-| 12     | Podwójny atak (rzut dwiema kośćmi, wybieramy wyższy wynik) |
+- `OCHR` i `INF` podają kość jakiej należy użyć do wylosowania wartości atrybutu (modyfikator przy OCHR zapewnia pewien bazowy poziom dla danej klasy)
+- `LOD` określa kość ataku dla Logicznego Oprogramowania Defensywnego oraz określa szansę na to, że dany LOD będzie czarny (rzucamy Kością Przeznaczenia, x/6 oznacza, że wyniki od 1 do x dają odpowiedź pozytywną)
+- `Próg aktywacji` informuje o maksymalnej wartości, która aktywuje program ochronny w danej rundzie. Procedura nie wymaga żadnego dodatkowego rzutu - wartość brana jest z rzutu ataku LOD, jeśli wynik jest mniejszy lub równy progowi aktywacji, w tej samej rundzie następuje uruchomienie programu a jego typ pobiera się z tabeli oprogramowania ochronnego, również na podstawie wartości wyrzuconej podczas ataku.
+
+| Klasa              | OCHR  |  INF  | Próg aktywacji |       LOD        |
+| ------------------ | :---: | :---: | :------------: | :--------------: |
+| Publiczny          | k4+1  |  k4   |       1        |        k4        |
+| Prywatny           | k4+1  |  k4   |       2        |        k4        |
+| Prywatny strzeżony | k6+2  |  k6   |       3        |        k6        |
+| Rządowy            | k8+3  |  k8   |       5        | k8, 1/6: Czarny  |
+| Korporacyjny       | k10+4 |  k10  |       7        | k10, 2/6: Czarny |
+| Wojskowy           | k12+5 |  k12  |       9        | k12, 3/6: Czarny |
+| SI                 | k20+6 |  k20  |       12       | k20, 4/6: Czarny |
+
+| k4 - k20 | Oprogramowanie ochronne ()                               |
+| :------: | -------------------------------------------------------- |
+|    1     | OCHR +1 (*)                                              |
+|    2     | OCHR +2 (*)                                              |
+|    3     | OCHR +3 (*)                                              |
+|    4     | Pancerz +1                                               |
+|    5     | Pancerz +2                                               |
+|    6     | Pancerz +3                                               |
+|    7     | Rozproszenie: następny atak hakera jest osłabiony        |
+|    8     | Obrażenia krytyczne: dodatkowe obrażenia k4              |
+|    9     | Obrażenia krytyczne: atak hakera osłabiony na k4 rund    |
+|    10    | Obrażenia krytyczne: haker odłączony od sieci na k4 rund |
+|    11    | Zapora: niemożność hakowania w następnej rundzie         |
+|    12    | Podwójny atak (rzut dwiema kośćmi, wybierz wyższy wynik) |
+
+(*) Jeśli haker kontrolował węzeł,w momencie zwiększenia OCHR, traci tę kontrolę, dopóki nie zredukuje ponownie OCHR węzła do zera.
+
+> Przykład aktywacji oprogramowania ochronnego
+> 
+> Ian atakuje węzeł korporacyjny, co oznacza, że LOD ma kość ataku k10. 
+> Dodatkowo, podczas losowania na k6 wypadło 2 co oznacza, że atakowany LOD jest "czarny" (w przypadku porażki w teście na obrażenia krytyczne, Ian otrzyma dodatkowo obrażenia PSY)
+> W momencie ataku, na kości LOD wypada 5. Oznacza to, że:
+> - Ian otrzyma **5 punktów obrażeń** (najpierw odejmuje je od OCHR a następnie od swojego INF)
+> - Został **aktywowany** dodatkowy program ochronny (próg aktywacji 7) 
+> - Efektem działania programu ochronnego jest **+2 pancerza** w tej rundzie (**pozycja 5** w tabeli), obrażenia zadane węzłowi przez Iana zostaną zredukowane o 2 (atak hakera i węzła są rozliczane jednocześnie)  
 
 ## Wygląd (3 razy k20)
 
