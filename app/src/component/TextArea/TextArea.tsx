@@ -13,6 +13,7 @@ export const TextArea: Component<ComponentProps<"div"> & Props> = ({
   contentEditable,
   ref,
   children,
+  onBlur,
 }) => {
   return (
     <div
@@ -20,6 +21,7 @@ export const TextArea: Component<ComponentProps<"div"> & Props> = ({
       style={style}
       contentEditable={contentEditable}
       ref={ref}
+      onBlur={onBlur}
     >
       {children}
     </div>

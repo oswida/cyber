@@ -180,7 +180,7 @@ export const CharFormModSection = ({ isDeck }: { isDeck: boolean }) => {
         style={{
           width: "70%",
           "align-self": "center",
-          "min-width": "300px",
+          "min-width": "350px",
           "max-height": "calc(100vh - 300px)",
           overflow: "auto",
         }}

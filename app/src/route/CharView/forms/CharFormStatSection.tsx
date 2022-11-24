@@ -143,11 +143,10 @@ export const CharFormStatSection = () => {
         width: "90%",
         gap: "10px",
         "align-self": "center",
-        "justify-content": "space-evenly",
-        "flex-wrap": "wrap",
+        "justify-content": "center",
       }}
     >
-      <Flex style={{ gap: "35px", "flex-wrap": "wrap" }}>
+      <Flex center style={{ gap: "35px", "flex-wrap": "wrap" }}>
         {/* BIO */}
         <Flex type="column">
           <Texte

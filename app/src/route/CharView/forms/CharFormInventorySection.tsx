@@ -82,7 +82,7 @@ export const CharFormInventorySection = () => {
         type="column"
         style={{
           width: "70%",
-          "min-width": "300px",
+          "min-width": "350px",
           "align-self": "center",
           "max-height": "calc(100vh - 300px)",
           overflow: "auto",

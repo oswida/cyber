@@ -1,5 +1,5 @@
 import { useI18n } from "@solid-primitives/i18n";
-import { Match, Switch } from "solid-js";
+import { createMemo, Match, Switch } from "solid-js";
 import {
   emptyPcInfo,
   inodPlayersKey,
@@ -15,6 +15,7 @@ import { saveGenericData } from "~/common";
 import { CharFormBasicSection } from "./forms/CharFormBasicSection";
 import { CharFormInventorySection } from "./forms/CharFormInventorySection";
 import { CharFormModSection } from "./forms/CharFormModSection";
+import { Dynamic } from "solid-js/web";
 
 export const SubEdit = () => {
   const apd = useAppData();
@@ -51,8 +52,9 @@ export const SubEdit = () => {
           }}
         >
           <Texte color="green" size="bigger">
-            {editor?.editCharacter().name}
+            <Dynamic component={"span"}>{editor?.editCharacter().name}</Dynamic>
           </Texte>
+
           <Button border="none" onClick={() => apd?.setSubeditOpen("")}>
             <Texte color="pink" size="bigger">
               ×

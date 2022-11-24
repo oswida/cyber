@@ -1,7 +1,7 @@
 import { useI18n } from "@solid-primitives/i18n";
 import { createEffect } from "solid-js";
 import { PcInfoKeys, useEditCharacter } from "~/common";
-import { Flex, Input, Texte } from "~/component";
+import { Flex, Input, TextArea, Texte } from "~/component";
 
 export const CharFormBasicSection = () => {
   const [t] = useI18n();
@@ -10,6 +10,7 @@ export const CharFormBasicSection = () => {
   var creditRef: HTMLInputElement;
   var subRef: HTMLInputElement;
   var bkgRef: HTMLInputElement;
+  var notesRef: HTMLDivElement;
 
   createEffect(() => {
     if (!nameRef || !creditRef || !subRef || !bkgRef || !editor) return;
@@ -18,6 +19,7 @@ export const CharFormBasicSection = () => {
     creditRef.value = ec.credits.toString();
     subRef.value = ec.subscription;
     bkgRef.value = ec.background;
+    notesRef.innerText = ec.notes ? ec.notes : "";
   });
 
   const change = (key: PcInfoKeys) => {
@@ -44,6 +46,12 @@ export const CharFormBasicSection = () => {
           background: bkgRef.value,
         }));
         break;
+      case "notes":
+        editor?.setEditCharacter((prev) => ({
+          ...prev,
+          notes: notesRef.innerText,
+        }));
+        break;
     }
   };
 
@@ -65,7 +73,7 @@ export const CharFormBasicSection = () => {
           <Input
             ref={(el) => (nameRef = el)}
             style={{ width: "18em" }}
-            onInput={() => change("name")}
+            onChange={() => change("name")}
           />
         </Flex>
       </Flex>
@@ -76,7 +84,7 @@ export const CharFormBasicSection = () => {
         <Input
           ref={(el) => (bkgRef = el)}
           style={{ width: "18em" }}
-          onInput={() => change("background")}
+          onChange={() => change("background")}
         />
       </Flex>
       <Flex type="column">
@@ -86,7 +94,7 @@ export const CharFormBasicSection = () => {
         <Input
           ref={(el) => (subRef = el)}
           style={{ width: "12em" }}
-          onInput={() => change("subscription")}
+          onChange={() => change("subscription")}
         />
       </Flex>
       <Flex type="column">
@@ -96,7 +104,18 @@ export const CharFormBasicSection = () => {
         <Input
           ref={(el) => (creditRef = el)}
           style={{ width: "9em" }}
-          onInput={() => change("credits")}
+          onChange={() => change("credits")}
+        />
+      </Flex>
+      <Flex type="column">
+        <Texte size="middle" color="yellow">
+          {t("Notes")}
+        </Texte>
+        <TextArea
+          contentEditable={true}
+          ref={(el) => (notesRef = el)}
+          style={{ "min-width": "350px", height: "130px", overflow: "auto" }}
+          onBlur={() => change("notes")}
         />
       </Flex>
     </Flex>

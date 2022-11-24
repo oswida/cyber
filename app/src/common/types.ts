@@ -58,6 +58,7 @@ export type PcInfo = {
   cyberdeck: PcMod[];
   shared: boolean;
   deprived?: boolean;
+  notes?: string;
 };
 
 export const emptyPcInfo: PcInfo = {
