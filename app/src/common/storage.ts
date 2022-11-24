@@ -56,6 +56,9 @@ export const loadNotes = (appData: any, isShared: boolean) => {
   const dd = decompressData(data);
   if (isShared) appData.setBoardData(dd);
   else appData.setNoteData(dd);
+  const data1 = localStorage.getItem("inod-board");
+  const dd1 = decompressData(data1);
+  console.log("board1", dd1);
 };
 
 export const loadTracks = (appData: any) => {
@@ -76,6 +79,9 @@ export const loadChars = (appData: any) => {
   const data = localStorage.getItem(inodPlayersKey);
   const dd = decompressData(data);
   appData.setCharData(dd);
+  const data1 = localStorage.getItem("inod-players");
+  const dd1 = decompressData(data1);
+  console.log("players1", dd1);
 };
 
 export const updateStoreSize = (appData: any) => {
