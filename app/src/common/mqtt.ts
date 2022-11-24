@@ -3,8 +3,15 @@ import { createMemo } from "solid-js";
 import { inodRollsKey, saveGenericData } from "~/common";
 import { AppDataType, useAppData } from "./signals";
 import { inodBoardKey, inodPlayersKey } from "./storage";
-import { MqttMessage, NoteInfo, PcInfo, RollInfo } from "./types";
+import {
+  ConnectionInfo,
+  MqttMessage,
+  NoteInfo,
+  PcInfo,
+  RollInfo,
+} from "./types";
 import { compressData64, decompressData64, notify } from "./util";
+import { v4 as uuidv4 } from "uuid";
 
 // cyberusr BusloadOverpassSlightingGrimace
 
@@ -68,11 +75,13 @@ export const mqttProcess = (apd: AppDataType, msg: Message) => {
   if (m.sender == apd.sessionData().browserID) return; // own message
   switch (msg.destinationName) {
     case topicConnect:
-      notify(apd, m.data, 5000);
+      const info = m.data as ConnectionInfo;
+      notify(apd, `User ${info.username} connected`, 5000);
       const cl = apd.mqttClient();
       if (!cl) break;
       if (apd.sessionData().hosting) {
-        mqttPublish(apd.sessionData().browserID, cl, topicChars, apd.charData);
+        const chars = Object.values(apd.charData).filter((it) => it.shared);
+        mqttPublish(apd.sessionData().browserID, cl, topicChars, chars);
       }
       break;
     case topicRoll:
@@ -87,7 +96,7 @@ export const mqttProcess = (apd: AppDataType, msg: Message) => {
       chars.forEach((cr) => {
         newState2[cr.id] = cr;
       });
-      apd.setCharData(newState2);
+      apd.setCharData({ ...newState2 });
       saveGenericData(apd, inodPlayersKey, newState2);
       notify(apd, "Character created/updated", 10000);
       break;
@@ -100,6 +109,10 @@ export const mqttProcess = (apd: AppDataType, msg: Message) => {
       apd.setBoardData(newState3);
       saveGenericData(apd, inodBoardKey, newState3);
       notify(apd, "Board note created/updated", 10000);
+      break;
+    case topicDraw:
+      apd.setDrawCache(m.data);
+      notify(apd, "Drawing updated", 10000);
       break;
     default:
       console.log("Message for unknown topic", m.sender, m.data);
@@ -116,6 +129,9 @@ export const mqttConnect = (apd: AppDataType) => {
     options.path,
     apd.sessionData().browserID
   );
+  if (client.isConnected()) {
+    client.disconnect();
+  }
   client.connect({
     userName: options.userName,
     password: options.password,
@@ -125,18 +141,15 @@ export const mqttConnect = (apd: AppDataType) => {
     },
     onSuccess: (e) => {
       console.log("Connected to MQTT server", e);
-      client.subscribe("+", {
+      client.subscribe("#", {
         onFailure: (e) => {
           console.log("subscription failed", e);
         },
         onSuccess: () => {
           apd.setMqttClient(client);
-          mqttPublish(
-            apd.sessionData().browserID,
-            client,
-            topicConnect,
-            `connected ${apd.sessionData().username}`
-          );
+          mqttPublish(apd.sessionData().browserID, client, topicConnect, {
+            username: apd.sessionData().username,
+          } as ConnectionInfo);
         },
       });
     },
@@ -145,12 +158,8 @@ export const mqttConnect = (apd: AppDataType) => {
   client.onMessageArrived = (msg) => {
     mqttProcess(apd, msg);
   };
+
+  client.onConnectionLost = (msg) => {
+    console.log("Connection lost", msg);
+  };
 };
-
-export const currentMqttClient = createMemo(() => {
-  const apd = useAppData();
-  if (!apd) return;
-  console.log("client memo", apd.mqttClient());
-
-  return apd.mqttClient();
-});

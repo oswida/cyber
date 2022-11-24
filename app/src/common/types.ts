@@ -9,6 +9,10 @@ export type CorpoInfo = {
   employeeProfile: string;
 };
 
+export type ConnectionInfo = {
+  username: string;
+};
+
 export type NodeInfo = {
   id: string;
   name: string;

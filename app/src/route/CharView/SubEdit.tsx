@@ -3,6 +3,8 @@ import { Match, Switch } from "solid-js";
 import {
   emptyPcInfo,
   inodPlayersKey,
+  mqttPublish,
+  topicChars,
   useAppData,
   useEditCharacter,
 } from "~/common";
@@ -28,6 +30,12 @@ export const SubEdit = () => {
     apd.setSelectedChar(emptyPcInfo);
     saveGenericData(apd, inodPlayersKey, newState);
     apd.setSubeditOpen("");
+    if (ec.shared) {
+      const cl = apd.mqttClient();
+      if (cl !== undefined) {
+        mqttPublish(apd.sessionData().browserID, cl, topicChars, [ec]);
+      }
+    }
   };
 
   return (

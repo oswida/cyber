@@ -12,7 +12,9 @@ import { newCharacter } from "~/actions/character";
 import {
   emptyPcInfo,
   inodPlayersKey,
+  mqttPublish,
   saveGenericData,
+  topicChars,
   useAppData,
   useEditCharacter,
 } from "~/common";
@@ -31,17 +33,23 @@ type Props = {
 export const CharEdit: Component<Props> = ({ open, setOpen }) => {
   const [t] = useI18n();
   const editor = useEditCharacter();
-  const appData = useAppData();
+  const apd = useAppData();
 
   const save = () => {
-    if (!editor || !appData) return;
+    if (!editor || !apd) return;
 
     const ec = editor.editCharacter();
-    const newState = { ...appData.charData, [ec.id]: editor.editCharacter() };
-    appData.setCharData(newState);
-    appData.setSelectedChar(emptyPcInfo);
-    saveGenericData(appData, inodPlayersKey, newState);
+    const newState = { ...apd.charData, [ec.id]: editor.editCharacter() };
+    apd.setCharData(newState);
+    apd.setSelectedChar(emptyPcInfo);
+    saveGenericData(apd, inodPlayersKey, newState);
     setOpen(false);
+    if (ec.shared) {
+      const cl = apd.mqttClient();
+      if (cl !== undefined) {
+        mqttPublish(apd.sessionData().browserID, cl, topicChars, [ec]);
+      }
+    }
   };
 
   const cid = createMemo(() => {

@@ -22,3 +22,14 @@ export const deleteNote = (apd: any, item: NoteInfo) => {
   apd.setNoteData(newState);
   return newState;
 };
+
+export const deleteBoard = (apd: any, item: NoteInfo) => {
+  const newState: Record<string, NoteInfo> = {};
+  Object.values(apd.boardData()).forEach((it: any) => {
+    if (it.id !== item.id) {
+      newState[it.id] = it;
+    }
+  });
+  apd.setBoardData(newState);
+  return newState;
+};

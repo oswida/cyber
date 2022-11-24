@@ -51,7 +51,7 @@ export const loadRolls = (appData: any) => {
 };
 
 export const loadNotes = (appData: any, isShared: boolean) => {
-  const data = localStorage.getItem(isShared ? inodNotesKey : inodBoardKey);
+  const data = localStorage.getItem(isShared ? inodBoardKey : inodNotesKey);
   if (!data) return;
   const dd = decompressData(data);
   if (isShared) appData.setBoardData(dd);

@@ -6,10 +6,13 @@ import {
   importData,
   inodDrawKey,
   loadDraw,
+  mqttPublish,
+  notify,
   prettyToday,
   runtimeColors,
   saveGenericData,
   themeVars,
+  topicDraw,
   useAppData,
 } from "~/common";
 import { Flex } from "../Flex";
@@ -43,9 +46,11 @@ export const Whiteboard: Component = () => {
   const apd = useAppData();
 
   const save = (e: any) => {
+    if (!apd) return;
     const cnv = canvas();
     if (!cnv) return;
-    saveGenericData(apd, inodDrawKey, cnv.toJSON());
+    const draw = cnv.toJSON();
+    saveGenericData(apd, inodDrawKey, draw);
   };
 
   createEffect(() => {
@@ -82,10 +87,14 @@ export const Whiteboard: Component = () => {
   };
 
   const share = () => {
-    //TODO:
-    // const data = canvasJson();
-    // publish(nats.connection, topicDraw, { data: data });
-    // notify("Image published", 3000);
+    if (!apd) return;
+    const cl = apd.mqttClient();
+    if (!cl) return;
+    const cnv = canvas();
+    if (!cnv) return;
+    const draw = cnv.toJSON();
+    mqttPublish(apd.sessionData().browserID, cl, topicDraw, draw);
+    notify(apd, "Drawing published", 3000);
   };
 
   return (

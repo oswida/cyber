@@ -15,7 +15,7 @@ import {
   For,
   Show,
 } from "solid-js";
-import { createNote, deleteNote } from "~/actions/note";
+import { createNote, deleteBoard, deleteNote } from "~/actions/note";
 import {
   inodBoardKey,
   inodNotesKey,
@@ -43,8 +43,14 @@ export const NoteView: Component<Props> = ({ isShared }) => {
 
   createEffect(() => {
     if (!apd) return;
-    if (Object.values(apd.noteData()).length > 0) {
-      apd.setSelectedNote(Object.values(apd.noteData())[0]);
+    if (isShared) {
+      if (Object.values(apd.boardData()).length > 0) {
+        apd.setSelectedNote(Object.values(apd.boardData())[0]);
+      }
+    } else {
+      if (Object.values(apd.noteData()).length > 0) {
+        apd.setSelectedNote(Object.values(apd.noteData())[0]);
+      }
     }
   });
 
@@ -81,7 +87,7 @@ export const NoteView: Component<Props> = ({ isShared }) => {
     if (!apd) return;
     const item = apd.selectedNote();
     if (!item) return;
-    const newState = deleteNote(apd, item);
+    const newState = isShared ? deleteBoard(apd, item) : deleteNote(apd, item);
     if (isShared) saveGenericData(apd, inodBoardKey, newState);
     else saveGenericData(apd, inodNotesKey, newState);
   };

@@ -3,8 +3,10 @@ import { Accessor, Component, createEffect, Setter } from "solid-js";
 import {
   inodBoardKey,
   inodNotesKey,
+  mqttPublish,
   NoteInfo,
   saveGenericData,
+  topicBoard,
   useAppData,
 } from "~/common";
 import { Button, Dialog, Flex, Input, TextArea, Texte } from "~/component";
@@ -46,7 +48,15 @@ export const NoteEdit: Component<Props> = ({
     if (isShared) {
       apd.setBoardData(newState);
       saveGenericData(apd, inodBoardKey, newState);
-      //TODO: share
+      const cl = apd.mqttClient();
+      if (cl !== undefined) {
+        mqttPublish(
+          apd.sessionData().browserID,
+          cl,
+          topicBoard,
+          Object.values(apd.boardData())
+        );
+      }
     } else {
       apd.setNoteData(newState);
       saveGenericData(apd, inodNotesKey, newState);

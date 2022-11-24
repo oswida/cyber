@@ -2,7 +2,6 @@ import { DiceRoll } from "@dice-roller/rpg-dice-roller";
 import { useI18n } from "@solid-primitives/i18n";
 import { Component, For } from "solid-js";
 import {
-  currentMqttClient,
   inodRollsKey,
   mqttPublish,
   prettyNow,
