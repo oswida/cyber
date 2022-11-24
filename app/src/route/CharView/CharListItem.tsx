@@ -10,7 +10,8 @@ export const CharListItem = ({ id }: { id: string }) => {
   const editor = useEditCharacter();
 
   const item = createMemo(() => {
-    return apd?.charData[id];
+    if (!apd) return;
+    return apd.charData[id];
   });
 
   const isSelected = createMemo(() => {
@@ -29,12 +30,11 @@ export const CharListItem = ({ id }: { id: string }) => {
   };
 
   const subedit = (name: string) => {
-    if (!apd) return;
-    const c = apd.selectedChar();
-    if (!c || !editor || c.id.trim() === "") return;
-    editor.setEditCharacter({ ...c });
+    const it = item();
+    if (!apd || !it || !editor || it?.id.trim() === "") return;
+
+    editor.setEditCharacter({ ...it });
     apd.setSubeditOpen(name);
-    //TODO: open subform
   };
 
   return (

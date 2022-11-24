@@ -45,7 +45,7 @@ export const SubEditRootStyle = style({
   borderRadius: 5,
   border: `solid 1px ${themeVars.colors.green}`,
   height: "calc(100vh - 80px)",
-  width: "350px",
+  width: "400px",
   position: "absolute",
   right: 0,
   top: "30px",

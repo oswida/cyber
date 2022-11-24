@@ -1,3 +1,4 @@
+import { AppDataType } from "./signals";
 import { setCorporationData } from "~/common";
 import { emptySessionInfo, SessionInfo } from "./types";
 import { compressData, decompressData } from "./util";
@@ -11,10 +12,12 @@ export const inodRollsKey = "inod-rolls2";
 export const inodDrawKey = "inod-draw2";
 export const inodTrackKey = "inod-track2";
 
-export const loadSessionData = (appData: any) => {
+export const loadSessionData = (appData: AppDataType) => {
   if (!appData) return;
   const sessionData = localStorage.getItem(inodSessionKey);
   if (!sessionData) {
+    console.log("no session data!");
+
     const sd = emptySessionInfo();
     localStorage.setItem(inodSessionKey, compressData(sd));
     appData.setSessionData(sd);

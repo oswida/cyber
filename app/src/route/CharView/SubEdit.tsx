@@ -51,7 +51,7 @@ export const SubEdit = () => {
           }}
         >
           <Texte color="green" size="bigger">
-            {apd?.selectedChar().name}
+            {editor?.editCharacter().name}
           </Texte>
           <Button border="none" onClick={() => apd?.setSubeditOpen("")}>
             <Texte color="pink" size="bigger">

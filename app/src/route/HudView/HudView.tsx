@@ -1,6 +1,13 @@
 import { useI18n } from "@solid-primitives/i18n";
 import { FaSolidGears } from "solid-icons/fa";
-import { Component, createEffect, createMemo, createSignal } from "solid-js";
+import {
+  Component,
+  createEffect,
+  createMemo,
+  createSignal,
+  Show,
+} from "solid-js";
+import { Dynamic } from "solid-js/web";
 import {
   EditCharacterProvider,
   loadChars,
@@ -34,6 +41,11 @@ export const HudView: Component = () => {
     return apd.notification().msg;
   });
 
+  const usercolor = createMemo(() => {
+    if (!apd) return "#fff";
+    return apd.sessionData().color;
+  });
+
   return (
     <EditCharacterProvider>
       <div class={HudRootStyle}>
@@ -42,6 +54,17 @@ export const HudView: Component = () => {
             <Texte color="blue" style={{ "align-self": "center" }}>
               Cyber RPG
             </Texte>
+            <Show when={apd?.sessionData().username !== "Noname"}>
+              <Dynamic
+                component={"Texte"}
+                style={{
+                  "align-self": "center",
+                  color: `${usercolor()}`,
+                }}
+              >
+                {apd?.sessionData().username}
+              </Dynamic>
+            </Show>
             <Flex vcenter>
               <Texte
                 color="pink"
