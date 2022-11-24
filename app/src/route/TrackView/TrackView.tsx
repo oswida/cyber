@@ -41,7 +41,6 @@ export const TrackView: Component = () => {
     if (!apd) return;
     const item = emptyTrackInfo(true);
     const newState = { ...apd.trackData(), [item.id]: item };
-    console.log(newState);
 
     apd.setTrackData(newState);
     saveGenericData(apd, inodTrackKey, newState);

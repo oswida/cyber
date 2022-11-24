@@ -2,6 +2,7 @@ import { DiceRoll } from "@dice-roller/rpg-dice-roller";
 import { useI18n } from "@solid-primitives/i18n";
 import { Component, For } from "solid-js";
 import {
+  currentMqttClient,
   inodRollsKey,
   mqttPublish,
   prettyNow,
@@ -82,6 +83,7 @@ export const DiceView: Component = () => {
         saveGenericData(apd, inodRollsKey, newState);
         cb();
         const client = apd.mqttClient();
+        console.log("sending roll", client?.isConnected());
         if (!client) return;
         mqttPublish(apd.sessionData().browserID, client, topicRoll, [newEntry]);
       }

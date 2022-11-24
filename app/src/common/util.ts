@@ -7,19 +7,6 @@ import {
   decompressFromBase64,
 } from "@eonasdan/lz-string";
 
-export const loadTranslation = async (lang: string, filename?: string) => {
-  var name = `../locales/${lang}/${lang}.json`;
-  if (filename && filename.trim() !== "") {
-    name = `../locales/${lang}/${filename}.json`;
-  }
-  const messages = await import(/* @vite-ignore */ name);
-  const result: Record<string, string> = {};
-  Object.keys(messages).forEach((it) => {
-    result[it] = messages[it];
-  });
-  return result;
-};
-
 export const extractQueryParam = (name: string) => {
   const re = new RegExp(`.*(${name}=[a-zA-Z]+).*`, "i");
   const res = window.location.href.match(re);
@@ -116,10 +103,8 @@ export const notify = (apd: AppDataType, msg: string, delay: number) => {
     msg: msg,
     delay: delay,
   });
-  console.log("nitification om");
-  setTimeout(() => {
-    console.log("nitification off");
 
+  setTimeout(() => {
     apd.setNotification({ msg: "", delay: 0 });
   }, delay);
 };

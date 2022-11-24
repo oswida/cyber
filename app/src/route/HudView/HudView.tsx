@@ -1,6 +1,6 @@
 import { useI18n } from "@solid-primitives/i18n";
 import { FaSolidGears } from "solid-icons/fa";
-import { Component, createMemo, createSignal } from "solid-js";
+import { Component, createEffect, createMemo, createSignal } from "solid-js";
 import {
   EditCharacterProvider,
   loadChars,
@@ -21,16 +21,16 @@ export const HudView: Component = () => {
   const [t] = useI18n();
   const [configOpen, setConfigOpen] = createSignal(false);
 
+  mqttConnect(apd);
+
   loadRolls(apd);
   loadNotes(apd, false);
   loadNotes(apd, true);
   loadChars(apd);
   loadTracks(apd);
-  mqttConnect(apd);
 
   const notification = createMemo(() => {
     if (!apd) return "";
-    console.log("create Memo notification", apd.notification().msg);
     return apd.notification().msg;
   });
 

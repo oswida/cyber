@@ -6,7 +6,6 @@ import {
   importData,
   inodGenCorporationKey,
   loadGenCorporations,
-  loadTranslation,
   prettyToday,
   saveGenericData,
   setCorporationData,
@@ -23,14 +22,22 @@ import {
 import { For, Match, Switch } from "solid-js";
 import { GenCard } from "./GenCard";
 import { deleteCorpo, generateCorpo } from "~/actions";
+import { messages_corporation_en } from "~/locales/en/corporation";
+import { messages_corporation_pl } from "~/locales/pl/corporation";
 
 export const GenView = () => {
   const [t, { add, locale }] = useI18n();
   const apd = useAppData();
 
-  loadTranslation(locale(), "corporation").then((data) => {
-    add(locale(), data);
-  });
+  const corporation_dicts: Record<string, any> = {
+    en: messages_corporation_en,
+    pl: messages_corporation_pl,
+  };
+
+  let currLocale = locale();
+  if (!currLocale) currLocale = "en";
+  add(currLocale, corporation_dicts[currLocale]);
+
   loadGenCorporations();
 
   const generate = () => {

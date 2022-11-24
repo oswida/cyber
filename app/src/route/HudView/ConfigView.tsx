@@ -4,7 +4,10 @@ import {
   Component,
   createEffect,
   createMemo,
+  Match,
   Setter,
+  Show,
+  Switch,
 } from "solid-js";
 import { inodSessionKey, saveGenericData, useAppData } from "~/common";
 import { Button, Dialog, Flex, Input, Texte } from "~/component";
@@ -44,11 +47,15 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
     setOpen(false);
   };
 
-  const netMode = createMemo(() => {
-    if (!apd) return "";
-    if (apd.sessionData().hosting) return t("Host");
-    return t("Client");
+  const isHost = createMemo(() => {
+    if (!apd) return false;
+    return apd.sessionData().hosting;
   });
+
+  const switchHosting = () => {
+    if (!apd) return;
+    apd.setSessionData((prev) => ({ ...prev, hosting: !prev.hosting }));
+  };
 
   return (
     <Dialog
@@ -84,35 +91,52 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
         </Flex>
         <Texte color="pink">{t("Network_connection")}</Texte>
         <Texte size="small" style={{ "max-width": "80em" }}>
-          If you have an access to some NATS server, you can share dice rolls
-          and board notes with other users. Please select 'Host' or 'Client'
-          mode below. <br />
-          In 'Host' mode, you need only a NATS server address, for 'Client'
-          there should be also an ID of the hosting browser provided
+          If you have an access to some MQTT server with Websockets, you can
+          share dice rolls and board notes with other users. Please select
+          'Host' or 'Client' mode below. <br />
+          In 'Host' mode, you need only a MQTT server address and credentials
+          (if needed), for 'Client' there should be also provided an ID of the
+          hosting browser.
+          <br />
         </Texte>
-        <Button>{netMode()}</Button>
+        <Switch>
+          <Match when={isHost()}>
+            <Button color="filled" onClick={switchHosting}>
+              {t("Host")}
+            </Button>
+          </Match>
+          <Match when={!isHost()}>
+            <Button onClick={switchHosting}>{t("Client")}</Button>
+          </Match>
+        </Switch>
+
         <Flex type="column" style={{ "align-items": "end" }}>
           <Flex vcenter>
-            <Texte>NATS Server</Texte>
-            <Input ref={(el) => (natsRef = el)} style={{ width: "20em" }} />
-          </Flex>
-          <Flex vcenter>
-            <Texte>
-              NATS Auth Token
-              <br />
-              (if needed)
-            </Texte>
+            <Texte>Server address</Texte>
             <Input
-              ref={(el) => (natsTokenRef = el)}
+              ref={(el) => (natsRef = el)}
               style={{ width: "20em" }}
+              placeholder="ex. ws://hostname:port"
             />
           </Flex>
           <Flex vcenter>
-            <Texte>
-              Remote host Browser ID <br /> (if client mode)
-            </Texte>
-            <Input ref={(el) => (remoteRef = el)} style={{ width: "20em" }} />
+            <Texte>Credentials</Texte>
+            <Input
+              ref={(el) => (natsTokenRef = el)}
+              style={{ width: "20em" }}
+              placeholder="username:password"
+            />
           </Flex>
+          <Show when={!isHost()}>
+            <Flex vcenter>
+              <Texte>Remote host Browser ID</Texte>
+              <Input
+                ref={(el) => (remoteRef = el)}
+                style={{ width: "20em" }}
+                placeholder="ex. 854a051c-7869-4698-9dfa-4feccb748ce4"
+              />
+            </Flex>
+          </Show>
         </Flex>
         <Button onClick={save}>{t("Save")}</Button>
       </Flex>

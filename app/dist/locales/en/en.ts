@@ -1,4 +1,4 @@
-{
+export const messages_en = {
   "Corporation": "Corporation",
   "Infosphere_node": "Infosphere node",
   "NPC": "NPC",
