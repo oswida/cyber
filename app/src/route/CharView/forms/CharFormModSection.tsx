@@ -7,7 +7,7 @@ import {
   FaSolidPlus,
   FaSolidRotate,
 } from "solid-icons/fa";
-import { createSignal, For, Match, Switch } from "solid-js";
+import { createSignal, For, Match, Show, Switch } from "solid-js";
 import { newCharMod } from "~/actions/character";
 import { runtimeColors, useEditCharacter } from "~/common";
 import { Button, Flex, Input, Texte } from "~/component";
@@ -246,34 +246,36 @@ export const CharFormModSection = ({ isDeck }: { isDeck: boolean }) => {
                     underline="blue"
                     value={it.description}
                   />
-                  <Switch>
-                    <Match when={it.activated === true}>
-                      <Button
-                        border="none"
-                        onClick={() => toggleActivated(idx(), false)}
-                      >
-                        <FaSolidBoltLightning
-                          style={{
-                            cursor: "pointer",
-                            fill: runtimeColors.pink,
-                          }}
-                        />
-                      </Button>
-                    </Match>
-                    <Match when={it.activated === false}>
-                      <Button
-                        border="none"
-                        onClick={() => toggleActivated(idx(), true)}
-                      >
-                        <FaSolidPlay
-                          style={{
-                            cursor: "pointer",
-                            fill: runtimeColors.green,
-                          }}
-                        />
-                      </Button>
-                    </Match>
-                  </Switch>
+                  <Show when={it.need_activation === true}>
+                    <Switch>
+                      <Match when={it.activated === true}>
+                        <Button
+                          border="none"
+                          onClick={() => toggleActivated(idx(), false)}
+                        >
+                          <FaSolidBoltLightning
+                            style={{
+                              cursor: "pointer",
+                              fill: runtimeColors.pink,
+                            }}
+                          />
+                        </Button>
+                      </Match>
+                      <Match when={it.activated === false}>
+                        <Button
+                          border="none"
+                          onClick={() => toggleActivated(idx(), true)}
+                        >
+                          <FaSolidPlay
+                            style={{
+                              cursor: "pointer",
+                              fill: runtimeColors.green,
+                            }}
+                          />
+                        </Button>
+                      </Match>
+                    </Switch>
+                  </Show>
                 </Flex>
               </div>
             </Flex>

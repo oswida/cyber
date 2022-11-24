@@ -17,9 +17,11 @@ import {
 } from "solid-js";
 import { createNote, deleteBoard, deleteNote } from "~/actions/note";
 import {
+  exportData,
   inodBoardKey,
   inodNotesKey,
   NoteInfo,
+  prettyToday,
   saveGenericData,
   useAppData,
 } from "~/common";
@@ -109,7 +111,15 @@ export const NoteView: Component<Props> = ({ isShared }) => {
       .sort((a, b) => a.title.localeCompare(b.title));
   });
 
-  const exportNotes = () => {};
+  const exportNotes = () => {
+    if (isShared) {
+      const filename = `board-${prettyToday()}.json`;
+      exportData(apd?.boardData(), filename);
+    } else {
+      const filename = `notes-${prettyToday()}.json`;
+      exportData(apd?.noteData(), filename);
+    }
+  };
 
   const importNotes = () => {};
 

@@ -40,7 +40,7 @@ export const Input = ({
           value={value}
         />
       </Match>
-      <Match when={!value}>
+      <Match when={value === undefined}>
         <input
           class={InputStyle({
             center: center,
