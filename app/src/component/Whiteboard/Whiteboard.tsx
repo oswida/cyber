@@ -1,72 +1,171 @@
+import { Component, createEffect, createSignal } from "solid-js";
+import { WhiteboardRootStyle, WhiteboardToolsStyle } from "./styles.css";
 import { fabric } from "fabric";
-import { useAtomValue } from "jotai";
-import { useEffect, useRef, useState } from "react";
-import { stateDrawCache, styled } from "~/common";
-import { useStorage } from "~/common/storage";
+import {
+  exportData,
+  importData,
+  inodDrawKey,
+  loadDraw,
+  prettyToday,
+  runtimeColors,
+  saveGenericData,
+  themeVars,
+  useAppData,
+} from "~/common";
 import { Flex } from "../Flex";
-import { DrawTools } from "./DrawTools";
-import { WhiteboardState } from "./types";
-import { useCanvas } from "./useCanvas";
+import { Button } from "../Button";
+import {
+  FaRegularCircle,
+  FaRegularSquare,
+  FaSolid1,
+  FaSolid2,
+  FaSolid3,
+  FaSolid4,
+  FaSolidArrowPointer,
+  FaSolidEraser,
+  FaSolidFileExport,
+  FaSolidFileImport,
+  FaSolidFont,
+  FaSolidLinesLeaning,
+  FaSolidPencil,
+  FaSolidShare,
+  FaSolidShareNodes,
+  FaSolidTrash,
+} from "solid-icons/fa";
+import { clearCanvas, initCanvas } from "./canvas";
+import { ColorSwitchButton, SizeSwitchButton, ToolSwitchButton } from "./Tools";
+import { useI18n } from "@solid-primitives/i18n";
 
-const Root = styled("div", {
-  backgroundColor: "$background",
-  width: "calc(100% - 0px)",
-  height: "calc(100% - 40px)",
-  overflow: "auto",
-});
-
-export const Whiteboard = () => {
-  const canvasRef = useRef<fabric.Canvas | null>(null);
-  const boardRef = useRef<HTMLDivElement>(null);
-  const [wbState, setWbState] = useState<WhiteboardState>({
-    brush: "white",
-    fill: "transparent",
-    tool: "pencil",
-    width: 1,
-  });
-  const { initCanvas, switchTool, clearCanvas, canvasJson, canvasFromJson } =
-    useCanvas(canvasRef, wbState, setWbState);
-  const { loadDraw, saveDraw } = useStorage();
-  const drawCache = useAtomValue(stateDrawCache);
+export const Whiteboard: Component = () => {
+  let [canvasElement, setCanvasElement] = createSignal<HTMLCanvasElement>();
+  let [canvas, setCanvas] = createSignal<fabric.Canvas>();
+  const [t] = useI18n();
+  const apd = useAppData();
 
   const save = (e: any) => {
-    if (!canvasRef.current) return;
-    saveDraw(canvasRef.current.toJSON());
+    const cnv = canvas();
+    if (!cnv) return;
+    saveGenericData(apd, inodDrawKey, cnv.toJSON());
   };
 
-  useEffect(() => {
-    if (!boardRef.current || canvasRef.current) return;
-    canvasRef.current = initCanvas(1920, 1080);
+  createEffect(() => {
+    if (!canvasElement()) return;
+    const cnv = initCanvas("whiteboardCanvas", 1920, 1080);
+    setCanvas(cnv);
     const data = loadDraw();
-    if (data) {
-      canvasRef.current.loadFromJSON(data, () => {});
-    }
-    canvasRef.current.on("object:added", save);
-    canvasRef.current.on("object:modified", save);
-    canvasRef.current.on("object:removed", save);
-    canvasRef.current.on("canvas:cleared", save);
-    switchTool("pencil");
-  }, [canvasRef]);
 
-  useEffect(() => {
-    if (!canvasRef.current || !drawCache) return;
-    canvasFromJson(drawCache);
-    saveDraw(drawCache);
-  }, [drawCache]);
+    cnv.loadFromJSON(data, () => {});
+    cnv.on("object:added", save);
+    cnv.on("object:modified", save);
+    cnv.on("object:removed", save);
+    cnv.on("canvas:cleared", save);
+  });
+
+  createEffect(() => {
+    const data = apd?.drawCache();
+    const cnv = canvas();
+    if (!data || Object.keys(data).length == 0 || !cnv) return;
+    cnv.loadFromJSON(data, () => {});
+    saveGenericData(apd, inodDrawKey, data);
+  });
+
+  const importImage = () => {
+    importData(async (data: any) => {
+      canvas()?.loadFromJSON(data, () => {});
+    });
+  };
+
+  const exp = () => {
+    const data = canvas()?.toJSON();
+    const filename = `draw-${prettyToday()}.json`;
+    exportData(data, filename);
+  };
+
+  const share = () => {
+    //TODO:
+    // const data = canvasJson();
+    // publish(nats.connection, topicDraw, { data: data });
+    // notify("Image published", 3000);
+  };
 
   return (
-    <Flex direction="column" style={{ height: "100%", width: "100%" }}>
-      <DrawTools
-        wbState={wbState}
-        setWbState={setWbState}
-        switchTool={switchTool}
-        clearCanvas={clearCanvas}
-        canvasJson={canvasJson}
-        canvasFromJson={canvasFromJson}
-      />
-      <Root ref={boardRef}>
-        <canvas id="whiteboardCanvas" />
-      </Root>
+    <Flex type="column">
+      <div class={WhiteboardToolsStyle}>
+        <Flex>
+          <ToolSwitchButton canvas={canvas} tool="select" title={t("Select")}>
+            <FaSolidArrowPointer />
+          </ToolSwitchButton>
+          <ToolSwitchButton canvas={canvas} tool="pencil">
+            <FaSolidPencil title="Pencil" />
+          </ToolSwitchButton>
+          <ToolSwitchButton canvas={canvas} tool="line">
+            <FaSolidLinesLeaning title="Line" />
+          </ToolSwitchButton>
+          <ToolSwitchButton canvas={canvas} tool="rect">
+            <FaRegularSquare title="Rect" />
+          </ToolSwitchButton>
+          <ToolSwitchButton canvas={canvas} tool="circle">
+            <FaRegularCircle title="Circle" />
+          </ToolSwitchButton>
+          <ToolSwitchButton canvas={canvas} tool="text">
+            <FaSolidFont title="Text" />
+          </ToolSwitchButton>
+          <ToolSwitchButton canvas={canvas} tool="eraser">
+            <FaSolidEraser title="Eraser" />
+          </ToolSwitchButton>
+          <Button
+            onClick={() => clearCanvas(canvas())}
+            style={{ "margin-left": "20px" }}
+          >
+            <FaSolidTrash title="Clear" />
+          </Button>
+        </Flex>
+
+        <Flex>
+          <ColorSwitchButton color="white" />
+          <ColorSwitchButton color={runtimeColors.blue} />
+          <ColorSwitchButton color={runtimeColors.yellow} />
+          <ColorSwitchButton color={runtimeColors.green} />
+          <ColorSwitchButton color={runtimeColors.pink} />
+        </Flex>
+
+        <Flex>
+          <SizeSwitchButton index={0}>
+            <FaSolid1 />
+          </SizeSwitchButton>
+          <SizeSwitchButton index={1}>
+            <FaSolid2 />
+          </SizeSwitchButton>
+          <SizeSwitchButton index={2}>
+            <FaSolid3 />
+          </SizeSwitchButton>
+          <SizeSwitchButton index={3}>
+            <FaSolid4 />
+          </SizeSwitchButton>
+        </Flex>
+
+        <Flex>
+          <Button onClick={share} border="none" title={t("Share")}>
+            <FaSolidShareNodes />
+          </Button>
+          <Button onClick={importImage} border="none" title={t("Import")}>
+            <FaSolidFileImport />
+          </Button>
+          <Button onClick={exp} border="none" title={t("Export")}>
+            <FaSolidFileExport />
+          </Button>
+        </Flex>
+      </div>
+      <div class={WhiteboardRootStyle}>
+        <canvas
+          id="whiteboardCanvas"
+          width={1920}
+          height={1080}
+          ref={(el) => {
+            setCanvasElement(el);
+          }}
+        />
+      </div>
     </Flex>
   );
 };

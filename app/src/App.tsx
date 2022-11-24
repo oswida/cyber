@@ -1,87 +1,41 @@
-import { i18n } from "@lingui/core";
-import { I18nProvider } from "@lingui/react";
-import { useAtom, useAtomValue } from "jotai";
-import { useEffect } from "react";
-import { HashRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
-import { language, stateNats, stateSessionData, useNats } from "./common";
-import { useStorage } from "./common/storage";
+import { Route, Routes } from "@solidjs/router";
+import type { Component, ParentProps } from "solid-js";
+import { appStyle } from "./app.css";
+import {
+  AppDataProvider,
+  loadSessionData,
+  themeClass,
+  updateStoreSize,
+  useAppData,
+} from "./common";
+import { GenView } from "./route/GenView";
+import { HudView } from "./route/HudView";
+import { Trans } from "./route/Trans";
 
-import { Connect } from "./routes/Connect";
-import { CorpoGen } from "./routes/CorpoGen";
-import { HudLayout } from "./routes/HudLayout";
-import { JobGen } from "./routes/JobGen";
-import { NodeGen } from "./routes/NodeGen";
-import { NpcGen } from "./routes/NpcGen";
-import { PlaceGen } from "./routes/PlaceGen";
-
-window.global ||= window;
-
-i18n.activate("en");
-
-function App() {
-  const [lang, setLang] = useAtom(language);
-  const sessionData = useAtomValue(stateSessionData);
-  const { connectNats } = useNats();
-  const nats = useAtomValue(stateNats);
-  const {
-    loadSessionData,
-    updateStoreSize,
-    loadGen,
-    loadBoardNotes,
-    loadPrivateNotes,
-    loadPlayers,
-    loadRolls,
-  } = useStorage();
-
-  useEffect(() => {
-    const re = new RegExp(".*(lang=[a-zA-Z]+).*", "i");
-    const res = window.location.href.match(re);
-    if (res && res[1]) {
-      const l = res[1].replace("lang=", "").trim();
-      if (l != "") {
-        setLang(l);
-      }
-    }
-    loadSessionData();
-    loadGen();
-    loadBoardNotes();
-    loadPrivateNotes();
-    loadPlayers();
-    loadRolls();
-
-    updateStoreSize();
-  }, []);
-
-  useEffect(() => {
-    if (nats.connection === null) {
-      connectNats(sessionData);
-    }
-  }, [sessionData]);
-
-  useEffect(() => {
-    import(`./i18n/locales/${lang}/messages.ts`).then(({ messages }) => {
-      i18n.load(lang, messages);
-      i18n.activate(lang);
-    });
-  }, [lang]);
+const Main: Component<ParentProps> = ({ children }) => {
+  const appData = useAppData();
+  loadSessionData(appData);
+  updateStoreSize(appData);
 
   return (
-    <I18nProvider i18n={i18n}>
-      <HashRouter>
-        {/*  */}
-        <Routes>
-          <Route path="/" element={<HudLayout />}></Route>
-          <Route path="/corpo" element={<CorpoGen />}></Route>
-          <Route path="/npc" element={<NpcGen />}></Route>
-          <Route path="/node" element={<NodeGen />}></Route>
-          <Route path="/place" element={<PlaceGen />}></Route>
-          <Route path="/job" element={<JobGen />}></Route>
-          <Route path="/connect" element={<Connect />}></Route>
-        </Routes>
-      </HashRouter>
-    </I18nProvider>
+    <div class={themeClass}>
+      <div class={appStyle}>{children}</div>
+    </div>
   );
-}
+};
+
+const App: Component = () => {
+  return (
+    <AppDataProvider>
+      <Main>
+        <Routes>
+          <Route path="/" component={HudView} />
+          <Route path="/gen" component={GenView} />
+          <Route path="/trans" component={Trans} />
+        </Routes>
+      </Main>
+    </AppDataProvider>
+  );
+};
 
 export default App;

@@ -1,32 +1,35 @@
-import { styled } from "@stitches/react";
+import { ComponentProps } from "solid-js";
+import { FlexStyle } from "./styles.css";
 
-export const Flex = styled("div", {
-  display: "flex",
-  gap: 5,
+type Props = {
+  type?: "column" | "row";
+  center?: boolean;
+  vcenter?: boolean;
+  scrolled?: boolean;
+};
 
-  variants: {
-    direction: {
-      row: {
-        flexDirection: "row",
-      },
-      column: {
-        flexDirection: "column",
-      },
-    },
-    center: {
-      true: {
-        justifyContent: "center",
-        alignItems: "center",
-      },
-    },
-    scrolled: {
-      true: {
-        overflow: "auto",
-      },
-    },
-  },
-  defaultVariants: {
-    direction: "row",
-    center: false,
-  },
-});
+export const Flex = ({
+  children,
+  type,
+  center,
+  vcenter,
+
+  scrolled,
+  style,
+  title,
+}: ComponentProps<"div"> & Props) => {
+  return (
+    <div
+      class={FlexStyle({
+        type: type,
+        center: center,
+        vcenter: vcenter,
+        scrolled: scrolled,
+      })}
+      style={style}
+      title={title}
+    >
+      {children}
+    </div>
+  );
+};

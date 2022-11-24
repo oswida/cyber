@@ -1,25 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["vite/client","vite/node"],
     "noEmit": true,
-    "jsx": "react-jsx",
+    "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"]
     }
-  },
-  "include": ["src", "nats.js"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  }
 }

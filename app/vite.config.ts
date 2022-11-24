@@ -1,17 +1,17 @@
-import react from "@vitejs/plugin-react";
-import { resolve } from "path";
 import { defineConfig } from "vite";
+import solidPlugin from "vite-plugin-solid";
+import { resolve } from "path";
+import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   base: "https://oswida.github.io/cyber/app/dist/",
-  plugins: [
-    react({
-      babel: {
-        plugins: ["babel-plugin-macros"],
-      },
-    }),
-  ],
+  plugins: [vanillaExtractPlugin(), solidPlugin()],
+  server: {
+    port: 3000,
+  },
+  build: {
+    target: "esnext",
+  },
   resolve: {
     alias: {
       "~": resolve(__dirname, "src"),

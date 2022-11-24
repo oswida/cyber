@@ -1,195 +1,99 @@
-import { compress, decompress } from "@eonasdan/lz-string";
-import { useAtom } from "jotai";
-import { TileBranchSubstance } from "react-tile-pane";
-import { v4 as uuidv4 } from "uuid";
-import { RollHistoryEntry } from "~/common";
-import {
-  GenStateType,
-  initialSessionData,
-  stateBoardNotes,
-  stateGenerator,
-  statePlayers,
-  statePrivateNotes,
-  stateRollHistory,
-  stateSessionData,
-  stateStorageSize,
-} from "./state";
-import { Note, PcInfo, SessionInfo } from "./types";
+import { setCorporationData } from "~/common";
+import { emptySessionInfo, SessionInfo } from "./types";
+import { compressData, decompressData } from "./util";
 
-export const inodLayoutKey = "inod-hud-layout";
-export const inodSessionKey = "inod-session";
-export const inodNotesKey = "inod-notes";
-export const inodBoardKey = "inod-board";
-export const inodGenKey = "inod-gen";
-export const inodPlayersKey = "inod-players";
-export const inodRollsKey = "inod-rolls";
-export const inodDrawKey = "inod-draw";
+export const inodSessionKey = "inod-session2";
+export const inodNotesKey = "inod-notes2";
+export const inodBoardKey = "inod-board2";
+export const inodGenCorporationKey = "inod-gen-corporation2";
+export const inodPlayersKey = "inod-players2";
+export const inodRollsKey = "inod-rolls2";
+export const inodDrawKey = "inod-draw2";
+export const inodTrackKey = "inod-track2";
 
-export const useStorage = () => {
-  const [, setSessionData] = useAtom(stateSessionData);
-  const [boardNotes, setBoardNotes] = useAtom(stateBoardNotes);
-  const [privNotes, setPrivNotes] = useAtom(statePrivateNotes);
-  const [, setStoreSize] = useAtom(stateStorageSize);
-  const [gen, setGen] = useAtom(stateGenerator);
-  const [players, setPlayers] = useAtom(statePlayers);
-  const [rollHistory, setRollHistory] = useAtom(stateRollHistory);
+export const loadSessionData = (appData: any) => {
+  if (!appData) return;
+  const sessionData = localStorage.getItem(inodSessionKey);
+  if (!sessionData) {
+    const sd = emptySessionInfo();
+    localStorage.setItem(inodSessionKey, compressData(sd));
+    appData.setSessionData(sd);
+  } else {
+    const dd = decompressData(sessionData);
+    if (!dd.lang) dd.lang = "en";
+    if (!dd.color) dd.color = "#ffffff";
+    appData.setSessionData(dd);
+  }
+};
 
-  const comp = (data: any) => {
-    return compress(JSON.stringify(data));
-  };
+export const saveSessionData = (appData: any, value: SessionInfo) => {
+  localStorage.setItem(inodSessionKey, compressData(value));
+  updateStoreSize(appData);
+};
 
-  const decomp = (data: any) => {
-    return JSON.parse(decompress(data));
-  };
+export const saveGenericData = (appData: any, key: string, data: any) => {
+  localStorage.setItem(key, compressData(data));
+  updateStoreSize(appData);
+};
 
-  const loadSessionData = () => {
-    const sessionData = localStorage.getItem(inodSessionKey);
-    if (!sessionData) {
-      const sd = initialSessionData;
-      sd.browserID = uuidv4();
-      localStorage.setItem(inodSessionKey, comp(sd));
-      setSessionData(sd);
-    } else {
-      const dd = decomp(sessionData);
-      if (!dd.lang) dd.lang = "en";
-      if (!dd.color) dd.color = "#ffffff";
-      setSessionData(dd);
-    }
-  };
+export const loadGenCorporations = () => {
+  const data = localStorage.getItem(inodGenCorporationKey);
+  if (!data) return;
+  const dd = decompressData(data);
+  setCorporationData(dd);
+};
 
-  const saveSessionData = (value: SessionInfo) => {
-    localStorage.setItem(inodSessionKey, comp(value));
-    updateStoreSize();
-  };
+export const loadRolls = (appData: any) => {
+  const data = localStorage.getItem(inodRollsKey);
+  if (!data) return;
+  const dd = decompressData(data);
+  appData.setRollHistory(dd);
+};
 
-  const loadBoardNotes = () => {
-    const data = localStorage.getItem(inodBoardKey);
-    if (data && data !== "") {
-      setBoardNotes(decomp(data));
-    }
-  };
+export const loadNotes = (appData: any, isShared: boolean) => {
+  const data = localStorage.getItem(isShared ? inodNotesKey : inodBoardKey);
+  if (!data) return;
+  const dd = decompressData(data);
+  if (isShared) appData.setBoardData(dd);
+  else appData.setNoteData(dd);
+};
 
-  const saveBoardNotes = (state: Record<string, Note | undefined>) => {
-    localStorage.setItem(inodBoardKey, comp(state));
-    updateStoreSize();
-  };
+export const loadTracks = (appData: any) => {
+  const data = localStorage.getItem(inodTrackKey);
+  if (!data) return;
+  const dd = decompressData(data);
+  appData.setTrackData(dd);
+};
 
-  const loadPrivateNotes = () => {
-    const data = localStorage.getItem(inodNotesKey);
-    if (data && data !== "") {
-      setPrivNotes(decomp(data));
-    }
-  };
+export const loadDraw = () => {
+  const data = localStorage.getItem(inodDrawKey);
+  if (!data) return {};
+  const dd = decompressData(data);
+  return dd;
+};
 
-  const savePrivateNotes = (state: Record<string, Note | undefined>) => {
-    localStorage.setItem(inodNotesKey, comp(state));
-    updateStoreSize();
-  };
+export const loadChars = (appData: any) => {
+  const data = localStorage.getItem(inodPlayersKey);
+  const dd = decompressData(data);
+  appData.setCharData(dd);
+};
 
-  const saveLayout = (root: any) => {
-    localStorage.setItem(inodLayoutKey, comp(root));
-    updateStoreSize();
-  };
-
-  const clearLayout = () => {
-    localStorage.removeItem(inodLayoutKey);
-  };
-
-  const loadLayout = () => {
-    const data = localStorage.getItem(inodLayoutKey);
-    return decomp(data) as TileBranchSubstance;
-  };
-
-  const loadGen = () => {
-    const data = localStorage.getItem(inodGenKey);
-    if (!data) return;
-    const item = decomp(data);
-    setGen(item);
-  };
-
-  const saveGen = (state: GenStateType) => {
-    localStorage.setItem(inodGenKey, comp(state));
-    updateStoreSize();
-  };
-
-  const loadPlayers = () => {
-    const data = localStorage.getItem(inodPlayersKey);
-    if (data && data !== "") {
-      setPlayers(decomp(data));
-    }
-  };
-
-  const savePlayers = (state: Record<string, PcInfo | undefined>) => {
-    localStorage.setItem(inodPlayersKey, comp(state));
-    updateStoreSize();
-  };
-
-  const loadRolls = () => {
-    const data = localStorage.getItem(inodRollsKey);
-    if (data && data !== "") {
-      const d = decomp(data);
-      if (Array.isArray(d)) setRollHistory(d);
-      else setRollHistory([]);
-    }
-  };
-
-  const saveRolls = (state: RollHistoryEntry[]) => {
-    localStorage.setItem(inodRollsKey, comp(state));
-    updateStoreSize();
-  };
-
-  const saveDraw = (state: any) => {
-    localStorage.setItem(inodDrawKey, comp(state));
-    updateStoreSize();
-  };
-
-  const loadDraw = () => {
-    const data = localStorage.getItem(inodDrawKey);
-    if (data && data !== "") {
-      const d = decomp(data);
-      return d;
-    }
-    return "";
-  };
-
-  const updateStoreSize = () => {
-    let size = 0;
-    const keys = [
-      inodLayoutKey,
-      inodSessionKey,
-      inodNotesKey,
-      inodBoardKey,
-      inodGenKey,
-      inodPlayersKey,
-      inodRollsKey,
-      inodDrawKey,
-    ];
-    keys.forEach((k) => {
-      const data = localStorage.getItem(k);
-      size += data ? data.length : 0;
-    });
-    setStoreSize(size);
-    return size;
-  };
-
-  return {
-    loadSessionData,
-    saveSessionData,
-    loadBoardNotes,
-    loadPrivateNotes,
-    saveBoardNotes,
-    savePrivateNotes,
-    saveLayout,
-    loadLayout,
-    clearLayout,
-    updateStoreSize,
-    loadGen,
-    saveGen,
-    loadPlayers,
-    savePlayers,
-    loadRolls,
-    saveRolls,
-    saveDraw,
-    loadDraw,
-  };
+export const updateStoreSize = (appData: any) => {
+  let size = 0;
+  const keys = [
+    inodSessionKey,
+    inodNotesKey,
+    inodBoardKey,
+    inodGenCorporationKey,
+    inodPlayersKey,
+    inodRollsKey,
+    inodDrawKey,
+    inodTrackKey,
+  ];
+  keys.forEach((k) => {
+    const data = localStorage.getItem(k);
+    size += data ? data.length : 0;
+  });
+  appData.setStorageSize(size);
+  return size;
 };

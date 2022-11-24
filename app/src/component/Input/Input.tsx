@@ -1,40 +1,60 @@
-import { styled } from "~/common";
+import { ComponentProps, Match, Switch } from "solid-js";
+import { InputStyle } from "./styles.css";
 
-export const Input = styled("input", {
-  "-moz-appearance": "textfield",
-  appearance: "textfield",
-  "& .-webkit-outer-spin-button": {
-    "-webkit-appearance": "none",
-    margin: 0,
-  },
-  fontFamily: "Oxanium !important",
-  background: "$background",
-  color: "$fontPrimary",
-  outline: "none",
-  border: "none",
-  fontSize: "$3",
-  padding: 3,
-  "&[disabled]": {
-    opacity: 0.3,
-  },
-  variants: {
-    small: {
-      true: {
-        fontSize: "$2",
-      },
-    },
-    border: {
-      none: {
-        border: "none",
-      },
-      down: {
-        borderBottom: "solid 1px $darkblue",
-      },
-    },
-    center: {
-      true: {
-        textAlign: "center",
-      },
-    },
-  },
-});
+type Props = {
+  underline?: boolean | "blue";
+  center?: boolean;
+  small?: boolean;
+  middle?: boolean;
+};
+
+export const Input = ({
+  underline,
+  center,
+  title,
+  style,
+  ref,
+  placeholder,
+  small,
+  onChange,
+  onInput,
+  value,
+  middle,
+}: ComponentProps<"input"> & Props) => {
+  return (
+    <Switch>
+      <Match when={value}>
+        <input
+          class={InputStyle({
+            center: center,
+            underline: underline,
+            small: small,
+            middle: middle,
+          })}
+          style={style}
+          title={title}
+          ref={ref}
+          placeholder={placeholder}
+          onChange={onChange}
+          onInput={onInput}
+          value={value}
+        />
+      </Match>
+      <Match when={!value}>
+        <input
+          class={InputStyle({
+            center: center,
+            underline: underline,
+            small: small,
+          })}
+          style={style}
+          title={title}
+          ref={ref}
+          placeholder={placeholder}
+          onChange={onChange}
+          onInput={onInput}
+        />
+      </Match>
+    </Switch>
+  );
+};
