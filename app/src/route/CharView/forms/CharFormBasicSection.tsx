@@ -73,7 +73,7 @@ export const CharFormBasicSection = () => {
           <Input
             ref={(el) => (nameRef = el)}
             style={{ width: "18em" }}
-            onChange={() => change("name")}
+            onBlur={() => change("name")}
           />
         </Flex>
       </Flex>
@@ -84,7 +84,7 @@ export const CharFormBasicSection = () => {
         <Input
           ref={(el) => (bkgRef = el)}
           style={{ width: "18em" }}
-          onChange={() => change("background")}
+          onBlur={() => change("background")}
         />
       </Flex>
       <Flex type="column">
@@ -94,7 +94,7 @@ export const CharFormBasicSection = () => {
         <Input
           ref={(el) => (subRef = el)}
           style={{ width: "12em" }}
-          onChange={() => change("subscription")}
+          onBlur={() => change("subscription")}
         />
       </Flex>
       <Flex type="column">
@@ -104,7 +104,7 @@ export const CharFormBasicSection = () => {
         <Input
           ref={(el) => (creditRef = el)}
           style={{ width: "9em" }}
-          onChange={() => change("credits")}
+          onBlur={() => change("credits")}
         />
       </Flex>
       <Flex type="column">

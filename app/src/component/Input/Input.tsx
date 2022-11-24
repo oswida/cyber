@@ -20,6 +20,7 @@ export const Input = ({
   onInput,
   value,
   middle,
+  onBlur,
 }: ComponentProps<"input"> & Props) => {
   return (
     <Switch>
@@ -36,6 +37,7 @@ export const Input = ({
           ref={ref}
           placeholder={placeholder}
           onChange={onChange}
+          onBlur={onBlur}
           onInput={onInput}
           value={value}
         />
@@ -52,6 +54,7 @@ export const Input = ({
           ref={ref}
           placeholder={placeholder}
           onChange={onChange}
+          onBlur={onBlur}
           onInput={onInput}
         />
       </Match>

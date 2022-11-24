@@ -161,14 +161,14 @@ export const CharFormStatSection = () => {
               ref={(el) => (bioRef1 = el)}
               center
               style={{ width: "2em" }}
-              onChange={() => changeStat("bio", 0)}
+              onBlur={() => changeStat("bio", 0)}
             />
             /
             <Input
               center
               ref={(el) => (bioRef2 = el)}
               style={{ width: "2em" }}
-              onChange={() => changeStat("bio", 1)}
+              onBlur={() => changeStat("bio", 1)}
             />
           </Flex>
         </Flex>
@@ -186,14 +186,14 @@ export const CharFormStatSection = () => {
               ref={(el) => (psyRef1 = el)}
               center
               style={{ width: "2em" }}
-              onChange={() => changeStat("psy", 0)}
+              onBlur={() => changeStat("psy", 0)}
             />
             /
             <Input
               center
               ref={(el) => (psyRef2 = el)}
               style={{ width: "2em" }}
-              onChange={() => changeStat("psy", 1)}
+              onBlur={() => changeStat("psy", 1)}
             />
           </Flex>
         </Flex>
@@ -211,14 +211,14 @@ export const CharFormStatSection = () => {
               ref={(el) => (infRef1 = el)}
               center
               style={{ width: "2em" }}
-              onChange={() => changeStat("inf", 0)}
+              onBlur={() => changeStat("inf", 0)}
             />
             /
             <Input
               center
               ref={(el) => (infRef2 = el)}
               style={{ width: "2em" }}
-              onChange={() => changeStat("inf", 1)}
+              onBlur={() => changeStat("inf", 1)}
             />
           </Flex>
         </Flex>
@@ -236,14 +236,14 @@ export const CharFormStatSection = () => {
               ref={(el) => (hpRef1 = el)}
               center
               style={{ width: "2em" }}
-              onChange={() => changeStat("hp", 0)}
+              onBlur={() => changeStat("hp", 0)}
             />
             /
             <Input
               center
               ref={(el) => (hpRef2 = el)}
               style={{ width: "2em" }}
-              onChange={() => changeStat("hp", 1)}
+              onBlur={() => changeStat("hp", 1)}
             />
           </Flex>
         </Flex>
@@ -261,7 +261,7 @@ export const CharFormStatSection = () => {
               ref={(el) => (armorRef = el)}
               center
               style={{ width: "2em" }}
-              onChange={() => changeStat("armor", 0)}
+              onBlur={() => changeStat("armor", 0)}
             />
           </Flex>
         </Flex>

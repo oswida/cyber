@@ -96,7 +96,7 @@ export const CharFormInventorySection = () => {
                 class={SelectableItemStyle({ selected: selInv() === idx() })}
               >
                 <Input
-                  onChange={change}
+                  onBlur={change}
                   middle
                   style={{ "background-color": "transparent", width: "100%" }}
                   underline="blue"

@@ -34,9 +34,9 @@ export const GenView = () => {
     pl: messages_corporation_pl,
   };
 
-  let currLocale = locale();
-  if (!currLocale) currLocale = "en";
-  add(currLocale, corporation_dicts[currLocale]);
+  Object.keys(corporation_dicts).forEach((key) => {
+    add(key, corporation_dicts[key]);
+  });
 
   loadGenCorporations();
 

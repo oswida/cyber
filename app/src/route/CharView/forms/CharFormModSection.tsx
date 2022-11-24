@@ -201,7 +201,7 @@ export const CharFormModSection = ({ isDeck }: { isDeck: boolean }) => {
               >
                 <Flex style={{ width: "100%" }}>
                   <Input
-                    onChange={changeName}
+                    onBlur={changeName}
                     middle
                     style={{ "background-color": "transparent", width: "100%" }}
                     underline="blue"
@@ -240,7 +240,7 @@ export const CharFormModSection = ({ isDeck }: { isDeck: boolean }) => {
 
                 <Flex style={{ width: "100%" }}>
                   <Input
-                    onChange={changeDesc}
+                    onBlur={changeDesc}
                     middle
                     style={{ "background-color": "transparent", width: "100%" }}
                     underline="blue"
