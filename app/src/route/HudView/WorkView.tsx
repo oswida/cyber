@@ -32,11 +32,11 @@ export const WorkView = () => {
       value: "notes",
       content: <NoteView isShared={false} />,
     },
-    {
-      label: t("Tracker"),
-      value: "tracker",
-      content: <TrackView />,
-    },
+    // {
+    //   label: t("Tracker"),
+    //   value: "tracker",
+    //   content: <TrackView />,
+    // },
   ];
 
   return (

@@ -22,6 +22,7 @@ export const Tabs = ({
 }) => {
   const [state, send] = useMachine(
     tabs.machine({
+      value: items.length > 0 ? items[0].value : undefined,
       id: createUniqueId(),
       onChange: (e: any) => {
         if (onTabChange) onTabChange(e.value);

@@ -1,3 +1,4 @@
+import { debounce } from "@solid-primitives/scheduled";
 import { Component, ComponentProps } from "solid-js";
 import { TextAreaStyle } from "./styles.css";
 
@@ -14,6 +15,7 @@ export const TextArea: Component<ComponentProps<"div"> & Props> = ({
   ref,
   children,
   onBlur,
+  onInput,
 }) => {
   return (
     <div
@@ -22,6 +24,7 @@ export const TextArea: Component<ComponentProps<"div"> & Props> = ({
       contentEditable={contentEditable}
       ref={ref}
       onBlur={onBlur}
+      onInput={onInput}
     >
       {children}
     </div>

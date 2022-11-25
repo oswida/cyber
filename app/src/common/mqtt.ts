@@ -1,5 +1,5 @@
 import { Client, Message } from "paho-mqtt";
-import { createMemo } from "solid-js";
+import { createMemo, createSignal } from "solid-js";
 import { inodRollsKey, saveGenericData } from "~/common";
 import { AppDataType, useAppData } from "./signals";
 import { inodBoardKey, inodPlayersKey } from "./storage";
@@ -22,6 +22,9 @@ export const topicBoard = "TopicBoard";
 export const topicChars = "TopicChars";
 export const topicBoardDelete = "TopicBoardDelete";
 export const topicDraw = "TopicDraw";
+
+export const [mqttConnectionStatus, setMqttConnectionStatus] =
+  createSignal(false);
 
 var options = {
   hostname: "74b475ef8ff348ff821ef7e23aac0509.s2.eu.hivemq.cloud",
@@ -121,7 +124,6 @@ export const mqttProcess = (apd: AppDataType, msg: Message) => {
 
 export const mqttConnect = (apd: AppDataType) => {
   if (!apd) return;
-  console.log("Trying to connect");
 
   const client = new Client(
     options.hostname,
@@ -150,6 +152,7 @@ export const mqttConnect = (apd: AppDataType) => {
           mqttPublish(apd.sessionData().browserID, client, topicConnect, {
             username: apd.sessionData().username,
           } as ConnectionInfo);
+          setMqttConnectionStatus(true);
         },
       });
     },
@@ -161,5 +164,6 @@ export const mqttConnect = (apd: AppDataType) => {
 
   client.onConnectionLost = (msg) => {
     console.log("Connection lost", msg);
+    setMqttConnectionStatus(false);
   };
 };

@@ -1,11 +1,13 @@
 import { useI18n } from "@solid-primitives/i18n";
-import { FaSolidGears } from "solid-icons/fa";
+import { FaSolidGears, FaSolidNetworkWired, FaSolidPlug } from "solid-icons/fa";
 import {
   Component,
   createEffect,
   createMemo,
   createSignal,
+  Match,
   Show,
+  Switch,
 } from "solid-js";
 import { Dynamic } from "solid-js/web";
 import {
@@ -16,7 +18,7 @@ import {
   loadTracks,
   useAppData,
 } from "~/common";
-import { mqttConnect } from "~/common/mqtt";
+import { mqttConnect, mqttConnectionStatus } from "~/common/mqtt";
 import { Button, Flex, Texte } from "~/component";
 import { ConfigView } from "./ConfigView";
 import { DiceView } from "./DiceView";
@@ -51,9 +53,19 @@ export const HudView: Component = () => {
       <div class={HudRootStyle}>
         <Flex type="column">
           <div class={HudNavbarStyle}>
-            <Texte color="blue" style={{ "align-self": "center" }}>
-              Cyber RPG
-            </Texte>
+            <Flex>
+              <Texte
+                color="blue"
+                style={{ "align-self": "center", "margin-right": "10px" }}
+              >
+                Cyber RPG
+              </Texte>
+              <Switch>
+                <Match when={mqttConnectionStatus() === true}>
+                  <FaSolidPlug style={{ "align-self": "center" }} />
+                </Match>
+              </Switch>
+            </Flex>
             <Show when={apd?.sessionData().username !== "Noname"}>
               <Dynamic
                 component={"Texte"}

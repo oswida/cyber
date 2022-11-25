@@ -101,12 +101,20 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
         </Texte>
         <Switch>
           <Match when={isHost()}>
-            <Button color="filled" onClick={switchHosting}>
-              {t("Host")}
-            </Button>
+            <Flex>
+              <Button onClick={switchHosting}>{t("Client")}</Button>
+              <Button color="filled" onClick={switchHosting}>
+                {t("Host")}
+              </Button>
+            </Flex>
           </Match>
           <Match when={!isHost()}>
-            <Button onClick={switchHosting}>{t("Client")}</Button>
+            <Flex>
+              <Button color="filled" onClick={switchHosting}>
+                {t("Client")}
+              </Button>
+              <Button onClick={switchHosting}>{t("Host")}</Button>
+            </Flex>
           </Match>
         </Switch>
 

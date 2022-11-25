@@ -3,8 +3,8 @@ import { style } from "@vanilla-extract/css";
 
 export const WhiteboardRootStyle = style({
   backgroundColor: themeVars.colors.background,
-  width: "calc(100vw - 280px)",
-  height: "calc(100vh - 150px)",
+  width: "calc(100vw - 285px)",
+  height: "calc(100vh - 155px)",
   overflow: "auto",
 });
 
