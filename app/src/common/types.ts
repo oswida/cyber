@@ -11,6 +11,9 @@ export type CorpoInfo = {
 
 export type ConnectionInfo = {
   username: string;
+  count?: number;
+  connected_at?: string;
+  last_seen_at?: string;
 };
 
 export type NodeInfo = {
@@ -102,10 +105,10 @@ export type SessionInfo = {
   color?: string;
 };
 
-export const emptySessionInfo = () => {
+export const emptySessionInfo = (generate?: boolean) => {
   return {
     username: "Noname",
-    browserID: uuidv4(),
+    browserID: generate ? uuidv4() : "",
     hosting: false,
     remote: "",
     nats: "",

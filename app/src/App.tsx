@@ -10,13 +10,10 @@ import {
 } from "./common";
 import { GenView } from "./route/GenView";
 import { HudView } from "./route/HudView";
+import { ConnectView } from "./route/HudView/ConnectView";
 import { Trans } from "./route/Trans";
 
 const Main: Component<ParentProps> = ({ children }) => {
-  const appData = useAppData();
-  loadSessionData(appData);
-  updateStoreSize(appData);
-
   return (
     <div class={themeClass}>
       <div class={appStyle}>{children}</div>
@@ -25,6 +22,9 @@ const Main: Component<ParentProps> = ({ children }) => {
 };
 
 const App: Component = () => {
+  loadSessionData();
+  updateStoreSize();
+
   return (
     <AppDataProvider>
       <Main>
@@ -32,6 +32,7 @@ const App: Component = () => {
           <Route path="/" component={HudView} />
           <Route path="/gen" component={GenView} />
           <Route path="/trans" component={Trans} />
+          <Route path="/connect" component={ConnectView} />
         </Routes>
       </Main>
     </AppDataProvider>

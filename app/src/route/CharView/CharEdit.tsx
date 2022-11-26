@@ -1,14 +1,5 @@
 import { useI18n } from "@solid-primitives/i18n";
-import { createMatcher } from "@solidjs/router/dist/utils";
-import { debounce } from "debounce";
-import {
-  Accessor,
-  Component,
-  createEffect,
-  createMemo,
-  Setter,
-} from "solid-js";
-import { newCharacter } from "~/actions/character";
+import { Accessor, Component, createMemo, Setter } from "solid-js";
 import {
   emptyPcInfo,
   inodPlayersKey,
@@ -17,6 +8,8 @@ import {
   topicChars,
   useAppData,
   useEditCharacter,
+  mqttTopic,
+  sessionData,
 } from "~/common";
 import { Button, Dialog, Flex } from "~/component";
 import { CharFormBasicSection } from "./forms/CharFormBasicSection";
@@ -42,12 +35,12 @@ export const CharEdit: Component<Props> = ({ open, setOpen }) => {
     const newState = { ...apd.charData, [ec.id]: editor.editCharacter() };
     apd.setCharData(newState);
     apd.setSelectedChar(emptyPcInfo);
-    saveGenericData(apd, inodPlayersKey, newState);
+    saveGenericData(inodPlayersKey, newState);
     setOpen(false);
     if (ec.shared) {
       const cl = apd.mqttClient();
       if (cl !== undefined) {
-        mqttPublish(apd.sessionData().browserID, cl, topicChars, [ec]);
+        mqttPublish(sessionData().browserID, cl, mqttTopic(topicChars), [ec]);
       }
     }
   };

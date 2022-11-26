@@ -1,6 +1,8 @@
 import { DiceRoll } from "@dice-roller/rpg-dice-roller";
 import { useI18n } from "@solid-primitives/i18n";
+import { FaSolidTrashCan } from "solid-icons/fa";
 import { Component, For } from "solid-js";
+import { v4 as uuidv4 } from "uuid";
 import {
   inodRollsKey,
   mqttPublish,
@@ -10,16 +12,16 @@ import {
   saveGenericData,
   topicRoll,
   useAppData,
+  mqttTopic,
+  sessionData,
 } from "~/common";
-import { Button, Flex, Input, Texte, Tooltip } from "~/component";
+import { Button, Flex, Input, Texte } from "~/component";
+import { DiceRollButton } from "./DiceRollButton";
 import {
   DiceViewRootStyle,
   RollHistoryStyle,
   RollInfoStyle,
 } from "./styles.css";
-import { v4 as uuidv4 } from "uuid";
-import { DiceRollButton } from "./DiceRollButton";
-import { FaSolidTrashCan } from "solid-icons/fa";
 
 export const DiceView: Component = () => {
   const [t] = useI18n();
@@ -79,12 +81,13 @@ export const DiceView: Component = () => {
         };
         const newState = [newEntry, ...apd.rollHistory()];
         apd.setRollHistory(newState);
-        saveGenericData(apd, inodRollsKey, newState);
+        saveGenericData(inodRollsKey, newState);
         cb();
         const client = apd.mqttClient();
-        console.log("sending roll", client?.isConnected());
         if (!client) return;
-        mqttPublish(apd.sessionData().browserID, client, topicRoll, [newEntry]);
+        mqttPublish(sessionData().browserID, client, mqttTopic(topicRoll), [
+          newEntry,
+        ]);
       }
     };
 
@@ -103,7 +106,7 @@ export const DiceView: Component = () => {
     if (!apd) return;
     const r = rollSingle(apd.selectedDice());
     done = false;
-    const sd = apd.sessionData();
+    const sd = sessionData();
     if (!sd || !commentRef) return;
     randomizeText(
       r,
@@ -120,7 +123,7 @@ export const DiceView: Component = () => {
   const clearRolls = () => {
     if (!apd) return;
     apd.setRollHistory([]);
-    saveGenericData(apd, inodRollsKey, []);
+    saveGenericData(inodRollsKey, []);
   };
 
   return (

@@ -48,7 +48,7 @@ export const GenView = () => {
     switch (genPage()) {
       case "Corporation":
         setCorporationData([]);
-        saveGenericData(apd, inodGenCorporationKey, []);
+        saveGenericData(inodGenCorporationKey, []);
         break;
     }
   };
@@ -65,7 +65,7 @@ export const GenView = () => {
   const importGen = () => {
     importData((data: any) => {
       setCorporationData(data);
-      saveGenericData(apd, inodGenCorporationKey, data);
+      saveGenericData(inodGenCorporationKey, data);
     });
   };
 

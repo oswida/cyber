@@ -11,9 +11,10 @@ import {
   prettyToday,
   runtimeColors,
   saveGenericData,
-  themeVars,
   topicDraw,
   useAppData,
+  mqttTopic,
+  sessionData,
 } from "~/common";
 import { Flex } from "../Flex";
 import { Button } from "../Button";
@@ -50,7 +51,7 @@ export const Whiteboard: Component = () => {
     const cnv = canvas();
     if (!cnv) return;
     const draw = cnv.toJSON();
-    saveGenericData(apd, inodDrawKey, draw);
+    saveGenericData(inodDrawKey, draw);
   };
 
   createEffect(() => {
@@ -71,7 +72,7 @@ export const Whiteboard: Component = () => {
     const cnv = canvas();
     if (!data || Object.keys(data).length == 0 || !cnv) return;
     cnv.loadFromJSON(data, () => {});
-    saveGenericData(apd, inodDrawKey, data);
+    saveGenericData(inodDrawKey, data);
   });
 
   const importImage = () => {
@@ -93,7 +94,7 @@ export const Whiteboard: Component = () => {
     const cnv = canvas();
     if (!cnv) return;
     const draw = cnv.toJSON();
-    mqttPublish(apd.sessionData().browserID, cl, topicDraw, draw);
+    mqttPublish(sessionData().browserID, cl, mqttTopic(topicDraw), draw);
     notify(apd, "Drawing published", 3000);
   };
 

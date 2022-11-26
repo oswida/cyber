@@ -7,6 +7,8 @@ import {
   topicChars,
   useAppData,
   useEditCharacter,
+  mqttTopic,
+  sessionData,
 } from "~/common";
 import { Button, Flex, Texte } from "~/component";
 import { CharFormStatSection } from "./forms/CharFormStatSection";
@@ -29,12 +31,12 @@ export const SubEdit = () => {
     const newState = { ...apd.charData, [ec.id]: editor.editCharacter() };
     apd.setCharData(newState);
     apd.setSelectedChar(emptyPcInfo);
-    saveGenericData(apd, inodPlayersKey, newState);
+    saveGenericData(inodPlayersKey, newState);
     apd.setSubeditOpen("");
     if (ec.shared) {
       const cl = apd.mqttClient();
       if (cl !== undefined) {
-        mqttPublish(apd.sessionData().browserID, cl, topicChars, [ec]);
+        mqttPublish(sessionData().browserID, cl, mqttTopic(topicChars), [ec]);
       }
     }
   };

@@ -1,5 +1,5 @@
 import { useI18n } from "@solid-primitives/i18n";
-import { FaSolidGears, FaSolidNetworkWired, FaSolidPlug } from "solid-icons/fa";
+import { FaSolidGears, FaSolidPlug, FaSolidServer } from "solid-icons/fa";
 import {
   Component,
   createEffect,
@@ -16,6 +16,7 @@ import {
   loadNotes,
   loadRolls,
   loadTracks,
+  sessionData,
   useAppData,
 } from "~/common";
 import { mqttConnect, mqttConnectionStatus } from "~/common/mqtt";
@@ -30,13 +31,18 @@ export const HudView: Component = () => {
   const [t] = useI18n();
   const [configOpen, setConfigOpen] = createSignal(false);
 
-  mqttConnect(apd);
-
   loadRolls(apd);
   loadNotes(apd, false);
   loadNotes(apd, true);
   loadChars(apd);
   loadTracks(apd);
+
+  createEffect(() => {
+    if (!apd) return;
+    const data = sessionData();
+    if (!data || data.browserID.trim() == "") return;
+    mqttConnect(apd);
+  });
 
   const notification = createMemo(() => {
     if (!apd) return "";
@@ -45,7 +51,20 @@ export const HudView: Component = () => {
 
   const usercolor = createMemo(() => {
     if (!apd) return "#fff";
-    return apd.sessionData().color;
+    return sessionData().color;
+  });
+
+  const userInfo = createMemo(() => {
+    if (!apd) return "";
+    const lines: string[] = [];
+    Object.keys(apd.connections()).forEach((key) => {
+      lines.push(
+        `${apd.connections()[key].username} [${
+          apd.connections()[key].connected_at
+        },${apd.connections()[key].last_seen_at}]`
+      );
+    });
+    return lines.join("\n");
   });
 
   return (
@@ -54,19 +73,24 @@ export const HudView: Component = () => {
         <Flex type="column">
           <div class={HudNavbarStyle}>
             <Flex>
-              <Texte
+              <Dynamic
+                component={"Texte"}
+                title={userInfo()}
                 color="blue"
                 style={{ "align-self": "center", "margin-right": "10px" }}
               >
                 Cyber RPG
-              </Texte>
+              </Dynamic>
               <Switch>
                 <Match when={mqttConnectionStatus() === true}>
                   <FaSolidPlug style={{ "align-self": "center" }} />
                 </Match>
               </Switch>
+              <Show when={sessionData().hosting}>
+                <FaSolidServer style={{ "align-self": "center" }} />
+              </Show>
             </Flex>
-            <Show when={apd?.sessionData().username !== "Noname"}>
+            <Show when={sessionData().username !== "Noname"}>
               <Dynamic
                 component={"Texte"}
                 style={{
@@ -74,7 +98,7 @@ export const HudView: Component = () => {
                   color: `${usercolor()}`,
                 }}
               >
-                {apd?.sessionData().username}
+                {sessionData().username}
               </Dynamic>
             </Show>
             <Flex vcenter>

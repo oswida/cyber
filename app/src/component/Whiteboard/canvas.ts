@@ -1,6 +1,6 @@
 import { fabric } from "fabric";
 import { Accessor } from "solid-js";
-import { runtimeColors, themeVars } from "~/common";
+import { runtimeColors } from "~/common";
 import { WhiteboardState } from "./../../common/types";
 
 let mouseDown = false;
@@ -23,8 +23,6 @@ const startAddLine = (
   canvas: fabric.Canvas
 ) => {
   return (e: any) => {
-    // console.log(wbState().brush);
-
     mouseDown = true;
     let pointer = canvas.getPointer(e);
     drawInstance = new fabric.Line(
@@ -226,6 +224,7 @@ export const switchTool = (
       fill: appData.wbState().brush,
       editable: true,
       fontFamily: "Oxanium",
+      fontSize: 15,
     });
     canvas.add(text);
     canvas.renderAll();
@@ -252,7 +251,7 @@ export const clearCanvas = (canvas?: fabric.Canvas) => {
 };
 
 export const linecolor = (apd: any, color: string) => {
-  apd.setWbState((prev: any) => ({ ...prev, brush: color, tool: "select" }));
+  apd.setWbState((prev: any) => ({ ...prev, brush: color }));
 };
 
 export const linesSizeMap = [1, 2, 4, 8];
@@ -261,6 +260,5 @@ export const linesize = (apd: any, s: number) => {
   apd.setWbState((prev: any) => ({
     ...prev,
     width: linesSizeMap[s],
-    tool: "select",
   }));
 };

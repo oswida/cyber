@@ -3,6 +3,7 @@ import { Client } from "paho-mqtt";
 import { createSignal } from "solid-js";
 import { createStore } from "solid-js/store";
 import {
+  ConnectionInfo,
   CorpoInfo,
   emptyPcInfo,
   emptySessionInfo,
@@ -23,6 +24,12 @@ export const [corporationData, setCorporationData] = createSignal<CorpoInfo[]>(
   []
 );
 
+// Main session data
+export const [sessionData, setSessionData] = createSignal<SessionInfo>(
+  emptySessionInfo()
+);
+export const [storageSize, setStorageSize] = createSignal(0);
+
 // Edited character state
 export const [EditCharacterProvider, useEditCharacter] = createContextProvider(
   () => {
@@ -41,10 +48,7 @@ export const [AppDataProvider, useAppData] = createContextProvider(() => {
   const [noteData, setNoteData] = createSignal<Record<string, NoteInfo>>({});
   const [boardData, setBoardData] = createSignal<Record<string, NoteInfo>>({});
   const [trackData, setTrackData] = createSignal<Record<string, TrackInfo>>({});
-  const [storageSize, setStorageSize] = createSignal(0);
-  const [sessionData, setSessionData] = createSignal<SessionInfo>(
-    emptySessionInfo()
-  );
+
   const [mqttClient, setMqttClient] = createSignal<Client>();
 
   const [drawCache, setDrawCache] = createSignal<any>({});
@@ -59,6 +63,10 @@ export const [AppDataProvider, useAppData] = createContextProvider(() => {
   const [selectedTrack, setSelectedTrack] = createSignal<TrackInfo>(
     emptyTrackInfo()
   );
+
+  const [connections, setConnections] = createSignal<
+    Record<string, ConnectionInfo>
+  >({});
 
   const [subeditOpen, setSubeditOpen] = createSignal("");
 
@@ -75,10 +83,6 @@ export const [AppDataProvider, useAppData] = createContextProvider(() => {
     setSelectedDice,
     selectedNote,
     setSelectedNote,
-    storageSize,
-    setStorageSize,
-    sessionData,
-    setSessionData,
     drawCache,
     setDrawCache,
     selectedChar,
@@ -95,6 +99,8 @@ export const [AppDataProvider, useAppData] = createContextProvider(() => {
     setMqttClient,
     notification,
     setNotification,
+    connections,
+    setConnections,
   };
 });
 

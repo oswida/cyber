@@ -4,12 +4,22 @@ import {
   Component,
   createEffect,
   createMemo,
+  createSignal,
   Match,
   Setter,
   Show,
   Switch,
 } from "solid-js";
-import { inodSessionKey, saveGenericData, useAppData } from "~/common";
+import {
+  inodSessionKey,
+  mqttClientLink,
+  saveGenericData,
+  sessionData,
+  SessionInfo,
+  setSessionData,
+  storageSize,
+  useAppData,
+} from "~/common";
 import { Button, Dialog, Flex, Input, Texte } from "~/component";
 
 type Props = {
@@ -25,37 +35,45 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
   var remoteRef: HTMLInputElement;
   var natsRef: HTMLInputElement;
   var natsTokenRef: HTMLInputElement;
+  const [hosting, setHosting] = createSignal(false);
 
   createEffect(() => {
     if (!open() || nameRef === undefined || colorRef === undefined || !apd)
       return;
-    const data = apd.sessionData();
+    const data = sessionData();
     if (!data) return;
     nameRef.value = data.username ? data.username : "";
     colorRef.value = data.color ? data.color : "";
+    natsRef.value = data.nats;
+    natsTokenRef.value = data.nats_token;
+    remoteRef.value = data.remote;
+    setHosting(data.hosting);
   });
 
   const save = () => {
     if (!nameRef || !colorRef || !apd) return;
     const newState = {
-      ...apd.sessionData(),
+      ...sessionData(),
       username: nameRef.value,
       color: colorRef.value,
-    };
-    apd.setSessionData(newState);
-    saveGenericData(apd, inodSessionKey, newState);
+      nats: natsRef.value,
+      nats_token: natsTokenRef.value,
+      remote: remoteRef.value,
+      hosting: hosting(),
+    } as SessionInfo;
+    setSessionData(newState);
+    saveGenericData(inodSessionKey, newState);
     setOpen(false);
   };
 
-  const isHost = createMemo(() => {
-    if (!apd) return false;
-    return apd.sessionData().hosting;
-  });
-
   const switchHosting = () => {
     if (!apd) return;
-    apd.setSessionData((prev) => ({ ...prev, hosting: !prev.hosting }));
+    setHosting(!hosting());
   };
+
+  const link = createMemo(() => {
+    return mqttClientLink();
+  });
 
   return (
     <Dialog
@@ -68,7 +86,7 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
         <Texte color="pink">{t("Storage")}</Texte>
         <Flex>
           <Texte>Current storage is</Texte>
-          <Texte color="yellow"> {`${apd?.storageSize()} bytes`}</Texte>
+          <Texte color="yellow"> {`${storageSize()} bytes`}</Texte>
         </Flex>
         <Texte size="small" style={{ "max-width": "80em" }}>
           Please remember that this app is using local browser storage instead
@@ -77,7 +95,7 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
         <Texte color="pink">{t("Identification")}</Texte>
         <Flex>
           <Texte>{`Browser ID:`}</Texte>
-          <Texte color="yellow">{apd?.sessionData()?.browserID}</Texte>
+          <Texte color="yellow">{sessionData()?.browserID}</Texte>
         </Flex>
         <Flex vcenter style={{ gap: "15px" }}>
           <Flex vcenter>
@@ -100,7 +118,7 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
           <br />
         </Texte>
         <Switch>
-          <Match when={isHost()}>
+          <Match when={hosting()}>
             <Flex>
               <Button onClick={switchHosting}>{t("Client")}</Button>
               <Button color="filled" onClick={switchHosting}>
@@ -108,7 +126,7 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
               </Button>
             </Flex>
           </Match>
-          <Match when={!isHost()}>
+          <Match when={!hosting()}>
             <Flex>
               <Button color="filled" onClick={switchHosting}>
                 {t("Client")}
@@ -123,7 +141,7 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
             <Texte>Server address</Texte>
             <Input
               ref={(el) => (natsRef = el)}
-              style={{ width: "20em" }}
+              style={{ width: "25em" }}
               placeholder="ex. ws://hostname:port"
             />
           </Flex>
@@ -131,22 +149,39 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
             <Texte>Credentials</Texte>
             <Input
               ref={(el) => (natsTokenRef = el)}
-              style={{ width: "20em" }}
+              style={{ width: "25em" }}
               placeholder="username:password"
             />
           </Flex>
-          <Show when={!isHost()}>
+          <Show when={!hosting()}>
             <Flex vcenter>
               <Texte>Remote host Browser ID</Texte>
               <Input
                 ref={(el) => (remoteRef = el)}
-                style={{ width: "20em" }}
+                style={{ width: "25em" }}
                 placeholder="ex. 854a051c-7869-4698-9dfa-4feccb748ce4"
               />
             </Flex>
           </Show>
+          <Show when={hosting()}>
+            <Flex type="column" center style={{ "margin-top": "15px" }}>
+              <Texte color="pink">{t("Connection_link")}</Texte>
+              <Texte
+                size="small"
+                style={{
+                  "max-width": "800px",
+                  "overflow-wrap": "anywhere",
+                  "align-self": "end",
+                }}
+              >
+                {link()}
+              </Texte>
+            </Flex>
+          </Show>
         </Flex>
-        <Button onClick={save}>{t("Save")}</Button>
+        <Button onClick={save} style={{ "margin-top": "15px" }}>
+          {t("Save")}
+        </Button>
       </Flex>
     </Dialog>
   );

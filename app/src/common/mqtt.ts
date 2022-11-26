@@ -1,7 +1,7 @@
 import { Client, Message } from "paho-mqtt";
-import { createMemo, createSignal } from "solid-js";
+import { createSignal } from "solid-js";
 import { inodRollsKey, saveGenericData } from "~/common";
-import { AppDataType, useAppData } from "./signals";
+import { AppDataType, sessionData } from "./signals";
 import { inodBoardKey, inodPlayersKey } from "./storage";
 import {
   ConnectionInfo,
@@ -10,40 +10,16 @@ import {
   PcInfo,
   RollInfo,
 } from "./types";
-import { compressData64, decompressData64, notify } from "./util";
-import { v4 as uuidv4 } from "uuid";
+import { compressData64, decompressData64, notify, prettyNow } from "./util";
 
-// cyberusr BusloadOverpassSlightingGrimace
-
-export const topicInfo = "TopicInfo";
 export const topicConnect = "TopicConnect";
 export const topicRoll = "TopicRoll";
 export const topicBoard = "TopicBoard";
 export const topicChars = "TopicChars";
-export const topicBoardDelete = "TopicBoardDelete";
 export const topicDraw = "TopicDraw";
 
 export const [mqttConnectionStatus, setMqttConnectionStatus] =
   createSignal(false);
-
-var options = {
-  hostname: "74b475ef8ff348ff821ef7e23aac0509.s2.eu.hivemq.cloud",
-  port: 8884,
-  userName: "inode",
-  password: "inodinod",
-  path: "/mqtt",
-  ssl: true,
-};
-
-// var options = {
-//   hostname: "cloud.uplogic.pl",
-//   port: 4223,
-//   userName: undefined, //"cyberusr",
-//   password: undefined, //"BusloadOverpassSlightingGrimace",
-//   // "$6$n6awMJmqkALjgAUc$EF5xlYIBpkbnX67DZSUFIjK6uaOdMPksstE5oWOIwJVYekLwBBYdLhonERJQDu19LeW5+xNodmWIuIzu08GIUg==",
-//   path: "/",
-//   ssl: false,
-// };
 
 export const mqttPack = (sender: string, payload: any) => {
   const msg: MqttMessage = {
@@ -58,12 +34,23 @@ export const mqttUnpack = (payload: any) => {
   return d as MqttMessage;
 };
 
+export const mqttTopic = (name: string) => {
+  let prefix = undefined;
+  if (sessionData().hosting) {
+    prefix = sessionData().browserID;
+  } else {
+    prefix = sessionData().remote;
+  }
+  return `${prefix}/${name}`;
+};
+
 export const mqttPublish = (
   sender: string,
   client: Client,
   topic: string,
   payload: any
 ) => {
+  
   const msg = new Message(mqttPack(sender, payload));
   msg.destinationName = topic;
   client.send(msg);
@@ -71,87 +58,123 @@ export const mqttPublish = (
 
 export const mqttProcess = (apd: AppDataType, msg: Message) => {
   if (!apd) {
-    console.log("Cannot access app state");
     return;
   }
+  
   const m = mqttUnpack(msg.payloadString);
-  if (m.sender == apd.sessionData().browserID) return; // own message
+  if (m.sender == sessionData().browserID) return; // own message
   switch (msg.destinationName) {
-    case topicConnect:
+    case mqttTopic(topicConnect):
       const info = m.data as ConnectionInfo;
+      const nst = { ...apd.connections() };
+      if (!nst[m.sender]) {
+        nst[m.sender] = {
+          username: info.username,
+          count: 1,
+          connected_at: prettyNow(),
+          last_seen_at: prettyNow(),
+        };
+      }
+      apd.setConnections(nst);
       notify(apd, `User ${info.username} connected`, 5000);
       const cl = apd.mqttClient();
       if (!cl) break;
-      if (apd.sessionData().hosting) {
+      if (sessionData().hosting) {
         const chars = Object.values(apd.charData).filter((it) => it.shared);
-        mqttPublish(apd.sessionData().browserID, cl, topicChars, chars);
+        mqttPublish(sessionData().browserID, cl, mqttTopic(topicChars), chars);
+        mqttPublish(
+          sessionData().browserID,
+          cl,
+          mqttTopic(topicBoard),
+          Object.values(apd.boardData())
+        );
       }
       break;
-    case topicRoll:
+    case mqttTopic(topicRoll):
       const data = m.data as RollInfo[];
       const newState = [...data, ...apd.rollHistory()];
       apd.setRollHistory(newState);
-      saveGenericData(apd, inodRollsKey, newState);
+      saveGenericData(inodRollsKey, newState);
       break;
-    case topicChars:
+    case mqttTopic(topicChars):
       const chars = m.data as PcInfo[];
       const newState2 = { ...apd.charData };
       chars.forEach((cr) => {
         newState2[cr.id] = cr;
       });
       apd.setCharData({ ...newState2 });
-      saveGenericData(apd, inodPlayersKey, newState2);
+      saveGenericData(inodPlayersKey, newState2);
       notify(apd, "Character created/updated", 10000);
       break;
-    case topicBoard:
+    case mqttTopic(topicBoard):
       const notes = m.data as NoteInfo[];
       const newState3 = { ...apd.boardData() };
       notes.forEach((note) => {
         newState3[note.id] = note;
       });
       apd.setBoardData(newState3);
-      saveGenericData(apd, inodBoardKey, newState3);
+      saveGenericData(inodBoardKey, newState3);
       notify(apd, "Board note created/updated", 10000);
       break;
-    case topicDraw:
+    case mqttTopic(topicDraw):
       apd.setDrawCache(m.data);
       notify(apd, "Drawing updated", 10000);
       break;
     default:
       console.log("Message for unknown topic", m.sender, m.data);
   }
+  const nst = { ...apd.connections() };
+  const usr = nst[m.sender];
+  if (usr) {
+    usr.last_seen_at = prettyNow();
+    usr.count = usr.count ? usr.count + 1 : 1;
+    apd.setConnections(nst);
+  }
 };
 
 export const mqttConnect = (apd: AppDataType) => {
   if (!apd) return;
 
-  const client = new Client(
-    options.hostname,
-    options.port,
-    options.path,
-    apd.sessionData().browserID
-  );
+  if (!sessionData().nats || sessionData().nats.trim() == "") return;
+  if (
+    !sessionData().hosting &&
+    (!sessionData().remote || sessionData().remote.trim() == "")
+  )
+    return;
+
+  const client = new Client(sessionData().nats, sessionData().browserID);
   if (client.isConnected()) {
     client.disconnect();
   }
+  let un = undefined;
+  let pw = undefined;
+  if (sessionData().nats_token) {
+    const parts = sessionData().nats_token.split(":");
+    un = parts[0];
+    pw = parts[1];
+  }
   client.connect({
-    userName: options.userName,
-    password: options.password,
-    useSSL: options.ssl,
+    userName: un,
+    password: pw,
     onFailure: (e) => {
       console.error(e.errorMessage);
     },
     onSuccess: (e) => {
       console.log("Connected to MQTT server", e);
-      client.subscribe("#", {
+      client.subscribe(mqttTopic("+"), {
         onFailure: (e) => {
-          console.log("subscription failed", e);
+          console.log(`subscription to ${mqttTopic("+")} failed`, e);
         },
         onSuccess: () => {
           apd.setMqttClient(client);
-          mqttPublish(apd.sessionData().browserID, client, topicConnect, {
-            username: apd.sessionData().username,
-          } as ConnectionInfo);
+          mqttPublish(
+            sessionData().browserID,
+            client,
+            mqttTopic(topicConnect),
+            {
+              username: sessionData().username,
+            } as ConnectionInfo
+          );
           setMqttConnectionStatus(true);
         },
       });
@@ -166,4 +189,16 @@ export const mqttConnect = (apd: AppDataType) => {
     console.log("Connection lost", msg);
     setMqttConnectionStatus(false);
   };
+};
+
+export const mqttClientLink = () => {
+  if (!sessionData().hosting) return "";
+  const obj = {
+    nats: sessionData().nats,
+    token: sessionData().nats_token,
+    remote: sessionData().browserID,
+  };
+  return `${window.location}connect?data=${encodeURIComponent(
+    compressData64(obj)
+  )}`;
 };

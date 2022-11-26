@@ -68,7 +68,7 @@ export const CharView = () => {
     const item = apd.selectedChar();
     if (!item || item.id === "") return;
     const newState = { ...apd.charData, [item.id]: undefined };
-    saveGenericData(apd, inodPlayersKey, newState);
+    saveGenericData(inodPlayersKey, newState);
     apd.setCharData(newState);
   };
 

@@ -17,6 +17,7 @@ export const Texte: Component<ComponentProps<"div"> & Props> = ({
   color,
   ref,
   onClick,
+  title,
 }) => {
   return (
     <div
@@ -30,6 +31,7 @@ export const Texte: Component<ComponentProps<"div"> & Props> = ({
       style={style}
       ref={ref}
       onClick={onClick}
+      title={title}
     >
       {children}
     </div>

@@ -43,7 +43,7 @@ export const TrackView: Component = () => {
     const newState = { ...apd.trackData(), [item.id]: item };
 
     apd.setTrackData(newState);
-    saveGenericData(apd, inodTrackKey, newState);
+    saveGenericData(inodTrackKey, newState);
     //TODO: publish ?
   };
 
@@ -58,7 +58,7 @@ export const TrackView: Component = () => {
     const item = apd.selectedTrack();
     if (!item) return;
     const newState = deleteTrack(apd, item);
-    saveGenericData(apd, inodTrackKey, newState);
+    saveGenericData(inodTrackKey, newState);
   };
 
   const clearFilter = () => {

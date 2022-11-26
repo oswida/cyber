@@ -8,6 +8,8 @@ import {
   saveGenericData,
   topicBoard,
   useAppData,
+  mqttTopic,
+  sessionData,
 } from "~/common";
 import { Button, Dialog, Flex, Input, TextArea, Texte } from "~/component";
 
@@ -47,19 +49,19 @@ export const NoteEdit: Component<Props> = ({
     newState[it.id] = { ...it };
     if (isShared) {
       apd.setBoardData(newState);
-      saveGenericData(apd, inodBoardKey, newState);
+      saveGenericData(inodBoardKey, newState);
       const cl = apd.mqttClient();
       if (cl !== undefined) {
         mqttPublish(
-          apd.sessionData().browserID,
+          sessionData().browserID,
           cl,
-          topicBoard,
+          mqttTopic(topicBoard),
           Object.values(apd.boardData())
         );
       }
     } else {
       apd.setNoteData(newState);
-      saveGenericData(apd, inodNotesKey, newState);
+      saveGenericData(inodNotesKey, newState);
     }
     apd.setSelectedNote(undefined);
     setOpen(false);

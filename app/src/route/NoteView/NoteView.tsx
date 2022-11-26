@@ -72,7 +72,7 @@ export const NoteView: Component<Props> = ({ isShared }) => {
   };
 
   const add = () => {
-    const note = createNote(apd);
+    const note = createNote();
     setEditItem(note);
     setDialogOpen(true);
   };
@@ -90,8 +90,8 @@ export const NoteView: Component<Props> = ({ isShared }) => {
     const item = apd.selectedNote();
     if (!item) return;
     const newState = isShared ? deleteBoard(apd, item) : deleteNote(apd, item);
-    if (isShared) saveGenericData(apd, inodBoardKey, newState);
-    else saveGenericData(apd, inodNotesKey, newState);
+    if (isShared) saveGenericData(inodBoardKey, newState);
+    else saveGenericData(inodNotesKey, newState);
   };
 
   const confirmMessage = createMemo(() => {

@@ -1,8 +1,9 @@
 import { NoteInfo } from "./../common/types";
 import { v4 as uuidv4 } from "uuid";
+import { sessionData } from "~/common";
 
-export const createNote = (apd: any) => {
-  const sd = apd.sessionData();
+export const createNote = () => {
+  const sd = sessionData();
   const result: NoteInfo = {
     id: uuidv4(),
     title: "new note",

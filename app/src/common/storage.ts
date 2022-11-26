@@ -1,5 +1,6 @@
-import { AppDataType } from "./signals";
+import { v4 as uuidv4 } from "uuid";
 import { setCorporationData } from "~/common";
+import { setSessionData, setStorageSize } from "./signals";
 import { emptySessionInfo, SessionInfo } from "./types";
 import { compressData, decompressData } from "./util";
 
@@ -12,31 +13,33 @@ export const inodRollsKey = "inod-rolls2";
 export const inodDrawKey = "inod-draw2";
 export const inodTrackKey = "inod-track2";
 
-export const loadSessionData = (appData: AppDataType) => {
-  if (!appData) return;
-  const sessionData = localStorage.getItem(inodSessionKey);
-  if (!sessionData) {
-    console.log("no session data!");
+export const saveSessionData = (value: SessionInfo) => {
+  localStorage.setItem(inodSessionKey, compressData(value));
+  updateStoreSize();
+};
 
-    const sd = emptySessionInfo();
+export const loadSessionData = () => {
+  const sdata = localStorage.getItem(inodSessionKey);
+  if (!sdata) {
+    const sd = emptySessionInfo(true);
     localStorage.setItem(inodSessionKey, compressData(sd));
-    appData.setSessionData(sd);
+    setSessionData(sd);
+    saveSessionData(sd);
   } else {
-    const dd = decompressData(sessionData);
+    const dd = decompressData(sdata) as SessionInfo;
     if (!dd.lang) dd.lang = "en";
     if (!dd.color) dd.color = "#ffffff";
-    appData.setSessionData(dd);
+    if (dd.browserID.trim() == "") {
+      dd.browserID = uuidv4();
+      saveSessionData(dd);
+    }
+    setSessionData(dd);
   }
 };
 
-export const saveSessionData = (appData: any, value: SessionInfo) => {
-  localStorage.setItem(inodSessionKey, compressData(value));
-  updateStoreSize(appData);
-};
-
-export const saveGenericData = (appData: any, key: string, data: any) => {
+export const saveGenericData = (key: string, data: any) => {
   localStorage.setItem(key, compressData(data));
-  updateStoreSize(appData);
+  updateStoreSize();
 };
 
 export const loadGenCorporations = () => {
@@ -59,9 +62,6 @@ export const loadNotes = (appData: any, isShared: boolean) => {
   const dd = decompressData(data);
   if (isShared) appData.setBoardData(dd);
   else appData.setNoteData(dd);
-  const data1 = localStorage.getItem("inod-board");
-  const dd1 = decompressData(data1);
-  console.log("board1", dd1);
 };
 
 export const loadTracks = (appData: any) => {
@@ -82,12 +82,9 @@ export const loadChars = (appData: any) => {
   const data = localStorage.getItem(inodPlayersKey);
   const dd = decompressData(data);
   appData.setCharData(dd);
-  const data1 = localStorage.getItem("inod-players");
-  const dd1 = decompressData(data1);
-  console.log("players1", dd1);
 };
 
-export const updateStoreSize = (appData: any) => {
+export const updateStoreSize = () => {
   let size = 0;
   const keys = [
     inodSessionKey,
@@ -103,6 +100,6 @@ export const updateStoreSize = (appData: any) => {
     const data = localStorage.getItem(k);
     size += data ? data.length : 0;
   });
-  appData.setStorageSize(size);
+  setStorageSize(size);
   return size;
 };

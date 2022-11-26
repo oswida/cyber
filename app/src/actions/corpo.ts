@@ -73,7 +73,7 @@ export const generateCorpo = (
 
   const data = [...corporationData(), retv];
   setCorporationData(data);
-  saveGenericData(apd, inodGenCorporationKey, data);
+  saveGenericData(inodGenCorporationKey, data);
   return retv;
 };
 

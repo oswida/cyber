@@ -44,7 +44,6 @@ export const CharFormInventorySection = () => {
     const sel = selInv();
     if (sel < 0) return;
     const data = ev.target.value;
-    console.log("setting ", data, "on ", sel);
 
     editor?.setEditCharacter((prev) => {
       if (!prev) return prev;
