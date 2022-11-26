@@ -1,6 +1,7 @@
 import { fabric } from "fabric";
 import { Accessor } from "solid-js";
 import { runtimeColors } from "~/common";
+import { AppDataType } from "./../../common/signals";
 import { WhiteboardState } from "./../../common/types";
 
 let mouseDown = false;
@@ -224,7 +225,7 @@ export const switchTool = (
       fill: appData.wbState().brush,
       editable: true,
       fontFamily: "Oxanium",
-      fontSize: 15,
+      fontSize: 16,
     });
     canvas.add(text);
     canvas.renderAll();
@@ -235,7 +236,7 @@ export const switchTool = (
     canvas.on("mouse:up", () => removeActiveObject(canvas));
     canvas.isDrawingMode = false;
     canvas.getObjects().map((item) => item.set({ selectable: true }));
-    canvas.hoverCursor = "all-scroll";
+    canvas.hoverCursor = "not-allowed";
   }
   appData.setWbState((prev: any) => ({ ...prev, tool: tool }));
 };
@@ -250,15 +251,27 @@ export const clearCanvas = (canvas?: fabric.Canvas) => {
   });
 };
 
-export const linecolor = (apd: any, color: string) => {
+export const linecolor = (
+  apd: AppDataType,
+  canvas: fabric.Canvas | undefined,
+  color: string
+) => {
+  if (!apd || !canvas) return;
   apd.setWbState((prev: any) => ({ ...prev, brush: color }));
+  canvas.freeDrawingBrush.color = color;
 };
 
 export const linesSizeMap = [1, 2, 4, 8];
 
-export const linesize = (apd: any, s: number) => {
+export const linesize = (
+  apd: AppDataType,
+  canvas: fabric.Canvas | undefined,
+  s: number
+) => {
+  if (!apd || !canvas) return;
   apd.setWbState((prev: any) => ({
     ...prev,
     width: linesSizeMap[s],
   }));
+  canvas.freeDrawingBrush.width = linesSizeMap[s];
 };

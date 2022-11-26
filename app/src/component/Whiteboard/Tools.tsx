@@ -42,19 +42,26 @@ export const ToolSwitchButton = ({
 
 export const ColorSwitchButton = ({
   color,
-}: ParentProps & { color: string }) => {
+  canvas,
+}: ParentProps & {
+  color: string;
+  canvas: Accessor<fabric.Canvas | undefined>;
+}) => {
   const apd = useAppData();
 
   const isCurrentColor = createMemo(() => color == apd?.wbState().brush);
   return (
     <Switch>
       <Match when={!isCurrentColor()}>
-        <Button onClick={() => linecolor(apd, color)} border="underline">
+        <Button
+          onClick={() => linecolor(apd, canvas(), color)}
+          border="underline"
+        >
           <FaSolidPalette title={color} color={color} />
         </Button>
       </Match>
       <Match when={isCurrentColor()}>
-        <Button onClick={() => linecolor(apd, color)}>
+        <Button onClick={() => linecolor(apd, canvas(), color)}>
           <FaSolidPalette title={color} color={color} />
         </Button>
       </Match>
@@ -65,7 +72,11 @@ export const ColorSwitchButton = ({
 export const SizeSwitchButton = ({
   index,
   children,
-}: ParentProps & { index: number }) => {
+  canvas,
+}: ParentProps & {
+  index: number;
+  canvas: Accessor<fabric.Canvas | undefined>;
+}) => {
   const apd = useAppData();
   const isCurrentSize = createMemo(
     () => apd?.wbState().width === linesSizeMap[index]
@@ -74,10 +85,15 @@ export const SizeSwitchButton = ({
   return (
     <Switch>
       <Match when={isCurrentSize()}>
-        <Button onClick={() => linesize(apd, index)}>{children}</Button>
+        <Button onClick={() => linesize(apd, canvas(), index)}>
+          {children}
+        </Button>
       </Match>
       <Match when={!isCurrentSize()}>
-        <Button onClick={() => linesize(apd, index)} border="underline">
+        <Button
+          onClick={() => linesize(apd, canvas(), index)}
+          border="underline"
+        >
           {children}
         </Button>
       </Match>

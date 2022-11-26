@@ -132,24 +132,24 @@ export const Whiteboard: Component = () => {
         </Flex>
 
         <Flex>
-          <ColorSwitchButton color="white" />
-          <ColorSwitchButton color={runtimeColors.blue} />
-          <ColorSwitchButton color={runtimeColors.yellow} />
-          <ColorSwitchButton color={runtimeColors.green} />
-          <ColorSwitchButton color={runtimeColors.pink} />
+          <ColorSwitchButton canvas={canvas} color="white" />
+          <ColorSwitchButton canvas={canvas} color={runtimeColors.blue} />
+          <ColorSwitchButton canvas={canvas} color={runtimeColors.yellow} />
+          <ColorSwitchButton canvas={canvas} color={runtimeColors.green} />
+          <ColorSwitchButton canvas={canvas} color={runtimeColors.pink} />
         </Flex>
 
         <Flex>
-          <SizeSwitchButton index={0}>
+          <SizeSwitchButton canvas={canvas} index={0}>
             <FaSolid1 />
           </SizeSwitchButton>
-          <SizeSwitchButton index={1}>
+          <SizeSwitchButton canvas={canvas} index={1}>
             <FaSolid2 />
           </SizeSwitchButton>
-          <SizeSwitchButton index={2}>
+          <SizeSwitchButton canvas={canvas} index={2}>
             <FaSolid3 />
           </SizeSwitchButton>
-          <SizeSwitchButton index={3}>
+          <SizeSwitchButton canvas={canvas} index={3}>
             <FaSolid4 />
           </SizeSwitchButton>
         </Flex>
