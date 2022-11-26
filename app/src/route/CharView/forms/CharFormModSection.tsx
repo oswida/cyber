@@ -1,15 +1,19 @@
 import { useI18n } from "@solid-primitives/i18n";
+import { it } from "node:test";
 import {
   FaSolidBoltLightning,
   FaSolidGears,
   FaSolidMinus,
   FaSolidPlay,
   FaSolidPlus,
+  FaSolidPowerOff,
   FaSolidRotate,
+  FaSolidToggleOff,
 } from "solid-icons/fa";
-import { createSignal, For, Match, Show, Switch } from "solid-js";
+import { createMemo, createSignal, For, Match, Show, Switch } from "solid-js";
+import { Dynamic } from "solid-js/web";
 import { newCharMod } from "~/actions/character";
-import { runtimeColors, useEditCharacter } from "~/common";
+import { runtimeColors, themeVars, useEditCharacter } from "~/common";
 import { Button, Flex, Input, Texte } from "~/component";
 import { SelectableItemStyle } from "../styles.css";
 
@@ -96,7 +100,6 @@ export const CharFormModSection = ({ isDeck }: { isDeck: boolean }) => {
   };
 
   const toggleActivated = (index: number, value: boolean) => {
-    //TODO: compute
     const ec = editor?.editCharacter();
     if (!ec) return;
     let firstFreeSlot = -1;
@@ -157,6 +160,33 @@ export const CharFormModSection = ({ isDeck }: { isDeck: boolean }) => {
     });
   };
 
+  const reset = () => {
+    editor?.setEditCharacter((prev) => {
+      if (isDeck) {
+        const t = [...prev.cyberdeck];
+        const mod = t.map((it) => ({ ...it, activated: false }));
+        return { ...prev, cyberdeck: mod };
+      } else {
+        const t = [...prev.cybermods];
+        const mod = t.map((it) => ({ ...it, activated: false }));
+        return { ...prev, cybermods: mod };
+      }
+    });
+  };
+
+  const keywords: string[] = ["neuroprocessor", "neuroprocesor", "neuroproc"];
+
+  const neuroproc = createMemo(() => {
+    if (!isDeck) return "";
+    let retv = "";
+    editor?.editCharacter().cybermods.forEach((it) => {
+      keywords.forEach((k) => {
+        if (it.name.toLowerCase().includes(k)) retv = `[${it.description}]`;
+      });
+    });
+    return retv;
+  });
+
   return (
     <Flex type="column" center style={{ width: "90%", "align-self": "center" }}>
       <Flex vcenter style={{ "margin-bottom": "10px" }}>
@@ -171,8 +201,23 @@ export const CharFormModSection = ({ isDeck }: { isDeck: boolean }) => {
               : Object.keys(editor.editCharacter().cybermods).length)}
           {")"}
         </Texte>
+        <Dynamic
+          component={"Texte"}
+          style={{ "align-self": "center", color: themeVars.colors.pink }}
+        >
+          {neuroproc()}
+        </Dynamic>
+
         <Button border="underline" onClick={add}>
           <FaSolidPlus />
+        </Button>
+        <Button
+          border="underline"
+          onClick={reset}
+          style={{ "margin-left": "15px" }}
+          title={"Reset activation"}
+        >
+          <FaSolidPowerOff />
         </Button>
       </Flex>
       <Flex
