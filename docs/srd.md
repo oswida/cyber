@@ -219,7 +219,9 @@ Każda postać, która otrzyma obrażenia krytyczne w INF, zostaje unieruchomion
 
 #### Pancerz
 
-Jeśli walczysz w świecie fizycznym, zanim określisz obrażenia na OCHR, od wyniku rzutów na obrażenia odejmij wartość **Pancerza** celu. Tarcze, zbroje, cybermodyfikacje mogą zapewniać dodatkową obronę (np. +1 do pancerza), ale tylko wtedy, gdy przedmiot jest trzymany lub noszony.  
+Jeśli walczysz w świecie fizycznym, zanim określisz obrażenia na OCHR, od wyniku rzutów na obrażenia odejmij wartość **Pancerza** celu. Tarcze, zbroje, cybermodyfikacje mogą zapewniać dodatkową obronę (np. +1 do pancerza), ale tylko wtedy, gdy przedmiot jest trzymany lub noszony.
+
+Efekt pancerza w Infosferze można uzyskać dzięki aktywacji odpowiedniego oprogramowania.
 
 Nikt nie może mieć więcej niż **3 punkty** Pancerza.
 

@@ -225,6 +225,8 @@ The **Black ICE** and **EMP weapons** have an additional critical damage effect:
 
 If you are fighting in the physical world, before calculating damage to HP, subtract the target’s **Armor** value from the result of damage rolls. Shields and similar armor provide a bonus defense (e.g. +1 Armor), but only while the item is held or worn.
 
+The player can obtain the armor effect in the Infosphere by activating the appropriate software.
+
 No one can have more than **3 Armor**.
 
 #### Retreat
@@ -294,7 +296,7 @@ All other activities such as hacking, security, access to proprietary informatio
 
 **Lock**: Reducing a character's INF to zero means that they cannot use the Infosphere until they have regained at least one point of this ability.
 
-**Hacking**: Network nodes can have an HP level and an INF level specified. To access such a node (without the owner's permission), the player must reduce its HP to zero.  In order to do so, it is required to carry out attacks using the neuroprocessor. Once the HP is removed, the player takes control of the node for **as many rounds** as his **INF level**.
+**Hacking**: Network nodes can have an HP level and an INF level specified. To access such a node (without the owner's permission), the player must reduce its HP to zero.  In order to do so, it is required to carry out attacks using the neuroprocessor. Once the HP is removed, the player takes control of the node for **as many rounds** as his **current INF level**.
 
 **Data destruction**: After reducing the node's HP to zero, the player can still perform the attack but this time will reduce the node's INF. Reducing a node's **INF to zero** means irrevocably **destroying the data or program** (unless its owner had a backup). Reducing a node's INF to values other than zero has no effect on the game.
 
