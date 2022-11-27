@@ -29,7 +29,7 @@ The game was written by: [Oskar Świda](https://twitter.com/OskarSwida).
     - [Inventory](#inventory)
   - [Rules](#rules)
     - [Abilities](#abilities)
-    - [Deprivation & Fatigue](#deprivation--fatigue)
+    - [Deprivation \& Fatigue](#deprivation--fatigue)
     - [Saves](#saves)
     - [Easy and Difficult Tests](#easy-and-difficult-tests)
     - [Combat](#combat)
@@ -305,9 +305,11 @@ All other activities such as hacking, security, access to proprietary informatio
 **Black ICE** (officially illegal), has an additional feature:
 - *Critical Damage*: inflict the same amount of damage to PSY that was inflicted to INF this turn.
 
-**Software**: any character with a neuroprocessor can use an **infodeck** (takes up one space in the inventory) to store **programs**. Programs can assist the player with hacking or defending nodes, but require **activation**.  The infodeck can store any number of programs.
+**Software**: any character with a neuroprocessor can use an **infodeck** (does not take space in the inventory) to store **programs**. Programs can assist the player with hacking or defending nodes, but require **activation**.  The infodeck can store any number of programs.
 
-**Software Activation**: In order to use the functions of the software stored on the infodeck, characters must activate the software each time they wish to use it. Activation requires marking one point of Fatigue in the inventory but **is not considered** an action in the round. The maximum amount of software a hacker can activate, is equal to **her current INF level divided by 3** (rounding up). Exceptions to the above rule are utility programs that do not modify game mechanics, do not deal damage or have effects such as "critical damage" - this software can be used without activation. An example would be a "guardian program" that triggers an alert when a specific event is registered.
+**Software Activation**: To use the functions of the software stored on the infodeck, characters must activate the software each time they wish to use it. Activation requires marking one point of Fatigue in the inventory, but **is not considered** an action in the round. The maximum amount of software a hacker can activate is equal to **her current INF level**.
+
+Exceptions to the above rule are utility programs that do not modify game mechanics, do not deal damage or have effects such as "critical damage" - this software can be used without activation. An example would be a "guardian program" that triggers an alert when a specific event is registered.
 
 **Software creation**: similar to cybermodifications, players can create their own software freely describing its effects and matching them to the game mechanics.
 
@@ -323,16 +325,14 @@ All other activities such as hacking, security, access to proprietary informatio
 
 ### Cybermodifications
 
-Each character may install cybermodifications in an amount not exceeding the **actual** level of the **Interface ability divided by 3** (rounding up).
+Each character can install cybermodifications in an amount not exceeding the level of ability **Interface**. It is possible to increase this number at the expense of the degeneration of the character's psyche. The player can install **additional implants** at any time, provided that he reduces **the maximum level of Psyche** of the character - one implant requires the reduction of the PSY level by one point. Removing the excess implant restores the Psychic point.
 
-> Example: *John Kowalsky* has Interface ability equal to 10. This means that he can install 4 cyber modifications.
+> Example: *John Kowalsky* has Interface ability at level 10 and his Psyche is at level 16. That means he can install 10 cybermodifications as standard. However, if he would like to add two more implants, he can do so by reducing the PSY to 14. His Psyche will remain at level 14 as long as he has excess cybermodifications installed.
 
 A character whose **INF is zero** cannot use cybermodifications - they stop working until the character has regained at least one point of Interface.
 
 **Activation**: any cybernetic modification item that affects game mechanics (modifiers to saves, critical damage) requires **activation** every time the character wishes to use it. Activation requires marking **one point of Fatigue** in the inventory, but **is not considered** an action in the round.
 Cybermodification items not marked as requiring activation have a permanent effect and their use does not increase a character's Fatigue.
-
-**Cyberpsychosis**: cyber modifications can have a negative impact on the human body. Intense use of implants can take a toll on a character's mental condition. Whenever fatigue fills a character's **entire** inventory, **subtract one** from their **PSY**.
 
 For more information on the creation of cybermodifications and their pricing, see [Appendix](./cybermod.md).
 

@@ -301,9 +301,11 @@ Wszystkie inne działania takie jak: **hakowanie, ochrona, dostęp do zastrzeżo
 **Czarny LOD** (oficjalnie nielegalny), posiada dodatkową cechę:
 - *Obrażenia krytyczne*: zadaj w PSY celu, tyle samo punktów obrażeń ile zadałeś w INF w tej turze.
 
-**Programy**: każda postać z neuroprocesorem może używać **infodeku** (zajmuje jedno miejsce w ekwipunku) do przechowywania **programów**. Programy mogą wspomagać gracza przy hakowaniu lub obronie węzłów, wymagają jednak **aktywacji**.  Infodek może przechowywać dowolną ilość programów.
+**Programy**: każda postać z neuroprocesorem może używać **infodeku** (nie zajmuje miejsca w ekwipunku) do przechowywania **programów**. Programy mogą wspomagać gracza przy hakowaniu lub obronie węzłów, wymagają jednak **aktywacji**.  Infodek może przechowywać dowolną ilość programów.
 
-**Aktywacja oprogramowania**: Aby wykorzystać funkcje programu zapisanego na infodeku, postać musi aktywować oprogramowanie za każdym razem gdy zechce go użyć. Aktywacja wymaga zaznaczenia jednego punktu Zmęczenia w ekwipunku ale **nie liczy się** jako akcja w rundzie. Maksymalna ilość programów jaką może aktywować haker jest równa **aktualnemu poziomowi INF podzielonemu przez 3** (zaokrąglenie w górę). Wyjątkiem od powyższej reguły są programy użytkowe, które nie modyfikują współczynników w mechanice gry, nie zadają obrażeń ani nie mają efektów typu "obrażenia krytyczne" - tego oprogramowania można użyć bez aktywacji. Przykładem takiego programu może być program strażniczy, który uruchamia alert po zarejestrowaniu określonego zdarzenia.
+**Aktywacja oprogramowania**: Aby wykorzystać funkcje programu zapisanego na infodeku, postać musi aktywować oprogramowanie za każdym razem gdy zechce go użyć. Aktywacja wymaga zaznaczenia jednego punktu Zmęczenia w ekwipunku ale **nie liczy się** jako akcja w rundzie. Maksymalna ilość programów jaką może aktywować haker jest równa **aktualnemu** poziomowi zdolności **Interfejs**.
+
+Wyjątkiem od powyższej reguły są programy użytkowe, które nie modyfikują współczynników w mechanice gry, nie zadają obrażeń ani nie mają efektów typu "obrażenia krytyczne" - tego oprogramowania można użyć bez aktywacji. Przykładem takiego programu może być program strażniczy, który uruchamia alert po zarejestrowaniu określonego zdarzenia.
 
 **Tworzenie oprogramowania**: podobnie jak w przypadku cybermodyfikacji, gracze mogą tworzyć własne oprogramowanie dowolnie opisując jego efekty i dopasowując je do współczynników modyfikujących mechanikę gry.
 
@@ -319,16 +321,14 @@ Wszystkie inne działania takie jak: **hakowanie, ochrona, dostęp do zastrzeżo
 
 ### Cybermodyfikacje
 
-Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekraczającej **aktualnego** poziomu zdolności **Interfejs podzielonej przez 3** (zaokrąglenie w górę).
+Każda postać może sobie zainstalować cybermodyfikacje w ilości nie przekraczającej poziomu zdolności **Interfejs**. Istnieje możliwość zwiększenia tej liczby kosztem degeneracji psychiki postaci. Gracz  może w dowolnym momencie zainstalować **dodatkowe wszczepy** pod warunkiem **zmniejszenia maksymalnego poziomu Psychiki** postaci - jeden wszczep wymaga zredukowania poziomu PSY o jeden punkt. Usunięcie nadmiarowego wszczepu przywraca punkt Psychiki.
 
-> Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10. Oznacza to, że może on zainstalować 4 cybermodyfikacje.
+> Przykład: Wartość współczynnika Interfejs *Johna Kowalsky'ego* wynosi 10 a jego Psychika jest na poziomie 16. Oznacza to, że może on standardowo zainstalować 10 cybermodyfikacji. Gdyby jednak chciał dodać postaci jeszcze dwa wszczepy, może to zrobić pod warunkiem, że zmniejszy PSY do 14. Jego psychika pozostanie na poziomie 14 dopóki będzie miał zainstalowane nadmiarowe cybermodyfikacje.
 
-Postać, której **INF wynosi zero** nie może korzystać z cybermodyfikacji - przestają one działać dopóki bohater nie odzyska **przynajmniej jednego** punktu Interfejsu.
+Postać, której **aktualny poziom INF wynosi zero** nie może aktywować cybermodyfikacji - przestają one działać dopóki bohater nie odzyska **przynajmniej jednego** punktu Interfejsu.
 
 **Aktywacja**: każdy element cybermodyfikacji, który wpływa na mechanikę gry (modyfikatory do rzutów obronnych, obrażenia krytyczne) wymaga **aktywacji** za **każdym razem** gdy postać zechce go użyć. Aktywacja wymaga zaznaczenia jednego punktu Zmęczenia w ekwipunku ale **nie liczy się** jako akcja w rundzie.
 Elementy cybermodyfikacji, nie oznaczone jako wymagające aktywacji, dają efekt trwały a ich używanie nie podnosi zmęczenia postaci.
-
-**Cyberpsychoza**: cybermodyfikacje mogą mieć negatywny wpływ na organizm ludzki. Intensywne używanie wszczepów może odbić się na kondycji psychicznej postaci. Za każdym razem, gdy **zmęczenie wypełni cały ekwipunek** postaci, odejmij **jeden** od jej poziomu **PSY**.
 
 Więcej informacji na temat tworzenia cybermodyfikacji oraz ich cen można znaleźć w [dodatku](./cybermod.md).
 

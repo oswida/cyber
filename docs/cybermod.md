@@ -7,7 +7,7 @@ nav_order: 2
 
 # Cybermodyfikacje
 
-Podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 20 000 ℂ** .
+Podczas tworzenia postaci, każdy gracz może wybrać **pulę cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 20 000 ℂ** .
 
 Cybermodyfikacje to pole do popisu dla wyobraźni graczy. Poniżej znajdziecie co prawda przykłady konkretnych ulepszeń ale *Cyber* przede wszystkim proponuje system konstrukcji wszczepów i określania ich wartości rynkowej tak, żeby każdy z Was mógł stworzyć dosłownie to co zechce.
 
@@ -30,19 +30,19 @@ Warto, aby każda modyfikacja współczynnika miała oparcie w opisie fabularnym
 
 **Modyfikacje kosmetyczne**: cybermodyfikacje, których zadaniem jest jedynie wywołanie efektu estetycznego (ciało porośnięte futrem, kocie oczy, włosy zmieniające kolor itp.) kosztują tyle ile **element bazowy** związany z częścią ciała w której są montowane.
 
-| Modyfikacja                                                                                                               | Cena                        | Maksimum  na cybermod | Aktywacja |
-| ------------------------------------------------------------------------------------------------------------------------- | --------------------------- | :-------------------: | :-------: |
-| +1 do OCHR postaci                                                                                                        | 1 000                       |          +3           |    tak    |
-| +1 do wybranej zdolności (BIO,PSY,INF) przy teście                                                                        | 7 000                       | +1 (wyklucza poniżej) |    tak    |
-| +1 do wybranej zdolności przy teście dla konkretnej grupy aktywności                                                      | 4 000                       | +3 (wyklucza powyżej) |    tak    |
-| +1 do Pancerza podczas rozstrzygania obrażeń BIO                                                                          | 10 000                      |   +3 (całość <= 3)    |     -     |
-| +1 miejsce w ekwipunku                                                                                                    | 1 000                       |          +1           |     -     |
-| wmontowane uzbrojenie                                                                                                     | rodzaj kości obrażeń * 1500 |          k12          |     -     |
-| neuroprocesor do hakowania i zapory\*                                                                                     | rodzaj kości obrażeń * 1500 |          k12          |     -     |
-| ułatwienie/utrudnienie testu dla jednej wybranej zdolności                                                                | 3 500                       |    1 (BIO,PSY,INF)    |    tak    |
-| obrażenia krytyczne, które nie ranią celu                                                                                 | 1 500                       | 1 (wyklucza poniżej)  |    tak    |
-| obrażenia krytyczne, które zadają dodatkowe obrażenia                                                                     | rodzaj kości obrażeń * 500  | 1  (wyklucza powyżej) |    tak    |
-| dodatkowa funkcjonalność nie zwiększająca współczynników np. narzędzia w dłoni, oko z podczerwienią, filtry antytoksynowe | 1 000                       |           2           |     -     |
+| Modyfikacja                                                                                                               | Cena                        | Aktywacja |
+| ------------------------------------------------------------------------------------------------------------------------- | --------------------------- | :-------: |
+| +1 do OCHR postaci                                                                                                        | 1 000                       |    tak    |
+| +1 do wybranej zdolności (BIO,PSY,INF) przy teście                                                                        | 7 000                       |    tak    |
+| +1 do wybranej zdolności przy teście dla konkretnej grupy aktywności                                                      | 4 000                       |    tak    |
+| +1 do Pancerza podczas rozstrzygania obrażeń BIO                                                                          | 10 000                      |     -     |
+| +1 miejsce w ekwipunku                                                                                                    | 1 000                       |     -     |
+| wmontowane uzbrojenie                                                                                                     | rodzaj kości obrażeń * 1500 |     -     |
+| neuroprocesor do hakowania i zapory\*                                                                                     | rodzaj kości obrażeń * 1500 |     -     |
+| ułatwienie/utrudnienie testu dla jednej wybranej zdolności                                                                | 3 500                       |    tak    |
+| obrażenia krytyczne, które nie ranią celu                                                                                 | 1 500                       |    tak    |
+| obrażenia krytyczne, które zadają dodatkowe obrażenia                                                                     | rodzaj kości obrażeń * 500  |    tak    |
+| dodatkowa funkcjonalność nie zwiększająca współczynników np. narzędzia w dłoni, oko z podczerwienią, filtry antytoksynowe | 1 000                       |     -     |
 
 \* Uwaga: neuroprocesor pozwala wykonywać akcje hakowania i zapory w Infosferze ale jednocześnie umożliwia programom zadawanie obrażeń w PSY właściciela.
 
@@ -56,23 +56,23 @@ Całkowita redukcja obrażeń INF wywoływanych przez broń EMP nie jest możliw
 
 ## Przykłady klasycznych cybermodów
 
-| Nazwa                           | Efekt                                                                 |
-| ------------------------------- | --------------------------------------------------------------------- |
-| Dermozbroja                     | +1 do +3 pancerza                                                     |
-| Kieszeń podskórna               | +1 slot ekwipunku                                                     |
-| Skrytka w cyberkończynie        | +1 slot ekwipunku                                                     |
-| Neuroprocesor                   | Możliwość hakowania i zapory w Infosferze                             |
-| Koprocesor sieciowy             | +1 do +3 przy testach INF                                             |
-| Wzmocnienie mięśnio-szkieletowe | +1 do +3 przy testach BIO                                             |
-| Procesor behawioralny           | +1 do +3 przy testach PSY                                             |
-| Akcelerator neuroimpulsów       | +1 do +3 BIO przy testach związanych z szybkością reakcji             |
-| Stabilizator mięśniowy          | +1 do +3 BIO przy testach związanych z precyzyjnym operowaniem ciałem |
-| Wzmacniacz kognitywny           | +1 do +3 PSY przy testach związanych z poznawaniem, wiedzą, nauką     |
-| Stymulator bio/psy/neuralny     | ułatwienie testu dla BIO/PSY/INF                                      |
-| Biosystem taktyczny             | +1 do +3 OCHR przy rozliczaniu ataku                                  |
-| Implant celowniczy              | wybrane obrażenia krytyczne bez ran                                   |
-| Neurokontroler dronów/pojazdów  | +1 BIO przy testach związanych ze sterowaniem                         |
-| Neurokontroler broni            | obrażenia krytyczne zadające dodatkowe rany                           |
+| Nazwa                           | Efekt                                                            |
+| ------------------------------- | ---------------------------------------------------------------- |
+| Dermozbroja                     | +1 pancerza                                                      |
+| Kieszeń podskórna               | +1 slot ekwipunku                                                |
+| Skrytka w cyberkończynie        | +1 slot ekwipunku                                                |
+| Neuroprocesor                   | Możliwość hakowania i zapory w Infosferze                        |
+| Koprocesor sieciowy             | +1  przy testach INF                                             |
+| Wzmocnienie mięśnio-szkieletowe | +1 przy testach BIO                                              |
+| Procesor behawioralny           | +1  przy testach PSY                                             |
+| Akcelerator neuroimpulsów       | +1  BIO przy testach związanych z szybkością reakcji             |
+| Stabilizator mięśniowy          | +1  BIO przy testach związanych z precyzyjnym operowaniem ciałem |
+| Wzmacniacz kognitywny           | +1  PSY przy testach związanych z poznawaniem, wiedzą, nauką     |
+| Stymulator bio/psy/neuralny     | ułatwienie testu dla BIO/PSY/INF                                 |
+| Biosystem taktyczny             | +1  OCHR przy rozliczaniu ataku                                  |
+| Implant celowniczy              | wybrane obrażenia krytyczne bez ran                              |
+| Neurokontroler dronów/pojazdów  | +1 BIO przy testach związanych ze sterowaniem                    |
+| Neurokontroler broni            | obrażenia krytyczne zadające dodatkowe rany                      |
 
 
 ### Najprostszy interfejs pozwalający na hakowanie w sieci

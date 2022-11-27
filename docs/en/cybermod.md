@@ -7,7 +7,7 @@ nav_order: 3
 
 # Cybermods
 
-During character creation, each player can choose **up to 2 cybermodifications for free, but the cost of these upgrades cannot exceed 20,000 ℂ** .
+During character creation, each player can choose **any number of cybermodifications for free, but the cost of these upgrades cannot exceed 20,000 ℂ** .
 
 Cyber modifications are a sandbox for players' imagination. Although you will find examples of specific improvements below, *Cyber* first and foremost proposes a system for constructing implants and determining their market value, so that each of you can literally create whatever you want.
 
@@ -30,19 +30,19 @@ Try to make a fictional description for every enhancement. This is especially im
 
 **Cosmetic modifications**: Cybermodifications that are only intended to produce an aesthetic effect (body covered in fur, cat's eyes, hair changing colour, etc.) cost as much as the **base element** associated with the body part in which they are fitted.
 
-| Enhancement                                                                                                           | Price                      | Maximum  per cybermod | Activation |
-| --------------------------------------------------------------------------------------------------------------------- | -------------------------- | :-------------------: | :--------: |
-| +1 to character's HP                                                                                                  | 1 000                      |          +3           |    yes     |
-| +1 to the selected ability (BIO,PSY,INF) on test                                                                      | 7 000                      |  +1 (excludes below)  |    yes     |
-| +1 to the selected ability when tested for a specific activity group                                                  | 4 000                      |  +3 (excludes above)  |    yes     |
-| +1 to Armor when dealing with BIO damage                                                                              | 10 000                     |    +3 (total <= 3)    |     -      |
-| +1 Inventory slot                                                                                                     | 1 000                      |          +1           |     -      |
-| mounted weapon                                                                                                        | type of damage dice * 1500 |          d12          |     -      |
-| neuroprocesor for hacking and firewall\*                                                                              | type of damage dice * 1500 |          d12          |     -      |
-| easy/difficult test for one selected ability                                                                          | 3 500                      |    1 (BOD,PSY,INT)    |    yes     |
-| critical damage that does not injure the target                                                                       | 1 500                      |  1 (excludes below)   |    yes     |
-| critical damage that inflicts additional injuries                                                                     | type of damage dice * 500  |  1  (excludes above)  |    yes     |
-| additional functionality that does not modify game mechanics, e.g. tools in the hand, infrared eye, antitoxin filters | 1 000    each              |           2           |     -      |
+| Enhancement                                                                                                           | Price                      | Activation |
+| --------------------------------------------------------------------------------------------------------------------- | -------------------------- | :--------: |
+| +1 to character's HP                                                                                                  | 1 000                      |    yes     |
+| +1 to the selected ability (BIO,PSY,INF) on test                                                                      | 7 000                      |    yes     |
+| +1 to the selected ability when tested for a specific activity group                                                  | 4 000                      |    yes     |
+| +1 to Armor when dealing with BIO damage                                                                              | 10 000                     |     -      |
+| +1 Inventory slot                                                                                                     | 1 000                      |     -      |
+| mounted weapon                                                                                                        | type of damage dice * 1500 |     -      |
+| neuroprocesor for hacking and firewall\*                                                                              | type of damage dice * 1500 |     -      |
+| easy/difficult test for one selected ability                                                                          | 3 500                      |    yes     |
+| critical damage that does not injure the target                                                                       | 1 500                      |    yes     |
+| critical damage that inflicts additional injuries                                                                     | type of damage dice * 500  |    yes     |
+| additional functionality that does not modify game mechanics, e.g. tools in the hand, infrared eye, antitoxin filters | 1 000    each              |     -      |
 
 \* Note: the neuroprocessor allows hacking and firewall actions to be performed in the Infosphere but also allows software to inflict damage on the owner's PSY.
 
@@ -56,23 +56,23 @@ Total reduction of INF damage caused by EMP weapons is not possible, but each ch
 
 ## Examples of classical cybermods
 
-| Name                           | Effect                                                               |
-| ------------------------------ | -------------------------------------------------------------------- |
-| Dermal armor                   | +1 up to +3 armor                                                    |
-| Subdermal pocket               | +1 inventory slot                                                    |
-| A cache in cyberarm/cyberleg   | +1 inventory slot                                                    |
-| Neuroprocessor                 | Infosphere's hacking and firewall capabilities                       |
-| Network coprocessor            | +1 up to +3 for INF tests                                            |
-| Musculo-skeletal reinforcement | +1 up to +3 for BIO tests                                            |
-| Behavioral processor           | +1 up to +3 for PSY tests                                            |
-| Neuroimpulse accelerator       | +1 up to  +3 BIO for tests relating to the speed of reaction         |
-| Muscular stabiliser            | +1 up to  +3 BIO for tests involving precise body handling           |
-| Cognitive booster              | +1 up to +3 PSY  for tests related to cognition, knowledge, learning |
-| Bio/psy/neural stimulator      | Easy tests for  BIO/PSY/INF                                          |
-| Tactical biosystem             | +1 up to +3 HP during resolving the attack                           |
-| Targeting implant              | selected critical injuries without wounds                            |
-| Drone/vehicle neurocontroller  | +1 BIO for steering tests                                            |
-| Weapon neurocontroller         | Critical damage inflicting additional wounds                         |
+| Name                           | Effect                                                       |
+| ------------------------------ | ------------------------------------------------------------ |
+| Dermal armor                   | +1  armor                                                    |
+| Subdermal pocket               | +1 inventory slot                                            |
+| A cache in cyberarm/cyberleg   | +1 inventory slot                                            |
+| Neuroprocessor                 | Infosphere's hacking and firewall capabilities               |
+| Network coprocessor            | +1  for INF tests                                            |
+| Musculo-skeletal reinforcement | +1  for BIO tests                                            |
+| Behavioral processor           | +1  for PSY tests                                            |
+| Neuroimpulse accelerator       | +1  BIO for tests relating to the speed of reaction          |
+| Muscular stabiliser            | +1  BIO for tests involving precise body handling            |
+| Cognitive booster              | +1  PSY  for tests related to cognition, knowledge, learning |
+| Bio/psy/neural stimulator      | Easy tests for  BIO/PSY/INF                                  |
+| Tactical biosystem             | +1  HP during resolving the attack                           |
+| Targeting implant              | selected critical injuries without wounds                    |
+| Drone/vehicle neurocontroller  | +1 BIO for steering tests                                    |
+| Weapon neurocontroller         | Critical damage inflicting additional wounds                 |
 
 
 ### The simplest interface for hacking on the Infosphere
