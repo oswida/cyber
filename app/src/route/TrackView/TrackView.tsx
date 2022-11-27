@@ -1,16 +1,20 @@
 import { useI18n } from "@solid-primitives/i18n";
 import {
+  FaSolidCopy,
   FaSolidDeleteLeft,
   FaSolidFileExport,
   FaSolidFileImport,
-  FaSolidPencil,
   FaSolidPlus,
   FaSolidTrash,
 } from "solid-icons/fa";
 import { Component, createMemo, createSignal, For } from "solid-js";
+import { deleteTrack } from "~/actions";
 import {
   emptyTrackInfo,
+  exportData,
+  importData,
   inodTrackKey,
+  prettyToday,
   saveGenericData,
   TrackInfo,
   useAppData,
@@ -18,7 +22,7 @@ import {
 import { Button, Confirm, Flex, Input, Texte } from "~/component";
 import { TrackViewRootStyle } from "./styles.css";
 import { TrackItem } from "./TrackItem";
-import { deleteTrack } from "~/actions";
+import { v4 as uuidv4 } from "uuid";
 
 export const TrackView: Component = () => {
   const apd = useAppData();
@@ -29,7 +33,11 @@ export const TrackView: Component = () => {
 
   const trackList = createMemo(() => {
     if (!apd) return [];
-    return Object.values(apd.trackData());
+    return Object.values(apd.trackData()).filter(
+      (it) =>
+        filter().trim() === "" ||
+        it.name.toLowerCase().includes(filter().toLowerCase())
+    );
   });
 
   const selectTrack = (it: TrackInfo) => {
@@ -44,20 +52,24 @@ export const TrackView: Component = () => {
 
     apd.setTrackData(newState);
     saveGenericData(inodTrackKey, newState);
-    //TODO: publish ?
   };
-
-  const change = () => {
-    // TODO
-  };
-
-  const edit = () => {};
 
   const deleteItem = () => {
     if (!apd) return;
     const item = apd.selectedTrack();
-    if (!item) return;
+    if (!item || item.id.trim() === "") return;
     const newState = deleteTrack(apd, item);
+    saveGenericData(inodTrackKey, newState);
+    apd.setSelectedTrack(emptyTrackInfo());
+  };
+
+  const copy = () => {
+    if (!apd) return;
+    const item = apd.selectedTrack();
+    if (!item || item.id.trim() === "") return;
+    const newEntry = { ...item, id: uuidv4() };
+    const newState = { ...apd.trackData(), [newEntry.id]: newEntry };
+    apd.setTrackData(newState);
     saveGenericData(inodTrackKey, newState);
   };
 
@@ -67,14 +79,28 @@ export const TrackView: Component = () => {
     filterRef.value = "";
   };
 
+  const confirmDelete = () => {
+    if (!apd) return;
+    const item = apd.selectedTrack();
+    if (!item || item.id.trim() === "") return;
+    setConfirm(true);
+  };
+
   const confirmMessage = createMemo(() => {
     if (!apd) return "";
-    return `${t("Really_delete_message")} ${apd.selectedTrack()?.name}?`;
+    return `${t("Really_delete_track")} ${apd.selectedTrack()?.name}?`;
   });
 
-  const exportTracks = () => {};
+  const exportTracks = () => {
+    const filename = `trackers-${prettyToday()}.json`;
+    exportData(apd?.trackData(), filename);
+  };
 
-  const importTracks = () => {};
+  const importTracks = () => {
+    importData((data: any) => {
+      apd?.setTrackData(data);
+    });
+  };
 
   return (
     <Flex center type="column">
@@ -83,7 +109,7 @@ export const TrackView: Component = () => {
           <FaSolidPlus />
         </Button>
         <Input
-          onInput={change}
+          onInput={() => setFilter(filterRef.value)}
           underline="blue"
           style={{ flex: 1 }}
           ref={(el) => (filterRef = el)}
@@ -93,9 +119,17 @@ export const TrackView: Component = () => {
         </Button>
 
         <Button
+          title={t("Copy")}
+          style={{ "margin-left": "15px" }}
+          onClick={copy}
+        >
+          <FaSolidCopy />
+        </Button>
+
+        <Button
           title={t("Delete_selected")}
           style={{ "margin-left": "15px" }}
-          onClick={() => setConfirm(true)}
+          onClick={confirmDelete}
         >
           <FaSolidTrash />
         </Button>

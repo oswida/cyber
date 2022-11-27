@@ -71,4 +71,5 @@ export const messages_en = {
   Host: "Host",
   Client: "Client",
   Connection_link: "Connection link",
+  Really_delete_track: "Really delete track",
 };

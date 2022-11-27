@@ -143,29 +143,27 @@ export type TrackInfo = {
   id: string;
   name: string;
   symbol: string;
-  bio: [number, number];
-  psy: [number, number];
-  inf: [number, number];
-  hp: [number, number];
+  bio: number;
+  psy: number;
+  inf: number;
+  hp: number;
   armor: number;
   dmgdice: number;
   description: string;
-  state: string;
 };
 
 export const emptyTrackInfo = (generate?: boolean): TrackInfo => {
   return {
     id: generate ? uuidv4() : "",
-    name: generate ? "some track" : "",
-    symbol: "",
-    bio: generate ? [10, 10] : [0, 0],
-    psy: generate ? [10, 10] : [0, 0],
-    inf: generate ? [10, 10] : [0, 0],
-    hp: generate ? [3, 3] : [0, 0],
+    name: generate ? "Noname" : "",
+    symbol: "s1",
+    bio: generate ? 10 : 0,
+    psy: generate ? 10 : 0,
+    inf: generate ? 10 : 0,
+    hp: generate ? 3 : 0,
     armor: 0,
     dmgdice: 0,
     description: "",
-    state: "",
   };
 };
 

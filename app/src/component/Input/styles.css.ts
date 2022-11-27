@@ -15,6 +15,11 @@ export const InputStyle = recipe({
     borderRadius: 5,
   },
   variants: {
+    transparent: {
+      true: {
+        backgroundColor: "transparent",
+      },
+    },
     underline: {
       true: {
         borderBottom: `solid 1px ${themeVars.colors.fontPrimary}`,

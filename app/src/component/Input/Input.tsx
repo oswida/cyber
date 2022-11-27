@@ -7,6 +7,7 @@ type Props = {
   center?: boolean;
   small?: boolean;
   middle?: boolean;
+  transparent?: boolean;
 };
 
 export const Input = ({
@@ -17,6 +18,7 @@ export const Input = ({
   ref,
   placeholder,
   small,
+  transparent,
   onChange,
   onInput,
   value,
@@ -25,13 +27,14 @@ export const Input = ({
 }: ComponentProps<"input"> & Props) => {
   return (
     <Switch>
-      <Match when={value}>
+      <Match when={value !== undefined}>
         <input
           class={InputStyle({
             center: center,
             underline: underline,
             small: small,
             middle: middle,
+            transparent: transparent,
           })}
           style={style}
           title={title}

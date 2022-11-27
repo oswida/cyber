@@ -24,7 +24,7 @@ export const ListItemStyle = recipe({
     borderRadius: 5,
     width: "calc(100% - 20px)",
     alignItems: "center",
-    padding: "5px",
+    padding: "15px",
     paddingRight: "10px",
     paddingLeft: "10px",
     backgroundColor: themeVars.colors.background,

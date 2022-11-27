@@ -25,6 +25,7 @@ export const TextArea: Component<ComponentProps<"div"> & Props> = ({
       ref={ref}
       onBlur={onBlur}
       onInput={onInput}
+      spellcheck={false}
     >
       {children}
     </div>
