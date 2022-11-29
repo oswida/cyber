@@ -11,6 +11,8 @@ Cyber to gra fabularna o eksploracji mrocznego świata niedalekiej przyszłości
 
 Dokumenty w formacie PDF dostępne są na [itch.io](https://oskarswida.itch.io/cyber).
 
+[Aplikacja wspomagająca prowadzenie gry.](https://oswida.github.io/cyber/app/dist)
+
 
 ## Inspiracje i podziękowania
 
@@ -26,8 +28,6 @@ Ta gra nie mogła powstać w próżni. Poniżej znajdziecie listę osób oraz ma
 
 ---
 
-Cyberpunk Cairn hack (in Polish for now).
-
 Released under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-[app](https://oswida.github.io/cyber/app/dist)
+
