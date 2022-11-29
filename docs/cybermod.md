@@ -7,7 +7,7 @@ nav_order: 2
 
 # Cybermodyfikacje
 
-Podczas tworzenia postaci, każdy gracz może wybrać **pulę cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 20 000 ℂ** .
+Podczas tworzenia postaci, każdy gracz może wybrać **dowolną cybermodyfikacji za darmo, ale koszt tych ulepszeń nie może przekroczyć 20 000 ℂ** .
 
 Cybermodyfikacje to pole do popisu dla wyobraźni graczy. Poniżej znajdziecie co prawda przykłady konkretnych ulepszeń ale *Cyber* przede wszystkim proponuje system konstrukcji wszczepów i określania ich wartości rynkowej tak, żeby każdy z Was mógł stworzyć dosłownie to co zechce.
 
