@@ -94,9 +94,11 @@ Torby, plecaki, wózki i cybermody mogą zwiększać ilość miejsc. **Pojemniki
 > Przykład:
 > John bierze na akcję plecak, który zwiększa ilość miejsc ekwipunku o 4. Plecak trzeba jednak założyć na plecy, więc zajmie on jedno miejsce. Finalnie zatem John powiększył ilość miejsc o 3. Jeśli zdecydowałby się na wózek, który musi ciągnąć jedną ręką, to nadal przedmiot ten zajmuje jedno miejsce. W przypadku pojazdu transportowego, wózka automatycznego itp., pojemniki nie zajmują miejsca.
 
+**Ograniczenie pojemności ekwipunku**: maksymalna ilość miejsc w ekwipunku nie może przekroczyć maksymalnego poziomu zdolności BIO postaci.
+
 Postać nie może nosić więcej przedmiotów niż pozwala na to łączna ilość miejsc ekwipunku. Każda postać, która ma **pełny ekwipunek** (przedmioty i zmęczenie razem) zostaje zredukowana do **0 OCHR**.
 
-Oprócz ekwipunku startowego (kupowanego za początkowe kredyty), podczas tworzenia postaci, każdy gracz może wybrać **do 2 cybermodyfikacji za darmo**, ale koszt tych ulepszeń nie może przekroczyć `20 000 ℂ`.
+Oprócz ekwipunku startowego (kupowanego za początkowe kredyty), podczas tworzenia postaci, każdy gracz może wybrać **dowolną ilość cybermodyfikacji za darmo**, ale koszt tych ulepszeń nie może przekroczyć `20 000 ℂ`.
 
 ## Zasady
 
@@ -112,7 +114,7 @@ Każda z trzech zdolności jest używana w innych sytuacjach (patrz [rzuty obron
 
 Postać pozbawiona możliwości zaspokojenia kluczowej potrzeby (takiej jak jedzenie lub odpoczynek) albo poddana długotrwałej presji psychicznej, odczuwa **dyskomfort** i **nie może odzyskać punktów OCHR ani punktów zdolności**.
 
-Każda osoba odczuwająca dyskomfort przez więcej niż jeden dzień, zaznacza w polach ekwipunku **Zmęczenie**, jedno na każdy dzień, zaczynając od wolnych miejsc a następnie zaznaczając miejsca zajęte przez przedmioty.
+Każda osoba odczuwająca dyskomfort przez więcej niż jeden dzień, zaznacza w polach ekwipunku **Zmęczenie**, jedno na każdy dzień, zaczynając od wolnych miejsc a następnie zaznaczając miejsca zajęte przez przedmioty. 
 
 Każde Zmęczenie blokuje jedno miejsce ekwipunku i trwa do czasu, aż postać będzie w stanie się zregenerować (np. odpoczywając całą noc w bezpiecznym miejscu). Po wypoczynku, postać odzyskuje *wszystkie* zajęte miejsca.
 
@@ -120,6 +122,7 @@ Każde Zmęczenie blokuje jedno miejsce ekwipunku i trwa do czasu, aż postać b
 
 Miejsca zablokowane przez Zmęczenie nie mogą być wykorzystane do noszenia ekwipunku. Jeśli gracz musi zaznaczyć Zmęczenie na miejscu już zajętym przez jakiś przedmiot, rzecz tę należy odłożyć lub wyrzucić.
 Każda postać, która ma **pełny ekwipunek** (przedmioty i zmęczenie razem) zostaje zredukowana do **0 OCHR**.
+Pojemność ekwipunku jest  też pewną  mia­rą  wytrzymałości postaci, złożeniem tęży­z­ny fizycznej i determinacji psy­chi­cz­nej wyznaczanej przez rozmiar baga­żu, który jest w stanie unieść bohater.
 
 Postacie mogą również odczuwać dyskomfort lub otrzymać punkty Zmęczenia poprzez wydarzenia w fikcji lub jako efekt niektórych akcji (np. aktywacja niektórych cybermodyfikacji).
 

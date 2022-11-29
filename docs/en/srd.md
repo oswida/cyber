@@ -119,8 +119,9 @@ A PC deprived of a crucial need (such as food or rest) or subjected to prolonged
 Anyone deprived for more than a day adds **Fatigue** to their inventory, one for each day - starting with the empty slots and then marking the places occupied by the objects. Each Fatigue occupies one slot and lasts until they are able to recuperate (such as a full night’s rest in a safe spot). After a rest, the character recovers *all* taken slots.
 
 Slots blocked by Fatigue cannot be used to carry equipment, if a player has to mark Fatigue on a slot already occupied by an item, that item must be put back or discarded. Any character who has **full inventory** (items and fatigue combined) is reduced to **0 HP**.
+The capacity of the equipment is also a certain measure of the character's endurance, a composite of physical fortitude and mental determination defined by the size of the luggage the character can carry.
 
-PCs can also gain Fatigue through events in the fiction or as an effect of certain actions (e.g. activation of some cybermodifications).
+PCs can also gain Fatigue through events in the fiction or as an effect of certain actions (e.g. activation of some cybermodifications). 
 
 **Stimulants**: it is possible to get rid of Fatigue by taking stimulants. To do so, the player consumes one dose of stimulant and rolls the **1d4**. The result indicates the number of spaces recovered in the inventory (by removing Fatigue).
 
