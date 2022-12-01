@@ -5,6 +5,7 @@ export type CorpoInfo = {
   name: string;
   sectors: string[];
   gossip: string;
+  objective: string;
   resources: string[];
   employeeProfile: string;
 };

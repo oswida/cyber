@@ -1,23 +1,23 @@
-import { saveGenericData, inodGenCorporationKey } from "./../common/storage";
+import { v4 as uuidv4 } from "uuid";
 import {
-  dictCorpoGossip,
-  dictCorpoResources,
-  dictCorpoSector,
+  CorpoInfo,
+  corporationData,
+  rollFrom,
+  rollIndexFrom,
+  rollSingle,
+  setCorporationData,
+} from "~/common";
+import {
   dictCorpoEmployeeProfile,
-  dictCorpoObjective,
+  dictCorpoGossip,
   dictCorpoNameFirst,
   dictCorpoNameSecond,
   dictCorpoNameSector,
+  dictCorpoObjective,
+  dictCorpoResources,
+  dictCorpoSector,
 } from "../data/corpo";
-import {
-  corporationData,
-  rollSingle,
-  setCorporationData,
-  rollIndexFrom,
-  CorpoInfo,
-  rollFrom,
-} from "~/common";
-import { v4 as uuidv4 } from "uuid";
+import { inodGenCorporationKey, saveGenericData } from "./../common/storage";
 
 export const deleteCorpo = (id: string) => {
   const data = corporationData().filter((it) => it.id !== id);
@@ -55,6 +55,7 @@ export const generateCorpo = (
     if (resources.indexOf(r) === -1) resources.push(r);
   }
   const profileIdx = rollIndexFrom(dictCorpoEmployeeProfile);
+  const objectiveIdx = rollIndexFrom(dictCorpoObjective);
 
   const retv: CorpoInfo = {
     id: uuidv4(),
@@ -68,6 +69,9 @@ export const generateCorpo = (
     ),
     employeeProfile: t(
       `dictCorpoEmployeeProfile_${profileIdx.toString().padStart(3, "0")}`
+    ),
+    objective: t(
+      `dictCorpoObjective_${objectiveIdx.toString().padStart(3, "0")}`
     ),
   };
 

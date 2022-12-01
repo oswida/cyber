@@ -11,7 +11,7 @@ Korporacje (nazywane żargonowo z japońskiego "zaibatsu") to integralna częś�
 
 Prezentowany generator ma być inspiracją do zapełniania Waszego świata złowrogimi korporacjami.
 
-[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/corpo)
+[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/gen?lang=pl)
 
 ## Losowanie
 

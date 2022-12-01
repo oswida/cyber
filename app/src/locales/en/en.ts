@@ -9,6 +9,7 @@ export const messages_en = {
   Sector: "Sector",
   Gossip: "Gossip",
   Resources: "Resources",
+  Objective: "Objective",
   Employee_profile: "Employee profile",
   Configuration: "Configuration",
   Characters: "Characters",

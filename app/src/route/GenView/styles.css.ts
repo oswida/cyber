@@ -57,7 +57,7 @@ export const CardRootStyle = recipe({
     minHeight: "max-content",
     minWidth: 350,
     maxWidth: 350,
-    height: 300,
+    height: 330,
   },
   variants: {
     color: {

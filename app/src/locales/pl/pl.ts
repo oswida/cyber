@@ -8,6 +8,7 @@ export const messages_pl = {
   Export: "Eksport",
   Sector: "Branża",
   Gossip: "Plotka",
+  Objective: "Cel",
   Resources: "Zasoby",
   Employee_profile: "Profil pracownika",
   Configuration: "Konfiguracja",

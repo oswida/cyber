@@ -31,6 +31,12 @@ const GenCorpo = ({ item }: { item: CorpoInfo }) => {
       </div>
       <div class={CardRowStyle}>
         <Texte size="small" color="yellow">
+          {t("Objective")}
+        </Texte>
+        <Texte>{item.objective}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
           {t("Resources")}
         </Texte>
         <Texte>{item.resources.join(", ")}</Texte>
