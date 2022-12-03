@@ -34,7 +34,7 @@ Poniższa tabela opisuje współczynniki i zabezpieczenia dla poszczególnych kl
 
 - `OCHR` i `INF` podają kość jakiej należy użyć do wylosowania wartości atrybutu (modyfikator przy OCHR zapewnia pewien bazowy poziom dla danej klasy)
 - `LOD` określa kość ataku dla Logicznego Oprogramowania Defensywnego oraz określa szansę na to, że dany LOD będzie czarny (rzucamy Kością Przeznaczenia, x/6 oznacza, że wyniki od 1 do x dają odpowiedź pozytywną)
-- `Próg aktywacji` informuje o maksymalnej wartości, która aktywuje program ochronny w danej rundzie. Procedura nie wymaga żadnego dodatkowego rzutu - wartość brana jest z rzutu ataku LOD, jeśli wynik jest mniejszy lub równy progowi aktywacji, w tej samej rundzie następuje uruchomienie programu a jego typ pobiera się z tabeli oprogramowania ochronnego, również na podstawie wartości wyrzuconej podczas ataku.
+- `Próg aktywacji` informuje o maksymalnej wartości, która aktywuje program ochronny w danej rundzie.
 
 | Klasa              | OCHR  |  INF  | Próg aktywacji |       LOD        |
 | ------------------ | :---: | :---: | :------------: | :--------------: |
@@ -45,6 +45,11 @@ Poniższa tabela opisuje współczynniki i zabezpieczenia dla poszczególnych kl
 | Korporacyjny       | k10+4 |  k10  |       7        | k10, 2/6: Czarny |
 | Wojskowy           | k12+5 |  k12  |       9        | k12, 3/6: Czarny |
 | SI                 | k20+6 |  k20  |       12       | k20, 4/6: Czarny |
+
+### Oprogramowanie ochronne
+
+Każdy z węzłów może mieć dodatkowo oprogramowanie ochronne. Jego aktywacja nie musi być nieuchronna i zależy od wyniku rzutu podczas ataku LOD.
+Procedura nie wymaga żadnego dodatkowego rzutu kością - wartość brana jest z rzutu ataku LOD, jeśli wynik jest mniejszy lub równy progowi aktywacji, w tej samej rundzie następuje uruchomienie programu a jego typ pobiera się z tabeli oprogramowania ochronnego, również na podstawie wartości wyrzuconej podczas ataku.
 
 | k4 - k20 | Oprogramowanie ochronne ()                               |
 | :------: | -------------------------------------------------------- |
@@ -97,7 +102,9 @@ Poniższa tabela opisuje współczynniki i zabezpieczenia dla poszczególnych kl
 | 19  | Trapezoid              | Pomarańczowy, jaskrawy           | Dynamiczne fraktale rysowane na powierzchni     |
 | 20  | Prostopadłościan       | Stalowy, pokryty symbolami       | Co jakiś czas znika i pojawia się               |
 
-## Dane (k20)
+## Dane do zdobycia (k20)
+
+Jeśli twoi hakerzy włamują się do węzłów Infosfery w celu zdobycia cennych danych, poniższe tabele mogą być inspiracją.
 
 ### Publiczny
 
@@ -259,3 +266,32 @@ Poniższa tabela opisuje współczynniki i zabezpieczenia dla poszczególnych kl
 18. Dowody na to, że jedną z korporacji całkowicie zarządzają SI
 19. Plan ataku na Infosferę, który mają przeprowadzić zbuntowane SI
 20. Destrukcyjny wirus, natychmiastowo kasujący wszystkie dane na węźle, na którym go uruchomiono
+
+# Algorytmy dodatkowe
+
+Kilka dodatkowym mechanizmów pozwalających rozbudować rozgrywkę w Infosferze.
+## Starcia pomiędzy hakerami
+
+Podstawowa wersja gry zakłada, że hakerzy mogą atakować węzły w Infosferze oraz być atakowani przez Logiczne Oprogramowanie Defensywne.
+Co się jednak stanie, jeśli w sieci spotka się kilku hakerów stojących po przeciwnych stronach? 
+Neuroprocesor daje hakerowi dużo większe możliwości operowania Infosferą ale jednocześnie naraża go na bezpośrednie ataki z sieci.
+
+Istnieje możliwość zaatakowania jaźni hakera w podobny sposób jak to się dzieje z węzłami Infosfery. 
+Akcję taką musi wykonać inny haker, nie może tego dokonać żadne oprogramowanie. Istnieją pogłoski, że niektórym SI 
+również zdarzało się atakować bezpośrednio umysł człowieka.
+
+Starcie odbywa się na zasadach identycznych jak w przypadku węzłów. Oponenci **atakują za pomocą neuroprocesorów** a obrażenia zadawane są najpierw w OCHR a potem INF przeciwnika. Ataki odbywają się jednocześnie.
+Zredukowanie OCHR hakera do zera lub poniżej oznacza, że druga strona może **przejąć kontrolę nad bodźcami** odbieranymi przez pokonanego na **tyle rund ile wynosi jej aktualny INF**.
+Przejęcie kontroli dotyczy jedynie sensorium hakera (wzrok, słuch, węch), nie obejmuje motoryki, czyli nie można sterować ciałem przeciwnika. Ale można za to całkowicie kontrolować jego postrzeganie.
+
+## Wspomaganie
+
+Jeśli dwu lub więcej hakerów zechce skoordynować swoje działania podczas ataku na węzeł, ich działania rozliczane są podobnie jak wielu atakujących w regułach dotyczących walki.
+Rzuć **wszystkimi** kośćmi obrażeń i zachowaj jeden **wybrany** wynik.
+Różnica w stosunku do walki fizycznej (tam wybiera się najwyższy wynik) wynika z tego, że hakerzy mogą modyfikować efekt ataku za pomocą programów. W momencie rozliczania ataku, pod uwagę brane są **tylko te programy**, które aktywował **właściciel wybranego rzutu**.
+
+## Pasażerowie
+
+Każdy haker może połączyć ze swoim neuroprocesorem dowolną ilość zwykłych urządzeń dostępowych. W ten sposób, osoby postronne, nie posiadające neuroprocesora, mogą mieć z nim stały kontakt a nawet obserwować jego poczynania w sieci. Nikt z pasażerów nie może jednak podejmować żadnej akcji w Infosferze, ich udział ogranicza się jedynie do biernej obserwacji lub komunikacji z hakerem.
+
+
