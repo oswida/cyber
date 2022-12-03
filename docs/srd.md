@@ -114,7 +114,7 @@ Każda z trzech zdolności jest używana w innych sytuacjach (patrz [rzuty obron
 
 Postać pozbawiona możliwości zaspokojenia kluczowej potrzeby (takiej jak jedzenie lub odpoczynek) albo poddana długotrwałej presji psychicznej, odczuwa **dyskomfort** i **nie może odzyskać punktów OCHR ani punktów zdolności**.
 
-Każda osoba odczuwająca dyskomfort przez więcej niż jeden dzień, zaznacza w polach ekwipunku **Zmęczenie**, jedno na każdy dzień, zaczynając od wolnych miejsc a następnie zaznaczając miejsca zajęte przez przedmioty. 
+Każda osoba odczuwająca dyskomfort przez więcej niż jeden dzień, zaznacza w polach ekwipunku **Zmęczenie**, jedno na każdy dzień, zaczynając od wolnych miejsc a następnie zaznaczając miejsca zajęte przez przedmioty.
 
 Każde Zmęczenie blokuje jedno miejsce ekwipunku i trwa do czasu, aż postać będzie w stanie się zregenerować (np. odpoczywając całą noc w bezpiecznym miejscu). Po wypoczynku, postać odzyskuje *wszystkie* zajęte miejsca.
 
@@ -216,7 +216,7 @@ Obrażenia, które redukują OCHR celu poniżej zera, zmniejszają BIO/INF celu 
 
 Każda postać, która otrzyma obrażenia krytyczne w BIO, nie może zrobić nic poza słabym czołganiem się i kurczowym chwytaniem się resztek życia. Jeśli otrzyma pomoc i będzie mogła odpocząć, jej stan ulegnie stabilizacji. Jeśli postać nie będzie leczona, umrze w ciągu godziny.
 
-Każda postać, która otrzyma obrażenia krytyczne w INF, zostaje unieruchomiona w Infosferze (nie może się przemieszczać pomiędzy węzłami) lub wszystkie jej cybermodyfikacje tymczasowo przestają działać jeśli operuje w świecie fizycznym.
+Każda postać, która otrzyma obrażenia krytyczne w INF, zostaje unieruchomiona w Infosferze (nie może się przemieszczać pomiędzy węzłami ani odłączyć od sieci) lub wszystkie jej cybermodyfikacje tymczasowo przestają działać jeśli operuje w świecie fizycznym.
 
 **Czarny LOD** oraz **broń EMP** posiadają dodatkowy efekt obrażeń krytycznych: *"jeśli cel posiada neuroprocesor, zadaj tyle punktów obrażeń w PSY celu ile zostało zadanych w INF w tej turze"*.
 

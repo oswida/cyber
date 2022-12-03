@@ -100,7 +100,7 @@ Bags, backpacks, trolleys can increase the number of inventory slots, the same a
 
 A PC cannot carry more items than their inventory allows. Anyone carrying a full inventory (i.e. filling **all available** slots) is reduced to **0 HP**.
 
-In addition to the starter equipment (purchased with initial credits), during character creation, each player can choose **up to 2 cyber modifications for free**, but the cost of these upgrades cannot exceed `20,000 ℂ`.
+In addition to the starter equipment (purchased with initial credits), during character creation, each player can choose **any number of cybermodifications for free**, but the cost of these upgrades cannot exceed `20,000 ℂ`.
 
 ## Rules
 

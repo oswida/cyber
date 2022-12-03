@@ -1,0 +1,80 @@
+@startuml "Działania postaci"
+skinparam defaultFontName Oxanium
+skinparam activity {
+  StartColor #0fff50
+  BarColor #2c84fa
+  EndColor #e949f5
+  BorderColor #2c84fa
+  ArrowColor #2c84fa
+  FontName Oxanium
+}
+title "Działania postaci" 
+start
+:Gracz określa co chce zrobić;
+if (Jest ryzyko\nniepowodzenia?) then (tak)
+:Zażądaj rzutu obronnego;
+  if (ryzyko związane tylko\n ze zdolnościami postaci?) then (tak)
+    :rzut 1k20;
+  else
+   if (mniejsze czy większe ryzyko\nzwiązane z okolicznościami\nzewnętrznymi?) then (mniejsze)
+   :rzut 2k20, wybierz **niższy** wynik;
+   else (większe)
+   :rzut 2k20, wybierz **wyższy** wynik;
+   endif
+  endif 
+  if (wynik mniejszy lub równy\naktualnemu poziomowi zdolności?) then (tak)
+  #0fff50 :**SUKCES**;
+  else (nie)
+  #ff54ff :**PORAŻKA**;
+  endif
+else (nie)
+#0fff50 :**SUKCES**;
+endif 
+end
+@enduml
+
+@startuml "Walka fizyczna"
+title "Walka fizyczna"
+start
+:Rozpocznij rundę;
+if (Gracz chce się\nwycofać z walki?) then (tak)
+:Zażądaj testu BIO;
+if (Test udany i gracz ma dokąd uciec?) then (tak)
+:Gracz opuszcza starcie;
+stop
+else (nie)
+:Gracz pozostaje w starciu;
+endif
+endif
+if (postać może zostać zaskoczona\na chce działać przed przeciwnikami?) then (tak)
+  :Zażądaj testu BIO;
+  if (Test BIO zdany?) then (tak)
+    :Postać działa przed przeciwnikami;
+  else (nie)
+    :Wszystkie działania w rundzie\nodbywają się jednocześnie;
+  endif
+else (nie)
+  :Wszystkie działania w rundzie\nodbywają się jednocześnie;
+endif
+:Postać może wykonać ruch (do 12 m);
+:Postać może wykonać atak lub inną akcję;
+if (Atak czy akcja?) then (atak)
+#f2f230 :Przejdź do algorytmu ataku;
+else (akcja)
+  if (akcja jest ryzykowna?) then (tak)
+    :Zażądaj rzutu obronnego;
+    if (Test zdany?) then (tak)
+    #0fff50 :**SUKCES**;
+    else (nie)
+    #ff54ff:**PORAŻKA**;
+    endif
+  else (nie)
+    #0fff50 :**SUKCES**;
+  endif 
+endif
+end
+@enduml
+
+@startuml "Atak fizyczny"
+title "Atak fizyczny"
+@enduml
