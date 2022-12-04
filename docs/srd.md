@@ -11,7 +11,7 @@ nav_order: 1
 Cyber to gra fabularna o eksploracji mrocznego świata niedalekiej przyszłości, zdominowanego przez megakorporacje i technologię. Gracze wcielają się w mieszkańców gigantycznego metropolis - zatłoczonego, hałaśliwego miasta pełnego chciwości, obłudy i podejrzanych interesów.
 Bohaterowie mogą piąć się po szczeblach kariery *zaibatsu*, działać na granicy prawa jako wolni strzelcy do wynajęcia albo prowadzić ustabilizowane (aczkolwiek nie pozbawione wyzwań) życie członka jednej z tysięcy frakcji - od religijnych sekt po miejskie służby ratunkowe.
 
-Gra bazuje na [Cairn](https://cairnrpg.com/) stworzonej przez [Yochai Gal](https://newschoolrevolution.com/).
+Gra bazuje na [Cairn](https://cairnrpg.com/) stworzonej przez [Yochaia Gala](https://newschoolrevolution.com/).
 
 Autorem gry jest: [Oskar Świda](https://twitter.com/OskarSwida).
 

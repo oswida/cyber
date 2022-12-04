@@ -11,18 +11,27 @@ skinparam activity {
 title "Działania postaci" 
 start
 :Gracz określa co chce zrobić;
-if (Jest ryzyko\nniepowodzenia?) then (tak)
+if (Jest ryzyko
+niepowodzenia?) then (tak)
 :Zażądaj rzutu obronnego;
-  if (ryzyko związane tylko\n ze zdolnościami postaci?) then (tak)
+  note right
+   Aktywacja 
+   cybermodów
+  endnote
+  if (okoliczności zewnętrzne 
+  zwiększające lub
+  zmniejszające ryzyko?) then (nie)
     :rzut 1k20;
-  else
-   if (mniejsze czy większe ryzyko\nzwiązane z okolicznościami\nzewnętrznymi?) then (mniejsze)
+  else (tak)
+   switch (rodzaj okoliczności) 
+   case ( mniejsze ryzyko)
    :rzut 2k20, wybierz **niższy** wynik;
-   else (większe)
+   case ( większe ryzyko)
    :rzut 2k20, wybierz **wyższy** wynik;
-   endif
+   endswitch
   endif 
-  if (wynik mniejszy lub równy\naktualnemu poziomowi zdolności?) then (tak)
+  if (wynik mniejszy lub równy
+  aktualnemu poziomowi zdolności?) then (tak)
   #0fff50 :**SUKCES**;
   else (nie)
   #ff54ff :**PORAŻKA**;
@@ -46,8 +55,13 @@ skinparam activity {
 }
 start
 :Rozpocznij rundę;
-if (Gracz chce się\nwycofać z walki?) then (tak)
+if (Gracz chce się
+wycofać z walki?) then (tak)
 :Zażądaj testu BIO;
+ note left
+   Aktywacja 
+   cybermodów
+ endnote
 if (Test udany i gracz ma dokąd uciec?) then (tak)
 :Gracz opuszcza starcie;
 stop
@@ -55,15 +69,22 @@ else (nie)
 :Gracz pozostaje w starciu;
 endif
 endif
-if (postać może zostać zaskoczona\na chce działać przed przeciwnikami?) then (tak)
+if (postać może zostać zaskoczona
+a chce działać przed przeciwnikami?) then (tak)
   :Zażądaj testu BIO;
+  note left
+   Aktywacja 
+   cybermodów
+  endnote
   if (Test BIO zdany?) then (tak)
     :Postać działa przed przeciwnikami;
   else (nie)
-    :Wszystkie działania w rundzie\nodbywają się jednocześnie;
+    :Wszystkie działania w rundzie
+    odbywają się jednocześnie;
   endif
 else (nie)
-  :Wszystkie działania w rundzie\nodbywają się jednocześnie;
+  :Wszystkie działania w rundzie
+  odbywają się jednocześnie;
 endif
 :Postać może wykonać ruch (do 12 m);
 :Postać może wykonać atak lub inną akcję;
@@ -72,6 +93,10 @@ if (Atak czy akcja?) then (atak)
 else (akcja)
   if (akcja jest ryzykowna?) then (tak)
     :Zażądaj rzutu obronnego;
+    note left
+      Aktywacja 
+      cybermodów
+    endnote
     if (Test zdany?) then (tak)
     #0fff50 :**SUKCES**;
     else (nie)
@@ -95,6 +120,205 @@ skinparam activity {
   ArrowColor #2c84fa
   FontName Oxanium
 }
-:Określ ilość kości obrażeń;
+start
+group "Określ ilość\nkości obrażeń" 
+:standardowo jedna kość obrażeń;
+if (wielu atakujących?) then (tak)
+:dodaj kość za każdego atakującego;
+endif
+if (atak bronią podwójną?) then (tak)
+:dodaj kość za każdego 
+atakującego bronią podwójną;
+endif
+end group
+group "Określ rodzaj\nkości obrażeń" 
+:Oddzielnie dla każdego atakującego;
+if (atak bez określonej broni?) then (tak)
+:1k4;
+else (nie)
+:kość obrażeń broni;
+switch (modyfikator ataku)
+case ( słabsza pozycja)
+:1k4 lub odpowiednio 
+__zmniejszona__ kość broni;
+case ( przewaga)
+:1k12 lub odpowiednio 
+__zwiększona__ kość broni;
+endswitch 
+endif
+end group
+:Wykonaj rzut kośćmi;
+if (broń ma cechę podmuch?) then (tak)
+:powtórz rzut na obrażenia
+dla każdej postaci 
+w zasięgu rażenia;
+endif
+:Wybierz najwyższy wynik;
+:Od rezultatu rzutu odejmij __aktualną__ 
+wartość pancerza przeciwnika;
+if (OCHR przeciwnika zredukowana 
+do zera lub niżej?) then (nie)
+:Odejmij punkty obrażeń 
+od __aktualnej__ OCHR przeciwnika;
+note right
+Aktywacja cybermodów
+przeciwnika
+endnote
+endif 
+if (ilość pozostałych punktów obrażeń większa 
+niż aktualny poziom OCHR przeciwnika?) then (tak)
+:odejmij pozostałą ilość punktów obrażeń 
+od BIO przeciwnika;
+note right
+ Aktywacja cybermodów przeciwnika
+endnote
+:Wykonaj test na obrażenia krytyczne;
+if (test zdany?) then (tak)
+  end
+else (nie)
+  :zastosuj wszystkie efekty 
+  obrażeń krytycznych;
+  note right
+    Aktywacja
+    cybermodów
+  endnote
+endif
+else (nie)
+ end
+endif
+end
+@enduml
 
+@startuml "Atak na węzeł Infosfery"
+title "Atak na węzeł Infosfery"
+skinparam defaultFontName Oxanium
+skinparam activity {
+  StartColor #0fff50
+  BarColor #2c84fa
+  EndColor #e949f5
+  BorderColor #2c84fa
+  ArrowColor #2c84fa
+  FontName Oxanium
+}
+start
+group "Określ kości obrażeń" 
+:standardowo kość obrażeń neuroprocesora;
+if (wielu atakujących?) then (tak)
+:dodaj kość za każdego atakującego;
+endif
+end group
+:Wykonaj rzut kośćmi obrażeń;
+:Wybierz atakującego i 
+zapamiętaj wynik rzutu jego kością
+(atak neuroprocesora);
+:dodaj kości 
+aktywowanego oprogramowania;
+note right
+Aktywacja oprogramowania
+wybranego atakującego
+endnote 
+:wykonaj rzut dodatkowymi
+kośćmi obrażeń oprogramowania 
+i wynik dodaj do rezultatu 
+ataku neuroprocesora;
+:Od rezultatu rzutu odejmij 
+wartość pancerza INF przeciwnika;
+note right
+aktywacja oprogramowania
+węzła
+endnote
+if (OCHR węzła zredukowana do zera 
+lub niżej?) then (tak)
+#0fff50 :przejęcie kontroli nad węzłem;
+else (nie)
+ :Odejmij punkty obrażeń 
+ od __aktualnej__ OCHR węzła;
+ note right
+ aktywacja oprogramowania
+ węzła
+ endnote
+endif
+if (ilość pozostałych punktów obrażeń większa 
+niż aktualny poziom OCHR węzła?) then (tak)
+:odejmij pozostałą ilość punktów obrażeń 
+od INF węzła;
+note right
+Aktywacja oprogramowania
+węzła
+endnote
+:Wykonaj test na obrażenia krytyczne;
+if (test zdany?) then (tak)
+  end
+else (nie)
+  :zastosuj wszystkie efekty 
+  obrażeń krytycznych;
+  note right
+  Aktywacja oprogramowania
+  węzła
+  endnote
+endif
+else (nie)
+ end
+endif
+end
+@enduml
+
+@startuml "Atak LOD"
+title "Atak LOD"
+skinparam defaultFontName Oxanium
+skinparam activity {
+  StartColor #0fff50
+  BarColor #2c84fa
+  EndColor #e949f5
+  BorderColor #2c84fa
+  ArrowColor #2c84fa
+  FontName Oxanium
+}
+start
+:Wykonaj rzut kością LOD węzła;
+note right
+aktywacja oprogramowania
+hakera
+endnote 
+:Od rezultatu rzutu odejmij 
+wartość pancerza INF hakera;
+
+if (OCHR hakera zredukowana do zera 
+lub niżej?) then (tak)
+#e949f5 :haker nie może przemieszczać się w sieci;
+else (nie)
+ :Odejmij punkty obrażeń 
+ od __aktualnej__ OCHR hakera;
+ note right
+ aktywacja oprogramowania
+ hakera
+ endnote
+endif
+if (ilość pozostałych punktów obrażeń większa 
+niż aktualny poziom OCHR hakera?) then (tak)
+:odejmij pozostałą ilość punktów obrażeń 
+od INF hakera;
+note right
+Aktywacja oprogramowania
+hakera
+endnote
+:Wykonaj test na obrażenia krytyczne;
+if (test zdany?) then (tak)
+  end
+else (nie)
+  :zastosuj wszystkie efekty 
+  obrażeń krytycznych;
+  note right
+  Aktywacja oprogramowania
+  hakera
+  endnote
+  if (czarny LOD) then (tak)
+  :odejmij od PSY hakera tyle 
+  punktów ile odjęto od INF;
+  endif
+endif
+else (nie)
+ end
+endif
+end
 @enduml
