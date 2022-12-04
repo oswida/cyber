@@ -2,6 +2,8 @@ title: Cyber
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
 encoding: UTF-8
+plugins:
+  - jekyll-redirect-from
 
 # Back to top link
 back_to_top: true

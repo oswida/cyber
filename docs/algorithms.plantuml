@@ -35,6 +35,15 @@ end
 
 @startuml "Walka fizyczna"
 title "Walka fizyczna"
+skinparam defaultFontName Oxanium
+skinparam activity {
+  StartColor #0fff50
+  BarColor #2c84fa
+  EndColor #e949f5
+  BorderColor #2c84fa
+  ArrowColor #2c84fa
+  FontName Oxanium
+}
 start
 :Rozpocznij rundę;
 if (Gracz chce się\nwycofać z walki?) then (tak)
@@ -77,4 +86,15 @@ end
 
 @startuml "Atak fizyczny"
 title "Atak fizyczny"
+skinparam defaultFontName Oxanium
+skinparam activity {
+  StartColor #0fff50
+  BarColor #2c84fa
+  EndColor #e949f5
+  BorderColor #2c84fa
+  ArrowColor #2c84fa
+  FontName Oxanium
+}
+:Określ ilość kości obrażeń;
+
 @enduml
