@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Software
+title: Oprogramowanie
 nav_order: 6
 has_children: true
 ---
-# Software
+# Oprogramowanie

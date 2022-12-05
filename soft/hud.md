@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GM HUD
-parent: Software
-redirect_to: https://oswida.github.io/cyber/app/dist/
+title: Konsola GM
+parent: Oprogramowanie
+redirect_to: https://oswida.github.io/cyber/app/dist/?lang=pl
 ---
