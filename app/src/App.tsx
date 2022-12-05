@@ -22,8 +22,7 @@ const Main: Component<ParentProps> = ({ children }) => {
 };
 
 const App: Component = () => {
-  loadSessionData();
-  updateStoreSize();
+
 
   return (
     <AppDataProvider>

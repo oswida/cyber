@@ -68,7 +68,7 @@ export const CharFormBasicSection = () => {
       <Flex>
         <Flex type="column">
           <Texte size="middle" color="yellow">
-            {t("Username")}
+            {t("Name")}
           </Texte>
           <Input
             ref={(el) => (nameRef = el)}

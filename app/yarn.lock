@@ -555,7 +555,17 @@
   resolved "https://registry.yarnpkg.com/@zag-js/remove-scroll/-/remove-scroll-0.2.0.tgz#5396e3f29d68d63fd9a93a1b364e82962372f00c"
   integrity sha512-mxtPQnPABgAka6zVSvvauS00dgfO6+2n2c8sftdnpCnpTRq6mdCPxj4/NE169Wk5ldzxBbqmnjgYWjOlWV8lpw==
 
-"@zag-js/solid@^0.2.1":
+"@zag-js/select@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@zag-js/select/-/select-0.1.1.tgz#681e547c7c13771d28524ba1bda39a5b70254929"
+  integrity sha512-LFFdvXxdD7jpdM595Qi4NZ351PdR9ih8DXk5Fspddm5/EATOQ2R85ItdnTyVRHW848zqak2MBJBWP97jDZmzIw==
+  dependencies:
+    "@zag-js/core" "0.2.2"
+    "@zag-js/interact-outside" "0.2.0"
+    "@zag-js/popper" "0.2.0"
+    "@zag-js/types" "0.3.1"
+
+"@zag-js/solid@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@zag-js/solid/-/solid-0.2.2.tgz#e74f4718f6108331a6ecd6b4b713750f73a21c6c"
   integrity sha512-RoSQWGAx294quGnwSf9ZcY619ba9ZyiVIXQi602Z/cKx20ITs5sF6mUz2NkkC3Yp8CRz1TKRtprOv/Gv7Yelrw==

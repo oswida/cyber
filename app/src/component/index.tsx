@@ -8,3 +8,4 @@ export * from "./Dialog";
 export * from "./TextArea";
 export * from "./Confirm";
 export * from "./Whiteboard";
+export * from "./Select";

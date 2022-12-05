@@ -137,7 +137,7 @@ export const DiceView: Component = () => {
             </span>
           </Button>
           <Input
-            title={t("Input comment for a roll")}
+            title={t("Input_comment")}
             ref={(el) => (commentRef = el)}
             placeholder={`${t("Comment")}...`}
             small

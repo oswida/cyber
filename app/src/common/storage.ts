@@ -25,6 +25,7 @@ export const loadSessionData = () => {
     localStorage.setItem(inodSessionKey, compressData(sd));
     setSessionData(sd);
     saveSessionData(sd);
+    return sd;
   } else {
     const dd = decompressData(sdata) as SessionInfo;
     if (!dd.lang) dd.lang = "en";
@@ -34,6 +35,7 @@ export const loadSessionData = () => {
       saveSessionData(dd);
     }
     setSessionData(dd);
+    return dd;
   }
 };
 

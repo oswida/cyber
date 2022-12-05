@@ -1,3 +1,4 @@
+import { useI18n } from "@solid-primitives/i18n";
 import { FaSolidFloppyDisk } from "solid-icons/fa";
 import { Component, createMemo } from "solid-js";
 import { inodTrackKey, saveGenericData, TrackInfo, useAppData } from "~/common";
@@ -14,6 +15,7 @@ export const TrackItem: Component<Props> = ({ item, onClick }) => {
   const fields: Record<string, HTMLInputElement> = {};
   let descRef: HTMLDivElement;
   const isSelected = createMemo(() => item?.id === apd?.selectedTrack()?.id);
+  const [t] = useI18n();
 
   const change = (field: string) => {
     const fld = fields[field];
@@ -97,7 +99,7 @@ export const TrackItem: Component<Props> = ({ item, onClick }) => {
               ref={(el) => (fields["symbol"] = el)}
             />
             <Texte size="small" color="blue">
-              DMG
+              {t("dmg_dice").toUpperCase()}
             </Texte>
             <Input
               transparent
@@ -114,7 +116,7 @@ export const TrackItem: Component<Props> = ({ item, onClick }) => {
             {/* HP */}
             <Flex vcenter>
               <Texte color="yellow" size="small">
-                HP
+                {t("HP")}
               </Texte>
               <Input
                 transparent
@@ -179,7 +181,7 @@ export const TrackItem: Component<Props> = ({ item, onClick }) => {
             {/* ARMOR */}
             <Flex vcenter>
               <Texte color="yellow" size="small">
-                ARMOR
+                {t("Armor").toUpperCase()}
               </Texte>
               <Input
                 middle

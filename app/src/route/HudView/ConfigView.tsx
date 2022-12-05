@@ -1,4 +1,5 @@
 import { useI18n } from "@solid-primitives/i18n";
+import { useNavigate } from "@solidjs/router";
 import {
   Accessor,
   Component,
@@ -20,7 +21,15 @@ import {
   storageSize,
   useAppData,
 } from "~/common";
-import { Button, Dialog, Flex, Input, Texte } from "~/component";
+import {
+  Button,
+  Dialog,
+  Flex,
+  Input,
+  Select,
+  SelectItemType,
+  Texte,
+} from "~/component";
 
 type Props = {
   open: Accessor<boolean>;
@@ -36,10 +45,15 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
   var natsRef: HTMLInputElement;
   var natsTokenRef: HTMLInputElement;
   const [hosting, setHosting] = createSignal(false);
+  const [lng, setLng] = createSignal<string | undefined>(sessionData()?.lang);
+  const langItems: SelectItemType[] = [
+    { label: "PL", value: "pl" },
+    { label: "EN", value: "en" },
+  ];
+  const navigate = useNavigate();
 
   createEffect(() => {
-    if (!open() || nameRef === undefined || colorRef === undefined || !apd)
-      return;
+    if (!open() || nameRef === undefined || colorRef === undefined) return;
     const data = sessionData();
     if (!data) return;
     nameRef.value = data.username ? data.username : "";
@@ -47,6 +61,7 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
     natsRef.value = data.nats;
     natsTokenRef.value = data.nats_token;
     remoteRef.value = data.remote;
+    setLng(data.lang);
     setHosting(data.hosting);
   });
 
@@ -60,10 +75,12 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
       nats_token: natsTokenRef.value,
       remote: remoteRef.value,
       hosting: hosting(),
+      lang: lng(),
     } as SessionInfo;
     setSessionData(newState);
     saveGenericData(inodSessionKey, newState);
     setOpen(false);
+    window.location.href = "/";
   };
 
   const switchHosting = () => {
@@ -85,36 +102,46 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
       <Flex type="column" center style={{ gap: "10px" }}>
         <Texte color="pink">{t("Storage")}</Texte>
         <Flex>
-          <Texte>Current storage is</Texte>
-          <Texte color="yellow"> {`${storageSize()} bytes`}</Texte>
+          <Texte>{t("config_current_storage")}</Texte>
+          <Texte color="yellow">
+            {" "}
+            {`${(storageSize() / 1024).toFixed(2)} KB`}
+          </Texte>
         </Flex>
         <Texte size="small" style={{ "max-width": "80em" }}>
-          Please remember that this app is using local browser storage instead
-          of a database. The most popular limit for such a storage is about 5MB.
+          {t("config_storage_info")}
         </Texte>
         <Texte color="pink">{t("Identification")}</Texte>
         <Flex>
-          <Texte>{`Browser ID:`}</Texte>
+          <Texte>{t("Browser_ID")}</Texte>
           <Texte color="yellow">{sessionData()?.browserID}</Texte>
         </Flex>
         <Flex vcenter style={{ gap: "15px" }}>
           <Flex vcenter>
-            <Texte>Username</Texte>
+            <Texte>{t("Username")}</Texte>
             <Input ref={(el) => (nameRef = el)} />
           </Flex>
           <Flex vcenter>
-            <Texte>Color (HTML code)</Texte>
+            <Texte>{`${t("Color")} (${t("HTML_code")})`}</Texte>
             <Input ref={(el) => (colorRef = el)} style={{ width: "7em" }} />
+          </Flex>
+          <Flex vcenter>
+            <Select
+              title="Lang"
+              data={langItems}
+              selected={lng}
+              setSelected={setLng}
+            />
           </Flex>
         </Flex>
         <Texte color="pink">{t("Network_connection")}</Texte>
-        <Texte size="small" style={{ "max-width": "80em" }}>
-          If you have an access to some MQTT server with Websockets, you can
-          share dice rolls and board notes with other users. Please select
-          'Host' or 'Client' mode below. <br />
-          In 'Host' mode, you need only a MQTT server address and credentials
-          (if needed), for 'Client' there should be also provided an ID of the
-          hosting browser.
+        <Texte
+          size="small"
+          style={{ "max-width": "65em", "text-align": "center" }}
+        >
+          {t("config_network_desc1")}
+          <br />
+          {t("config_network_desc2")}
           <br />
         </Texte>
         <Switch>
@@ -138,27 +165,27 @@ export const ConfigView: Component<Props> = ({ open, setOpen }) => {
 
         <Flex type="column" style={{ "align-items": "end" }}>
           <Flex vcenter>
-            <Texte>Server address</Texte>
+            <Texte>{t("Server_address")}</Texte>
             <Input
               ref={(el) => (natsRef = el)}
-              style={{ width: "25em" }}
+              style={{ width: "30em" }}
               placeholder="ex. ws://hostname:port"
             />
           </Flex>
           <Flex vcenter>
-            <Texte>Credentials</Texte>
+            <Texte>{t("Credentials")}</Texte>
             <Input
               ref={(el) => (natsTokenRef = el)}
-              style={{ width: "25em" }}
+              style={{ width: "30em" }}
               placeholder="username:password"
             />
           </Flex>
           <Show when={!hosting()}>
             <Flex vcenter>
-              <Texte>Remote host Browser ID</Texte>
+              <Texte>{t("Remote_Browser_ID")}</Texte>
               <Input
                 ref={(el) => (remoteRef = el)}
-                style={{ width: "25em" }}
+                style={{ width: "30em" }}
                 placeholder="ex. 854a051c-7869-4698-9dfa-4feccb748ce4"
               />
             </Flex>
