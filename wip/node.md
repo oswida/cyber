@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Infowęzeł
-parent: Generatory
+parent: W przygotowaniu
 nav_order: 5
 ---
 

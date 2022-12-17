@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Miejsce
-parent: Generatory
+parent: W przygotowaniu
 nav_order: 4
 ---
 

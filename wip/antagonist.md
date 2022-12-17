@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Antagoniści
-parent: Generatory
+parent: W przygotowaniu
 nav_order: 6
 ---
 
