@@ -15,7 +15,7 @@ nav_order: 2
 4. Wybierz lub wylosuj dane przechowywane w węźle
 
 
-[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/gen?lang=pl&mode=Infosphere)
+<!-- [Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/gen?lang=pl&mode=Infosphere) -->
 
 ## Klasa bezpieczeństwa
 
@@ -271,47 +271,17 @@ Jeśli twoi hakerzy włamują się do węzłów Infosfery w celu zdobycia cennyc
 # Algorytmy podstawowe
 
 ## Akcja gracza
-
-1. Gracz określa co chce zrobić
-2. Jeśli nie ma ryzyka niepowodzenia - robi to
-3. Jeśli istnieje ryzyko, określ zdolność związaną z czynnością, ustal poziom ryzyka i zażądaj testu:
-   1. Ryzyko **mniejsze** niż zazwyczaj, związane z okolicznościami niezależnymi od postaci: test **Łatwy** (2k20)
-   2. Ryzyko związane jedynie ze zdolnością postaci: test "zwykły" (1k20)
-   3. Ryzyko **większe** niż zazwyczaj, związane z okolicznościami niezależnymi od postaci: test **Trudny** (2k20)
-4. Jeśli wynik mniejszy lub równy od aktualnego poziomu postaci - sukces
-5. Jeśli wynik większy od aktualnego poziomu postaci - porażka
+![Akcja gracza](img/dzialania_postaci.png)
 
 ## Walka fizyczna
-
-1. Rozpocznij rundę,
-2. Odwrót
-3. Jeśli gracze mogliby zostać zaskoczeni a chcą działać przed oponentami, zażądaj testu BIO dla walki w świecie fizycznym lub testu PSY dla walki w Infosferze
-4. Każda z postaci może wykonać ruch (do 12 metrów), wszystkie ruchy wykonywane są jednocześnie
-5. Każda z postaci może wykonać **atak** lub **inną akcję**, wszystkie akcje i ataki wykonywane są jednocześnie
-6. Jeśli wybrana akcja nie jest atakiem ale jest ryzykowna, zażądaj testu odpowiedniej zdolności
-7. Jeśli strona wybiera atak, rzuca **kością obrażeń** swojej broni, neuroprocesora lub współczynnika LOD
-8. Aktywacja cybermodów
-9. Wybierz kość obrażeń (dla wielu graczy będzie to kilka kości, oddzielnie dla każdego z nich )
-   1. Atak bez broni: 1k4
-   2. Atak wzmocniony: 1k12 (lub inna kość wynikająca z ustaleń)
-   3. Atak osłabiony: 1k4 (lub inna kość wynikająca z ustaleń)
-10. Jeśli atakujesz dwoma rodzajami broni jednocześnie, weź dwie kości.
-11. Podmuch
-12. Oddziały
-13. Wykonaj rzut wybraną kością (lub kośćmi)
-14. Jeśli atakujących było wielu wybierz najwyższy wynik (dla starcia fizycznego lub wielu broni) albo wybrany wynik dla starcia w Infosferze
-15. Pomniejsz wynik o wartość Pancerza (dla walki fizycznej) lub oprogramowania ochronnego typu Pancerz (dla walki w Infosferze) przeciwnika  plus cybermody
-16. **Odejmij** pozostałe punkty od OCHR przeciwnika plus cybermody
-17. Jeśli wynik rzutu jest **większy** niż OCHR przeciwnika, zredukuj OCHR do zera a pozostałą ilość punktów odejmij odpowiednio od BIO (dla walki fizycznej) lub INF (walki w Infosferze lub broni EMP)
-18. Jeśli aktualne obrażenia zmniejszyły BIO lub INF - wykonaj test obrażeń krytycznych dla odpowiedniej zdolności (1k20, aktualna wartość, łącznie z cybermodyfikacjami ale już po redukcji) 
-18. Jeśli test się nie powiódł:
-   1. W walce fizycznej postać nie może wykonać żadnej akcji i musi otrzymać pomoc w ciągu godziny, w przeciwnym wypadku umrze plus cybermody
-   2. Przy starciu w Infosferze postać zostaje unieruchomiona, nie może przemieszczać się pomiędzy węzłami ani odłączyć od sieci. Plus czarny LOD  i PSY plus cybermody
-   3. W przypadku użycia broni EMP, wszystkie cybermodyfikacje postaci przestają działać plus PSY plus cybermody
-19. Morale
+![Walka fizyczna](img/walka_fizyczna.png)
+![Atak fizyczny](img/atak_fizyczny.png)
 
 ## Atak na węzeł w Infosferze
+![Atak fizyczny](img/atak_infosfera.png)
 
+## Atak LOD
+![Atak LOD](img/atak_lod.png)
 
 # Algorytmy dodatkowe 
 

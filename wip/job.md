@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Robota
-parent: W przygotowaniu
+parent: Generatory
 nav_order: 2
 ---
 
