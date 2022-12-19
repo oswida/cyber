@@ -9,6 +9,7 @@ import {
   emptySessionInfo,
   emptyTrackInfo,
   initialWhiteboardState,
+  NodeInfo,
   NoteInfo,
   NotificationInfo,
   PcInfo,
@@ -23,6 +24,7 @@ export const [genPage, setGenPage] = createSignal("Corporation");
 export const [corporationData, setCorporationData] = createSignal<CorpoInfo[]>(
   []
 );
+export const [inodeData, setInodeData] = createSignal<NodeInfo[]>([]);
 
 // Main session data
 export const [sessionData, setSessionData] = createSignal<SessionInfo>(

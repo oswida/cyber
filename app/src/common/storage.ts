@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import { setCorporationData } from "~/common";
-import { setSessionData, setStorageSize } from "./signals";
+import { setInodeData, setSessionData, setStorageSize } from "./signals";
 import { emptySessionInfo, SessionInfo } from "./types";
 import { compressData, decompressData } from "./util";
 
@@ -8,6 +8,7 @@ export const inodSessionKey = "inod-session2";
 export const inodNotesKey = "inod-notes2";
 export const inodBoardKey = "inod-board2";
 export const inodGenCorporationKey = "inod-gen-corporation2";
+export const inodGenInodeKey = "inod-gen-inode2";
 export const inodPlayersKey = "inod-players2";
 export const inodRollsKey = "inod-rolls2";
 export const inodDrawKey = "inod-draw2";
@@ -49,6 +50,13 @@ export const loadGenCorporations = () => {
   if (!data) return;
   const dd = decompressData(data);
   setCorporationData(dd);
+};
+
+export const loadGenInodes = () => {
+  const data = localStorage.getItem(inodGenInodeKey);
+  if (!data) return;
+  const dd = decompressData(data);
+  setInodeData(dd);
 };
 
 export const loadRolls = (appData: any) => {
@@ -93,6 +101,7 @@ export const updateStoreSize = () => {
     inodNotesKey,
     inodBoardKey,
     inodGenCorporationKey,
+    inodGenInodeKey,
     inodPlayersKey,
     inodRollsKey,
     inodDrawKey,

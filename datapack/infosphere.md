@@ -15,7 +15,7 @@ nav_order: 2
 4. Wybierz lub wylosuj dane przechowywane w węźle
 
 
-<!-- [Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/gen?lang=pl&mode=Infosphere) -->
+[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/gen?lang=pl&mode=Infosphere)
 
 ## Klasa bezpieczeństwa
 

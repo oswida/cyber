@@ -1,7 +1,14 @@
 import { useI18n } from "@solid-primitives/i18n";
-import { FaSolidTrash } from "solid-icons/fa";
-import { ComponentProps, Match, Switch } from "solid-js";
-import { CorpoInfo, corporationData, genPage, themeVars } from "~/common";
+import { FaSolidSkull, FaSolidTrash } from "solid-icons/fa";
+import { ComponentProps, Match, Show, Switch } from "solid-js";
+import {
+  CorpoInfo,
+  corporationData,
+  genPage,
+  inodeData,
+  NodeInfo,
+  themeVars,
+} from "~/common";
 import { Flex, Texte } from "~/component";
 import { CardRootStyle, CardRowStyle, CardTitleStyle } from "./styles.css";
 type Props = {
@@ -51,6 +58,79 @@ const GenCorpo = ({ item }: { item: CorpoInfo }) => {
   );
 };
 
+const GenInode = ({ item }: { item: NodeInfo }) => {
+  const [t] = useI18n();
+  return (
+    <>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Class")}
+        </Texte>
+        <Texte>{item.node_class}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Flex center style={{ gap: "20px" }}>
+          <Flex>
+            <Texte color="yellow" size="bigger">
+              {t("HP")}
+            </Texte>
+            <Texte size="bigger">{item.hp}</Texte>
+          </Flex>
+          <Flex>
+            <Texte color="yellow" size="bigger">
+              {t("INF")}
+            </Texte>
+            <Texte size="bigger">{item.inf}</Texte>
+          </Flex>
+          <Flex>
+            <Texte color="yellow" size="bigger">
+              {t("ICE")}
+            </Texte>
+            <Flex>
+              <Texte size="bigger" title={t("BLACK_ICE")}>
+                {item.ice}
+              </Texte>
+              <Show when={item.black_ice}>
+                <FaSolidSkull />
+              </Show>
+            </Flex>
+          </Flex>
+          <Flex>
+            <Texte color="yellow" size="bigger" title={t("activation_desc")}>
+              {t("ACTIV")}
+            </Texte>
+            <Texte size="bigger">{item.activation}</Texte>
+          </Flex>
+        </Flex>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Shape")}
+        </Texte>
+        <Texte>{item.shape}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Color")}
+        </Texte>
+        <Texte>{item.color}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Detail")}
+        </Texte>
+        <Texte>{item.detail}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Data")}
+        </Texte>
+        <Texte>{item.data}</Texte>
+      </div>
+    </>
+  );
+};
+
 export const GenCard = ({
   title,
   subtitle,
@@ -78,6 +158,9 @@ export const GenCard = ({
       <Switch>
         <Match when={genPage() === "Corporation"}>
           <GenCorpo item={corporationData()[index]} />
+        </Match>
+        <Match when={genPage() === "Infosphere"}>
+          <GenInode item={inodeData()[index]} />
         </Match>
       </Switch>
     </div>

@@ -7,6 +7,7 @@ import {
   rollSingle,
   setCorporationData,
 } from "~/common";
+import { inodeType } from "~/data/inode";
 import {
   dictCorpoEmployeeProfile,
   dictCorpoGossip,
