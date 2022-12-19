@@ -213,7 +213,7 @@ else (nie)
 endif
 end group
 :Wykonaj rzut kośćmi obrażeń;
-:Wybierz atakującego i 
+:Wybierz atakującego oraz 
 zapamiętaj wynik rzutu jego kością
 (atak neuroprocesora);
 :dodaj kości 

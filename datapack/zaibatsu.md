@@ -1,17 +1,17 @@
 ---
 layout: default
 title: Zaibatsu
-parent: Generatory
-nav_order: 3
+parent: Pakiety danych
+nav_order: 1
 ---
 
-# Generator zaibatsu
+# Zaibatsu
 
 Korporacje (nazywane żargonowo z japońskiego "zaibatsu") to integralna część cyberpunkowego świata. Posiadają olbrzymie wpływy i zasoby. Są w stanie kontrolować politykę, media i określać warunki życia większości ludzi na świecie. Nie są jednak wszechpotężne a w ich szeregach nadal znajdują się zwykli ludzie ze swoimi ambicjami, obawami i żądzami. Zaibatsu mają też wrogów - czasem są to instytucje rządowe, czasem wojsko a czasem ... rynkowi rywale.
 
 Prezentowany generator ma być inspiracją do zapełniania Waszego świata złowrogimi korporacjami.
 
-[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/gen?lang=pl)
+[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/gen?lang=pl&mode=Corporation)
 
 ## Losowanie
 

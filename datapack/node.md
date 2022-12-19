@@ -1,20 +1,21 @@
 ---
 layout: default
-title: Infowęzeł
-parent: W przygotowaniu
-nav_order: 5
+title: Infosfera
+parent: Pakiety danych
+nav_order: 2
 ---
 
-# Generator węzła Infosfery
+# Infosfera
 
-[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/node)
-
-## Procedura
+## Generator węzła Infosfery
 
 1. Określ lub wylosuj klasę bezpieczeństwa
 2. Określ współczynniki i zabezpieczenia
 3. Wybierz lub wylosuj wygląd jeśli chcesz
 4. Wybierz lub wylosuj dane przechowywane w węźle
+
+
+[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/gen?lang=pl&mode=Infosphere)
 
 ## Klasa bezpieczeństwa
 
