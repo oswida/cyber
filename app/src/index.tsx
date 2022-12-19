@@ -13,14 +13,16 @@ const dictionaries = {
   pl: messages_pl,
 };
 
-let lang = extractQueryParam("lang");
-if (lang === "") lang = "en";
+let lang = "en";
 const sdata = loadSessionData();
 updateStoreSize();
 if (sdata.lang) {
   lang = sdata.lang;
 }
-console.log(sdata, lang);
+const langparam = extractQueryParam("lang");
+if (langparam && langparam != "") {
+  lang = langparam;
+}
 
 const langContext = createI18nContext(dictionaries, lang);
 
