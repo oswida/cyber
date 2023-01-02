@@ -295,13 +295,14 @@ Wszystkie inne działania takie jak: **hakowanie, ochrona, dostęp do zastrzeżo
 
 **Blokada**: zredukowanie INF postaci do zera oznacza, że nie może ona korzystać z Infosfery do momentu odzyskania przynajmniej jednego punktu tej zdolności.
 
-**Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INF. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest wykonanie ataków za pomocą neuroprocesora. Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **aktualny poziom INF**.
+**Hakowanie**: Węzły sieci mogą posiadać określony poziom OCHR oraz poziom INF. Aby uzyskać dostęp do takiego węzła (bez zgody właściciela), gracz musi zredukować jego ochronę do zera. W tym celu wymagane jest wykonanie ataków za pomocą neuroprocesora. Po usunięciu ochrony, gracz przejmuje kontrolę nad węzłem na **tyle rund** ile wynosi jego **aktualny poziom INF**. Proste urządzenia elektroniczne takie jak kamery czy drzwi, nie muszą być kontrolowane przez węzeł (chociaż mogą jeśli są częścią większego systemu). W takim przypadku do przejęcia kontroli wystarczy zdany test Interfejsu.
 
 **Niszczenie danych**: Po zredukowaniu OCHR węzła do zera, gracz może nadal wykonywać atak ale tym razem będzie zmniejszał INF węzła. Zredukowanie **INF węzła do zera** oznacza bezpowrotne **zniszczenie danych lub programu** (o ile ich właściciel nie miał kopii zapasowej). Zmniejszanie INF węzła do wartości innych niż zero nie daje żadnych efektów w grze.
 
 **Zapora**: postacie graczy mogą również aktywnie chronić węzły Infosfery. W tym celu należy posiadać neuroprocesor i zdać test INF. Sukces oznacza, że w następnej turze ten węzeł jest całkowicie odporny na hakowanie.
 
-**Logiczne Oprogramowanie Defensywne (LOD)**: węzły Infosfery mogą posiadać automatyczne systemy obronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie hakowania wykonują atak na postać, redukując jej OCHR i INF. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
+**Logiczne Oprogramowanie Defensywne (LOD)**: węzły Infosfery mogą posiadać automatyczne systemy obronne. Oznacza to, że posiadają dodatkowy współczynnik **LOD** wyrażany w **kościach ataku** (k4 do k12). W każdej rundzie hakowania, LOD wy-
+konuje atak na postać hakera, zmniejszając jej OCHR a następnie INF. W żargonie hakerów LOD dzieli się na "biały" i "czarny".
 
 **Czarny LOD** (oficjalnie nielegalny), posiada dodatkową cechę:
 - *Obrażenia krytyczne*: zadaj w PSY celu, tyle samo punktów obrażeń ile zadałeś w INF w tej turze.
