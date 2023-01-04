@@ -29,10 +29,10 @@ export const messages_squad_en = {
   dictSquadLeader_3_002: "A calculating manipulator",
   dictSquadLeader_3_003: "Self-proclaimed leader of the crowd",
   dictSquadLeader_3_004: "The instigator holding back",
-  dictSquadLeader_3_005: "Agent of the corporation/government",
+  dictSquadLeader_3_005: "Corporation/government agent",
   dictSquadLeader_4_000: "Careerist",
   dictSquadLeader_4_001: "Effective specialist",
-  dictSquadLeader_4_002: "Remote command from base",
+  dictSquadLeader_4_002: "Remote command from HQ",
   dictSquadLeader_4_003: "AI and tactical algorithms",
   dictSquadLeader_4_004: "Changes during action",
   dictSquadLeader_4_005: "Competes with his deputy",
@@ -57,7 +57,7 @@ export const messages_squad_en = {
   dictSquadGroup_1_005: "Incompetent amateurs",
   dictSquadGroup_2_000: "Professionals in every way",
   dictSquadGroup_2_001: "Soldiers from the roundup",
-  dictSquadGroup_2_002: "Individualists with a hero complex",
+  dictSquadGroup_2_002: "Individualists with a hero syndrom",
   dictSquadGroup_2_003: "Loser squad/punishment company",
   dictSquadGroup_2_004: "Criminals in uniform",
   dictSquadGroup_2_005: "Overly cautious wackos",
@@ -119,15 +119,15 @@ export const messages_squad_en = {
   dictSquadDetail_0_001: "veterans, `1/6:attack enhanced`",
   dictSquadDetail_0_002: "use mutated animals in combat",
   dictSquadDetail_0_003:
-    "make great use of environmental conditions (protection bonuses)",
+    "make great use of environmental conditions (HP bonuses)",
   dictSquadDetail_0_004:
     "they make excellent use of stealth (bonuses to surprise, escape, cover)",
   dictSquadDetail_0_005: "incredibly tough (bonuses to HP and BIO)",
   dictSquadDetail_1_000:
-    "They can call for reinforcements (within k4 rounds, k6 people)",
+    "They can call for reinforcements (within d4 rounds, d6 people)",
   dictSquadDetail_1_001:
     "They can control the local security system (cameras, sensors, drones)",
-  dictSquadDetail_1_002: "Sensors: bonuses for detection, tracking, protection",
+  dictSquadDetail_1_002: "Sensors: bonuses for detection, tracking, HP",
   dictSquadDetail_1_003:
     "They have explosives, tear gas, smoke grenades at their disposal",
   dictSquadDetail_1_004:
@@ -139,11 +139,12 @@ export const messages_squad_en = {
   dictSquadDetail_2_003: "Jamming and Hackers: INF Rolls Made Easy or Hard",
   dictSquadDetail_2_004: "Teamed squad: `1-2/6: Bonuses to HP`",
   dictSquadDetail_2_005: "Physical Boost: `1-3/6: Bonuses to BIO saves`",
-  dictSquadDetail_3_000: "Outnumbered: attacks accounted for like a unit",
+  dictSquadDetail_3_000: "Outnumbered: attacks resolved like for a unit",
   dictSquadDetail_3_001: "Temporary shields: `1/6: +1 Armor'",
   dictSquadDetail_3_002: "Terrain knowledge: `1/6: bonuses to HP`",
   dictSquadDetail_3_003: "Fierceness: bonuses to PSY saves",
-  dictSquadDetail_3_004: "Righteous anger: moral dilemmas in opponents",
+  dictSquadDetail_3_004:
+    "Righteous anger: moral dilemmas in opponents, hard PSY saves ",
   dictSquadDetail_3_005: "Crowd pressure: `1-2/6: easy critical damage roll'",
   dictSquadDetail_4_000: "Speed modifications: `1-3/6: HP bonus`",
   dictSquadDetail_4_001:

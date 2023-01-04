@@ -31,55 +31,55 @@ Rzut ten zastępuje rzut kośćmi o większej ilości ścianek (np. k100), a j
 
 Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 
-| k20 | Kolumna | C1 `(1-3)` | C2 `(4-6)` | C3 `(7-10)`          | C4 `(11-14)`   | C5 `(15-17)`  | C6  `(18-20)` |
-| --- | :-----: | ---------- | ---------- | -------------------- | -------------- | ------------- | ------------- |
-| 1   |    1    | Apollo     | Alpha      | Schultz              | Moriyama       | Gorbunov      | Bhadrakali    |
-| 2   |    1    | Athena     | Beta       | Nitzsche-Greenfelder | Katsuyoshi     | Garanin       | Damayanti     |
-| 3   |    1    | Ares       | Gamma      | Blick-Nolan          | Yorikane       | Lukyanov      | Bumati        |
-| 4   |    2    | Hermes     | Delta      | Kunze                | Ryu            | Kovalevsky    | Karnavati     |
-| 5   |    2    | Hades      | Sigma      | Keeling              | Rokuda         | Nabatov       | Indira        |
-| 6   |    2    | Odin       | Omega      | Hansen               | Hideaki        | Zhutov        | Lavanya       |
-| 7   |    3    | Thor       | Quantum    | Emard                | Sano           | Volodin       | Shruti        |
-| 8   |    3    | Mimir      | Proton     | Senger               | Morita         | Mirnov        | Archita       |
-| 9   |    3    | Fenrir     | Nucleo     | Rice-Kreiger         | Takamasa       | Yermushin     | Shristi       |
-| 10  |    3    | Thyr       | Tensor     | Hedegaard            | Urushido       | Kulikov       | Progressive   |
-| 11  |    4    | Freya      | Macro      | Tanner               | Sharaku        | Zhen Chen     | United        |
-| 12  |    4    | Rama       | Hexagon    | Hamilton             | Fukuma-Tatsuki | Xian Hua      | Universal     |
-| 13  |    4    | Indra      | Octagon    | Shannon              | Nishikiri-Kei  | Fan Yimu      | National      |
-| 14  |    4    | Iris       | Prism      | Brock-Dawson         | Mitsue-Sakae   | Duan Qigang   | Global        |
-| 15  |    5    | Kali       | Radius     | Stewart-Cobb         | Hashimoto      | Liang Jun     | Integrated    |
-| 16  |    5    | Selene     | Scalar     | Delaney              | Sakamoto       | Geng Guanyu   | Tactical      |
-| 17  |    5    | Sol        | Solid      | Hawkins              | Katagiri       | Huang Luoyang | International |
-| 18  |    6    | Lakshmi    | Tangent    | Tyson                | Asari          | Xie Fang      | Strategic     |
-| 19  |    6    | Chandra    | Vector     | Cooper               | Kojima-Kazumi  | Lian Xiuying  | Networked     |
-| 20  |    6    | Mitra      | Prime      | Morgan-Walsh         | Senri          | Zhu Da        | Industrial    |
+| k20 | `(1-3)` | `(4-6)` | `(7-10)`             | `(11-14)`      | `(15-17)`     | `(18-20)`     |
+| --- | ------- | ------- | -------------------- | -------------- | ------------- | ------------- |
+| 1   | Apollo  | Alpha   | Schultz              | Moriyama       | Gorbunov      | Bhadrakali    |
+| 2   | Athena  | Beta    | Nitzsche-Greenfelder | Katsuyoshi     | Garanin       | Damayanti     |
+| 3   | Ares    | Gamma   | Blick-Nolan          | Yorikane       | Lukyanov      | Bumati        |
+| 4   | Hermes  | Delta   | Kunze                | Ryu            | Kovalevsky    | Karnavati     |
+| 5   | Hades   | Sigma   | Keeling              | Rokuda         | Nabatov       | Indira        |
+| 6   | Odin    | Omega   | Hansen               | Hideaki        | Zhutov        | Lavanya       |
+| 7   | Thor    | Quantum | Emard                | Sano           | Volodin       | Shruti        |
+| 8   | Mimir   | Proton  | Senger               | Morita         | Mirnov        | Archita       |
+| 9   | Fenrir  | Nucleo  | Rice-Kreiger         | Takamasa       | Yermushin     | Shristi       |
+| 10  | Thyr    | Tensor  | Hedegaard            | Urushido       | Kulikov       | Progressive   |
+| 11  | Freya   | Macro   | Tanner               | Sharaku        | Zhen Chen     | United        |
+| 12  | Rama    | Hexagon | Hamilton             | Fukuma-Tatsuki | Xian Hua      | Universal     |
+| 13  | Indra   | Octagon | Shannon              | Nishikiri-Kei  | Fan Yimu      | National      |
+| 14  | Iris    | Prism   | Brock-Dawson         | Mitsue-Sakae   | Duan Qigang   | Global        |
+| 15  | Kali    | Radius  | Stewart-Cobb         | Hashimoto      | Liang Jun     | Integrated    |
+| 16  | Selene  | Scalar  | Delaney              | Sakamoto       | Geng Guanyu   | Tactical      |
+| 17  | Sol     | Solid   | Hawkins              | Katagiri       | Huang Luoyang | International |
+| 18  | Lakshmi | Tangent | Tyson                | Asari          | Xie Fang      | Strategic     |
+| 19  | Chandra | Vector  | Cooper               | Kojima-Kazumi  | Lian Xiuying  | Networked     |
+| 20  | Mitra   | Prime   | Morgan-Walsh         | Senri          | Zhu Da        | Industrial    |
 
 ## Nazwa 2 (1k20 + 1k20)
 
 Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 
-| k20 | Kolumna | C1 `(1-7)`    | C2 `(8-14)`   | C3 `(15-20)`   |
-| --- | :-----: | ------------- | ------------- | -------------- |
-| 1   |    1    | Aerospace     | Engineering   | Manufacturing  |
-| 2   |    1    | Agricultural  | Entertainment | Mechatronic    |
-| 3   |    1    | Automotive    | Express       | MegaCorp       |
-| 4   |    1    | Biotech       | Financials    | Motors         |
-| 5   |    1    | Cargo         | Games         | Nanotech       |
-| 6   |    1    | Chemicals     | Genomics      | Products       |
-| 7   |    1    | Commtech      | Genotech      | Prototech      |
-| 8   |    2    | Communication | GmbH          | Radiotechnics  |
-| 9   |    2    | Computers     | Group         | Research       |
-| 10  |    2    | Consulting    | Healthcare    | Sciences       |
-| 11  |    2    | Consumables   | Incorporated  | Security       |
-| 12  |    2    | Corporation   | Industries    | Semiconductor  |
-| 13  |    2    | Cosmetics     | Instruments   | Services       |
-| 14  |    2    | Cybernetics   | Interactive   | Software       |
-| 15  |    3    | Cybertech     | Investments   | Solutions      |
-| 16  |    3    | Cybertronic   | Laboratory    | Syndicate      |
-| 17  |    3    | Defense       | Logistics     | Systems        |
-| 18  |    3    | Delivery      | Ltd           | Tacticals      |
-| 19  |    3    | Digital       | Machines      | Technologies   |
-| 20  |    3    | Electric      | Management    | Transportation |
+| k20 | `(1-7)`       | `(8-14)`      | `(15-20)`      |
+| --- | ------------- | ------------- | -------------- |
+| 1   | Aerospace     | Engineering   | Manufacturing  |
+| 2   | Agricultural  | Entertainment | Mechatronic    |
+| 3   | Automotive    | Express       | MegaCorp       |
+| 4   | Biotech       | Financials    | Motors         |
+| 5   | Cargo         | Games         | Nanotech       |
+| 6   | Chemicals     | Genomics      | Products       |
+| 7   | Commtech      | Genotech      | Prototech      |
+| 8   | Communication | GmbH          | Radiotechnics  |
+| 9   | Computers     | Group         | Research       |
+| 10  | Consulting    | Healthcare    | Sciences       |
+| 11  | Consumables   | Incorporated  | Security       |
+| 12  | Corporation   | Industries    | Semiconductor  |
+| 13  | Cosmetics     | Instruments   | Services       |
+| 14  | Cybernetics   | Interactive   | Software       |
+| 15  | Cybertech     | Investments   | Solutions      |
+| 16  | Cybertronic   | Laboratory    | Syndicate      |
+| 17  | Defense       | Logistics     | Systems        |
+| 18  | Delivery      | Ltd           | Tacticals      |
+| 19  | Digital       | Machines      | Technologies   |
+| 20  | Electric      | Management    | Transportation |
 
 
 ## Branża (1k20 + 1k20)
@@ -144,28 +144,28 @@ Podczas losowania korporacji, możesz wybrać więcej niż jedną branżę dla f
 
 Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 
-| k20 | Kolumna | C1 `(1-10)`                                                                     | C2 `(11-20)`                                                                       |
-| --- | :-----: | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| 1   |    1    | Opracowali sposób na przedłużanie ludzkiego życia                               | Nawiązali w tajemnicy kontakt z obcą cywilizacją                                   |
-| 2   |    1    | Mają SI, która posiada świadomość                                               | Składują odpady produkcyjne w biedniejszych dzielnicach                            |
-| 3   |    1    | Opracowują plan przejęcia władzy administracyjnej                               | Ich oficjalna działalność jest przykrywką dla narkobiznesu                         |
-| 4   |    1    | W swoich produktach montują sprzęt do śledzenia konsumentów                     | Ukrywają i wspierają rozmaite grupy ekoterrorystyczne                              |
-| 5   |    1    | Przeprowadzają eksperymenty na nieświadomych pracownikach                       | Utrzymują grupy hakerów regularnie atakujących Infosferę                           |
-| 6   |    1    | Są w stanie podsłuchać i zanalizować dowolną transmisję danych                  | Wszyscy ich pracownicy są fanatykami o wypranych mózgach                           |
-| 7   |    1    | Opracowali wirusa zdolnego zniszczyć całą Infosferę                             | Masowo skupują wszystkie dostępne dzieła sztuki i antyki                           |
-| 8   |    1    | W sytuacji zagrożenia wykorzystają nieznaną broń bakteriologiczną               | Nigdzie nie można znaleźć żadnych wiarygodnych informacji na ich temat             |
-| 9   |    1    | Posiadają możliwości transferu wiedzy bezpośrednio do umysłu                    | Przeprowadzali testy taktycznej broni jądrowej w zamieszkanych dzielnicach         |
-| 10  |    1    | Prowadzą program hodowli niebezpiecznych, genetycznie modyfikowanych bestii     | Testowali broń chemiczną w biedniejszych częściach miasta                          |
-| 11  |    2    | Planują wrogie przejęcie pozostałych korporacji ze swojego sektora rynku        | Ich oficjalna działalność jest przykrywką dla handlu organami ludzkimi             |
-| 12  |    2    | Wyhodowali klony znanych polityków i podmienili niektórych z nich               | Ich pracownicy planują krwawy bunt i zamierzają zniszczyć korporację od wewnątrz   |
-| 13  |    2    | Są w posiadaniu minerału, który może zastąpić wszelkie znane paliwa             | Ich szalony zarząd planuje światową apokalipsę                                     |
-| 14  |    2    | Opracowali zminiaturyzowaną, osobistą broń EMP                                  | Cała korporacja jest w zasadzie religijną sektą                                    |
-| 15  |    2    | Mają oprogramowanie pozwalające na emisję przekazu podprogowego w ich reklamach | Odkryli ślady starożytnej cywilizacji i nieznanej technologii                      |
-| 16  |    2    | Ukrywają fakt masowej eksterminacji jednej ze swoich własnych arkologii         | Korporacją zarządza SI ale nikt z pracowników i zarządu o tym nie wie              |
-| 17  |    2    | Większość ich pracowników to androidy                                           | Zarząd korporacji nie żyje a podszywa się pod niego grupa najemników               |
-| 18  |    2    | Wykorzystują ciała swoich zmarłych pracowników do tajemniczych eksperymentów    | Umysły pracowników po ich śmierci są ładowane do korporacyjnej bazy danych         |
-| 19  |    2    | Zbudowali tajną bazę na Księżycu                                                | Opracowali nanotechnologię, pozwalającą produkować dowolne rzeczy z każdej materii |
-| 20  |    2    | Są odpowiedzialni za serię epidemii w różnych miejscach na świecie              | Opracowali technologię zdalnej kontroli ludzkiego umysłu                           |
+| k20 | `(1-10)`                                                                        | `(11-20)`                                                                          |
+| --- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 1   | Opracowali sposób na przedłużanie ludzkiego życia                               | Nawiązali w tajemnicy kontakt z obcą cywilizacją                                   |
+| 2   | Mają SI, która posiada świadomość                                               | Składują odpady produkcyjne w biedniejszych dzielnicach                            |
+| 3   | Opracowują plan przejęcia władzy administracyjnej                               | Ich oficjalna działalność jest przykrywką dla narkobiznesu                         |
+| 4   | W swoich produktach montują sprzęt do śledzenia konsumentów                     | Ukrywają i wspierają rozmaite grupy ekoterrorystyczne                              |
+| 5   | Przeprowadzają eksperymenty na nieświadomych pracownikach                       | Utrzymują grupy hakerów regularnie atakujących Infosferę                           |
+| 6   | Są w stanie podsłuchać i zanalizować dowolną transmisję danych                  | Wszyscy ich pracownicy są fanatykami o wypranych mózgach                           |
+| 7   | Opracowali wirusa zdolnego zniszczyć całą Infosferę                             | Masowo skupują wszystkie dostępne dzieła sztuki i antyki                           |
+| 8   | W sytuacji zagrożenia wykorzystają nieznaną broń bakteriologiczną               | Nigdzie nie można znaleźć żadnych wiarygodnych informacji na ich temat             |
+| 9   | Posiadają możliwości transferu wiedzy bezpośrednio do umysłu                    | Przeprowadzali testy taktycznej broni jądrowej w zamieszkanych dzielnicach         |
+| 10  | Prowadzą program hodowli niebezpiecznych, genetycznie modyfikowanych bestii     | Testowali broń chemiczną w biedniejszych częściach miasta                          |
+| 11  | Planują wrogie przejęcie pozostałych korporacji ze swojego sektora rynku        | Ich oficjalna działalność jest przykrywką dla handlu organami ludzkimi             |
+| 12  | Wyhodowali klony znanych polityków i podmienili niektórych z nich               | Ich pracownicy planują krwawy bunt i zamierzają zniszczyć korporację od wewnątrz   |
+| 13  | Są w posiadaniu minerału, który może zastąpić wszelkie znane paliwa             | Ich szalony zarząd planuje światową apokalipsę                                     |
+| 14  | Opracowali zminiaturyzowaną, osobistą broń EMP                                  | Cała korporacja jest w zasadzie religijną sektą                                    |
+| 15  | Mają oprogramowanie pozwalające na emisję przekazu podprogowego w ich reklamach | Odkryli ślady starożytnej cywilizacji i nieznanej technologii                      |
+| 16  | Ukrywają fakt masowej eksterminacji jednej ze swoich własnych arkologii         | Korporacją zarządza SI ale nikt z pracowników i zarządu o tym nie wie              |
+| 17  | Większość ich pracowników to androidy                                           | Zarząd korporacji nie żyje a podszywa się pod niego grupa najemników               |
+| 18  | Wykorzystują ciała swoich zmarłych pracowników do tajemniczych eksperymentów    | Umysły pracowników po ich śmierci są ładowane do korporacyjnej bazy danych         |
+| 19  | Zbudowali tajną bazę na Księżycu                                                | Opracowali nanotechnologię, pozwalającą produkować dowolne rzeczy z każdej materii |
+| 20  | Są odpowiedzialni za serię epidemii w różnych miejscach na świecie              | Opracowali technologię zdalnej kontroli ludzkiego umysłu                           |
 
 ## Zasoby i cele
 
@@ -173,26 +173,26 @@ Pierwszy rzut wybiera kolumnę, drugi pozycję w kolumnie.
 
 Przy każdym z zasobów podano przykładowe benefity wynikające z jego posiadania.
 
-1. Zasoby technologiczne: dostęp do najnowszych osiągnięć technologicznych
-2. Zasoby finansowe: pieniądze bez ograniczeń
-3. Kontakty w kręgach wojskowych: przepustki do obiektów wojskowych, kontakt z dowództwem, sprzęt wojskowy
-4. Wpływy w grupach hakerskich: dostęp do dowolnej informacji w sieci, kradzież danych, wejścia do węzłów Infosfery
-5. Wiarygodność w mediach: możliwość przekazania dowolnej informacji do opinii publicznej, pozyskiwanie dowolnej informacji
-6. Zaufanie zwykłych ludzi: możliwość wywołania zamieszek i demonstracji, kontrola tłumu, szerzenie plotek
-7. Kontakty wśród przemytników: dostęp do nielegalnych produktów, ukrywanie osób i rzeczy, przemyt
-8. Kontrola nad wybranymi gangami: dostęp do nielegalnych produktów, napady, włamania, wymuszenia, porwania
-9. Wpływy w urzędach Administracji: przepustki, fałszywe tożsamości, dostęp do informacji niepublicznej
-10. Laboratoria naukowe: diagnostyka, analiza danych, dane i technologie z dowolnej dziedziny nauki
-11. Kontrola nad przemytem narkotyków: nielegalne stymulanty, siatka sprzedawców, tajne kanały przerzutu towarów i ludzi
-12. Kontrola nad mediami: możliwość manipulowania przekazem medialnym, dostęp do kompromitujacych informacji (politycy, osoby publiczne)
-13. Kontrola nad policją i służbami miejskimi: dostęp do systemów policyjnych, wsparcie służb, bezkarność w obliczu prawa
-14. Wpływy w sektach religijnych: możliwość wywołania zamieszek i demonstracji, dostęp do nielegalnych produktów, możliwość manipulowania wspólnotami religijnymi
-15. Możliwości wywiadowcze: dostęp do dowolnej informacji, śledzenie, wykrywanie, tuszowanie incydentów 
-16. Kontakty wśród runnerów: możliwość wynajęcia grupy, informacje przydatne podczas roboty, bezpieczne miejscówki
-17. Wpływy wśród handlarzy bronią: dostęp do broni dowolnego rodzaju
-18. Zasoby biotechnologiczne: modyfikacje genetyczne, mutacje, klonowanie, nielegalne zabiegi, trucizny, stymulanty 
-19. Zasoby przestrzenne: lokale i tereny do wynajęcia lub wykorzystania
-20. Kontrola nad przemysłem rozrywkowym: kontakty w klubach, sieci informatorów, dane dłużników, organizacja dowolnych imprez i zawodów, manipulowanie wygranymi w grach hazardowych
+1. **Zasoby technologiczne**: dostęp do najnowszych osiągnięć technologicznych
+2. **Zasoby finansowe**: pieniądze bez ograniczeń
+3. **Kontakty w kręgach wojskowych**: przepustki do obiektów wojskowych, kontakt z dowództwem, sprzęt wojskowy
+4. **Wpływy w grupach hakerskich**: dostęp do dowolnej informacji w sieci, kradzież danych, wejścia do węzłów Infosfery
+5. **Wiarygodność w mediach**: możliwość przekazania dowolnej informacji do opinii publicznej, pozyskiwanie dowolnej informacji
+6. **Zaufanie zwykłych ludzi**: możliwość wywołania zamieszek i demonstracji, kontrola tłumu, szerzenie plotek
+7. **Kontakty wśród przemytników**: dostęp do nielegalnych produktów, ukrywanie osób i rzeczy, przemyt
+8. **Kontrola nad wybranymi gangami**: dostęp do nielegalnych produktów, napady, włamania, wymuszenia, porwania
+9. **Wpływy w urzędach Administracji**: przepustki, fałszywe tożsamości, dostęp do informacji niepublicznej
+10. **Laboratoria naukowe**: diagnostyka, analiza danych, dane i technologie z dowolnej dziedziny nauki
+11. **Kontrola nad przemytem narkotyków**: nielegalne stymulanty, siatka sprzedawców, tajne kanały przerzutu towarów i ludzi
+12. **Kontrola nad mediami**: możliwość manipulowania przekazem medialnym, dostęp do kompromitujacych informacji (politycy, osoby publiczne)
+13. **Kontrola nad policją i służbami miejskimi**: dostęp do systemów policyjnych, wsparcie służb, bezkarność w obliczu prawa
+14. **Wpływy w sektach religijnych**: możliwość wywołania zamieszek i demonstracji, dostęp do nielegalnych produktów, możliwość manipulowania wspólnotami religijnymi
+15. **Możliwości wywiadowcze**: dostęp do dowolnej informacji, śledzenie, wykrywanie, tuszowanie incydentów 
+16. **Kontakty wśród runnerów**: możliwość wynajęcia grupy, informacje przydatne podczas roboty, bezpieczne miejscówki
+17. **Wpływy wśród handlarzy bronią**: dostęp do broni dowolnego rodzaju
+18. **Zasoby biotechnologiczne**: modyfikacje genetyczne, mutacje, klonowanie, nielegalne zabiegi, trucizny, stymulanty 
+19. **Zasoby przestrzenne**: lokale i tereny do wynajęcia lub wykorzystania
+20. **Kontrola nad przemysłem rozrywkowym**: kontakty w klubach, sieci informatorów, dane dłużników, organizacja dowolnych imprez i zawodów, manipulowanie wygranymi w grach hazardowych
 
 ### Cel (1k20)
 
@@ -237,7 +237,7 @@ Propozycje przedstawione poniżej nie są jedynie korporacyjnymi sloganami czy k
 6. To tylko praca, nic personalnego - robię co robię, każdy ma jakieś obowiązki do wykonania więc o co ta awantura?
 7. Tylko najlepsi osiągają szczyt - brakuje mi tylko 20 punktów, żeby wejść do strefy awansu. W takim tempie do końca roku będę kierownikiem działu.
 8. Co zdobędziesz własnoręcznie, jest twoje - i co z tego, że Anna była lepsza ode mnie? Zagapiła się, popełniła błąd a ja wykorzystałam okazję. Życie.
-9.  Im mniej cię widać, tym bezpieczniej - może lepiej nie wysyłajmy tego listu, ktoś może zobaczyć, powie komu nie trzeba i będziemy mieli kłopoty. Komu to potrzebne?
+9. Im mniej cię widać, tym bezpieczniej - może lepiej nie wysyłajmy tego listu, ktoś może zobaczyć, powie komu nie trzeba i będziemy mieli kłopoty. Komu to potrzebne?
 10. Sukces odnosi się za pomocą cierpliwości - twój dziadek zaczynał jako zwykły pracownik fabryczny, ja pracuję już jako majster. Jak tak dalej pójdzie może ty dotrzesz do kierownika działu. 
 11. Kiedyś nadejdzie dzień odpłaty - tak, teraz musimy robić co nam każą, jakoś trzeba żyć ale kiedyś ... kiedyś powstaniemy a wtedy poleje się krew 
 12. Każdy może mieć swój zysk - firma zarabia i ja też zarabiam, a jak firma zarabia więcej to ja również mogę mieć wiecej - proste
