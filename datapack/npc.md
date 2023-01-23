@@ -7,7 +7,7 @@ nav_order: 3
 
 # Bohaterowie niezależni
 
-<!-- [Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/npc) -->
+[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/gen?lang=pl&mode=Npc)
 
 Garść generatorów pozwalających zaludnić świat Cybera różnorodnymi postaciami.
 
@@ -425,6 +425,8 @@ Pierwszy wynik wybiera sekcję, drugi podpunkt z sekcji.
 
 
 ## Antagoniści
+
+[Wersja generatora online](https://oswida.github.io/cyber/app/dist/#/gen?lang=pl&mode=Squad)
 
 Szybki generator antagonistów w postaci oddziału oraz przykłady pojedynczych przedstawicieli danego rodzaju.
 

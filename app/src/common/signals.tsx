@@ -12,9 +12,11 @@ import {
   NodeInfo,
   NoteInfo,
   NotificationInfo,
+  NpcInfo,
   PcInfo,
   RollInfo,
   SessionInfo,
+  SquadInfo,
   TrackInfo,
   WhiteboardState,
 } from "./types";
@@ -25,6 +27,8 @@ export const [corporationData, setCorporationData] = createSignal<CorpoInfo[]>(
   []
 );
 export const [inodeData, setInodeData] = createSignal<NodeInfo[]>([]);
+export const [squadData, setSquadData] = createSignal<SquadInfo[]>([]);
+export const [npcData, setNpcData] = createSignal<NpcInfo[]>([]);
 
 // Main session data
 export const [sessionData, setSessionData] = createSignal<SessionInfo>(

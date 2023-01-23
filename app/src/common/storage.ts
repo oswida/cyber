@@ -1,6 +1,12 @@
 import { v4 as uuidv4 } from "uuid";
 import { setCorporationData } from "~/common";
-import { setInodeData, setSessionData, setStorageSize } from "./signals";
+import {
+  setInodeData,
+  setNpcData,
+  setSessionData,
+  setSquadData,
+  setStorageSize,
+} from "./signals";
 import { emptySessionInfo, SessionInfo } from "./types";
 import { compressData, decompressData } from "./util";
 
@@ -9,6 +15,8 @@ export const inodNotesKey = "inod-notes2";
 export const inodBoardKey = "inod-board2";
 export const inodGenCorporationKey = "inod-gen-corporation2";
 export const inodGenInodeKey = "inod-gen-inode2";
+export const inodGenSquadKey = "inod-gen-squad2";
+export const inodGenNpcKey = "inod-gen-npc";
 export const inodPlayersKey = "inod-players2";
 export const inodRollsKey = "inod-rolls2";
 export const inodDrawKey = "inod-draw2";
@@ -41,7 +49,8 @@ export const loadSessionData = () => {
 };
 
 export const saveGenericData = (key: string, data: any) => {
-  localStorage.setItem(key, compressData(data));
+  const toSave = compressData(data);
+  localStorage.setItem(key, toSave);
   updateStoreSize();
 };
 
@@ -57,6 +66,20 @@ export const loadGenInodes = () => {
   if (!data) return;
   const dd = decompressData(data);
   setInodeData(dd);
+};
+
+export const loadGenSquads = () => {
+  const data = localStorage.getItem(inodGenSquadKey);
+  if (!data) return;
+  const dd = decompressData(data);
+  setSquadData(dd);
+};
+
+export const loadGenNpc = () => {
+  const data = localStorage.getItem(inodGenNpcKey);
+  if (!data) return;
+  const dd = decompressData(data);
+  setNpcData(dd);
 };
 
 export const loadRolls = (appData: any) => {
@@ -106,6 +129,8 @@ export const updateStoreSize = () => {
     inodRollsKey,
     inodDrawKey,
     inodTrackKey,
+    inodGenSquadKey,
+    inodGenNpcKey,
   ];
   keys.forEach((k) => {
     const data = localStorage.getItem(k);

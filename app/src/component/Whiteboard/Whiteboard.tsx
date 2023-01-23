@@ -1,23 +1,5 @@
-import { Component, createEffect, createSignal } from "solid-js";
-import { WhiteboardRootStyle, WhiteboardToolsStyle } from "./styles.css";
+import { useI18n } from "@solid-primitives/i18n";
 import { fabric } from "fabric";
-import {
-  exportData,
-  importData,
-  inodDrawKey,
-  loadDraw,
-  mqttPublish,
-  notify,
-  prettyToday,
-  runtimeColors,
-  saveGenericData,
-  topicDraw,
-  useAppData,
-  mqttTopic,
-  sessionData,
-} from "~/common";
-import { Flex } from "../Flex";
-import { Button } from "../Button";
 import {
   FaRegularCircle,
   FaRegularSquare,
@@ -32,19 +14,46 @@ import {
   FaSolidFont,
   FaSolidLinesLeaning,
   FaSolidPencil,
-  FaSolidShare,
   FaSolidShareNodes,
   FaSolidTrash,
 } from "solid-icons/fa";
+import { Component, createEffect, createSignal } from "solid-js";
+import {
+  exportData,
+  importData,
+  inodDrawKey,
+  loadDraw,
+  mqttPublish,
+  mqttTopic,
+  notify,
+  prettyToday,
+  runtimeColors,
+  saveGenericData,
+  sessionData,
+  topicDraw,
+  useAppData,
+} from "~/common";
+import { Button } from "../Button";
+import { Flex } from "../Flex";
 import { clearCanvas, initCanvas } from "./canvas";
+import { WhiteboardRootStyle, WhiteboardToolsStyle } from "./styles.css";
 import { ColorSwitchButton, SizeSwitchButton, ToolSwitchButton } from "./Tools";
-import { useI18n } from "@solid-primitives/i18n";
 
 export const Whiteboard: Component = () => {
-  let [canvasElement, setCanvasElement] = createSignal<HTMLCanvasElement>();
   let [canvas, setCanvas] = createSignal<fabric.Canvas>();
+  let boardRoot: HTMLDivElement;
+
   const [t] = useI18n();
   const apd = useAppData();
+
+  const keySupport = (e: any) => {
+    const cnv = canvas();
+    if (!cnv) return;
+    const el = document.getElementById("whiteboardCanvas");
+    if (!el) return;
+    const style = window.getComputedStyle(el);
+    console.log("key", style.visibility);
+  };
 
   const save = (e: any) => {
     if (!apd) return;
@@ -55,16 +64,16 @@ export const Whiteboard: Component = () => {
   };
 
   createEffect(() => {
-    if (!canvasElement()) return;
+    window.removeEventListener("keypress", keySupport);
     const cnv = initCanvas("whiteboardCanvas", 1920, 1080);
     setCanvas(cnv);
     const data = loadDraw();
-
     cnv.loadFromJSON(data, () => {});
     cnv.on("object:added", save);
     cnv.on("object:modified", save);
     cnv.on("object:removed", save);
     cnv.on("canvas:cleared", save);
+    window.addEventListener("keypress", keySupport);
   });
 
   createEffect(() => {
@@ -166,15 +175,8 @@ export const Whiteboard: Component = () => {
           </Button>
         </Flex>
       </div>
-      <div class={WhiteboardRootStyle}>
-        <canvas
-          id="whiteboardCanvas"
-          width={1920}
-          height={1080}
-          ref={(el) => {
-            setCanvasElement(el);
-          }}
-        />
+      <div class={WhiteboardRootStyle} ref={(el) => (boardRoot = el)}>
+        <canvas id="whiteboardCanvas" width={1920} height={1080} />
       </div>
     </Flex>
   );

@@ -9,6 +9,8 @@ import {
 import { createEffect, createSignal, For, Match, Switch } from "solid-js";
 import { deleteCorpo, generateCorpo } from "~/actions";
 import { deleteInode, generateInode } from "~/actions/inode";
+import { deleteNpc, generateNpc } from "~/actions/npc";
+import { deleteSquad, generateSquad } from "~/actions/squad";
 import {
   corporationData,
   exportData,
@@ -18,20 +20,32 @@ import {
   inodeData,
   inodGenCorporationKey,
   inodGenInodeKey,
+  inodGenNpcKey,
+  inodGenSquadKey,
   loadGenCorporations,
   loadGenInodes,
+  loadGenNpc,
+  loadGenSquads,
+  npcData,
   prettyToday,
   saveGenericData,
   setCorporationData,
   setGenPage,
   setInodeData,
+  setNpcData,
+  setSquadData,
+  squadData,
   useAppData,
 } from "~/common";
 import { Button, Flex, Texte } from "~/component";
 import { messages_corporation_en } from "~/locales/en/corporation";
 import { messages_inode_en } from "~/locales/en/inode";
+import { messages_npc_en } from "~/locales/en/npc";
+import { messages_squad_en } from "~/locales/en/squad";
 import { messages_corporation_pl } from "~/locales/pl/corporation";
 import { messages_inode_pl } from "~/locales/pl/inode";
+import { messages_npc_pl } from "~/locales/pl/npc";
+import { messages_squad_pl } from "~/locales/pl/squad";
 import { GenCard } from "./GenCard";
 import { GenSelect } from "./GenSelect";
 import { LayoutContentStyle, LayoutRootStyle, NavbarStyle } from "./styles.css";
@@ -41,6 +55,7 @@ const modeparam = extractQueryParam("mode");
 if (modeparam && modeparam != "") {
   mode = modeparam;
 }
+
 setGenPage(mode);
 
 export const GenView = () => {
@@ -56,6 +71,14 @@ export const GenView = () => {
     en: messages_inode_en,
     pl: messages_inode_pl,
   };
+  const squad_dicts: Record<string, any> = {
+    en: messages_squad_en,
+    pl: messages_squad_pl,
+  };
+  const npc_dicts: Record<string, any> = {
+    en: messages_npc_en,
+    pl: messages_npc_pl,
+  };
 
   Object.keys(corporation_dicts).forEach((key) => {
     add(key, corporation_dicts[key]);
@@ -65,6 +88,14 @@ export const GenView = () => {
     add(key, inode_dicts[key]);
   });
 
+  Object.keys(squad_dicts).forEach((key) => {
+    add(key, squad_dicts[key]);
+  });
+
+  Object.keys(npc_dicts).forEach((key) => {
+    add(key, npc_dicts[key]);
+  });
+
   createEffect(() => {
     switch (genPage()) {
       case "Corporation":
@@ -72,6 +103,12 @@ export const GenView = () => {
         break;
       case "Infosphere":
         loadGenInodes();
+        break;
+      case "Squad":
+        loadGenSquads();
+        break;
+      case "Npc":
+        loadGenNpc();
         break;
     }
   });
@@ -83,6 +120,12 @@ export const GenView = () => {
         break;
       case "Infosphere":
         generateInode(apd, t);
+        break;
+      case "Squad":
+        generateSquad(apd, t);
+        break;
+      case "Npc":
+        generateNpc(t);
         break;
     }
   };
@@ -97,6 +140,14 @@ export const GenView = () => {
         setInodeData([]);
         saveGenericData(inodGenInodeKey, []);
         break;
+      case "Squad":
+        setSquadData([]);
+        saveGenericData(inodGenSquadKey, []);
+        break;
+      case "Npc":
+        setNpcData([]);
+        saveGenericData(inodGenNpcKey, []);
+        break;
     }
   };
 
@@ -109,6 +160,14 @@ export const GenView = () => {
       case "Infosphere":
         const filename2 = `inode-${prettyToday()}.json`;
         exportData(inodeData(), filename2);
+        break;
+      case "Squad":
+        const filename3 = `squad-${prettyToday()}.json`;
+        exportData(squadData(), filename3);
+        break;
+      case "Npc":
+        const filename4 = `npc-${prettyToday()}.json`;
+        exportData(npcData(), filename4);
         break;
     }
   };
@@ -123,6 +182,14 @@ export const GenView = () => {
         case "Infosphere":
           setInodeData(data);
           saveGenericData(inodGenInodeKey, data);
+          break;
+        case "Squad":
+          setSquadData(data);
+          saveGenericData(inodGenSquadKey, data);
+          break;
+        case "Npc":
+          setNpcData(data);
+          saveGenericData(inodGenNpcKey, data);
           break;
       }
     });
@@ -181,6 +248,34 @@ export const GenView = () => {
                     title={it.name}
                     subtitle={""}
                     onDelete={() => deleteInode(it.id)}
+                  />
+                )}
+              </For>
+            </Match>
+            <Match when={genPage() === "Squad"}>
+              <For each={squadData()}>
+                {(it, idx) => (
+                  <GenCard
+                    index={idx()}
+                    titlecolor="yellow"
+                    color="blue"
+                    title={it.symbol}
+                    subtitle={`${t("Base_weapon")}: ${it.base_weapon}`}
+                    onDelete={() => deleteSquad(it.id)}
+                  />
+                )}
+              </For>
+            </Match>
+            <Match when={genPage() === "Npc"}>
+              <For each={npcData()}>
+                {(it, idx) => (
+                  <GenCard
+                    index={idx()}
+                    titlecolor="yellow"
+                    color="green"
+                    title={`${it.first_name} ${it.surname}`}
+                    subtitle={it.occupation}
+                    onDelete={() => deleteNpc(it.id)}
                   />
                 )}
               </For>

@@ -1,12 +1,16 @@
 import { useI18n } from "@solid-primitives/i18n";
 import { FaSolidSkull, FaSolidTrash } from "solid-icons/fa";
-import { ComponentProps, Match, Show, Switch } from "solid-js";
+import { ComponentProps, createMemo, Match, Show, Switch } from "solid-js";
 import {
   CorpoInfo,
   corporationData,
   genPage,
   inodeData,
   NodeInfo,
+  npcData,
+  NpcInfo,
+  squadData,
+  SquadInfo,
   themeVars,
 } from "~/common";
 import { Flex, Texte } from "~/component";
@@ -131,6 +135,78 @@ const GenInode = ({ item }: { item: NodeInfo }) => {
   );
 };
 
+const GenSquad = ({ item }: { item: SquadInfo }) => {
+  const [t] = useI18n();
+  return (
+    <>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Type")}
+        </Texte>
+        <Texte>{item.squad_type}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Leader")}
+        </Texte>
+        <Texte>{item.leader}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Group")}
+        </Texte>
+        <Texte>{item.group}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Additional_weapon")}
+        </Texte>
+        <Texte>{item.weapon}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Detail")}
+        </Texte>
+        <Texte>{item.detail}</Texte>
+      </div>
+    </>
+  );
+};
+
+const GenNpc = ({ item }: { item: NpcInfo }) => {
+  const [t] = useI18n();
+  return (
+    <>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Traits")}
+        </Texte>
+        <Texte>
+          {item.positive_trait}, {item.negative_trait}
+        </Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Look")}
+        </Texte>
+        <Texte>{item.look}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Gear")}
+        </Texte>
+        <Texte>{item.gear}</Texte>
+      </div>
+      <div class={CardRowStyle}>
+        <Texte size="small" color="yellow">
+          {t("Goal")}
+        </Texte>
+        <Texte>{item.goal}</Texte>
+      </div>
+    </>
+  );
+};
+
 export const GenCard = ({
   title,
   subtitle,
@@ -140,16 +216,38 @@ export const GenCard = ({
   index,
 }: ComponentProps<"div"> & Props) => {
   const [t] = useI18n();
+
+  const cardHeight = createMemo(() => {
+    switch (genPage()) {
+      case "Squad":
+        return "300px";
+      case "Npc":
+        return "270px";
+      default:
+        return undefined;
+    }
+  });
+
   return (
-    <div class={CardRootStyle({ color: color })}>
+    <div
+      class={CardRootStyle({ color: color })}
+      style={{ height: cardHeight() }}
+    >
       <div class={CardTitleStyle({ color: titlecolor })}>
         <FaSolidTrash
           color={themeVars.colors.pink}
-          style={{ height: "12px", width: "12px", "align-self": "center" }}
+          style={{
+            height: "12px",
+            width: "12px",
+            "align-self": "center",
+            cursor: "pointer",
+          }}
           onClick={onDelete}
         />
         <Flex type="column">
-          <Texte color={titlecolor}>{title}</Texte>
+          <Texte align="right" color={titlecolor}>
+            {title}
+          </Texte>
           <Texte align="right" size="small" color="blue">
             {subtitle}
           </Texte>
@@ -161,6 +259,12 @@ export const GenCard = ({
         </Match>
         <Match when={genPage() === "Infosphere"}>
           <GenInode item={inodeData()[index]} />
+        </Match>
+        <Match when={genPage() === "Squad"}>
+          <GenSquad item={squadData()[index]} />
+        </Match>
+        <Match when={genPage() === "Npc"}>
+          <GenNpc item={npcData()[index]} />
         </Match>
       </Switch>
     </div>

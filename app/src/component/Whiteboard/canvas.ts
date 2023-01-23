@@ -259,6 +259,11 @@ export const linecolor = (
   if (!apd || !canvas) return;
   apd.setWbState((prev: any) => ({ ...prev, brush: color }));
   canvas.freeDrawingBrush.color = color;
+  const objs = canvas.getActiveObjects();
+  objs.forEach((obj) => {
+    obj.set("stroke", color);
+  });
+  canvas.requestRenderAll();
 };
 
 export const linesSizeMap = [1, 2, 4, 8];
@@ -274,4 +279,9 @@ export const linesize = (
     width: linesSizeMap[s],
   }));
   canvas.freeDrawingBrush.width = linesSizeMap[s];
+  const objs = canvas.getActiveObjects();
+  objs.forEach((obj) => {
+    obj.set("strokeWidth", linesSizeMap[s]);
+  });
+  canvas.requestRenderAll();
 };

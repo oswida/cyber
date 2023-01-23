@@ -32,6 +32,29 @@ export type NodeInfo = {
   detail: string;
 };
 
+export type SquadInfo = {
+  id: string;
+  symbol: string;
+  squad_type: string;
+  leader: string;
+  group: string;
+  weapon: string;
+  base_weapon: string;
+  detail: string;
+};
+
+export type NpcInfo = {
+  id: string;
+  first_name: string;
+  surname: string;
+  occupation: string;
+  goal: string;
+  look: string;
+  gear: string;
+  positive_trait: string;
+  negative_trait: string;
+};
+
 export type PcSlot = {
   description: string;
   fatigue: boolean;

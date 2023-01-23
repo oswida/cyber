@@ -30,6 +30,12 @@ export const GenSelect = ({ open, setOpen }: Props) => {
         <Button onClick={() => selectGen("Infosphere")}>
           <Texte>{t("Infosphere")}</Texte>
         </Button>
+        <Button onClick={() => selectGen("Squad")}>
+          <Texte>{t("Squad")}</Texte>
+        </Button>
+        <Button onClick={() => selectGen("Npc")}>
+          <Texte>{t("Non_player_character")}</Texte>
+        </Button>
       </Flex>
     </Dialog>
   );
